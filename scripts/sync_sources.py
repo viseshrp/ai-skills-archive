@@ -99,6 +99,11 @@ def parse_repo_url(url: str) -> tuple[str, str]:
     return owner, repo
 
 
+def canonical_repo_url(url: str) -> str:
+    owner, repo = parse_repo_url(url)
+    return f"https://github.com/{owner}/{repo}"
+
+
 def repo_key(owner: str, repo: str) -> str:
     return f"{owner}__{repo}"
 
@@ -479,12 +484,13 @@ def add_sources(urls: list[str]) -> None:
     existing_urls = {source["url"] for source in sources}
     added = False
     for url in urls:
-        if url in existing_urls:
+        canonical_url = canonical_repo_url(url)
+        if canonical_url in existing_urls:
             continue
         sources.append(
             {
-                "url": url,
-                "notes": "Added with scripts/sync_sources.py add.",
+                "url": canonical_url,
+                "notes": f"Added with scripts/sync_sources.py add from {url}.",
             }
         )
         added = True

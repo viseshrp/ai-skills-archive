@@ -55,6 +55,11 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Snapshot: [`archives/obra__Superpowers/snapshot`](archives/obra__Superpowers/snapshot)
   - Skills discovered: 14
   - Files retained in reduced snapshot: 29
+- [cursor/plugins](https://github.com/cursor/plugins)
+  - Archived commit: `e46364b8be46000b7df0f260550cd712afbb8d36`
+  - Snapshot: [`archives/cursor__plugins/snapshot`](archives/cursor__plugins/snapshot)
+  - Skills discovered: 71
+  - Files retained in reduced snapshot: 156
 
 ## Generated Reports
 
@@ -165,10 +170,83 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `writing-plans`: [`skills/writing-plans/SKILL.md`](archives/obra__Superpowers/snapshot/skills/writing-plans/SKILL.md)
 - `writing-skills`: [`skills/writing-skills/SKILL.md`](archives/obra__Superpowers/snapshot/skills/writing-skills/SKILL.md)
 
+### cursor/plugins
+- `check-agent-compatibility`: [`agent-compatibility/skills/check-agent-compatibility/SKILL.md`](archives/cursor__plugins/snapshot/agent-compatibility/skills/check-agent-compatibility/SKILL.md)
+- `cli-for-agents`: [`cli-for-agent/skills/cli-for-agents/SKILL.md`](archives/cursor__plugins/snapshot/cli-for-agent/skills/cli-for-agents/SKILL.md)
+- `continual-learning`: [`continual-learning/skills/continual-learning/SKILL.md`](archives/cursor__plugins/snapshot/continual-learning/skills/continual-learning/SKILL.md)
+- `create-plugin-scaffold`: [`create-plugin/skills/create-plugin-scaffold/SKILL.md`](archives/cursor__plugins/snapshot/create-plugin/skills/create-plugin-scaffold/SKILL.md)
+- `review-plugin-submission`: [`create-plugin/skills/review-plugin-submission/SKILL.md`](archives/cursor__plugins/snapshot/create-plugin/skills/review-plugin-submission/SKILL.md)
+- `cursor-sdk`: [`cursor-sdk/skills/cursor-sdk/SKILL.md`](archives/cursor__plugins/snapshot/cursor-sdk/skills/cursor-sdk/SKILL.md)
+- `check-compiler-errors`: [`cursor-team-kit/skills/check-compiler-errors/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/check-compiler-errors/SKILL.md)
+- `control-cli`: [`cursor-team-kit/skills/control-cli/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/control-cli/SKILL.md)
+- `control-ui`: [`cursor-team-kit/skills/control-ui/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/control-ui/SKILL.md)
+- `deslop`: [`cursor-team-kit/skills/deslop/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/deslop/SKILL.md)
+- `fix-ci`: [`cursor-team-kit/skills/fix-ci/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/fix-ci/SKILL.md)
+- `fix-merge-conflicts`: [`cursor-team-kit/skills/fix-merge-conflicts/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/fix-merge-conflicts/SKILL.md)
+- `get-pr-comments`: [`cursor-team-kit/skills/get-pr-comments/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/get-pr-comments/SKILL.md)
+- `loop-on-ci`: [`cursor-team-kit/skills/loop-on-ci/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/loop-on-ci/SKILL.md)
+- `make-pr-easy-to-review`: [`cursor-team-kit/skills/make-pr-easy-to-review/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/make-pr-easy-to-review/SKILL.md)
+- `new-branch-and-pr`: [`cursor-team-kit/skills/new-branch-and-pr/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/new-branch-and-pr/SKILL.md)
+- `pr-review-canvas`: [`cursor-team-kit/skills/pr-review-canvas/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/pr-review-canvas/SKILL.md)
+- `review-and-ship`: [`cursor-team-kit/skills/review-and-ship/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/review-and-ship/SKILL.md)
+- `run-smoke-tests`: [`cursor-team-kit/skills/run-smoke-tests/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/run-smoke-tests/SKILL.md)
+- `thermo-nuclear-code-quality-review`: [`cursor-team-kit/skills/thermo-nuclear-code-quality-review/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/thermo-nuclear-code-quality-review/SKILL.md)
+- `verify-this`: [`cursor-team-kit/skills/verify-this/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/verify-this/SKILL.md)
+- `weekly-review`: [`cursor-team-kit/skills/weekly-review/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/weekly-review/SKILL.md)
+- `what-did-i-get-done`: [`cursor-team-kit/skills/what-did-i-get-done/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/what-did-i-get-done/SKILL.md)
+- `workflow-from-chats`: [`cursor-team-kit/skills/workflow-from-chats/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/workflow-from-chats/SKILL.md)
+- `docs-canvas`: [`docs-canvas/skills/docs-canvas/SKILL.md`](archives/cursor__plugins/snapshot/docs-canvas/skills/docs-canvas/SKILL.md)
+- `orchestrate`: [`orchestrate/skills/orchestrate/SKILL.md`](archives/cursor__plugins/snapshot/orchestrate/skills/orchestrate/SKILL.md)
+- `pr-review-canvas`: [`pr-review-canvas/skills/pr-review-canvas/SKILL.md`](archives/cursor__plugins/snapshot/pr-review-canvas/skills/pr-review-canvas/SKILL.md)
+- `architect`: [`pstack/skills/architect/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/architect/SKILL.md)
+- `arena`: [`pstack/skills/arena/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/arena/SKILL.md)
+- `automate-me`: [`pstack/skills/automate-me/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/automate-me/SKILL.md)
+- `blast-radius`: [`pstack/skills/blast-radius/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/blast-radius/SKILL.md)
+- `figure-it-out`: [`pstack/skills/figure-it-out/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/figure-it-out/SKILL.md)
+- `how`: [`pstack/skills/how/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/how/SKILL.md)
+- `interrogate`: [`pstack/skills/interrogate/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/interrogate/SKILL.md)
+- `poteto-mode`: [`pstack/skills/poteto-mode/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/poteto-mode/SKILL.md)
+- `principle-boundary-discipline`: [`pstack/skills/principle-boundary-discipline/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-boundary-discipline/SKILL.md)
+- `principle-build-the-lever`: [`pstack/skills/principle-build-the-lever/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-build-the-lever/SKILL.md)
+- `principle-encode-lessons-in-structure`: [`pstack/skills/principle-encode-lessons-in-structure/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-encode-lessons-in-structure/SKILL.md)
+- `principle-exhaust-the-design-space`: [`pstack/skills/principle-exhaust-the-design-space/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-exhaust-the-design-space/SKILL.md)
+- `principle-experience-first`: [`pstack/skills/principle-experience-first/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-experience-first/SKILL.md)
+- `principle-fix-root-causes`: [`pstack/skills/principle-fix-root-causes/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-fix-root-causes/SKILL.md)
+- `principle-foundational-thinking`: [`pstack/skills/principle-foundational-thinking/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-foundational-thinking/SKILL.md)
+- `principle-guard-the-context-window`: [`pstack/skills/principle-guard-the-context-window/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-guard-the-context-window/SKILL.md)
+- `principle-laziness-protocol`: [`pstack/skills/principle-laziness-protocol/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-laziness-protocol/SKILL.md)
+- `principle-make-operations-idempotent`: [`pstack/skills/principle-make-operations-idempotent/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-make-operations-idempotent/SKILL.md)
+- `principle-migrate-callers-then-delete-legacy-apis`: [`pstack/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md)
+- `principle-minimize-reader-load`: [`pstack/skills/principle-minimize-reader-load/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-minimize-reader-load/SKILL.md)
+- `principle-never-block-on-the-human`: [`pstack/skills/principle-never-block-on-the-human/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-never-block-on-the-human/SKILL.md)
+- `principle-outcome-oriented-execution`: [`pstack/skills/principle-outcome-oriented-execution/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-outcome-oriented-execution/SKILL.md)
+- `principle-prove-it-works`: [`pstack/skills/principle-prove-it-works/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-prove-it-works/SKILL.md)
+- `principle-redesign-from-first-principles`: [`pstack/skills/principle-redesign-from-first-principles/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-redesign-from-first-principles/SKILL.md)
+- `principle-separate-before-serializing-shared-state`: [`pstack/skills/principle-separate-before-serializing-shared-state/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-separate-before-serializing-shared-state/SKILL.md)
+- `principle-sequence-verifiable-units`: [`pstack/skills/principle-sequence-verifiable-units/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-sequence-verifiable-units/SKILL.md)
+- `principle-subtract-before-you-add`: [`pstack/skills/principle-subtract-before-you-add/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-subtract-before-you-add/SKILL.md)
+- `principle-type-system-discipline`: [`pstack/skills/principle-type-system-discipline/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-type-system-discipline/SKILL.md)
+- `recall`: [`pstack/skills/recall/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/recall/SKILL.md)
+- `reflect`: [`pstack/skills/reflect/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/reflect/SKILL.md)
+- `setup-pstack`: [`pstack/skills/setup-pstack/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/setup-pstack/SKILL.md)
+- `show-me-your-work`: [`pstack/skills/show-me-your-work/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/show-me-your-work/SKILL.md)
+- `tdd`: [`pstack/skills/tdd/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/tdd/SKILL.md)
+- `typescript-best-practices`: [`pstack/skills/typescript-best-practices/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/typescript-best-practices/SKILL.md)
+- `unslop`: [`pstack/skills/unslop/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/unslop/SKILL.md)
+- `why`: [`pstack/skills/why/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/why/SKILL.md)
+- `cancel-ralph`: [`ralph-loop/skills/cancel-ralph/SKILL.md`](archives/cursor__plugins/snapshot/ralph-loop/skills/cancel-ralph/SKILL.md)
+- `ralph-loop`: [`ralph-loop/skills/ralph-loop/SKILL.md`](archives/cursor__plugins/snapshot/ralph-loop/skills/ralph-loop/SKILL.md)
+- `ralph-loop-help`: [`ralph-loop/skills/ralph-loop-help/SKILL.md`](archives/cursor__plugins/snapshot/ralph-loop/skills/ralph-loop-help/SKILL.md)
+- `create-learning-path`: [`teaching/skills/create-learning-path/SKILL.md`](archives/cursor__plugins/snapshot/teaching/skills/create-learning-path/SKILL.md)
+- `run-learning-retrospective`: [`teaching/skills/run-learning-retrospective/SKILL.md`](archives/cursor__plugins/snapshot/teaching/skills/run-learning-retrospective/SKILL.md)
+- `thermo-nuclear-code-quality-review`: [`thermos/skills/thermo-nuclear-code-quality-review/SKILL.md`](archives/cursor__plugins/snapshot/thermos/skills/thermo-nuclear-code-quality-review/SKILL.md)
+- `thermo-nuclear-review`: [`thermos/skills/thermo-nuclear-review/SKILL.md`](archives/cursor__plugins/snapshot/thermos/skills/thermo-nuclear-review/SKILL.md)
+- `thermos`: [`thermos/skills/thermos/SKILL.md`](archives/cursor__plugins/snapshot/thermos/skills/thermos/SKILL.md)
+
 ## Duplicate Tracking
 
-- Exact duplicate groups: 4
-- Repeated skill names: 5
+- Exact duplicate groups: 5
+- Repeated skill names: 8
 - Full report: [`catalog/duplicates.json`](catalog/duplicates.json)
 
 ## Add A Source

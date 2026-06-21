@@ -22,5 +22,9 @@
   {
     "url": "https://github.com/obra/Superpowers",
     "notes": "Added with scripts/sync_sources.py add."
+  },
+  {
+    "url": "https://github.com/cursor/plugins",
+    "notes": "Added with scripts/sync_sources.py add from https://github.com/cursor/plugins/blob/main/cursor-team-kit/skills/thermo-nuclear-code-quality-review/SKILL.md."
   }
 ]
