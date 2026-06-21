@@ -26,5 +26,9 @@
   {
     "url": "https://github.com/cursor/plugins",
     "notes": "Added with scripts/sync_sources.py add from https://github.com/cursor/plugins/blob/main/cursor-team-kit/skills/thermo-nuclear-code-quality-review/SKILL.md."
+  },
+  {
+    "url": "https://github.com/affaan-m/ECC",
+    "notes": "Added with scripts/sync_sources.py add from https://github.com/affaan-m/ECC/tree/main."
   }
 ]
