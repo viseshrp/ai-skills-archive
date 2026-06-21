@@ -2,11 +2,11 @@
 
 A self-contained archive of popular AI skill repositories from GitHub.
 
-This repository stores full snapshot copies of source repositories, indexes every discovered `SKILL.md`, records the upstream source metadata, and flags duplicate skills so the archive can grow without losing provenance.
+This repository stores reduced snapshots that keep every discovered `SKILL.md` plus recursively linked local resources, records the upstream source metadata, and flags duplicate skills so the archive can grow without losing provenance.
 
 ## Goals
 
-- Preserve upstream AI skill repositories in a self-contained layout.
+- Preserve upstream AI skill repositories in a self-contained, skill-focused layout.
 - Track source URLs, archived commits, and sync timestamps.
 - Index every discovered skill file with links back to the archived snapshot.
 - Flag exact duplicate skill content and repeated skill names.
@@ -14,7 +14,7 @@ This repository stores full snapshot copies of source repositories, indexes ever
 
 ## Repository Layout
 
-- `archives/<owner>__<repo>/snapshot/`: full copied snapshot of each upstream repository, excluding upstream `.git` history.
+- `archives/<owner>__<repo>/snapshot/`: reduced snapshot containing only `SKILL.md` files and recursively related local resources, excluding upstream `.git` history and unrelated repo files.
 - `archives/<owner>__<repo>/archive.json`: metadata for the archived snapshot.
 - `catalog/sources.json`: source registry used by the sync script.
 - `catalog/sources_report.json`: generated sync metadata for each source.
@@ -29,32 +29,32 @@ This repository stores full snapshot copies of source repositories, indexes ever
   - Archived commit: `17214a29c429a19f7a9607f2c06f9d650ea87eb0`
   - Snapshot: [`archives/addyosmani__agent-skills/snapshot`](archives/addyosmani__agent-skills/snapshot)
   - Skills discovered: 24
-  - Files copied: 93
+  - Files retained in reduced snapshot: 24
 - [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
   - Archived commit: `2c606141936f1eeef17fa3043a72095b4765b9c2`
   - Snapshot: [`archives/multica-ai__andrej-karpathy-skills/snapshot`](archives/multica-ai__andrej-karpathy-skills/snapshot)
   - Skills discovered: 1
-  - Files copied: 9
+  - Files retained in reduced snapshot: 1
 - [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
   - Archived commit: `c22c17eed8a5753aa60681be9734919f2e2f5b42`
   - Snapshot: [`archives/Imbad0202__academic-research-skills/snapshot`](archives/Imbad0202__academic-research-skills/snapshot)
   - Skills discovered: 4
-  - Files copied: 1027
+  - Files retained in reduced snapshot: 148
 - [mattpocock/skills](https://github.com/mattpocock/skills)
   - Archived commit: `6eeb81b5fcfeeb5bd531dd47ab2f9f2bbea27461`
   - Snapshot: [`archives/mattpocock__skills/snapshot`](archives/mattpocock__skills/snapshot)
   - Skills discovered: 34
-  - Files copied: 84
+  - Files retained in reduced snapshot: 57
 - [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman)
   - Archived commit: `25d22f864ad68cc447a4cb93aefde918aa4aec9f`
   - Snapshot: [`archives/juliusbrussee__caveman/snapshot`](archives/juliusbrussee__caveman/snapshot)
   - Skills discovered: 11
-  - Files copied: 148
+  - Files retained in reduced snapshot: 13
 - [obra/Superpowers](https://github.com/obra/Superpowers)
   - Archived commit: `896224c4b1879920ab573417e68fd51d2ccc9072`
   - Snapshot: [`archives/obra__Superpowers/snapshot`](archives/obra__Superpowers/snapshot)
   - Skills discovered: 14
-  - Files copied: 173
+  - Files retained in reduced snapshot: 29
 
 ## Generated Reports
 

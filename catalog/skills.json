@@ -315,6 +315,9 @@
     "relative_directory": "academic-pipeline",
     "sha256": "4430cc971a5347b34f9f06f9dc27232035e654880423e5d967b4a58dbbb83b14",
     "linked_local_files": [
+      "academic-paper/agents/literature_strategist_agent.md",
+      "academic-paper/references/anti_leakage_protocol.md",
+      "academic-paper/references/policy_anchor_disclosure_protocol.md",
       "academic-pipeline/agents/claim_ref_alignment_audit_agent.md",
       "academic-pipeline/agents/collaboration_depth_agent.md",
       "academic-pipeline/agents/integrity_verification_agent.md",
@@ -322,12 +325,14 @@
       "academic-pipeline/agents/state_tracker_agent.md",
       "academic-pipeline/examples/full_pipeline_example.md",
       "academic-pipeline/examples/mid_entry_example.md",
+      "academic-pipeline/references/adapters/overview.md",
       "academic-pipeline/references/ai_research_failure_modes.md",
       "academic-pipeline/references/changelog.md",
       "academic-pipeline/references/claim_audit_calibration_protocol.md",
       "academic-pipeline/references/claim_verification_protocol.md",
       "academic-pipeline/references/external_review_protocol.md",
       "academic-pipeline/references/integrity_review_protocol.md",
+      "academic-pipeline/references/literature_corpus_consumers.md",
       "academic-pipeline/references/mode_advisor.md",
       "academic-pipeline/references/passport_as_reset_boundary.md",
       "academic-pipeline/references/pipeline_state_machine.md",
@@ -338,7 +343,42 @@
       "academic-pipeline/references/reproducibility_audit.md",
       "academic-pipeline/references/team_collaboration_protocol.md",
       "academic-pipeline/references/two_stage_review_protocol.md",
-      "academic-pipeline/templates/pipeline_status_template.md"
+      "academic-pipeline/templates/pipeline_status_template.md",
+      "deep-research/agents/bibliography_agent.md",
+      "docs/PERFORMANCE.md",
+      "docs/SETUP.md",
+      "docs/design/2026-04-26-ars-v3.6.5-consumer-integration-design.md",
+      "docs/design/2026-04-29-ars-v3.6.7-downstream-agent-pattern-protection-spec.md",
+      "docs/design/2026-04-30-ars-v3.6.7-step-6-orchestrator-hooks-spec.md",
+      "docs/design/2026-05-15-issue-103-claim-alignment-audit-decision.md",
+      "docs/design/2026-05-15-issue-103-claim-alignment-audit-spec.md",
+      "docs/design/2026-05-15-issue-111-slr-lineage-emission-design.md",
+      "docs/design/2026-06-08-260-experiment-provenance-intake-spec.md",
+      "examples/passport_with_experiment_provenance.yaml",
+      "scripts/adapters/README.md",
+      "scripts/adapters/_common.py",
+      "scripts/check_policy_anchor_protocol.py",
+      "scripts/test_policy_anchor_disclosure.py",
+      "shared/agents/compliance_agent.md",
+      "shared/artifact_reproducibility_pattern.md",
+      "shared/benchmark_report_pattern.md",
+      "shared/compliance_checkpoint_protocol.md",
+      "shared/compliance_report.schema.json",
+      "shared/contracts/passport/audit_artifact_entry.schema.json",
+      "shared/contracts/passport/claim_audit_result.schema.json",
+      "shared/contracts/passport/claim_drift.schema.json",
+      "shared/contracts/passport/claim_intent_manifest.schema.json",
+      "shared/contracts/passport/constraint_violation.schema.json",
+      "shared/contracts/passport/experiment_alignment_result.schema.json",
+      "shared/contracts/passport/experiment_provenance_entry.schema.json",
+      "shared/contracts/passport/literature_corpus_entry.schema.json",
+      "shared/contracts/passport/rejection_log.schema.json",
+      "shared/contracts/passport/reset_ledger_entry.schema.json",
+      "shared/contracts/passport/uncited_assertion.schema.json",
+      "shared/cross_model_verification.md",
+      "shared/ground_truth_isolation_pattern.md",
+      "shared/handoff_schemas.md",
+      "shared/prisma_trAIce_protocol.md"
     ]
   },
   {
@@ -350,6 +390,8 @@
     "relative_directory": "deep-research",
     "sha256": "3a6d1fa662857068376a1b507143618401febea272321a2d5a70daefafd2893c",
     "linked_local_files": [
+      "academic-paper/agents/literature_strategist_agent.md",
+      "academic-pipeline/references/literature_corpus_consumers.md",
       "deep-research/agents/bibliography_agent.md",
       "deep-research/agents/devils_advocate_agent.md",
       "deep-research/agents/editor_in_chief_agent.md",
@@ -395,7 +437,8 @@
       "deep-research/templates/preregistration_template.md",
       "deep-research/templates/prisma_protocol_template.md",
       "deep-research/templates/prisma_report_template.md",
-      "deep-research/templates/research_brief_template.md"
+      "deep-research/templates/research_brief_template.md",
+      "docs/design/2026-04-26-ars-v3.6.5-consumer-integration-design.md"
     ]
   },
   {
@@ -959,6 +1002,8 @@
     "linked_local_files": [
       "skills/requesting-code-review/code-reviewer.md",
       "skills/subagent-driven-development/implementer-prompt.md",
+      "skills/subagent-driven-development/scripts/review-package",
+      "skills/subagent-driven-development/scripts/task-brief",
       "skills/subagent-driven-development/task-reviewer-prompt.md"
     ]
   },
@@ -1044,6 +1089,7 @@
       "skills/using-superpowers/references/codex-tools.md",
       "skills/using-superpowers/references/copilot-tools.md",
       "skills/using-superpowers/references/gemini-tools.md",
+      "skills/writing-skills/examples/CLAUDE_MD_TESTING.md",
       "skills/writing-skills/render-graphs.js",
       "skills/writing-skills/testing-skills-with-subagents.md"
     ]

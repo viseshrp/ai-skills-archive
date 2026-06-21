@@ -11,6 +11,7 @@ import re
 import shutil
 import subprocess
 from collections import defaultdict
+from collections import deque
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
@@ -29,21 +30,37 @@ AGENT_LOG_FILE = REPO_ROOT / "AGENT_LOG.md"
 README_FILE = REPO_ROOT / "README.md"
 
 TEXT_EXTENSIONS = {
+    ".cjs",
+    ".cmd",
+    ".css",
+    ".dot",
+    ".gif",
+    ".html",
+    ".jpeg",
+    ".jpg",
     ".json",
     ".md",
     ".mdx",
     ".mjs",
+    ".js",
+    ".pdf",
+    ".png",
     ".py",
     ".sh",
+    ".svg",
+    ".tex",
+    ".ts",
+    ".tsx",
     ".ps1",
     ".toml",
     ".txt",
+    ".webp",
     ".yaml",
     ".yml",
 }
 
 PATH_TOKEN_RE = re.compile(
-    r"(?P<path>(?:\.\.?/|[A-Za-z0-9_-]+/)[^\s'\"`()\[\]<>]+?\.(?:md|mdx|py|mjs|js|json|yaml|yml|toml|sh|ps1|txt))"
+    r"(?P<path>(?:\.\.?/)?(?:[A-Za-z0-9._-]+/)+[A-Za-z0-9._-]+(?:\.(?:md|mdx|txt|json|ya?ml|toml|py|sh|ps1|js|mjs|cjs|ts|tsx|html|css|svg|png|jpg|jpeg|gif|webp|pdf|tex|dot|cmd))?)"
 )
 MD_LINK_RE = re.compile(r"\[[^\]]+\]\((?P<link>[^)]+)\)")
 NAME_RE = re.compile(r"^name:\s*[\"']?(.*?)[\"']?\s*$", re.MULTILINE)
@@ -99,29 +116,18 @@ def clone_or_update(url: str, destination: Path) -> None:
         run(["git", "clone", "--depth", "1", url, str(destination)])
 
 
-def copy_repo_snapshot(source: Path, destination: Path) -> dict[str, int]:
+def copy_selected_files(source: Path, destination: Path, selected_files: set[Path]) -> dict[str, int]:
     if destination.exists():
         shutil.rmtree(destination)
     destination.mkdir(parents=True, exist_ok=True)
 
-    file_count = 0
-    dir_count = 0
-    for root, dirs, files in os.walk(source):
-        root_path = Path(root)
-        dirs[:] = [d for d in dirs if d != ".git"]
-        relative_root = root_path.relative_to(source)
-        target_root = destination / relative_root
-        target_root.mkdir(parents=True, exist_ok=True)
-        dir_count += len(dirs)
-        for file_name in files:
-            source_file = root_path / file_name
-            if ".git" in source_file.parts:
-                continue
-            target_file = target_root / file_name
-            target_file.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(source_file, target_file)
-            file_count += 1
-    return {"files": file_count, "directories": dir_count}
+    for relative_path in sorted(selected_files):
+        target_file = destination / relative_path
+        target_file.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source / relative_path, target_file)
+
+    directories = {path.parent for path in selected_files if path.parent != Path(".")}
+    return {"files": len(selected_files), "directories": len(directories)}
 
 
 def file_sha256(path: Path) -> str:
@@ -141,25 +147,63 @@ def read_text_if_possible(path: Path) -> str | None:
         return None
 
 
-def find_linked_paths(skill_path: Path, repo_root: Path) -> list[str]:
-    content = skill_path.read_text()
-    found: set[str] = set()
+def normalize_reference(candidate: str) -> str:
+    return candidate.strip().strip("'\"`").split("#", 1)[0].split("?", 1)[0].rstrip(".,:;")
 
+
+def resolve_local_reference(base_path: Path, repo_root: Path, candidate: str) -> Path | None:
+    candidate = normalize_reference(candidate)
+    if not candidate or candidate.startswith(("http://", "https://", "#", "mailto:", "data:")):
+        return None
+
+    resolved = (base_path.parent / candidate).resolve()
+    try:
+        resolved.relative_to(repo_root)
+    except ValueError:
+        return None
+    if not resolved.exists() or not resolved.is_file() or ".git" in resolved.parts:
+        return None
+    return resolved
+
+
+def extract_local_file_refs(path: Path, repo_root: Path) -> list[Path]:
+    content = read_text_if_possible(path)
+    if content is None:
+        return []
+
+    found: set[Path] = set()
     for match in MD_LINK_RE.finditer(content):
-        candidate = match.group("link").strip()
-        if candidate.startswith(("http://", "https://", "#", "mailto:")):
-            continue
-        resolved = (skill_path.parent / candidate).resolve()
-        if resolved.exists() and resolved.is_file():
-            found.add(str(resolved.relative_to(repo_root)))
+        resolved = resolve_local_reference(path, repo_root, match.group("link"))
+        if resolved is not None:
+            found.add(resolved)
 
     for match in PATH_TOKEN_RE.finditer(content):
-        candidate = match.group("path")
-        resolved = (skill_path.parent / candidate).resolve()
-        if resolved.exists() and resolved.is_file():
-            found.add(str(resolved.relative_to(repo_root)))
+        resolved = resolve_local_reference(path, repo_root, match.group("path"))
+        if resolved is not None:
+            found.add(resolved)
 
     return sorted(found)
+
+
+def collect_related_files(start_path: Path, repo_root: Path) -> list[str]:
+    queue: deque[Path] = deque([start_path])
+    visited_text_files: set[Path] = set()
+    related_files: set[Path] = set()
+
+    while queue:
+        current = queue.popleft()
+        if current in visited_text_files:
+            continue
+        visited_text_files.add(current)
+        for linked_path in extract_local_file_refs(current, repo_root):
+            if linked_path == start_path:
+                continue
+            if linked_path not in related_files:
+                related_files.add(linked_path)
+            if read_text_if_possible(linked_path) is not None:
+                queue.append(linked_path)
+
+    return sorted(str(path.relative_to(repo_root)) for path in related_files)
 
 
 def parse_skill_metadata(skill_path: Path) -> tuple[str, str]:
@@ -177,14 +221,19 @@ def build_repo_report(source: dict[str, Any], clone_dir: Path, archive_root: Pat
     commit = run(["git", "rev-parse", "HEAD"], cwd=clone_dir)
     commit_date = run(["git", "show", "-s", "--format=%cI", "HEAD"], cwd=clone_dir)
     snapshot_dir = archive_root / "snapshot"
-    counts = copy_repo_snapshot(clone_dir, snapshot_dir)
+    source_skill_paths = sorted(
+        path for path in clone_dir.rglob("SKILL.md") if ".git" not in path.parts
+    )
 
+    selected_files: set[Path] = set()
     skill_records: list[dict[str, Any]] = []
-    for skill_path in sorted(snapshot_dir.rglob("SKILL.md")):
-        relative_skill_path = skill_path.relative_to(snapshot_dir)
+    for skill_path in source_skill_paths:
+        relative_skill_path = skill_path.relative_to(clone_dir)
+        related_paths = collect_related_files(skill_path, clone_dir)
+        selected_files.add(relative_skill_path)
+        selected_files.update(Path(path) for path in related_paths)
         skill_name, description = parse_skill_metadata(skill_path)
         skill_text = skill_path.read_text()
-        linked_paths = find_linked_paths(skill_path, snapshot_dir)
         skill_records.append(
             {
                 "source_repo": f"{owner}/{repo}",
@@ -194,10 +243,11 @@ def build_repo_report(source: dict[str, Any], clone_dir: Path, archive_root: Pat
                 "path": str(relative_skill_path),
                 "relative_directory": str(relative_skill_path.parent),
                 "sha256": hashlib.sha256(skill_text.encode("utf-8")).hexdigest(),
-                "linked_local_files": linked_paths,
+                "linked_local_files": related_paths,
             }
         )
 
+    counts = copy_selected_files(clone_dir, snapshot_dir, selected_files)
     all_files = [path for path in snapshot_dir.rglob("*") if path.is_file()]
     report = {
         "owner": owner,
@@ -214,6 +264,7 @@ def build_repo_report(source: dict[str, Any], clone_dir: Path, archive_root: Pat
         "file_count": counts["files"],
         "directory_count": counts["directories"],
         "skill_count": len(skill_records),
+        "snapshot_mode": "skills-and-related-files-only",
         "skill_paths": [record["path"] for record in skill_records],
         "all_text_file_hashes": {
             str(path.relative_to(snapshot_dir)): file_sha256(path)
@@ -304,11 +355,11 @@ def render_readme(repo_reports: list[dict[str, Any]], skill_records: list[dict[s
         "",
         "A self-contained archive of popular AI skill repositories from GitHub.",
         "",
-        "This repository stores full snapshot copies of source repositories, indexes every discovered `SKILL.md`, records the upstream source metadata, and flags duplicate skills so the archive can grow without losing provenance.",
+        "This repository stores reduced snapshots that keep every discovered `SKILL.md` plus recursively linked local resources, records the upstream source metadata, and flags duplicate skills so the archive can grow without losing provenance.",
         "",
         "## Goals",
         "",
-        "- Preserve upstream AI skill repositories in a self-contained layout.",
+        "- Preserve upstream AI skill repositories in a self-contained, skill-focused layout.",
         "- Track source URLs, archived commits, and sync timestamps.",
         "- Index every discovered skill file with links back to the archived snapshot.",
         "- Flag exact duplicate skill content and repeated skill names.",
@@ -316,7 +367,7 @@ def render_readme(repo_reports: list[dict[str, Any]], skill_records: list[dict[s
         "",
         "## Repository Layout",
         "",
-        "- `archives/<owner>__<repo>/snapshot/`: full copied snapshot of each upstream repository, excluding upstream `.git` history.",
+        "- `archives/<owner>__<repo>/snapshot/`: reduced snapshot containing only `SKILL.md` files and recursively related local resources, excluding upstream `.git` history and unrelated repo files.",
         "- `archives/<owner>__<repo>/archive.json`: metadata for the archived snapshot.",
         "- `catalog/sources.json`: source registry used by the sync script.",
         "- `catalog/sources_report.json`: generated sync metadata for each source.",
@@ -336,7 +387,7 @@ def render_readme(repo_reports: list[dict[str, Any]], skill_records: list[dict[s
                 f"  - Archived commit: `{report['commit']}`",
                 f"  - Snapshot: [`{report['snapshot_path']}`]({report['snapshot_path']})",
                 f"  - Skills discovered: {report['skill_count']}",
-                f"  - Files copied: {report['file_count']}",
+                f"  - Files retained in reduced snapshot: {report['file_count']}",
             ]
         )
 
