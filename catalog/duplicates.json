@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T18:29:55.450270+00:00",
+  "generated_at": "2026-06-21T18:43:26.520353+00:00",
   "exact_skill_duplicates": [
     {
       "sha256": "8b0d64c622d8a70411bbd86e736ac23cc0465fca1943a37f081e58e9d3afd210",
@@ -120,6 +120,22 @@
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/caveman-stats/SKILL.md",
           "sha256": "b9e49e46ede956e0c1633eae82a695c996f728bc48f3903f001d301068a2b0ea"
+        }
+      ]
+    },
+    {
+      "skill_name": "test-driven-development",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "addyosmani/agent-skills",
+          "path": "skills/test-driven-development/SKILL.md",
+          "sha256": "6c60e193d77a6c52eb3d9a7ca774f1801b9f798ec34f075720e0425a8094f50e"
+        },
+        {
+          "source_repo": "obra/Superpowers",
+          "path": "skills/test-driven-development/SKILL.md",
+          "sha256": "b5b4717b8b761cce15a6cfe9022e33fd959e0894c0c39d72c9cb49c23486c10e"
         }
       ]
     }

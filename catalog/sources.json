@@ -18,5 +18,9 @@
   {
     "url": "https://github.com/juliusbrussee/caveman",
     "notes": "Initial seed source provided by the user."
+  },
+  {
+    "url": "https://github.com/obra/Superpowers",
+    "notes": "Added with scripts/sync_sources.py add."
   }
 ]

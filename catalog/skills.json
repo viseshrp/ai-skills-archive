@@ -885,5 +885,167 @@
     "relative_directory": "skills/caveman-stats",
     "sha256": "b9e49e46ede956e0c1633eae82a695c996f728bc48f3903f001d301068a2b0ea",
     "linked_local_files": []
+  },
+  {
+    "source_repo": "obra/Superpowers",
+    "repo_key": "obra__Superpowers",
+    "skill_name": "brainstorming",
+    "description": "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.",
+    "path": "skills/brainstorming/SKILL.md",
+    "relative_directory": "skills/brainstorming",
+    "sha256": "e14914605f640e0841758e45d0ab2a53243b59b921f929e47921c99668f2e61d",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "obra/Superpowers",
+    "repo_key": "obra__Superpowers",
+    "skill_name": "dispatching-parallel-agents",
+    "description": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
+    "path": "skills/dispatching-parallel-agents/SKILL.md",
+    "relative_directory": "skills/dispatching-parallel-agents",
+    "sha256": "f0df13f584049059cc5619f90061405b89dcc6e28ab3f2a8517d27d99c7a46a6",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "obra/Superpowers",
+    "repo_key": "obra__Superpowers",
+    "skill_name": "executing-plans",
+    "description": "Use when you have a written implementation plan to execute in a separate session with review checkpoints",
+    "path": "skills/executing-plans/SKILL.md",
+    "relative_directory": "skills/executing-plans",
+    "sha256": "b357c2a2e5bf24adf237b5d4a83cacd828f07b886d0873ad91546aa3c99905c9",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "obra/Superpowers",
+    "repo_key": "obra__Superpowers",
+    "skill_name": "finishing-a-development-branch",
+    "description": "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting structured options for merge, PR, or cleanup",
+    "path": "skills/finishing-a-development-branch/SKILL.md",
+    "relative_directory": "skills/finishing-a-development-branch",
+    "sha256": "e6d4a812de900d33c6eacfb40747f99427f25c304a7b7099120f9373b115a47f",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "obra/Superpowers",
+    "repo_key": "obra__Superpowers",
+    "skill_name": "receiving-code-review",
+    "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation",
+    "path": "skills/receiving-code-review/SKILL.md",
+    "relative_directory": "skills/receiving-code-review",
+    "sha256": "647036bbdab7bf2317e14e079595e984c9030f64295e2b4c0fb57dbeb48f25dd",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "obra/Superpowers",
+    "repo_key": "obra__Superpowers",
+    "skill_name": "requesting-code-review",
+    "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
+    "path": "skills/requesting-code-review/SKILL.md",
+    "relative_directory": "skills/requesting-code-review",
+    "sha256": "1017ccdd5bc61fab67c654cf118cbdb520464b313073a0a6b9a6b9aa647a3ad6",
+    "linked_local_files": [
+      "skills/requesting-code-review/code-reviewer.md"
+    ]
+  },
+  {
+    "source_repo": "obra/Superpowers",
+    "repo_key": "obra__Superpowers",
+    "skill_name": "subagent-driven-development",
+    "description": "Use when executing implementation plans with independent tasks in the current session",
+    "path": "skills/subagent-driven-development/SKILL.md",
+    "relative_directory": "skills/subagent-driven-development",
+    "sha256": "41ab239a6ad1c487cd839fdac972a8c9cf0f5e90efa59a63f963767864f0df4c",
+    "linked_local_files": [
+      "skills/requesting-code-review/code-reviewer.md",
+      "skills/subagent-driven-development/implementer-prompt.md",
+      "skills/subagent-driven-development/task-reviewer-prompt.md"
+    ]
+  },
+  {
+    "source_repo": "obra/Superpowers",
+    "repo_key": "obra__Superpowers",
+    "skill_name": "systematic-debugging",
+    "description": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes",
+    "path": "skills/systematic-debugging/SKILL.md",
+    "relative_directory": "skills/systematic-debugging",
+    "sha256": "3b20719eca4f0461cb51a195221320d775dcf03b6859271066a03a5132a6ce7a",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "obra/Superpowers",
+    "repo_key": "obra__Superpowers",
+    "skill_name": "test-driven-development",
+    "description": "Use when implementing any feature or bugfix, before writing implementation code",
+    "path": "skills/test-driven-development/SKILL.md",
+    "relative_directory": "skills/test-driven-development",
+    "sha256": "b5b4717b8b761cce15a6cfe9022e33fd959e0894c0c39d72c9cb49c23486c10e",
+    "linked_local_files": [
+      "skills/test-driven-development/testing-anti-patterns.md"
+    ]
+  },
+  {
+    "source_repo": "obra/Superpowers",
+    "repo_key": "obra__Superpowers",
+    "skill_name": "using-git-worktrees",
+    "description": "Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists via native tools or git worktree fallback",
+    "path": "skills/using-git-worktrees/SKILL.md",
+    "relative_directory": "skills/using-git-worktrees",
+    "sha256": "e2c3ec142e52868a51af246c620cd76ab648dcf27d6900d47e6ffd07159a9794",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "obra/Superpowers",
+    "repo_key": "obra__Superpowers",
+    "skill_name": "using-superpowers",
+    "description": "Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions",
+    "path": "skills/using-superpowers/SKILL.md",
+    "relative_directory": "skills/using-superpowers",
+    "sha256": "918562bbba1c73d1407c50de77a92eeaa6930508bdb57a64324d7d508a9069e1",
+    "linked_local_files": [
+      "skills/using-superpowers/references/antigravity-tools.md",
+      "skills/using-superpowers/references/claude-code-tools.md",
+      "skills/using-superpowers/references/codex-tools.md",
+      "skills/using-superpowers/references/copilot-tools.md",
+      "skills/using-superpowers/references/gemini-tools.md",
+      "skills/using-superpowers/references/pi-tools.md"
+    ]
+  },
+  {
+    "source_repo": "obra/Superpowers",
+    "repo_key": "obra__Superpowers",
+    "skill_name": "verification-before-completion",
+    "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always",
+    "path": "skills/verification-before-completion/SKILL.md",
+    "relative_directory": "skills/verification-before-completion",
+    "sha256": "ea52d15aabaf72bc6b558efe2c126f161b53961090ddcd712000273bfe8c7b6c",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "obra/Superpowers",
+    "repo_key": "obra__Superpowers",
+    "skill_name": "writing-plans",
+    "description": "Use when you have a spec or requirements for a multi-step task, before touching code",
+    "path": "skills/writing-plans/SKILL.md",
+    "relative_directory": "skills/writing-plans",
+    "sha256": "272e1af349f5062c28dc282b3e21b220d58d683a7314a10c455b7432ec91d845",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "obra/Superpowers",
+    "repo_key": "obra__Superpowers",
+    "skill_name": "writing-skills",
+    "description": "Use when creating new skills, editing existing skills, or verifying skills work before deployment",
+    "path": "skills/writing-skills/SKILL.md",
+    "relative_directory": "skills/writing-skills",
+    "sha256": "f01f666a4426ce800d40649704104c252e6607c196656e5ce6a28e9f51650f3a",
+    "linked_local_files": [
+      "skills/using-superpowers/references/claude-code-tools.md",
+      "skills/using-superpowers/references/codex-tools.md",
+      "skills/using-superpowers/references/copilot-tools.md",
+      "skills/using-superpowers/references/gemini-tools.md",
+      "skills/writing-skills/render-graphs.js",
+      "skills/writing-skills/testing-skills-with-subagents.md"
+    ]
   }
 ]

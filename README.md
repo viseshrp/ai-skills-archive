@@ -50,6 +50,11 @@ This repository stores full snapshot copies of source repositories, indexes ever
   - Snapshot: [`archives/juliusbrussee__caveman/snapshot`](archives/juliusbrussee__caveman/snapshot)
   - Skills discovered: 11
   - Files copied: 148
+- [obra/Superpowers](https://github.com/obra/Superpowers)
+  - Archived commit: `896224c4b1879920ab573417e68fd51d2ccc9072`
+  - Snapshot: [`archives/obra__Superpowers/snapshot`](archives/obra__Superpowers/snapshot)
+  - Skills discovered: 14
+  - Files copied: 173
 
 ## Generated Reports
 
@@ -144,10 +149,26 @@ This repository stores full snapshot copies of source repositories, indexes ever
 - `caveman-review`: [`skills/caveman-review/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-review/SKILL.md)
 - `caveman-stats`: [`skills/caveman-stats/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-stats/SKILL.md)
 
+### obra/Superpowers
+- `brainstorming`: [`skills/brainstorming/SKILL.md`](archives/obra__Superpowers/snapshot/skills/brainstorming/SKILL.md)
+- `dispatching-parallel-agents`: [`skills/dispatching-parallel-agents/SKILL.md`](archives/obra__Superpowers/snapshot/skills/dispatching-parallel-agents/SKILL.md)
+- `executing-plans`: [`skills/executing-plans/SKILL.md`](archives/obra__Superpowers/snapshot/skills/executing-plans/SKILL.md)
+- `finishing-a-development-branch`: [`skills/finishing-a-development-branch/SKILL.md`](archives/obra__Superpowers/snapshot/skills/finishing-a-development-branch/SKILL.md)
+- `receiving-code-review`: [`skills/receiving-code-review/SKILL.md`](archives/obra__Superpowers/snapshot/skills/receiving-code-review/SKILL.md)
+- `requesting-code-review`: [`skills/requesting-code-review/SKILL.md`](archives/obra__Superpowers/snapshot/skills/requesting-code-review/SKILL.md)
+- `subagent-driven-development`: [`skills/subagent-driven-development/SKILL.md`](archives/obra__Superpowers/snapshot/skills/subagent-driven-development/SKILL.md)
+- `systematic-debugging`: [`skills/systematic-debugging/SKILL.md`](archives/obra__Superpowers/snapshot/skills/systematic-debugging/SKILL.md)
+- `test-driven-development`: [`skills/test-driven-development/SKILL.md`](archives/obra__Superpowers/snapshot/skills/test-driven-development/SKILL.md)
+- `using-git-worktrees`: [`skills/using-git-worktrees/SKILL.md`](archives/obra__Superpowers/snapshot/skills/using-git-worktrees/SKILL.md)
+- `using-superpowers`: [`skills/using-superpowers/SKILL.md`](archives/obra__Superpowers/snapshot/skills/using-superpowers/SKILL.md)
+- `verification-before-completion`: [`skills/verification-before-completion/SKILL.md`](archives/obra__Superpowers/snapshot/skills/verification-before-completion/SKILL.md)
+- `writing-plans`: [`skills/writing-plans/SKILL.md`](archives/obra__Superpowers/snapshot/skills/writing-plans/SKILL.md)
+- `writing-skills`: [`skills/writing-skills/SKILL.md`](archives/obra__Superpowers/snapshot/skills/writing-skills/SKILL.md)
+
 ## Duplicate Tracking
 
 - Exact duplicate groups: 4
-- Repeated skill names: 4
+- Repeated skill names: 5
 - Full report: [`catalog/duplicates.json`](catalog/duplicates.json)
 
 ## Add A Source
