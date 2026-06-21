@@ -1,0 +1,29 @@
+{
+  "owner": "multica-ai",
+  "repo": "andrej-karpathy-skills",
+  "repo_key": "multica-ai__andrej-karpathy-skills",
+  "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+  "notes": "Initial seed source provided by the user.",
+  "default_branch": "main",
+  "commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+  "commit_date": "2026-04-20T18:05:04+08:00",
+  "archived_at": "2026-06-21T18:29:53.728049+00:00",
+  "archive_path": "archives/multica-ai__andrej-karpathy-skills",
+  "snapshot_path": "archives/multica-ai__andrej-karpathy-skills/snapshot",
+  "file_count": 9,
+  "directory_count": 5,
+  "skill_count": 1,
+  "skill_paths": [
+    "skills/karpathy-guidelines/SKILL.md"
+  ],
+  "all_text_file_hashes": {
+    "README.zh.md": "39b2907faf3d2456100259977175a5ffa5dc464a535c7c916483390a46350a02",
+    "EXAMPLES.md": "9bc0ba934077a0514bab0fc7a4ffad37ecd40bfddf57f29d0b8cef5e5b3d1f28",
+    "CURSOR.md": "ef0850c959524000801ce8ea6b8393b00196cb502ff407fb4a449b45e15ae937",
+    "README.md": "daf314efb31894b86d68b67786c820bd8470bb2126e578ba9cd0e3e2667883f8",
+    "CLAUDE.md": "694a2d721e41c385f3db492838c23299826df5ba9809e3b0721aac70021e196a",
+    ".claude-plugin/marketplace.json": "9e5d3a1e84c7a49eff1be18b698018c58fdef3bf6f6c94729c663f7577ca3032",
+    ".claude-plugin/plugin.json": "52919436493fc5403e3022c45dff0d6a82f0047c02b17797e2bad14b3ec22ce9",
+    "skills/karpathy-guidelines/SKILL.md": "6e22cc54cb02a5e98ae42d06d9d7292db0c1b43894831b32879beb0166b2aea7"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "generated_at": "2026-06-21T18:29:55.450270+00:00",
+  "exact_skill_duplicates": [
+    {
+      "sha256": "8b0d64c622d8a70411bbd86e736ac23cc0465fca1943a37f081e58e9d3afd210",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "plugins/caveman/skills/caveman-compress/SKILL.md"
+        },
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "skills/caveman-compress/SKILL.md"
+        }
+      ]
+    },
+    {
+      "sha256": "b74f374f6aae6e9a31e78e7d876860406fe5833378e9298536edf176c12f379b",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "plugins/caveman/skills/cavecrew/SKILL.md"
+        },
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "skills/cavecrew/SKILL.md"
+        }
+      ]
+    },
+    {
+      "sha256": "b9e49e46ede956e0c1633eae82a695c996f728bc48f3903f001d301068a2b0ea",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "plugins/caveman/skills/caveman-stats/SKILL.md"
+        },
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "skills/caveman-stats/SKILL.md"
+        }
+      ]
+    },
+    {
+      "sha256": "e38ec671ecbee47ce234190be12615daf60ac667d775b7340d49d07f4f63c7bc",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "plugins/caveman/skills/caveman/SKILL.md"
+        },
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "skills/caveman/SKILL.md"
+        }
+      ]
+    }
+  ],
+  "duplicate_skill_names": [
+    {
+      "skill_name": "cavecrew",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "plugins/caveman/skills/cavecrew/SKILL.md",
+          "sha256": "b74f374f6aae6e9a31e78e7d876860406fe5833378e9298536edf176c12f379b"
+        },
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "skills/cavecrew/SKILL.md",
+          "sha256": "b74f374f6aae6e9a31e78e7d876860406fe5833378e9298536edf176c12f379b"
+        }
+      ]
+    },
+    {
+      "skill_name": "caveman",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "plugins/caveman/skills/caveman/SKILL.md",
+          "sha256": "e38ec671ecbee47ce234190be12615daf60ac667d775b7340d49d07f4f63c7bc"
+        },
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "skills/caveman/SKILL.md",
+          "sha256": "e38ec671ecbee47ce234190be12615daf60ac667d775b7340d49d07f4f63c7bc"
+        }
+      ]
+    },
+    {
+      "skill_name": "caveman-compress",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "plugins/caveman/skills/caveman-compress/SKILL.md",
+          "sha256": "8b0d64c622d8a70411bbd86e736ac23cc0465fca1943a37f081e58e9d3afd210"
+        },
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "skills/caveman-compress/SKILL.md",
+          "sha256": "8b0d64c622d8a70411bbd86e736ac23cc0465fca1943a37f081e58e9d3afd210"
+        }
+      ]
+    },
+    {
+      "skill_name": "caveman-stats",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "plugins/caveman/skills/caveman-stats/SKILL.md",
+          "sha256": "b9e49e46ede956e0c1633eae82a695c996f728bc48f3903f001d301068a2b0ea"
+        },
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "skills/caveman-stats/SKILL.md",
+          "sha256": "b9e49e46ede956e0c1633eae82a695c996f728bc48f3903f001d301068a2b0ea"
+        }
+      ]
+    }
+  ]
+}
