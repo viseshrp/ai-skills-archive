@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T19:28:05.945484+00:00",
+  "generated_at": "2026-06-22T14:27:21.960993+00:00",
   "exact_skill_duplicates": [
     {
       "sha256": "060f50513003731e9c0e7f78e6a6a9b8cb178a74a2ec2a6ca75cdae804f0d564",
@@ -1675,11 +1675,6 @@
       "count": 6,
       "locations": [
         {
-          "source_repo": "Imbad0202/academic-research-skills",
-          "path": "deep-research/SKILL.md",
-          "sha256": "3a6d1fa662857068376a1b507143618401febea272321a2d5a70daefafd2893c"
-        },
-        {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/deep-research/SKILL.md",
           "sha256": "5692b149b1b82748880dacde47f5ebe9e72d4d14fc50930063b4716b00944e03"
@@ -1703,6 +1698,11 @@
           "source_repo": "affaan-m/ECC",
           "path": "skills/deep-research/SKILL.md",
           "sha256": "f85e06874ffd0fcfea6051b4292f45fc2b7e4cd47586659817ddbafd6bea3ede"
+        },
+        {
+          "source_repo": "Imbad0202/academic-research-skills",
+          "path": "deep-research/SKILL.md",
+          "sha256": "3a6d1fa662857068376a1b507143618401febea272321a2d5a70daefafd2893c"
         }
       ]
     },
@@ -5448,14 +5448,14 @@
       "count": 2,
       "locations": [
         {
-          "source_repo": "mattpocock/skills",
-          "path": "skills/engineering/tdd/SKILL.md",
-          "sha256": "13722957277ed4960061a2d254a0ed7d86f95693e88b40d1c68307e7fdc98287"
-        },
-        {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/tdd/SKILL.md",
           "sha256": "adad031f9e79d7f7389fa128f7af8e03344831270e282cf4e40bdacb8418c386"
+        },
+        {
+          "source_repo": "mattpocock/skills",
+          "path": "skills/engineering/tdd/SKILL.md",
+          "sha256": "13722957277ed4960061a2d254a0ed7d86f95693e88b40d1c68307e7fdc98287"
         }
       ]
     },

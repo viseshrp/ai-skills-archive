@@ -79,7 +79,7 @@ def run(cmd: list[str], cwd: Path | None = None) -> str:
 
 
 def load_sources() -> list[dict[str, Any]]:
-    return json.loads(SOURCES_FILE.read_text())
+    return json.loads(SOURCES_FILE.read_text(encoding="utf-8"))
 
 
 def ensure_dirs() -> None:
@@ -106,6 +106,10 @@ def canonical_repo_url(url: str) -> str:
 
 def repo_key(owner: str, repo: str) -> str:
     return f"{owner}__{repo}"
+
+
+def repo_relpath(path: Path) -> str:
+    return path.as_posix()
 
 
 def clone_or_update(url: str, destination: Path) -> None:
@@ -147,7 +151,7 @@ def read_text_if_possible(path: Path) -> str | None:
     if path.suffix.lower() not in TEXT_EXTENSIONS and path.name != "SKILL.md":
         return None
     try:
-        return path.read_text()
+        return path.read_text(encoding="utf-8")
     except UnicodeDecodeError:
         return None
 
@@ -208,11 +212,11 @@ def collect_related_files(start_path: Path, repo_root: Path) -> list[str]:
             if read_text_if_possible(linked_path) is not None:
                 queue.append(linked_path)
 
-    return sorted(str(path.relative_to(repo_root)) for path in related_files)
+    return sorted(repo_relpath(path.relative_to(repo_root)) for path in related_files)
 
 
 def parse_skill_metadata(skill_path: Path) -> tuple[str, str]:
-    content = skill_path.read_text()
+    content = skill_path.read_text(encoding="utf-8")
     name_match = NAME_RE.search(content)
     desc_match = DESC_RE.search(content)
     skill_name = name_match.group(1).strip() if name_match else skill_path.parent.name
@@ -238,15 +242,15 @@ def build_repo_report(source: dict[str, Any], clone_dir: Path, archive_root: Pat
         selected_files.add(relative_skill_path)
         selected_files.update(Path(path) for path in related_paths)
         skill_name, description = parse_skill_metadata(skill_path)
-        skill_text = skill_path.read_text()
+        skill_text = skill_path.read_text(encoding="utf-8")
         skill_records.append(
             {
                 "source_repo": f"{owner}/{repo}",
                 "repo_key": repo_key(owner, repo),
                 "skill_name": skill_name,
                 "description": description,
-                "path": str(relative_skill_path),
-                "relative_directory": str(relative_skill_path.parent),
+                "path": repo_relpath(relative_skill_path),
+                "relative_directory": repo_relpath(relative_skill_path.parent),
                 "sha256": hashlib.sha256(skill_text.encode("utf-8")).hexdigest(),
                 "linked_local_files": related_paths,
             }
@@ -264,15 +268,15 @@ def build_repo_report(source: dict[str, Any], clone_dir: Path, archive_root: Pat
         "commit": commit,
         "commit_date": commit_date,
         "archived_at": dt.datetime.now(dt.timezone.utc).isoformat(),
-        "archive_path": str(archive_root.relative_to(REPO_ROOT)),
-        "snapshot_path": str(snapshot_dir.relative_to(REPO_ROOT)),
+        "archive_path": repo_relpath(archive_root.relative_to(REPO_ROOT)),
+        "snapshot_path": repo_relpath(snapshot_dir.relative_to(REPO_ROOT)),
         "file_count": counts["files"],
         "directory_count": counts["directories"],
         "skill_count": len(skill_records),
         "snapshot_mode": "skills-and-related-files-only",
         "skill_paths": [record["path"] for record in skill_records],
         "all_text_file_hashes": {
-            str(path.relative_to(snapshot_dir)): file_sha256(path)
+            repo_relpath(path.relative_to(snapshot_dir)): file_sha256(path)
             for path in all_files
             if read_text_if_possible(path) is not None
         },
@@ -350,8 +354,12 @@ def append_agent_log(message: str, repo_reports: list[dict[str, Any]], duplicate
             f"- Synced `{report['repo_key']}` at commit `{report['commit'][:12]}` with {report['skill_count']} skills and {report['file_count']} files."
         )
     lines.extend(["", ""])
-    existing = AGENT_LOG_FILE.read_text() if AGENT_LOG_FILE.exists() else "# Agent Log\n\n"
-    AGENT_LOG_FILE.write_text(existing + "\n".join(lines))
+    existing = (
+        AGENT_LOG_FILE.read_text(encoding="utf-8")
+        if AGENT_LOG_FILE.exists()
+        else "# Agent Log\n\n"
+    )
+    AGENT_LOG_FILE.write_text(existing + "\n".join(lines), encoding="utf-8")
 
 
 def render_readme(repo_reports: list[dict[str, Any]], skill_records: list[dict[str, Any]], duplicate_report: dict[str, Any]) -> str:
@@ -450,7 +458,10 @@ def render_readme(repo_reports: list[dict[str, Any]], skill_records: list[dict[s
 
 def write_archive_metadata(report: dict[str, Any]) -> None:
     archive_dir = REPO_ROOT / report["archive_path"]
-    (archive_dir / "archive.json").write_text(json.dumps(report, indent=2) + "\n")
+    (archive_dir / "archive.json").write_text(
+        json.dumps(report, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
 
 def sync_sources(log_note: str) -> None:
@@ -472,10 +483,22 @@ def sync_sources(log_note: str) -> None:
 
     duplicate_report = build_duplicate_report(skill_records)
 
-    SOURCES_REPORT_FILE.write_text(json.dumps(repo_reports, indent=2) + "\n")
-    SKILLS_FILE.write_text(json.dumps(skill_records, indent=2) + "\n")
-    DUPLICATES_FILE.write_text(json.dumps(duplicate_report, indent=2) + "\n")
-    README_FILE.write_text(render_readme(repo_reports, skill_records, duplicate_report))
+    SOURCES_REPORT_FILE.write_text(
+        json.dumps(repo_reports, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    SKILLS_FILE.write_text(
+        json.dumps(skill_records, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    DUPLICATES_FILE.write_text(
+        json.dumps(duplicate_report, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    README_FILE.write_text(
+        render_readme(repo_reports, skill_records, duplicate_report),
+        encoding="utf-8",
+    )
     append_agent_log(log_note, repo_reports, duplicate_report)
 
 
@@ -495,7 +518,7 @@ def add_sources(urls: list[str]) -> None:
         )
         added = True
     if added:
-        SOURCES_FILE.write_text(json.dumps(sources, indent=2) + "\n")
+        SOURCES_FILE.write_text(json.dumps(sources, indent=2) + "\n", encoding="utf-8")
 
 
 def write_automation_manifest() -> None:
@@ -505,7 +528,7 @@ def write_automation_manifest() -> None:
         "purpose": "Refresh archived skill repositories, regenerate indexes, and append to AGENT_LOG.md.",
         "command": "python3 scripts/sync_sources.py --log-note 'Weekly automation refresh'",
     }
-    AUTOMATION_FILE.write_text(json.dumps(payload, indent=2) + "\n")
+    AUTOMATION_FILE.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
 
 
 def main() -> None:

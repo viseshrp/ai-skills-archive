@@ -30,5 +30,9 @@
   {
     "url": "https://github.com/affaan-m/ECC",
     "notes": "Added with scripts/sync_sources.py add from https://github.com/affaan-m/ECC/tree/main."
+  },
+  {
+    "url": "https://github.com/mvanhorn/last30days-skill",
+    "notes": "Added with scripts/sync_sources.py add from https://github.com/mvanhorn/last30days-skill."
   }
 ]

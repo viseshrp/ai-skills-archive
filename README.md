@@ -65,6 +65,11 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Snapshot: [`archives/affaan-m__ECC/snapshot`](archives/affaan-m__ECC/snapshot)
   - Skills discovered: 881
   - Files retained in reduced snapshot: 1006
+- [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
+  - Archived commit: `b8122a28d88ebc1cf43d4f4c76df49c91c6c03b2`
+  - Snapshot: [`archives/mvanhorn__last30days-skill/snapshot`](archives/mvanhorn__last30days-skill/snapshot)
+  - Skills discovered: 1
+  - Files retained in reduced snapshot: 5
 
 ## Generated Reports
 
@@ -105,8 +110,8 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `karpathy-guidelines`: [`skills/karpathy-guidelines/SKILL.md`](archives/multica-ai__andrej-karpathy-skills/snapshot/skills/karpathy-guidelines/SKILL.md)
 
 ### Imbad0202/academic-research-skills
-- `academic-paper`: [`academic-paper/SKILL.md`](archives/Imbad0202__academic-research-skills/snapshot/academic-paper/SKILL.md)
 - `academic-paper-reviewer`: [`academic-paper-reviewer/SKILL.md`](archives/Imbad0202__academic-research-skills/snapshot/academic-paper-reviewer/SKILL.md)
+- `academic-paper`: [`academic-paper/SKILL.md`](archives/Imbad0202__academic-research-skills/snapshot/academic-paper/SKILL.md)
 - `academic-pipeline`: [`academic-pipeline/SKILL.md`](archives/Imbad0202__academic-research-skills/snapshot/academic-pipeline/SKILL.md)
 - `deep-research`: [`deep-research/SKILL.md`](archives/Imbad0202__academic-research-skills/snapshot/deep-research/SKILL.md)
 
@@ -148,16 +153,16 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 
 ### juliusbrussee/caveman
 - `cavecrew`: [`plugins/caveman/skills/cavecrew/SKILL.md`](archives/juliusbrussee__caveman/snapshot/plugins/caveman/skills/cavecrew/SKILL.md)
-- `caveman`: [`plugins/caveman/skills/caveman/SKILL.md`](archives/juliusbrussee__caveman/snapshot/plugins/caveman/skills/caveman/SKILL.md)
 - `caveman-compress`: [`plugins/caveman/skills/caveman-compress/SKILL.md`](archives/juliusbrussee__caveman/snapshot/plugins/caveman/skills/caveman-compress/SKILL.md)
 - `caveman-stats`: [`plugins/caveman/skills/caveman-stats/SKILL.md`](archives/juliusbrussee__caveman/snapshot/plugins/caveman/skills/caveman-stats/SKILL.md)
+- `caveman`: [`plugins/caveman/skills/caveman/SKILL.md`](archives/juliusbrussee__caveman/snapshot/plugins/caveman/skills/caveman/SKILL.md)
 - `cavecrew`: [`skills/cavecrew/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/cavecrew/SKILL.md)
-- `caveman`: [`skills/caveman/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman/SKILL.md)
 - `caveman-commit`: [`skills/caveman-commit/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-commit/SKILL.md)
 - `caveman-compress`: [`skills/caveman-compress/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-compress/SKILL.md)
 - `caveman-help`: [`skills/caveman-help/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-help/SKILL.md)
 - `caveman-review`: [`skills/caveman-review/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-review/SKILL.md)
 - `caveman-stats`: [`skills/caveman-stats/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-stats/SKILL.md)
+- `caveman`: [`skills/caveman/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman/SKILL.md)
 
 ### obra/Superpowers
 - `brainstorming`: [`skills/brainstorming/SKILL.md`](archives/obra__Superpowers/snapshot/skills/brainstorming/SKILL.md)
@@ -240,8 +245,8 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `unslop`: [`pstack/skills/unslop/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/unslop/SKILL.md)
 - `why`: [`pstack/skills/why/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/why/SKILL.md)
 - `cancel-ralph`: [`ralph-loop/skills/cancel-ralph/SKILL.md`](archives/cursor__plugins/snapshot/ralph-loop/skills/cancel-ralph/SKILL.md)
-- `ralph-loop`: [`ralph-loop/skills/ralph-loop/SKILL.md`](archives/cursor__plugins/snapshot/ralph-loop/skills/ralph-loop/SKILL.md)
 - `ralph-loop-help`: [`ralph-loop/skills/ralph-loop-help/SKILL.md`](archives/cursor__plugins/snapshot/ralph-loop/skills/ralph-loop-help/SKILL.md)
+- `ralph-loop`: [`ralph-loop/skills/ralph-loop/SKILL.md`](archives/cursor__plugins/snapshot/ralph-loop/skills/ralph-loop/SKILL.md)
 - `create-learning-path`: [`teaching/skills/create-learning-path/SKILL.md`](archives/cursor__plugins/snapshot/teaching/skills/create-learning-path/SKILL.md)
 - `run-learning-retrospective`: [`teaching/skills/run-learning-retrospective/SKILL.md`](archives/cursor__plugins/snapshot/teaching/skills/run-learning-retrospective/SKILL.md)
 - `thermo-nuclear-code-quality-review`: [`thermos/skills/thermo-nuclear-code-quality-review/SKILL.md`](archives/cursor__plugins/snapshot/thermos/skills/thermo-nuclear-code-quality-review/SKILL.md)
@@ -343,8 +348,8 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `api-design`: [`docs/es/skills/api-design/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/es/skills/api-design/SKILL.md)
 - `backend-patterns`: [`docs/es/skills/backend-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/es/skills/backend-patterns/SKILL.md)
 - `coding-standards`: [`docs/es/skills/coding-standards/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/es/skills/coding-standards/SKILL.md)
-- `continuous-learning`: [`docs/es/skills/continuous-learning/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/es/skills/continuous-learning/SKILL.md)
 - `continuous-learning-v2`: [`docs/es/skills/continuous-learning-v2/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/es/skills/continuous-learning-v2/SKILL.md)
+- `continuous-learning`: [`docs/es/skills/continuous-learning/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/es/skills/continuous-learning/SKILL.md)
 - `database-migrations`: [`docs/es/skills/database-migrations/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/es/skills/database-migrations/SKILL.md)
 - `deployment-patterns`: [`docs/es/skills/deployment-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/es/skills/deployment-patterns/SKILL.md)
 - `django-patterns`: [`docs/es/skills/django-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/es/skills/django-patterns/SKILL.md)
@@ -421,8 +426,8 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `content-hash-cache-pattern`: [`docs/ja-JP/skills/content-hash-cache-pattern/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/content-hash-cache-pattern/SKILL.md)
 - `context-budget`: [`docs/ja-JP/skills/context-budget/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/context-budget/SKILL.md)
 - `continuous-agent-loop`: [`docs/ja-JP/skills/continuous-agent-loop/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/continuous-agent-loop/SKILL.md)
-- `continuous-learning`: [`docs/ja-JP/skills/continuous-learning/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/continuous-learning/SKILL.md)
 - `continuous-learning-v2`: [`docs/ja-JP/skills/continuous-learning-v2/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/continuous-learning-v2/SKILL.md)
+- `continuous-learning`: [`docs/ja-JP/skills/continuous-learning/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/continuous-learning/SKILL.md)
 - `cost-aware-llm-pipeline`: [`docs/ja-JP/skills/cost-aware-llm-pipeline/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/cost-aware-llm-pipeline/SKILL.md)
 - `cost-tracking`: [`docs/ja-JP/skills/cost-tracking/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/cost-tracking/SKILL.md)
 - `council`: [`docs/ja-JP/skills/council/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/council/SKILL.md)
@@ -610,8 +615,8 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `backend-patterns`: [`docs/ko-KR/skills/backend-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ko-KR/skills/backend-patterns/SKILL.md)
 - `clickhouse-io`: [`docs/ko-KR/skills/clickhouse-io/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ko-KR/skills/clickhouse-io/SKILL.md)
 - `coding-standards`: [`docs/ko-KR/skills/coding-standards/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ko-KR/skills/coding-standards/SKILL.md)
-- `continuous-learning`: [`docs/ko-KR/skills/continuous-learning/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ko-KR/skills/continuous-learning/SKILL.md)
 - `continuous-learning-v2`: [`docs/ko-KR/skills/continuous-learning-v2/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ko-KR/skills/continuous-learning-v2/SKILL.md)
+- `continuous-learning`: [`docs/ko-KR/skills/continuous-learning/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ko-KR/skills/continuous-learning/SKILL.md)
 - `eval-harness`: [`docs/ko-KR/skills/eval-harness/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ko-KR/skills/eval-harness/SKILL.md)
 - `frontend-patterns`: [`docs/ko-KR/skills/frontend-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ko-KR/skills/frontend-patterns/SKILL.md)
 - `golang-patterns`: [`docs/ko-KR/skills/golang-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ko-KR/skills/golang-patterns/SKILL.md)
@@ -625,8 +630,8 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `api-design`: [`docs/tr/skills/api-design/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/tr/skills/api-design/SKILL.md)
 - `backend-patterns`: [`docs/tr/skills/backend-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/tr/skills/backend-patterns/SKILL.md)
 - `coding-standards`: [`docs/tr/skills/coding-standards/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/tr/skills/coding-standards/SKILL.md)
-- `continuous-learning`: [`docs/tr/skills/continuous-learning/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/tr/skills/continuous-learning/SKILL.md)
 - `continuous-learning-v2`: [`docs/tr/skills/continuous-learning-v2/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/tr/skills/continuous-learning-v2/SKILL.md)
+- `continuous-learning`: [`docs/tr/skills/continuous-learning/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/tr/skills/continuous-learning/SKILL.md)
 - `database-migrations`: [`docs/tr/skills/database-migrations/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/tr/skills/database-migrations/SKILL.md)
 - `deployment-patterns`: [`docs/tr/skills/deployment-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/tr/skills/deployment-patterns/SKILL.md)
 - `django-patterns`: [`docs/tr/skills/django-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/tr/skills/django-patterns/SKILL.md)
@@ -699,8 +704,8 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `content-hash-cache-pattern`: [`docs/zh-CN/skills/content-hash-cache-pattern/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-CN/skills/content-hash-cache-pattern/SKILL.md)
 - `context-budget`: [`docs/zh-CN/skills/context-budget/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-CN/skills/context-budget/SKILL.md)
 - `continuous-agent-loop`: [`docs/zh-CN/skills/continuous-agent-loop/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-CN/skills/continuous-agent-loop/SKILL.md)
-- `continuous-learning`: [`docs/zh-CN/skills/continuous-learning/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-CN/skills/continuous-learning/SKILL.md)
 - `continuous-learning-v2`: [`docs/zh-CN/skills/continuous-learning-v2/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-CN/skills/continuous-learning-v2/SKILL.md)
+- `continuous-learning`: [`docs/zh-CN/skills/continuous-learning/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-CN/skills/continuous-learning/SKILL.md)
 - `cost-aware-llm-pipeline`: [`docs/zh-CN/skills/cost-aware-llm-pipeline/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-CN/skills/cost-aware-llm-pipeline/SKILL.md)
 - `council`: [`docs/zh-CN/skills/council/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-CN/skills/council/SKILL.md)
 - `cpp-coding-standards`: [`docs/zh-CN/skills/cpp-coding-standards/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-CN/skills/cpp-coding-standards/SKILL.md)
@@ -846,8 +851,8 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `backend-patterns`: [`docs/zh-TW/skills/backend-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-TW/skills/backend-patterns/SKILL.md)
 - `clickhouse-io`: [`docs/zh-TW/skills/clickhouse-io/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-TW/skills/clickhouse-io/SKILL.md)
 - `coding-standards`: [`docs/zh-TW/skills/coding-standards/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-TW/skills/coding-standards/SKILL.md)
-- `continuous-learning`: [`docs/zh-TW/skills/continuous-learning/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-TW/skills/continuous-learning/SKILL.md)
 - `continuous-learning-v2`: [`docs/zh-TW/skills/continuous-learning-v2/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-TW/skills/continuous-learning-v2/SKILL.md)
+- `continuous-learning`: [`docs/zh-TW/skills/continuous-learning/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-TW/skills/continuous-learning/SKILL.md)
 - `eval-harness`: [`docs/zh-TW/skills/eval-harness/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-TW/skills/eval-harness/SKILL.md)
 - `frontend-patterns`: [`docs/zh-TW/skills/frontend-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-TW/skills/frontend-patterns/SKILL.md)
 - `golang-patterns`: [`docs/zh-TW/skills/golang-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-TW/skills/golang-patterns/SKILL.md)
@@ -881,9 +886,9 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `autonomous-agent-harness`: [`skills/autonomous-agent-harness/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/autonomous-agent-harness/SKILL.md)
 - `autonomous-loops`: [`skills/autonomous-loops/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/autonomous-loops/SKILL.md)
 - `backend-patterns`: [`skills/backend-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/backend-patterns/SKILL.md)
-- `benchmark`: [`skills/benchmark/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/benchmark/SKILL.md)
 - `benchmark-methodology`: [`skills/benchmark-methodology/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/benchmark-methodology/SKILL.md)
 - `benchmark-optimization-loop`: [`skills/benchmark-optimization-loop/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/benchmark-optimization-loop/SKILL.md)
+- `benchmark`: [`skills/benchmark/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/benchmark/SKILL.md)
 - `blender-motion-state-inspection`: [`skills/blender-motion-state-inspection/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/blender-motion-state-inspection/SKILL.md)
 - `blueprint`: [`skills/blueprint/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/blueprint/SKILL.md)
 - `brand-discovery`: [`skills/brand-discovery/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/brand-discovery/SKILL.md)
@@ -911,8 +916,8 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `content-hash-cache-pattern`: [`skills/content-hash-cache-pattern/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/content-hash-cache-pattern/SKILL.md)
 - `context-budget`: [`skills/context-budget/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/context-budget/SKILL.md)
 - `continuous-agent-loop`: [`skills/continuous-agent-loop/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/continuous-agent-loop/SKILL.md)
-- `continuous-learning`: [`skills/continuous-learning/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/continuous-learning/SKILL.md)
 - `continuous-learning-v2`: [`skills/continuous-learning-v2/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/continuous-learning-v2/SKILL.md)
+- `continuous-learning`: [`skills/continuous-learning/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/continuous-learning/SKILL.md)
 - `cost-aware-llm-pipeline`: [`skills/cost-aware-llm-pipeline/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/cost-aware-llm-pipeline/SKILL.md)
 - `cost-tracking`: [`skills/cost-tracking/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/cost-tracking/SKILL.md)
 - `council`: [`skills/council/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/council/SKILL.md)
@@ -1130,6 +1135,9 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `windows-desktop-e2e`: [`skills/windows-desktop-e2e/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/windows-desktop-e2e/SKILL.md)
 - `workspace-surface-audit`: [`skills/workspace-surface-audit/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/workspace-surface-audit/SKILL.md)
 - `x-api`: [`skills/x-api/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/x-api/SKILL.md)
+
+### mvanhorn/last30days-skill
+- `last30days`: [`skills/last30days/SKILL.md`](archives/mvanhorn__last30days-skill/snapshot/skills/last30days/SKILL.md)
 
 ## Duplicate Tracking
 
