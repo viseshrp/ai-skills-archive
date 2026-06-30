@@ -34,5 +34,9 @@
   {
     "url": "https://github.com/mvanhorn/last30days-skill",
     "notes": "Added with scripts/sync_sources.py add from https://github.com/mvanhorn/last30days-skill."
+  },
+  {
+    "url": "https://github.com/DietrichGebert/ponytail",
+    "notes": "Added with scripts/sync_sources.py add from https://github.com/DietrichGebert/ponytail."
   }
 ]

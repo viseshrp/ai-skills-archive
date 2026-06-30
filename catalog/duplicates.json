@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T14:27:21.960993+00:00",
+  "generated_at": "2026-06-30T19:14:21.287217+00:00",
   "exact_skill_duplicates": [
     {
       "sha256": "060f50513003731e9c0e7f78e6a6a9b8cb178a74a2ec2a6ca75cdae804f0d564",
@@ -631,7 +631,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/backend-patterns/SKILL.md",
-          "sha256": "3a0abd916f3e9a65d0c811a4591bd9c23f6ebf7c4aca47c8d36c294bea2d687a"
+          "sha256": "472ec92c95e57a02c647310192a7f46b38264be2e13b4766c186d01cb058b30f"
         }
       ]
     },
@@ -1020,7 +1020,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/code-tour/SKILL.md",
-          "sha256": "b115de452cfd3463902be87c272cc265703a623bc55d3a57d1428996c3145739"
+          "sha256": "88549977ac84dff94ee40e5f032435610481bc097fc8b9ab4a9d04c9459c900f"
         }
       ]
     },
@@ -1092,7 +1092,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/coding-standards/SKILL.md",
-          "sha256": "7f336ca1d1507de298f5a0b1047afe1ba5cd4d1a518b3bcebec12f0316b20282"
+          "sha256": "f8a05b67c22e611ff9a56aafe297d63b9f4950d43d3f3f921ef846132b6c5eba"
         }
       ]
     },
@@ -1675,6 +1675,11 @@
       "count": 6,
       "locations": [
         {
+          "source_repo": "Imbad0202/academic-research-skills",
+          "path": "deep-research/SKILL.md",
+          "sha256": "3a6d1fa662857068376a1b507143618401febea272321a2d5a70daefafd2893c"
+        },
+        {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/deep-research/SKILL.md",
           "sha256": "5692b149b1b82748880dacde47f5ebe9e72d4d14fc50930063b4716b00944e03"
@@ -1698,11 +1703,6 @@
           "source_repo": "affaan-m/ECC",
           "path": "skills/deep-research/SKILL.md",
           "sha256": "f85e06874ffd0fcfea6051b4292f45fc2b7e4cd47586659817ddbafd6bea3ede"
-        },
-        {
-          "source_repo": "Imbad0202/academic-research-skills",
-          "path": "deep-research/SKILL.md",
-          "sha256": "3a6d1fa662857068376a1b507143618401febea272321a2d5a70daefafd2893c"
         }
       ]
     },
@@ -1858,7 +1858,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/django-security/SKILL.md",
-          "sha256": "9a7aa9fc3b569eea8309769a63df05ab3246e7d370a03e54341f5a889af9ba6f"
+          "sha256": "718928a11187996eb8438fb1c5de64edcf9d7a002316fbfee385f01fad121224"
         }
       ]
     },
@@ -2541,17 +2541,17 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "docs/ja-JP/skills/gateguard/SKILL.md",
-          "sha256": "5d9a70a63bc2af3d19ba78781dca4c5167af1d6e7efc04b15cf1c37efffc0cbd"
+          "sha256": "9b7decacbc8021e8c2a1c37b418e6d57232d19e30723e53dfd65ac43b4d86806"
         },
         {
           "source_repo": "affaan-m/ECC",
           "path": "docs/zh-CN/skills/gateguard/SKILL.md",
-          "sha256": "264ca68d2222da26d5213588566c61044522d311e0bca9050820fafa12721b87"
+          "sha256": "b3f741cd759bf2ec8ca0eff1e701ce45dc7738a3e11a2cd22fd56fb284dab536"
         },
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/gateguard/SKILL.md",
-          "sha256": "6e211fbe12b2daeb74ac564d2060686b78c97e66e19757df3acb9c44260bbfad"
+          "sha256": "745b0f84643d8a9ab82ae10366cc8491af0265b3505bce6fed7ff80e107c3fdc"
         }
       ]
     },
@@ -4188,6 +4188,102 @@
       ]
     },
     {
+      "skill_name": "ponytail",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "DietrichGebert/ponytail",
+          "path": ".openclaw/skills/ponytail/SKILL.md",
+          "sha256": "0537ff8d0ad12c88ece83f2aa4c906d12ddf526cd3da6df25171a99b3bd21e46"
+        },
+        {
+          "source_repo": "DietrichGebert/ponytail",
+          "path": "skills/ponytail/SKILL.md",
+          "sha256": "d1ffcddbc486ab787d5797441e8b6e4717da3249c6786b83fc2abd2f12803c29"
+        }
+      ]
+    },
+    {
+      "skill_name": "ponytail-audit",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "DietrichGebert/ponytail",
+          "path": ".openclaw/skills/ponytail-audit/SKILL.md",
+          "sha256": "baba579ec3261cef555797c06484b4374ff4febbdb3eb0b4333e6d92b3434f87"
+        },
+        {
+          "source_repo": "DietrichGebert/ponytail",
+          "path": "skills/ponytail-audit/SKILL.md",
+          "sha256": "5560b8e383dbe2ddfddc873a1e2bf2e586e23e0cd7d995537482b2315331f6d1"
+        }
+      ]
+    },
+    {
+      "skill_name": "ponytail-debt",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "DietrichGebert/ponytail",
+          "path": ".openclaw/skills/ponytail-debt/SKILL.md",
+          "sha256": "b0281c1d96fa5acc411ab6bbc219802c5551ecc73f4e3be3a3b74ada78a84bcb"
+        },
+        {
+          "source_repo": "DietrichGebert/ponytail",
+          "path": "skills/ponytail-debt/SKILL.md",
+          "sha256": "c84fba75f0ca12bfe83f9a78ea02fd125c5dd3f1fbb18124105a489937f284e6"
+        }
+      ]
+    },
+    {
+      "skill_name": "ponytail-gain",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "DietrichGebert/ponytail",
+          "path": ".openclaw/skills/ponytail-gain/SKILL.md",
+          "sha256": "6268baa130520efa48406ee9463e0c844cbfea9a299a4687b1adf8352f2471f6"
+        },
+        {
+          "source_repo": "DietrichGebert/ponytail",
+          "path": "skills/ponytail-gain/SKILL.md",
+          "sha256": "24e01d1c9715cb136ba1c4f1e52a95940c0193558b876828e537736480d6408b"
+        }
+      ]
+    },
+    {
+      "skill_name": "ponytail-help",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "DietrichGebert/ponytail",
+          "path": ".openclaw/skills/ponytail-help/SKILL.md",
+          "sha256": "f89670de7ab737bf07d769e4728704da2422b65fa8436093553501aaa7610790"
+        },
+        {
+          "source_repo": "DietrichGebert/ponytail",
+          "path": "skills/ponytail-help/SKILL.md",
+          "sha256": "23ee3856c727129f87ab850985f9e9ed6368f10449816aa7ff043bf2dd45ab4d"
+        }
+      ]
+    },
+    {
+      "skill_name": "ponytail-review",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "DietrichGebert/ponytail",
+          "path": ".openclaw/skills/ponytail-review/SKILL.md",
+          "sha256": "76addbc1c5293d5a2da42828f4bff1cee5050492d06c194354df2f6329398df5"
+        },
+        {
+          "source_repo": "DietrichGebert/ponytail",
+          "path": "skills/ponytail-review/SKILL.md",
+          "sha256": "40df33b58fc6ef889b93585733feb9566b76e9586efa7f376785c1e995197ac0"
+        }
+      ]
+    },
+    {
       "skill_name": "postgres-patterns",
       "count": 8,
       "locations": [
@@ -5049,7 +5145,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/security-review/SKILL.md",
-          "sha256": "4fa53039763be74020c422e73e79f9e0f485259676dbabb606be3def3c6ebb9b"
+          "sha256": "fe6f9151fb15c1dffd47a55080c3ad147af7c95dd0ad3714735dec6824b060b7"
         }
       ]
     },
@@ -5448,14 +5544,14 @@
       "count": 2,
       "locations": [
         {
+          "source_repo": "mattpocock/skills",
+          "path": "skills/engineering/tdd/SKILL.md",
+          "sha256": "06f91f2e9cd9a6e7f13f61b13ff43241199aa70ea3b03a4d1921767c6b512424"
+        },
+        {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/tdd/SKILL.md",
           "sha256": "adad031f9e79d7f7389fa128f7af8e03344831270e282cf4e40bdacb8418c386"
-        },
-        {
-          "source_repo": "mattpocock/skills",
-          "path": "skills/engineering/tdd/SKILL.md",
-          "sha256": "13722957277ed4960061a2d254a0ed7d86f95693e88b40d1c68307e7fdc98287"
         }
       ]
     },
@@ -5466,7 +5562,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/tdd-workflow/SKILL.md",
-          "sha256": "27cfe7148aeb4385153236aded47ef3c5b2b7a2579ea1fc4b948ff987ce4e2ae"
+          "sha256": "5a88684181704575d8958fbcd6f506ea39d56d921d22edb40a6bbccb408336e6"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -5506,7 +5602,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/tdd-workflow/SKILL.md",
-          "sha256": "9f6bdf7f468a08e285e05b78a304420d90edfe4d79258bda8ee854d56bbedcc2"
+          "sha256": "e3a0051a99e82f7047b29a2a98c662d8ef8d0ede186acc085436fced7f2591b7"
         }
       ]
     },

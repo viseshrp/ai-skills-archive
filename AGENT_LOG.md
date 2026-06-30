@@ -148,3 +148,21 @@
 - Synced `affaan-m__ECC` at commit `71d22d0a77b7` with 881 skills and 1006 files.
 - Synced `mvanhorn__last30days-skill` at commit `b8122a28d88e` with 1 skills and 5 files.
 
+## 2026-06-30 19:14:21Z
+
+- Action: Added source(s): https://github.com/DietrichGebert/ponytail
+- Sources synced: 10
+- Skills indexed: 1064
+- Exact duplicate groups: 9
+- Repeated skill names: 250
+- Synced `addyosmani__agent-skills` at commit `aba7c4e9695c` with 24 skills and 24 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `17c518b286e4` with 4 skills and 148 files.
+- Synced `mattpocock__skills` at commit `0877403d1e86` with 36 skills and 60 files.
+- Synced `juliusbrussee__caveman` at commit `25d22f864ad6` with 11 skills and 13 files.
+- Synced `obra__Superpowers` at commit `f268f7c95374` with 14 skills and 26 files.
+- Synced `cursor__plugins` at commit `0452e08a314c` with 74 skills and 165 files.
+- Synced `affaan-m__ECC` at commit `81af40761939` with 887 skills and 1012 files.
+- Synced `mvanhorn__last30days-skill` at commit `a9d2674147b8` with 1 skills and 5 files.
+- Synced `DietrichGebert__ponytail` at commit `16f6cbf4b877` with 12 skills and 12 files.
+
