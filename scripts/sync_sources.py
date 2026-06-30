@@ -9,7 +9,10 @@ import json
 import os
 import re
 import shutil
+import stat
 import subprocess
+import tempfile
+import time
 from collections import defaultdict
 from collections import deque
 from pathlib import Path
@@ -20,7 +23,9 @@ from urllib.parse import urlparse
 REPO_ROOT = Path(__file__).resolve().parent.parent
 CATALOG_DIR = REPO_ROOT / "catalog"
 ARCHIVES_DIR = REPO_ROOT / "archives"
-TEMP_DIR = REPO_ROOT / "tmp_sync"
+TEMP_DIR = Path(
+    os.environ.get("AI_SKILLS_ARCHIVE_TMP_DIR") or tempfile.gettempdir()
+) / "ai-skills-archive-sync"
 SOURCES_FILE = CATALOG_DIR / "sources.json"
 SKILLS_FILE = CATALOG_DIR / "skills.json"
 DUPLICATES_FILE = CATALOG_DIR / "duplicates.json"
@@ -58,6 +63,8 @@ TEXT_EXTENSIONS = {
     ".yaml",
     ".yml",
 }
+FS_RETRY_ATTEMPTS = 30
+FS_RETRY_DELAY_SECONDS = 0.5
 
 PATH_TOKEN_RE = re.compile(
     r"(?P<path>(?:\.\.?/)?(?:[A-Za-z0-9._-]+/)+[A-Za-z0-9._-]+(?:\.(?:md|mdx|txt|json|ya?ml|toml|py|sh|ps1|js|mjs|cjs|ts|tsx|html|css|svg|png|jpg|jpeg|gif|webp|pdf|tex|dot|cmd))?)"
@@ -76,6 +83,32 @@ def run(cmd: list[str], cwd: Path | None = None) -> str:
         capture_output=True,
     )
     return result.stdout.strip()
+
+
+def powershell_literal(value: str) -> str:
+    return "'" + value.replace("'", "''") + "'"
+
+
+def run_powershell(command: str) -> None:
+    subprocess.run(
+        ["powershell", "-NoProfile", "-Command", command],
+        check=True,
+        text=True,
+        capture_output=True,
+    )
+
+
+def run_powershell_with_retry(command: str) -> None:
+    last_error: subprocess.CalledProcessError | None = None
+    for _ in range(FS_RETRY_ATTEMPTS):
+        try:
+            run_powershell(command)
+            return
+        except subprocess.CalledProcessError as exc:
+            last_error = exc
+            time.sleep(FS_RETRY_DELAY_SECONDS)
+    if last_error is not None:
+        raise last_error
 
 
 def load_sources() -> list[dict[str, Any]]:
@@ -125,15 +158,101 @@ def clone_or_update(url: str, destination: Path) -> None:
         run(["git", "clone", "--depth", "1", url, str(destination)])
 
 
+def mkdir_with_retry(path: Path) -> None:
+    last_error: PermissionError | None = None
+    for _ in range(FS_RETRY_ATTEMPTS):
+        try:
+            path.mkdir(parents=True, exist_ok=True)
+            return
+        except PermissionError as exc:
+            last_error = exc
+            time.sleep(FS_RETRY_DELAY_SECONDS)
+    if os.name == "nt":
+        run_powershell_with_retry(
+            f"New-Item -ItemType Directory -Path {powershell_literal(str(path))} -Force | Out-Null"
+        )
+        return
+    if last_error is not None:
+        raise last_error
+
+
+def unlink_with_retry(path: Path) -> None:
+    last_error: PermissionError | None = None
+    for _ in range(FS_RETRY_ATTEMPTS):
+        try:
+            if path.exists():
+                os.chmod(path, stat.S_IWRITE)
+                path.unlink()
+            return
+        except PermissionError as exc:
+            last_error = exc
+            time.sleep(FS_RETRY_DELAY_SECONDS)
+    if os.name == "nt":
+        run_powershell_with_retry(
+            f"if (Test-Path -LiteralPath {powershell_literal(str(path))}) "
+            f"{{ Remove-Item -LiteralPath {powershell_literal(str(path))} -Force }}"
+        )
+        return
+    if last_error is not None:
+        raise last_error
+
+
+def copy_file_with_retry(source: Path, destination: Path) -> None:
+    last_error: PermissionError | None = None
+    for _ in range(FS_RETRY_ATTEMPTS):
+        try:
+            shutil.copy2(source, destination)
+            return
+        except PermissionError as exc:
+            last_error = exc
+            time.sleep(FS_RETRY_DELAY_SECONDS)
+    if os.name == "nt":
+        run_powershell_with_retry(
+            f"Copy-Item -LiteralPath {powershell_literal(str(source))} "
+            f"-Destination {powershell_literal(str(destination))} -Force"
+        )
+        return
+    if last_error is not None:
+        raise last_error
+
+
+def write_text_file(path: Path, content: str) -> None:
+    temp_dir = TEMP_DIR / "_workspace_writes"
+    mkdir_with_retry(temp_dir)
+    temp_path = temp_dir / (
+        hashlib.sha256(str(path).encode("utf-8")).hexdigest() + (path.suffix or ".tmp")
+    )
+    temp_path.write_text(content, encoding="utf-8")
+    mkdir_with_retry(path.parent)
+    copy_file_with_retry(temp_path, path)
+
+
 def copy_selected_files(source: Path, destination: Path, selected_files: set[Path]) -> dict[str, int]:
-    if destination.exists():
-        shutil.rmtree(destination)
-    destination.mkdir(parents=True, exist_ok=True)
+    mkdir_with_retry(destination)
+    existing_files = {
+        path.relative_to(destination)
+        for path in destination.rglob("*")
+        if path.is_file()
+    }
+
+    for stale_path in sorted(existing_files - selected_files):
+        unlink_with_retry(destination / stale_path)
 
     for relative_path in sorted(selected_files):
         target_file = destination / relative_path
-        target_file.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(source / relative_path, target_file)
+        mkdir_with_retry(target_file.parent)
+        copy_file_with_retry(source / relative_path, target_file)
+
+    existing_dirs = sorted(
+        (path for path in destination.rglob("*") if path.is_dir()),
+        key=lambda path: len(path.parts),
+        reverse=True,
+    )
+    for directory in existing_dirs:
+        try:
+            directory.rmdir()
+        except OSError:
+            continue
 
     directories = {path.parent for path in selected_files if path.parent != Path(".")}
     return {"files": len(selected_files), "directories": len(directories)}
@@ -359,7 +478,7 @@ def append_agent_log(message: str, repo_reports: list[dict[str, Any]], duplicate
         if AGENT_LOG_FILE.exists()
         else "# Agent Log\n\n"
     )
-    AGENT_LOG_FILE.write_text(existing + "\n".join(lines), encoding="utf-8")
+    write_text_file(AGENT_LOG_FILE, existing + "\n".join(lines))
 
 
 def render_readme(repo_reports: list[dict[str, Any]], skill_records: list[dict[str, Any]], duplicate_report: dict[str, Any]) -> str:
@@ -458,9 +577,9 @@ def render_readme(repo_reports: list[dict[str, Any]], skill_records: list[dict[s
 
 def write_archive_metadata(report: dict[str, Any]) -> None:
     archive_dir = REPO_ROOT / report["archive_path"]
-    (archive_dir / "archive.json").write_text(
+    write_text_file(
+        archive_dir / "archive.json",
         json.dumps(report, indent=2) + "\n",
-        encoding="utf-8",
     )
 
 
@@ -483,21 +602,21 @@ def sync_sources(log_note: str) -> None:
 
     duplicate_report = build_duplicate_report(skill_records)
 
-    SOURCES_REPORT_FILE.write_text(
+    write_text_file(
+        SOURCES_REPORT_FILE,
         json.dumps(repo_reports, indent=2) + "\n",
-        encoding="utf-8",
     )
-    SKILLS_FILE.write_text(
+    write_text_file(
+        SKILLS_FILE,
         json.dumps(skill_records, indent=2) + "\n",
-        encoding="utf-8",
     )
-    DUPLICATES_FILE.write_text(
+    write_text_file(
+        DUPLICATES_FILE,
         json.dumps(duplicate_report, indent=2) + "\n",
-        encoding="utf-8",
     )
-    README_FILE.write_text(
+    write_text_file(
+        README_FILE,
         render_readme(repo_reports, skill_records, duplicate_report),
-        encoding="utf-8",
     )
     append_agent_log(log_note, repo_reports, duplicate_report)
 
@@ -518,7 +637,7 @@ def add_sources(urls: list[str]) -> None:
         )
         added = True
     if added:
-        SOURCES_FILE.write_text(json.dumps(sources, indent=2) + "\n", encoding="utf-8")
+        write_text_file(SOURCES_FILE, json.dumps(sources, indent=2) + "\n")
 
 
 def write_automation_manifest() -> None:
@@ -528,7 +647,7 @@ def write_automation_manifest() -> None:
         "purpose": "Refresh archived skill repositories, regenerate indexes, and append to AGENT_LOG.md.",
         "command": "python3 scripts/sync_sources.py --log-note 'Weekly automation refresh'",
     }
-    AUTOMATION_FILE.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    write_text_file(AUTOMATION_FILE, json.dumps(payload, indent=2) + "\n")
 
 
 def main() -> None:
