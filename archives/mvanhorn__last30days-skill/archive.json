@@ -5,23 +5,19 @@
   "url": "https://github.com/mvanhorn/last30days-skill",
   "notes": "Added with scripts/sync_sources.py add from https://github.com/mvanhorn/last30days-skill.",
   "default_branch": "main",
-  "commit": "a9d2674147b8e6d4eba45f71bf9e05af6262fa21",
-  "commit_date": "2026-06-30T08:38:12-07:00",
-  "archived_at": "2026-06-30T19:29:19.256543+00:00",
+  "commit": "784624c002b294b4c32281fd5867e13bccd03ac7",
+  "commit_date": "2026-07-03T15:45:43-07:00",
+  "archived_at": "2026-07-03T23:01:38.270305+00:00",
   "archive_path": "archives/mvanhorn__last30days-skill",
   "snapshot_path": "archives/mvanhorn__last30days-skill/snapshot",
-  "file_count": 5,
-  "directory_count": 4,
+  "file_count": 1,
+  "directory_count": 1,
   "skill_count": 1,
   "snapshot_mode": "skills-and-related-files-only",
   "skill_paths": [
     "skills/last30days/SKILL.md"
   ],
   "all_text_file_hashes": {
-    "skills/last30days/SKILL.md": "ecb599a1284c90a43e323b33db6c9f91fac4776d5b05b2e1660b43e1457015fa",
-    "skills/last30days/references/save-html-brief.md": "eb97a130d5b108a96fdc94a48129de4231bf40382fd5dd7741614eb2f6b7a6b6",
-    "skills/last30days/scripts/last30days.py": "4de113ed72fced1c310b32e8b704547d15ee7957ed65f2f9dfc0dd956f7f1f13",
-    "skills/last30days/scripts/lib/categories.py": "68b0590ff3b5881a2495a95b1ab73871bdf3c962823cd5549c6a015fd4383b21",
-    "skills/last30days/scripts/lib/youtube_yt.py": "1e0dedb1c885deb8f5200d98f03f906562c7614640adde4a2cc400cdec32067f"
+    "skills/last30days/SKILL.md": "2c4e8e0f3964c925bd0e62c8aaafc888def5c2784e59a2d08efb54f76234daeb"
   }
 }

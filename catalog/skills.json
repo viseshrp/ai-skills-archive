@@ -113,10 +113,10 @@
     "source_repo": "addyosmani/agent-skills",
     "repo_key": "addyosmani__agent-skills",
     "skill_name": "git-workflow-and-versioning",
-    "description": "Structures git workflow practices. Use when making any code change. Use when committing, branching, resolving conflicts, or when you need to organize work across multiple parallel streams.",
+    "description": "Structures git workflow practices. Use when making any code change. Use when committing, branching, resolving conflicts, or when you need to organize work across multiple parallel streams. Use when cutting a release, choosing a semantic version bump, tagging, or writing a changelog.",
     "path": "skills/git-workflow-and-versioning/SKILL.md",
     "relative_directory": "skills/git-workflow-and-versioning",
-    "sha256": "b1a84eac7a47f6e2985a27733137d862fcdeb552eefe2bd17629e1f3c20e0e97",
+    "sha256": "51677cf03845dd29d08ea4d3125665057b720aea3dccc572f25d8b172409ece6",
     "linked_local_files": []
   },
   {
@@ -176,7 +176,7 @@
     "description": "Breaks work into ordered tasks. Use when you have a spec or clear requirements and need to break work into implementable tasks. Use when a task feels too large to start, when you need to estimate scope, or when parallel work is possible.",
     "path": "skills/planning-and-task-breakdown/SKILL.md",
     "relative_directory": "skills/planning-and-task-breakdown",
-    "sha256": "8cc81534485e2b3171c5036bb273984d4c2cb93efd526c63ff8a180a5516a224",
+    "sha256": "d87ff6bb23aa791f78a504d784e903bb13602975923f884af5d13d5b66b1651a",
     "linked_local_files": []
   },
   {
@@ -216,7 +216,7 @@
     "description": "Creates specs before coding. Use when starting a new project, feature, or significant change and no specification exists yet. Use when requirements are unclear, ambiguous, or only exist as a vague idea.",
     "path": "skills/spec-driven-development/SKILL.md",
     "relative_directory": "skills/spec-driven-development",
-    "sha256": "386c599468ca483b19337a1022dfb4c00f5541299be1e70fdd7993ea338e7e0e",
+    "sha256": "af5b873414a8b45b96b0d30d5297400f55eb3a56425161a088e470c14260a1e5",
     "linked_local_files": []
   },
   {
@@ -257,19 +257,7 @@
     "path": "academic-paper/SKILL.md",
     "relative_directory": "academic-paper",
     "sha256": "de08b5b4a681eb07f192b193bce9257beb2f5c101189d98f1e0067b7c1b6d9a9",
-    "linked_local_files": [
-      "academic-paper/agents/draft_writer_agent.md",
-      "academic-paper/agents/intake_agent.md",
-      "academic-paper/references/changelog.md",
-      "academic-paper/references/failure_paths.md",
-      "academic-paper/references/mode_selection_guide.md",
-      "academic-paper/references/plan_mode_protocol.md",
-      "academic-paper/references/revision_patch_protocol.md",
-      "academic-paper/references/statistical_visualization_standards.md",
-      "academic-paper/references/workflow_phase_details.md",
-      "academic-paper/references/writing_quality_check.md",
-      "academic-paper/templates/revision_tracking_template.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "Imbad0202/academic-research-skills",
@@ -279,32 +267,7 @@
     "path": "academic-paper-reviewer/SKILL.md",
     "relative_directory": "academic-paper-reviewer",
     "sha256": "344eac0d38d377b4e8d6dee0d019dc202d5f79045970b281cd6b7a79e1ad787d",
-    "linked_local_files": [
-      "academic-paper-reviewer/agents/devils_advocate_reviewer_agent.md",
-      "academic-paper-reviewer/agents/domain_reviewer_agent.md",
-      "academic-paper-reviewer/agents/editorial_synthesizer_agent.md",
-      "academic-paper-reviewer/agents/eic_agent.md",
-      "academic-paper-reviewer/agents/field_analyst_agent.md",
-      "academic-paper-reviewer/agents/methodology_reviewer_agent.md",
-      "academic-paper-reviewer/agents/perspective_reviewer_agent.md",
-      "academic-paper-reviewer/examples/hei_paper_review_example.md",
-      "academic-paper-reviewer/examples/interdisciplinary_review_example.md",
-      "academic-paper-reviewer/references/calibration_mode_protocol.md",
-      "academic-paper-reviewer/references/changelog.md",
-      "academic-paper-reviewer/references/editorial_decision_standards.md",
-      "academic-paper-reviewer/references/guided_mode_protocol.md",
-      "academic-paper-reviewer/references/integration_guide.md",
-      "academic-paper-reviewer/references/quality_rubrics.md",
-      "academic-paper-reviewer/references/re_review_mode_protocol.md",
-      "academic-paper-reviewer/references/review_criteria_framework.md",
-      "academic-paper-reviewer/references/review_quality_thinking.md",
-      "academic-paper-reviewer/references/sprint_contract_protocol.md",
-      "academic-paper-reviewer/references/statistical_reporting_standards.md",
-      "academic-paper-reviewer/references/top_journals_by_field.md",
-      "academic-paper-reviewer/templates/editorial_decision_template.md",
-      "academic-paper-reviewer/templates/peer_review_report_template.md",
-      "academic-paper-reviewer/templates/revision_response_template.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "Imbad0202/academic-research-skills",
@@ -313,73 +276,8 @@
     "description": "Orchestrator for the full academic research pipeline: research -> write -> integrity check -> review -> revise -> re-review -> re-revise -> final integrity check -> finalize. Coordinates deep-research, academic-paper, and academic-paper-reviewer into a seamless 10-stage workflow with mandatory integrity verification, two-stage peer review, and reproducible quality gates. Triggers on: academic pipeline, research to paper, full paper workflow, paper pipeline, end-to-end paper, research-to-publication, complete paper workflow.",
     "path": "academic-pipeline/SKILL.md",
     "relative_directory": "academic-pipeline",
-    "sha256": "4430cc971a5347b34f9f06f9dc27232035e654880423e5d967b4a58dbbb83b14",
-    "linked_local_files": [
-      "academic-paper/agents/literature_strategist_agent.md",
-      "academic-paper/references/anti_leakage_protocol.md",
-      "academic-paper/references/policy_anchor_disclosure_protocol.md",
-      "academic-pipeline/agents/claim_ref_alignment_audit_agent.md",
-      "academic-pipeline/agents/collaboration_depth_agent.md",
-      "academic-pipeline/agents/integrity_verification_agent.md",
-      "academic-pipeline/agents/pipeline_orchestrator_agent.md",
-      "academic-pipeline/agents/state_tracker_agent.md",
-      "academic-pipeline/examples/full_pipeline_example.md",
-      "academic-pipeline/examples/mid_entry_example.md",
-      "academic-pipeline/references/adapters/overview.md",
-      "academic-pipeline/references/ai_research_failure_modes.md",
-      "academic-pipeline/references/changelog.md",
-      "academic-pipeline/references/claim_audit_calibration_protocol.md",
-      "academic-pipeline/references/claim_verification_protocol.md",
-      "academic-pipeline/references/external_review_protocol.md",
-      "academic-pipeline/references/integrity_review_protocol.md",
-      "academic-pipeline/references/literature_corpus_consumers.md",
-      "academic-pipeline/references/mode_advisor.md",
-      "academic-pipeline/references/passport_as_reset_boundary.md",
-      "academic-pipeline/references/pipeline_state_machine.md",
-      "academic-pipeline/references/plagiarism_detection_protocol.md",
-      "academic-pipeline/references/process_summary_protocol.md",
-      "academic-pipeline/references/progress_dashboard_template.md",
-      "academic-pipeline/references/reinforcement_content.md",
-      "academic-pipeline/references/reproducibility_audit.md",
-      "academic-pipeline/references/team_collaboration_protocol.md",
-      "academic-pipeline/references/two_stage_review_protocol.md",
-      "academic-pipeline/templates/pipeline_status_template.md",
-      "deep-research/agents/bibliography_agent.md",
-      "docs/PERFORMANCE.md",
-      "docs/SETUP.md",
-      "docs/design/2026-04-26-ars-v3.6.5-consumer-integration-design.md",
-      "docs/design/2026-04-29-ars-v3.6.7-downstream-agent-pattern-protection-spec.md",
-      "docs/design/2026-04-30-ars-v3.6.7-step-6-orchestrator-hooks-spec.md",
-      "docs/design/2026-05-15-issue-103-claim-alignment-audit-decision.md",
-      "docs/design/2026-05-15-issue-103-claim-alignment-audit-spec.md",
-      "docs/design/2026-05-15-issue-111-slr-lineage-emission-design.md",
-      "docs/design/2026-06-08-260-experiment-provenance-intake-spec.md",
-      "examples/passport_with_experiment_provenance.yaml",
-      "scripts/adapters/README.md",
-      "scripts/adapters/_common.py",
-      "scripts/check_policy_anchor_protocol.py",
-      "scripts/test_policy_anchor_disclosure.py",
-      "shared/agents/compliance_agent.md",
-      "shared/artifact_reproducibility_pattern.md",
-      "shared/benchmark_report_pattern.md",
-      "shared/compliance_checkpoint_protocol.md",
-      "shared/compliance_report.schema.json",
-      "shared/contracts/passport/audit_artifact_entry.schema.json",
-      "shared/contracts/passport/claim_audit_result.schema.json",
-      "shared/contracts/passport/claim_drift.schema.json",
-      "shared/contracts/passport/claim_intent_manifest.schema.json",
-      "shared/contracts/passport/constraint_violation.schema.json",
-      "shared/contracts/passport/experiment_alignment_result.schema.json",
-      "shared/contracts/passport/experiment_provenance_entry.schema.json",
-      "shared/contracts/passport/literature_corpus_entry.schema.json",
-      "shared/contracts/passport/rejection_log.schema.json",
-      "shared/contracts/passport/reset_ledger_entry.schema.json",
-      "shared/contracts/passport/uncited_assertion.schema.json",
-      "shared/cross_model_verification.md",
-      "shared/ground_truth_isolation_pattern.md",
-      "shared/handoff_schemas.md",
-      "shared/prisma_trAIce_protocol.md"
-    ]
+    "sha256": "1fddcd6966cb5b3c00b591523a43bc65c7820145eaea6670307dd14f5ce9749c",
+    "linked_local_files": []
   },
   {
     "source_repo": "Imbad0202/academic-research-skills",
@@ -389,57 +287,7 @@
     "path": "deep-research/SKILL.md",
     "relative_directory": "deep-research",
     "sha256": "3a6d1fa662857068376a1b507143618401febea272321a2d5a70daefafd2893c",
-    "linked_local_files": [
-      "academic-paper/agents/literature_strategist_agent.md",
-      "academic-pipeline/references/literature_corpus_consumers.md",
-      "deep-research/agents/bibliography_agent.md",
-      "deep-research/agents/devils_advocate_agent.md",
-      "deep-research/agents/editor_in_chief_agent.md",
-      "deep-research/agents/ethics_review_agent.md",
-      "deep-research/agents/meta_analysis_agent.md",
-      "deep-research/agents/monitoring_agent.md",
-      "deep-research/agents/report_compiler_agent.md",
-      "deep-research/agents/research_architect_agent.md",
-      "deep-research/agents/research_question_agent.md",
-      "deep-research/agents/risk_of_bias_agent.md",
-      "deep-research/agents/socratic_mentor_agent.md",
-      "deep-research/agents/source_verification_agent.md",
-      "deep-research/agents/synthesis_agent.md",
-      "deep-research/examples/exploratory_research.md",
-      "deep-research/examples/fact_check_mode.md",
-      "deep-research/examples/handoff_to_paper.md",
-      "deep-research/examples/idea_diversity_coverage_gap_advisory.md",
-      "deep-research/examples/policy_analysis.md",
-      "deep-research/examples/review_mode.md",
-      "deep-research/examples/socratic_guided_research.md",
-      "deep-research/examples/systematic_review.md",
-      "deep-research/references/apa7_style_guide.md",
-      "deep-research/references/argumentation_reasoning_framework.md",
-      "deep-research/references/changelog.md",
-      "deep-research/references/cross_agent_quality_definitions.md",
-      "deep-research/references/equator_reporting_guidelines.md",
-      "deep-research/references/ethics_checklist.md",
-      "deep-research/references/failure_paths.md",
-      "deep-research/references/interdisciplinary_bridges.md",
-      "deep-research/references/irb_decision_tree.md",
-      "deep-research/references/literature_monitoring_strategies.md",
-      "deep-research/references/logical_fallacies.md",
-      "deep-research/references/methodology_patterns.md",
-      "deep-research/references/mode_selection_guide.md",
-      "deep-research/references/preregistration_guide.md",
-      "deep-research/references/socratic_mode_protocol.md",
-      "deep-research/references/socratic_questioning_framework.md",
-      "deep-research/references/source_quality_hierarchy.md",
-      "deep-research/references/systematic_review_protocol.md",
-      "deep-research/references/systematic_review_toolkit.md",
-      "deep-research/templates/evidence_assessment_template.md",
-      "deep-research/templates/literature_matrix_template.md",
-      "deep-research/templates/preregistration_template.md",
-      "deep-research/templates/prisma_protocol_template.md",
-      "deep-research/templates/prisma_report_template.md",
-      "deep-research/templates/research_brief_template.md",
-      "docs/design/2026-04-26-ars-v3.6.5-consumer-integration-design.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "mattpocock/skills",
@@ -485,10 +333,20 @@
     "source_repo": "mattpocock/skills",
     "repo_key": "mattpocock__skills",
     "skill_name": "ask-matt",
-    "description": "Ask which skill or flow fits your situation. A router over the user-invoked skills in this repo.",
+    "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
     "path": "skills/engineering/ask-matt/SKILL.md",
     "relative_directory": "skills/engineering/ask-matt",
-    "sha256": "fb534e029b0b4a27188f62e3839ab027c69e025915229c4524693eb1edcbb64d",
+    "sha256": "c0609bf4626b7166fb54dd7fb0091682df05f0491c96ec566b0dc96ed97ea2fb",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "mattpocock/skills",
+    "repo_key": "mattpocock__skills",
+    "skill_name": "code-review",
+    "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes \u2014 Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/PRD asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+    "path": "skills/engineering/code-review/SKILL.md",
+    "relative_directory": "skills/engineering/code-review",
+    "sha256": "6a65cc61114f96db07ec41e3920e67c9c5bf70dd6e0901eb9460ebcb2bdc209f",
     "linked_local_files": []
   },
   {
@@ -499,10 +357,7 @@
     "path": "skills/engineering/codebase-design/SKILL.md",
     "relative_directory": "skills/engineering/codebase-design",
     "sha256": "a8d50abac5a4018f60e1d911d4b6f4e36454ca14d6c390c0695a578c7de65dad",
-    "linked_local_files": [
-      "skills/engineering/codebase-design/DEEPENING.md",
-      "skills/engineering/codebase-design/DESIGN-IT-TWICE.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "mattpocock/skills",
@@ -512,9 +367,7 @@
     "path": "skills/engineering/diagnosing-bugs/SKILL.md",
     "relative_directory": "skills/engineering/diagnosing-bugs",
     "sha256": "7a0779480f323a66d109404646bcc1a14bf0232b45b3e3ea93b652a035718acb",
-    "linked_local_files": [
-      "skills/engineering/diagnosing-bugs/scripts/hitl-loop.template.sh"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "mattpocock/skills",
@@ -524,10 +377,7 @@
     "path": "skills/engineering/domain-modeling/SKILL.md",
     "relative_directory": "skills/engineering/domain-modeling",
     "sha256": "152e2c97239affb12a60c5f4a7e74ab546a49ae169688c81f4e2ccc42dafa579",
-    "linked_local_files": [
-      "skills/engineering/domain-modeling/ADR-FORMAT.md",
-      "skills/engineering/domain-modeling/CONTEXT-FORMAT.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "mattpocock/skills",
@@ -546,7 +396,7 @@
     "description": "Implement a piece of work based on a PRD or set of issues.",
     "path": "skills/engineering/implement/SKILL.md",
     "relative_directory": "skills/engineering/implement",
-    "sha256": "6e79ad337b162393ec5bd4334c37c468a7f18281856d8b15b1b9e6fb4246c252",
+    "sha256": "5b55552c4a0d90fe15c9ee44abce4498faa03b73e332024e30ab69c2b7065770",
     "linked_local_files": []
   },
   {
@@ -557,9 +407,7 @@
     "path": "skills/engineering/improve-codebase-architecture/SKILL.md",
     "relative_directory": "skills/engineering/improve-codebase-architecture",
     "sha256": "0026900866ed2a542af0559cef11dd7ae707633b75cc6f668c2e7c0a33e35032",
-    "linked_local_files": [
-      "skills/engineering/improve-codebase-architecture/HTML-REPORT.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "mattpocock/skills",
@@ -569,10 +417,17 @@
     "path": "skills/engineering/prototype/SKILL.md",
     "relative_directory": "skills/engineering/prototype",
     "sha256": "efa2a92a2f0f8e7d9d0ecb0cfc65ffd5748c73fa3a25fe164e1c8f426938fb52",
-    "linked_local_files": [
-      "skills/engineering/prototype/LOGIC.md",
-      "skills/engineering/prototype/UI.md"
-    ]
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "mattpocock/skills",
+    "repo_key": "mattpocock__skills",
+    "skill_name": "research",
+    "description": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
+    "path": "skills/engineering/research/SKILL.md",
+    "relative_directory": "skills/engineering/research",
+    "sha256": "af378829f015775a3bcd65ff466826722e99359017ae6bae227ca4c9bd14049c",
+    "linked_local_files": []
   },
   {
     "source_repo": "mattpocock/skills",
@@ -592,13 +447,7 @@
     "path": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
     "relative_directory": "skills/engineering/setup-matt-pocock-skills",
     "sha256": "a85441f31decd5705ade6b526206d60be129dbe926251c67213fe1649da5f197",
-    "linked_local_files": [
-      "skills/engineering/setup-matt-pocock-skills/domain.md",
-      "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
-      "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
-      "skills/engineering/setup-matt-pocock-skills/issue-tracker-local.md",
-      "skills/engineering/setup-matt-pocock-skills/triage-labels.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "mattpocock/skills",
@@ -607,12 +456,8 @@
     "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
     "path": "skills/engineering/tdd/SKILL.md",
     "relative_directory": "skills/engineering/tdd",
-    "sha256": "06f91f2e9cd9a6e7f13f61b13ff43241199aa70ea3b03a4d1921767c6b512424",
-    "linked_local_files": [
-      "skills/engineering/tdd/mocking.md",
-      "skills/engineering/tdd/refactoring.md",
-      "skills/engineering/tdd/tests.md"
-    ]
+    "sha256": "5363bb2775679fe9311fbb67947f95359169c6e7f1fac77c0f25e190bca6cf2f",
+    "linked_local_files": []
   },
   {
     "source_repo": "mattpocock/skills",
@@ -642,19 +487,16 @@
     "path": "skills/engineering/triage/SKILL.md",
     "relative_directory": "skills/engineering/triage",
     "sha256": "d45827c299c021f77b0f146fefa3ee679b13f99e9a2ffdf48e8de2347adeefe1",
-    "linked_local_files": [
-      "skills/engineering/triage/AGENT-BRIEF.md",
-      "skills/engineering/triage/OUT-OF-SCOPE.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "mattpocock/skills",
     "repo_key": "mattpocock__skills",
-    "skill_name": "decision-mapping",
-    "description": "Turn a loose idea into a sequenced map of investigation tickets, then drive them to resolution one at a time.",
-    "path": "skills/in-progress/decision-mapping/SKILL.md",
-    "relative_directory": "skills/in-progress/decision-mapping",
-    "sha256": "618d1f7b14f7676acfc1c3ed2cb6c75018e7fa95b8efb21d0af1b2dc4a46fcea",
+    "skill_name": "claude-handoff",
+    "description": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
+    "path": "skills/in-progress/claude-handoff/SKILL.md",
+    "relative_directory": "skills/in-progress/claude-handoff",
+    "sha256": "bbb25773158d78f610461e4041ffb56fe871cb297626e1f52b0535a9083b7996",
     "linked_local_files": []
   },
   {
@@ -670,11 +512,11 @@
   {
     "source_repo": "mattpocock/skills",
     "repo_key": "mattpocock__skills",
-    "skill_name": "review",
-    "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes \u2014 Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/PRD asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
-    "path": "skills/in-progress/review/SKILL.md",
-    "relative_directory": "skills/in-progress/review",
-    "sha256": "a389a3e0f9e791bf90b10a71787ffc80a9bae1f3bcb82a6fdf2b93380e1535f3",
+    "skill_name": "wayfinder",
+    "description": "Plan a huge chunk of work \u2014 more than one agent session can hold \u2014 as a shared map of investigation tickets on your issue tracker, and resolve them one at a time until the way to the goal is clear.",
+    "path": "skills/in-progress/wayfinder/SKILL.md",
+    "relative_directory": "skills/in-progress/wayfinder",
+    "sha256": "12ce21d3a527528f6b430b9d7c748d8bc2c33de31c072d4adfa1fcd287b59718",
     "linked_local_files": []
   },
   {
@@ -685,9 +527,7 @@
     "path": "skills/in-progress/wizard/SKILL.md",
     "relative_directory": "skills/in-progress/wizard",
     "sha256": "e113612095b14178e680022153f2409fb14ea8b992e55d59ad8ce94071ffaf49",
-    "linked_local_files": [
-      "skills/in-progress/wizard/template.sh"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "mattpocock/skills",
@@ -727,9 +567,7 @@
     "path": "skills/misc/git-guardrails-claude-code/SKILL.md",
     "relative_directory": "skills/misc/git-guardrails-claude-code",
     "sha256": "03c4de7613c712aea336d64c467ea3ed14be2cbd52345925fe949c75c01c29f7",
-    "linked_local_files": [
-      "skills/misc/git-guardrails-claude-code/scripts/block-dangerous-git.sh"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "mattpocock/skills",
@@ -795,10 +633,10 @@
     "source_repo": "mattpocock/skills",
     "repo_key": "mattpocock__skills",
     "skill_name": "grilling",
-    "description": "Interview the user relentlessly about a plan or design. Use when the user wants to stress-test a plan before building, or uses any 'grill' trigger phrases.",
+    "description": "Grill the user relentlessly about a plan or design. Use when the user wants to stress-test a plan before building, or uses any 'grill' trigger phrases.",
     "path": "skills/productivity/grilling/SKILL.md",
     "relative_directory": "skills/productivity/grilling",
-    "sha256": "fe00af3e1815f97c0a7644605479328a726b5cd95ba6ef56a4be2a92fae6c20f",
+    "sha256": "4fc8087fb48b0174b4f02e03a5ab7e331830f921fd440c51393895902d22e445",
     "linked_local_files": []
   },
   {
@@ -819,11 +657,7 @@
     "path": "skills/productivity/teach/SKILL.md",
     "relative_directory": "skills/productivity/teach",
     "sha256": "6d2dbe5e03084cf26fef66b535127b36cd1bcbe9478e26b0626029cd51dc2259",
-    "linked_local_files": [
-      "skills/productivity/teach/LEARNING-RECORD-FORMAT.md",
-      "skills/productivity/teach/MISSION-FORMAT.md",
-      "skills/productivity/teach/RESOURCES-FORMAT.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "mattpocock/skills",
@@ -833,9 +667,7 @@
     "path": "skills/productivity/writing-great-skills/SKILL.md",
     "relative_directory": "skills/productivity/writing-great-skills",
     "sha256": "7c6ba7ec25bb2c0e173c52cdc2da878aef0b083ec19a9c1799934e480c8833cc",
-    "linked_local_files": [
-      "skills/productivity/writing-great-skills/GLOSSARY.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "juliusbrussee/caveman",
@@ -854,7 +686,7 @@
     "description": ">",
     "path": "plugins/caveman/skills/caveman/SKILL.md",
     "relative_directory": "plugins/caveman/skills/caveman",
-    "sha256": "e38ec671ecbee47ce234190be12615daf60ac667d775b7340d49d07f4f63c7bc",
+    "sha256": "5e30bb56afbd0b01bd736f2da84180e76f18db4a64de8e124525d5c8dc2e8605",
     "linked_local_files": []
   },
   {
@@ -865,9 +697,7 @@
     "path": "plugins/caveman/skills/caveman-compress/SKILL.md",
     "relative_directory": "plugins/caveman/skills/caveman-compress",
     "sha256": "8b0d64c622d8a70411bbd86e736ac23cc0465fca1943a37f081e58e9d3afd210",
-    "linked_local_files": [
-      "plugins/caveman/skills/caveman-compress/scripts/__main__.py"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "juliusbrussee/caveman",
@@ -896,7 +726,7 @@
     "description": ">",
     "path": "skills/caveman/SKILL.md",
     "relative_directory": "skills/caveman",
-    "sha256": "e38ec671ecbee47ce234190be12615daf60ac667d775b7340d49d07f4f63c7bc",
+    "sha256": "5e30bb56afbd0b01bd736f2da84180e76f18db4a64de8e124525d5c8dc2e8605",
     "linked_local_files": []
   },
   {
@@ -917,9 +747,7 @@
     "path": "skills/caveman-compress/SKILL.md",
     "relative_directory": "skills/caveman-compress",
     "sha256": "8b0d64c622d8a70411bbd86e736ac23cc0465fca1943a37f081e58e9d3afd210",
-    "linked_local_files": [
-      "skills/caveman-compress/scripts/__main__.py"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "juliusbrussee/caveman",
@@ -1009,9 +837,7 @@
     "path": "skills/requesting-code-review/SKILL.md",
     "relative_directory": "skills/requesting-code-review",
     "sha256": "1017ccdd5bc61fab67c654cf118cbdb520464b313073a0a6b9a6b9aa647a3ad6",
-    "linked_local_files": [
-      "skills/requesting-code-review/code-reviewer.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "obra/Superpowers",
@@ -1021,13 +847,7 @@
     "path": "skills/subagent-driven-development/SKILL.md",
     "relative_directory": "skills/subagent-driven-development",
     "sha256": "41ab239a6ad1c487cd839fdac972a8c9cf0f5e90efa59a63f963767864f0df4c",
-    "linked_local_files": [
-      "skills/requesting-code-review/code-reviewer.md",
-      "skills/subagent-driven-development/implementer-prompt.md",
-      "skills/subagent-driven-development/scripts/review-package",
-      "skills/subagent-driven-development/scripts/task-brief",
-      "skills/subagent-driven-development/task-reviewer-prompt.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "obra/Superpowers",
@@ -1047,9 +867,7 @@
     "path": "skills/test-driven-development/SKILL.md",
     "relative_directory": "skills/test-driven-development",
     "sha256": "b5b4717b8b761cce15a6cfe9022e33fd959e0894c0c39d72c9cb49c23486c10e",
-    "linked_local_files": [
-      "skills/test-driven-development/testing-anti-patterns.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "obra/Superpowers",
@@ -1069,11 +887,7 @@
     "path": "skills/using-superpowers/SKILL.md",
     "relative_directory": "skills/using-superpowers",
     "sha256": "55379fe7c1c473a02c61961c822996bff30e1320d6921d9062509bc508482c05",
-    "linked_local_files": [
-      "skills/using-superpowers/references/antigravity-tools.md",
-      "skills/using-superpowers/references/codex-tools.md",
-      "skills/using-superpowers/references/pi-tools.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "obra/Superpowers",
@@ -1103,11 +917,7 @@
     "path": "skills/writing-skills/SKILL.md",
     "relative_directory": "skills/writing-skills",
     "sha256": "6b8d08fe863318be8480ae8428e169640309fa9208df84bb0510012764454146",
-    "linked_local_files": [
-      "skills/writing-skills/examples/CLAUDE_MD_TESTING.md",
-      "skills/writing-skills/render-graphs.js",
-      "skills/writing-skills/testing-skills-with-subagents.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -1167,15 +977,7 @@
     "path": "cursor-sdk/skills/cursor-sdk/SKILL.md",
     "relative_directory": "cursor-sdk/skills/cursor-sdk",
     "sha256": "3fbe439f366ea94e0a756fc7288d2d8bd3f871bed4b97219dc1aee2f8c8ab979",
-    "linked_local_files": [
-      "cursor-sdk/skills/cursor-sdk/references/advanced.md",
-      "cursor-sdk/skills/cursor-sdk/references/auth.md",
-      "cursor-sdk/skills/cursor-sdk/references/error-handling.md",
-      "cursor-sdk/skills/cursor-sdk/references/mcp.md",
-      "cursor-sdk/skills/cursor-sdk/references/patterns.md",
-      "cursor-sdk/skills/cursor-sdk/references/runtime-choice.md",
-      "cursor-sdk/skills/cursor-sdk/references/streaming.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -1285,11 +1087,7 @@
     "path": "cursor-team-kit/skills/pr-review-canvas/SKILL.md",
     "relative_directory": "cursor-team-kit/skills/pr-review-canvas",
     "sha256": "88a07a2459197acba3c5e06b7d695e35ad618a998442b72d05cdba4efc117ac6",
-    "linked_local_files": [
-      "cursor-team-kit/skills/pr-review-canvas/renderer.js",
-      "cursor-team-kit/skills/pr-review-canvas/styles.css",
-      "cursor-team-kit/skills/pr-review-canvas/template.html"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -1379,36 +1177,7 @@
     "path": "orchestrate/skills/orchestrate/SKILL.md",
     "relative_directory": "orchestrate/skills/orchestrate",
     "sha256": "a56718f3acf4bbc13e44ca7b8e00d499e818fb16ee293bbe3d58621968c28e22",
-    "linked_local_files": [
-      "orchestrate/skills/orchestrate/references/dispatcher.md",
-      "orchestrate/skills/orchestrate/references/planner.md",
-      "orchestrate/skills/orchestrate/scripts/adapters/index.ts",
-      "orchestrate/skills/orchestrate/scripts/adapters/slack/client.ts",
-      "orchestrate/skills/orchestrate/scripts/adapters/slack/index.ts",
-      "orchestrate/skills/orchestrate/scripts/adapters/types.ts",
-      "orchestrate/skills/orchestrate/scripts/cli.ts",
-      "orchestrate/skills/orchestrate/scripts/cli/andon.ts",
-      "orchestrate/skills/orchestrate/scripts/cli/comments.ts",
-      "orchestrate/skills/orchestrate/scripts/cli/forensics.ts",
-      "orchestrate/skills/orchestrate/scripts/cli/index.ts",
-      "orchestrate/skills/orchestrate/scripts/cli/inspect.ts",
-      "orchestrate/skills/orchestrate/scripts/cli/task.ts",
-      "orchestrate/skills/orchestrate/scripts/cli/util.ts",
-      "orchestrate/skills/orchestrate/scripts/core/agent-manager.ts",
-      "orchestrate/skills/orchestrate/scripts/core/andon.ts",
-      "orchestrate/skills/orchestrate/scripts/core/branches.ts",
-      "orchestrate/skills/orchestrate/scripts/core/comment-retry-queue.ts",
-      "orchestrate/skills/orchestrate/scripts/core/failure-handoff.ts",
-      "orchestrate/skills/orchestrate/scripts/core/handoff.ts",
-      "orchestrate/skills/orchestrate/scripts/core/loop.ts",
-      "orchestrate/skills/orchestrate/scripts/core/prompts.ts",
-      "orchestrate/skills/orchestrate/scripts/core/redact-body.ts",
-      "orchestrate/skills/orchestrate/scripts/errors.ts",
-      "orchestrate/skills/orchestrate/scripts/measurements.ts",
-      "orchestrate/skills/orchestrate/scripts/models.ts",
-      "orchestrate/skills/orchestrate/scripts/schemas.ts",
-      "orchestrate/skills/orchestrate/scripts/tools/probe-models.ts"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -1428,11 +1197,7 @@
     "path": "pstack/automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
     "relative_directory": "pstack/automations/benny/skills/reproduce-and-fix-issues",
     "sha256": "1363cc07343fe86aab42853b1bd4563288cbcbdf12f1c265b3b3b1afa25c09cb",
-    "linked_local_files": [
-      "pstack/automations/benny/skills/reproduce-and-fix-issues/references/control-adapter.md",
-      "pstack/automations/benny/skills/reproduce-and-fix-issues/references/feature-map.example.md",
-      "pstack/automations/benny/skills/reproduce-and-fix-issues/references/verify-existing-fix.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -1442,13 +1207,7 @@
     "path": "pstack/automations/benny/skills/setup-benny/SKILL.md",
     "relative_directory": "pstack/automations/benny/skills/setup-benny",
     "sha256": "5a3cbe63360c9f6373b6cb6c79a1eaf7e0eba181bfaa1577e2e6431af3407282",
-    "linked_local_files": [
-      "pstack/automations/benny/FOR_AGENTS.md",
-      "pstack/automations/benny/skills/reproduce-and-fix-issues/references/control-adapter.md",
-      "pstack/automations/benny/skills/reproduce-and-fix-issues/references/feature-map.example.md",
-      "pstack/automations/benny/skills/triage-issue-reports/references/routing.example.md",
-      "pstack/automations/benny/templates/configuration.example.yaml"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -1468,11 +1227,7 @@
     "path": "pstack/skills/architect/SKILL.md",
     "relative_directory": "pstack/skills/architect",
     "sha256": "385ce4a54ca9bcfc8f11a37010ae1c302fa44f9c562378f730ad6a6d4c827a02",
-    "linked_local_files": [
-      "pstack/skills/architect/references/rationale-template.md",
-      "pstack/skills/architect/references/runner-prompt.md",
-      "pstack/skills/arena/SKILL.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -1522,12 +1277,7 @@
     "path": "pstack/skills/how/SKILL.md",
     "relative_directory": "pstack/skills/how",
     "sha256": "d3f9b30a250c32672cf5e612c8d533907d4fd591a46874089d0cc1f3046d443f",
-    "linked_local_files": [
-      "pstack/skills/how/references/critic-prompt.md",
-      "pstack/skills/how/references/critique-rubric.md",
-      "pstack/skills/how/references/explainer-prompt.md",
-      "pstack/skills/how/references/explorer-prompt.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -1537,12 +1287,7 @@
     "path": "pstack/skills/interrogate/SKILL.md",
     "relative_directory": "pstack/skills/interrogate",
     "sha256": "bdc06a96d5cc8ebf71955968b7750ad62cdb364d4b561e951e997b78f5e0e573",
-    "linked_local_files": [
-      "pstack/skills/interrogate/references/code-quality-review.md",
-      "pstack/skills/interrogate/references/lead-judgment.md",
-      "pstack/skills/interrogate/references/reviewer-prompt.md",
-      "pstack/skills/interrogate/references/rubric.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -1552,26 +1297,7 @@
     "path": "pstack/skills/poteto-mode/SKILL.md",
     "relative_directory": "pstack/skills/poteto-mode",
     "sha256": "212758104fa5883684884e00ef6cbf82b4288d587e5ad2695b91e0ec416f8cf1",
-    "linked_local_files": [
-      "pstack/skills/poteto-mode/playbooks/authoring-a-skill.md",
-      "pstack/skills/poteto-mode/playbooks/autonomous-run.md",
-      "pstack/skills/poteto-mode/playbooks/bug-fix.md",
-      "pstack/skills/poteto-mode/playbooks/eval.md",
-      "pstack/skills/poteto-mode/playbooks/feature.md",
-      "pstack/skills/poteto-mode/playbooks/hillclimb.md",
-      "pstack/skills/poteto-mode/playbooks/investigation.md",
-      "pstack/skills/poteto-mode/playbooks/multi-phase-plan.md",
-      "pstack/skills/poteto-mode/playbooks/opening-a-pr.md",
-      "pstack/skills/poteto-mode/playbooks/pause-safely.md",
-      "pstack/skills/poteto-mode/playbooks/perf-issue.md",
-      "pstack/skills/poteto-mode/playbooks/prototype.md",
-      "pstack/skills/poteto-mode/playbooks/refactoring.md",
-      "pstack/skills/poteto-mode/playbooks/runtime-forensics.md",
-      "pstack/skills/poteto-mode/playbooks/session-pickup.md",
-      "pstack/skills/poteto-mode/playbooks/trace-forensics.md",
-      "pstack/skills/poteto-mode/playbooks/visual-parity.md",
-      "pstack/skills/poteto-mode/references/plan.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -1591,11 +1317,7 @@
     "path": "pstack/skills/principle-build-the-lever/SKILL.md",
     "relative_directory": "pstack/skills/principle-build-the-lever",
     "sha256": "3a0b02b1b890538810f27d00c525b2e677bb5d931f602fd7a774d5cd13b61c93",
-    "linked_local_files": [
-      "pstack/skills/principle-encode-lessons-in-structure/SKILL.md",
-      "pstack/skills/principle-laziness-protocol/SKILL.md",
-      "pstack/skills/principle-prove-it-works/SKILL.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -1695,9 +1417,7 @@
     "path": "pstack/skills/principle-minimize-reader-load/SKILL.md",
     "relative_directory": "pstack/skills/principle-minimize-reader-load",
     "sha256": "5af6ff6ede5071908edede1523df4f185cb8d0cee3e4a48ef79888d670ffa202",
-    "linked_local_files": [
-      "pstack/skills/principle-guard-the-context-window/SKILL.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -1797,12 +1517,7 @@
     "path": "pstack/skills/reflect/SKILL.md",
     "relative_directory": "pstack/skills/reflect",
     "sha256": "2c642a72a733c9221eebffca626c9cfcdbde3081eed682d1c5840fd530340a9f",
-    "linked_local_files": [
-      "pstack/skills/reflect/references/divergent-reviewer.md",
-      "pstack/skills/reflect/references/judgment-reviewer.md",
-      "pstack/skills/reflect/references/synthesizer.md",
-      "pstack/skills/reflect/references/tooling-reviewer.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -1822,10 +1537,7 @@
     "path": "pstack/skills/show-me-your-work/SKILL.md",
     "relative_directory": "pstack/skills/show-me-your-work",
     "sha256": "b99833c41a8781a6af191487f1af37711a3198b98f9373e3c02292b8a6e09aba",
-    "linked_local_files": [
-      "pstack/skills/show-me-your-work/references/decision-log-template.tsv",
-      "pstack/skills/show-me-your-work/scripts/log.sh"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -1845,9 +1557,7 @@
     "path": "pstack/skills/typescript-best-practices/SKILL.md",
     "relative_directory": "pstack/skills/typescript-best-practices",
     "sha256": "b6c9af16c4accbe6385eec297a0dff9327c0a2cff27ae4b3b31e79deae6631a8",
-    "linked_local_files": [
-      "pstack/skills/typescript-best-practices/references/patterns.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -1867,20 +1577,7 @@
     "path": "pstack/skills/why/SKILL.md",
     "relative_directory": "pstack/skills/why",
     "sha256": "0d52542dd598fcb1986474c897d613f137a8489e8dce73d07bc35c8c11dc4d65",
-    "linked_local_files": [
-      "pstack/skills/why/references/epistemics.md",
-      "pstack/skills/why/references/investigator-prompt.md",
-      "pstack/skills/why/references/source-playbook.md",
-      "pstack/skills/why/references/sources/code-archaeology.md",
-      "pstack/skills/why/references/sources/databricks.md",
-      "pstack/skills/why/references/sources/datadog.md",
-      "pstack/skills/why/references/sources/incident-postmortem.md",
-      "pstack/skills/why/references/sources/linear.md",
-      "pstack/skills/why/references/sources/notion.md",
-      "pstack/skills/why/references/sources/sentry.md",
-      "pstack/skills/why/references/sources/slack.md",
-      "pstack/skills/why/references/synthesizer-prompt.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -2040,9 +1737,7 @@
     "path": ".agents/skills/brand-voice/SKILL.md",
     "relative_directory": ".agents/skills/brand-voice",
     "sha256": "1507b4251d07fdc0aa1aac99af7283b2200dfeb3531855355b05afda13d47dcd",
-    "linked_local_files": [
-      ".agents/skills/brand-voice/references/voice-profile-schema.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -2162,9 +1857,7 @@
     "path": ".agents/skills/everything-claude-code/SKILL.md",
     "relative_directory": ".agents/skills/everything-claude-code",
     "sha256": "de9cfb1457802667bf8e1f206ab62de7f465b1cc6fc0b7fc2fa842dc98914da3",
-    "linked_local_files": [
-      ".agents/skills/everything-claude-code/agents/openai.yaml"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -2754,12 +2447,7 @@
     "path": ".kiro/skills/react-patterns/SKILL.md",
     "relative_directory": ".kiro/skills/react-patterns",
     "sha256": "86f91338c35d4a77b05a9130ddef7fe7588cf4701f6aa3693e36ab6bea1301ba",
-    "linked_local_files": [
-      ".kiro/skills/e2e-testing/SKILL.md",
-      ".kiro/skills/frontend-patterns/SKILL.md",
-      ".kiro/skills/react-testing/SKILL.md",
-      ".kiro/skills/tdd-workflow/SKILL.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -2769,12 +2457,7 @@
     "path": ".kiro/skills/react-testing/SKILL.md",
     "relative_directory": ".kiro/skills/react-testing",
     "sha256": "82ecdce94f7f058e1e44bcf0cdfa67fd48f15106afec854a54b81c61d6f59771",
-    "linked_local_files": [
-      ".kiro/skills/e2e-testing/SKILL.md",
-      ".kiro/skills/frontend-patterns/SKILL.md",
-      ".kiro/skills/react-patterns/SKILL.md",
-      ".kiro/skills/tdd-workflow/SKILL.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -5444,9 +5127,7 @@
     "path": "docs/ja-JP/skills/token-budget-advisor/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/token-budget-advisor",
     "sha256": "062d469d5b7d3b3954f8fa37890d13fb49c26cdd945fde018334fc90297578fa",
-    "linked_local_files": [
-      "docs/ja-JP/skills/context-budget/SKILL.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -5506,19 +5187,7 @@
     "path": "docs/ja-JP/skills/videodb/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/videodb",
     "sha256": "e8c0907a0e4cd122cb0147ecf1bb5a9c16062e44d8d0251c17a728c9053da8cb",
-    "linked_local_files": [
-      "docs/ja-JP/skills/videodb/reference/api-reference.md",
-      "docs/ja-JP/skills/videodb/reference/capture-reference.md",
-      "docs/ja-JP/skills/videodb/reference/capture.md",
-      "docs/ja-JP/skills/videodb/reference/editor.md",
-      "docs/ja-JP/skills/videodb/reference/generative.md",
-      "docs/ja-JP/skills/videodb/reference/rtstream-reference.md",
-      "docs/ja-JP/skills/videodb/reference/rtstream.md",
-      "docs/ja-JP/skills/videodb/reference/search.md",
-      "docs/ja-JP/skills/videodb/reference/streaming.md",
-      "docs/ja-JP/skills/videodb/reference/use-cases.md",
-      "skills/videodb/scripts/ws_listener.py"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -5608,9 +5277,7 @@
     "path": "docs/ko-KR/skills/continuous-learning/SKILL.md",
     "relative_directory": "docs/ko-KR/skills/continuous-learning",
     "sha256": "5233eb990a5fbc9bf1b8dc276514fecc6fe0a0852943e6258a7d908534cf8bfb",
-    "linked_local_files": [
-      "docs/continuous-learning-v2-spec.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -7280,9 +6947,7 @@
     "path": "docs/zh-CN/skills/manim-video/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/manim-video",
     "sha256": "d2ab807a14aa42d77ad2a8d4437e5672f4d4ac34cd3572681f515c9547f643e4",
-    "linked_local_files": [
-      "skills/manim-video/assets/network_graph_scene.py"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -7852,9 +7517,7 @@
     "path": "docs/zh-CN/skills/token-budget-advisor/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/token-budget-advisor",
     "sha256": "2bb15c65d738563372c28e02ba4d74e36eace8bb97f4f66a1356fa5596ee17a7",
-    "linked_local_files": [
-      "docs/zh-CN/skills/context-budget/SKILL.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -7904,22 +7567,7 @@
     "path": "docs/zh-CN/skills/videodb/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/videodb",
     "sha256": "8854cbffa4a5447b3e86b66e71f7ff2a7850738cd69c1b7098bf508edf9ca53d",
-    "linked_local_files": [
-      "docs/zh-CN/skills/videodb/reference/api-reference.md",
-      "docs/zh-CN/skills/videodb/reference/capture-reference.md",
-      "docs/zh-CN/skills/videodb/reference/capture.md",
-      "docs/zh-CN/skills/videodb/reference/editor.md",
-      "docs/zh-CN/skills/videodb/reference/generative.md",
-      "docs/zh-CN/skills/videodb/reference/rtstream-reference.md",
-      "docs/zh-CN/skills/videodb/reference/rtstream.md",
-      "docs/zh-CN/skills/videodb/reference/search.md",
-      "docs/zh-CN/skills/videodb/reference/streaming.md",
-      "docs/zh-CN/skills/videodb/reference/use-cases.md",
-      "skills/videodb/reference/editor.md",
-      "skills/videodb/reference/search.md",
-      "skills/videodb/reference/streaming.md",
-      "skills/videodb/scripts/ws_listener.py"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -8179,10 +7827,7 @@
     "path": "skills/agent-self-evaluation/SKILL.md",
     "relative_directory": "skills/agent-self-evaluation",
     "sha256": "96bb21eb37760f596789f84ec0a5dad4ef92fc2255e35cd7b88dc4234062b8c1",
-    "linked_local_files": [
-      "skills/agent-self-evaluation/references/hook-integration.md",
-      "skills/agent-self-evaluation/templates/evaluation-report.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -8252,43 +7897,7 @@
     "path": "skills/angular-developer/SKILL.md",
     "relative_directory": "skills/angular-developer",
     "sha256": "28ee37a8cf63add48fffc7c8676c6368aee35f3042525e79769b5a3d4e01aed1",
-    "linked_local_files": [
-      "skills/angular-developer/references/angular-animations.md",
-      "skills/angular-developer/references/angular-aria.md",
-      "skills/angular-developer/references/cli.md",
-      "skills/angular-developer/references/component-harnesses.md",
-      "skills/angular-developer/references/component-styling.md",
-      "skills/angular-developer/references/components.md",
-      "skills/angular-developer/references/creating-services.md",
-      "skills/angular-developer/references/data-resolvers.md",
-      "skills/angular-developer/references/define-routes.md",
-      "skills/angular-developer/references/defining-providers.md",
-      "skills/angular-developer/references/di-fundamentals.md",
-      "skills/angular-developer/references/e2e-testing.md",
-      "skills/angular-developer/references/effects.md",
-      "skills/angular-developer/references/hierarchical-injectors.md",
-      "skills/angular-developer/references/host-elements.md",
-      "skills/angular-developer/references/injection-context.md",
-      "skills/angular-developer/references/inputs.md",
-      "skills/angular-developer/references/linked-signal.md",
-      "skills/angular-developer/references/loading-strategies.md",
-      "skills/angular-developer/references/mcp.md",
-      "skills/angular-developer/references/navigate-to-routes.md",
-      "skills/angular-developer/references/outputs.md",
-      "skills/angular-developer/references/reactive-forms.md",
-      "skills/angular-developer/references/rendering-strategies.md",
-      "skills/angular-developer/references/resource.md",
-      "skills/angular-developer/references/route-animations.md",
-      "skills/angular-developer/references/route-guards.md",
-      "skills/angular-developer/references/router-lifecycle.md",
-      "skills/angular-developer/references/router-testing.md",
-      "skills/angular-developer/references/show-routes-with-outlets.md",
-      "skills/angular-developer/references/signal-forms.md",
-      "skills/angular-developer/references/signals-overview.md",
-      "skills/angular-developer/references/tailwind-css.md",
-      "skills/angular-developer/references/template-driven-forms.md",
-      "skills/angular-developer/references/testing-fundamentals.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -8438,9 +8047,7 @@
     "path": "skills/brand-voice/SKILL.md",
     "relative_directory": "skills/brand-voice",
     "sha256": "57c7f8440b7bd4c91c0d325640b5c6fb7a3dc7fc05595946c7bc705761a987a7",
-    "linked_local_files": [
-      "skills/brand-voice/references/voice-profile-schema.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -8690,10 +8297,7 @@
     "path": "skills/continuous-learning-v2/SKILL.md",
     "relative_directory": "skills/continuous-learning-v2",
     "sha256": "75485ddb37e2d1d6f056b404d9939bf46a2b409b1286aec209a510112e5b64b1",
-    "linked_local_files": [
-      "skills/continuous-learning-v2/scripts/lib/homunculus-dir.sh",
-      "skills/continuous-learning-v2/scripts/migrate-homunculus.sh"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -9773,9 +9377,7 @@
     "path": "skills/manim-video/SKILL.md",
     "relative_directory": "skills/manim-video",
     "sha256": "bb890b019664a995ca2bf6c08add444a85099caf4c0085de50e9ad6f62d62d5f",
-    "linked_local_files": [
-      "skills/manim-video/assets/network_graph_scene.py"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -9805,9 +9407,7 @@
     "path": "skills/mcp-server-patterns/SKILL.md",
     "relative_directory": "skills/mcp-server-patterns",
     "sha256": "0d2d77ff4cffabd26a8db9a54fd16ae29063519fc2d7d2da3539c5e391a3973a",
-    "linked_local_files": [
-      "docs/capability-surface-selection.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -9997,14 +9597,7 @@
     "path": "skills/openclaw-persona-forge/SKILL.md",
     "relative_directory": "skills/openclaw-persona-forge",
     "sha256": "d5878059ca40ee2d42ca9dfb55100d3ed4438f4268aa7be61b47ee76789ed12a",
-    "linked_local_files": [
-      "skills/openclaw-persona-forge/references/avatar-style.md",
-      "skills/openclaw-persona-forge/references/boundary-rules.md",
-      "skills/openclaw-persona-forge/references/error-handling.md",
-      "skills/openclaw-persona-forge/references/identity-tension.md",
-      "skills/openclaw-persona-forge/references/naming-system.md",
-      "skills/openclaw-persona-forge/references/output-template.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -10024,9 +9617,7 @@
     "path": "skills/orch-add-feature/SKILL.md",
     "relative_directory": "skills/orch-add-feature",
     "sha256": "6ba858d94cfaa05f3b1e63ad09656285a4a33009e9cd837ebcaf093d39d29a25",
-    "linked_local_files": [
-      "skills/orch-pipeline/SKILL.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -10036,9 +9627,7 @@
     "path": "skills/orch-build-mvp/SKILL.md",
     "relative_directory": "skills/orch-build-mvp",
     "sha256": "1b6b149c2388c9ebb91d3a226cb1712329baeb843279e1c3496d889d625ab561",
-    "linked_local_files": [
-      "skills/orch-pipeline/SKILL.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -10048,9 +9637,7 @@
     "path": "skills/orch-change-feature/SKILL.md",
     "relative_directory": "skills/orch-change-feature",
     "sha256": "d35ee5dfdf5f64e60e8905124eccf73267bc59852e7d11ba5ca5acf7d765c6f8",
-    "linked_local_files": [
-      "skills/orch-pipeline/SKILL.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -10060,9 +9647,7 @@
     "path": "skills/orch-fix-defect/SKILL.md",
     "relative_directory": "skills/orch-fix-defect",
     "sha256": "399e142bbf3751b5a0fdec1ae450f5673bd1a038304a221748c865280e885b2d",
-    "linked_local_files": [
-      "skills/orch-pipeline/SKILL.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -10082,9 +9667,7 @@
     "path": "skills/orch-refine-code/SKILL.md",
     "relative_directory": "skills/orch-refine-code",
     "sha256": "5f0f468ffa4e220bd8f76684b3df6a14b67b34333e1ae52e0de49ed2c16fa17b",
-    "linked_local_files": [
-      "skills/orch-pipeline/SKILL.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -10354,57 +9937,7 @@
     "path": "skills/react-patterns/SKILL.md",
     "relative_directory": "skills/react-patterns",
     "sha256": "f3208d44a5d553038c42e046cec4dc16e4a3d90a9dbf931f883a2e21919a64a9",
-    "linked_local_files": [
-      "rules/common/patterns.md",
-      "rules/common/testing.md",
-      "rules/react/hooks.md",
-      "rules/react/testing.md",
-      "rules/typescript/patterns.md",
-      "rules/typescript/testing.md",
-      "skills/accessibility/SKILL.md",
-      "skills/angular-developer/SKILL.md",
-      "skills/angular-developer/references/angular-animations.md",
-      "skills/angular-developer/references/angular-aria.md",
-      "skills/angular-developer/references/cli.md",
-      "skills/angular-developer/references/component-harnesses.md",
-      "skills/angular-developer/references/component-styling.md",
-      "skills/angular-developer/references/components.md",
-      "skills/angular-developer/references/creating-services.md",
-      "skills/angular-developer/references/data-resolvers.md",
-      "skills/angular-developer/references/define-routes.md",
-      "skills/angular-developer/references/defining-providers.md",
-      "skills/angular-developer/references/di-fundamentals.md",
-      "skills/angular-developer/references/e2e-testing.md",
-      "skills/angular-developer/references/effects.md",
-      "skills/angular-developer/references/hierarchical-injectors.md",
-      "skills/angular-developer/references/host-elements.md",
-      "skills/angular-developer/references/injection-context.md",
-      "skills/angular-developer/references/inputs.md",
-      "skills/angular-developer/references/linked-signal.md",
-      "skills/angular-developer/references/loading-strategies.md",
-      "skills/angular-developer/references/mcp.md",
-      "skills/angular-developer/references/navigate-to-routes.md",
-      "skills/angular-developer/references/outputs.md",
-      "skills/angular-developer/references/reactive-forms.md",
-      "skills/angular-developer/references/rendering-strategies.md",
-      "skills/angular-developer/references/resource.md",
-      "skills/angular-developer/references/route-animations.md",
-      "skills/angular-developer/references/route-guards.md",
-      "skills/angular-developer/references/router-lifecycle.md",
-      "skills/angular-developer/references/router-testing.md",
-      "skills/angular-developer/references/show-routes-with-outlets.md",
-      "skills/angular-developer/references/signal-forms.md",
-      "skills/angular-developer/references/signals-overview.md",
-      "skills/angular-developer/references/tailwind-css.md",
-      "skills/angular-developer/references/template-driven-forms.md",
-      "skills/angular-developer/references/testing-fundamentals.md",
-      "skills/e2e-testing/SKILL.md",
-      "skills/frontend-patterns/SKILL.md",
-      "skills/nextjs-turbopack/SKILL.md",
-      "skills/react-performance/SKILL.md",
-      "skills/react-testing/SKILL.md",
-      "skills/tdd-workflow/SKILL.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -10414,57 +9947,7 @@
     "path": "skills/react-performance/SKILL.md",
     "relative_directory": "skills/react-performance",
     "sha256": "ac76e8694d4f802a7bccc3c07a73ac68ace6d82a65ea10f10d8b7384dda61a8f",
-    "linked_local_files": [
-      "rules/common/patterns.md",
-      "rules/common/testing.md",
-      "rules/react/hooks.md",
-      "rules/react/testing.md",
-      "rules/typescript/patterns.md",
-      "rules/typescript/testing.md",
-      "skills/accessibility/SKILL.md",
-      "skills/angular-developer/SKILL.md",
-      "skills/angular-developer/references/angular-animations.md",
-      "skills/angular-developer/references/angular-aria.md",
-      "skills/angular-developer/references/cli.md",
-      "skills/angular-developer/references/component-harnesses.md",
-      "skills/angular-developer/references/component-styling.md",
-      "skills/angular-developer/references/components.md",
-      "skills/angular-developer/references/creating-services.md",
-      "skills/angular-developer/references/data-resolvers.md",
-      "skills/angular-developer/references/define-routes.md",
-      "skills/angular-developer/references/defining-providers.md",
-      "skills/angular-developer/references/di-fundamentals.md",
-      "skills/angular-developer/references/e2e-testing.md",
-      "skills/angular-developer/references/effects.md",
-      "skills/angular-developer/references/hierarchical-injectors.md",
-      "skills/angular-developer/references/host-elements.md",
-      "skills/angular-developer/references/injection-context.md",
-      "skills/angular-developer/references/inputs.md",
-      "skills/angular-developer/references/linked-signal.md",
-      "skills/angular-developer/references/loading-strategies.md",
-      "skills/angular-developer/references/mcp.md",
-      "skills/angular-developer/references/navigate-to-routes.md",
-      "skills/angular-developer/references/outputs.md",
-      "skills/angular-developer/references/reactive-forms.md",
-      "skills/angular-developer/references/rendering-strategies.md",
-      "skills/angular-developer/references/resource.md",
-      "skills/angular-developer/references/route-animations.md",
-      "skills/angular-developer/references/route-guards.md",
-      "skills/angular-developer/references/router-lifecycle.md",
-      "skills/angular-developer/references/router-testing.md",
-      "skills/angular-developer/references/show-routes-with-outlets.md",
-      "skills/angular-developer/references/signal-forms.md",
-      "skills/angular-developer/references/signals-overview.md",
-      "skills/angular-developer/references/tailwind-css.md",
-      "skills/angular-developer/references/template-driven-forms.md",
-      "skills/angular-developer/references/testing-fundamentals.md",
-      "skills/e2e-testing/SKILL.md",
-      "skills/frontend-patterns/SKILL.md",
-      "skills/nextjs-turbopack/SKILL.md",
-      "skills/react-patterns/SKILL.md",
-      "skills/react-testing/SKILL.md",
-      "skills/tdd-workflow/SKILL.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -10474,57 +9957,7 @@
     "path": "skills/react-testing/SKILL.md",
     "relative_directory": "skills/react-testing",
     "sha256": "51c18b4e28285bb876ef469e47c6f53108b5a9f900950a60e897c3c24826a65e",
-    "linked_local_files": [
-      "rules/common/patterns.md",
-      "rules/common/testing.md",
-      "rules/react/hooks.md",
-      "rules/react/testing.md",
-      "rules/typescript/patterns.md",
-      "rules/typescript/testing.md",
-      "skills/accessibility/SKILL.md",
-      "skills/angular-developer/SKILL.md",
-      "skills/angular-developer/references/angular-animations.md",
-      "skills/angular-developer/references/angular-aria.md",
-      "skills/angular-developer/references/cli.md",
-      "skills/angular-developer/references/component-harnesses.md",
-      "skills/angular-developer/references/component-styling.md",
-      "skills/angular-developer/references/components.md",
-      "skills/angular-developer/references/creating-services.md",
-      "skills/angular-developer/references/data-resolvers.md",
-      "skills/angular-developer/references/define-routes.md",
-      "skills/angular-developer/references/defining-providers.md",
-      "skills/angular-developer/references/di-fundamentals.md",
-      "skills/angular-developer/references/e2e-testing.md",
-      "skills/angular-developer/references/effects.md",
-      "skills/angular-developer/references/hierarchical-injectors.md",
-      "skills/angular-developer/references/host-elements.md",
-      "skills/angular-developer/references/injection-context.md",
-      "skills/angular-developer/references/inputs.md",
-      "skills/angular-developer/references/linked-signal.md",
-      "skills/angular-developer/references/loading-strategies.md",
-      "skills/angular-developer/references/mcp.md",
-      "skills/angular-developer/references/navigate-to-routes.md",
-      "skills/angular-developer/references/outputs.md",
-      "skills/angular-developer/references/reactive-forms.md",
-      "skills/angular-developer/references/rendering-strategies.md",
-      "skills/angular-developer/references/resource.md",
-      "skills/angular-developer/references/route-animations.md",
-      "skills/angular-developer/references/route-guards.md",
-      "skills/angular-developer/references/router-lifecycle.md",
-      "skills/angular-developer/references/router-testing.md",
-      "skills/angular-developer/references/show-routes-with-outlets.md",
-      "skills/angular-developer/references/signal-forms.md",
-      "skills/angular-developer/references/signals-overview.md",
-      "skills/angular-developer/references/tailwind-css.md",
-      "skills/angular-developer/references/template-driven-forms.md",
-      "skills/angular-developer/references/testing-fundamentals.md",
-      "skills/e2e-testing/SKILL.md",
-      "skills/frontend-patterns/SKILL.md",
-      "skills/nextjs-turbopack/SKILL.md",
-      "skills/react-patterns/SKILL.md",
-      "skills/react-performance/SKILL.md",
-      "skills/tdd-workflow/SKILL.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -10574,38 +10007,7 @@
     "path": "skills/remotion-video-creation/SKILL.md",
     "relative_directory": "skills/remotion-video-creation",
     "sha256": "94b0e5591d26670c3c3a98b993140354296918b1f103dc489e0dbb413fb6803a",
-    "linked_local_files": [
-      "skills/remotion-video-creation/rules/3d.md",
-      "skills/remotion-video-creation/rules/animations.md",
-      "skills/remotion-video-creation/rules/assets.md",
-      "skills/remotion-video-creation/rules/assets/text-animations-typewriter.tsx",
-      "skills/remotion-video-creation/rules/assets/text-animations-word-highlight.tsx",
-      "skills/remotion-video-creation/rules/audio.md",
-      "skills/remotion-video-creation/rules/calculate-metadata.md",
-      "skills/remotion-video-creation/rules/can-decode.md",
-      "skills/remotion-video-creation/rules/charts.md",
-      "skills/remotion-video-creation/rules/compositions.md",
-      "skills/remotion-video-creation/rules/display-captions.md",
-      "skills/remotion-video-creation/rules/extract-frames.md",
-      "skills/remotion-video-creation/rules/fonts.md",
-      "skills/remotion-video-creation/rules/get-audio-duration.md",
-      "skills/remotion-video-creation/rules/get-video-dimensions.md",
-      "skills/remotion-video-creation/rules/get-video-duration.md",
-      "skills/remotion-video-creation/rules/gifs.md",
-      "skills/remotion-video-creation/rules/images.md",
-      "skills/remotion-video-creation/rules/import-srt-captions.md",
-      "skills/remotion-video-creation/rules/lottie.md",
-      "skills/remotion-video-creation/rules/measuring-dom-nodes.md",
-      "skills/remotion-video-creation/rules/measuring-text.md",
-      "skills/remotion-video-creation/rules/sequencing.md",
-      "skills/remotion-video-creation/rules/tailwind.md",
-      "skills/remotion-video-creation/rules/text-animations.md",
-      "skills/remotion-video-creation/rules/timing.md",
-      "skills/remotion-video-creation/rules/transcribe-captions.md",
-      "skills/remotion-video-creation/rules/transitions.md",
-      "skills/remotion-video-creation/rules/trimming.md",
-      "skills/remotion-video-creation/rules/videos.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -10935,9 +10337,7 @@
     "path": "skills/taste/SKILL.md",
     "relative_directory": "skills/taste",
     "sha256": "0b8683366ab51d4d45882710c9086ca43123eae25484838c7c290bdd4568bb32",
-    "linked_local_files": [
-      "skills/taste/references/genre-taxonomy.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -10987,14 +10387,7 @@
     "path": "skills/tinystruct-patterns/SKILL.md",
     "relative_directory": "skills/tinystruct-patterns",
     "sha256": "6f5d16090aa5b1913002480ecfb00feb3ad894a05c9b84d8f3645e2297b6024b",
-    "linked_local_files": [
-      "skills/tinystruct-patterns/references/architecture.md",
-      "skills/tinystruct-patterns/references/data-handling.md",
-      "skills/tinystruct-patterns/references/database.md",
-      "skills/tinystruct-patterns/references/routing.md",
-      "skills/tinystruct-patterns/references/system-usage.md",
-      "skills/tinystruct-patterns/references/testing.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -11004,9 +10397,7 @@
     "path": "skills/token-budget-advisor/SKILL.md",
     "relative_directory": "skills/token-budget-advisor",
     "sha256": "d092defef257ce470bf364c55a2f2a51cdb37655779a66f1993cbd4295317d03",
-    "linked_local_files": [
-      "skills/context-budget/SKILL.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -11076,19 +10467,7 @@
     "path": "skills/videodb/SKILL.md",
     "relative_directory": "skills/videodb",
     "sha256": "514e9cc1d5735b6a0810f0d76a261bb9d37a49fd6b8e76d9fe5d7821dfb955b9",
-    "linked_local_files": [
-      "skills/videodb/reference/api-reference.md",
-      "skills/videodb/reference/capture-reference.md",
-      "skills/videodb/reference/capture.md",
-      "skills/videodb/reference/editor.md",
-      "skills/videodb/reference/generative.md",
-      "skills/videodb/reference/rtstream-reference.md",
-      "skills/videodb/reference/rtstream.md",
-      "skills/videodb/reference/search.md",
-      "skills/videodb/reference/streaming.md",
-      "skills/videodb/reference/use-cases.md",
-      "skills/videodb/scripts/ws_listener.py"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -11157,13 +10536,8 @@
     "description": "Research what people actually say about any topic in the last 30 days. Pulls posts and engagement from Reddit, X, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the web.",
     "path": "skills/last30days/SKILL.md",
     "relative_directory": "skills/last30days",
-    "sha256": "fc09adbbaf8095eeb68b3b5eb1d6f7020ba8d41f4d6cc415d18176b8d1c38aec",
-    "linked_local_files": [
-      "skills/last30days/references/save-html-brief.md",
-      "skills/last30days/scripts/last30days.py",
-      "skills/last30days/scripts/lib/categories.py",
-      "skills/last30days/scripts/lib/youtube_yt.py"
-    ]
+    "sha256": "2c4e8e0f3964c925bd0e62c8aaafc888def5c2784e59a2d08efb54f76234daeb",
+    "linked_local_files": []
   },
   {
     "source_repo": "DietrichGebert/ponytail",
@@ -11212,7 +10586,7 @@
     "description": "Quick reference for ponytail's modes, skills, and commands. One-shot display.",
     "path": ".openclaw/skills/ponytail-help/SKILL.md",
     "relative_directory": ".openclaw/skills/ponytail-help",
-    "sha256": "f89670de7ab737bf07d769e4728704da2422b65fa8436093553501aaa7610790",
+    "sha256": "be2bab79e073c0cc5d58f21a4e2d5bdfdaa3baec832d9575493636752b79161b",
     "linked_local_files": []
   },
   {
@@ -11272,7 +10646,7 @@
     "description": ">",
     "path": "skills/ponytail-help/SKILL.md",
     "relative_directory": "skills/ponytail-help",
-    "sha256": "23ee3856c727129f87ab850985f9e9ed6368f10449816aa7ff043bf2dd45ab4d",
+    "sha256": "2264d1615117b02b0fd5a69ec84cd2757006471a78e4d6c22eed6d581c1d37a4",
     "linked_local_files": []
   },
   {

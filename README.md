@@ -26,7 +26,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 ## Source Repositories
 
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
-  - Archived commit: `aba7c4e9695c363e65cb59effe926c7f1d1abe3d`
+  - Archived commit: `8c6530305396f341b5da7201cf1f7e390fdb863f`
   - Snapshot: [`archives/addyosmani__agent-skills/snapshot`](archives/addyosmani__agent-skills/snapshot)
   - Skills discovered: 24
   - Files retained in reduced snapshot: 24
@@ -36,42 +36,42 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
-  - Archived commit: `17c518b286e48bbcd19fa7d05ec4f7d2aeb01641`
+  - Archived commit: `d3c287658e547c65106a9cbe45e4a01110ff2145`
   - Snapshot: [`archives/Imbad0202__academic-research-skills/snapshot`](archives/Imbad0202__academic-research-skills/snapshot)
   - Skills discovered: 4
-  - Files retained in reduced snapshot: 148
+  - Files retained in reduced snapshot: 4
 - [mattpocock/skills](https://github.com/mattpocock/skills)
-  - Archived commit: `0877403d1e867fd9d574117e9b34ade404f36d2a`
+  - Archived commit: `272f99b22574f50e4266791c86b9302682970e23`
   - Snapshot: [`archives/mattpocock__skills/snapshot`](archives/mattpocock__skills/snapshot)
-  - Skills discovered: 36
-  - Files retained in reduced snapshot: 60
+  - Skills discovered: 38
+  - Files retained in reduced snapshot: 38
 - [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman)
-  - Archived commit: `25d22f864ad68cc447a4cb93aefde918aa4aec9f`
+  - Archived commit: `0d95a81d35a9f2d123a5e9430d1cfc43d55f1bb0`
   - Snapshot: [`archives/juliusbrussee__caveman/snapshot`](archives/juliusbrussee__caveman/snapshot)
   - Skills discovered: 11
-  - Files retained in reduced snapshot: 13
+  - Files retained in reduced snapshot: 11
 - [obra/Superpowers](https://github.com/obra/Superpowers)
-  - Archived commit: `f268f7c953744036f0fa7e9d4b73535c04e57cb8`
+  - Archived commit: `d884ae04edebef577e82ff7c4e143debd0bbec99`
   - Snapshot: [`archives/obra__Superpowers/snapshot`](archives/obra__Superpowers/snapshot)
   - Skills discovered: 14
-  - Files retained in reduced snapshot: 26
+  - Files retained in reduced snapshot: 14
 - [cursor/plugins](https://github.com/cursor/plugins)
   - Archived commit: `0452e08a314c03621ec5ac1324f1ad1dd824f1a4`
   - Snapshot: [`archives/cursor__plugins/snapshot`](archives/cursor__plugins/snapshot)
   - Skills discovered: 74
-  - Files retained in reduced snapshot: 165
+  - Files retained in reduced snapshot: 74
 - [affaan-m/ECC](https://github.com/affaan-m/ECC)
   - Archived commit: `81af40761939056ab3dc54732fd4f562a27309d0`
   - Snapshot: [`archives/affaan-m__ECC/snapshot`](archives/affaan-m__ECC/snapshot)
   - Skills discovered: 887
-  - Files retained in reduced snapshot: 1012
+  - Files retained in reduced snapshot: 887
 - [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
-  - Archived commit: `a9d2674147b8e6d4eba45f71bf9e05af6262fa21`
+  - Archived commit: `784624c002b294b4c32281fd5867e13bccd03ac7`
   - Snapshot: [`archives/mvanhorn__last30days-skill/snapshot`](archives/mvanhorn__last30days-skill/snapshot)
   - Skills discovered: 1
-  - Files retained in reduced snapshot: 5
+  - Files retained in reduced snapshot: 1
 - [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
-  - Archived commit: `16f6cbf4b87792938e47b0f8c650b6d80fcbc98c`
+  - Archived commit: `40e50d9e03242aa5dd53ac771950f9127362b25f`
   - Snapshot: [`archives/DietrichGebert__ponytail/snapshot`](archives/DietrichGebert__ponytail/snapshot)
   - Skills discovered: 12
   - Files retained in reduced snapshot: 12
@@ -126,6 +126,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `request-refactor-plan`: [`skills/deprecated/request-refactor-plan/SKILL.md`](archives/mattpocock__skills/snapshot/skills/deprecated/request-refactor-plan/SKILL.md)
 - `ubiquitous-language`: [`skills/deprecated/ubiquitous-language/SKILL.md`](archives/mattpocock__skills/snapshot/skills/deprecated/ubiquitous-language/SKILL.md)
 - `ask-matt`: [`skills/engineering/ask-matt/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/ask-matt/SKILL.md)
+- `code-review`: [`skills/engineering/code-review/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/code-review/SKILL.md)
 - `codebase-design`: [`skills/engineering/codebase-design/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/codebase-design/SKILL.md)
 - `diagnosing-bugs`: [`skills/engineering/diagnosing-bugs/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/diagnosing-bugs/SKILL.md)
 - `domain-modeling`: [`skills/engineering/domain-modeling/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/domain-modeling/SKILL.md)
@@ -133,15 +134,16 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `implement`: [`skills/engineering/implement/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/implement/SKILL.md)
 - `improve-codebase-architecture`: [`skills/engineering/improve-codebase-architecture/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/improve-codebase-architecture/SKILL.md)
 - `prototype`: [`skills/engineering/prototype/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/prototype/SKILL.md)
+- `research`: [`skills/engineering/research/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/research/SKILL.md)
 - `resolving-merge-conflicts`: [`skills/engineering/resolving-merge-conflicts/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/resolving-merge-conflicts/SKILL.md)
 - `setup-matt-pocock-skills`: [`skills/engineering/setup-matt-pocock-skills/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/setup-matt-pocock-skills/SKILL.md)
 - `tdd`: [`skills/engineering/tdd/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/tdd/SKILL.md)
 - `to-issues`: [`skills/engineering/to-issues/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/to-issues/SKILL.md)
 - `to-prd`: [`skills/engineering/to-prd/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/to-prd/SKILL.md)
 - `triage`: [`skills/engineering/triage/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/triage/SKILL.md)
-- `decision-mapping`: [`skills/in-progress/decision-mapping/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/decision-mapping/SKILL.md)
+- `claude-handoff`: [`skills/in-progress/claude-handoff/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/claude-handoff/SKILL.md)
 - `loop-me`: [`skills/in-progress/loop-me/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/loop-me/SKILL.md)
-- `review`: [`skills/in-progress/review/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/review/SKILL.md)
+- `wayfinder`: [`skills/in-progress/wayfinder/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/wayfinder/SKILL.md)
 - `wizard`: [`skills/in-progress/wizard/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/wizard/SKILL.md)
 - `writing-beats`: [`skills/in-progress/writing-beats/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/writing-beats/SKILL.md)
 - `writing-fragments`: [`skills/in-progress/writing-fragments/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/writing-fragments/SKILL.md)
