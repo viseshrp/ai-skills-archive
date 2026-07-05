@@ -36,12 +36,12 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
-  - Archived commit: `d3c287658e547c65106a9cbe45e4a01110ff2145`
+  - Archived commit: `f86d68a80a6fd05bf51688ff39297ea603eda912`
   - Snapshot: [`archives/Imbad0202__academic-research-skills/snapshot`](archives/Imbad0202__academic-research-skills/snapshot)
   - Skills discovered: 4
   - Files retained in reduced snapshot: 4
 - [mattpocock/skills](https://github.com/mattpocock/skills)
-  - Archived commit: `272f99b22574f50e4266791c86b9302682970e23`
+  - Archived commit: `66f92b61f5b1434a1c7422f6fbd8efc5ee0c0214`
   - Snapshot: [`archives/mattpocock__skills/snapshot`](archives/mattpocock__skills/snapshot)
   - Skills discovered: 38
   - Files retained in reduced snapshot: 38
@@ -61,12 +61,12 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 74
   - Files retained in reduced snapshot: 74
 - [affaan-m/ECC](https://github.com/affaan-m/ECC)
-  - Archived commit: `81af40761939056ab3dc54732fd4f562a27309d0`
+  - Archived commit: `4130457d674d2180c5af2c5f634f3cae4cbc6c4f`
   - Snapshot: [`archives/affaan-m__ECC/snapshot`](archives/affaan-m__ECC/snapshot)
   - Skills discovered: 887
   - Files retained in reduced snapshot: 887
 - [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
-  - Archived commit: `784624c002b294b4c32281fd5867e13bccd03ac7`
+  - Archived commit: `4bbfee40553d0eb4a25583834335449607c6bea3`
   - Snapshot: [`archives/mvanhorn__last30days-skill/snapshot`](archives/mvanhorn__last30days-skill/snapshot)
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1

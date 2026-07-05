@@ -256,7 +256,7 @@
     "description": "12-agent academic paper writing pipeline. 11 modes (full/plan/outline/revision/revision-coach/abstract/lit-review/format-convert/citation-check/disclosure/rebuttal-audit). 6 paper types, 5 citation formats, bilingual abstracts, LaTeX/DOCX-via-Pandoc/PDF output. Style Calibration + Writing Quality Check + Anti-Patterns with IRON RULE markers. Triggers: write paper, academic paper, guide my paper, parse reviews, audit my rebuttal, check my response draft, AI disclosure, \u5beb\u8ad6\u6587, \u5b78\u8853\u8ad6\u6587, \u5f15\u5c0e\u6211\u5beb\u8ad6\u6587, \u5be9\u67e5\u610f\u898b, \u8a55\u4f30\u56de\u8986.",
     "path": "academic-paper/SKILL.md",
     "relative_directory": "academic-paper",
-    "sha256": "de08b5b4a681eb07f192b193bce9257beb2f5c101189d98f1e0067b7c1b6d9a9",
+    "sha256": "16b263fac75ff1917a614620a3cb5f4a33bc39727200928aebf4e88573236254",
     "linked_local_files": []
   },
   {
@@ -266,7 +266,7 @@
     "description": "Multi-perspective academic paper review with dynamic reviewer personas. Simulates 5 independent reviewers (EIC + 3 peer reviewers + Devil's Advocate) with field-specific expertise. Supports full review, re-review (verification), quick assessment, methodology focus, Socratic guided, and calibration modes. Triggers on: review paper, peer review, manuscript review, referee report, review my paper, critique paper, simulate review, editorial review, calibrate reviewer, reviewer calibration, measure reviewer accuracy.",
     "path": "academic-paper-reviewer/SKILL.md",
     "relative_directory": "academic-paper-reviewer",
-    "sha256": "344eac0d38d377b4e8d6dee0d019dc202d5f79045970b281cd6b7a79e1ad787d",
+    "sha256": "dae32f3908e8b282bcdf6839e5da37b7ebca82fd88eaf0611fb3c716cc3f88ed",
     "linked_local_files": []
   },
   {
@@ -276,7 +276,7 @@
     "description": "Orchestrator for the full academic research pipeline: research -> write -> integrity check -> review -> revise -> re-review -> re-revise -> final integrity check -> finalize. Coordinates deep-research, academic-paper, and academic-paper-reviewer into a seamless 10-stage workflow with mandatory integrity verification, two-stage peer review, and reproducible quality gates. Triggers on: academic pipeline, research to paper, full paper workflow, paper pipeline, end-to-end paper, research-to-publication, complete paper workflow.",
     "path": "academic-pipeline/SKILL.md",
     "relative_directory": "academic-pipeline",
-    "sha256": "1fddcd6966cb5b3c00b591523a43bc65c7820145eaea6670307dd14f5ce9749c",
+    "sha256": "a81d6b2b20de82b5e578d99838af7e90c4900819d58932307781254bd289b3b1",
     "linked_local_files": []
   },
   {
@@ -286,7 +286,7 @@
     "description": "Universal deep research agent team. 13-agent pipeline for rigorous academic research on any topic. 8 modes: full research, quick brief, paper review, lit-review, fact-check, three-way literature scan, Socratic guided research dialogue, and systematic review with optional meta-analysis. Covers research question formulation, Socratic mentoring, methodology design, systematic literature search, source verification, cross-source synthesis, risk of bias assessment, meta-analysis, APA 7.0 report compilation, editorial review, devil's advocate challenges, ethics review, and post-research literature monitoring. Triggers on: research, deep research, literature review, systematic review, meta-analysis, PRISMA, evidence synthesis, fact-check, WHY HOW WHAT papers, 3W literature scan, guide my research, help me think through, \u7814\u7a76, \u6df1\u5ea6\u7814\u7a76, \u6587\u737b\u56de\u9867, \u6587\u737b\u63a2\u8a0e, \u7cfb\u7d71\u6027\u56de\u9867, \u5f8c\u8a2d\u5206\u6790, \u4e8b\u5be6\u67e5\u6838, \u4e09\u6bb5\u5f0f\u6587\u737b\u6383\u63cf, \u5f15\u5c0e\u6211\u7684\u7814\u7a76, \u5e6b\u6211\u91d0\u6e05, \u5e6b\u6211\u60f3\u60f3, \u6211\u4e0d\u78ba\u5b9a\u8981\u7814\u7a76\u4ec0\u9ebc, \u7814\u7a76\u65b9\u5411, \u7814\u7a76\u4e3b\u984c.",
     "path": "deep-research/SKILL.md",
     "relative_directory": "deep-research",
-    "sha256": "3a6d1fa662857068376a1b507143618401febea272321a2d5a70daefafd2893c",
+    "sha256": "72d2bad13569767a19bca43eb9a5057ebf6b1fe95d2ac7c257b954a13580a9ea",
     "linked_local_files": []
   },
   {
@@ -513,10 +513,10 @@
     "source_repo": "mattpocock/skills",
     "repo_key": "mattpocock__skills",
     "skill_name": "wayfinder",
-    "description": "Plan a huge chunk of work \u2014 more than one agent session can hold \u2014 as a shared map of investigation tickets on your issue tracker, and resolve them one at a time until the way to the goal is clear.",
+    "description": "Plan a huge chunk of work \u2014 more than one agent session can hold \u2014 as a shared map of investigation tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
     "path": "skills/in-progress/wayfinder/SKILL.md",
     "relative_directory": "skills/in-progress/wayfinder",
-    "sha256": "12ce21d3a527528f6b430b9d7c748d8bc2c33de31c072d4adfa1fcd287b59718",
+    "sha256": "3dbc5ddbdb8d3f51001cb899f6aed87ccbd2042f005479496f2e21d0db893d9e",
     "linked_local_files": []
   },
   {
@@ -2526,7 +2526,7 @@
     "description": "Suggests manual context compaction at logical intervals to preserve context through task phases rather than arbitrary auto-compaction.",
     "path": ".kiro/skills/strategic-compact/SKILL.md",
     "relative_directory": ".kiro/skills/strategic-compact",
-    "sha256": "ed1fbd6d3d51a294f77ead06f272d491cc7d623166dd47ae5e7991dcd23c3ed7",
+    "sha256": "3a7fe84ba15bc12fd1d8b722ca674a4bc99415fc5107dd7d5bb6133948d5711f",
     "linked_local_files": []
   },
   {
@@ -3276,7 +3276,7 @@
     "description": "ClickHouse database patterns, query optimization, analytics, and data engineering best practices for high-performance analytical workloads.",
     "path": "docs/ja-JP/skills/clickhouse-io/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/clickhouse-io",
-    "sha256": "8e2828db03372f431b873f81e887541f4c599c49c58de79868f18e63b07321da",
+    "sha256": "4eb6b05f9b6a45c85a1aa4e7848f46288d1c418884b3adf1c458c4bea4caea5c",
     "linked_local_files": []
   },
   {
@@ -3906,7 +3906,7 @@
     "description": "\u5805\u7262\u3067\u52b9\u7387\u7684\u304b\u3064\u4fdd\u5b88\u53ef\u80fd\u306aGo\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u3092\u69cb\u7bc9\u3059\u308b\u305f\u3081\u306e\u6163\u7528\u7684\u306aGo\u30d1\u30bf\u30fc\u30f3\u3001\u30d9\u30b9\u30c8\u30d7\u30e9\u30af\u30c6\u30a3\u30b9\u3001\u898f\u7d04\u3002",
     "path": "docs/ja-JP/skills/golang-patterns/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/golang-patterns",
-    "sha256": "275c5060fddd7af7222c2edfd4aeeb2ad43f36ea2a0c2b7da24366a3a6bc1d6a",
+    "sha256": "be0d579ba82d52fbc3a893eb3ef519b81a81f6f278e85e5e9d00d06a621983b9",
     "linked_local_files": []
   },
   {
@@ -5036,7 +5036,7 @@
     "description": "\u4efb\u610f\u306e\u81ea\u52d5\u30b3\u30f3\u30d1\u30af\u30b7\u30e7\u30f3\u3067\u306f\u306a\u304f\u3001\u30bf\u30b9\u30af\u30d5\u30a7\u30fc\u30ba\u3092\u901a\u3058\u3066\u30b3\u30f3\u30c6\u30ad\u30b9\u30c8\u3092\u4fdd\u6301\u3059\u308b\u305f\u3081\u306e\u8ad6\u7406\u7684\u306a\u9593\u9694\u3067\u306e\u624b\u52d5\u30b3\u30f3\u30d1\u30af\u30b7\u30e7\u30f3\u3092\u63d0\u6848\u3057\u307e\u3059\u3002",
     "path": "docs/ja-JP/skills/strategic-compact/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/strategic-compact",
-    "sha256": "e49f20489913f40dfe1a8e457e20a7d5b126474b91e0cfcec238e93bf618e096",
+    "sha256": "8f3b1f6c06997fea85877feabee7c5052341fa8d67c3f6183c56d11a55b475f5",
     "linked_local_files": []
   },
   {
@@ -5256,7 +5256,7 @@
     "description": "\uace0\uc131\ub2a5 \ubd84\uc11d \uc6cc\ud06c\ub85c\ub4dc\ub97c \uc704\ud55c ClickHouse \ub370\uc774\ud130\ubca0\uc774\uc2a4 \ud328\ud134, \ucffc\ub9ac \ucd5c\uc801\ud654, \ubd84\uc11d \ubc0f \ub370\uc774\ud130 \uc5d4\uc9c0\ub2c8\uc5b4\ub9c1 \ubaa8\ubc94 \uc0ac\ub840.",
     "path": "docs/ko-KR/skills/clickhouse-io/SKILL.md",
     "relative_directory": "docs/ko-KR/skills/clickhouse-io",
-    "sha256": "1e04dcbd3b924abbcb862f693d83d1852f0336387fa51056c5535f6cfdfdffe0",
+    "sha256": "916d3e3b726081ea8eafacdfc46e2e80006345c11637a63143d0b6e04bec2e93",
     "linked_local_files": []
   },
   {
@@ -5316,7 +5316,7 @@
     "description": "\uacac\uace0\ud558\uace0 \ud6a8\uc728\uc801\uc774\uba70 \uc720\uc9c0\ubcf4\uc218 \uac00\ub2a5\ud55c Go \uc560\ud50c\ub9ac\ucf00\uc774\uc158 \uad6c\ucd95\uc744 \uc704\ud55c \uad00\uc6a9\uc801 Go \ud328\ud134, \ubaa8\ubc94 \uc0ac\ub840 \ubc0f \uaddc\uce59.",
     "path": "docs/ko-KR/skills/golang-patterns/SKILL.md",
     "relative_directory": "docs/ko-KR/skills/golang-patterns",
-    "sha256": "01fc06cca6a8364915c3a4191d6a94f7b446beb6cc8572605bf6751205c3be0b",
+    "sha256": "89c7ccb29b55a0aacf837f81baf78d1a87906da0cc0e78cd01b4f4b1a9001473",
     "linked_local_files": []
   },
   {
@@ -5366,7 +5366,7 @@
     "description": "\uc784\uc758\uc758 \uc790\ub3d9 \ucef4\ud329\uc158 \ub300\uc2e0 \ub17c\ub9ac\uc801 \uac04\uaca9\uc5d0\uc11c \uc218\ub3d9 \ucee8\ud14d\uc2a4\ud2b8 \uc555\ucd95\uc744 \uc81c\uc548\ud558\uc5ec \uc791\uc5c5 \ub2e8\uacc4\ub97c \ud1b5\ud574 \ucee8\ud14d\uc2a4\ud2b8\ub97c \ubcf4\uc874\ud569\ub2c8\ub2e4.",
     "path": "docs/ko-KR/skills/strategic-compact/SKILL.md",
     "relative_directory": "docs/ko-KR/skills/strategic-compact",
-    "sha256": "1776761738d0652ac781adadf44051519682ec53ea14402900805575b7e5a81e",
+    "sha256": "2cbbdda918c6092310590a7df46d5e8c88a91880ce599fac2f1c264435a0bb75",
     "linked_local_files": []
   },
   {
@@ -5516,7 +5516,7 @@
     "description": "\u0130diomatic Go desenler, en iyi uygulamalar ve sa\u011flam, verimli ve bak\u0131m\u0131 kolay Go uygulamalar\u0131 olu\u015fturmak i\u00e7in konvansiyonlar.",
     "path": "docs/tr/skills/golang-patterns/SKILL.md",
     "relative_directory": "docs/tr/skills/golang-patterns",
-    "sha256": "451344771cb77c08e9b5ba5d3dffd5fd483265a1a2121a6eb028db8909608150",
+    "sha256": "56e21fece4dac0b4197b6b3ab86c69481cf2dc2604cea8c3e1f59557b1c2f666",
     "linked_local_files": []
   },
   {
@@ -6056,7 +6056,7 @@
     "description": "ClickHouse\u6570\u636e\u5e93\u6a21\u5f0f\u3001\u67e5\u8be2\u4f18\u5316\u3001\u5206\u6790\u4ee5\u53ca\u9ad8\u6027\u80fd\u5206\u6790\u5de5\u4f5c\u8d1f\u8f7d\u7684\u6570\u636e\u5de5\u7a0b\u6700\u4f73\u5b9e\u8df5\u3002",
     "path": "docs/zh-CN/skills/clickhouse-io/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/clickhouse-io",
-    "sha256": "c8b731c55a1fb5b9e52f2280c2e06a05a989c9afd2b98f4f8bc339d0c07566b8",
+    "sha256": "aed3210e737bd18af35ad30d5debaae7584718aaa93682d33440d726f5f9f499",
     "linked_local_files": []
   },
   {
@@ -6616,7 +6616,7 @@
     "description": "\u7528\u4e8e\u6784\u5efa\u5065\u58ee\u3001\u9ad8\u6548\u4e14\u53ef\u7ef4\u62a4\u7684Go\u5e94\u7528\u7a0b\u5e8f\u7684\u60ef\u7528Go\u6a21\u5f0f\u3001\u6700\u4f73\u5b9e\u8df5\u548c\u7ea6\u5b9a\u3002",
     "path": "docs/zh-CN/skills/golang-patterns/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/golang-patterns",
-    "sha256": "2b8742dc6c2015087fcbc45526b4a36fc904b39525d97b834d5c0097693615b5",
+    "sha256": "34cb9c69779f9bddc00fdb2db9c570719ac9606031bcea4391e57deb84cc90a4",
     "linked_local_files": []
   },
   {
@@ -7436,7 +7436,7 @@
     "description": "\u5efa\u8bae\u5728\u903b\u8f91\u95f4\u9694\u5904\u624b\u52a8\u538b\u7f29\u4e0a\u4e0b\u6587\uff0c\u4ee5\u5728\u4efb\u52a1\u9636\u6bb5\u4e2d\u4fdd\u7559\u4e0a\u4e0b\u6587\uff0c\u800c\u975e\u4efb\u610f\u7684\u81ea\u52a8\u538b\u7f29\u3002",
     "path": "docs/zh-CN/skills/strategic-compact/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/strategic-compact",
-    "sha256": "d2ee2c3b5462ac3f3f8fa607415a8301ff0e11a6b59bbf338a11365a6b24796a",
+    "sha256": "fceaccf85658397b8a0bcf95718740d9b57152d2f738cf102fd746468ed2f496",
     "linked_local_files": []
   },
   {
@@ -7616,7 +7616,7 @@
     "description": "ClickHouse database patterns, query optimization, analytics, and data engineering best practices for high-performance analytical workloads.",
     "path": "docs/zh-TW/skills/clickhouse-io/SKILL.md",
     "relative_directory": "docs/zh-TW/skills/clickhouse-io",
-    "sha256": "187469bb291b19f1e4c53379eb4ecba411eecb80452c183f709f2ca18aaa8961",
+    "sha256": "27e68543058832d240bfdb568798ce48aa03894418d2ff88fcda52aa523be511",
     "linked_local_files": []
   },
   {
@@ -7676,7 +7676,7 @@
     "description": "Idiomatic Go patterns, best practices, and conventions for building robust, efficient, and maintainable Go applications.",
     "path": "docs/zh-TW/skills/golang-patterns/SKILL.md",
     "relative_directory": "docs/zh-TW/skills/golang-patterns",
-    "sha256": "41f32e01b14f125f9c5bb7c1412966b8b711f40767cb52b08ebfa7428f3da3d8",
+    "sha256": "f588bda91f6e89aa3c61ea783e73c2a1118023d23ed1287baa138cd8ae049781",
     "linked_local_files": []
   },
   {
@@ -7736,7 +7736,7 @@
     "description": "Suggests manual context compaction at logical intervals to preserve context through task phases rather than arbitrary auto-compaction.",
     "path": "docs/zh-TW/skills/strategic-compact/SKILL.md",
     "relative_directory": "docs/zh-TW/skills/strategic-compact",
-    "sha256": "d4be2d85d3b0df00fe0d74d772124b30a8f56409055c2faf2342704926f3407b",
+    "sha256": "dee3f097245fa393fe4e8cd4b536290d93bce0a0bd5f714e202d31a90ebeac70",
     "linked_local_files": []
   },
   {
@@ -8136,7 +8136,7 @@
     "description": "ClickHouse database patterns, query optimization, analytics, and data engineering best practices for high-performance analytical workloads.",
     "path": "skills/clickhouse-io/SKILL.md",
     "relative_directory": "skills/clickhouse-io",
-    "sha256": "e76691365760f873267fe328edb349a49ca656d80e82d79c91fcad29c3a6e022",
+    "sha256": "6380c6bb26eae4b160299e73faea629f8dfebc5f1cb58017333857eed8e5d44b",
     "linked_local_files": []
   },
   {
@@ -8866,7 +8866,7 @@
     "description": "Idiomatic Go patterns, best practices, and conventions for building robust, efficient, and maintainable Go applications.",
     "path": "skills/golang-patterns/SKILL.md",
     "relative_directory": "skills/golang-patterns",
-    "sha256": "4733a52f63d51d46a4db4b6caa572711137b7f6a3441c01af4bf6c335b18f505",
+    "sha256": "ab8186c319b1f24dc87eb16321106a88f72ffd4b6ac6d7a10f41d721edd351d9",
     "linked_local_files": []
   },
   {
@@ -9716,7 +9716,7 @@
     "description": "Read a plan document, decompose it into steps, design a per-step agent chain from the ECC catalogue, and emit ready-to-paste /orchestrate custom prompts. Generative only \u2014 never invokes /orchestrate itself. Use when the user has a multi-step plan and wants to drive it through orchestrate without composing chains by hand.",
     "path": "skills/plan-orchestrate/SKILL.md",
     "relative_directory": "skills/plan-orchestrate",
-    "sha256": "e9d9aa9eeff9800793cbf852e60c6829ffd79bf89b0eb16e39bdceac10a2eb5e",
+    "sha256": "d104fb71594fd9385c4a7c23e4835907be124b8effb34f49fa5cf7d28e3494e3",
     "linked_local_files": []
   },
   {
@@ -10286,7 +10286,7 @@
     "description": "Suggests manual context compaction at logical intervals to preserve context through task phases rather than arbitrary auto-compaction.",
     "path": "skills/strategic-compact/SKILL.md",
     "relative_directory": "skills/strategic-compact",
-    "sha256": "3eb441c2aa3aba2a9d6f80d3c51a37398f7a4742ee87542f8d9819a525f4b595",
+    "sha256": "cc3f115e37698e879a7a8b1f6edc859355d84cfbe7987f0fdd87930aab4a3123",
     "linked_local_files": []
   },
   {
@@ -10366,7 +10366,7 @@
     "description": "Interactive agent picker for composing and dispatching parallel teams",
     "path": "skills/team-builder/SKILL.md",
     "relative_directory": "skills/team-builder",
-    "sha256": "00961fe2499b454af5fdcc44916c62b8824a550aceeae2aea039b2790ecd69e6",
+    "sha256": "31a2207fbac204bb91e4ee9c58fdecf8114c778e24778c46281e95e91d4f68b8",
     "linked_local_files": []
   },
   {
@@ -10533,10 +10533,10 @@
     "source_repo": "mvanhorn/last30days-skill",
     "repo_key": "mvanhorn__last30days-skill",
     "skill_name": "last30days",
-    "description": "Research what people actually say about any topic in the last 30 days. Pulls posts and engagement from Reddit, X, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the web.",
+    "description": "Research what people actually say about any topic in the last 30 days. Pulls posts and engagement from Reddit, X, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the web. Includes a doctor health check to diagnose broken or missing sources.",
     "path": "skills/last30days/SKILL.md",
     "relative_directory": "skills/last30days",
-    "sha256": "2c4e8e0f3964c925bd0e62c8aaafc888def5c2784e59a2d08efb54f76234daeb",
+    "sha256": "b8d2d2712832e4fdb20b08f27369740348a328eaf195b5e0f91c3ccaf179c989",
     "linked_local_files": []
   },
   {
