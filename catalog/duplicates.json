@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T19:02:42.697015+00:00",
+  "generated_at": "2026-07-12T19:03:46.474331+00:00",
   "exact_skill_duplicates": [
     {
       "sha256": "060f50513003731e9c0e7f78e6a6a9b8cb178a74a2ec2a6ca75cdae804f0d564",
@@ -1630,7 +1630,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/data-scraper-agent/SKILL.md",
-          "sha256": "f5efab367741dbfae96105d4cc983842f28baa69b2b17dcf9216f1f6ef0e9a9f"
+          "sha256": "8354c4606b7a8ac47e00be09f23335372cbafc0c63099c9ef394c9e40dd118ee"
         }
       ]
     },
@@ -1677,7 +1677,7 @@
         {
           "source_repo": "Imbad0202/academic-research-skills",
           "path": "deep-research/SKILL.md",
-          "sha256": "72d2bad13569767a19bca43eb9a5057ebf6b1fe95d2ac7c257b954a13580a9ea"
+          "sha256": "f903840f07c447abe51fc7f52c6fe2354a9b15af25bfd254728a199cd26985be"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -4151,6 +4151,22 @@
       ]
     },
     {
+      "skill_name": "plan-canvas",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "affaan-m/ECC",
+          "path": ".agents/skills/plan-canvas/SKILL.md",
+          "sha256": "4d0ec4fb7b373084f867a222d92a776ad18fe47ab666f6ea36dfe8b0b825d206"
+        },
+        {
+          "source_repo": "affaan-m/ECC",
+          "path": "skills/plan-canvas/SKILL.md",
+          "sha256": "46ae4582224b71d127a65a1f10c9173bfaa9bc0fee0284345e82320070ff29bc"
+        }
+      ]
+    },
+    {
       "skill_name": "plan-orchestrate",
       "count": 2,
       "locations": [
@@ -4194,12 +4210,12 @@
         {
           "source_repo": "DietrichGebert/ponytail",
           "path": ".openclaw/skills/ponytail/SKILL.md",
-          "sha256": "0537ff8d0ad12c88ece83f2aa4c906d12ddf526cd3da6df25171a99b3bd21e46"
+          "sha256": "dd240060d5734a58fe2783916a63f9401fed75c5f87742dd663a66f9ed4c8c65"
         },
         {
           "source_repo": "DietrichGebert/ponytail",
           "path": "skills/ponytail/SKILL.md",
-          "sha256": "d1ffcddbc486ab787d5797441e8b6e4717da3249c6786b83fc2abd2f12803c29"
+          "sha256": "1316a2f3f95741d2300b116fe0c2d81ce4a9568656ed0a62643f54aaf09957f2"
         }
       ]
     },
@@ -5603,6 +5619,22 @@
           "source_repo": "affaan-m/ECC",
           "path": "skills/tdd-workflow/SKILL.md",
           "sha256": "e3a0051a99e82f7047b29a2a98c662d8ef8d0ede186acc085436fced7f2591b7"
+        }
+      ]
+    },
+    {
+      "skill_name": "teach",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "mattpocock/skills",
+          "path": "skills/productivity/teach/SKILL.md",
+          "sha256": "6d2dbe5e03084cf26fef66b535127b36cd1bcbe9478e26b0626029cd51dc2259"
+        },
+        {
+          "source_repo": "cursor/plugins",
+          "path": "pstack/skills/teach/SKILL.md",
+          "sha256": "0a5987b0588dc56e14bfd84d0300e2ab405abc7c5c2aa81e0d3d7c6b243db7a7"
         }
       ]
     },

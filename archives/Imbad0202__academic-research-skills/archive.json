@@ -5,9 +5,9 @@
   "url": "https://github.com/Imbad0202/academic-research-skills",
   "notes": "Initial seed source provided by the user.",
   "default_branch": "main",
-  "commit": "f86d68a80a6fd05bf51688ff39297ea603eda912",
-  "commit_date": "2026-07-04T14:32:17+08:00",
-  "archived_at": "2026-07-05T19:02:38.324893+00:00",
+  "commit": "73c898c842afae3f163ac571dfa098c72d7c82af",
+  "commit_date": "2026-07-12T08:42:07+08:00",
+  "archived_at": "2026-07-12T19:03:39.935333+00:00",
   "archive_path": "archives/Imbad0202__academic-research-skills",
   "snapshot_path": "archives/Imbad0202__academic-research-skills/snapshot",
   "file_count": 4,
@@ -21,9 +21,9 @@
     "deep-research/SKILL.md"
   ],
   "all_text_file_hashes": {
-    "deep-research/SKILL.md": "72d2bad13569767a19bca43eb9a5057ebf6b1fe95d2ac7c257b954a13580a9ea",
-    "academic-paper/SKILL.md": "16b263fac75ff1917a614620a3cb5f4a33bc39727200928aebf4e88573236254",
-    "academic-pipeline/SKILL.md": "a81d6b2b20de82b5e578d99838af7e90c4900819d58932307781254bd289b3b1",
-    "academic-paper-reviewer/SKILL.md": "dae32f3908e8b282bcdf6839e5da37b7ebca82fd88eaf0611fb3c716cc3f88ed"
+    "deep-research/SKILL.md": "f903840f07c447abe51fc7f52c6fe2354a9b15af25bfd254728a199cd26985be",
+    "academic-paper/SKILL.md": "8de147fad5d6b8afdc87c14e95ea2a407e6aa4f2d70c9e5b0450bb37e62ea2a7",
+    "academic-pipeline/SKILL.md": "f9eb42deb69c4fce18ba16f58af2c117fc4b4a28111aa462a03380ca3b3d925b",
+    "academic-paper-reviewer/SKILL.md": "f7a218333e8e6dba599ca47ecbde2a4c9c1f295783fbde82cba9fb3921760861"
   }
 }

@@ -1,7 +1,11 @@
 ---
-name: poteto-mode
+name: Poteto Mode
 description: poteto's agent style for concise, detailed responses, deliberate subagents, unslopped prose, simple code, and verified work. Use for poteto, /poteto-mode, or requests to work in this style.
 disable-model-invocation: true
+mode: true
+icon: crown
+color: yellow
+reminder: New task? Playbook match or rigor needed -> apply /poteto-mode. Casual turn or user opts out -> don't.
 ---
 
 # Poteto mode
@@ -44,6 +48,7 @@ Read the leaf skill in full for any principle you apply. Each entry names when i
 
 **Architecture**
 
+- **Model the Domain** (**principle-model-the-domain**). Writing stateful logic, or code that branches a lot or repeats a shape assumption across files. Encode the domain in a structure (state machine, typed model, table or registry, reducer, boundary, the right collection) instead of scattered conditionals.
 - **Boundary Discipline** (**principle-boundary-discipline**). Wiring validation, error handling, or framework adapters. Guards at system boundaries, trust internal types, keep business logic pure.
 - **Type System Discipline** (**principle-type-system-discipline**). Designing types or a signature in any typed language. Make illegal states unrepresentable, brand primitives, parse external data at boundaries.
 - **Make Operations Idempotent** (**principle-make-operations-idempotent**). Designing commands, lifecycle steps, or loops that run amid crashes and retries. Converge to the same end state.
@@ -79,7 +84,7 @@ Read the leaf skill in full for any principle you apply. Each entry names when i
 
 **Use `subagent_type: "poteto-agent"` for any subagent you spawn inside a playbook step** (code-writing delegates, ad-hoc helpers). `/poteto-mode` and `poteto-agent` route through the same wrapper. Routed workflow skills (`how`, `why`, `interrogate`, `reflect`) set their own `subagent_type` for diverse-model review; respect what the skill prescribes, don't override to `poteto-agent`.
 
-**Defaults for every `Task` call.** `run_in_background: true`, agent mode (readonly strips MCP), file pointers not inlined context, explicit model per role (configurable via `/setup-pstack`; defaults `composer-2.5-fast` for code, `claude-opus-4-8-thinking-xhigh` for prose and judgment).
+**Defaults for every `Task` call.** `run_in_background: true`, agent mode (readonly strips MCP), file pointers not inlined context, explicit model per role (configurable via `/setup-pstack`; defaults `grok-4.5-fast-xhigh` for code, `claude-opus-4-8-thinking-xhigh` for prose and judgment). The hardest changes (cross-cutting design, gnarly concurrency, subtle algorithms, vague intent) go to `claude-fable-5-thinking-max`.
 
 You own every subagent's work. Review the diff and write your own summary, don't pass through what it said. Interrupt-chained resumes silently drop directives, so fire a fresh subagent with consolidated scope rather than trusting a "done" summary. A second opinion is the same prompt against a different model. Agreement is high-signal.
 
