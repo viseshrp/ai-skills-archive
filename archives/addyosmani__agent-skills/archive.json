@@ -5,9 +5,9 @@
   "url": "https://github.com/addyosmani/agent-skills",
   "notes": "Initial seed source provided by the user.",
   "default_branch": "main",
-  "commit": "98967c45a42b88d6b8fb3a88b7ff6273920763d6",
-  "commit_date": "2026-07-12T10:58:04-07:00",
-  "archived_at": "2026-07-12T19:03:38.664347+00:00",
+  "commit": "2fbfa004a0192529bc997d103fc12f19a3804aab",
+  "commit_date": "2026-07-18T15:19:55+02:00",
+  "archived_at": "2026-07-19T19:02:21.996100+00:00",
   "archive_path": "archives/addyosmani__agent-skills",
   "snapshot_path": "archives/addyosmani__agent-skills/snapshot",
   "file_count": 24,
@@ -64,6 +64,6 @@
     "skills/performance-optimization/SKILL.md": "c56f6059fed0b77c50c946e38275f04c8b297657f3742d5782ee564514ecc4dc",
     "skills/browser-testing-with-devtools/SKILL.md": "4e3aacd6a380cd25bc6c2d67fdd1c926a9b22535b8a62109ecd33cefd909e3d9",
     "skills/git-workflow-and-versioning/SKILL.md": "51677cf03845dd29d08ea4d3125665057b720aea3dccc572f25d8b172409ece6",
-    "skills/documentation-and-adrs/SKILL.md": "7fed35f9c5b95d8e3623ad24d78d209c3267ab62d7157fc03954c76a7e58adf4"
+    "skills/documentation-and-adrs/SKILL.md": "b867bb80fb681257c7625ae59a0dfd849b1fc0f0a2f0338e7923f38030df9793"
   }
 }
