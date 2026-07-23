@@ -69,6 +69,9 @@ FS_RETRY_DELAY_SECONDS = 0.5
 PATH_TOKEN_RE = re.compile(
     r"(?P<path>(?:\.\.?/)?(?:[A-Za-z0-9._-]+/)+[A-Za-z0-9._-]+(?:\.(?:md|mdx|txt|json|ya?ml|toml|py|sh|ps1|js|mjs|cjs|ts|tsx|html|css|svg|png|jpg|jpeg|gif|webp|pdf|tex|dot|cmd))?)"
 )
+BARE_FILE_TOKEN_RE = re.compile(
+    r"(?<![A-Za-z0-9._/-])(?P<path>[A-Za-z0-9._-]+\.(?:md|mdx|txt|json|ya?ml|toml|py|sh|ps1|js|mjs|cjs|ts|tsx|html|css|svg|png|jpg|jpeg|gif|webp|pdf|tex|dot|cmd))(?![A-Za-z0-9._/-])"
+)
 MD_LINK_RE = re.compile(r"\[[^\]]+\]\((?P<link>[^)]+)\)")
 NAME_RE = re.compile(r"^name:\s*[\"']?(.*?)[\"']?\s*$", re.MULTILINE)
 DESC_RE = re.compile(r"^description:\s*[\"']?(.*?)[\"']?\s*$", re.MULTILINE)
@@ -284,6 +287,7 @@ def resolve_local_reference(base_path: Path, repo_root: Path, candidate: str) ->
     if not candidate or candidate.startswith(("http://", "https://", "#", "mailto:", "data:")):
         return None
 
+    repo_root = repo_root.resolve()
     resolved = (base_path.parent / candidate).resolve()
     try:
         resolved.relative_to(repo_root)
@@ -310,10 +314,17 @@ def extract_local_file_refs(path: Path, repo_root: Path) -> list[Path]:
         if resolved is not None:
             found.add(resolved)
 
+    for match in BARE_FILE_TOKEN_RE.finditer(content):
+        resolved = resolve_local_reference(path, repo_root, match.group("path"))
+        if resolved is not None:
+            found.add(resolved)
+
     return sorted(found)
 
 
 def collect_related_files(start_path: Path, repo_root: Path) -> list[str]:
+    start_path = start_path.resolve()
+    repo_root = repo_root.resolve()
     queue: deque[Path] = deque([start_path])
     visited_text_files: set[Path] = set()
     related_files: set[Path] = set()
@@ -472,13 +483,15 @@ def append_agent_log(message: str, repo_reports: list[dict[str, Any]], duplicate
         lines.append(
             f"- Synced `{report['repo_key']}` at commit `{report['commit'][:12]}` with {report['skill_count']} skills and {report['file_count']} files."
         )
-    lines.extend(["", ""])
     existing = (
         AGENT_LOG_FILE.read_text(encoding="utf-8")
         if AGENT_LOG_FILE.exists()
         else "# Agent Log\n\n"
     )
-    write_text_file(AGENT_LOG_FILE, existing + "\n".join(lines))
+    write_text_file(
+        AGENT_LOG_FILE,
+        existing.rstrip() + "\n\n" + "\n".join(lines) + "\n",
+    )
 
 
 def render_readme(repo_reports: list[dict[str, Any]], skill_records: list[dict[str, Any]], duplicate_report: dict[str, Any]) -> str:

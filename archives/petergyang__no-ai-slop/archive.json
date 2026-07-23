@@ -1,0 +1,24 @@
+{
+  "owner": "petergyang",
+  "repo": "no-ai-slop",
+  "repo_key": "petergyang__no-ai-slop",
+  "url": "https://github.com/petergyang/no-ai-slop",
+  "notes": "Added with scripts/sync_sources.py add from https://github.com/petergyang/no-ai-slop.",
+  "default_branch": "main",
+  "commit": "61c21c351da4dcb40946a11fead978f2078a2c65",
+  "commit_date": "2026-07-22T07:41:49-07:00",
+  "archived_at": "2026-07-23T01:10:15.354023+00:00",
+  "archive_path": "archives/petergyang__no-ai-slop",
+  "snapshot_path": "archives/petergyang__no-ai-slop/snapshot",
+  "file_count": 2,
+  "directory_count": 0,
+  "skill_count": 1,
+  "snapshot_mode": "skills-and-related-files-only",
+  "skill_paths": [
+    "SKILL.md"
+  ],
+  "all_text_file_hashes": {
+    "eval.md": "b274cdc623e57ff1b4f673aedef929ba2b01419d13097248c3c74a5dbd80ccfd",
+    "SKILL.md": "73f87f7f79bd3540c4d8494b5c43d37d25584be6886212e1516fdd8d1c539846"
+  }
+}

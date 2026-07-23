@@ -26,55 +26,60 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 ## Source Repositories
 
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
-  - Archived commit: `2fbfa004a0192529bc997d103fc12f19a3804aab`
+  - Archived commit: `fefc4075ddfd8363d3b2aa8b26e6440f1ce204c0`
   - Snapshot: [`archives/addyosmani__agent-skills/snapshot`](archives/addyosmani__agent-skills/snapshot)
   - Skills discovered: 24
-  - Files retained in reduced snapshot: 24
+  - Files retained in reduced snapshot: 27
 - [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
   - Archived commit: `2c606141936f1eeef17fa3043a72095b4765b9c2`
   - Snapshot: [`archives/multica-ai__andrej-karpathy-skills/snapshot`](archives/multica-ai__andrej-karpathy-skills/snapshot)
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
-  - Archived commit: `203eec1c32e429ffda8cd6722b7bb16dfb730a80`
+  - Archived commit: `1788e08155d24da729233e3e4b480ffb53d799c6`
   - Snapshot: [`archives/Imbad0202__academic-research-skills/snapshot`](archives/Imbad0202__academic-research-skills/snapshot)
   - Skills discovered: 4
-  - Files retained in reduced snapshot: 4
+  - Files retained in reduced snapshot: 158
 - [mattpocock/skills](https://github.com/mattpocock/skills)
-  - Archived commit: `9603c1cc8118d08bc1b3bf34cf714f62178dea3b`
+  - Archived commit: `ed37663cc5fbef691ddfecd080dff42f7e7e350d`
   - Snapshot: [`archives/mattpocock__skills/snapshot`](archives/mattpocock__skills/snapshot)
   - Skills discovered: 41
-  - Files retained in reduced snapshot: 41
+  - Files retained in reduced snapshot: 65
 - [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman)
   - Archived commit: `0d95a81d35a9f2d123a5e9430d1cfc43d55f1bb0`
   - Snapshot: [`archives/juliusbrussee__caveman/snapshot`](archives/juliusbrussee__caveman/snapshot)
   - Skills discovered: 11
-  - Files retained in reduced snapshot: 11
+  - Files retained in reduced snapshot: 13
 - [obra/Superpowers](https://github.com/obra/Superpowers)
   - Archived commit: `d884ae04edebef577e82ff7c4e143debd0bbec99`
   - Snapshot: [`archives/obra__Superpowers/snapshot`](archives/obra__Superpowers/snapshot)
   - Skills discovered: 14
-  - Files retained in reduced snapshot: 14
+  - Files retained in reduced snapshot: 33
 - [cursor/plugins](https://github.com/cursor/plugins)
-  - Archived commit: `3fe2823ce17c1656c222d4b7c59d3f82fbf20143`
+  - Archived commit: `02c03a9deddad3aef581da053cecf9603b8caba1`
   - Snapshot: [`archives/cursor__plugins/snapshot`](archives/cursor__plugins/snapshot)
   - Skills discovered: 78
-  - Files retained in reduced snapshot: 78
+  - Files retained in reduced snapshot: 169
 - [affaan-m/ECC](https://github.com/affaan-m/ECC)
-  - Archived commit: `754b8dd76ca885b764ec22f476664377aa46b6cd`
+  - Archived commit: `a3130f9ebfaeed075df5d5b52538acb0ee4bcdf8`
   - Snapshot: [`archives/affaan-m__ECC/snapshot`](archives/affaan-m__ECC/snapshot)
   - Skills discovered: 889
-  - Files retained in reduced snapshot: 889
+  - Files retained in reduced snapshot: 1022
 - [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
-  - Archived commit: `249c7a4c040558a903d6838dee31012980d4946d`
+  - Archived commit: `01aef34ca49db1ccc9caaee72913760f4468f6c1`
   - Snapshot: [`archives/mvanhorn__last30days-skill/snapshot`](archives/mvanhorn__last30days-skill/snapshot)
   - Skills discovered: 1
-  - Files retained in reduced snapshot: 1
+  - Files retained in reduced snapshot: 9
 - [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
   - Archived commit: `16f29800fd2681bdf24f3eb4ccffe38be3baec6b`
   - Snapshot: [`archives/DietrichGebert__ponytail/snapshot`](archives/DietrichGebert__ponytail/snapshot)
   - Skills discovered: 12
   - Files retained in reduced snapshot: 12
+- [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop)
+  - Archived commit: `61c21c351da4dcb40946a11fead978f2078a2c65`
+  - Snapshot: [`archives/petergyang__no-ai-slop/snapshot`](archives/petergyang__no-ai-slop/snapshot)
+  - Skills discovered: 1
+  - Files retained in reduced snapshot: 2
 
 ## Generated Reports
 
@@ -1179,6 +1184,9 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `ponytail-gain`: [`skills/ponytail-gain/SKILL.md`](archives/DietrichGebert__ponytail/snapshot/skills/ponytail-gain/SKILL.md)
 - `ponytail-help`: [`skills/ponytail-help/SKILL.md`](archives/DietrichGebert__ponytail/snapshot/skills/ponytail-help/SKILL.md)
 - `ponytail-review`: [`skills/ponytail-review/SKILL.md`](archives/DietrichGebert__ponytail/snapshot/skills/ponytail-review/SKILL.md)
+
+### petergyang/no-ai-slop
+- `no-ai-slop`: [`SKILL.md`](archives/petergyang__no-ai-slop/snapshot/SKILL.md)
 
 ## Duplicate Tracking
 

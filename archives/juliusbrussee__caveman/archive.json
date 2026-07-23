@@ -7,11 +7,11 @@
   "default_branch": "main",
   "commit": "0d95a81d35a9f2d123a5e9430d1cfc43d55f1bb0",
   "commit_date": "2026-07-03T11:08:51Z",
-  "archived_at": "2026-07-19T19:02:24.555945+00:00",
+  "archived_at": "2026-07-23T01:10:11.375925+00:00",
   "archive_path": "archives/juliusbrussee__caveman",
   "snapshot_path": "archives/juliusbrussee__caveman/snapshot",
-  "file_count": 11,
-  "directory_count": 11,
+  "file_count": 13,
+  "directory_count": 13,
   "skill_count": 11,
   "snapshot_mode": "skills-and-related-files-only",
   "skill_paths": [
@@ -35,9 +35,11 @@
     "skills/caveman-stats/SKILL.md": "b9e49e46ede956e0c1633eae82a695c996f728bc48f3903f001d301068a2b0ea",
     "skills/caveman/SKILL.md": "5e30bb56afbd0b01bd736f2da84180e76f18db4a64de8e124525d5c8dc2e8605",
     "skills/caveman-commit/SKILL.md": "58db7b8efab911a629c26e7132517d9076e4e3645009eb604cb8c25663477841",
+    "skills/caveman-compress/scripts/__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
     "plugins/caveman/skills/caveman-compress/SKILL.md": "8b0d64c622d8a70411bbd86e736ac23cc0465fca1943a37f081e58e9d3afd210",
     "plugins/caveman/skills/cavecrew/SKILL.md": "b74f374f6aae6e9a31e78e7d876860406fe5833378e9298536edf176c12f379b",
     "plugins/caveman/skills/caveman-stats/SKILL.md": "b9e49e46ede956e0c1633eae82a695c996f728bc48f3903f001d301068a2b0ea",
-    "plugins/caveman/skills/caveman/SKILL.md": "5e30bb56afbd0b01bd736f2da84180e76f18db4a64de8e124525d5c8dc2e8605"
+    "plugins/caveman/skills/caveman/SKILL.md": "5e30bb56afbd0b01bd736f2da84180e76f18db4a64de8e124525d5c8dc2e8605",
+    "plugins/caveman/skills/caveman-compress/scripts/__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279"
   }
 }

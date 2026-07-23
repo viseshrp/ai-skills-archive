@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T19:02:31.637975+00:00",
+  "generated_at": "2026-07-23T01:10:15.355144+00:00",
   "exact_skill_duplicates": [
     {
       "sha256": "060f50513003731e9c0e7f78e6a6a9b8cb178a74a2ec2a6ca75cdae804f0d564",
@@ -5413,7 +5413,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/strategic-compact/SKILL.md",
-          "sha256": "c347b3c6c3b364ef521341d953786e6fb7831518e95cf1816eca1dc7fc44204c"
+          "sha256": "2402f32f096097cbded66ca2bbb040bf4df4d0aa03726b5c854074272bc5b740"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -5443,7 +5443,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/strategic-compact/SKILL.md",
-          "sha256": "cc3f115e37698e879a7a8b1f6edc859355d84cfbe7987f0fdd87930aab4a3123"
+          "sha256": "3af4fdd42c6d49fe535f3c7f9ddd2454f93feb81f619c11dbc39ea342283dd0f"
         }
       ]
     },
@@ -5673,7 +5673,7 @@
         {
           "source_repo": "addyosmani/agent-skills",
           "path": "skills/test-driven-development/SKILL.md",
-          "sha256": "6c60e193d77a6c52eb3d9a7ca774f1801b9f798ec34f075720e0425a8094f50e"
+          "sha256": "71fdddb96c2c54041fcfbfdaef3c172b202fb9240b609e658d9d82edbed6cad1"
         },
         {
           "source_repo": "obra/Superpowers",

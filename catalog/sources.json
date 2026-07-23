@@ -38,5 +38,9 @@
   {
     "url": "https://github.com/DietrichGebert/ponytail",
     "notes": "Added with scripts/sync_sources.py add from https://github.com/DietrichGebert/ponytail."
+  },
+  {
+    "url": "https://github.com/petergyang/no-ai-slop",
+    "notes": "Added with scripts/sync_sources.py add from https://github.com/petergyang/no-ai-slop."
   }
 ]

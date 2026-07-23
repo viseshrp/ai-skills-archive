@@ -5,19 +5,27 @@
   "url": "https://github.com/mvanhorn/last30days-skill",
   "notes": "Added with scripts/sync_sources.py add from https://github.com/mvanhorn/last30days-skill.",
   "default_branch": "main",
-  "commit": "249c7a4c040558a903d6838dee31012980d4946d",
-  "commit_date": "2026-07-15T17:18:44-07:00",
-  "archived_at": "2026-07-19T19:02:31.041112+00:00",
+  "commit": "01aef34ca49db1ccc9caaee72913760f4468f6c1",
+  "commit_date": "2026-07-21T14:49:15-07:00",
+  "archived_at": "2026-07-23T01:10:14.608593+00:00",
   "archive_path": "archives/mvanhorn__last30days-skill",
   "snapshot_path": "archives/mvanhorn__last30days-skill/snapshot",
-  "file_count": 1,
-  "directory_count": 1,
+  "file_count": 9,
+  "directory_count": 4,
   "skill_count": 1,
   "snapshot_mode": "skills-and-related-files-only",
   "skill_paths": [
     "skills/last30days/SKILL.md"
   ],
   "all_text_file_hashes": {
-    "skills/last30days/SKILL.md": "dd2059d4554de81dc3e69612cea2afa67b867bc877acca8cd9fe3698e41fa524"
+    "skills/last30days/SKILL.md": "541a772ed3bd2ce359bded7a4d121961a6c83941423bf812e83d4e13d870c39c",
+    "skills/last30days/references/save-html-brief.md": "d3d5610a785272ec927c2da5792f25f5109a2e1d9090c106351ed5eff7ceda9f",
+    "skills/last30days/scripts/last30days.py": "5da981d1672645609e2fbabfc6b4a329dd08d3b1a18dade336fc8f00fa1fbf43",
+    "skills/last30days/scripts/lib/hosted.py": "7d5682b6a07e466dad4495f5b10f681574361f5d252a2593132efd12c80f85d9",
+    "skills/last30days/scripts/lib/categories.py": "849e8e57375962bbc705c05dcfcc538db839ac6454133e1aa7252bcd4cb090e0",
+    "skills/last30days/scripts/lib/pipeline.py": "46b815bc2f5769d759797a2f6f1cacff47bd5063e083fcddcae7559c4e06290b",
+    "skills/last30days/scripts/lib/reddit.py": "5e87c05484015f4aac00f95dba238bd0bb83a6483d9b7a76368ce4eae4552607",
+    "skills/last30days/scripts/lib/youtube_yt.py": "02424e7850ed57effcbe7cce6f3943bbff1381cd007559f5d95dce44fcf0b17d",
+    "skills/last30days/scripts/lib/relevance.py": "1fad30389ee8bcbedf0bc2eefbf20fd56ad59c86ffc3281ddeac250474fc4f3e"
   }
 }
