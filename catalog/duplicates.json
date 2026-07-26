@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T01:10:15.355144+00:00",
+  "generated_at": "2026-07-26T19:02:30.244404+00:00",
   "exact_skill_duplicates": [
     {
       "sha256": "060f50513003731e9c0e7f78e6a6a9b8cb178a74a2ec2a6ca75cdae804f0d564",
@@ -1354,7 +1354,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/continuous-learning-v2/SKILL.md",
-          "sha256": "75485ddb37e2d1d6f056b404d9939bf46a2b409b1286aec209a510112e5b64b1"
+          "sha256": "8d1fd750c0727deec2e95d77253fe57bd7f8df9bf7bf70520e4e322fc0387097"
         }
       ]
     },
@@ -5678,7 +5678,7 @@
         {
           "source_repo": "obra/Superpowers",
           "path": "skills/test-driven-development/SKILL.md",
-          "sha256": "b5b4717b8b761cce15a6cfe9022e33fd959e0894c0c39d72c9cb49c23486c10e"
+          "sha256": "bf1b8216e523851a411e91d429a7c1c2a173e79d88957bc78e348218d50edd54"
         }
       ]
     },
@@ -5769,6 +5769,27 @@
           "source_repo": "affaan-m/ECC",
           "path": "skills/ui-to-vue/SKILL.md",
           "sha256": "cb6c17f7ae28a53b31fb2904180521ccdaa31ad0deafa96c6b4f5b2f4bfea480"
+        }
+      ]
+    },
+    {
+      "skill_name": "unified-memory",
+      "count": 3,
+      "locations": [
+        {
+          "source_repo": "affaan-m/ECC",
+          "path": ".agents/skills/unified-memory/SKILL.md",
+          "sha256": "86b4923b1a418e58cf2d6921b8e933dfab6d5969fc82c9b95c76920aee58e6e3"
+        },
+        {
+          "source_repo": "affaan-m/ECC",
+          "path": ".cursor/skills/unified-memory/SKILL.md",
+          "sha256": "feca7507fef9d26809ea1b03cdac2d7e9438e3b826c6604f9c83f6297bd83d46"
+        },
+        {
+          "source_repo": "affaan-m/ECC",
+          "path": "skills/unified-memory/SKILL.md",
+          "sha256": "a6eb9a96b92dfd4a700bceff15195ca1fd4b7fad2944bb014c08812d1a0dc8b0"
         }
       ]
     },

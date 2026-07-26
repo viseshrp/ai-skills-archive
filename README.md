@@ -26,7 +26,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 ## Source Repositories
 
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
-  - Archived commit: `fefc4075ddfd8363d3b2aa8b26e6440f1ce204c0`
+  - Archived commit: `7829ffd90d973b6325f5f12f1b1226dcace74443`
   - Snapshot: [`archives/addyosmani__agent-skills/snapshot`](archives/addyosmani__agent-skills/snapshot)
   - Skills discovered: 24
   - Files retained in reduced snapshot: 27
@@ -36,7 +36,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
-  - Archived commit: `1788e08155d24da729233e3e4b480ffb53d799c6`
+  - Archived commit: `e624c5a0682176415b97db4dc3b53a3ec2b556da`
   - Snapshot: [`archives/Imbad0202__academic-research-skills/snapshot`](archives/Imbad0202__academic-research-skills/snapshot)
   - Skills discovered: 4
   - Files retained in reduced snapshot: 158
@@ -51,22 +51,22 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 11
   - Files retained in reduced snapshot: 13
 - [obra/Superpowers](https://github.com/obra/Superpowers)
-  - Archived commit: `d884ae04edebef577e82ff7c4e143debd0bbec99`
+  - Archived commit: `3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9`
   - Snapshot: [`archives/obra__Superpowers/snapshot`](archives/obra__Superpowers/snapshot)
   - Skills discovered: 14
-  - Files retained in reduced snapshot: 33
+  - Files retained in reduced snapshot: 36
 - [cursor/plugins](https://github.com/cursor/plugins)
-  - Archived commit: `02c03a9deddad3aef581da053cecf9603b8caba1`
+  - Archived commit: `ba7b5907843e1e21ec692418c180e1f912cbf7d3`
   - Snapshot: [`archives/cursor__plugins/snapshot`](archives/cursor__plugins/snapshot)
   - Skills discovered: 78
   - Files retained in reduced snapshot: 169
 - [affaan-m/ECC](https://github.com/affaan-m/ECC)
-  - Archived commit: `a3130f9ebfaeed075df5d5b52538acb0ee4bcdf8`
+  - Archived commit: `6a9f075cd97c139a5f7e84e1e3f2c9ab095adf64`
   - Snapshot: [`archives/affaan-m__ECC/snapshot`](archives/affaan-m__ECC/snapshot)
-  - Skills discovered: 889
-  - Files retained in reduced snapshot: 1022
+  - Skills discovered: 894
+  - Files retained in reduced snapshot: 1027
 - [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
-  - Archived commit: `01aef34ca49db1ccc9caaee72913760f4468f6c1`
+  - Archived commit: `a4e7eca51637123f92086d50b2525eecdf24abbe`
   - Snapshot: [`archives/mvanhorn__last30days-skill/snapshot`](archives/mvanhorn__last30days-skill/snapshot)
   - Skills discovered: 1
   - Files retained in reduced snapshot: 9
@@ -313,6 +313,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `security-review`: [`.agents/skills/security-review/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/security-review/SKILL.md)
 - `strategic-compact`: [`.agents/skills/strategic-compact/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/strategic-compact/SKILL.md)
 - `tdd-workflow`: [`.agents/skills/tdd-workflow/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/tdd-workflow/SKILL.md)
+- `unified-memory`: [`.agents/skills/unified-memory/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/unified-memory/SKILL.md)
 - `verification-loop`: [`.agents/skills/verification-loop/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/verification-loop/SKILL.md)
 - `video-editing`: [`.agents/skills/video-editing/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/video-editing/SKILL.md)
 - `x-api`: [`.agents/skills/x-api/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/x-api/SKILL.md)
@@ -327,6 +328,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `market-research`: [`.cursor/skills/market-research/SKILL.md`](archives/affaan-m__ECC/snapshot/.cursor/skills/market-research/SKILL.md)
 - `mcp-server-patterns`: [`.cursor/skills/mcp-server-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/.cursor/skills/mcp-server-patterns/SKILL.md)
 - `nextjs-turbopack`: [`.cursor/skills/nextjs-turbopack/SKILL.md`](archives/affaan-m__ECC/snapshot/.cursor/skills/nextjs-turbopack/SKILL.md)
+- `unified-memory`: [`.cursor/skills/unified-memory/SKILL.md`](archives/affaan-m__ECC/snapshot/.cursor/skills/unified-memory/SKILL.md)
 - `agentic-engineering`: [`.kiro/skills/agentic-engineering/SKILL.md`](archives/affaan-m__ECC/snapshot/.kiro/skills/agentic-engineering/SKILL.md)
 - `api-design`: [`.kiro/skills/api-design/SKILL.md`](archives/affaan-m__ECC/snapshot/.kiro/skills/api-design/SKILL.md)
 - `autonomous-loops`: [`.kiro/skills/autonomous-loops/SKILL.md`](archives/affaan-m__ECC/snapshot/.kiro/skills/autonomous-loops/SKILL.md)
@@ -943,6 +945,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `continuous-agent-loop`: [`skills/continuous-agent-loop/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/continuous-agent-loop/SKILL.md)
 - `continuous-learning`: [`skills/continuous-learning/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/continuous-learning/SKILL.md)
 - `continuous-learning-v2`: [`skills/continuous-learning-v2/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/continuous-learning-v2/SKILL.md)
+- `contract-first`: [`skills/contract-first/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/contract-first/SKILL.md)
 - `cost-aware-llm-pipeline`: [`skills/cost-aware-llm-pipeline/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/cost-aware-llm-pipeline/SKILL.md)
 - `cost-tracking`: [`skills/cost-tracking/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/cost-tracking/SKILL.md)
 - `council`: [`skills/council/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/council/SKILL.md)
@@ -1024,6 +1027,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `ios-icon-gen`: [`skills/ios-icon-gen/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ios-icon-gen/SKILL.md)
 - `iterative-retrieval`: [`skills/iterative-retrieval/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/iterative-retrieval/SKILL.md)
 - `ito-basket-compare`: [`skills/ito-basket-compare/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ito-basket-compare/SKILL.md)
+- `ito-compute`: [`skills/ito-compute/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ito-compute/SKILL.md)
 - `ito-data-atlas-agent`: [`skills/ito-data-atlas-agent/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ito-data-atlas-agent/SKILL.md)
 - `ito-market-intelligence`: [`skills/ito-market-intelligence/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ito-market-intelligence/SKILL.md)
 - `ito-trade-planner`: [`skills/ito-trade-planner/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ito-trade-planner/SKILL.md)
@@ -1157,6 +1161,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `ui-demo`: [`skills/ui-demo/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ui-demo/SKILL.md)
 - `ui-to-vue`: [`skills/ui-to-vue/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ui-to-vue/SKILL.md)
 - `uncloud`: [`skills/uncloud/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/uncloud/SKILL.md)
+- `unified-memory`: [`skills/unified-memory/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/unified-memory/SKILL.md)
 - `unified-notifications-ops`: [`skills/unified-notifications-ops/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/unified-notifications-ops/SKILL.md)
 - `verification-loop`: [`skills/verification-loop/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/verification-loop/SKILL.md)
 - `video-editing`: [`skills/video-editing/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/video-editing/SKILL.md)
@@ -1191,7 +1196,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 ## Duplicate Tracking
 
 - Exact duplicate groups: 8
-- Repeated skill names: 252
+- Repeated skill names: 253
 - Full report: [`catalog/duplicates.json`](catalog/duplicates.json)
 
 ## Add A Source
