@@ -310,3 +310,23 @@
 - Synced `mvanhorn__last30days-skill` at commit `a4e7eca51637` with 1 skills and 9 files.
 - Synced `DietrichGebert__ponytail` at commit `16f29800fd26` with 12 skills and 12 files.
 - Synced `petergyang__no-ai-slop` at commit `61c21c351da4` with 1 skills and 2 files.
+
+## 2026-08-02 19:02:29Z
+
+- Action: Weekly automation refresh
+- Note: Initial sandboxed clone of `https://github.com/addyosmani/agent-skills` failed with exit status 128 because the sandbox could not reach GitHub; the approved network rerun completed successfully. No source-level fetch failures remained.
+- Sources synced: 11
+- Skills indexed: 1084
+- Exact duplicate groups: 8
+- Repeated skill names: 253
+- Synced `addyosmani__agent-skills` at commit `7829ffd90d97` with 24 skills and 27 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `32823c3d6d7f` with 4 skills and 160 files.
+- Synced `mattpocock__skills` at commit `2ab958093e83` with 41 skills and 65 files.
+- Synced `juliusbrussee__caveman` at commit `0d95a81d35a9` with 11 skills and 13 files.
+- Synced `obra__Superpowers` at commit `44c9b2d6e889` with 14 skills and 36 files.
+- Synced `cursor__plugins` at commit `b047069f4f3a` with 81 skills and 175 files.
+- Synced `affaan-m__ECC` at commit `85c7822c4a9e` with 894 skills and 1027 files.
+- Synced `mvanhorn__last30days-skill` at commit `52f53312ff2f` with 1 skills and 9 files.
+- Synced `DietrichGebert__ponytail` at commit `16f29800fd26` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `f2b25e603800` with 1 skills and 2 files.

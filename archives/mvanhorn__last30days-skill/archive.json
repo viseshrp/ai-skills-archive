@@ -5,9 +5,9 @@
   "url": "https://github.com/mvanhorn/last30days-skill",
   "notes": "Added with scripts/sync_sources.py add from https://github.com/mvanhorn/last30days-skill.",
   "default_branch": "main",
-  "commit": "a4e7eca51637123f92086d50b2525eecdf24abbe",
-  "commit_date": "2026-07-24T18:33:41-07:00",
-  "archived_at": "2026-07-26T19:02:29.325961+00:00",
+  "commit": "52f53312ff2f272e16bbc1785e1c04f9d9c19b31",
+  "commit_date": "2026-07-31T19:15:29-07:00",
+  "archived_at": "2026-08-02T19:02:28.407456+00:00",
   "archive_path": "archives/mvanhorn__last30days-skill",
   "snapshot_path": "archives/mvanhorn__last30days-skill/snapshot",
   "file_count": 9,
@@ -18,14 +18,14 @@
     "skills/last30days/SKILL.md"
   ],
   "all_text_file_hashes": {
-    "skills/last30days/SKILL.md": "f440ad866dd4bf888972c9d6735c2d49e3a3fea987762a8137d473fa6423e018",
+    "skills/last30days/SKILL.md": "1884e255fad7ec9b99f0eb39badc53adada430e389c0bff376a224b1a73b3803",
     "skills/last30days/references/save-html-brief.md": "d3d5610a785272ec927c2da5792f25f5109a2e1d9090c106351ed5eff7ceda9f",
-    "skills/last30days/scripts/last30days.py": "d05d589a0d68d64516e8f82f2e4eba520a8c45ae67ca22e0ea4461cbef92fcd3",
+    "skills/last30days/scripts/last30days.py": "c1082f7348fe1ea05622b22eec0d2b2aa670dbda06e20104e69bdf1aa0a566e3",
     "skills/last30days/scripts/lib/hosted.py": "7d5682b6a07e466dad4495f5b10f681574361f5d252a2593132efd12c80f85d9",
     "skills/last30days/scripts/lib/categories.py": "849e8e57375962bbc705c05dcfcc538db839ac6454133e1aa7252bcd4cb090e0",
-    "skills/last30days/scripts/lib/pipeline.py": "8f5d2284f256d5432482ff878106a9ad1b0e83c241868419cece934b20e571cf",
+    "skills/last30days/scripts/lib/pipeline.py": "766390710fa1a2069b256a7fc02ed74a9237112f93092cb109263f33907c0c56",
     "skills/last30days/scripts/lib/reddit.py": "d17cdb3affa15227a879be3e54d6e09ae7cf6d1158f9ade1934fed14b43660c9",
-    "skills/last30days/scripts/lib/youtube_yt.py": "5b6a96f849b93f8e36fda87c3ba889401e4478783a76ec0d9d401085ec1270b3",
+    "skills/last30days/scripts/lib/youtube_yt.py": "85c7208d5aa48fd6b73c2d3b3f275d720639310141c2c786817fa252b5b57ea9",
     "skills/last30days/scripts/lib/relevance.py": "1fad30389ee8bcbedf0bc2eefbf20fd56ad59c86ffc3281ddeac250474fc4f3e"
   }
 }
