@@ -42,5 +42,9 @@
   {
     "url": "https://github.com/petergyang/no-ai-slop",
     "notes": "Added with scripts/sync_sources.py add from https://github.com/petergyang/no-ai-slop."
+  },
+  {
+    "url": "https://github.com/ayghri/i-have-adhd",
+    "notes": "Added with scripts/sync_sources.py add from https://github.com/ayghri/i-have-adhd."
   }
 ]

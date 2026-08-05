@@ -929,7 +929,7 @@
     "description": ">",
     "path": "plugins/caveman/skills/caveman/SKILL.md",
     "relative_directory": "plugins/caveman/skills/caveman",
-    "sha256": "5e30bb56afbd0b01bd736f2da84180e76f18db4a64de8e124525d5c8dc2e8605",
+    "sha256": "daf9cec496ebd039809d8236f99f17fa1b4beaadf8ce4e2d532d0da51d70afce",
     "linked_local_files": []
   },
   {
@@ -939,7 +939,7 @@
     "description": ">",
     "path": "plugins/caveman/skills/caveman-compress/SKILL.md",
     "relative_directory": "plugins/caveman/skills/caveman-compress",
-    "sha256": "8b0d64c622d8a70411bbd86e736ac23cc0465fca1943a37f081e58e9d3afd210",
+    "sha256": "3167d62440eee99c0e5b224d7f8b8ebcfe37efba38bc5bbee24f0d00da72a688",
     "linked_local_files": [
       "plugins/caveman/skills/caveman-compress/scripts/__main__.py"
     ]
@@ -951,7 +951,7 @@
     "description": ">",
     "path": "plugins/caveman/skills/caveman-stats/SKILL.md",
     "relative_directory": "plugins/caveman/skills/caveman-stats",
-    "sha256": "b9e49e46ede956e0c1633eae82a695c996f728bc48f3903f001d301068a2b0ea",
+    "sha256": "b78227f62898b0360d21f2a94d48e9d7a80629cb879cc7b7f9b45b4a241eba90",
     "linked_local_files": []
   },
   {
@@ -971,7 +971,7 @@
     "description": ">",
     "path": "skills/caveman/SKILL.md",
     "relative_directory": "skills/caveman",
-    "sha256": "5e30bb56afbd0b01bd736f2da84180e76f18db4a64de8e124525d5c8dc2e8605",
+    "sha256": "daf9cec496ebd039809d8236f99f17fa1b4beaadf8ce4e2d532d0da51d70afce",
     "linked_local_files": []
   },
   {
@@ -991,7 +991,7 @@
     "description": ">",
     "path": "skills/caveman-compress/SKILL.md",
     "relative_directory": "skills/caveman-compress",
-    "sha256": "8b0d64c622d8a70411bbd86e736ac23cc0465fca1943a37f081e58e9d3afd210",
+    "sha256": "3167d62440eee99c0e5b224d7f8b8ebcfe37efba38bc5bbee24f0d00da72a688",
     "linked_local_files": [
       "skills/caveman-compress/scripts/__main__.py"
     ]
@@ -1003,7 +1003,7 @@
     "description": ">",
     "path": "skills/caveman-help/SKILL.md",
     "relative_directory": "skills/caveman-help",
-    "sha256": "590d6c6c17254bda56d18da7cc9d0bf252aeec5d1c78b77dd7ae4cabb8404f89",
+    "sha256": "ae18884d30b7ddccaefc9612cf73645d9e1eaf18b44d3c36e398b9706f183c1e",
     "linked_local_files": []
   },
   {
@@ -1023,7 +1023,7 @@
     "description": ">",
     "path": "skills/caveman-stats/SKILL.md",
     "relative_directory": "skills/caveman-stats",
-    "sha256": "b9e49e46ede956e0c1633eae82a695c996f728bc48f3903f001d301068a2b0ea",
+    "sha256": "b78227f62898b0360d21f2a94d48e9d7a80629cb879cc7b7f9b45b4a241eba90",
     "linked_local_files": []
   },
   {
@@ -1579,7 +1579,7 @@
     "description": "Use for \\\"automate me\\\", \\\"create/update/refresh my -mode skill\\\", \\\"turn/capture my preferences or working style into a skill\\\", or wanting agents to follow how the user works. Drafts or revises a personal -mode skill via create-skill + unslop, optionally pulling fresh evidence from recent transcripts.",
     "path": "pstack/skills/automate-me/SKILL.md",
     "relative_directory": "pstack/skills/automate-me",
-    "sha256": "a5999a0e1d1c242df77d2fbc3e8dae201228135b2c6c6409ef353c1b507df530",
+    "sha256": "34e7eab6f495093d474817bc4c13f26bcf5fafa439f2761b8c1ec72b07487764",
     "linked_local_files": []
   },
   {
@@ -1590,6 +1590,16 @@
     "path": "pstack/skills/blast-radius/SKILL.md",
     "relative_directory": "pstack/skills/blast-radius",
     "sha256": "b060df3ca85803eabbce9fab53f5cc024ca8d784bdde5513c1c1a784947523f8",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "cursor/plugins",
+    "repo_key": "cursor__plugins",
+    "skill_name": "bro",
+    "description": "Restate the last message in plain human language, with no jargon.",
+    "path": "pstack/skills/bro/SKILL.md",
+    "relative_directory": "pstack/skills/bro",
+    "sha256": "aa329d0ceeeecb6822a7174ad76bb07a7826a3c52ceb6a588dec4138815084bb",
     "linked_local_files": []
   },
   {
@@ -1659,7 +1669,7 @@
     "description": "Spawn Comment Sicko, fix accepted findings, and offer encodings for claimed constraints.",
     "path": "pstack/skills/no-comments/SKILL.md",
     "relative_directory": "pstack/skills/no-comments",
-    "sha256": "7e426bccbd7679b1b28e252952810b528b0d0c8623a01b589a530ff8f25f31b4",
+    "sha256": "72d3b153712ab641875f1d7424de0f77375af1cec03707935f08fa7d8f17bbf3",
     "linked_local_files": []
   },
   {
@@ -1669,12 +1679,13 @@
     "description": "poteto's agent style for concise, detailed responses, deliberate subagents, unslopped prose, simple code, and verified work. Use for poteto, /poteto-mode, or requests to work in this style.",
     "path": "pstack/skills/poteto-mode/SKILL.md",
     "relative_directory": "pstack/skills/poteto-mode",
-    "sha256": "bea021b7bef8ef9eb2a13ca6b9e6f1cf014583e3d3e324edce24a7e9547f0801",
+    "sha256": "48572718345036522c3f9f812a26ee9f6f86ba10c69d581db49fdf33895e5a37",
     "linked_local_files": [
       "pstack/skills/poteto-mode/playbooks/authoring-a-skill.md",
       "pstack/skills/poteto-mode/playbooks/autonomous-run.md",
       "pstack/skills/poteto-mode/playbooks/autopilot-full.md",
       "pstack/skills/poteto-mode/playbooks/autopilot-stack.md",
+      "pstack/skills/poteto-mode/playbooks/babysit.md",
       "pstack/skills/poteto-mode/playbooks/bug-fix.md",
       "pstack/skills/poteto-mode/playbooks/eval.md",
       "pstack/skills/poteto-mode/playbooks/feature.md",
@@ -1682,14 +1693,18 @@
       "pstack/skills/poteto-mode/playbooks/investigation.md",
       "pstack/skills/poteto-mode/playbooks/multi-phase-plan.md",
       "pstack/skills/poteto-mode/playbooks/opening-a-pr.md",
+      "pstack/skills/poteto-mode/playbooks/orchestrate.md",
       "pstack/skills/poteto-mode/playbooks/pause-safely.md",
       "pstack/skills/poteto-mode/playbooks/perf-issue.md",
       "pstack/skills/poteto-mode/playbooks/prototype.md",
       "pstack/skills/poteto-mode/playbooks/refactoring.md",
       "pstack/skills/poteto-mode/playbooks/runtime-forensics.md",
       "pstack/skills/poteto-mode/playbooks/session-pickup.md",
+      "pstack/skills/poteto-mode/playbooks/shipping.md",
       "pstack/skills/poteto-mode/playbooks/trace-forensics.md",
       "pstack/skills/poteto-mode/playbooks/visual-parity.md",
+      "pstack/skills/poteto-mode/playbooks/worktree-cleanup.md",
+      "pstack/skills/poteto-mode/references/bugbot-triage.md",
       "pstack/skills/poteto-mode/references/plan.md"
     ]
   },
@@ -1906,7 +1921,7 @@
     "description": "Apply when designing types, reviewing a function signature, or writing code in any statically-typed language. Make illegal states unrepresentable, brand semantic primitives, parse external data at boundaries, refuse to lie to the compiler, exhaust variants, derive from authoritative schemas.",
     "path": "pstack/skills/principle-type-system-discipline/SKILL.md",
     "relative_directory": "pstack/skills/principle-type-system-discipline",
-    "sha256": "4f576c28a727c5fa5593d0239b1a538932ad96bb21e8777aaed80b31f431bc5c",
+    "sha256": "662ed1ad53fb491e97b9c4eac7317fba8ec5ed722fec8d71beb94da0111619cf",
     "linked_local_files": []
   },
   {
@@ -2016,7 +2031,7 @@
     "description": "Cut AI tells from any writing. Must always apply.",
     "path": "pstack/skills/unslop/SKILL.md",
     "relative_directory": "pstack/skills/unslop",
-    "sha256": "4694d89007ffc0a00f3254f578433729d64af575ea77c00c028c71d57654d8ec",
+    "sha256": "181883e539caec8258ec9129e3ba5f133409144a2cbf2aa361158ab94cfc3441",
     "linked_local_files": []
   },
   {
@@ -11538,11 +11553,31 @@
     "repo_key": "petergyang__no-ai-slop",
     "skill_name": "no-ai-slop",
     "description": "Edit drafts into sharper, more human writing while preserving the writer's personal voice, or detect AI-slop patterns without rewriting. Use when the user wants a draft clearer, more direct, more opinionated, or less AI-sounding, or asks whether writing reads as AI.",
-    "path": "SKILL.md",
-    "relative_directory": ".",
+    "path": "skills/no-ai-slop/SKILL.md",
+    "relative_directory": "skills/no-ai-slop",
     "sha256": "73f87f7f79bd3540c4d8494b5c43d37d25584be6886212e1516fdd8d1c539846",
     "linked_local_files": [
-      "eval.md"
+      "skills/no-ai-slop/eval.md"
     ]
+  },
+  {
+    "source_repo": "ayghri/i-have-adhd",
+    "repo_key": "ayghri__i-have-adhd",
+    "skill_name": "i-have-adhd",
+    "description": "Shape output for a reader with ADHD: lead with the next action, number multi-step work, restate state across turns, suppress tangents, give specific time estimates, make wins visible. Invoke with /i-have-adhd; stays on until \"stop adhd mode\".",
+    "path": ".cursor/skills/i-have-adhd/SKILL.md",
+    "relative_directory": ".cursor/skills/i-have-adhd",
+    "sha256": "cae8c063977214b372c6897b7c93ac8faa573214a8635896f767e3bac092adf8",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "ayghri/i-have-adhd",
+    "repo_key": "ayghri__i-have-adhd",
+    "skill_name": "i-have-adhd",
+    "description": "Shape output for a reader with ADHD: lead with the next action, number multi-step work, restate state across turns, suppress tangents, give specific time estimates, make wins visible. Invoke with /i-have-adhd; stays on until \"stop adhd mode\".",
+    "path": "skills/i-have-adhd/SKILL.md",
+    "relative_directory": "skills/i-have-adhd",
+    "sha256": "cae8c063977214b372c6897b7c93ac8faa573214a8635896f767e3bac092adf8",
+    "linked_local_files": []
   }
 ]

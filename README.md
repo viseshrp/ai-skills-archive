@@ -26,7 +26,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 ## Source Repositories
 
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
-  - Archived commit: `7829ffd90d973b6325f5f12f1b1226dcace74443`
+  - Archived commit: `bdf76c7c6b7b3b3e01bb15c9fdc42ac5351855c1`
   - Snapshot: [`archives/addyosmani__agent-skills/snapshot`](archives/addyosmani__agent-skills/snapshot)
   - Skills discovered: 24
   - Files retained in reduced snapshot: 27
@@ -36,7 +36,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
-  - Archived commit: `32823c3d6d7fb7b89a09725173cf3f5f4ede8b26`
+  - Archived commit: `3b0d9795cb78ee15f013856044deda38e1d2c4a1`
   - Snapshot: [`archives/Imbad0202__academic-research-skills/snapshot`](archives/Imbad0202__academic-research-skills/snapshot)
   - Skills discovered: 4
   - Files retained in reduced snapshot: 160
@@ -46,7 +46,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 41
   - Files retained in reduced snapshot: 65
 - [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman)
-  - Archived commit: `0d95a81d35a9f2d123a5e9430d1cfc43d55f1bb0`
+  - Archived commit: `ec83e5bace4c20484d704dea21e12fc4eb94e9aa`
   - Snapshot: [`archives/juliusbrussee__caveman/snapshot`](archives/juliusbrussee__caveman/snapshot)
   - Skills discovered: 11
   - Files retained in reduced snapshot: 13
@@ -56,12 +56,12 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 14
   - Files retained in reduced snapshot: 36
 - [cursor/plugins](https://github.com/cursor/plugins)
-  - Archived commit: `b047069f4f3a73e87dd1f11f7913386d25876b91`
+  - Archived commit: `8185ad9fbb903efc7d1cf152a9be9777e516cfbc`
   - Snapshot: [`archives/cursor__plugins/snapshot`](archives/cursor__plugins/snapshot)
-  - Skills discovered: 81
-  - Files retained in reduced snapshot: 175
+  - Skills discovered: 82
+  - Files retained in reduced snapshot: 181
 - [affaan-m/ECC](https://github.com/affaan-m/ECC)
-  - Archived commit: `85c7822c4a9e076aa7824b86dc5e24d65ce64a65`
+  - Archived commit: `7a5757e6c0d7e8e1080d30169b4b044d76e0f7fc`
   - Snapshot: [`archives/affaan-m__ECC/snapshot`](archives/affaan-m__ECC/snapshot)
   - Skills discovered: 894
   - Files retained in reduced snapshot: 1027
@@ -76,9 +76,14 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 12
   - Files retained in reduced snapshot: 12
 - [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop)
-  - Archived commit: `f2b25e603800dfc01ba93f1092056724eb93059e`
+  - Archived commit: `f284f8ce636421c9300c02ea895bf5ca06d36c68`
   - Snapshot: [`archives/petergyang__no-ai-slop/snapshot`](archives/petergyang__no-ai-slop/snapshot)
   - Skills discovered: 1
+  - Files retained in reduced snapshot: 2
+- [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)
+  - Archived commit: `d05af1e4ac2259846e81686d14180d46d84acc2d`
+  - Snapshot: [`archives/ayghri__i-have-adhd/snapshot`](archives/ayghri__i-have-adhd/snapshot)
+  - Skills discovered: 2
   - Files retained in reduced snapshot: 2
 
 ## Generated Reports
@@ -232,6 +237,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `arena`: [`pstack/skills/arena/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/arena/SKILL.md)
 - `automate-me`: [`pstack/skills/automate-me/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/automate-me/SKILL.md)
 - `blast-radius`: [`pstack/skills/blast-radius/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/blast-radius/SKILL.md)
+- `bro`: [`pstack/skills/bro/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/bro/SKILL.md)
 - `create-verification-skill`: [`pstack/skills/create-verification-skill/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/create-verification-skill/SKILL.md)
 - `figure-it-out`: [`pstack/skills/figure-it-out/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/figure-it-out/SKILL.md)
 - `how`: [`pstack/skills/how/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/how/SKILL.md)
@@ -1194,12 +1200,16 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `ponytail-review`: [`skills/ponytail-review/SKILL.md`](archives/DietrichGebert__ponytail/snapshot/skills/ponytail-review/SKILL.md)
 
 ### petergyang/no-ai-slop
-- `no-ai-slop`: [`SKILL.md`](archives/petergyang__no-ai-slop/snapshot/SKILL.md)
+- `no-ai-slop`: [`skills/no-ai-slop/SKILL.md`](archives/petergyang__no-ai-slop/snapshot/skills/no-ai-slop/SKILL.md)
+
+### ayghri/i-have-adhd
+- `i-have-adhd`: [`.cursor/skills/i-have-adhd/SKILL.md`](archives/ayghri__i-have-adhd/snapshot/.cursor/skills/i-have-adhd/SKILL.md)
+- `i-have-adhd`: [`skills/i-have-adhd/SKILL.md`](archives/ayghri__i-have-adhd/snapshot/skills/i-have-adhd/SKILL.md)
 
 ## Duplicate Tracking
 
-- Exact duplicate groups: 8
-- Repeated skill names: 253
+- Exact duplicate groups: 9
+- Repeated skill names: 254
 - Full report: [`catalog/duplicates.json`](catalog/duplicates.json)
 
 ## Add A Source

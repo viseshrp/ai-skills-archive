@@ -330,3 +330,23 @@
 - Synced `mvanhorn__last30days-skill` at commit `52f53312ff2f` with 1 skills and 9 files.
 - Synced `DietrichGebert__ponytail` at commit `16f29800fd26` with 12 skills and 12 files.
 - Synced `petergyang__no-ai-slop` at commit `f2b25e603800` with 1 skills and 2 files.
+
+## 2026-08-05 00:36:27Z
+
+- Action: Added source(s): https://github.com/ayghri/i-have-adhd
+- Sources synced: 12
+- Skills indexed: 1087
+- Exact duplicate groups: 9
+- Repeated skill names: 254
+- Synced `addyosmani__agent-skills` at commit `bdf76c7c6b7b` with 24 skills and 27 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `3b0d9795cb78` with 4 skills and 160 files.
+- Synced `mattpocock__skills` at commit `2ab958093e83` with 41 skills and 65 files.
+- Synced `juliusbrussee__caveman` at commit `ec83e5bace4c` with 11 skills and 13 files.
+- Synced `obra__Superpowers` at commit `44c9b2d6e889` with 14 skills and 36 files.
+- Synced `cursor__plugins` at commit `8185ad9fbb90` with 82 skills and 181 files.
+- Synced `affaan-m__ECC` at commit `7a5757e6c0d7` with 894 skills and 1027 files.
+- Synced `mvanhorn__last30days-skill` at commit `52f53312ff2f` with 1 skills and 9 files.
+- Synced `DietrichGebert__ponytail` at commit `16f29800fd26` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `f284f8ce6364` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `d05af1e4ac22` with 2 skills and 2 files.

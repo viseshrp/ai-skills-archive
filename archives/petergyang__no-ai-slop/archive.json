@@ -5,20 +5,20 @@
   "url": "https://github.com/petergyang/no-ai-slop",
   "notes": "Added with scripts/sync_sources.py add from https://github.com/petergyang/no-ai-slop.",
   "default_branch": "main",
-  "commit": "f2b25e603800dfc01ba93f1092056724eb93059e",
-  "commit_date": "2026-08-01T09:08:10-07:00",
-  "archived_at": "2026-08-02T19:02:29.202936+00:00",
+  "commit": "f284f8ce636421c9300c02ea895bf5ca06d36c68",
+  "commit_date": "2026-08-03T15:20:44-07:00",
+  "archived_at": "2026-08-05T00:36:26.649731+00:00",
   "archive_path": "archives/petergyang__no-ai-slop",
   "snapshot_path": "archives/petergyang__no-ai-slop/snapshot",
   "file_count": 2,
-  "directory_count": 0,
+  "directory_count": 1,
   "skill_count": 1,
   "snapshot_mode": "skills-and-related-files-only",
   "skill_paths": [
-    "SKILL.md"
+    "skills/no-ai-slop/SKILL.md"
   ],
   "all_text_file_hashes": {
-    "eval.md": "b274cdc623e57ff1b4f673aedef929ba2b01419d13097248c3c74a5dbd80ccfd",
-    "SKILL.md": "73f87f7f79bd3540c4d8494b5c43d37d25584be6886212e1516fdd8d1c539846"
+    "skills/no-ai-slop/eval.md": "b274cdc623e57ff1b4f673aedef929ba2b01419d13097248c3c74a5dbd80ccfd",
+    "skills/no-ai-slop/SKILL.md": "73f87f7f79bd3540c4d8494b5c43d37d25584be6886212e1516fdd8d1c539846"
   }
 }

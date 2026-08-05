@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T19:02:29.204299+00:00",
+  "generated_at": "2026-08-05T00:36:27.060178+00:00",
   "exact_skill_duplicates": [
     {
       "sha256": "060f50513003731e9c0e7f78e6a6a9b8cb178a74a2ec2a6ca75cdae804f0d564",
@@ -30,16 +30,16 @@
       ]
     },
     {
-      "sha256": "5e30bb56afbd0b01bd736f2da84180e76f18db4a64de8e124525d5c8dc2e8605",
+      "sha256": "3167d62440eee99c0e5b224d7f8b8ebcfe37efba38bc5bbee24f0d00da72a688",
       "count": 2,
       "locations": [
         {
           "source_repo": "juliusbrussee/caveman",
-          "path": "plugins/caveman/skills/caveman/SKILL.md"
+          "path": "plugins/caveman/skills/caveman-compress/SKILL.md"
         },
         {
           "source_repo": "juliusbrussee/caveman",
-          "path": "skills/caveman/SKILL.md"
+          "path": "skills/caveman-compress/SKILL.md"
         }
       ]
     },
@@ -58,20 +58,6 @@
       ]
     },
     {
-      "sha256": "8b0d64c622d8a70411bbd86e736ac23cc0465fca1943a37f081e58e9d3afd210",
-      "count": 2,
-      "locations": [
-        {
-          "source_repo": "juliusbrussee/caveman",
-          "path": "plugins/caveman/skills/caveman-compress/SKILL.md"
-        },
-        {
-          "source_repo": "juliusbrussee/caveman",
-          "path": "skills/caveman-compress/SKILL.md"
-        }
-      ]
-    },
-    {
       "sha256": "b74f374f6aae6e9a31e78e7d876860406fe5833378e9298536edf176c12f379b",
       "count": 2,
       "locations": [
@@ -86,7 +72,7 @@
       ]
     },
     {
-      "sha256": "b9e49e46ede956e0c1633eae82a695c996f728bc48f3903f001d301068a2b0ea",
+      "sha256": "b78227f62898b0360d21f2a94d48e9d7a80629cb879cc7b7f9b45b4a241eba90",
       "count": 2,
       "locations": [
         {
@@ -96,6 +82,34 @@
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/caveman-stats/SKILL.md"
+        }
+      ]
+    },
+    {
+      "sha256": "cae8c063977214b372c6897b7c93ac8faa573214a8635896f767e3bac092adf8",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "ayghri/i-have-adhd",
+          "path": ".cursor/skills/i-have-adhd/SKILL.md"
+        },
+        {
+          "source_repo": "ayghri/i-have-adhd",
+          "path": "skills/i-have-adhd/SKILL.md"
+        }
+      ]
+    },
+    {
+      "sha256": "daf9cec496ebd039809d8236f99f17fa1b4beaadf8ce4e2d532d0da51d70afce",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "plugins/caveman/skills/caveman/SKILL.md"
+        },
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "skills/caveman/SKILL.md"
         }
       ]
     },
@@ -838,12 +852,12 @@
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "plugins/caveman/skills/caveman/SKILL.md",
-          "sha256": "5e30bb56afbd0b01bd736f2da84180e76f18db4a64de8e124525d5c8dc2e8605"
+          "sha256": "daf9cec496ebd039809d8236f99f17fa1b4beaadf8ce4e2d532d0da51d70afce"
         },
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/caveman/SKILL.md",
-          "sha256": "5e30bb56afbd0b01bd736f2da84180e76f18db4a64de8e124525d5c8dc2e8605"
+          "sha256": "daf9cec496ebd039809d8236f99f17fa1b4beaadf8ce4e2d532d0da51d70afce"
         }
       ]
     },
@@ -854,12 +868,12 @@
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "plugins/caveman/skills/caveman-compress/SKILL.md",
-          "sha256": "8b0d64c622d8a70411bbd86e736ac23cc0465fca1943a37f081e58e9d3afd210"
+          "sha256": "3167d62440eee99c0e5b224d7f8b8ebcfe37efba38bc5bbee24f0d00da72a688"
         },
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/caveman-compress/SKILL.md",
-          "sha256": "8b0d64c622d8a70411bbd86e736ac23cc0465fca1943a37f081e58e9d3afd210"
+          "sha256": "3167d62440eee99c0e5b224d7f8b8ebcfe37efba38bc5bbee24f0d00da72a688"
         }
       ]
     },
@@ -870,12 +884,12 @@
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "plugins/caveman/skills/caveman-stats/SKILL.md",
-          "sha256": "b9e49e46ede956e0c1633eae82a695c996f728bc48f3903f001d301068a2b0ea"
+          "sha256": "b78227f62898b0360d21f2a94d48e9d7a80629cb879cc7b7f9b45b4a241eba90"
         },
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/caveman-stats/SKILL.md",
-          "sha256": "b9e49e46ede956e0c1633eae82a695c996f728bc48f3903f001d301068a2b0ea"
+          "sha256": "b78227f62898b0360d21f2a94d48e9d7a80629cb879cc7b7f9b45b4a241eba90"
         }
       ]
     },
@@ -2957,6 +2971,22 @@
           "source_repo": "affaan-m/ECC",
           "path": "skills/hookify-rules/SKILL.md",
           "sha256": "b604608e30ac2b8f4f62dea3023efe2d3247b41a38c4156a6b6297173f2405a8"
+        }
+      ]
+    },
+    {
+      "skill_name": "i-have-adhd",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "ayghri/i-have-adhd",
+          "path": ".cursor/skills/i-have-adhd/SKILL.md",
+          "sha256": "cae8c063977214b372c6897b7c93ac8faa573214a8635896f767e3bac092adf8"
+        },
+        {
+          "source_repo": "ayghri/i-have-adhd",
+          "path": "skills/i-have-adhd/SKILL.md",
+          "sha256": "cae8c063977214b372c6897b7c93ac8faa573214a8635896f767e3bac092adf8"
         }
       ]
     },

@@ -1,0 +1,25 @@
+{
+  "owner": "ayghri",
+  "repo": "i-have-adhd",
+  "repo_key": "ayghri__i-have-adhd",
+  "url": "https://github.com/ayghri/i-have-adhd",
+  "notes": "Added with scripts/sync_sources.py add from https://github.com/ayghri/i-have-adhd.",
+  "default_branch": "main",
+  "commit": "d05af1e4ac2259846e81686d14180d46d84acc2d",
+  "commit_date": "2026-07-31T15:12:50-06:00",
+  "archived_at": "2026-08-05T00:36:27.059000+00:00",
+  "archive_path": "archives/ayghri__i-have-adhd",
+  "snapshot_path": "archives/ayghri__i-have-adhd/snapshot",
+  "file_count": 2,
+  "directory_count": 2,
+  "skill_count": 2,
+  "snapshot_mode": "skills-and-related-files-only",
+  "skill_paths": [
+    ".cursor/skills/i-have-adhd/SKILL.md",
+    "skills/i-have-adhd/SKILL.md"
+  ],
+  "all_text_file_hashes": {
+    "skills/i-have-adhd/SKILL.md": "cae8c063977214b372c6897b7c93ac8faa573214a8635896f767e3bac092adf8",
+    ".cursor/skills/i-have-adhd/SKILL.md": "cae8c063977214b372c6897b7c93ac8faa573214a8635896f767e3bac092adf8"
+  }
+}
