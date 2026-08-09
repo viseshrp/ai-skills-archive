@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T00:36:27.060178+00:00",
+  "generated_at": "2026-08-09T19:02:19.998595+00:00",
   "exact_skill_duplicates": [
     {
       "sha256": "060f50513003731e9c0e7f78e6a6a9b8cb178a74a2ec2a6ca75cdae804f0d564",
@@ -1156,17 +1156,17 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "docs/ja-JP/skills/configure-ecc/SKILL.md",
-          "sha256": "ebdd5a2043d00a101a1e8854930765ea935a7eec447ee3819a3f19f1b2481e7a"
+          "sha256": "0cf6cdf53a0bfd13320e7a9375abb101c43c004c071f6356f03cb52d87153ffb"
         },
         {
           "source_repo": "affaan-m/ECC",
           "path": "docs/zh-CN/skills/configure-ecc/SKILL.md",
-          "sha256": "5c5898d60e4ffac335541a34ecd66c4506ae827cb2d7ecdd58691b9724eec61f"
+          "sha256": "4ac3146a23803fcd2c2f775e1f6e68ac06370527abc76dd8677e7af34113e8da"
         },
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/configure-ecc/SKILL.md",
-          "sha256": "5ec5308c5231823b3e99bff096b523698d3088ecea1e027d3e4d0fcb13f48f07"
+          "sha256": "a01e64075c0c68206f2e8b45fd131a32dfc425d24494e3c8e4db9a3ab34e4c19"
         }
       ]
     },
@@ -1677,7 +1677,7 @@
         {
           "source_repo": "Imbad0202/academic-research-skills",
           "path": "deep-research/SKILL.md",
-          "sha256": "f903840f07c447abe51fc7f52c6fe2354a9b15af25bfd254728a199cd26985be"
+          "sha256": "6ceaccb4cf67df11a2b127be914e24f1e13e73dec9065334576e9f8848e9c710"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -1962,7 +1962,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/docker-patterns/SKILL.md",
-          "sha256": "6ccf7f6a54a0e4038c8d3159f9e52917bb0868f589d42de8bbe8023d3c0e1851"
+          "sha256": "2a880cf2f6401874151daa9bcc0eacd10cf79f5f48b97f98e93a877a8f3fd12b"
         }
       ]
     },
@@ -2520,17 +2520,17 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "docs/ja-JP/skills/gan-style-harness/SKILL.md",
-          "sha256": "b2f87ecd566848be280da1a85ff1cc821891a2ffd0546392501def40d58a8c21"
+          "sha256": "782aa7e3615955d9982fd21de8ab94444462f38987214be78090bea85c9a5f6f"
         },
         {
           "source_repo": "affaan-m/ECC",
           "path": "docs/zh-CN/skills/gan-style-harness/SKILL.md",
-          "sha256": "96c3876774dcb0f4c21070abc240140af57f71afab68f0597aafe4eb1393e163"
+          "sha256": "e1fb21f46c57d01e87f430a79824ca94022c7d6a9a0508e1b37d435d816e5064"
         },
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/gan-style-harness/SKILL.md",
-          "sha256": "b41a7845cc0eb3c10448fbd46387fe2fcb831d7b83a64d1aaa418a1bb15c9bba"
+          "sha256": "12260a2ba8732ed912bb0fba444aa4538fae71dc2af0d3bcc20095c48c134032"
         }
       ]
     },
@@ -5578,7 +5578,7 @@
         {
           "source_repo": "mattpocock/skills",
           "path": "skills/engineering/tdd/SKILL.md",
-          "sha256": "5363bb2775679fe9311fbb67947f95359169c6e7f1fac77c0f25e190bca6cf2f"
+          "sha256": "5e6b9c16b547113e90afbb946489d1c1384be5c2128f0159bd0bee57251ecf08"
         },
         {
           "source_repo": "cursor/plugins",
@@ -5703,7 +5703,7 @@
         {
           "source_repo": "addyosmani/agent-skills",
           "path": "skills/test-driven-development/SKILL.md",
-          "sha256": "71fdddb96c2c54041fcfbfdaef3c172b202fb9240b609e658d9d82edbed6cad1"
+          "sha256": "440fb3c9b76f4f1b0b564dfbaec19d370beab0167a3e2ab048ce59c5a865ecef"
         },
         {
           "source_repo": "obra/Superpowers",

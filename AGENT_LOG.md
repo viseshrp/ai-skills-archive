@@ -350,3 +350,24 @@
 - Synced `DietrichGebert__ponytail` at commit `16f29800fd26` with 12 skills and 12 files.
 - Synced `petergyang__no-ai-slop` at commit `f284f8ce6364` with 1 skills and 2 files.
 - Synced `ayghri__i-have-adhd` at commit `d05af1e4ac22` with 2 skills and 2 files.
+
+## 2026-08-09 19:02:20Z
+
+- Action: Weekly automation refresh
+- Note: Initial cached `git fetch` for `addyosmani__agent-skills` failed with exit status 128 because the disposable clone's `.git` directory was malformed and not recognized as a Git repository. Moved the cache aside and reran successfully from fresh clones; no source-level fetch failures remained.
+- Sources synced: 12
+- Skills indexed: 1084
+- Exact duplicate groups: 9
+- Repeated skill names: 254
+- Synced `addyosmani__agent-skills` at commit `7676817c12a1` with 24 skills and 34 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `73ea4028dc85` with 4 skills and 161 files.
+- Synced `mattpocock__skills` at commit `84fdeffd12f2` with 35 skills and 60 files.
+- Synced `juliusbrussee__caveman` at commit `11ddc0c9813c` with 11 skills and 13 files.
+- Synced `obra__Superpowers` at commit `44c9b2d6e889` with 14 skills and 36 files.
+- Synced `cursor__plugins` at commit `9490cc1cf95d` with 82 skills and 181 files.
+- Synced `affaan-m__ECC` at commit `2d46e80e0925` with 897 skills and 1032 files.
+- Synced `mvanhorn__last30days-skill` at commit `1004324ad35a` with 1 skills and 9 files.
+- Synced `DietrichGebert__ponytail` at commit `2ed6c52c9d7e` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `d30eddb9e045` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `2d19ad205eb1` with 2 skills and 2 files.

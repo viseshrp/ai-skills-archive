@@ -101,16 +101,24 @@ Research Question Type
 | Qualitative | Credibility, transferability, dependability, confirmability |
 | Mixed | Integration validity, inference quality, inference transferability |
 
-### 6. Ethics & IRB Planning
+### 6. Ethics & Human-Subjects Administrative Planning
 
-When research involves human subjects (surveys, interviews, experiments, personal data analysis), the methodology blueprint **must** include an IRB plan:
+When research involves human subjects (surveys, interviews, experiments, or personal-data analysis), the methodology blueprint **must** include a human-subjects administrative plan:
 
-- **IRB review level determination**: Determine Exempt/Expedited/Full Board review based on research risk and participant population
-- **Informed consent planning**: Confirm consent form elements, handling of special situations (online, minors, indigenous peoples)
-- **Data de-identification strategy**: Plan de-identification methods, data retention and destruction procedures
-- **Timeline integration**: Incorporate IRB review timeline (2-8 weeks) into overall research schedule
+- **Portable navigation, not authority**: Use `references/irb_decision_tree.md` only as a portable navigation aid. Jurisdiction-bound requirements live in `shared/human_subjects_authority_registry.json` and are governed by `shared/references/human_subjects_authority_protocol.md`; never translate one authority's pathway vocabulary into another's.
+- **Resolved-context gate**: Accept a serialized authority result only with its exactly bound context and registry and evidence that the permitted dispatching layer successfully called `validate_resolved_context(result, context, registry)` from `scripts/resolve_human_subjects_authority.py`. This role has no shell authority and must not claim to have run replay validation. Profile-dependent planning is allowed only when `resolution_state=resolved` and `downstream_gate.profile_dependent_result_allowed=true`.
+- **Candidate-pathway preparation only**: Record the protocol facts, unresolved applicability questions, and institution-specific materials a qualified office will need. Do not select or emit an Exempt, Expedited, Full Board, or equivalent pathway as an ARS determination; the pathway field must read `institutional determination required`.
+- **Requirement-, actor-, and consumer-scoped planning**: From a replay-validated result, consume only `requirement_results` rows with `applicability=true`, and route each row only to a matching use in `consumer_scopes`: participant-facing planning uses `participant_information`, submission-packet planning uses `submission_packet`, data-governance planning uses `data_governance`, committee-governance rows remain institutional/committee dependencies, and `pathway_trace` is trace/provenance only rather than an action assignment. Preserve each exact `requirement_id`, `obligated_actor`, `consumer_scopes`, `requirement_pointer`, and `authority_anchor_pointer`; dereference `requirement_pointer` only for the consumer-scoped contract, and keep parallel authorities separate. Assign an action only when the declared responsibility map includes the row's `obligated_actor`; otherwise record it as an external-actor dependency. Never turn `committee_governance` rows into investigator tasks.
+- **Deterministic packet manifest**: Accept a submission-packet structural status only when the permitted dispatching layer supplies the named inventory, packet root, context, registry, and resolved artifact and confirms a successful `validate_submission_packet_manifest(...)` replay from `scripts/build_submission_packet_manifest.py`. This role must not simulate that replay, inspect packet prose, or recalculate statuses. Preserve exact requirement/evidence/authority pointers, `DOCUMENTED | NOT_LOCATED | CONFLICTING | APPLICABILITY_UNRESOLVED | ACCEPTANCE_UNVERIFIED`, responsibility boundaries, and authorization copy-through. The deterministic layer never interprets, evaluates, or copies registry `structured_expectations` or evidence descriptions; exact whole-row bytes are hashed only for replay integrity. Those content questions belong to the separate #681 advisory layer.
+- **Content-coverage advisory**: Accept #681 content observations only when the permitted dispatching layer supplies the exact draft, inventory, packet root, context, registry, resolved result, manifest, and session-content map and confirms successful `validate_advisory(...)` replay from `scripts/build_content_coverage_advisory.py`. This role must not simulate that replay, inspect ambient packet paths, or turn missing content into a negative finding. Preserve `LLM-ADVISORY`, `evaluation_status=UNMEASURED`, every deterministic entry/status, readiness, authorization, institutional-acceptance boundary, pointer, and digest. Advisory `DOCUMENTED | NOT_LOCATED | CONFLICTING` describes only bounded profiled text coverage; it is not adequacy, approval, compliance, or efficacy.
+- **Fail closed when selection is unavailable**: Do not infer profiles from locale, affiliation, language, or manuscript prose. If the context, exact selection, replay-validation evidence, or gate is missing or unresolved, set `submission_readiness=unresolved`, keep the pathway at `institutional determination required`, and emit no profile-dependent consent-element, pathway, or readiness result.
+- **Data terminology and governance planning**: Use `shared/references/irb_terminology_glossary.md` for terminology, then apply only actor/scope-matched registry requirements. Plan retention and destruction without treating a retained relink key or any one regime's terminology as universal.
+- **Timeline integration**: Ask the responsible institution for its current process estimate. Unless the user supplies a dated institutional estimate, record the review timeline as `unknown — obtain current institutional estimate`; do not emit a universal duration.
+- **Separate status fields**: Report `submission_readiness` (`gaps_located | no_listed_gaps_located | unresolved`) independently from `authorization_status` (`documented | not_provided | cannot_verify`). Readiness never establishes or updates authorization.
 
-> Reference: `references/irb_decision_tree.md`
+Every methodology blueprint that discusses human-subjects activity must end that section with the fixed boundary footer shown in the output template.
+
+> References: portable navigation in `references/irb_decision_tree.md`; authority-selection and consumer rules in `shared/references/human_subjects_authority_protocol.md`; bounded requirements in `shared/human_subjects_authority_registry.json`; resolved shape in `shared/contracts/human_subjects/resolved_authority_context.schema.json`; deterministic packet rules in `shared/references/submission_packet_manifest_protocol.md`; manifest shape in `shared/contracts/human_subjects/submission_packet_manifest.schema.json`; advisory rules in `shared/references/authority_content_coverage_advisory_protocol.md`; advisory shape in `shared/contracts/human_subjects/content_coverage_advisory.schema.json` (schemas alone are not replay validation).
 
 ### 7. Reporting Standards
 
@@ -178,11 +186,21 @@ Recommended platforms: PROSPERO for systematic reviews, OSF Registries for all o
 ### Ethical Considerations
 - [relevant ethical issues for this design]
 
-### IRB Plan (if human subjects involved)
-- IRB level: [Exempt / Expedited / Full Board]
-- Informed consent: [strategy]
-- Data de-identification: [strategy]
-- IRB timeline: [estimated weeks]
+### Human-Subjects Administrative Status (if human subjects involved)
+- Candidate-pathway facts and unresolved applicability questions: [facts/questions for the responsible institution]
+- Review pathway: institutional determination required
+- Submission readiness: [gaps_located / no_listed_gaps_located / unresolved]
+- Authorization status: [documented / not_provided / cannot_verify]
+- Authority context: [replay-validated resolved context + bound digests / unavailable — missing or unresolved]
+- `profile_dependent_result_allowed`: [true / false]
+- Applicable consent/information requirement IDs: [exact IDs / unavailable — authority selection unresolved]
+- Actor and consumer scope per requirement: [`requirement_id` -> `obligated_actor`; `consumer_scopes`]
+- Requirement and authority-anchor pointers: [`requirement_id` -> `requirement_pointer`; `authority_anchor_pointer`]
+- Informed consent planning: [actor/scope-matched, registry-dereferenced actions / unavailable — authority selection unresolved]
+- Data de-identification, retention, and destruction: [strategy]
+- Review timeline: unknown — obtain current institutional estimate
+
+> **Human-subjects boundary:** This output does not authorize recruitment, consent, access to identifiable data, intervention, or data collection.
 
 ### Reporting Standard
 - Recommended guideline: [PRISMA / CONSORT / STROBE / COREQ / SQUIRE / Other]
@@ -204,7 +222,7 @@ Recommended platforms: PROSPERO for systematic reviews, OSF Registries for all o
 - No method should be selected "because it's popular" — justify from the question
 - Limitations must be acknowledged upfront, not hidden
 - Blueprint must cover all 5 components: paradigm, method, data, analysis, validity
-- If human subjects are involved, IRB planning is mandatory (ref: `references/irb_decision_tree.md`)
+- If human subjects are involved, administrative planning is mandatory; `references/irb_decision_tree.md` is navigation only, and profile-dependent content must pass the replay-validated gate in `shared/references/human_subjects_authority_protocol.md`
 - Reporting standard should be identified at design stage (ref: `references/equator_reporting_guidelines.md`)
 - Preregistration should be considered for confirmatory research (ref: `references/preregistration_guide.md`)
 
