@@ -125,6 +125,9 @@ def ensure_dirs() -> None:
 
 def parse_repo_url(url: str) -> tuple[str, str]:
     parsed = urlparse(url)
+    hostname = (parsed.hostname or "").lower()
+    if hostname not in {"github.com", "www.github.com", "gist.github.com"}:
+        raise ValueError(f"Unsupported GitHub URL: {url}")
     parts = [part for part in parsed.path.split("/") if part]
     if len(parts) < 2:
         raise ValueError(f"Unsupported GitHub URL: {url}")
@@ -136,7 +139,10 @@ def parse_repo_url(url: str) -> tuple[str, str]:
 
 
 def canonical_repo_url(url: str) -> str:
+    parsed = urlparse(url)
     owner, repo = parse_repo_url(url)
+    if (parsed.hostname or "").lower() == "gist.github.com":
+        return f"https://gist.github.com/{owner}/{repo}"
     return f"https://github.com/{owner}/{repo}"
 
 
@@ -498,7 +504,7 @@ def render_readme(repo_reports: list[dict[str, Any]], skill_records: list[dict[s
     lines = [
         "# AI Skills Archive",
         "",
-        "A self-contained archive of popular AI skill repositories from GitHub.",
+        "A self-contained archive of popular AI skill repositories and gists from GitHub.",
         "",
         "This repository stores reduced snapshots that keep every discovered `SKILL.md` plus recursively linked local resources, records the upstream source metadata, and flags duplicate skills so the archive can grow without losing provenance.",
         "",
@@ -521,7 +527,7 @@ def render_readme(repo_reports: list[dict[str, Any]], skill_records: list[dict[s
         "- `scripts/sync_sources.py`: refresh/import script for all registered sources.",
         "- `AGENT_LOG.md`: append-only operational log.",
         "",
-        "## Source Repositories",
+        "## Source Repositories and Gists",
         "",
     ]
 
@@ -571,10 +577,11 @@ def render_readme(repo_reports: list[dict[str, Any]], skill_records: list[dict[s
             "",
             "## Add A Source",
             "",
-            "When you provide a new GitHub repository URL, add it with:",
+            "When you provide a new GitHub repository or gist URL, add it with:",
             "",
             "```bash",
             "python3 scripts/sync_sources.py add https://github.com/owner/repo",
+            "python3 scripts/sync_sources.py add https://gist.github.com/owner/gist-id",
             "```",
             "",
             "That command updates `catalog/sources.json`, refreshes every registered source, rebuilds the indexes, and appends a new entry to `AGENT_LOG.md`.",

@@ -1,6 +1,6 @@
 # AI Skills Archive
 
-A self-contained archive of popular AI skill repositories from GitHub.
+A self-contained archive of popular AI skill repositories and gists from GitHub.
 
 This repository stores reduced snapshots that keep every discovered `SKILL.md` plus recursively linked local resources, records the upstream source metadata, and flags duplicate skills so the archive can grow without losing provenance.
 
@@ -23,10 +23,10 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `scripts/sync_sources.py`: refresh/import script for all registered sources.
 - `AGENT_LOG.md`: append-only operational log.
 
-## Source Repositories
+## Source Repositories and Gists
 
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
-  - Archived commit: `7676817c12a1317454ae3898a0c5c1eacf5dd3d5`
+  - Archived commit: `df1edb2e05487d0aa6d93c747141e0aed1187f25`
   - Snapshot: [`archives/addyosmani__agent-skills/snapshot`](archives/addyosmani__agent-skills/snapshot)
   - Skills discovered: 24
   - Files retained in reduced snapshot: 34
@@ -36,37 +36,37 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
-  - Archived commit: `73ea4028dc85dec590df35705e2ab7c90ddda4de`
+  - Archived commit: `bb13f7818ca85fa6397dd47c2f2f994c3f03d78a`
   - Snapshot: [`archives/Imbad0202__academic-research-skills/snapshot`](archives/Imbad0202__academic-research-skills/snapshot)
   - Skills discovered: 4
-  - Files retained in reduced snapshot: 161
+  - Files retained in reduced snapshot: 168
 - [mattpocock/skills](https://github.com/mattpocock/skills)
-  - Archived commit: `84fdeffd12f2ee307994d1eb6feb48173b6e0502`
+  - Archived commit: `8b78b531ab965735c5dc74f6f7a219e1e37326df`
   - Snapshot: [`archives/mattpocock__skills/snapshot`](archives/mattpocock__skills/snapshot)
   - Skills discovered: 35
   - Files retained in reduced snapshot: 60
 - [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman)
-  - Archived commit: `11ddc0c9813c8f75365cd5be2f753df08712f154`
+  - Archived commit: `27d5a3981a347890211bb1bf2439e5c821a63bc9`
   - Snapshot: [`archives/juliusbrussee__caveman/snapshot`](archives/juliusbrussee__caveman/snapshot)
-  - Skills discovered: 11
-  - Files retained in reduced snapshot: 13
+  - Skills discovered: 24
+  - Files retained in reduced snapshot: 40
 - [obra/Superpowers](https://github.com/obra/Superpowers)
-  - Archived commit: `44c9b2d6e889982ac18c27d05a19fefe335194e1`
+  - Archived commit: `b36e0829c6d0140e93cfef2ca599b1b07d4a7797`
   - Snapshot: [`archives/obra__Superpowers/snapshot`](archives/obra__Superpowers/snapshot)
   - Skills discovered: 14
-  - Files retained in reduced snapshot: 36
+  - Files retained in reduced snapshot: 37
 - [cursor/plugins](https://github.com/cursor/plugins)
-  - Archived commit: `9490cc1cf95d5de2e4941196cdac00dd861812a4`
+  - Archived commit: `2a8044425c7bddf429c3bdedf3ab61e791d34d65`
   - Snapshot: [`archives/cursor__plugins/snapshot`](archives/cursor__plugins/snapshot)
   - Skills discovered: 82
   - Files retained in reduced snapshot: 181
 - [affaan-m/ECC](https://github.com/affaan-m/ECC)
-  - Archived commit: `2d46e80e0925c7be0907f18c1812311ac212a6c5`
+  - Archived commit: `c9de8f5b2b3a225bca9befa2b7700aa5e3a4d1b8`
   - Snapshot: [`archives/affaan-m__ECC/snapshot`](archives/affaan-m__ECC/snapshot)
-  - Skills discovered: 897
-  - Files retained in reduced snapshot: 1032
+  - Skills discovered: 896
+  - Files retained in reduced snapshot: 1031
 - [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
-  - Archived commit: `1004324ad35a3ba656e6df0faabd54749e398455`
+  - Archived commit: `c7460f6114449ddfe6ea3fc2f23c3d910c0e740c`
   - Snapshot: [`archives/mvanhorn__last30days-skill/snapshot`](archives/mvanhorn__last30days-skill/snapshot)
   - Skills discovered: 1
   - Files retained in reduced snapshot: 9
@@ -81,10 +81,15 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 2
 - [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)
-  - Archived commit: `2d19ad205eb1d85fc9c3968bdeba4c2116518685`
+  - Archived commit: `2ed064090711586e0c97a2fbbf15465fe8f1808b`
   - Snapshot: [`archives/ayghri__i-have-adhd/snapshot`](archives/ayghri__i-have-adhd/snapshot)
   - Skills discovered: 2
   - Files retained in reduced snapshot: 2
+- [ChewingGlass/9a380da5d5a69a540b56d6449556ac5b](https://gist.github.com/ChewingGlass/9a380da5d5a69a540b56d6449556ac5b)
+  - Archived commit: `2aa270ad296b1d36350f25c175586581a45c88c8`
+  - Snapshot: [`archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot`](archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot)
+  - Skills discovered: 1
+  - Files retained in reduced snapshot: 1
 
 ## Generated Reports
 
@@ -176,9 +181,22 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `caveman`: [`skills/caveman/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman/SKILL.md)
 - `caveman-commit`: [`skills/caveman-commit/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-commit/SKILL.md)
 - `caveman-compress`: [`skills/caveman-compress/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-compress/SKILL.md)
+- `caveman-discover`: [`skills/caveman-discover/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-discover/SKILL.md)
+- `caveman-evidence-review`: [`skills/caveman-evidence-review/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-evidence-review/SKILL.md)
+- `caveman-explore`: [`skills/caveman-explore/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-explore/SKILL.md)
 - `caveman-help`: [`skills/caveman-help/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-help/SKILL.md)
+- `caveman-learn`: [`skills/caveman-learn/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-learn/SKILL.md)
+- `caveman-manage`: [`skills/caveman-manage/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-manage/SKILL.md)
+- `caveman-optimize`: [`skills/caveman-optimize/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-optimize/SKILL.md)
 - `caveman-review`: [`skills/caveman-review/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-review/SKILL.md)
+- `caveman-setup`: [`skills/caveman-setup/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-setup/SKILL.md)
 - `caveman-stats`: [`skills/caveman-stats/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-stats/SKILL.md)
+- `investigate-first`: [`skills/investigate-first/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/investigate-first/SKILL.md)
+- `lean-build`: [`skills/lean-build/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/lean-build/SKILL.md)
+- `migration`: [`skills/migration/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/migration/SKILL.md)
+- `safe-refactor`: [`skills/safe-refactor/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/safe-refactor/SKILL.md)
+- `surgical-patch`: [`skills/surgical-patch/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/surgical-patch/SKILL.md)
+- `verify-and-stop`: [`skills/verify-and-stop/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/verify-and-stop/SKILL.md)
 
 ### obra/Superpowers
 - `brainstorming`: [`skills/brainstorming/SKILL.md`](archives/obra__Superpowers/snapshot/skills/brainstorming/SKILL.md)
@@ -320,7 +338,6 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `verification-loop`: [`.agents/skills/verification-loop/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/verification-loop/SKILL.md)
 - `video-editing`: [`.agents/skills/video-editing/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/video-editing/SKILL.md)
 - `x-api`: [`.agents/skills/x-api/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/x-api/SKILL.md)
-- `everything-claude-code-conventions`: [`.claude/skills/everything-claude-code/SKILL.md`](archives/affaan-m__ECC/snapshot/.claude/skills/everything-claude-code/SKILL.md)
 - `article-writing`: [`.cursor/skills/article-writing/SKILL.md`](archives/affaan-m__ECC/snapshot/.cursor/skills/article-writing/SKILL.md)
 - `bun-runtime`: [`.cursor/skills/bun-runtime/SKILL.md`](archives/affaan-m__ECC/snapshot/.cursor/skills/bun-runtime/SKILL.md)
 - `content-engine`: [`.cursor/skills/content-engine/SKILL.md`](archives/affaan-m__ECC/snapshot/.cursor/skills/content-engine/SKILL.md)
@@ -952,6 +969,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `cost-aware-llm-pipeline`: [`skills/cost-aware-llm-pipeline/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/cost-aware-llm-pipeline/SKILL.md)
 - `cost-tracking`: [`skills/cost-tracking/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/cost-tracking/SKILL.md)
 - `council`: [`skills/council/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/council/SKILL.md)
+- `council-multi-model`: [`skills/council-multi-model/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/council-multi-model/SKILL.md)
 - `cpp-coding-standards`: [`skills/cpp-coding-standards/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/cpp-coding-standards/SKILL.md)
 - `cpp-testing`: [`skills/cpp-testing/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/cpp-testing/SKILL.md)
 - `crosspost`: [`skills/crosspost/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/crosspost/SKILL.md)
@@ -968,6 +986,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `delivery-gate`: [`skills/delivery-gate/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/delivery-gate/SKILL.md)
 - `deployment-patterns`: [`skills/deployment-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/deployment-patterns/SKILL.md)
 - `design-system`: [`skills/design-system/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/design-system/SKILL.md)
+- `dev-team`: [`skills/dev-team/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/dev-team/SKILL.md)
 - `django-celery`: [`skills/django-celery/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/django-celery/SKILL.md)
 - `django-patterns`: [`skills/django-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/django-patterns/SKILL.md)
 - `django-security`: [`skills/django-security/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/django-security/SKILL.md)
@@ -1029,12 +1048,9 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `investor-outreach`: [`skills/investor-outreach/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/investor-outreach/SKILL.md)
 - `ios-icon-gen`: [`skills/ios-icon-gen/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ios-icon-gen/SKILL.md)
 - `iterative-retrieval`: [`skills/iterative-retrieval/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/iterative-retrieval/SKILL.md)
-- `ito-basket-compare`: [`skills/ito-basket-compare/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ito-basket-compare/SKILL.md)
+- `ito-baskets`: [`skills/ito-baskets/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ito-baskets/SKILL.md)
 - `ito-compute`: [`skills/ito-compute/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ito-compute/SKILL.md)
-- `ito-data-atlas-agent`: [`skills/ito-data-atlas-agent/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ito-data-atlas-agent/SKILL.md)
 - `ito-inference`: [`skills/ito-inference/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ito-inference/SKILL.md)
-- `ito-market-intelligence`: [`skills/ito-market-intelligence/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ito-market-intelligence/SKILL.md)
-- `ito-trade-planner`: [`skills/ito-trade-planner/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ito-trade-planner/SKILL.md)
 - `ito-training`: [`skills/ito-training/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ito-training/SKILL.md)
 - `java-coding-standards`: [`skills/java-coding-standards/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/java-coding-standards/SKILL.md)
 - `jira-integration`: [`skills/jira-integration/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/jira-integration/SKILL.md)
@@ -1054,6 +1070,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `latency-critical-systems`: [`skills/latency-critical-systems/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/latency-critical-systems/SKILL.md)
 - `lead-intelligence`: [`skills/lead-intelligence/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/lead-intelligence/SKILL.md)
 - `liquid-glass-design`: [`skills/liquid-glass-design/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/liquid-glass-design/SKILL.md)
+- `living-docs-governance`: [`skills/living-docs-governance/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/living-docs-governance/SKILL.md)
 - `llm-trading-agent-security`: [`skills/llm-trading-agent-security/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/llm-trading-agent-security/SKILL.md)
 - `logistics-exception-management`: [`skills/logistics-exception-management/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/logistics-exception-management/SKILL.md)
 - `loop-design-check`: [`skills/loop-design-check/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/loop-design-check/SKILL.md)
@@ -1203,6 +1220,9 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `i-have-adhd`: [`.cursor/skills/i-have-adhd/SKILL.md`](archives/ayghri__i-have-adhd/snapshot/.cursor/skills/i-have-adhd/SKILL.md)
 - `i-have-adhd`: [`skills/i-have-adhd/SKILL.md`](archives/ayghri__i-have-adhd/snapshot/skills/i-have-adhd/SKILL.md)
 
+### ChewingGlass/9a380da5d5a69a540b56d6449556ac5b
+- `review-with-me`: [`SKILL.md`](archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot/SKILL.md)
+
 ## Duplicate Tracking
 
 - Exact duplicate groups: 9
@@ -1211,10 +1231,11 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 
 ## Add A Source
 
-When you provide a new GitHub repository URL, add it with:
+When you provide a new GitHub repository or gist URL, add it with:
 
 ```bash
 python3 scripts/sync_sources.py add https://github.com/owner/repo
+python3 scripts/sync_sources.py add https://gist.github.com/owner/gist-id
 ```
 
 That command updates `catalog/sources.json`, refreshes every registered source, rebuilds the indexes, and appends a new entry to `AGENT_LOG.md`.

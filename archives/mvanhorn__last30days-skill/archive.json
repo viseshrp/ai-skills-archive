@@ -5,9 +5,9 @@
   "url": "https://github.com/mvanhorn/last30days-skill",
   "notes": "Added with scripts/sync_sources.py add from https://github.com/mvanhorn/last30days-skill.",
   "default_branch": "main",
-  "commit": "1004324ad35a3ba656e6df0faabd54749e398455",
-  "commit_date": "2026-08-07T14:51:06-07:00",
-  "archived_at": "2026-08-09T19:02:18.498382+00:00",
+  "commit": "c7460f6114449ddfe6ea3fc2f23c3d910c0e740c",
+  "commit_date": "2026-08-14T17:23:53Z",
+  "archived_at": "2026-08-14T22:28:15.835724+00:00",
   "archive_path": "archives/mvanhorn__last30days-skill",
   "snapshot_path": "archives/mvanhorn__last30days-skill/snapshot",
   "file_count": 9,
@@ -18,14 +18,14 @@
     "skills/last30days/SKILL.md"
   ],
   "all_text_file_hashes": {
-    "skills/last30days/SKILL.md": "1884e255fad7ec9b99f0eb39badc53adada430e389c0bff376a224b1a73b3803",
+    "skills/last30days/SKILL.md": "547cd53fdc1125f1da5ec271e09399fad67f86a755d2ddd88da75ef44a7eb84f",
     "skills/last30days/references/save-html-brief.md": "d3d5610a785272ec927c2da5792f25f5109a2e1d9090c106351ed5eff7ceda9f",
-    "skills/last30days/scripts/last30days.py": "faa30f873df198c4e20359191c5143dff9b8713c70fac2bd91bc73d22be28593",
+    "skills/last30days/scripts/last30days.py": "e85014567be714d04485f4795e2d58dd399db28bc94a802c3b996c48a28be340",
     "skills/last30days/scripts/lib/hosted.py": "7d5682b6a07e466dad4495f5b10f681574361f5d252a2593132efd12c80f85d9",
     "skills/last30days/scripts/lib/categories.py": "849e8e57375962bbc705c05dcfcc538db839ac6454133e1aa7252bcd4cb090e0",
-    "skills/last30days/scripts/lib/pipeline.py": "766390710fa1a2069b256a7fc02ed74a9237112f93092cb109263f33907c0c56",
+    "skills/last30days/scripts/lib/pipeline.py": "82abefd3f201b90b43804d7f40b38cec2185ed4480abd24f4cd98ce93cf019e7",
     "skills/last30days/scripts/lib/reddit.py": "d17cdb3affa15227a879be3e54d6e09ae7cf6d1158f9ade1934fed14b43660c9",
     "skills/last30days/scripts/lib/youtube_yt.py": "85c7208d5aa48fd6b73c2d3b3f275d720639310141c2c786817fa252b5b57ea9",
-    "skills/last30days/scripts/lib/relevance.py": "1fad30389ee8bcbedf0bc2eefbf20fd56ad59c86ffc3281ddeac250474fc4f3e"
+    "skills/last30days/scripts/lib/relevance.py": "4a5305be75dcd8c912e101e26c5d650e541f0b2e2bcba6cfe84036aaa59b6057"
   }
 }

@@ -1,0 +1,23 @@
+{
+  "owner": "ChewingGlass",
+  "repo": "9a380da5d5a69a540b56d6449556ac5b",
+  "repo_key": "ChewingGlass__9a380da5d5a69a540b56d6449556ac5b",
+  "url": "https://gist.github.com/ChewingGlass/9a380da5d5a69a540b56d6449556ac5b",
+  "notes": "Added with scripts/sync_sources.py add from https://gist.github.com/ChewingGlass/9a380da5d5a69a540b56d6449556ac5b.",
+  "default_branch": "master",
+  "commit": "2aa270ad296b1d36350f25c175586581a45c88c8",
+  "commit_date": "2026-08-14T19:45:28Z",
+  "archived_at": "2026-08-14T22:28:17.973895+00:00",
+  "archive_path": "archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b",
+  "snapshot_path": "archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot",
+  "file_count": 1,
+  "directory_count": 0,
+  "skill_count": 1,
+  "snapshot_mode": "skills-and-related-files-only",
+  "skill_paths": [
+    "SKILL.md"
+  ],
+  "all_text_file_hashes": {
+    "SKILL.md": "14559fec07db0af9e297bb98613781bd8412e92a55780a8a902e8f3b86147cb2"
+  }
+}

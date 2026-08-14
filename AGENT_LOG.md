@@ -371,3 +371,24 @@
 - Synced `DietrichGebert__ponytail` at commit `2ed6c52c9d7e` with 12 skills and 12 files.
 - Synced `petergyang__no-ai-slop` at commit `d30eddb9e045` with 1 skills and 2 files.
 - Synced `ayghri__i-have-adhd` at commit `2d19ad205eb1` with 2 skills and 2 files.
+
+## 2026-08-14 22:28:17Z
+
+- Action: Added source(s): https://gist.github.com/ChewingGlass/9a380da5d5a69a540b56d6449556ac5b
+- Sources synced: 13
+- Skills indexed: 1097
+- Exact duplicate groups: 9
+- Repeated skill names: 254
+- Synced `addyosmani__agent-skills` at commit `df1edb2e0548` with 24 skills and 34 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `bb13f7818ca8` with 4 skills and 168 files.
+- Synced `mattpocock__skills` at commit `8b78b531ab96` with 35 skills and 60 files.
+- Synced `juliusbrussee__caveman` at commit `27d5a3981a34` with 24 skills and 40 files.
+- Synced `obra__Superpowers` at commit `b36e0829c6d0` with 14 skills and 37 files.
+- Synced `cursor__plugins` at commit `2a8044425c7b` with 82 skills and 181 files.
+- Synced `affaan-m__ECC` at commit `c9de8f5b2b3a` with 896 skills and 1031 files.
+- Synced `mvanhorn__last30days-skill` at commit `c7460f611444` with 1 skills and 9 files.
+- Synced `DietrichGebert__ponytail` at commit `2ed6c52c9d7e` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `d30eddb9e045` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `2ed064090711` with 2 skills and 2 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `2aa270ad296b` with 1 skills and 1 files.

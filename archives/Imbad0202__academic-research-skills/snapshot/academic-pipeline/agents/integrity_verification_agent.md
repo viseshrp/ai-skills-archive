@@ -593,7 +593,7 @@ See `references/claim_verification_protocol.md` § E6 (authority). Runs ONLY whe
 - **Phase C4 (Experiment Provenance & Claim Alignment, #260) runs the D7 declaration-anchored anti-skip on every passport and produces `experiment_alignment_results[]` for EVERY experiment-backed claim (full, not sampled, at Stage 4.5).** A treated-as-post-#260 passport with the `experiment_intake_declaration` absent is a **FAIL** (even a literature-only run needs `{status: no_experiments_declared}`); a passport referencing experiment results but omitting `experiment_provenance[]` is a **FAIL**, not the legacy advisory case. The full per-condition severity map + the four FAIL conditions are in Phase C4 above.
 - Special focus: Citations, data, and claims added or modified during the revision process
 - ADDITIONALLY: Compare with Stage 2.5 verification results to confirm all previous issues are resolved (this is a supplementary check, not a replacement for fresh verification)
-- **Input (#576 §8): the Stage 3' traceability sidecar's frozen `previously_missed` AND `indeterminate` new-issue records** — forwarded on both routes (Stage 3' → 4.5 direct on Accept/Minor; through 4' with the roadmap on Major). Consume BOTH attributions as integrity-check input, not just cargo: on the no-original-manuscript path EVERY new issue is `indeterminate`, so consuming only `previously_missed` would ignore the whole set. Each record is assessed during the relevant phase (a previously-missed citation problem joins Phase A/B scope; a previously-missed data/claim problem joins Phase C/E scope) and its disposition appears in the report. A contract-mode Stage 3' that ran with no sidecar forwarded is a visible degradation to note (a `[LEGACY-NO-CONTRACT]` legacy run legitimately produces none — note it, never block on it)
+- **Input (#576 §8): the Stage 3' traceability sidecar's frozen `previously_missed` AND `indeterminate` new-issue records** — forwarded on both routes (Stage 3' → 4.5 direct on Accept/Minor; through 4' with the roadmap on Major). Consume both attributions as integrity-check input, not just cargo. Current #576 1.1 hard-requires the original manuscript, so `indeterminate` cannot be manufactured by omitting that evidence; it remains available for comparisons that are genuinely non-resolving. Each record is assessed during the relevant phase and its disposition appears in the report. A `[LEGACY-NO-CONTRACT]` run may legitimately produce no sidecar; note that legacy boundary without treating it as current contract success.
 - **Must PASS with zero issues to proceed to Stage 5 (FINALIZE)**
 
 ---
@@ -776,6 +776,22 @@ To ensure the verification process is reproducible:
 When the environment variable `ARS_CROSS_MODEL` is set, this agent enables cross-model verification as an additional layer. See `shared/cross_model_verification.md` for full protocol, setup guide, and API call patterns.
 
 **Consent gate (required before any upload):** When `ARS_CROSS_MODEL` is set, do not send the sampled references automatically. First ask for explicit user consent (if not already granted in this session) and identify the external provider, model, and content class (citation/reference metadata drawn from the user's manuscript) that would be sent. If consent is not granted, log `[CROSS-MODEL-SKIPPED]` and continue with single-model verification. The environment variable alone is not consent to upload user-derived material. See `shared/cross_model_verification.md` for the consent boundary.
+
+**Closed transport selector (#630):** For these one-reference integrity calls only,
+`ARS_CROSS_MODEL_TRANSPORT=codex` selects the contained ChatGPT-subscription
+adapter. Construct exactly one `ars-codex-citation-request/1.0` object from the
+already-selected reference (`request_id`, exact `reference_text`, exact
+`citation_context`), pipe it to `scripts/cross_model_codex_verify.sh`, and validate
+the input against
+`shared/contracts/cross_model/codex_citation_request.schema.json` and
+the returned one-line object against
+`shared/contracts/cross_model/codex_citation_receipt.schema.json` before consuming
+it. Never pass a file path, arbitrary prompt, Claude verdict, or unrelated paper
+content. A nonzero exit is `[CROSS-MODEL-ERROR]`; a valid `NOT_SEARCHED` receipt is
+recorded as ungrounded, not relabelled as a transport error. Unset or `api` retains
+the documented provider API route; any other selector is an explicit configuration
+error with no fallback. This adapter is not available to DA, reviewer, calibration,
+re-review, checkpoint-judgment, or handoff calls.
 
 **Summary of behavior when enabled (and consent granted):**
 - After Phase A completes, select references by **risk stratification** (#518; replaces the pre-#518 uniform random 30%). Four tiers; a reference qualifying for more than one gets the highest tier that applies (`HIGH-IMPACT` > `NEW-CHANGED` > `CONTROL`/`RANDOM`) and is verified once:

@@ -46,5 +46,9 @@
   {
     "url": "https://github.com/ayghri/i-have-adhd",
     "notes": "Added with scripts/sync_sources.py add from https://github.com/ayghri/i-have-adhd."
+  },
+  {
+    "url": "https://gist.github.com/ChewingGlass/9a380da5d5a69a540b56d6449556ac5b",
+    "notes": "Added with scripts/sync_sources.py add from https://gist.github.com/ChewingGlass/9a380da5d5a69a540b56d6449556ac5b."
   }
 ]

@@ -5,9 +5,9 @@
   "url": "https://github.com/ayghri/i-have-adhd",
   "notes": "Added with scripts/sync_sources.py add from https://github.com/ayghri/i-have-adhd.",
   "default_branch": "main",
-  "commit": "2d19ad205eb1d85fc9c3968bdeba4c2116518685",
-  "commit_date": "2026-08-06T14:19:11-04:00",
-  "archived_at": "2026-08-09T19:02:19.997080+00:00",
+  "commit": "2ed064090711586e0c97a2fbbf15465fe8f1808b",
+  "commit_date": "2026-08-10T08:20:24-04:00",
+  "archived_at": "2026-08-14T22:28:17.568522+00:00",
   "archive_path": "archives/ayghri__i-have-adhd",
   "snapshot_path": "archives/ayghri__i-have-adhd/snapshot",
   "file_count": 2,
@@ -19,7 +19,7 @@
     "skills/i-have-adhd/SKILL.md"
   ],
   "all_text_file_hashes": {
-    "skills/i-have-adhd/SKILL.md": "cae8c063977214b372c6897b7c93ac8faa573214a8635896f767e3bac092adf8",
-    ".cursor/skills/i-have-adhd/SKILL.md": "cae8c063977214b372c6897b7c93ac8faa573214a8635896f767e3bac092adf8"
+    "skills/i-have-adhd/SKILL.md": "938d0e350a0c2b0e2e6c3a9032542e062846d108e0f89dd27c798ba5b436397e",
+    ".cursor/skills/i-have-adhd/SKILL.md": "938d0e350a0c2b0e2e6c3a9032542e062846d108e0f89dd27c798ba5b436397e"
   }
 }
