@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T22:28:17.975104+00:00",
+  "generated_at": "2026-08-16T19:03:31.999387+00:00",
   "exact_skill_duplicates": [
     {
       "sha256": "060f50513003731e9c0e7f78e6a6a9b8cb178a74a2ec2a6ca75cdae804f0d564",
@@ -1677,7 +1677,7 @@
         {
           "source_repo": "Imbad0202/academic-research-skills",
           "path": "deep-research/SKILL.md",
-          "sha256": "7eb54fb28c027a9b8c8763c7ede417cb6308f2bff6f8b3aa07a9626adebfed8d"
+          "sha256": "08c348a60248504c7ba141a6c6e5f82b7d5cf20534c45b0db96d1f1cd5a6e96b"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -5578,7 +5578,7 @@
         {
           "source_repo": "mattpocock/skills",
           "path": "skills/engineering/tdd/SKILL.md",
-          "sha256": "5e6b9c16b547113e90afbb946489d1c1384be5c2128f0159bd0bee57251ecf08"
+          "sha256": "6875cbca6b7d17be635dc9b457cc6363125f85cef26f443991b77c7d9eb430d2"
         },
         {
           "source_repo": "cursor/plugins",

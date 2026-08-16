@@ -36,17 +36,17 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
-  - Archived commit: `bb13f7818ca85fa6397dd47c2f2f994c3f03d78a`
+  - Archived commit: `6837b4dfeaabd5a6da886e199b44ae7b52e8b931`
   - Snapshot: [`archives/Imbad0202__academic-research-skills/snapshot`](archives/Imbad0202__academic-research-skills/snapshot)
   - Skills discovered: 4
-  - Files retained in reduced snapshot: 168
+  - Files retained in reduced snapshot: 171
 - [mattpocock/skills](https://github.com/mattpocock/skills)
-  - Archived commit: `8b78b531ab965735c5dc74f6f7a219e1e37326df`
+  - Archived commit: `068b6e0c62393147daf03530149cdce209c93da8`
   - Snapshot: [`archives/mattpocock__skills/snapshot`](archives/mattpocock__skills/snapshot)
   - Skills discovered: 35
   - Files retained in reduced snapshot: 60
 - [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman)
-  - Archived commit: `27d5a3981a347890211bb1bf2439e5c821a63bc9`
+  - Archived commit: `12aa8cc0e980b6d3310a5be4f477c434da51f4b0`
   - Snapshot: [`archives/juliusbrussee__caveman/snapshot`](archives/juliusbrussee__caveman/snapshot)
   - Skills discovered: 24
   - Files retained in reduced snapshot: 40
@@ -61,10 +61,10 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 82
   - Files retained in reduced snapshot: 181
 - [affaan-m/ECC](https://github.com/affaan-m/ECC)
-  - Archived commit: `c9de8f5b2b3a225bca9befa2b7700aa5e3a4d1b8`
+  - Archived commit: `50743cec75852e32d6517c9894a3339a2462a713`
   - Snapshot: [`archives/affaan-m__ECC/snapshot`](archives/affaan-m__ECC/snapshot)
-  - Skills discovered: 896
-  - Files retained in reduced snapshot: 1031
+  - Skills discovered: 897
+  - Files retained in reduced snapshot: 1032
 - [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
   - Archived commit: `c7460f6114449ddfe6ea3fc2f23c3d910c0e740c`
   - Snapshot: [`archives/mvanhorn__last30days-skill/snapshot`](archives/mvanhorn__last30days-skill/snapshot)
@@ -1089,6 +1089,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `motion-ui`: [`skills/motion-ui/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/motion-ui/SKILL.md)
 - `mysql-patterns`: [`skills/mysql-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/mysql-patterns/SKILL.md)
 - `nanoclaw-repl`: [`skills/nanoclaw-repl/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/nanoclaw-repl/SKILL.md)
+- `nasiko-control-plane`: [`skills/nasiko-control-plane/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/nasiko-control-plane/SKILL.md)
 - `nestjs-patterns`: [`skills/nestjs-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/nestjs-patterns/SKILL.md)
 - `netmiko-ssh-automation`: [`skills/netmiko-ssh-automation/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/netmiko-ssh-automation/SKILL.md)
 - `network-bgp-diagnostics`: [`skills/network-bgp-diagnostics/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/network-bgp-diagnostics/SKILL.md)
