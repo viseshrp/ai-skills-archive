@@ -85,6 +85,11 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Snapshot: [`archives/ayghri__i-have-adhd/snapshot`](archives/ayghri__i-have-adhd/snapshot)
   - Skills discovered: 2
   - Files retained in reduced snapshot: 2
+- [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill)
+  - Archived commit: `c607b117f37df9ce35e335b543972ca8353f327f`
+  - Snapshot: [`archives/Leonxlnx__taste-skill/snapshot`](archives/Leonxlnx__taste-skill/snapshot)
+  - Skills discovered: 13
+  - Files retained in reduced snapshot: 14
 
 ## Generated Reports
 
@@ -1202,6 +1207,21 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 ### ayghri/i-have-adhd
 - `i-have-adhd`: [`.cursor/skills/i-have-adhd/SKILL.md`](archives/ayghri__i-have-adhd/snapshot/.cursor/skills/i-have-adhd/SKILL.md)
 - `i-have-adhd`: [`skills/i-have-adhd/SKILL.md`](archives/ayghri__i-have-adhd/snapshot/skills/i-have-adhd/SKILL.md)
+
+### Leonxlnx/taste-skill
+- `brandkit`: [`skills/brandkit/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/brandkit/SKILL.md)
+- `industrial-brutalist-ui`: [`skills/brutalist-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/brutalist-skill/SKILL.md)
+- `gpt-taste`: [`skills/gpt-tasteskill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/gpt-tasteskill/SKILL.md)
+- `image-to-code`: [`skills/image-to-code-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/image-to-code-skill/SKILL.md)
+- `imagegen-frontend-mobile`: [`skills/imagegen-frontend-mobile/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/imagegen-frontend-mobile/SKILL.md)
+- `imagegen-frontend-web`: [`skills/imagegen-frontend-web/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/imagegen-frontend-web/SKILL.md)
+- `minimalist-ui`: [`skills/minimalist-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/minimalist-skill/SKILL.md)
+- `full-output-enforcement`: [`skills/output-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/output-skill/SKILL.md)
+- `redesign-existing-projects`: [`skills/redesign-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/redesign-skill/SKILL.md)
+- `high-end-visual-design`: [`skills/soft-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/soft-skill/SKILL.md)
+- `stitch-design-taste`: [`skills/stitch-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/stitch-skill/SKILL.md)
+- `design-taste-frontend`: [`skills/taste-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/taste-skill/SKILL.md)
+- `design-taste-frontend-v1`: [`skills/taste-skill-v1/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/taste-skill-v1/SKILL.md)
 
 ## Duplicate Tracking
 

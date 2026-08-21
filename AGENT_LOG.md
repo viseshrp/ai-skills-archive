@@ -371,3 +371,12 @@
 - Synced `DietrichGebert__ponytail` at commit `2ed6c52c9d7e` with 12 skills and 12 files.
 - Synced `petergyang__no-ai-slop` at commit `d30eddb9e045` with 1 skills and 2 files.
 - Synced `ayghri__i-have-adhd` at commit `2d19ad205eb1` with 2 skills and 2 files.
+
+## 2026-08-21 13:15:12Z
+
+- Action: Added source https://github.com/Leonxlnx/taste-skill with a focused ingestion.
+- Sources synced: 1
+- Skills indexed: 13
+- Exact duplicate groups: 9
+- Repeated skill names: 254
+- Synced `Leonxlnx__taste-skill` at commit `c607b117f37d` with 13 skills and 14 files.

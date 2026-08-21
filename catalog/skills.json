@@ -11582,5 +11582,137 @@
     "relative_directory": "skills/i-have-adhd",
     "sha256": "cae8c063977214b372c6897b7c93ac8faa573214a8635896f767e3bac092adf8",
     "linked_local_files": []
+  },
+  {
+    "source_repo": "Leonxlnx/taste-skill",
+    "repo_key": "Leonxlnx__taste-skill",
+    "skill_name": "brandkit",
+    "description": "Premium brand-kit image generation skill for creating high-end brand-guidelines boards, logo systems, identity decks, and visual-world presentations. Trained for minimalist, cinematic, editorial, dark-tech, luxury, cultural, security, gaming, developer-tool, and consumer-app brand systems. Optimized for intentional logo concepting, refined composition, sparse typography, strong symbolic meaning, premium mockups, art-directed imagery, and flexible grid layouts.",
+    "path": "skills/brandkit/SKILL.md",
+    "relative_directory": "skills/brandkit",
+    "sha256": "b0c4837e1bd140ca816ae54948754ddd2ac1e2a4d3619363777a80caf00b2ede",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "Leonxlnx/taste-skill",
+    "repo_key": "Leonxlnx__taste-skill",
+    "skill_name": "industrial-brutalist-ui",
+    "description": "Raw mechanical interfaces fusing Swiss typographic print with military terminal aesthetics. Rigid grids, extreme type scale contrast, utilitarian color, analog degradation effects. For data-heavy dashboards, portfolios, or editorial sites that need to feel like declassified blueprints.",
+    "path": "skills/brutalist-skill/SKILL.md",
+    "relative_directory": "skills/brutalist-skill",
+    "sha256": "fffbaac8597f07679e9d87145533567658aedba3b5eca6f16a7075a333048caa",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "Leonxlnx/taste-skill",
+    "repo_key": "Leonxlnx__taste-skill",
+    "skill_name": "gpt-taste",
+    "description": "Elite UX/UI & Advanced GSAP Motion Engineer. Enforces Python-driven true randomization for layout variance, strict AIDA page structure, wide editorial typography (bans 6-line wraps), gapless bento grids, strict GSAP ScrollTriggers (pinning, stacking, scrubbing), inline micro-images, and massive section spacing.",
+    "path": "skills/gpt-tasteskill/SKILL.md",
+    "relative_directory": "skills/gpt-tasteskill",
+    "sha256": "2e64c269953f2656c21bf5a0fa6b4568e82fe0c72b36e8f84758e090349966a5",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "Leonxlnx/taste-skill",
+    "repo_key": "Leonxlnx__taste-skill",
+    "skill_name": "image-to-code",
+    "description": "Elite website image-to-code skill for Codex. For visually important web tasks, it must first generate the design image(s) itself, deeply analyze them, then implement the website to match them as closely as possible. In Codex, it must prefer large, readable, section-specific images instead of tiny compressed boards, generate fresh standalone images for sections or detail views instead of cropping old ones, avoid lazy under-generation, avoid cards-inside-cards-inside-cards UI, and keep the hero clean, spacious, readable, and visible on a small laptop.",
+    "path": "skills/image-to-code-skill/SKILL.md",
+    "relative_directory": "skills/image-to-code-skill",
+    "sha256": "4c060a8064a8b13380bc2ef3d6e6a1d0b1e316aa093cd9807d0ce9e4eeb037fa",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "Leonxlnx/taste-skill",
+    "repo_key": "Leonxlnx__taste-skill",
+    "skill_name": "imagegen-frontend-mobile",
+    "description": "Elite mobile app image-generation skill for creating premium, app-native screen concepts and flows. Designed for iOS, Android, and cross-platform mobile products. Prioritizes clean hierarchy, comfortably readable text, strong multi-screen consistency, controlled color palettes, non-generic creative direction, textured surfaces, image-led composition, tasteful custom iconography, and clean phone mockup framing. By default, screens should be shown inside a subtle premium iPhone or similar phone mockup with a visible frame, while the main focus stays on the app content itself. This skill generates images only. It does not write code.",
+    "path": "skills/imagegen-frontend-mobile/SKILL.md",
+    "relative_directory": "skills/imagegen-frontend-mobile",
+    "sha256": "8a33389979f3074fa0926678e266ad2eb9234624472254469fc1ad916b9caa24",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "Leonxlnx/taste-skill",
+    "repo_key": "Leonxlnx__taste-skill",
+    "skill_name": "imagegen-frontend-web",
+    "description": "Elite frontend image-direction skill for generating premium, conversion-aware website design references. CRITICAL OUTPUT RULE \u2014 generate ONE separate horizontal image FOR EVERY section. A landing page with 8 sections produces 8 images. Never compress multiple sections into one image. Enforces composition variety (not always left-text / right-image), background-image freedom, varied CTAs, varied hero scales (giant / mid / mini minimalist), narrative concept spine, second-read moments, and a single consistent palette across all images. Optimized for landing pages, marketing sites, and product comps that developers or coding models can accurately recreate.",
+    "path": "skills/imagegen-frontend-web/SKILL.md",
+    "relative_directory": "skills/imagegen-frontend-web",
+    "sha256": "6b5c2256522fdba1e3313eafa3d743b960a7b13ec029d3e6586e04b23327c1f8",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "Leonxlnx/taste-skill",
+    "repo_key": "Leonxlnx__taste-skill",
+    "skill_name": "minimalist-ui",
+    "description": "Clean editorial-style interfaces. Warm monochrome palette, typographic contrast, flat bento grids, muted pastels. No gradients, no heavy shadows.",
+    "path": "skills/minimalist-skill/SKILL.md",
+    "relative_directory": "skills/minimalist-skill",
+    "sha256": "36bc7328f085405f43b476938e62460fa573bf7e984e949e072bcf014831a44c",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "Leonxlnx/taste-skill",
+    "repo_key": "Leonxlnx__taste-skill",
+    "skill_name": "full-output-enforcement",
+    "description": "Overrides default LLM truncation behavior. Enforces complete code generation, bans placeholder patterns, and handles token-limit splits cleanly. Apply to any task requiring exhaustive, unabridged output.",
+    "path": "skills/output-skill/SKILL.md",
+    "relative_directory": "skills/output-skill",
+    "sha256": "e5bf48b1ae561511439cf71672209a10a88cee0968cc925909ff861dfa0a96a7",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "Leonxlnx/taste-skill",
+    "repo_key": "Leonxlnx__taste-skill",
+    "skill_name": "redesign-existing-projects",
+    "description": "Upgrades existing websites and apps to premium quality. Audits current design, identifies generic AI patterns, and applies high-end design standards without breaking functionality. Works with any CSS framework or vanilla CSS.",
+    "path": "skills/redesign-skill/SKILL.md",
+    "relative_directory": "skills/redesign-skill",
+    "sha256": "98ad3e5b051bfb71b2795f7e8a6aa0d32b51ee095606c098a4b2822ac07926c9",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "Leonxlnx/taste-skill",
+    "repo_key": "Leonxlnx__taste-skill",
+    "skill_name": "high-end-visual-design",
+    "description": "Teaches the AI to design like a high-end agency. Defines the exact fonts, spacing, shadows, card structures, and animations that make a website feel expensive. Blocks all the common defaults that make AI designs look cheap or generic.",
+    "path": "skills/soft-skill/SKILL.md",
+    "relative_directory": "skills/soft-skill",
+    "sha256": "e1e32f5e2d420872c6c7332b53d5ff7721946766b78c4822b424c2d512c8fdbc",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "Leonxlnx/taste-skill",
+    "repo_key": "Leonxlnx__taste-skill",
+    "skill_name": "stitch-design-taste",
+    "description": "Semantic Design System Skill for Google Stitch. Generates agent-friendly DESIGN.md files that enforce premium, anti-generic UI standards \u2014 strict typography, calibrated color, asymmetric layouts, perpetual micro-motion, and hardware-accelerated performance.",
+    "path": "skills/stitch-skill/SKILL.md",
+    "relative_directory": "skills/stitch-skill",
+    "sha256": "46bdb08fee2dded38b6ba0a051230a502d6ac6e4044afd47592cb40c256028b5",
+    "linked_local_files": [
+      "skills/stitch-skill/DESIGN.md"
+    ]
+  },
+  {
+    "source_repo": "Leonxlnx/taste-skill",
+    "repo_key": "Leonxlnx__taste-skill",
+    "skill_name": "design-taste-frontend",
+    "description": "Anti-slop frontend skill for landing pages, portfolios, and redesigns. The agent reads the brief, infers the right design direction, and ships interfaces that do not look templated. Real design systems when applicable, audit-first on redesigns, strict pre-flight check.",
+    "path": "skills/taste-skill/SKILL.md",
+    "relative_directory": "skills/taste-skill",
+    "sha256": "aa194351b246b8b4799099d4ed7b033d29eab6e6e3d58d8d2172978be7b3ec89",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "Leonxlnx/taste-skill",
+    "repo_key": "Leonxlnx__taste-skill",
+    "skill_name": "design-taste-frontend-v1",
+    "description": "The original v1 taste-skill, preserved for projects depending on its exact behavior. The current default is `design-taste-frontend` (v2 experimental), which is a substantial rewrite. Use this v1 install name only if you need exact backward compatibility.",
+    "path": "skills/taste-skill-v1/SKILL.md",
+    "relative_directory": "skills/taste-skill-v1",
+    "sha256": "033d45af1ed23832730642f95f40ab49db7fb5222848489a6c5656144bfc6dae",
+    "linked_local_files": []
   }
 ]
