@@ -1,0 +1,104 @@
+name: Add taste-skill archive source
+
+on:
+  push:
+    branches:
+      - add-taste-skill
+    paths:
+      - .github/workflows/add-taste-skill.yml
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out archive branch
+        uses: actions/checkout@v4
+        with:
+          ref: add-taste-skill
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Ingest only Leonxlnx/taste-skill and rebuild indexes
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import scripts.sync_sources as s
+
+          requested_url = "https://github.com/Leonxlnx/taste-skill"
+          canonical_url = s.canonical_repo_url(requested_url)
+
+          s.ensure_dirs()
+          sources = s.load_sources()
+          source_by_url = {item["url"]: item for item in sources}
+          if canonical_url not in source_by_url:
+              source = {
+                  "url": canonical_url,
+                  "notes": f"Added with scripts/sync_sources.py add from {requested_url}.",
+              }
+              sources.append(source)
+              s.write_text_file(s.SOURCES_FILE, json.dumps(sources, indent=2) + "\n")
+          else:
+              source = source_by_url[canonical_url]
+
+          owner, repo = s.parse_repo_url(canonical_url)
+          key = s.repo_key(owner, repo)
+          clone_dir = s.TEMP_DIR / key
+          archive_root = s.ARCHIVES_DIR / key
+
+          s.clone_or_update(canonical_url, clone_dir)
+          report, new_skills = s.build_repo_report(source, clone_dir, archive_root)
+          s.write_archive_metadata(report)
+
+          repo_reports = json.loads(s.SOURCES_REPORT_FILE.read_text(encoding="utf-8"))
+          repo_reports = [item for item in repo_reports if item["repo_key"] != key]
+          repo_reports.append(report)
+
+          skill_records = json.loads(s.SKILLS_FILE.read_text(encoding="utf-8"))
+          skill_records = [item for item in skill_records if item["repo_key"] != key]
+          skill_records.extend(new_skills)
+
+          duplicate_report = s.build_duplicate_report(skill_records)
+
+          s.write_text_file(
+              s.SOURCES_REPORT_FILE,
+              json.dumps(repo_reports, indent=2) + "\n",
+          )
+          s.write_text_file(
+              s.SKILLS_FILE,
+              json.dumps(skill_records, indent=2) + "\n",
+          )
+          s.write_text_file(
+              s.DUPLICATES_FILE,
+              json.dumps(duplicate_report, indent=2) + "\n",
+          )
+          s.write_text_file(
+              s.README_FILE,
+              s.render_readme(repo_reports, skill_records, duplicate_report),
+          )
+          s.append_agent_log(
+              f"Added source {canonical_url} with a focused ingestion.",
+              [report],
+              duplicate_report,
+          )
+          PY
+
+      - name: Commit generated archive changes
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- README.md AGENT_LOG.md catalog archives/Leonxlnx__taste-skill
+          if git diff --cached --quiet; then
+            echo "No archive changes to commit."
+            exit 0
+          fi
+          git commit -m "Add Leonxlnx/taste-skill archive"
+          git push origin HEAD:add-taste-skill
