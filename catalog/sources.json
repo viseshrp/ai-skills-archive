@@ -46,5 +46,9 @@
   {
     "url": "https://github.com/ayghri/i-have-adhd",
     "notes": "Added with scripts/sync_sources.py add from https://github.com/ayghri/i-have-adhd."
+  },
+  {
+    "url": "https://github.com/Leonxlnx/taste-skill",
+    "notes": "Added with scripts/sync_sources.py add from https://github.com/Leonxlnx/taste-skill."
   }
 ]
