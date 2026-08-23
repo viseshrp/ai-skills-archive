@@ -414,6 +414,15 @@
 - Synced `ayghri__i-have-adhd` at commit `2ed064090711` with 2 skills and 2 files.
 - Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `2aa270ad296b` with 1 skills and 1 files.
 
+## 2026-08-21 13:15:12Z
+
+- Action: Added source https://github.com/Leonxlnx/taste-skill with a focused ingestion.
+- Sources synced: 1
+- Skills indexed: 13
+- Exact duplicate groups: 9
+- Repeated skill names: 254
+- Synced `Leonxlnx__taste-skill` at commit `c607b117f37d` with 13 skills and 14 files.
+
 ## 2026-08-23 19:01:43Z
 
 - Action: Weekly automation refresh
@@ -459,6 +468,28 @@
 ## 2026-08-23 19:12:22Z
 
 - Action: Weekly automation refresh after remote-main source reconciliation
+- Sources synced: 14
+- Skills indexed: 1114
+- Exact duplicate groups: 9
+- Repeated skill names: 254
+- Synced `addyosmani__agent-skills` at commit `5a5ea45e806f` with 24 skills and 34 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `7ef93e0cb52b` with 4 skills and 589 files.
+- Synced `mattpocock__skills` at commit `5b15a47f2d71` with 36 skills and 61 files.
+- Synced `juliusbrussee__caveman` at commit `7bb71309e874` with 24 skills and 40 files.
+- Synced `obra__Superpowers` at commit `b36e0829c6d0` with 14 skills and 37 files.
+- Synced `cursor__plugins` at commit `461255613064` with 83 skills and 183 files.
+- Synced `affaan-m__ECC` at commit `d8409a4b0813` with 898 skills and 1034 files.
+- Synced `mvanhorn__last30days-skill` at commit `d05389d39b2c` with 1 skills and 121 files.
+- Synced `DietrichGebert__ponytail` at commit `2ed6c52c9d7e` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `d30eddb9e045` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `b42a45a068e0` with 2 skills and 2 files.
+- Synced `Leonxlnx__taste-skill` at commit `72e299530e2e` with 13 skills and 14 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+
+## 2026-08-23 19:14:39Z
+
+- Action: Weekly automation refresh after mainline merge reconciliation
 - Sources synced: 14
 - Skills indexed: 1114
 - Exact duplicate groups: 9
