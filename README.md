@@ -26,7 +26,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 ## Source Repositories and Gists
 
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
-  - Archived commit: `df1edb2e05487d0aa6d93c747141e0aed1187f25`
+  - Archived commit: `5a5ea45e806f82273549fd85e60adb95d55f510d`
   - Snapshot: [`archives/addyosmani__agent-skills/snapshot`](archives/addyosmani__agent-skills/snapshot)
   - Skills discovered: 24
   - Files retained in reduced snapshot: 34
@@ -36,17 +36,17 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
-  - Archived commit: `6837b4dfeaabd5a6da886e199b44ae7b52e8b931`
+  - Archived commit: `7ef93e0cb52b93f9909e163aad912255d4471850`
   - Snapshot: [`archives/Imbad0202__academic-research-skills/snapshot`](archives/Imbad0202__academic-research-skills/snapshot)
   - Skills discovered: 4
-  - Files retained in reduced snapshot: 171
+  - Files retained in reduced snapshot: 589
 - [mattpocock/skills](https://github.com/mattpocock/skills)
-  - Archived commit: `068b6e0c62393147daf03530149cdce209c93da8`
+  - Archived commit: `5b15a47f2d7150f545fbcacbfe381787fc0230dc`
   - Snapshot: [`archives/mattpocock__skills/snapshot`](archives/mattpocock__skills/snapshot)
-  - Skills discovered: 35
-  - Files retained in reduced snapshot: 60
+  - Skills discovered: 36
+  - Files retained in reduced snapshot: 61
 - [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman)
-  - Archived commit: `12aa8cc0e980b6d3310a5be4f477c434da51f4b0`
+  - Archived commit: `7bb71309e8749a4f112aacd3a54b3941d8689905`
   - Snapshot: [`archives/juliusbrussee__caveman/snapshot`](archives/juliusbrussee__caveman/snapshot)
   - Skills discovered: 24
   - Files retained in reduced snapshot: 40
@@ -56,20 +56,20 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 14
   - Files retained in reduced snapshot: 37
 - [cursor/plugins](https://github.com/cursor/plugins)
-  - Archived commit: `2a8044425c7bddf429c3bdedf3ab61e791d34d65`
+  - Archived commit: `46125561306434d8a1d7745d540d8932ab0cd2a2`
   - Snapshot: [`archives/cursor__plugins/snapshot`](archives/cursor__plugins/snapshot)
-  - Skills discovered: 82
-  - Files retained in reduced snapshot: 181
+  - Skills discovered: 83
+  - Files retained in reduced snapshot: 183
 - [affaan-m/ECC](https://github.com/affaan-m/ECC)
-  - Archived commit: `50743cec75852e32d6517c9894a3339a2462a713`
+  - Archived commit: `d8409a4b0813771235555e32e3d8046a73988bfa`
   - Snapshot: [`archives/affaan-m__ECC/snapshot`](archives/affaan-m__ECC/snapshot)
-  - Skills discovered: 897
-  - Files retained in reduced snapshot: 1032
+  - Skills discovered: 898
+  - Files retained in reduced snapshot: 1034
 - [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
-  - Archived commit: `c7460f6114449ddfe6ea3fc2f23c3d910c0e740c`
+  - Archived commit: `d05389d39b2ce09a13f71b01e68562f077c766df`
   - Snapshot: [`archives/mvanhorn__last30days-skill/snapshot`](archives/mvanhorn__last30days-skill/snapshot)
   - Skills discovered: 1
-  - Files retained in reduced snapshot: 9
+  - Files retained in reduced snapshot: 121
 - [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
   - Archived commit: `2ed6c52c9d7e5e56942508591085fd45dea277d3`
   - Snapshot: [`archives/DietrichGebert__ponytail/snapshot`](archives/DietrichGebert__ponytail/snapshot)
@@ -81,12 +81,17 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 2
 - [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)
-  - Archived commit: `2ed064090711586e0c97a2fbbf15465fe8f1808b`
+  - Archived commit: `b42a45a068e080294924bfba19a7a2e8944c48ff`
   - Snapshot: [`archives/ayghri__i-have-adhd/snapshot`](archives/ayghri__i-have-adhd/snapshot)
   - Skills discovered: 2
   - Files retained in reduced snapshot: 2
+- [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill)
+  - Archived commit: `72e299530e2eb31ed8da06181bc19f6c18a00821`
+  - Snapshot: [`archives/Leonxlnx__taste-skill/snapshot`](archives/Leonxlnx__taste-skill/snapshot)
+  - Skills discovered: 13
+  - Files retained in reduced snapshot: 14
 - [ChewingGlass/9a380da5d5a69a540b56d6449556ac5b](https://gist.github.com/ChewingGlass/9a380da5d5a69a540b56d6449556ac5b)
-  - Archived commit: `2aa270ad296b1d36350f25c175586581a45c88c8`
+  - Archived commit: `daad13e3446186762f0e248e0696ed99c32e5939`
   - Snapshot: [`archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot`](archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot)
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
@@ -155,6 +160,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `wayfinder`: [`skills/engineering/wayfinder/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/wayfinder/SKILL.md)
 - `wizard`: [`skills/engineering/wizard/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/wizard/SKILL.md)
 - `claude-handoff`: [`skills/in-progress/claude-handoff/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/claude-handoff/SKILL.md)
+- `implement-spec`: [`skills/in-progress/implement-spec/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/implement-spec/SKILL.md)
 - `loop-me`: [`skills/in-progress/loop-me/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/loop-me/SKILL.md)
 - `setup-ts-deep-modules`: [`skills/in-progress/setup-ts-deep-modules/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/setup-ts-deep-modules/SKILL.md)
 - `writing-beats`: [`skills/in-progress/writing-beats/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/writing-beats/SKILL.md)
@@ -297,6 +303,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `thermo-nuclear-code-quality-review`: [`thermos/skills/thermo-nuclear-code-quality-review/SKILL.md`](archives/cursor__plugins/snapshot/thermos/skills/thermo-nuclear-code-quality-review/SKILL.md)
 - `thermo-nuclear-review`: [`thermos/skills/thermo-nuclear-review/SKILL.md`](archives/cursor__plugins/snapshot/thermos/skills/thermo-nuclear-review/SKILL.md)
 - `thermos`: [`thermos/skills/thermos/SKILL.md`](archives/cursor__plugins/snapshot/thermos/skills/thermos/SKILL.md)
+- `X MCP guide`: [`third_party/x/skills/x-api-mcp-guide/SKILL.md`](archives/cursor__plugins/snapshot/third_party/x/skills/x-api-mcp-guide/SKILL.md)
 
 ### affaan-m/ECC
 - `agent-introspection-debugging`: [`.agents/skills/agent-introspection-debugging/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/agent-introspection-debugging/SKILL.md)
@@ -1175,6 +1182,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `swift-protocol-di-testing`: [`skills/swift-protocol-di-testing/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/swift-protocol-di-testing/SKILL.md)
 - `swiftui-patterns`: [`skills/swiftui-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/swiftui-patterns/SKILL.md)
 - `taste`: [`skills/taste/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/taste/SKILL.md)
+- `tasteforge-video`: [`skills/tasteforge-video/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/tasteforge-video/SKILL.md)
 - `tdd-workflow`: [`skills/tdd-workflow/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/tdd-workflow/SKILL.md)
 - `team-agent-orchestration`: [`skills/team-agent-orchestration/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/team-agent-orchestration/SKILL.md)
 - `team-builder`: [`skills/team-builder/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/team-builder/SKILL.md)
@@ -1220,6 +1228,21 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 ### ayghri/i-have-adhd
 - `i-have-adhd`: [`.cursor/skills/i-have-adhd/SKILL.md`](archives/ayghri__i-have-adhd/snapshot/.cursor/skills/i-have-adhd/SKILL.md)
 - `i-have-adhd`: [`skills/i-have-adhd/SKILL.md`](archives/ayghri__i-have-adhd/snapshot/skills/i-have-adhd/SKILL.md)
+
+### Leonxlnx/taste-skill
+- `brandkit`: [`skills/brandkit/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/brandkit/SKILL.md)
+- `industrial-brutalist-ui`: [`skills/brutalist-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/brutalist-skill/SKILL.md)
+- `gpt-taste`: [`skills/gpt-tasteskill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/gpt-tasteskill/SKILL.md)
+- `image-to-code`: [`skills/image-to-code-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/image-to-code-skill/SKILL.md)
+- `imagegen-frontend-mobile`: [`skills/imagegen-frontend-mobile/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/imagegen-frontend-mobile/SKILL.md)
+- `imagegen-frontend-web`: [`skills/imagegen-frontend-web/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/imagegen-frontend-web/SKILL.md)
+- `minimalist-ui`: [`skills/minimalist-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/minimalist-skill/SKILL.md)
+- `full-output-enforcement`: [`skills/output-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/output-skill/SKILL.md)
+- `redesign-existing-projects`: [`skills/redesign-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/redesign-skill/SKILL.md)
+- `high-end-visual-design`: [`skills/soft-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/soft-skill/SKILL.md)
+- `stitch-design-taste`: [`skills/stitch-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/stitch-skill/SKILL.md)
+- `design-taste-frontend`: [`skills/taste-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/taste-skill/SKILL.md)
+- `design-taste-frontend-v1`: [`skills/taste-skill-v1/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/taste-skill-v1/SKILL.md)
 
 ### ChewingGlass/9a380da5d5a69a540b56d6449556ac5b
 - `review-with-me`: [`SKILL.md`](archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot/SKILL.md)

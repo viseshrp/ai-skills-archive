@@ -170,6 +170,10 @@ The deterministic citation-existence gate (#182) cross-checks each reference aga
 
 The cache is single-process (SQLite WAL); concurrent multi-user access to one cache file is out of scope.
 
+For the complete picture of what leaves the machine (resolvers, optional cross-model
+calls, the update check) and every local store's lifetime and deletion path, see
+[DATA_FLOWS.md](DATA_FLOWS.md).
+
 ---
 
 ## Cross-model verification (optional)
@@ -180,13 +184,13 @@ ARS works with the inherited Claude session model alone. For higher confidence, 
 
 ```bash
 # Step 1: Set your API key (choose one or both)
-export OPENAI_API_KEY="sk-your-key-here"        # For GPT-5.5 / GPT-5.5 Pro
+export OPENAI_API_KEY="sk-your-key-here"        # For GPT-5.6 Sol / GPT-5.5
 export GOOGLE_AI_API_KEY="AIza-your-key-here"    # For Gemini 3.1 Pro
 
 # Step 2: Choose your cross-verification model
-export ARS_CROSS_MODEL="gpt-5.5"                # Recommended pair (gpt-5.5-pro = strongest reasoning, ~6x cost)
-# or: export ARS_CROSS_MODEL="gemini-3.1-pro-preview"  # Strong at factual verification
-# or: export ARS_CROSS_MODEL="gpt-5.6-sol"      # Frontier, provisional pending ARS validation (same rates as gpt-5.5)
+export ARS_CROSS_MODEL="gpt-5.6-sol"            # Current OpenAI flagship — provisional pending ARS validation (run scripts/cross_model_smoke_test.sh)
+# or: export ARS_CROSS_MODEL="gemini-3.1-pro-preview"  # Current Google flagship — validated, strong at factual verification
+# or: export ARS_CROSS_MODEL="gpt-5.5"          # Previous generation — validated (designated bakeoff baseline)
 
 # Optional: reasoning effort for OpenAI verifier calls (unset = provider default)
 # export ARS_CROSS_MODEL_REASONING_EFFORT="medium"
@@ -221,7 +225,10 @@ Devil's Advocate, Reviewer 2, calibration, re-review, or checkpoint judgments.
 ```bash
 # Citation-integrity calls only. General DA/reviewer/judgment calls remain on API transport.
 export ARS_CROSS_MODEL_TRANSPORT="codex"
-export ARS_CROSS_MODEL="gpt-5.5"
+# gpt-5.6-sol is validated for THIS transport (2026-08-19 codex-transport bakeoff,
+# superiority on recall + latency — audits/bakeoff-gpt-5-6-sol-codex-2026-08-19.md).
+# gpt-5.5 remains the validated bakeoff baseline alternative.
+export ARS_CROSS_MODEL="gpt-5.6-sol"
 
 python3 scripts/cross_model_codex_transport.py detect
 # The producer sends one closed codex_citation_request/1.0 object on stdin:
@@ -247,6 +254,11 @@ Claude discovers skills at `<install-root>/<skill-name>/SKILL.md`. This repo con
 - `academic-pipeline`
 
 Do not install the whole repository as one nested skill folder under `.claude/skills/academic-research-skills/`; that buries the four `SKILL.md` files one level too deep for discovery. See Anthropic's [Claude Code Skills documentation](https://code.claude.com/docs/en/skills).
+
+The methods below differ in more than convenience: hooks, slash commands, the tools
+allowlist, subagent orchestration, and script-backed checks are each available in some
+channels and degraded or absent in others. Before relying on any of those mechanisms,
+check the per-channel map: [CONTROL_AVAILABILITY.md](CONTROL_AVAILABILITY.md).
 
 ### Method 0: Claude Code Plugin (v3.7.0+, recommended for Claude Code CLI / IDE users)
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T19:03:31.999387+00:00",
+  "generated_at": "2026-08-23T19:12:22.208473+00:00",
   "exact_skill_duplicates": [
     {
       "sha256": "060f50513003731e9c0e7f78e6a6a9b8cb178a74a2ec2a6ca75cdae804f0d564",
@@ -40,6 +40,20 @@
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/caveman-compress/SKILL.md"
+        }
+      ]
+    },
+    {
+      "sha256": "3edd677596cbf12f010f25f05dfb1e8a6c9c178d92499c86e5b5afa44c86c16c",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "plugins/caveman/skills/caveman/SKILL.md"
+        },
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "skills/caveman/SKILL.md"
         }
       ]
     },
@@ -96,20 +110,6 @@
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/caveman-stats/SKILL.md"
-        }
-      ]
-    },
-    {
-      "sha256": "daf9cec496ebd039809d8236f99f17fa1b4beaadf8ce4e2d532d0da51d70afce",
-      "count": 2,
-      "locations": [
-        {
-          "source_repo": "juliusbrussee/caveman",
-          "path": "plugins/caveman/skills/caveman/SKILL.md"
-        },
-        {
-          "source_repo": "juliusbrussee/caveman",
-          "path": "skills/caveman/SKILL.md"
         }
       ]
     },
@@ -852,12 +852,12 @@
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "plugins/caveman/skills/caveman/SKILL.md",
-          "sha256": "daf9cec496ebd039809d8236f99f17fa1b4beaadf8ce4e2d532d0da51d70afce"
+          "sha256": "3edd677596cbf12f010f25f05dfb1e8a6c9c178d92499c86e5b5afa44c86c16c"
         },
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/caveman/SKILL.md",
-          "sha256": "daf9cec496ebd039809d8236f99f17fa1b4beaadf8ce4e2d532d0da51d70afce"
+          "sha256": "3edd677596cbf12f010f25f05dfb1e8a6c9c178d92499c86e5b5afa44c86c16c"
         }
       ]
     },
@@ -5578,7 +5578,7 @@
         {
           "source_repo": "mattpocock/skills",
           "path": "skills/engineering/tdd/SKILL.md",
-          "sha256": "6875cbca6b7d17be635dc9b457cc6363125f85cef26f443991b77c7d9eb430d2"
+          "sha256": "cb01f66bebfaa25fa1f88e6b7e769cd9fd9f35b1120b8563749820738814c927"
         },
         {
           "source_repo": "cursor/plugins",
@@ -5645,7 +5645,7 @@
         {
           "source_repo": "mattpocock/skills",
           "path": "skills/productivity/teach/SKILL.md",
-          "sha256": "6d2dbe5e03084cf26fef66b535127b36cd1bcbe9478e26b0626029cd51dc2259"
+          "sha256": "a32df9dcdfc0c4fdc1c98e1ed3940c5f56b84c1aa90ff60346f32b8b53915b43"
         },
         {
           "source_repo": "cursor/plugins",

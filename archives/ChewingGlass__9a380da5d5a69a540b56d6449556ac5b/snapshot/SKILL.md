@@ -42,7 +42,22 @@ gh pr diff <target> --name-only
 
 If the target is a branch or path with no PR, set `--no-post` behavior for Phase 8 and say so once,
 at the start. Create the notes file at `<scratchpad>/review-with-me-<target>.md` — it holds the
-answer key, the held findings, and the comment set, so a context compaction does not lose them.
+worktree path, the answer key, the held findings, and the comment set, so a context compaction does
+not lose them.
+
+Then put the PR head on disk so the human can open it in an editor. Never check the PR out into the
+directory they are already working in.
+
+```bash
+gh pr checkout <n> --repo <owner>/<repo> --detach 2>/dev/null || true   # only if already isolated
+# otherwise, from the repo root:
+git fetch origin pull/<n>/head:refs/remotes/origin/pr-<n>
+git worktree add --detach <repo-root>/.claude/worktrees/pr-<n>-review refs/remotes/origin/pr-<n>
+```
+
+Detach on purpose: a review worktree is read-only, and a detached head cannot push or acquire an
+upstream. If a worktree for this PR already exists, reuse it rather than making a second one.
+Record the absolute path in the notes file and report it in the Phase 3 hand-off.
 
 ## Phase 1 — Launch the review, held back
 
@@ -86,7 +101,20 @@ Question craft:
 - Quote the relevant snippet in the option `preview` when the question turns on exact code.
 - Never signal the answer through option length, hedging, or ordering.
 
-Write each question, its correct option, and its `file:line` evidence to the notes file now.
+Every question carries a **reading pointer**: the `path:line` range the human should open to
+settle it. The pointer names where the answer lives, never what the answer is — "the invalid-oracle
+branch of the spot loop" is a pointer, "the size gate that also catches liabilities" is a spoiler.
+Put it on its own line at the end of the question text, as `Look at: path:line-line`, so it is
+clickable in the terminal. A question you cannot give a pointer for is a question you cannot grade;
+cut it.
+
+Write each question, its correct option, its `file:line` evidence, and its reading pointer to the
+notes file now.
+
+While drafting, also assemble the **reading map** for the hand-off: the changed files ranked by how
+much of the change they carry, each with the line range that matters and a neutral one-clause label
+of what lives there. The map is a table of contents, not a summary — it says where to look, never
+what is wrong.
 
 ## Phase 3 — Hand off
 
@@ -94,9 +122,18 @@ Post a short block:
 
 ```
 PR #<n> <title> — <k> files, +<a>/-<d>
+Checked out at: <absolute worktree path>   (branch <head>, detached)
 Review running in the background. Findings held.
-Read the diff, then say "ready" and I will quiz you.
+
+Read in this order:
+  1. path/to/core.rs:1165-1414   the new walk
+  2. path/to/caller.rs:334-370   the trip instruction
+  3. path/to/mirror.ts:2433-2637 the SDK mirror
+  ...
+Then say "ready" and I will quiz you.
 ```
+
+Keep each map line to a path, a line range, and a neutral label. No verdicts, no "note that…".
 
 Then wait. If they ask a factual question while reading (where does X live, what is Y), answer it
 plainly — that is reading support, not a spoiler. Refuse only the direct asks: "what did you find",
@@ -113,6 +150,9 @@ After each round, grade against the key:
 - **Correct** — one line confirming it, with the `file:line`.
 - **Wrong or partial** — state the actual behavior, cite the line, and say what the wrong answer
   would imply if it were true. No softening, no "great question".
+
+Every question already carries its `Look at:` pointer, so a wrong answer resolves against open code
+rather than against your assertion.
 
 Escalate: if a round is clean, make the next round harder — go to the interaction between two
 changes rather than either one alone. If a round exposes a gap, spend the next round in that area

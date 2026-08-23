@@ -72,6 +72,9 @@ PATH_TOKEN_RE = re.compile(
 BARE_FILE_TOKEN_RE = re.compile(
     r"(?<![A-Za-z0-9._/-])(?P<path>[A-Za-z0-9._-]+\.(?:md|mdx|txt|json|ya?ml|toml|py|sh|ps1|js|mjs|cjs|ts|tsx|html|css|svg|png|jpg|jpeg|gif|webp|pdf|tex|dot|cmd))(?![A-Za-z0-9._/-])"
 )
+DIRECTORY_GLOB_TOKEN_RE = re.compile(
+    r"(?P<path>(?:\.\.?/)?(?:[A-Za-z0-9._-]+/)+\*+(?:/\*+)*)"
+)
 MD_LINK_RE = re.compile(r"\[[^\]]+\]\((?P<link>[^)]+)\)")
 NAME_RE = re.compile(r"^name:\s*[\"']?(.*?)[\"']?\s*$", re.MULTILINE)
 DESC_RE = re.compile(r"^description:\s*[\"']?(.*?)[\"']?\s*$", re.MULTILINE)
@@ -304,6 +307,40 @@ def resolve_local_reference(base_path: Path, repo_root: Path, candidate: str) ->
     return resolved
 
 
+def expand_local_directory_glob(
+    base_path: Path, repo_root: Path, candidate: str
+) -> list[Path]:
+    candidate = normalize_reference(candidate)
+    directory_parts: list[str] = []
+    for part in Path(candidate).parts:
+        if "*" in part:
+            break
+        directory_parts.append(part)
+    if not directory_parts:
+        return []
+
+    repo_root = repo_root.resolve()
+    directory = (base_path.parent / Path(*directory_parts)).resolve()
+    try:
+        directory.relative_to(repo_root)
+    except ValueError:
+        return []
+    if not directory.is_dir() or ".git" in directory.parts:
+        return []
+
+    expanded: list[Path] = []
+    for path in directory.rglob("*"):
+        if not path.is_file() or path.is_symlink() or ".git" in path.parts:
+            continue
+        resolved = path.resolve()
+        try:
+            resolved.relative_to(repo_root)
+        except ValueError:
+            continue
+        expanded.append(resolved)
+    return sorted(expanded)
+
+
 def extract_local_file_refs(path: Path, repo_root: Path) -> list[Path]:
     content = read_text_if_possible(path)
     if content is None:
@@ -324,6 +361,12 @@ def extract_local_file_refs(path: Path, repo_root: Path) -> list[Path]:
         resolved = resolve_local_reference(path, repo_root, match.group("path"))
         if resolved is not None:
             found.add(resolved)
+
+    if path.name == "SKILL.md":
+        for match in DIRECTORY_GLOB_TOKEN_RE.finditer(content):
+            found.update(
+                expand_local_directory_glob(path, repo_root, match.group("path"))
+            )
 
     return sorted(found)
 
