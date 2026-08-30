@@ -90,6 +90,16 @@ jobs:
           PYTHONPATH: scripts
         run: python3 scripts/check_data_access_level.py
 
+      - name: Check skill-inventory parity (#809)
+        # Top-level <name>/SKILL.md dirs == skills/ symlinks == CLAUDE.md
+        # Skills Overview rows == marketplace.json plugins[].skills, plus the
+        # "N skills" count claims in plugin/marketplace descriptions. The pytest
+        # companion `test_check_skill_inventory_parity.py` runs via the unified
+        # manifest.
+        env:
+          PYTHONPATH: scripts
+        run: python3 scripts/check_skill_inventory_parity.py
+
       - name: Check instruction-vs-data boundary (#272 guidance layer)
         # Drift guard for the retrieved-content instruction/data principle:
         # authoritative canonical block in ground_truth_isolation_pattern.md +
@@ -256,6 +266,12 @@ jobs:
         # verbatim claim anchors, stale-evidence notes, and byte-identity of
         # the generated docs/STAGE_CAPABILITY_MATRIX.md view.
         run: python3 scripts/check_stage_capability_matrix.py
+
+      - name: Validate shipped research-workflow fallback (#742)
+        # Offline/default-off contract check only: validates the canonical
+        # content hash and exact field-general safety boundary. Human usability
+        # evidence remains NOT_RUN and no workflow profile is inferred here.
+        run: python3 scripts/research_workflow_profile.py validate-profile shared/research_workflow_profiles/field_general.json --shipped-field-general
 
       - name: Validate risk register mirroring (#759)
         # Pins docs/RISK_REGISTER.md's index-not-author posture: cited repo
@@ -770,6 +786,12 @@ jobs:
         # untouched .jq files. Behavior of the filters themselves is pinned by the manifest test
         # 346-349-cross-model-grounding-guards.
         run: python3 scripts/check_cross_model_verification_sync.py
+
+      - name: Check sealed Promotion Bakeoff preregistrations (#789)
+        # Requires checkout fetch-depth: 0 above. Verifies local byte binding,
+        # immutable Git ordering, fixed composition, and detectable historical
+        # non-reuse; remote publication/fleet timing stays a run-report witness.
+        run: python3 scripts/check_promotion_bakeoff_preregistration.py verify-tree --repo-root .
 
       - name: Check Codex subscription citation transport (#630)
         # Pins the closed citation-only selector, auth-only containment,

@@ -55,6 +55,18 @@
   {
     "source_repo": "addyosmani/agent-skills",
     "repo_key": "addyosmani__agent-skills",
+    "skill_name": "constraint-driven-development",
+    "description": "Establishes a project's quality bar as a written contract and stops agents quietly lowering it. Interviews the user on which dimensions matter, supplies sane default thresholds when they have no number in mind, records everything in CONSTRAINTS.md, and watches the diff for a weakened bar \u2014 new @ts-ignore or eslint-disable suppressions, skipped or deleted tests, assertions stripped out, unimplemented stubs, thresholds edited down. Use when no quality bar is written down, when the user says \"set up constraints\" or \"define our standards\", when an agent keeps silencing checks or skipping tests to get to green, when you need a coverage or performance threshold and don't know what number to pick, or when an agent writes more code than anyone will read.",
+    "path": "skills/constraint-driven-development/SKILL.md",
+    "relative_directory": "skills/constraint-driven-development",
+    "sha256": "19d0aba70ced988c67739d5edd2a9b124a0783788c2baa70a8cc64cdd90612e5",
+    "linked_local_files": [
+      "skills/constraint-driven-development/references/floor-guard.md"
+    ]
+  },
+  {
+    "source_repo": "addyosmani/agent-skills",
+    "repo_key": "addyosmani__agent-skills",
     "skill_name": "context-engineering",
     "description": "Optimizes agent context setup. Use when starting a new session, when agent output quality degrades, when switching between tasks, or when you need to configure rules files and context for a project.",
     "path": "skills/context-engineering/SKILL.md",
@@ -120,10 +132,10 @@
     "source_repo": "addyosmani/agent-skills",
     "repo_key": "addyosmani__agent-skills",
     "skill_name": "git-workflow-and-versioning",
-    "description": "Structures git workflow practices. Use when making any code change. Use when committing, branching, resolving conflicts, or when you need to organize work across multiple parallel streams. Use when cutting a release, choosing a semantic version bump, tagging, or writing a changelog.",
+    "description": "Structures git workflow practices. Use when making any code change. Use when committing, branching, resolving conflicts, opening or reviewing a pull request (PR), pushing to a remote, or when you need to organize work across multiple parallel streams. Use when cutting a release, choosing a semantic version bump, tagging, or writing a changelog.",
     "path": "skills/git-workflow-and-versioning/SKILL.md",
     "relative_directory": "skills/git-workflow-and-versioning",
-    "sha256": "51677cf03845dd29d08ea4d3125665057b720aea3dccc572f25d8b172409ece6",
+    "sha256": "39665e84d944fbb394dde5e4e60fc6497cd056002b5c7de6762213f7018ff0a3",
     "linked_local_files": []
   },
   {
@@ -181,7 +193,7 @@
     "description": "Optimizes application performance across frontend, backend, queries, and databases. Use when performance requirements exist, when you suspect performance regressions, when Core Web Vitals or load times need improvement, when N+1 query patterns need fixing, or when profiling reveals bottlenecks.",
     "path": "skills/performance-optimization/SKILL.md",
     "relative_directory": "skills/performance-optimization",
-    "sha256": "e2def7de6cfcdaa6577f4f76839a4001c42c947eb636395b27c450d514ddd188",
+    "sha256": "00694d0c69bbde674d0e39de24052d90afea32d9fef9553eaee21a50a7e9b8cf",
     "linked_local_files": [
       "references/performance-checklist.md"
     ]
@@ -193,7 +205,7 @@
     "description": "Breaks work into ordered tasks. Use when you have a spec or clear requirements and need to break work into implementable tasks. Use when a task feels too large to start, when you need to estimate scope, or when parallel work is possible.",
     "path": "skills/planning-and-task-breakdown/SKILL.md",
     "relative_directory": "skills/planning-and-task-breakdown",
-    "sha256": "ea6e7529be29098f3e02c8b3da79c0dfddd56e45eaec1248aefd5fc6a62491a8",
+    "sha256": "ed0f90cc5951ddd4bcab7f871f64efec93a49af9279ef93bc470da77ad8da3f7",
     "linked_local_files": [
       "references/definition-of-done.md"
     ]
@@ -264,7 +276,7 @@
     "description": "Discovers and invokes agent skills. Use when starting a session or when you need to discover which skill applies to the current task. This is the meta-skill that governs how all other skills are discovered and invoked.",
     "path": "skills/using-agent-skills/SKILL.md",
     "relative_directory": "skills/using-agent-skills",
-    "sha256": "a7c63bf4a368b4e333cbbe4b174f390de76194d57370bb79a89f7e87ce1cf9a8",
+    "sha256": "8bdbecb2f98cff2dbb70b3852c67d8dca179b27d2b1042aac040866d258ad471",
     "linked_local_files": [
       "references/definition-of-done.md"
     ]
@@ -354,7 +366,7 @@
     "description": "Orchestrator for the full academic research pipeline: research -> write -> integrity check -> review -> revise -> re-review -> re-revise -> final integrity check -> finalize. Coordinates deep-research, academic-paper, and academic-paper-reviewer into a seamless 10-stage workflow with mandatory, coverage-bounded integrity checks, two-stage peer review, and auditable quality-assurance artifacts. Triggers on: academic pipeline, research to paper, full paper workflow, paper pipeline, end-to-end paper, research-to-publication, complete paper workflow, \uc5f0\uad6c\ubd80\ud130 \ub17c\ubb38\uae4c\uc9c0, \uc5f0\uad6c \uc8fc\uc81c \uc124\uc815\ubd80\ud130 \ub17c\ubb38 \uc644\uc131\uae4c\uc9c0, \ub17c\ubb38 \uc804\uccb4 \uc6cc\ud06c\ud50c\ub85c.",
     "path": "academic-pipeline/SKILL.md",
     "relative_directory": "academic-pipeline",
-    "sha256": "4643d2510843df8494b24a8266dfbaf112c3cfdd10d7660faa1b394971dc8e91",
+    "sha256": "5b9b92ad1df7a3a55c1f67f0d2d554af63e476c5019e0d3497b3f28ebacf9116",
     "linked_local_files": [
       ".claude-plugin/marketplace.json",
       ".claude-plugin/plugin.json",
@@ -667,6 +679,7 @@
       "scripts/audit_snapshot.py",
       "scripts/bootstrap_timeline_yaml.py",
       "scripts/build_claim_standing_query_plan.py",
+      "scripts/build_submission_packet_manifest.py",
       "scripts/check_215_field_norm.py",
       "scripts/check_216_surface_form.py",
       "scripts/check_268_nested_commitment_ledger.py",
@@ -710,6 +723,7 @@
       "scripts/check_policy_anchor_protocol.py",
       "scripts/check_policy_anchor_table.py",
       "scripts/check_prisma_trAIce_freshness.py",
+      "scripts/check_promotion_bakeoff_preregistration.py",
       "scripts/check_ranking_lift.py",
       "scripts/check_re_review_synthesis.py",
       "scripts/check_repro_lock.py",
@@ -721,6 +735,7 @@
       "scripts/check_rubric_weight_consistency.py",
       "scripts/check_seeded_defect_fixtures.py",
       "scripts/check_setup_cross_model_parity.py",
+      "scripts/check_skill_inventory_parity.py",
       "scripts/check_spec_consistency.py",
       "scripts/check_sprint_contract.py",
       "scripts/check_stage_capability_matrix.py",
@@ -752,6 +767,7 @@
       "scripts/cross_model_verification/normalize_compat_verdict.py",
       "scripts/crossref_client.py",
       "scripts/dispatch_e4_panel.py",
+      "scripts/evidence_rows.py",
       "scripts/fixtures/claim_audit_calibration/gold_set.json",
       "scripts/ideation_diversity_assignment_gate.py",
       "scripts/migrate_literature_corpus_to_v3_10.py",
@@ -782,6 +798,7 @@
       "scripts/test_ars_mark_read.py",
       "scripts/test_ars_update_check.py",
       "scripts/test_ars_write_scope_guard.py",
+      "scripts/test_build_submission_packet_manifest.py",
       "scripts/test_check_collaboration_depth_rubric.py",
       "scripts/test_check_instruction_data_boundary.py",
       "scripts/test_check_pipeline_integrity.py",
@@ -803,6 +820,7 @@
       "scripts/test_crossref_client.py",
       "scripts/test_evals_citation_extraction.py",
       "scripts/test_evals_lift_report_schema.py",
+      "scripts/test_evidence_rows.py",
       "scripts/test_migrate_literature_corpus_to_v3_7_3.py",
       "scripts/test_openalex_client.py",
       "scripts/test_passport_yaml.py",
@@ -851,6 +869,8 @@
       "shared/contracts/claim_standing/transmission_ledger.schema.json",
       "shared/contracts/cross_model/codex_citation_receipt.schema.json",
       "shared/contracts/cross_model/codex_citation_request.schema.json",
+      "shared/contracts/cross_model/promotion_bakeoff_sealed_commitment.schema.json",
+      "shared/contracts/cross_model/promotion_bakeoff_sealed_reveal.schema.json",
       "shared/contracts/degradation_registry.json",
       "shared/contracts/evaluator/full.json",
       "shared/contracts/evidence/evidence_row_v1_2.schema.json",
@@ -866,6 +886,7 @@
       "shared/contracts/passport/experiment_alignment_result.schema.json",
       "shared/contracts/passport/experiment_provenance_entry.schema.json",
       "shared/contracts/passport/human_read_log.schema.json",
+      "shared/contracts/passport/inquiry_ledger_ref.schema.json",
       "shared/contracts/passport/literature_corpus_entry.schema.json",
       "shared/contracts/passport/preregistration_artifact.schema.json",
       "shared/contracts/passport/rejection_log.schema.json",
@@ -879,6 +900,9 @@
       "shared/contracts/pdf/pdf_content_classifier_worker.schema.json",
       "shared/contracts/pdf/pdf_read_preflight.schema.json",
       "shared/contracts/re_review/traceability.schema.json",
+      "shared/contracts/research_workflow/inquiry_branch_ledger.schema.json",
+      "shared/contracts/research_workflow/research_workflow_profile.schema.json",
+      "shared/contracts/research_workflow/research_workflow_profile_selection_receipt.schema.json",
       "shared/contracts/review_target/constructive_review_findings.schema.json",
       "shared/contracts/review_target/review_criteria_binding_manifest.schema.json",
       "shared/contracts/reviewer/full.json",
@@ -908,6 +932,7 @@
       "shared/references/cross_document_consistency_advisory_protocol.md",
       "shared/references/intent_clarification_protocol.md",
       "shared/references/word_count_conventions.md",
+      "shared/research_workflow_profiles/field_general.json",
       "shared/sprint_contract.schema.json",
       "shared/style_calibration_protocol.md",
       "shared/templates/codex_audit_multifile_template.md",
@@ -1248,6 +1273,16 @@
   {
     "source_repo": "mattpocock/skills",
     "repo_key": "mattpocock__skills",
+    "skill_name": "retro",
+    "description": "Conduct a retrospective on a coding session.",
+    "path": "skills/in-progress/retro/SKILL.md",
+    "relative_directory": "skills/in-progress/retro",
+    "sha256": "264f3330f1e2382af89610ed048ba0ed6d08883eb69f596a8f1df3f1e1a4c6a1",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "mattpocock/skills",
+    "repo_key": "mattpocock__skills",
     "skill_name": "setup-ts-deep-modules",
     "description": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module, with implementation hidden in subfolders and reachable only through its entry-point files. User-invoked.",
     "path": "skills/in-progress/setup-ts-deep-modules/SKILL.md",
@@ -1412,7 +1447,7 @@
     "description": ">",
     "path": "plugins/caveman/skills/cavecrew/SKILL.md",
     "relative_directory": "plugins/caveman/skills/cavecrew",
-    "sha256": "b74f374f6aae6e9a31e78e7d876860406fe5833378e9298536edf176c12f379b",
+    "sha256": "c05f8e8d16bd8ae1c8d0b0abf6e8b9671051bde61653c4986304c2de3a1cf5d4",
     "linked_local_files": []
   },
   {
@@ -1422,7 +1457,7 @@
     "description": ">",
     "path": "plugins/caveman/skills/caveman/SKILL.md",
     "relative_directory": "plugins/caveman/skills/caveman",
-    "sha256": "3edd677596cbf12f010f25f05dfb1e8a6c9c178d92499c86e5b5afa44c86c16c",
+    "sha256": "fec5718a391dd9d8c89746d39e0cc0fa7aa5b50447669a15e44c3244167828c0",
     "linked_local_files": []
   },
   {
@@ -1432,7 +1467,7 @@
     "description": ">",
     "path": "plugins/caveman/skills/caveman-compress/SKILL.md",
     "relative_directory": "plugins/caveman/skills/caveman-compress",
-    "sha256": "3167d62440eee99c0e5b224d7f8b8ebcfe37efba38bc5bbee24f0d00da72a688",
+    "sha256": "377b0b8682d9db1a832c20ee6732ed0f19f55e4f7048955296128244c869c916",
     "linked_local_files": [
       "plugins/caveman/skills/caveman-compress/scripts/__main__.py"
     ]
@@ -1454,7 +1489,7 @@
     "description": ">",
     "path": "skills/cavecrew/SKILL.md",
     "relative_directory": "skills/cavecrew",
-    "sha256": "b74f374f6aae6e9a31e78e7d876860406fe5833378e9298536edf176c12f379b",
+    "sha256": "c05f8e8d16bd8ae1c8d0b0abf6e8b9671051bde61653c4986304c2de3a1cf5d4",
     "linked_local_files": []
   },
   {
@@ -1464,7 +1499,7 @@
     "description": ">",
     "path": "skills/caveman/SKILL.md",
     "relative_directory": "skills/caveman",
-    "sha256": "3edd677596cbf12f010f25f05dfb1e8a6c9c178d92499c86e5b5afa44c86c16c",
+    "sha256": "fec5718a391dd9d8c89746d39e0cc0fa7aa5b50447669a15e44c3244167828c0",
     "linked_local_files": []
   },
   {
@@ -1474,7 +1509,7 @@
     "description": ">",
     "path": "skills/caveman-commit/SKILL.md",
     "relative_directory": "skills/caveman-commit",
-    "sha256": "58db7b8efab911a629c26e7132517d9076e4e3645009eb604cb8c25663477841",
+    "sha256": "c788a282fc75b981b421dfdad5d84ea7f83f946c126daa39cfc7d3f97845e193",
     "linked_local_files": []
   },
   {
@@ -1484,7 +1519,7 @@
     "description": ">",
     "path": "skills/caveman-compress/SKILL.md",
     "relative_directory": "skills/caveman-compress",
-    "sha256": "3167d62440eee99c0e5b224d7f8b8ebcfe37efba38bc5bbee24f0d00da72a688",
+    "sha256": "377b0b8682d9db1a832c20ee6732ed0f19f55e4f7048955296128244c869c916",
     "linked_local_files": [
       "skills/caveman-compress/scripts/__main__.py"
     ]
@@ -1496,7 +1531,7 @@
     "description": ">",
     "path": "skills/caveman-discover/SKILL.md",
     "relative_directory": "skills/caveman-discover",
-    "sha256": "d1efb1d986c8956d37f7aff3793734a6e1af9532f88fe231b6465124d655b332",
+    "sha256": "0483d17fce14ca5bbfcf1e085c180412dc20a672f5e8e4171fd0bbbb6f42b81a",
     "linked_local_files": []
   },
   {
@@ -1506,17 +1541,17 @@
     "description": ">",
     "path": "skills/caveman-evidence-review/SKILL.md",
     "relative_directory": "skills/caveman-evidence-review",
-    "sha256": "239bb91fdac9a780bf309401f4c0f581c38ea29a7caeda516745aa439f774049",
+    "sha256": "05bd896c76a41918fe7b87113dabe852117727a579a7e445891aa41391ed57c2",
     "linked_local_files": []
   },
   {
     "source_repo": "juliusbrussee/caveman",
     "repo_key": "juliusbrussee__caveman",
     "skill_name": "caveman-explore",
-    "description": "Read-only repository explorer. Use PROACTIVELY for cold-start exploration, broad cross-file localization, or when a direct search has failed and you need to find where something lives. Skip it when the issue already names the exact file or symbol, or a previous turn already returned usable file:line evidence. Returns only compact path:line citations; its reads and greps never enter the main conversation.",
+    "description": "Read-only repository explorer for cold-start orientation, broad cross-file localization, or when a direct search failed. Skip it when the exact file or symbol is already named. Returns path:line citations only; its reads stay out of main context.",
     "path": "skills/caveman-explore/SKILL.md",
     "relative_directory": "skills/caveman-explore",
-    "sha256": "71afe67eac052ecedc28cb03937d7191b35c216f844676d9bcf49cc4ebae2cb4",
+    "sha256": "908f504ce45f5f8517ac7b64dc89fef57c4519d26f92b0b1843febf4b6fe2ac8",
     "linked_local_files": []
   },
   {
@@ -1526,17 +1561,17 @@
     "description": ">",
     "path": "skills/caveman-help/SKILL.md",
     "relative_directory": "skills/caveman-help",
-    "sha256": "590d6c6c17254bda56d18da7cc9d0bf252aeec5d1c78b77dd7ae4cabb8404f89",
+    "sha256": "e704f9504ebe9da3b527d5df3ca5a940efc34a18c61854102da5fe69e8f24b98",
     "linked_local_files": []
   },
   {
     "source_repo": "juliusbrussee/caveman",
     "repo_key": "juliusbrussee__caveman",
     "skill_name": "caveman-learn",
-    "description": "Close the loop on a Caveman learn report \u2014 review the ranked token sinks, apply cost-lowering fixes (trim config, offload recurring context to cavemem) with per-edit consent, and report what those fixes returned with their attribution. Use when the user runs \"caveman learn\", asks to lower their agent's token cost, asks what caveman has saved them, wants to trim a heavy CLAUDE.md, or wants to offload context they re-paste every session into cavemem.",
+    "description": "Act on a Caveman learn report - review the ranked token sinks, apply cost-lowering fixes with per-edit consent, and report what those fixes returned. Use when asked to lower an agent's token cost, what caveman has saved, to trim a heavy CLAUDE.md, or to offload re-pasted context into cavemem.",
     "path": "skills/caveman-learn/SKILL.md",
     "relative_directory": "skills/caveman-learn",
-    "sha256": "1d0597108fba2f38fb60e4ab1ba100cf2843405fd8b1ec544812ec64f63235a9",
+    "sha256": "8b210c266f5c14cfded85b1c32b3742b4b23b4a0628b9cafa6627fd954609026",
     "linked_local_files": [
       "engine/CLAUDE.md",
       "engine/compressors/invariants.go",
@@ -1562,7 +1597,7 @@
     "description": ">",
     "path": "skills/caveman-manage/SKILL.md",
     "relative_directory": "skills/caveman-manage",
-    "sha256": "487554bc7e66c1b23b9813aab9ef3d30d5d227f238bea060ca3923353f04abfd",
+    "sha256": "3404a3c8651d63b6a7c02ccda17fcb4fca2489e931bb814580979a9ff548a48e",
     "linked_local_files": []
   },
   {
@@ -1572,7 +1607,7 @@
     "description": ">",
     "path": "skills/caveman-optimize/SKILL.md",
     "relative_directory": "skills/caveman-optimize",
-    "sha256": "3c040f1fbe2a6a891a135c988f05d0db3f8174bebbe19f00b856dc02e4a52e69",
+    "sha256": "93f391beb93198b5bf9c0c21bc8b7b194e57cb7855fbf05384a4a5d6dd8c06cb",
     "linked_local_files": []
   },
   {
@@ -1582,7 +1617,7 @@
     "description": ">",
     "path": "skills/caveman-review/SKILL.md",
     "relative_directory": "skills/caveman-review",
-    "sha256": "9ef09065f26b9781275b5a4775e14870e331fab833efb2a2aa33f3205a2b83c3",
+    "sha256": "599330563f19b5c59c3efddffcd7e8d9098b74c29817ab422ccd3253b103fcb8",
     "linked_local_files": []
   },
   {
@@ -1592,7 +1627,7 @@
     "description": ">",
     "path": "skills/caveman-setup/SKILL.md",
     "relative_directory": "skills/caveman-setup",
-    "sha256": "254ddc40c355c7096b36230a46794d04a1b10b5f9ab7b62251d42690a4e01f04",
+    "sha256": "42c8b8eeba19c6d4ffd3c421be60a7e8b5c0e5108fd4496f0be3c7ced90bfd5f",
     "linked_local_files": []
   },
   {
@@ -1602,7 +1637,7 @@
     "description": ">",
     "path": "skills/caveman-stats/SKILL.md",
     "relative_directory": "skills/caveman-stats",
-    "sha256": "b78227f62898b0360d21f2a94d48e9d7a80629cb879cc7b7f9b45b4a241eba90",
+    "sha256": "c17fceb216fd3124a48821139d0ed2b71b4392d9a9de7bd1e939be2b334a96aa",
     "linked_local_files": []
   },
   {
@@ -2305,6 +2340,16 @@
   {
     "source_repo": "cursor/plugins",
     "repo_key": "cursor__plugins",
+    "skill_name": "Make Bot UI",
+    "description": ">-",
+    "path": "pstack/skills/make-bot-ui/SKILL.md",
+    "relative_directory": "pstack/skills/make-bot-ui",
+    "sha256": "19570abe130a9659f5238a78cabd2768beba448cdfa49bfb14156e08f04813e3",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "cursor/plugins",
+    "repo_key": "cursor__plugins",
     "skill_name": "no-comments",
     "description": "Spawn Comment Sicko, fix accepted findings, and offer encodings for claimed constraints.",
     "path": "pstack/skills/no-comments/SKILL.md",
@@ -2344,8 +2389,7 @@
       "pstack/skills/poteto-mode/playbooks/trace-forensics.md",
       "pstack/skills/poteto-mode/playbooks/visual-parity.md",
       "pstack/skills/poteto-mode/playbooks/worktree-cleanup.md",
-      "pstack/skills/poteto-mode/references/bugbot-triage.md",
-      "pstack/skills/poteto-mode/references/plan.md"
+      "pstack/skills/poteto-mode/references/bugbot-triage.md"
     ]
   },
   {
@@ -3134,7 +3178,7 @@
     "description": "Suggests manual context compaction at logical intervals to preserve context through task phases rather than arbitrary auto-compaction. Use when a session is approaching a context limit and a task phase is a natural place to compact.",
     "path": ".agents/skills/strategic-compact/SKILL.md",
     "relative_directory": ".agents/skills/strategic-compact",
-    "sha256": "b63d2ca2400992481192f234b29540c2a34473ce86dc62cbdace35bfa40a0451",
+    "sha256": "945357bb764056e2f3acd36924a2ee6ccbdfb254135d360ff3c1af84aa8923d3",
     "linked_local_files": []
   },
   {
@@ -3696,7 +3740,7 @@
     "description": "Suggests manual context compaction at logical intervals to preserve context through task phases rather than arbitrary auto-compaction.",
     "path": ".kiro/skills/strategic-compact/SKILL.md",
     "relative_directory": ".kiro/skills/strategic-compact",
-    "sha256": "3a7fe84ba15bc12fd1d8b722ca674a4bc99415fc5107dd7d5bb6133948d5711f",
+    "sha256": "2e725bafb4ded59ba41d5e8251b76f87bf95f9c4615b8a0abcfe0c536c4df8ed",
     "linked_local_files": []
   },
   {
@@ -4576,7 +4620,7 @@
     "description": "LLM API\u306e\u4f7f\u7528\u91cf\u306e\u30b3\u30b9\u30c8\u6700\u9069\u5316\u30d1\u30bf\u30fc\u30f3 \u2014 \u30bf\u30b9\u30af\u306e\u8907\u96d1\u3055\u306b\u3088\u308b\u30e2\u30c7\u30eb\u30eb\u30fc\u30c6\u30a3\u30f3\u30b0\u3001\u4e88\u7b97\u8ffd\u8de1\u3001\u30ea\u30c8\u30e9\u30a4\u30ed\u30b8\u30c3\u30af\u3001\u30d7\u30ed\u30f3\u30d7\u30c8\u30ad\u30e3\u30c3\u30b7\u30f3\u30b0\u3002",
     "path": "docs/ja-JP/skills/cost-aware-llm-pipeline/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/cost-aware-llm-pipeline",
-    "sha256": "f1ece9b265a6d59be3c8b07d573f932c1c7d1484d11d75bbff0493a9ce07ec11",
+    "sha256": "dff5c6f753c1a0691d1671af24013d1c22b0f21e1b1c473ae69fd1f6430ddcd0",
     "linked_local_files": []
   },
   {
@@ -7374,7 +7418,7 @@
     "description": "LLM API \u4f7f\u7528\u6210\u672c\u4f18\u5316\u6a21\u5f0f \u2014\u2014 \u57fa\u4e8e\u4efb\u52a1\u590d\u6742\u5ea6\u7684\u6a21\u578b\u8def\u7531\u3001\u9884\u7b97\u8ddf\u8e2a\u3001\u91cd\u8bd5\u903b\u8f91\u548c\u63d0\u793a\u7f13\u5b58\u3002",
     "path": "docs/zh-CN/skills/cost-aware-llm-pipeline/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/cost-aware-llm-pipeline",
-    "sha256": "e7b853ff6a5a957486a1947a6c1a6296bdbee5d1b10020b135a394ae1edfc810",
+    "sha256": "01193c77489cfef8218042eaa6f3c6f84d917069cfe22e704e77dd7516b3b698",
     "linked_local_files": []
   },
   {
@@ -9572,7 +9616,7 @@
     "description": "Cost optimization patterns for LLM API usage \u2014 model routing by task complexity, budget tracking, retry logic, and prompt caching. Use when LLM spend needs to come down, or when routing tasks across model tiers and budgets.",
     "path": "skills/cost-aware-llm-pipeline/SKILL.md",
     "relative_directory": "skills/cost-aware-llm-pipeline",
-    "sha256": "7df1b284d527e4a089a241650baee1d7f96a07f5cc3d97e2dd91d4d25bff81e1",
+    "sha256": "2d6c19c2d21a473db8720c4f723f17d265eeec48f84614f0169be2df2fbe28ff",
     "linked_local_files": []
   },
   {
@@ -9632,7 +9676,7 @@
     "description": "Multi-platform content distribution across X, LinkedIn, Threads, and Bluesky. Adapts content per platform using content-engine patterns. Never posts identical content cross-platform. Use when the user wants to distribute content across social platforms.",
     "path": "skills/crosspost/SKILL.md",
     "relative_directory": "skills/crosspost",
-    "sha256": "e5366ab70222c8f36903e8a0c0e39731e2973917f7a14b962047513fa894547a",
+    "sha256": "03bd2ef6e08191cd336e9b8e7a55c29040e7a3225defdaeab1b51d983565661f",
     "linked_local_files": []
   },
   {
@@ -9692,7 +9736,7 @@
     "description": "Build a fully automated AI-powered data collection agent for any public source \u2014 job boards, prices, news, GitHub, sports, anything. Runs on a schedule, enriches data with a free LLM (Gemini Flash), stores results in Notion/Sheets/Supabase, and learns from user feedback. Runs 100% free on GitHub Actions. Use when the user wants to monitor, collect, or track any public data automatically.",
     "path": "skills/data-scraper-agent/SKILL.md",
     "relative_directory": "skills/data-scraper-agent",
-    "sha256": "8354c4606b7a8ac47e00be09f23335372cbafc0c63099c9ef394c9e40dd118ee",
+    "sha256": "662e884d58f4089bd8e090ef8d32042b85a5d9b4715906a89072002704451c0a",
     "linked_local_files": []
   },
   {
@@ -9722,7 +9766,7 @@
     "description": "Multi-source deep research using firecrawl and exa MCPs. Searches the web, synthesizes findings, and delivers cited reports with source attribution. Use when the user wants thorough research on any topic with evidence and citations.",
     "path": "skills/deep-research/SKILL.md",
     "relative_directory": "skills/deep-research",
-    "sha256": "f85e06874ffd0fcfea6051b4292f45fc2b7e4cd47586659817ddbafd6bea3ede",
+    "sha256": "72e184f5d0f31ca4d45286753409d8c8431b025e8ac3800dcc9f32d9e930f58a",
     "linked_local_files": []
   },
   {
@@ -9922,7 +9966,7 @@
     "description": "Evidence-first mailbox triage, drafting, send verification, and sent-mail-safe follow-up workflow for ECC. Use when the user wants to organize email, draft or send through the real mail surface, or prove what landed in Sent.",
     "path": "skills/email-ops/SKILL.md",
     "relative_directory": "skills/email-ops",
-    "sha256": "627bc4a72c07b00ba7f5e3d78457a6d80e0817cb8a6507e8513abe46586586df",
+    "sha256": "188b226ec0dfd4304d6c9b60498b5f0dc2b3c97b14e159e5bde5db323ad45721",
     "linked_local_files": []
   },
   {
@@ -9982,7 +10026,7 @@
     "description": "Neural search via Exa MCP for web, code, and company research. Use when the user needs web search, code examples, company intel, people lookup, or AI-powered deep research with Exa's neural search engine.",
     "path": "skills/exa-search/SKILL.md",
     "relative_directory": "skills/exa-search",
-    "sha256": "cfab0ee1af18b56cd2e2726febb023ab77205bf5c082cce5331aadff6e02e7f5",
+    "sha256": "ebc8e7ab299a6649f575e218f0c25f4d869017b8ad4b5f7725cedceaf82700e5",
     "linked_local_files": []
   },
   {
@@ -10114,7 +10158,7 @@
     "description": "Fact-forcing gate that blocks Edit/Write/Bash (including MultiEdit) and demands concrete investigation (importers, data schemas, user instruction) before allowing the action. Measurably improves output quality by +2.25 points vs ungated agents.",
     "path": "skills/gateguard/SKILL.md",
     "relative_directory": "skills/gateguard",
-    "sha256": "745b0f84643d8a9ab82ae10366cc8491af0265b3505bce6fed7ff80e107c3fdc",
+    "sha256": "1a9f7d718c3986bf424ab13f53b4aaf75607b3e9e4d229a478b4f88489edf2ae",
     "linked_local_files": []
   },
   {
@@ -10144,7 +10188,7 @@
     "description": "GitHub repository operations, automation, and management. Issue triage, PR management, CI/CD operations, release management, and security monitoring using the gh CLI. Use when the user wants to manage GitHub issues, PRs, CI status, releases, contributors, stale items, or any GitHub operational task beyond simple git commands.",
     "path": "skills/github-ops/SKILL.md",
     "relative_directory": "skills/github-ops",
-    "sha256": "0688938f4d45a66108de4d64c5400c60f5a4fd00141ec254acd55b4bd7f127e8",
+    "sha256": "887d1eda5f29a8f57d875c054b410db358f7460100bc36385ab3e5fda15aecd1",
     "linked_local_files": []
   },
   {
@@ -10446,7 +10490,7 @@
     "description": "Use this skill when retrieving Jira tickets, analyzing requirements, updating ticket status, adding comments, or transitioning issues. Provides Jira API patterns via MCP or direct REST calls.",
     "path": "skills/jira-integration/SKILL.md",
     "relative_directory": "skills/jira-integration",
-    "sha256": "4cabafb56cf071653740cfe1b1a416dd859a736623dd92cc674a3bbb83238b41",
+    "sha256": "ce0a0c815e3112a1e80d4dbd1d2d0c804c2af0371628d325e04d7ffbddf4247e",
     "linked_local_files": []
   },
   {
@@ -10596,7 +10640,7 @@
     "description": "AI-native lead intelligence and outreach pipeline. Replaces Apollo, Clay, and ZoomInfo with agent-powered signal scoring, mutual ranking, warm path discovery, source-derived voice modeling, and channel-specific outreach across email, LinkedIn, and X. Use when the user wants to find, qualify, and reach high-value contacts.",
     "path": "skills/lead-intelligence/SKILL.md",
     "relative_directory": "skills/lead-intelligence",
-    "sha256": "878fdcca964382f9ae8058310d08a84617c13d6154c626253ee6f397935a7f5d",
+    "sha256": "1b24027c5ef0ebfb046990433905b80d8df63d93f83fff9fdef4f74ad883a5f2",
     "linked_local_files": []
   },
   {
@@ -10688,7 +10732,7 @@
     "description": "Conduct market research, competitive analysis, investor due diligence, and industry intelligence with source attribution and decision-oriented summaries. Use when the user wants market sizing, competitor comparisons, fund research, technology scans, or research that informs business decisions.",
     "path": "skills/market-research/SKILL.md",
     "relative_directory": "skills/market-research",
-    "sha256": "b50a353512a01190e48e0792a6f1fdaf2983cfcb38c7966db751a8c6a98dad55",
+    "sha256": "8cfc36dc8a93476d092115f3fc70c631dcab14fcd6e04371160fc4fb29547800",
     "linked_local_files": []
   },
   {
@@ -10807,10 +10851,10 @@
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
     "skill_name": "nasiko-control-plane",
-    "description": "Install, detect, and operate the optional Nasiko agent control plane through ECC with pinned artifacts, explicit consent, and telemetry and secrets boundaries.",
+    "description": "Use the experimental Nasiko CLI lifecycle bridge for pinned installation, read-only status, and qualified uninstall with explicit consent and telemetry and secrets boundaries.",
     "path": "skills/nasiko-control-plane/SKILL.md",
     "relative_directory": "skills/nasiko-control-plane",
-    "sha256": "38a3d21bb1c7c04d45c718a33f2aff7095911d3e747c62d8ce986d8a70bb71b0",
+    "sha256": "30cf6f536cb55faa49ac02b22eed0282af4a6a59ce20e087c667bb35ddf4c744",
     "linked_local_files": []
   },
   {
@@ -11759,7 +11803,7 @@
     "description": "Agent-driven scheduling and publishing of social media posts across 13 platforms via SocialClaw. Use when the user wants to publish to X, LinkedIn, Instagram, Facebook Pages, TikTok, Discord, Telegram, YouTube, Reddit, WordPress, or Pinterest \u2014 or when managing campaigns, uploading media, or monitoring post delivery status.",
     "path": "skills/social-publisher/SKILL.md",
     "relative_directory": "skills/social-publisher",
-    "sha256": "7476e2b3cb225689c0759bc20fb73be19752dcf468afb51c32e611aa9ed2711d",
+    "sha256": "c2fde5ac9d953cb649ce69331ca49be1df854d051ebc31eb54423c5d262337f6",
     "linked_local_files": []
   },
   {
@@ -11809,7 +11853,7 @@
     "description": "Suggests manual context compaction at logical intervals to preserve context through task phases rather than arbitrary auto-compaction. Use when a session is approaching a context limit and a task phase is a natural place to compact.",
     "path": "skills/strategic-compact/SKILL.md",
     "relative_directory": "skills/strategic-compact",
-    "sha256": "520148d566ff92a94da8890a8418d48107318edf22cc0b8e9e634609292bcd85",
+    "sha256": "44a71c6dcc3fdde8061b8a78296c5d37233e4accc8cf3c794e29ac5b9f2eee28",
     "linked_local_files": []
   },
   {
@@ -12104,7 +12148,7 @@
     "description": "X/Twitter API integration for posting tweets, threads, reading timelines, search, and analytics. Covers OAuth auth patterns, rate limits, and platform-native content posting. Use when the user wants to interact with X programmatically.",
     "path": "skills/x-api/SKILL.md",
     "relative_directory": "skills/x-api",
-    "sha256": "1316fb056cc7671fcba367eee5b375ba80b678e1601ffedb15b1c946d06ae8cb",
+    "sha256": "997937ac9dc11779c6bb6c16833630836a22f1b2f115482982f6350474fa8ff1",
     "linked_local_files": []
   },
   {
@@ -12114,7 +12158,7 @@
     "description": "Research what people actually say about any topic in the last 30 days. Pulls posts and engagement from Reddit, X, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the web. Includes a doctor health check to diagnose broken or missing sources.",
     "path": "skills/last30days/SKILL.md",
     "relative_directory": "skills/last30days",
-    "sha256": "cad0d0f0459f05692dddf14ec11d6d9ae9e8e5f1b3a1b7ddb132b4fc6967c5fe",
+    "sha256": "95ca4651854f98a189035a1f6d4316026f5106a0789723e786d03a82a622d4ec",
     "linked_local_files": [
       "skills/last30days/references/save-html-brief.md",
       "skills/last30days/scripts/briefing.py",
@@ -12165,6 +12209,7 @@
       "skills/last30days/scripts/lib/linkedin.py",
       "skills/last30days/scripts/lib/log.py",
       "skills/last30days/scripts/lib/normalize.py",
+      "skills/last30days/scripts/lib/parallel_mcp.py",
       "skills/last30days/scripts/lib/permission_preflight.py",
       "skills/last30days/scripts/lib/perplexity.py",
       "skills/last30days/scripts/lib/pinterest.py",

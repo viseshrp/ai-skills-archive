@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T19:14:39.602870+00:00",
+  "generated_at": "2026-08-30T19:04:02.119991+00:00",
   "exact_skill_duplicates": [
     {
       "sha256": "060f50513003731e9c0e7f78e6a6a9b8cb178a74a2ec2a6ca75cdae804f0d564",
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "sha256": "3167d62440eee99c0e5b224d7f8b8ebcfe37efba38bc5bbee24f0d00da72a688",
+      "sha256": "377b0b8682d9db1a832c20ee6732ed0f19f55e4f7048955296128244c869c916",
       "count": 2,
       "locations": [
         {
@@ -40,20 +40,6 @@
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/caveman-compress/SKILL.md"
-        }
-      ]
-    },
-    {
-      "sha256": "3edd677596cbf12f010f25f05dfb1e8a6c9c178d92499c86e5b5afa44c86c16c",
-      "count": 2,
-      "locations": [
-        {
-          "source_repo": "juliusbrussee/caveman",
-          "path": "plugins/caveman/skills/caveman/SKILL.md"
-        },
-        {
-          "source_repo": "juliusbrussee/caveman",
-          "path": "skills/caveman/SKILL.md"
         }
       ]
     },
@@ -86,7 +72,7 @@
       ]
     },
     {
-      "sha256": "b74f374f6aae6e9a31e78e7d876860406fe5833378e9298536edf176c12f379b",
+      "sha256": "c05f8e8d16bd8ae1c8d0b0abf6e8b9671051bde61653c4986304c2de3a1cf5d4",
       "count": 2,
       "locations": [
         {
@@ -96,20 +82,6 @@
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/cavecrew/SKILL.md"
-        }
-      ]
-    },
-    {
-      "sha256": "b78227f62898b0360d21f2a94d48e9d7a80629cb879cc7b7f9b45b4a241eba90",
-      "count": 2,
-      "locations": [
-        {
-          "source_repo": "juliusbrussee/caveman",
-          "path": "plugins/caveman/skills/caveman-stats/SKILL.md"
-        },
-        {
-          "source_repo": "juliusbrussee/caveman",
-          "path": "skills/caveman-stats/SKILL.md"
         }
       ]
     },
@@ -124,6 +96,20 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/competitive-report-structure/SKILL.md"
+        }
+      ]
+    },
+    {
+      "sha256": "fec5718a391dd9d8c89746d39e0cc0fa7aa5b50447669a15e44c3244167828c0",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "plugins/caveman/skills/caveman/SKILL.md"
+        },
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "skills/caveman/SKILL.md"
         }
       ]
     }
@@ -836,12 +822,12 @@
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "plugins/caveman/skills/cavecrew/SKILL.md",
-          "sha256": "b74f374f6aae6e9a31e78e7d876860406fe5833378e9298536edf176c12f379b"
+          "sha256": "c05f8e8d16bd8ae1c8d0b0abf6e8b9671051bde61653c4986304c2de3a1cf5d4"
         },
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/cavecrew/SKILL.md",
-          "sha256": "b74f374f6aae6e9a31e78e7d876860406fe5833378e9298536edf176c12f379b"
+          "sha256": "c05f8e8d16bd8ae1c8d0b0abf6e8b9671051bde61653c4986304c2de3a1cf5d4"
         }
       ]
     },
@@ -852,12 +838,12 @@
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "plugins/caveman/skills/caveman/SKILL.md",
-          "sha256": "3edd677596cbf12f010f25f05dfb1e8a6c9c178d92499c86e5b5afa44c86c16c"
+          "sha256": "fec5718a391dd9d8c89746d39e0cc0fa7aa5b50447669a15e44c3244167828c0"
         },
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/caveman/SKILL.md",
-          "sha256": "3edd677596cbf12f010f25f05dfb1e8a6c9c178d92499c86e5b5afa44c86c16c"
+          "sha256": "fec5718a391dd9d8c89746d39e0cc0fa7aa5b50447669a15e44c3244167828c0"
         }
       ]
     },
@@ -868,12 +854,12 @@
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "plugins/caveman/skills/caveman-compress/SKILL.md",
-          "sha256": "3167d62440eee99c0e5b224d7f8b8ebcfe37efba38bc5bbee24f0d00da72a688"
+          "sha256": "377b0b8682d9db1a832c20ee6732ed0f19f55e4f7048955296128244c869c916"
         },
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/caveman-compress/SKILL.md",
-          "sha256": "3167d62440eee99c0e5b224d7f8b8ebcfe37efba38bc5bbee24f0d00da72a688"
+          "sha256": "377b0b8682d9db1a832c20ee6732ed0f19f55e4f7048955296128244c869c916"
         }
       ]
     },
@@ -889,7 +875,7 @@
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/caveman-stats/SKILL.md",
-          "sha256": "b78227f62898b0360d21f2a94d48e9d7a80629cb879cc7b7f9b45b4a241eba90"
+          "sha256": "c17fceb216fd3124a48821139d0ed2b71b4392d9a9de7bd1e939be2b334a96aa"
         }
       ]
     },
@@ -1379,17 +1365,17 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "docs/ja-JP/skills/cost-aware-llm-pipeline/SKILL.md",
-          "sha256": "f1ece9b265a6d59be3c8b07d573f932c1c7d1484d11d75bbff0493a9ce07ec11"
+          "sha256": "dff5c6f753c1a0691d1671af24013d1c22b0f21e1b1c473ae69fd1f6430ddcd0"
         },
         {
           "source_repo": "affaan-m/ECC",
           "path": "docs/zh-CN/skills/cost-aware-llm-pipeline/SKILL.md",
-          "sha256": "e7b853ff6a5a957486a1947a6c1a6296bdbee5d1b10020b135a394ae1edfc810"
+          "sha256": "01193c77489cfef8218042eaa6f3c6f84d917069cfe22e704e77dd7516b3b698"
         },
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/cost-aware-llm-pipeline/SKILL.md",
-          "sha256": "7df1b284d527e4a089a241650baee1d7f96a07f5cc3d97e2dd91d4d25bff81e1"
+          "sha256": "2d6c19c2d21a473db8720c4f723f17d265eeec48f84614f0169be2df2fbe28ff"
         }
       ]
     },
@@ -1504,7 +1490,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/crosspost/SKILL.md",
-          "sha256": "e5366ab70222c8f36903e8a0c0e39731e2973917f7a14b962047513fa894547a"
+          "sha256": "03bd2ef6e08191cd336e9b8e7a55c29040e7a3225defdaeab1b51d983565661f"
         }
       ]
     },
@@ -1630,7 +1616,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/data-scraper-agent/SKILL.md",
-          "sha256": "8354c4606b7a8ac47e00be09f23335372cbafc0c63099c9ef394c9e40dd118ee"
+          "sha256": "662e884d58f4089bd8e090ef8d32042b85a5d9b4715906a89072002704451c0a"
         }
       ]
     },
@@ -1702,7 +1688,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/deep-research/SKILL.md",
-          "sha256": "f85e06874ffd0fcfea6051b4292f45fc2b7e4cd47586659817ddbafd6bea3ede"
+          "sha256": "72e184f5d0f31ca4d45286753409d8c8431b025e8ac3800dcc9f32d9e930f58a"
         }
       ]
     },
@@ -2118,7 +2104,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/email-ops/SKILL.md",
-          "sha256": "627bc4a72c07b00ba7f5e3d78457a6d80e0817cb8a6507e8513abe46586586df"
+          "sha256": "188b226ec0dfd4304d6c9b60498b5f0dc2b3c97b14e159e5bde5db323ad45721"
         }
       ]
     },
@@ -2269,7 +2255,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/exa-search/SKILL.md",
-          "sha256": "cfab0ee1af18b56cd2e2726febb023ab77205bf5c082cce5331aadff6e02e7f5"
+          "sha256": "ebc8e7ab299a6649f575e218f0c25f4d869017b8ad4b5f7725cedceaf82700e5"
         }
       ]
     },
@@ -2551,7 +2537,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/gateguard/SKILL.md",
-          "sha256": "745b0f84643d8a9ab82ae10366cc8491af0265b3505bce6fed7ff80e107c3fdc"
+          "sha256": "1a9f7d718c3986bf424ab13f53b4aaf75607b3e9e4d229a478b4f88489edf2ae"
         }
       ]
     },
@@ -2609,7 +2595,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/github-ops/SKILL.md",
-          "sha256": "0688938f4d45a66108de4d64c5400c60f5a4fd00141ec254acd55b4bd7f127e8"
+          "sha256": "887d1eda5f29a8f57d875c054b410db358f7460100bc36385ab3e5fda15aecd1"
         }
       ]
     },
@@ -3163,7 +3149,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/jira-integration/SKILL.md",
-          "sha256": "4cabafb56cf071653740cfe1b1a416dd859a736623dd92cc674a3bbb83238b41"
+          "sha256": "ce0a0c815e3112a1e80d4dbd1d2d0c804c2af0371628d325e04d7ffbddf4247e"
         }
       ]
     },
@@ -3521,7 +3507,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/lead-intelligence/SKILL.md",
-          "sha256": "878fdcca964382f9ae8058310d08a84617c13d6154c626253ee6f397935a7f5d"
+          "sha256": "1b24027c5ef0ebfb046990433905b80d8df63d93f83fff9fdef4f74ad883a5f2"
         }
       ]
     },
@@ -3668,7 +3654,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/market-research/SKILL.md",
-          "sha256": "b50a353512a01190e48e0792a6f1fdaf2983cfcb38c7966db751a8c6a98dad55"
+          "sha256": "8cfc36dc8a93476d092115f3fc70c631dcab14fcd6e04371160fc4fb29547800"
         }
       ]
     },
@@ -5443,12 +5429,12 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/strategic-compact/SKILL.md",
-          "sha256": "b63d2ca2400992481192f234b29540c2a34473ce86dc62cbdace35bfa40a0451"
+          "sha256": "945357bb764056e2f3acd36924a2ee6ccbdfb254135d360ff3c1af84aa8923d3"
         },
         {
           "source_repo": "affaan-m/ECC",
           "path": ".kiro/skills/strategic-compact/SKILL.md",
-          "sha256": "3a7fe84ba15bc12fd1d8b722ca674a4bc99415fc5107dd7d5bb6133948d5711f"
+          "sha256": "2e725bafb4ded59ba41d5e8251b76f87bf95f9c4615b8a0abcfe0c536c4df8ed"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -5473,7 +5459,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/strategic-compact/SKILL.md",
-          "sha256": "520148d566ff92a94da8890a8418d48107318edf22cc0b8e9e634609292bcd85"
+          "sha256": "44a71c6dcc3fdde8061b8a78296c5d37233e4accc8cf3c794e29ac5b9f2eee28"
         }
       ]
     },
@@ -6054,7 +6040,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/x-api/SKILL.md",
-          "sha256": "1316fb056cc7671fcba367eee5b375ba80b678e1601ffedb15b1c946d06ae8cb"
+          "sha256": "997937ac9dc11779c6bb6c16833630836a22f1b2f115482982f6350474fa8ff1"
         }
       ]
     }
