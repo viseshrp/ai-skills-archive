@@ -26,7 +26,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 ## Source Repositories and Gists
 
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
-  - Archived commit: `d2c37ef6225dd8726cdd369a8030307f48592d26`
+  - Archived commit: `48cb1168aeaaa70dfc2bbf709eddfa2a8ed8129a`
   - Snapshot: [`archives/addyosmani__agent-skills/snapshot`](archives/addyosmani__agent-skills/snapshot)
   - Skills discovered: 25
   - Files retained in reduced snapshot: 36
@@ -36,17 +36,17 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
-  - Archived commit: `e8bf858be714d03cef6b138d81f3aab9b7f72c43`
+  - Archived commit: `6b7ee6dcae29c0fbb46e0017538f9cef84c3136b`
   - Snapshot: [`archives/Imbad0202__academic-research-skills/snapshot`](archives/Imbad0202__academic-research-skills/snapshot)
   - Skills discovered: 4
-  - Files retained in reduced snapshot: 602
+  - Files retained in reduced snapshot: 606
 - [mattpocock/skills](https://github.com/mattpocock/skills)
-  - Archived commit: `6654f6b60cd9d5be8b54c6fafe44346dabeb3b76`
+  - Archived commit: `3cca18b368ae95cdbdebbff572ccafa662551015`
   - Snapshot: [`archives/mattpocock__skills/snapshot`](archives/mattpocock__skills/snapshot)
   - Skills discovered: 37
   - Files retained in reduced snapshot: 62
 - [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman)
-  - Archived commit: `df2ccd85c94ec3c8289cb62ac020d241ccfb0c60`
+  - Archived commit: `5184b3d11ac6a1acb7d44b9bfaa31698157cff97`
   - Snapshot: [`archives/juliusbrussee__caveman/snapshot`](archives/juliusbrussee__caveman/snapshot)
   - Skills discovered: 24
   - Files retained in reduced snapshot: 40
@@ -56,32 +56,32 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 14
   - Files retained in reduced snapshot: 37
 - [cursor/plugins](https://github.com/cursor/plugins)
-  - Archived commit: `68836ddaf5697224520f1847d90cdb90ca8babaa`
+  - Archived commit: `93b00b89ef425a9c1bac0d0b317dfc49c930ac99`
   - Snapshot: [`archives/cursor__plugins/snapshot`](archives/cursor__plugins/snapshot)
-  - Skills discovered: 84
-  - Files retained in reduced snapshot: 183
+  - Skills discovered: 85
+  - Files retained in reduced snapshot: 185
 - [affaan-m/ECC](https://github.com/affaan-m/ECC)
-  - Archived commit: `a89cec96581537f875cbec38a8e16eb22d11d829`
+  - Archived commit: `e04ea0b9cc8248686edf5ac751cadff550e162b8`
   - Snapshot: [`archives/affaan-m__ECC/snapshot`](archives/affaan-m__ECC/snapshot)
   - Skills discovered: 898
-  - Files retained in reduced snapshot: 1034
+  - Files retained in reduced snapshot: 1035
 - [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
-  - Archived commit: `a218edadbc3361672f5e5e2cd72a8212b0b3fbb8`
+  - Archived commit: `56ba5ace27e4697aedc60aa0b1e1bfdcd592ff20`
   - Snapshot: [`archives/mvanhorn__last30days-skill/snapshot`](archives/mvanhorn__last30days-skill/snapshot)
   - Skills discovered: 1
-  - Files retained in reduced snapshot: 122
+  - Files retained in reduced snapshot: 125
 - [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
-  - Archived commit: `2ed6c52c9d7e5e56942508591085fd45dea277d3`
+  - Archived commit: `974d940a1c5344210874150b98ff0d2c861fab6a`
   - Snapshot: [`archives/DietrichGebert__ponytail/snapshot`](archives/DietrichGebert__ponytail/snapshot)
   - Skills discovered: 12
   - Files retained in reduced snapshot: 12
 - [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop)
-  - Archived commit: `d30eddb9e04562234f2070b5ee63ca4649d9a05e`
+  - Archived commit: `000650b156983f5159695b441477f4e63b25dc85`
   - Snapshot: [`archives/petergyang__no-ai-slop/snapshot`](archives/petergyang__no-ai-slop/snapshot)
   - Skills discovered: 1
   - Files retained in reduced snapshot: 2
 - [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)
-  - Archived commit: `cbe69fb83c08a37cf54d5ec9ec6bb88c8bc9973c`
+  - Archived commit: `58494af57962b2d7a996b4d419474380a299af5e`
   - Snapshot: [`archives/ayghri__i-have-adhd/snapshot`](archives/ayghri__i-have-adhd/snapshot)
   - Skills discovered: 2
   - Files retained in reduced snapshot: 2
@@ -223,6 +223,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `writing-skills`: [`skills/writing-skills/SKILL.md`](archives/obra__Superpowers/snapshot/skills/writing-skills/SKILL.md)
 
 ### cursor/plugins
+- `advisor`: [`advisor/skills/advisor/SKILL.md`](archives/cursor__plugins/snapshot/advisor/skills/advisor/SKILL.md)
 - `check-agent-compatibility`: [`agent-compatibility/skills/check-agent-compatibility/SKILL.md`](archives/cursor__plugins/snapshot/agent-compatibility/skills/check-agent-compatibility/SKILL.md)
 - `cli-for-agents`: [`cli-for-agent/skills/cli-for-agents/SKILL.md`](archives/cursor__plugins/snapshot/cli-for-agent/skills/cli-for-agents/SKILL.md)
 - `continual-learning`: [`continual-learning/skills/continual-learning/SKILL.md`](archives/cursor__plugins/snapshot/continual-learning/skills/continual-learning/SKILL.md)

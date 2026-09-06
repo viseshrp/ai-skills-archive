@@ -531,3 +531,26 @@
 - Synced `Leonxlnx__taste-skill` at commit `ccbc15639c97` with 13 skills and 14 files.
 - Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
 - Fetch incident: the initial `addyosmani__agent-skills` cache fetch failed with exit status 128 because its disposable `.git` metadata was malformed. Preserved the full cache in a timestamped quarantine directory, then reran from fresh clones successfully; no unresolved source fetch failures remained.
+
+## 2026-09-06 19:02:33Z
+
+- Action: Weekly automation refresh
+- Sources synced: 14
+- Skills indexed: 1118
+- Exact duplicate groups: 8
+- Repeated skill names: 254
+- Synced `addyosmani__agent-skills` at commit `48cb1168aeaa` with 25 skills and 36 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `6b7ee6dcae29` with 4 skills and 606 files.
+- Synced `mattpocock__skills` at commit `3cca18b368ae` with 37 skills and 62 files.
+- Synced `juliusbrussee__caveman` at commit `5184b3d11ac6` with 24 skills and 40 files.
+- Synced `obra__Superpowers` at commit `b36e0829c6d0` with 14 skills and 37 files.
+- Synced `cursor__plugins` at commit `93b00b89ef42` with 85 skills and 185 files.
+- Synced `affaan-m__ECC` at commit `e04ea0b9cc82` with 898 skills and 1035 files.
+- Synced `mvanhorn__last30days-skill` at commit `56ba5ace27e4` with 1 skills and 125 files.
+- Synced `DietrichGebert__ponytail` at commit `974d940a1c53` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `000650b15698` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `58494af57962` with 2 skills and 2 files.
+- Synced `Leonxlnx__taste-skill` at commit `ccbc15639c97` with 13 skills and 14 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+- Fetch incident: the initial `addyosmani__agent-skills` cache fetch failed with exit status 128 in both sandboxed and network-approved runs because its disposable `.git` metadata was incomplete. Preserved the full cache as `ai-skills-archive-sync.corrupt-2026-09-06T190157Z`, then reran from fresh clones successfully; no unresolved source fetch failures remained.

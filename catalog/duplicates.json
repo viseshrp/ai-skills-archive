@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T19:04:02.119991+00:00",
+  "generated_at": "2026-09-06T19:02:33.870487+00:00",
   "exact_skill_duplicates": [
     {
       "sha256": "060f50513003731e9c0e7f78e6a6a9b8cb178a74a2ec2a6ca75cdae804f0d564",
@@ -86,6 +86,20 @@
       ]
     },
     {
+      "sha256": "c4d7354b4b063d54601fcdd5097a5b1713d1a1a2e386ac39efa438aa1ffef8ce",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "plugins/caveman/skills/caveman/SKILL.md"
+        },
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "skills/caveman/SKILL.md"
+        }
+      ]
+    },
+    {
       "sha256": "fe3ad1b5b6caa4709b2a75e22772771946f36c9592c281012e5d2df087412800",
       "count": 2,
       "locations": [
@@ -96,20 +110,6 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/competitive-report-structure/SKILL.md"
-        }
-      ]
-    },
-    {
-      "sha256": "fec5718a391dd9d8c89746d39e0cc0fa7aa5b50447669a15e44c3244167828c0",
-      "count": 2,
-      "locations": [
-        {
-          "source_repo": "juliusbrussee/caveman",
-          "path": "plugins/caveman/skills/caveman/SKILL.md"
-        },
-        {
-          "source_repo": "juliusbrussee/caveman",
-          "path": "skills/caveman/SKILL.md"
         }
       ]
     }
@@ -838,12 +838,12 @@
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "plugins/caveman/skills/caveman/SKILL.md",
-          "sha256": "fec5718a391dd9d8c89746d39e0cc0fa7aa5b50447669a15e44c3244167828c0"
+          "sha256": "c4d7354b4b063d54601fcdd5097a5b1713d1a1a2e386ac39efa438aa1ffef8ce"
         },
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/caveman/SKILL.md",
-          "sha256": "fec5718a391dd9d8c89746d39e0cc0fa7aa5b50447669a15e44c3244167828c0"
+          "sha256": "c4d7354b4b063d54601fcdd5097a5b1713d1a1a2e386ac39efa438aa1ffef8ce"
         }
       ]
     },
@@ -1663,7 +1663,7 @@
         {
           "source_repo": "Imbad0202/academic-research-skills",
           "path": "deep-research/SKILL.md",
-          "sha256": "08c348a60248504c7ba141a6c6e5f82b7d5cf20534c45b0db96d1f1cd5a6e96b"
+          "sha256": "f2a0c03180f7bdd2a2b0db6fec0c1647528e7960c0d5135c9c23266b345df18d"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -2595,7 +2595,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/github-ops/SKILL.md",
-          "sha256": "887d1eda5f29a8f57d875c054b410db358f7460100bc36385ab3e5fda15aecd1"
+          "sha256": "e475484ce751d87c3df591879a98d917e9380ff687ac588fbd68578df526e92d"
         }
       ]
     },
