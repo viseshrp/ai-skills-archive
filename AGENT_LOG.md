@@ -559,3 +559,9 @@
 
 - Action: Merged the verified archive-refresh history into `main` by fast-forwarding `67fa561` to `dc51175` and pushed `origin/main` to the same commit.
 - Updated the weekly automation and repository policy to run only from a clean, remote-aligned `main` checkout, publish directly to `origin/main`, and never create or use feature branches or automation worktrees.
+
+## 2026-09-07 21:12:17Z
+
+- Action: Consolidated all remaining non-`main` branch history into `main` before deleting the branch refs.
+- `feat/add-chewingglass-gist` was already fully contained in `main` at `dc51175`.
+- `add-taste-skill` had the exact tree recorded by squash commit `67fa561`; merged its ancestry with the `ours` strategy so the current refreshed archive remained unchanged.
