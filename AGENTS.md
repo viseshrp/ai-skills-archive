@@ -28,6 +28,7 @@ These requirements came directly from the user and should continue to govern fut
 - Maintain an append-only agent log of substantive archive operations.
 - Reduce snapshots so they only keep skills and related files, not full repo mirrors.
 - Keep the repo clean after changes; do not leave long-lived uncommitted archive refreshes around.
+- Run archive refreshes directly on `main`; do not create or use feature branches or automation worktrees.
 
 ## Key Files
 
@@ -56,13 +57,14 @@ These requirements came directly from the user and should continue to govern fut
 
 When adding or refreshing sources:
 
-1. Update `catalog/sources.json` if a new repo is being added.
-2. Run `python3 scripts/sync_sources.py` or `python3 scripts/sync_sources.py add <url>`.
-3. Verify the reduced snapshots still contain all skills and their related files.
-4. Verify the generated catalogs and README are updated.
-5. Verify duplicate detection still makes sense.
-6. Append the operation to `AGENT_LOG.md`.
-7. Commit and push the repo so the worktree is clean.
+1. Start from a clean, remote-aligned `main` checkout using `git pull --ff-only origin main`; stop on dirt or divergence instead of stashing or resetting.
+2. Update `catalog/sources.json` if a new repo is being added.
+3. Run `python3 scripts/sync_sources.py` or `python3 scripts/sync_sources.py add <url>`.
+4. Verify the reduced snapshots still contain all skills and their related files.
+5. Verify the generated catalogs and README are updated.
+6. Verify duplicate detection still makes sense.
+7. Append the operation to `AGENT_LOG.md`.
+8. Create one focused commit, push it directly to `origin/main`, verify the remote SHA, and leave the worktree clean.
 
 ## Duplicate Policy
 
@@ -76,6 +78,7 @@ When adding or refreshing sources:
 - The Codex automation id is `weekly-ai-skills-refresh`.
 - Schedule: Sunday at 3:00 PM America/New_York.
 - Purpose: refresh all registered sources, rebuild reduced snapshots and catalogs, and append to `AGENT_LOG.md`.
+- Branch policy: use the saved local checkout on `main`, never create or use a feature branch or worktree, and publish verified refreshes directly to `origin/main` without a pull request.
 
 ## Notes For Future Agents
 

@@ -2,5 +2,6 @@
   "name": "Weekly AI Skills Refresh",
   "schedule_local_time": "Every Sunday at 3:00 PM America/New_York",
   "purpose": "Refresh archived skill repositories, regenerate indexes, and append to AGENT_LOG.md.",
-  "command": "python3 scripts/sync_sources.py --log-note 'Weekly automation refresh'"
+  "command": "python3 scripts/sync_sources.py --log-note 'Weekly automation refresh'",
+  "branch_policy": "Run only from a clean, remote-aligned main checkout; commit and push directly to origin/main; never create or use feature branches or worktrees."
 }

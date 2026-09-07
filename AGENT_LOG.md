@@ -554,3 +554,8 @@
 - Synced `Leonxlnx__taste-skill` at commit `ccbc15639c97` with 13 skills and 14 files.
 - Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
 - Fetch incident: the initial `addyosmani__agent-skills` cache fetch failed with exit status 128 in both sandboxed and network-approved runs because its disposable `.git` metadata was incomplete. Preserved the full cache as `ai-skills-archive-sync.corrupt-2026-09-06T190157Z`, then reran from fresh clones successfully; no unresolved source fetch failures remained.
+
+## 2026-09-07 20:10:07Z
+
+- Action: Merged the verified archive-refresh history into `main` by fast-forwarding `67fa561` to `dc51175` and pushed `origin/main` to the same commit.
+- Updated the weekly automation and repository policy to run only from a clean, remote-aligned `main` checkout, publish directly to `origin/main`, and never create or use feature branches or automation worktrees.
