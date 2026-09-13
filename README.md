@@ -26,7 +26,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 ## Source Repositories and Gists
 
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
-  - Archived commit: `48cb1168aeaaa70dfc2bbf709eddfa2a8ed8129a`
+  - Archived commit: `be4e44a9fbc5e8df0beaefadbb28bd22ee61cc39`
   - Snapshot: [`archives/addyosmani__agent-skills/snapshot`](archives/addyosmani__agent-skills/snapshot)
   - Skills discovered: 25
   - Files retained in reduced snapshot: 36
@@ -36,17 +36,17 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
-  - Archived commit: `6b7ee6dcae29c0fbb46e0017538f9cef84c3136b`
+  - Archived commit: `91fc74d37e90c879b6a2376e244f4e26fd59cceb`
   - Snapshot: [`archives/Imbad0202__academic-research-skills/snapshot`](archives/Imbad0202__academic-research-skills/snapshot)
   - Skills discovered: 4
-  - Files retained in reduced snapshot: 606
+  - Files retained in reduced snapshot: 618
 - [mattpocock/skills](https://github.com/mattpocock/skills)
   - Archived commit: `3cca18b368ae95cdbdebbff572ccafa662551015`
   - Snapshot: [`archives/mattpocock__skills/snapshot`](archives/mattpocock__skills/snapshot)
   - Skills discovered: 37
   - Files retained in reduced snapshot: 62
 - [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman)
-  - Archived commit: `5184b3d11ac6a1acb7d44b9bfaa31698157cff97`
+  - Archived commit: `15581d14007fd01fb3f132016741962f34936ca2`
   - Snapshot: [`archives/juliusbrussee__caveman/snapshot`](archives/juliusbrussee__caveman/snapshot)
   - Skills discovered: 24
   - Files retained in reduced snapshot: 40
@@ -56,22 +56,22 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 14
   - Files retained in reduced snapshot: 37
 - [cursor/plugins](https://github.com/cursor/plugins)
-  - Archived commit: `93b00b89ef425a9c1bac0d0b317dfc49c930ac99`
+  - Archived commit: `5bf2b1544db739998121a306340631963c2ff3de`
   - Snapshot: [`archives/cursor__plugins/snapshot`](archives/cursor__plugins/snapshot)
-  - Skills discovered: 85
-  - Files retained in reduced snapshot: 185
+  - Skills discovered: 91
+  - Files retained in reduced snapshot: 189
 - [affaan-m/ECC](https://github.com/affaan-m/ECC)
-  - Archived commit: `e04ea0b9cc8248686edf5ac751cadff550e162b8`
+  - Archived commit: `8321021c54d670126ce3b2969d5deb880b4b0c2a`
   - Snapshot: [`archives/affaan-m__ECC/snapshot`](archives/affaan-m__ECC/snapshot)
-  - Skills discovered: 898
-  - Files retained in reduced snapshot: 1035
+  - Skills discovered: 903
+  - Files retained in reduced snapshot: 1072
 - [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
-  - Archived commit: `56ba5ace27e4697aedc60aa0b1e1bfdcd592ff20`
+  - Archived commit: `ac0ed3b7f610ec64cc898349d1e4507cd6220942`
   - Snapshot: [`archives/mvanhorn__last30days-skill/snapshot`](archives/mvanhorn__last30days-skill/snapshot)
   - Skills discovered: 1
-  - Files retained in reduced snapshot: 125
+  - Files retained in reduced snapshot: 127
 - [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
-  - Archived commit: `974d940a1c5344210874150b98ff0d2c861fab6a`
+  - Archived commit: `356918eba965ee1eac64bd3a7f0dd02108350de5`
   - Snapshot: [`archives/DietrichGebert__ponytail/snapshot`](archives/DietrichGebert__ponytail/snapshot)
   - Skills discovered: 12
   - Files retained in reduced snapshot: 12
@@ -81,7 +81,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 2
 - [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)
-  - Archived commit: `58494af57962b2d7a996b4d419474380a299af5e`
+  - Archived commit: `6f1f982d0a47c65899af3c5a7450b7098bc65325`
   - Snapshot: [`archives/ayghri__i-have-adhd/snapshot`](archives/ayghri__i-have-adhd/snapshot)
   - Skills discovered: 2
   - Files retained in reduced snapshot: 2
@@ -249,6 +249,10 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `what-did-i-get-done`: [`cursor-team-kit/skills/what-did-i-get-done/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/what-did-i-get-done/SKILL.md)
 - `workflow-from-chats`: [`cursor-team-kit/skills/workflow-from-chats/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/workflow-from-chats/SKILL.md)
 - `docs-canvas`: [`docs-canvas/skills/docs-canvas/SKILL.md`](archives/cursor__plugins/snapshot/docs-canvas/skills/docs-canvas/SKILL.md)
+- `add-dictation`: [`grok-voice/skills/add-dictation/SKILL.md`](archives/cursor__plugins/snapshot/grok-voice/skills/add-dictation/SKILL.md)
+- `add-read-aloud`: [`grok-voice/skills/add-read-aloud/SKILL.md`](archives/cursor__plugins/snapshot/grok-voice/skills/add-read-aloud/SKILL.md)
+- `add-voice`: [`grok-voice/skills/add-voice/SKILL.md`](archives/cursor__plugins/snapshot/grok-voice/skills/add-voice/SKILL.md)
+- `debug-voice`: [`grok-voice/skills/debug-voice/SKILL.md`](archives/cursor__plugins/snapshot/grok-voice/skills/debug-voice/SKILL.md)
 - `orchestrate`: [`orchestrate/skills/orchestrate/SKILL.md`](archives/cursor__plugins/snapshot/orchestrate/skills/orchestrate/SKILL.md)
 - `pr-review-canvas`: [`pr-review-canvas/skills/pr-review-canvas/SKILL.md`](archives/cursor__plugins/snapshot/pr-review-canvas/skills/pr-review-canvas/SKILL.md)
 - `reproduce-and-fix-issues`: [`pstack/automations/benny/skills/reproduce-and-fix-issues/SKILL.md`](archives/cursor__plugins/snapshot/pstack/automations/benny/skills/reproduce-and-fix-issues/SKILL.md)
@@ -267,6 +271,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `Make Bot UI`: [`pstack/skills/make-bot-ui/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/make-bot-ui/SKILL.md)
 - `no-comments`: [`pstack/skills/no-comments/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/no-comments/SKILL.md)
 - `Poteto Mode`: [`pstack/skills/poteto-mode/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/poteto-mode/SKILL.md)
+- `principle-attack-the-premise`: [`pstack/skills/principle-attack-the-premise/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-attack-the-premise/SKILL.md)
 - `principle-boundary-discipline`: [`pstack/skills/principle-boundary-discipline/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-boundary-discipline/SKILL.md)
 - `principle-build-the-lever`: [`pstack/skills/principle-build-the-lever/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-build-the-lever/SKILL.md)
 - `principle-encode-lessons-in-structure`: [`pstack/skills/principle-encode-lessons-in-structure/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-encode-lessons-in-structure/SKILL.md)
@@ -287,6 +292,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `principle-separate-before-serializing-shared-state`: [`pstack/skills/principle-separate-before-serializing-shared-state/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-separate-before-serializing-shared-state/SKILL.md)
 - `principle-sequence-verifiable-units`: [`pstack/skills/principle-sequence-verifiable-units/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-sequence-verifiable-units/SKILL.md)
 - `principle-subtract-before-you-add`: [`pstack/skills/principle-subtract-before-you-add/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-subtract-before-you-add/SKILL.md)
+- `principle-test-behavior-not-implementation`: [`pstack/skills/principle-test-behavior-not-implementation/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-test-behavior-not-implementation/SKILL.md)
 - `principle-type-system-discipline`: [`pstack/skills/principle-type-system-discipline/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-type-system-discipline/SKILL.md)
 - `recall`: [`pstack/skills/recall/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/recall/SKILL.md)
 - `reflect`: [`pstack/skills/reflect/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/reflect/SKILL.md)
@@ -584,7 +590,6 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `motion-advanced`: [`docs/ja-JP/skills/motion-advanced/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/motion-advanced/SKILL.md)
 - `motion-foundations`: [`docs/ja-JP/skills/motion-foundations/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/motion-foundations/SKILL.md)
 - `motion-patterns`: [`docs/ja-JP/skills/motion-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/motion-patterns/SKILL.md)
-- `motion-ui`: [`docs/ja-JP/skills/motion-ui/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/motion-ui/SKILL.md)
 - `mysql-patterns`: [`docs/ja-JP/skills/mysql-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/mysql-patterns/SKILL.md)
 - `nanoclaw-repl`: [`docs/ja-JP/skills/nanoclaw-repl/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/nanoclaw-repl/SKILL.md)
 - `nestjs-patterns`: [`docs/ja-JP/skills/nestjs-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/nestjs-patterns/SKILL.md)
@@ -981,6 +986,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `cost-tracking`: [`skills/cost-tracking/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/cost-tracking/SKILL.md)
 - `council`: [`skills/council/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/council/SKILL.md)
 - `council-multi-model`: [`skills/council-multi-model/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/council-multi-model/SKILL.md)
+- `counterparty-channel-discipline`: [`skills/counterparty-channel-discipline/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/counterparty-channel-discipline/SKILL.md)
 - `cpp-coding-standards`: [`skills/cpp-coding-standards/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/cpp-coding-standards/SKILL.md)
 - `cpp-testing`: [`skills/cpp-testing/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/cpp-testing/SKILL.md)
 - `crosspost`: [`skills/crosspost/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/crosspost/SKILL.md)
@@ -1016,6 +1022,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `energy-procurement`: [`skills/energy-procurement/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/energy-procurement/SKILL.md)
 - `enterprise-agent-ops`: [`skills/enterprise-agent-ops/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/enterprise-agent-ops/SKILL.md)
 - `error-handling`: [`skills/error-handling/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/error-handling/SKILL.md)
+- `esign-field-placement`: [`skills/esign-field-placement/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/esign-field-placement/SKILL.md)
 - `eval-harness`: [`skills/eval-harness/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/eval-harness/SKILL.md)
 - `evm-token-decimals`: [`skills/evm-token-decimals/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/evm-token-decimals/SKILL.md)
 - `exa-search`: [`skills/exa-search/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/exa-search/SKILL.md)
@@ -1090,6 +1097,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `manim-video`: [`skills/manim-video/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/manim-video/SKILL.md)
 - `market-research`: [`skills/market-research/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/market-research/SKILL.md)
 - `marketing-campaign`: [`skills/marketing-campaign/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/marketing-campaign/SKILL.md)
+- `master-agreement-generator`: [`skills/master-agreement-generator/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/master-agreement-generator/SKILL.md)
 - `mcp-server-patterns`: [`skills/mcp-server-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/mcp-server-patterns/SKILL.md)
 - `messages-ops`: [`skills/messages-ops/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/messages-ops/SKILL.md)
 - `ml-adoption-playbook`: [`skills/ml-adoption-playbook/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ml-adoption-playbook/SKILL.md)
@@ -1097,7 +1105,6 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `motion-advanced`: [`skills/motion-advanced/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/motion-advanced/SKILL.md)
 - `motion-foundations`: [`skills/motion-foundations/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/motion-foundations/SKILL.md)
 - `motion-patterns`: [`skills/motion-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/motion-patterns/SKILL.md)
-- `motion-ui`: [`skills/motion-ui/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/motion-ui/SKILL.md)
 - `mysql-patterns`: [`skills/mysql-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/mysql-patterns/SKILL.md)
 - `nanoclaw-repl`: [`skills/nanoclaw-repl/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/nanoclaw-repl/SKILL.md)
 - `nasiko-control-plane`: [`skills/nasiko-control-plane/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/nasiko-control-plane/SKILL.md)
@@ -1112,6 +1119,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `nuxt4-patterns`: [`skills/nuxt4-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/nuxt4-patterns/SKILL.md)
 - `openclaw-persona-forge`: [`skills/openclaw-persona-forge/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/openclaw-persona-forge/SKILL.md)
 - `opensource-pipeline`: [`skills/opensource-pipeline/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/opensource-pipeline/SKILL.md)
+- `operator-approval-loop`: [`skills/operator-approval-loop/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/operator-approval-loop/SKILL.md)
 - `orch-add-feature`: [`skills/orch-add-feature/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/orch-add-feature/SKILL.md)
 - `orch-build-mvp`: [`skills/orch-build-mvp/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/orch-build-mvp/SKILL.md)
 - `orch-change-feature`: [`skills/orch-change-feature/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/orch-change-feature/SKILL.md)
@@ -1143,6 +1151,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `quarkus-security`: [`skills/quarkus-security/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/quarkus-security/SKILL.md)
 - `quarkus-tdd`: [`skills/quarkus-tdd/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/quarkus-tdd/SKILL.md)
 - `quarkus-verification`: [`skills/quarkus-verification/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/quarkus-verification/SKILL.md)
+- `rails-patterns`: [`skills/rails-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/rails-patterns/SKILL.md)
 - `ralphinho-rfc-pipeline`: [`skills/ralphinho-rfc-pipeline/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ralphinho-rfc-pipeline/SKILL.md)
 - `react-native-patterns`: [`skills/react-native-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/react-native-patterns/SKILL.md)
 - `react-patterns`: [`skills/react-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/react-patterns/SKILL.md)
@@ -1186,6 +1195,8 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `swift-protocol-di-testing`: [`skills/swift-protocol-di-testing/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/swift-protocol-di-testing/SKILL.md)
 - `swiftui-patterns`: [`skills/swiftui-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/swiftui-patterns/SKILL.md)
 - `taste`: [`skills/taste/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/taste/SKILL.md)
+- `taste-application`: [`skills/taste-application/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/taste-application/SKILL.md)
+- `taste-distillation`: [`skills/taste-distillation/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/taste-distillation/SKILL.md)
 - `tasteforge-video`: [`skills/tasteforge-video/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/tasteforge-video/SKILL.md)
 - `tdd-workflow`: [`skills/tdd-workflow/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/tdd-workflow/SKILL.md)
 - `team-agent-orchestration`: [`skills/team-agent-orchestration/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/team-agent-orchestration/SKILL.md)
@@ -1254,7 +1265,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 ## Duplicate Tracking
 
 - Exact duplicate groups: 8
-- Repeated skill names: 254
+- Repeated skill names: 253
 - Full report: [`catalog/duplicates.json`](catalog/duplicates.json)
 
 ## Add A Source

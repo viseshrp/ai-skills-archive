@@ -565,3 +565,26 @@
 - Action: Consolidated all remaining non-`main` branch history into `main` before deleting the branch refs.
 - `feat/add-chewingglass-gist` was already fully contained in `main` at `dc51175`.
 - `add-taste-skill` had the exact tree recorded by squash commit `67fa561`; merged its ancestry with the `ours` strategy so the current refreshed archive remained unchanged.
+
+## 2026-09-13 19:04:28Z
+
+- Action: Weekly automation refresh
+- Sources synced: 14
+- Skills indexed: 1129
+- Exact duplicate groups: 8
+- Repeated skill names: 253
+- Synced `addyosmani__agent-skills` at commit `be4e44a9fbc5` with 25 skills and 36 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `91fc74d37e90` with 4 skills and 618 files.
+- Synced `mattpocock__skills` at commit `3cca18b368ae` with 37 skills and 62 files.
+- Synced `juliusbrussee__caveman` at commit `15581d14007f` with 24 skills and 40 files.
+- Synced `obra__Superpowers` at commit `b36e0829c6d0` with 14 skills and 37 files.
+- Synced `cursor__plugins` at commit `5bf2b1544db7` with 91 skills and 189 files.
+- Synced `affaan-m__ECC` at commit `8321021c54d6` with 903 skills and 1072 files.
+- Synced `mvanhorn__last30days-skill` at commit `ac0ed3b7f610` with 1 skills and 127 files.
+- Synced `DietrichGebert__ponytail` at commit `356918eba965` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `000650b15698` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `6f1f982d0a47` with 2 skills and 2 files.
+- Synced `Leonxlnx__taste-skill` at commit `ccbc15639c97` with 13 skills and 14 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+- Fetch incident: the initial `addyosmani__agent-skills` cache fetch failed with exit status 128 because its disposable `.git` directory lacked core repository metadata. Preserved the full cache as `ai-skills-archive-sync.corrupt-2026-09-13T190404Z`, then reran successfully from fresh clones; no unresolved source fetch failures remained.
