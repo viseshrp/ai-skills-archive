@@ -1,31 +1,17 @@
 {
-  "generated_at": "2026-09-13T19:04:28.009281+00:00",
+  "generated_at": "2026-09-20T19:04:46.878361+00:00",
   "exact_skill_duplicates": [
     {
-      "sha256": "060f50513003731e9c0e7f78e6a6a9b8cb178a74a2ec2a6ca75cdae804f0d564",
+      "sha256": "0bf09a0a9a017d004a81d4b693e5a2d830e1a28230a5885df773e1ed9c0571cc",
       "count": 2,
       "locations": [
         {
-          "source_repo": "affaan-m/ECC",
-          "path": ".agents/skills/competitive-platform-analysis/SKILL.md"
+          "source_repo": "juliusbrussee/caveman",
+          "path": "plugins/caveman/skills/caveman/SKILL.md"
         },
         {
-          "source_repo": "affaan-m/ECC",
-          "path": "skills/competitive-platform-analysis/SKILL.md"
-        }
-      ]
-    },
-    {
-      "sha256": "0c6ef1b72b0fe635d1681abf3857ec34214fd6580fad7708a96a8f4abc096ef5",
-      "count": 2,
-      "locations": [
-        {
-          "source_repo": "affaan-m/ECC",
-          "path": ".agents/skills/brand-discovery/SKILL.md"
-        },
-        {
-          "source_repo": "affaan-m/ECC",
-          "path": "skills/brand-discovery/SKILL.md"
+          "source_repo": "juliusbrussee/caveman",
+          "path": "skills/caveman/SKILL.md"
         }
       ]
     },
@@ -82,34 +68,6 @@
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/cavecrew/SKILL.md"
-        }
-      ]
-    },
-    {
-      "sha256": "c4d7354b4b063d54601fcdd5097a5b1713d1a1a2e386ac39efa438aa1ffef8ce",
-      "count": 2,
-      "locations": [
-        {
-          "source_repo": "juliusbrussee/caveman",
-          "path": "plugins/caveman/skills/caveman/SKILL.md"
-        },
-        {
-          "source_repo": "juliusbrussee/caveman",
-          "path": "skills/caveman/SKILL.md"
-        }
-      ]
-    },
-    {
-      "sha256": "fe3ad1b5b6caa4709b2a75e22772771946f36c9592c281012e5d2df087412800",
-      "count": 2,
-      "locations": [
-        {
-          "source_repo": "affaan-m/ECC",
-          "path": ".agents/skills/competitive-report-structure/SKILL.md"
-        },
-        {
-          "source_repo": "affaan-m/ECC",
-          "path": "skills/competitive-report-structure/SKILL.md"
         }
       ]
     }
@@ -201,7 +159,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/agent-introspection-debugging/SKILL.md",
-          "sha256": "5c232e0f8da05a70d99806584d75365845ab39de4029a141971f59d0a026c453"
+          "sha256": "5357d123cf8cee6dc2e901542a28a19d7ee9e939e34528d27987897318bcfbf6"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -248,7 +206,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/agent-sort/SKILL.md",
-          "sha256": "07a787b554e707971459b7047bea32d3f8e5b6ec82fed3ed66cd1074da2628fa"
+          "sha256": "82325c9fb7a58d7eaeafc4eecaef4a1d9d6c14e2f4d52c61265dd9c78828ebc3"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -416,7 +374,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/api-design/SKILL.md",
-          "sha256": "3d6b2d9955edb1032064ac577e802b4695fdc14aa98532b577ddc741fd8f1d9f"
+          "sha256": "5568a8b1e2e9ea1cc1433535ba8fcf9c21309b996108887343150d4fc76992e6"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -478,7 +436,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/article-writing/SKILL.md",
-          "sha256": "fc1d006cfa9bb7ba2f2e4ab179a35fcc3130cc0160b3e2998a7ab9aaf0c6ca0d"
+          "sha256": "6305169f1aaf57e293284aa21bf646d995079ae2921499f7800c7db42d57091f"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -577,7 +535,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/backend-patterns/SKILL.md",
-          "sha256": "f909a376c3aff63fc089675019ef63a8c87824695bd2a362d264013ab2e76d72"
+          "sha256": "d4d3c9c54b5bf5af3c1711fe16ef28db1538d4c272cfa0e4420da60c368fef02"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -649,7 +607,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/benchmark-methodology/SKILL.md",
-          "sha256": "a4ac232387a4dec4df2e28dae9578ea7f73f848925096f0c335753ca257934ec"
+          "sha256": "f2cba14bb87ff43f80c2eaec6311eee7ead4d8b89949864442362eb368acbbac"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -686,7 +644,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/brand-discovery/SKILL.md",
-          "sha256": "0c6ef1b72b0fe635d1681abf3857ec34214fd6580fad7708a96a8f4abc096ef5"
+          "sha256": "83c94b91d54d8bf1dcebccefce0d86f0dacf19372c65d2b25a03a9d102d1e86d"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -702,7 +660,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/brand-voice/SKILL.md",
-          "sha256": "1507b4251d07fdc0aa1aac99af7283b2200dfeb3531855355b05afda13d47dcd"
+          "sha256": "63bb7231f1ec358dcd6b4d9c8bceb212d3c2475be2dd2b8336e3c265bc6d5c03"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -749,7 +707,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/bun-runtime/SKILL.md",
-          "sha256": "7b66f97f5057a28347af21cd6afadb9afb54c38a663e4c059bb8d63c89b2f035"
+          "sha256": "b93720b74ea93e870ca87418f490f939b16e4cddace7fb3c97d2fa21398cc985"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -838,12 +796,12 @@
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "plugins/caveman/skills/caveman/SKILL.md",
-          "sha256": "c4d7354b4b063d54601fcdd5097a5b1713d1a1a2e386ac39efa438aa1ffef8ce"
+          "sha256": "0bf09a0a9a017d004a81d4b693e5a2d830e1a28230a5885df773e1ed9c0571cc"
         },
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/caveman/SKILL.md",
-          "sha256": "c4d7354b4b063d54601fcdd5097a5b1713d1a1a2e386ac39efa438aa1ffef8ce"
+          "sha256": "0bf09a0a9a017d004a81d4b693e5a2d830e1a28230a5885df773e1ed9c0571cc"
         }
       ]
     },
@@ -870,12 +828,12 @@
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "plugins/caveman/skills/caveman-stats/SKILL.md",
-          "sha256": "b78227f62898b0360d21f2a94d48e9d7a80629cb879cc7b7f9b45b4a241eba90"
+          "sha256": "da58b00fac1edbaa4b8ded4b7e8597d681b6a8d5bc31d302c8a3ff101f5b1b18"
         },
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/caveman-stats/SKILL.md",
-          "sha256": "c17fceb216fd3124a48821139d0ed2b71b4392d9a9de7bd1e939be2b334a96aa"
+          "sha256": "4632f1611a56483df7851a0dabcc1e0c1952393cd8f5d08ddeda17f81a4e1e50"
         }
       ]
     },
@@ -1038,7 +996,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/coding-standards/SKILL.md",
-          "sha256": "b190236481bf4f88bae4c772b013cf07d3aa71a0fa114215194575657c44c9ee"
+          "sha256": "7295014cdb95589b28e9ac687e0c40a7fd329288e18a0e6fb6c5b1ed58437a0d"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -1089,7 +1047,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/competitive-platform-analysis/SKILL.md",
-          "sha256": "060f50513003731e9c0e7f78e6a6a9b8cb178a74a2ec2a6ca75cdae804f0d564"
+          "sha256": "c0487e265a1a78a18891c8f95afc68b4f77a7cee56b0e7d5eedbd66cf9c874ff"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -1105,7 +1063,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/competitive-report-structure/SKILL.md",
-          "sha256": "fe3ad1b5b6caa4709b2a75e22772771946f36c9592c281012e5d2df087412800"
+          "sha256": "a983e68bd3eaaaead38aa4cd047b2ac5b2553fe16e873da9fb5573cc8bc5b8bd"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -1184,7 +1142,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/content-engine/SKILL.md",
-          "sha256": "7a54347077af380152c62e40b2c0e7549c388acd9cfc9704d13e44506f51b8fb"
+          "sha256": "1daa87ef009908ac3851230bf366f87d6fde3da90372ff3f21069044a79e100b"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -1391,7 +1349,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/cost-tracking/SKILL.md",
-          "sha256": "486b8289ec3f481e75c477f9e209ab4d008c9fe05dde7c1d0b7813010c3463ba"
+          "sha256": "f868207abd550308bc18902ecdfd2c51ad1ea85ba692dbe95cd9c3561da2a8bb"
         }
       ]
     },
@@ -1475,7 +1433,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/crosspost/SKILL.md",
-          "sha256": "ef25ac009f3486e4f4ffd741c68b56a895cbd0b43960e975975345787cf2159f"
+          "sha256": "fc136701621edcfceb2c3d8c7529120c32d39b4e57142941e0d55b08d252e78b"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -1663,12 +1621,12 @@
         {
           "source_repo": "Imbad0202/academic-research-skills",
           "path": "deep-research/SKILL.md",
-          "sha256": "f2a0c03180f7bdd2a2b0db6fec0c1647528e7960c0d5135c9c23266b345df18d"
+          "sha256": "bfd6e8ab1a2ebde477e4bd8da882cee5469ee367f7f444bb8641774e914cc9fb"
         },
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/deep-research/SKILL.md",
-          "sha256": "5692b149b1b82748880dacde47f5ebe9e72d4d14fc50930063b4716b00944e03"
+          "sha256": "e42c74a515e9c2a2f662f7846402c1ccd8b2bd278cba84450ff0960b07f0f995"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -1897,7 +1855,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/dmux-workflows/SKILL.md",
-          "sha256": "09d10da399fb1888bdf8f302db71894d43a37fe135d7846b17614703b1de5eec"
+          "sha256": "75eef4455c91b14c2dd67196f4be8b50e53bbbc82b6d060d5aa6c0a58e8c4daa"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -1959,7 +1917,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/documentation-lookup/SKILL.md",
-          "sha256": "142fbfdffbcb6eb80c47afa5705a2a8130387bab2500bb0930f557de08640b9a"
+          "sha256": "e171317c95add368192bfe127eff5873dacc55c7669db4e12b0bf03277ea9e67"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -2011,7 +1969,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/e2e-testing/SKILL.md",
-          "sha256": "5c2c7efc73e5c8cfb25c1ea5cf99cce7e2b92f056934a4ad08370980e0fb0fc3"
+          "sha256": "8cfa22c35e5370c1f85400921d27e259cc99ba67a890625412bf2fc650a1d038"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -2173,7 +2131,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/eval-harness/SKILL.md",
-          "sha256": "1db3ddbf6acee83c08e453210f7753105aeaf47f79ebf3a2772f8c42034d675a"
+          "sha256": "49a5a10975860bb2d7e3c4e260ff19b6580e43f5fbc7770b32dece02dde48e49"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -2240,7 +2198,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/exa-search/SKILL.md",
-          "sha256": "6802dcc7442da5f8e53a7a9b91f2e093317441a5a7bd4ad907b3a01e33af269e"
+          "sha256": "7d9004b9a874a9bdbb6025fd7cdd0b416b9e25b7ecfc8fca7bc7852392a7fb05"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -2266,7 +2224,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/fal-ai-media/SKILL.md",
-          "sha256": "2420f083fdf4eec3bb97b9b5db8b68e667640b51eca051c7d537596e6be2049c"
+          "sha256": "fa1016998c7e73b14f584dab9ebcaaff9a5b2197854814375c73b58a6048f48e"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -2408,7 +2366,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/frontend-patterns/SKILL.md",
-          "sha256": "8ee53fb139cd5bcd7c6173d1c75cbf643173934009b95d043efe43ab55993cd0"
+          "sha256": "722866e1106ca51a6eb7f6dd163554d5fa3a30fe9beb5fdbc075ab3a84ae883b"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -2459,7 +2417,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/frontend-slides/SKILL.md",
-          "sha256": "9f4476426e60105f4e3241b4a66705934b1a618b52c6009560e5034d731f4578"
+          "sha256": "3d05c5e983e9d046ccc9336237dde02918e74fb0cf1787dbfeddac3d802f5071"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -2537,7 +2495,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/gateguard/SKILL.md",
-          "sha256": "68fa6e19ead99d37e0f1fb26bf9297b4938366c602f7ff7308f676c8b613f470"
+          "sha256": "88bd35f474aedac3aa20ce1ab529a84f65daf4d2b3d9f63f28e7e1b78e897f2b"
         }
       ]
     },
@@ -3004,7 +2962,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/investor-materials/SKILL.md",
-          "sha256": "6e199d1e34ef9adfaed023fdb8f81635bf07fc92c2f1b4afd6efec1d2454862e"
+          "sha256": "11797289d40f893053fee569b9a5922222d35f931e7bc38ba9268845a29cc164"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -3035,7 +2993,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/investor-outreach/SKILL.md",
-          "sha256": "ffc43db2a6d878b4d407c277eaf7e0f154a420d14a30929e55bf36f707182a75"
+          "sha256": "592568dae2182091e66505ad2eab2a1316ab17b461aa483723ebbb12e3d5f254"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -3634,7 +3592,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/market-research/SKILL.md",
-          "sha256": "a2683b5984cc6ad2e023610d72ad5896ac3741d0b455f4e8a1fcb21746a8759f"
+          "sha256": "bcccf6d1976ca9cebb08b5b80e53b76fc01d13698ad4cac544955d9dbe5bee03"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -3665,7 +3623,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/mcp-server-patterns/SKILL.md",
-          "sha256": "09a2954125acdf073a6463db6c5b57c90e20c2576c537dd39ea5d373fe97c4f0"
+          "sha256": "a740cb21444aec71800aafb94beedc4045c0ad33f20dee1f5f3acd567a300a8d"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -3717,7 +3675,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/mle-workflow/SKILL.md",
-          "sha256": "807417f116f3a3a350e4cebdff839351fe6d2527fec6999738c2b65e13b2808f"
+          "sha256": "9366d2b47d58e6bd1b9426d40a36c88efd1ba93919623b5002185cc80be87ecb"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -3918,7 +3876,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/nextjs-turbopack/SKILL.md",
-          "sha256": "e35a6a04301792f4cb290cb5f21bc6d64fe9272790d1822431dbfb1747ae9d04"
+          "sha256": "2beabec4326fc32e652db21378bae5f704c931a6ff50d0496b9c9f1c8340f82d"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -4143,7 +4101,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/plan-canvas/SKILL.md",
-          "sha256": "ade500c538eed0671137f14d3b00331b209540bc6366624e058bc5e7f33491f8"
+          "sha256": "45b208f8551ccc3736f9030ca0f18ede7df6a8e9c6e49e3c8848a705700a9f8b"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -4354,7 +4312,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/product-capability/SKILL.md",
-          "sha256": "ae6e95205fcdcb2fa6d231d6665cdb11776796cfacb9891244522887f279c103"
+          "sha256": "1e2386179de6f5f53703076170fd98b07eb23e5e998950be34ec53769895e085"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -5107,7 +5065,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/security-review/SKILL.md",
-          "sha256": "e60a179eac26386cfc72d4bdebbe280f94a2d94ed889d6e221edbf1939f944d4"
+          "sha256": "81d7a4cbf8509963539cbe2e3d3ecbde33077d9fa63bc7c8f6d09e7eb7531743"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -5147,7 +5105,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/security-review/SKILL.md",
-          "sha256": "fe6f9151fb15c1dffd47a55080c3ad147af7c95dd0ad3714735dec6824b060b7"
+          "sha256": "b9eb6416eebc8dda046674f0a2dbb3be88aff526d182b60a0f55998d3d6d0d8d"
         }
       ]
     },
@@ -5413,7 +5371,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/strategic-compact/SKILL.md",
-          "sha256": "945357bb764056e2f3acd36924a2ee6ccbdfb254135d360ff3c1af84aa8923d3"
+          "sha256": "bf1429dbc4ece055ba2ff79b9dc3e926cfa1a39101a88ee8467de062d1a0e7f3"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -5564,7 +5522,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/tdd-workflow/SKILL.md",
-          "sha256": "5a88684181704575d8958fbcd6f506ea39d56d921d22edb40a6bbccb408336e6"
+          "sha256": "e9507695657b05f26dd62127f1d6ff58e4015d624df65dd4d7e07f6470317393"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -5678,7 +5636,7 @@
         {
           "source_repo": "obra/Superpowers",
           "path": "skills/test-driven-development/SKILL.md",
-          "sha256": "bf1b8216e523851a411e91d429a7c1c2a173e79d88957bc78e348218d50edd54"
+          "sha256": "64b03fce4aee5a97a93160cea8111f3ba13a17b7c001db4bd5836d67fd10705d"
         }
       ]
     },
@@ -5779,7 +5737,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/unified-memory/SKILL.md",
-          "sha256": "0f721834d22aee01f8233b2b970cca530b3010684bd23f6c2bdf2ee93bb1d0f8"
+          "sha256": "a605fe83aef50b4005e6dc853ce90fec22f80df769cfe02189d2d924396b80f3"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -5837,7 +5795,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/verification-loop/SKILL.md",
-          "sha256": "5989153028802964e2b6db453ea2a6ad3543e10002b126c80212a3db181c782c"
+          "sha256": "6d4a399d856207297168cc03f3f8c90d4085ff14566bb928af3c97d9a31f2650"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -5888,7 +5846,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/video-editing/SKILL.md",
-          "sha256": "1523f52a80063308d8d45805ce9b01f27a5ea77b59f1d16bd87e96130d504057"
+          "sha256": "765558c820d0b6f8e4424b55ca1cf13bf9163a1ec572851d1db229693dc8e2ad"
         },
         {
           "source_repo": "affaan-m/ECC",
@@ -6009,7 +5967,7 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": ".agents/skills/x-api/SKILL.md",
-          "sha256": "dfa8ab9d533c7930ac2836bda618349a304ab1676d5c66a0b8d806f5acedef0c"
+          "sha256": "e36c246b1bb5d78d6201fcbc501c7b698db83d32e09c25ce2400e45422392c96"
         },
         {
           "source_repo": "affaan-m/ECC",

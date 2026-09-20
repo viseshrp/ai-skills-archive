@@ -26,7 +26,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 ## Source Repositories and Gists
 
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
-  - Archived commit: `be4e44a9fbc5e8df0beaefadbb28bd22ee61cc39`
+  - Archived commit: `c004a74784a08295d52749b04cda634125b9a581`
   - Snapshot: [`archives/addyosmani__agent-skills/snapshot`](archives/addyosmani__agent-skills/snapshot)
   - Skills discovered: 25
   - Files retained in reduced snapshot: 36
@@ -36,42 +36,42 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
-  - Archived commit: `91fc74d37e90c879b6a2376e244f4e26fd59cceb`
+  - Archived commit: `1515a2192a6051f9a793cfd964bd05e3db20607c`
   - Snapshot: [`archives/Imbad0202__academic-research-skills/snapshot`](archives/Imbad0202__academic-research-skills/snapshot)
   - Skills discovered: 4
-  - Files retained in reduced snapshot: 618
+  - Files retained in reduced snapshot: 630
 - [mattpocock/skills](https://github.com/mattpocock/skills)
-  - Archived commit: `3cca18b368ae95cdbdebbff572ccafa662551015`
+  - Archived commit: `c55ee46073ed923f86ce59a5eb3b6d895095d1b7`
   - Snapshot: [`archives/mattpocock__skills/snapshot`](archives/mattpocock__skills/snapshot)
-  - Skills discovered: 37
-  - Files retained in reduced snapshot: 62
+  - Skills discovered: 38
+  - Files retained in reduced snapshot: 63
 - [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman)
-  - Archived commit: `15581d14007fd01fb3f132016741962f34936ca2`
+  - Archived commit: `3c62bd404e1e8673adf0a644f7fd53885c436df0`
   - Snapshot: [`archives/juliusbrussee__caveman/snapshot`](archives/juliusbrussee__caveman/snapshot)
   - Skills discovered: 24
   - Files retained in reduced snapshot: 40
 - [obra/Superpowers](https://github.com/obra/Superpowers)
-  - Archived commit: `b36e0829c6d0140e93cfef2ca599b1b07d4a7797`
+  - Archived commit: `5bf4e78011075bcfc0dc295f0724994cd123ee71`
   - Snapshot: [`archives/obra__Superpowers/snapshot`](archives/obra__Superpowers/snapshot)
-  - Skills discovered: 14
-  - Files retained in reduced snapshot: 37
+  - Skills discovered: 15
+  - Files retained in reduced snapshot: 53
 - [cursor/plugins](https://github.com/cursor/plugins)
-  - Archived commit: `5bf2b1544db739998121a306340631963c2ff3de`
+  - Archived commit: `6ed0f7a9504f577d7529064103cecce9be7dfc5e`
   - Snapshot: [`archives/cursor__plugins/snapshot`](archives/cursor__plugins/snapshot)
-  - Skills discovered: 91
-  - Files retained in reduced snapshot: 189
+  - Skills discovered: 92
+  - Files retained in reduced snapshot: 190
 - [affaan-m/ECC](https://github.com/affaan-m/ECC)
-  - Archived commit: `8321021c54d670126ce3b2969d5deb880b4b0c2a`
+  - Archived commit: `9ac593b55cba44c8b20152a5c7f28d300a67ec7e`
   - Snapshot: [`archives/affaan-m__ECC/snapshot`](archives/affaan-m__ECC/snapshot)
   - Skills discovered: 903
   - Files retained in reduced snapshot: 1072
 - [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
-  - Archived commit: `ac0ed3b7f610ec64cc898349d1e4507cd6220942`
+  - Archived commit: `349ca444b4fda466e74d471dffa2aff36bb997f1`
   - Snapshot: [`archives/mvanhorn__last30days-skill/snapshot`](archives/mvanhorn__last30days-skill/snapshot)
   - Skills discovered: 1
-  - Files retained in reduced snapshot: 127
+  - Files retained in reduced snapshot: 128
 - [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
-  - Archived commit: `356918eba965ee1eac64bd3a7f0dd02108350de5`
+  - Archived commit: `e3ba2aa6f1e6f0bc4d69eb09c9f0d0a93af56156`
   - Snapshot: [`archives/DietrichGebert__ponytail/snapshot`](archives/DietrichGebert__ponytail/snapshot)
   - Skills discovered: 12
   - Files retained in reduced snapshot: 12
@@ -81,12 +81,12 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 2
 - [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)
-  - Archived commit: `6f1f982d0a47c65899af3c5a7450b7098bc65325`
+  - Archived commit: `839872f9d1cd634fed642b4589ce7226199cc15f`
   - Snapshot: [`archives/ayghri__i-have-adhd/snapshot`](archives/ayghri__i-have-adhd/snapshot)
   - Skills discovered: 2
   - Files retained in reduced snapshot: 2
 - [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill)
-  - Archived commit: `ccbc15639c97057cbfcf32ecebc38ef716e4bb37`
+  - Archived commit: `5217fb45be2c0b302f29c9cd31cbd3237501c684`
   - Snapshot: [`archives/Leonxlnx__taste-skill/snapshot`](archives/Leonxlnx__taste-skill/snapshot)
   - Skills discovered: 13
   - Files retained in reduced snapshot: 14
@@ -163,6 +163,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `claude-handoff`: [`skills/in-progress/claude-handoff/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/claude-handoff/SKILL.md)
 - `implement-spec`: [`skills/in-progress/implement-spec/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/implement-spec/SKILL.md)
 - `loop-me`: [`skills/in-progress/loop-me/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/loop-me/SKILL.md)
+- `pr`: [`skills/in-progress/pr/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/pr/SKILL.md)
 - `retro`: [`skills/in-progress/retro/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/retro/SKILL.md)
 - `setup-ts-deep-modules`: [`skills/in-progress/setup-ts-deep-modules/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/setup-ts-deep-modules/SKILL.md)
 - `writing-beats`: [`skills/in-progress/writing-beats/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/writing-beats/SKILL.md)
@@ -208,6 +209,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 
 ### obra/Superpowers
 - `brainstorming`: [`skills/brainstorming/SKILL.md`](archives/obra__Superpowers/snapshot/skills/brainstorming/SKILL.md)
+- `diagnosing-superpowers`: [`skills/diagnosing-superpowers/SKILL.md`](archives/obra__Superpowers/snapshot/skills/diagnosing-superpowers/SKILL.md)
 - `dispatching-parallel-agents`: [`skills/dispatching-parallel-agents/SKILL.md`](archives/obra__Superpowers/snapshot/skills/dispatching-parallel-agents/SKILL.md)
 - `executing-plans`: [`skills/executing-plans/SKILL.md`](archives/obra__Superpowers/snapshot/skills/executing-plans/SKILL.md)
 - `finishing-a-development-branch`: [`skills/finishing-a-development-branch/SKILL.md`](archives/obra__Superpowers/snapshot/skills/finishing-a-development-branch/SKILL.md)
@@ -314,6 +316,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 - `thermo-nuclear-review`: [`thermos/skills/thermo-nuclear-review/SKILL.md`](archives/cursor__plugins/snapshot/thermos/skills/thermo-nuclear-review/SKILL.md)
 - `thermos`: [`thermos/skills/thermos/SKILL.md`](archives/cursor__plugins/snapshot/thermos/skills/thermos/SKILL.md)
 - `X MCP guide`: [`third_party/x/skills/x-api-mcp-guide/SKILL.md`](archives/cursor__plugins/snapshot/third_party/x/skills/x-api-mcp-guide/SKILL.md)
+- `X Chat`: [`third_party/x/skills/x-chat/SKILL.md`](archives/cursor__plugins/snapshot/third_party/x/skills/x-chat/SKILL.md)
 
 ### affaan-m/ECC
 - `agent-introspection-debugging`: [`.agents/skills/agent-introspection-debugging/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/agent-introspection-debugging/SKILL.md)
@@ -1264,7 +1267,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 
 ## Duplicate Tracking
 
-- Exact duplicate groups: 8
+- Exact duplicate groups: 5
 - Repeated skill names: 253
 - Full report: [`catalog/duplicates.json`](catalog/duplicates.json)
 
