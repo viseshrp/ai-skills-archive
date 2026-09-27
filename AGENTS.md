@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This repository tracks and stores a self-contained archive of popular AI skill repositories from GitHub.
+This repository tracks and stores a self-contained archive of popular AI skill repositories from GitHub and clearly attributed, locally maintained adaptations of selected skills.
 
 The archive is intentionally skill-focused:
 
@@ -10,6 +10,7 @@ The archive is intentionally skill-focused:
 - Keep recursively related local files referenced by those skills, including scripts, templates, examples, references, assets, and helper files.
 - Do not keep unrelated upstream repo files in snapshots.
 - Preserve provenance through `archive.json`, the generated catalogs, git history in this repo, and the agent log.
+- Keep adapted skills under `skills/`; never edit an upstream snapshot to create a local variant.
 
 ## User Instructions To Preserve
 
@@ -18,8 +19,9 @@ These requirements came directly from the user and should continue to govern fut
 - Create and maintain a GitHub repository for this archive.
 - Add and maintain a detailed README with links to archived skills.
 - The goal of the repo is to track and store clones of popular AI skills from engineers on GitHub.
-- When the user provides a GitHub link, ingest that source repo.
-- Pull all skills from each source repo.
+- When the user provides a GitHub link for archival, ingest that source repo.
+- Pull all skills from each archived source repo.
+- When the user requests a modified version of one linked skill, keep it as a curated adaptation under `skills/` instead of altering a snapshot or importing unrelated skills.
 - Store the skill files and all other linked local data needed to make the archived skill self-contained.
 - Be ultra thorough when preserving related files.
 - Flag duplicates.
@@ -33,6 +35,7 @@ These requirements came directly from the user and should continue to govern fut
 ## Key Files
 
 - `scripts/sync_sources.py`: canonical sync/archive/index generator.
+- `skills/`: curated adaptations maintained in this repository, with pinned source and license attribution.
 - `catalog/sources.json`: source registry.
 - `catalog/sources_report.json`: generated per-source sync metadata.
 - `catalog/skills.json`: generated skill index.
@@ -53,6 +56,14 @@ These requirements came directly from the user and should continue to govern fut
   - unrelated docs, tests, configs, or packaging files unless they are actually referenced by a retained skill-related file
 - `archives/<owner>__<repo>/archive.json` must record the upstream commit and sync metadata.
 
+## Curated Adaptation Rules
+
+- Use `skills/<skill-name>/` when the user asks for a modified version of a specific upstream skill rather than a byte-preserving source archive.
+- Record a pinned upstream file URL, the adaptation scope, and the upstream license in the skill package.
+- Keep the adapted skill generic unless the user asks for a narrower target. Put substantial language-specific guidance in clearly labeled sections.
+- Do not place adaptations under `archives/`; those paths are regenerated from upstream sources.
+- Run `python3 scripts/sync_sources.py --log-note '<note>' reindex-curated` after adding or changing an adapted skill so catalogs, duplicate reports, README, and the agent log stay synchronized without refreshing unrelated upstream sources.
+
 ## Sync Workflow
 
 When adding or refreshing sources:
@@ -66,9 +77,11 @@ When adding or refreshing sources:
 7. Append the operation to `AGENT_LOG.md`.
 8. Create one focused commit, push it directly to `origin/main`, verify the remote SHA, and leave the worktree clean.
 
+For a curated adaptation, replace steps 2-4 with adding or updating `skills/<skill-name>/` and running the `reindex-curated` command above. Validate the skill before committing.
+
 ## Duplicate Policy
 
-- Keep duplicate skills in the archive; do not deduplicate by deleting source material.
+- Keep duplicate skills in the archive and curated collection; do not deduplicate by deleting source material.
 - Flag exact duplicate content in `catalog/duplicates.json`.
 - Flag repeated skill names even when content differs.
 - Preserve source provenance for every duplicate entry.
@@ -83,6 +96,7 @@ When adding or refreshing sources:
 ## Notes For Future Agents
 
 - Prefer changing `scripts/sync_sources.py` over making manual archive edits.
+- Keep curated adaptations narrow and source-attributed; preserve upstream snapshots separately when a full source import is requested.
 - If the archive model changes, regenerate snapshots instead of editing archived files by hand.
 - Be conservative about deleting source-linked files from snapshots; if a retained file references another local file, keep following the chain recursively.
 - If a repo refresh causes a large deletion set, verify that the new reduced snapshot rules explain it before committing.

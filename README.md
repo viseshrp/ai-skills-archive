@@ -1,12 +1,13 @@
 # AI Skills Archive
 
-A self-contained archive of popular AI skill repositories and gists from GitHub.
+A self-contained archive of popular AI skill repositories and gists from GitHub, plus maintained adaptations of selected skills.
 
-This repository stores reduced snapshots that keep every discovered `SKILL.md` plus recursively linked local resources, records the upstream source metadata, and flags duplicate skills so the archive can grow without losing provenance.
+This repository stores reduced snapshots that keep every discovered `SKILL.md` plus recursively linked local resources, records upstream source metadata, maintains clearly attributed adaptations under `skills/`, and flags duplicate skills so the collection can grow without losing provenance.
 
 ## Goals
 
 - Preserve upstream AI skill repositories in a self-contained, skill-focused layout.
+- Maintain selected adapted skills without modifying provenance-preserving upstream snapshots.
 - Track source URLs, archived commits, and sync timestamps.
 - Index every discovered skill file with links back to the archived snapshot.
 - Flag exact duplicate skill content and repeated skill names.
@@ -16,6 +17,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 
 - `archives/<owner>__<repo>/snapshot/`: reduced snapshot containing only `SKILL.md` files and recursively related local resources, excluding upstream `.git` history and unrelated repo files.
 - `archives/<owner>__<repo>/archive.json`: metadata for the archived snapshot.
+- `skills/<skill-name>/`: locally maintained adaptations with source and license attribution.
 - `catalog/sources.json`: source registry used by the sync script.
 - `catalog/sources_report.json`: generated sync metadata for each source.
 - `catalog/skills.json`: generated skill index.
@@ -95,6 +97,12 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Snapshot: [`archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot`](archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot)
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
+
+## Curated Adaptations
+
+These skills are maintained in this repository rather than inside an upstream snapshot. Each package records its upstream source and license.
+
+- `test-audit`: [`skills/test-audit/SKILL.md`](skills/test-audit/SKILL.md): Audit new or existing tests for behavioral value, duplication, implementation coupling, brittleness, and test-only production seams. Use when writing, changing, reviewing, or pruning tests, including an independent final review of a test diff.
 
 ## Generated Reports
 

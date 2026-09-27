@@ -33,6 +33,7 @@ SOURCES_REPORT_FILE = CATALOG_DIR / "sources_report.json"
 AUTOMATION_FILE = CATALOG_DIR / "automation.json"
 AGENT_LOG_FILE = REPO_ROOT / "AGENT_LOG.md"
 README_FILE = REPO_ROOT / "README.md"
+CURATED_SKILLS_DIR = REPO_ROOT / "skills"
 
 TEXT_EXTENSIONS = {
     ".cjs",
@@ -403,6 +404,31 @@ def parse_skill_metadata(skill_path: Path) -> tuple[str, str]:
     return skill_name, description
 
 
+def build_curated_skill_records() -> list[dict[str, Any]]:
+    if not CURATED_SKILLS_DIR.exists():
+        return []
+
+    skill_records: list[dict[str, Any]] = []
+    for skill_path in sorted(CURATED_SKILLS_DIR.rglob("SKILL.md")):
+        relative_skill_path = skill_path.relative_to(REPO_ROOT)
+        related_paths = collect_related_files(skill_path, REPO_ROOT)
+        skill_name, description = parse_skill_metadata(skill_path)
+        skill_text = skill_path.read_text(encoding="utf-8")
+        skill_records.append(
+            {
+                "source_repo": "viseshrp/ai-skills-archive (curated)",
+                "repo_key": "curated",
+                "skill_name": skill_name,
+                "description": description,
+                "path": repo_relpath(relative_skill_path),
+                "relative_directory": repo_relpath(relative_skill_path.parent),
+                "sha256": hashlib.sha256(skill_text.encode("utf-8")).hexdigest(),
+                "linked_local_files": related_paths,
+            }
+        )
+    return skill_records
+
+
 def build_repo_report(source: dict[str, Any], clone_dir: Path, archive_root: Path) -> tuple[dict[str, Any], list[dict[str, Any]]]:
     owner, repo = parse_repo_url(source["url"])
     branch = run(["git", "branch", "--show-current"], cwd=clone_dir)
@@ -515,7 +541,13 @@ def build_duplicate_report(skill_records: list[dict[str, Any]]) -> dict[str, Any
     }
 
 
-def append_agent_log(message: str, repo_reports: list[dict[str, Any]], duplicate_report: dict[str, Any]) -> None:
+def append_agent_log(
+    message: str,
+    repo_reports: list[dict[str, Any]],
+    skill_records: list[dict[str, Any]],
+    duplicate_report: dict[str, Any],
+    source_verb: str = "Synced",
+) -> None:
     timestamp = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M:%SZ")
     exact_duplicate_count = len(duplicate_report["exact_skill_duplicates"])
     duplicate_name_count = len(duplicate_report["duplicate_skill_names"])
@@ -523,14 +555,14 @@ def append_agent_log(message: str, repo_reports: list[dict[str, Any]], duplicate
         f"## {timestamp}",
         "",
         f"- Action: {message}",
-        f"- Sources synced: {len(repo_reports)}",
-        f"- Skills indexed: {sum(report['skill_count'] for report in repo_reports)}",
+        f"- Sources {source_verb.lower()}: {len(repo_reports)}",
+        f"- Skills indexed: {len(skill_records)}",
         f"- Exact duplicate groups: {exact_duplicate_count}",
         f"- Repeated skill names: {duplicate_name_count}",
     ]
     for report in repo_reports:
         lines.append(
-            f"- Synced `{report['repo_key']}` at commit `{report['commit'][:12]}` with {report['skill_count']} skills and {report['file_count']} files."
+            f"- {source_verb} `{report['repo_key']}` at commit `{report['commit'][:12]}` with {report['skill_count']} skills and {report['file_count']} files."
         )
     existing = (
         AGENT_LOG_FILE.read_text(encoding="utf-8")
@@ -547,13 +579,14 @@ def render_readme(repo_reports: list[dict[str, Any]], skill_records: list[dict[s
     lines = [
         "# AI Skills Archive",
         "",
-        "A self-contained archive of popular AI skill repositories and gists from GitHub.",
+        "A self-contained archive of popular AI skill repositories and gists from GitHub, plus maintained adaptations of selected skills.",
         "",
-        "This repository stores reduced snapshots that keep every discovered `SKILL.md` plus recursively linked local resources, records the upstream source metadata, and flags duplicate skills so the archive can grow without losing provenance.",
+        "This repository stores reduced snapshots that keep every discovered `SKILL.md` plus recursively linked local resources, records upstream source metadata, maintains clearly attributed adaptations under `skills/`, and flags duplicate skills so the collection can grow without losing provenance.",
         "",
         "## Goals",
         "",
         "- Preserve upstream AI skill repositories in a self-contained, skill-focused layout.",
+        "- Maintain selected adapted skills without modifying provenance-preserving upstream snapshots.",
         "- Track source URLs, archived commits, and sync timestamps.",
         "- Index every discovered skill file with links back to the archived snapshot.",
         "- Flag exact duplicate skill content and repeated skill names.",
@@ -563,6 +596,7 @@ def render_readme(repo_reports: list[dict[str, Any]], skill_records: list[dict[s
         "",
         "- `archives/<owner>__<repo>/snapshot/`: reduced snapshot containing only `SKILL.md` files and recursively related local resources, excluding upstream `.git` history and unrelated repo files.",
         "- `archives/<owner>__<repo>/archive.json`: metadata for the archived snapshot.",
+        "- `skills/<skill-name>/`: locally maintained adaptations with source and license attribution.",
         "- `catalog/sources.json`: source registry used by the sync script.",
         "- `catalog/sources_report.json`: generated sync metadata for each source.",
         "- `catalog/skills.json`: generated skill index.",
@@ -584,6 +618,25 @@ def render_readme(repo_reports: list[dict[str, Any]], skill_records: list[dict[s
                 f"  - Files retained in reduced snapshot: {report['file_count']}",
             ]
         )
+
+    curated_skills = [
+        record for record in skill_records if record["repo_key"] == "curated"
+    ]
+    lines.extend(
+        [
+            "",
+            "## Curated Adaptations",
+            "",
+            "These skills are maintained in this repository rather than inside an upstream snapshot. Each package records its upstream source and license.",
+            "",
+        ]
+    )
+    for record in curated_skills:
+        lines.append(
+            f"- `{record['skill_name']}`: [`{record['path']}`]({record['path']}): {record['description']}"
+        )
+    if not curated_skills:
+        lines.append("- No curated adaptations are currently maintained.")
 
     lines.extend(
         [
@@ -663,6 +716,8 @@ def sync_sources(log_note: str) -> None:
         repo_reports.append(report)
         skill_records.extend(repo_skills)
 
+    skill_records.extend(build_curated_skill_records())
+
     duplicate_report = build_duplicate_report(skill_records)
 
     write_text_file(
@@ -681,7 +736,38 @@ def sync_sources(log_note: str) -> None:
         README_FILE,
         render_readme(repo_reports, skill_records, duplicate_report),
     )
-    append_agent_log(log_note, repo_reports, duplicate_report)
+    append_agent_log(log_note, repo_reports, skill_records, duplicate_report)
+
+
+def reindex_curated_skills(log_note: str) -> None:
+    ensure_dirs()
+    repo_reports = json.loads(SOURCES_REPORT_FILE.read_text(encoding="utf-8"))
+    existing_skill_records = json.loads(SKILLS_FILE.read_text(encoding="utf-8"))
+    skill_records = [
+        record for record in existing_skill_records if record["repo_key"] != "curated"
+    ]
+    skill_records.extend(build_curated_skill_records())
+    duplicate_report = build_duplicate_report(skill_records)
+
+    write_text_file(
+        SKILLS_FILE,
+        json.dumps(skill_records, indent=2) + "\n",
+    )
+    write_text_file(
+        DUPLICATES_FILE,
+        json.dumps(duplicate_report, indent=2) + "\n",
+    )
+    write_text_file(
+        README_FILE,
+        render_readme(repo_reports, skill_records, duplicate_report),
+    )
+    append_agent_log(
+        log_note,
+        repo_reports,
+        skill_records,
+        duplicate_report,
+        source_verb="Referenced",
+    )
 
 
 def add_sources(urls: list[str]) -> None:
@@ -709,6 +795,7 @@ def write_automation_manifest() -> None:
         "schedule_local_time": "Every Sunday at 3:00 PM America/New_York",
         "purpose": "Refresh archived skill repositories, regenerate indexes, and append to AGENT_LOG.md.",
         "command": "python3 scripts/sync_sources.py --log-note 'Weekly automation refresh'",
+        "branch_policy": "Run only from a clean, remote-aligned main checkout; commit and push directly to origin/main; never create or use feature branches or worktrees.",
     }
     write_text_file(AUTOMATION_FILE, json.dumps(payload, indent=2) + "\n")
 
@@ -719,6 +806,7 @@ def main() -> None:
 
     add_parser = subparsers.add_parser("add")
     add_parser.add_argument("urls", nargs="+")
+    subparsers.add_parser("reindex-curated")
 
     parser.add_argument(
         "--log-note",
@@ -733,6 +821,10 @@ def main() -> None:
     if args.command == "add":
         add_sources(args.urls)
         sync_sources(f"Added source(s): {', '.join(args.urls)}")
+        return
+
+    if args.command == "reindex-curated":
+        reindex_curated_skills(args.log_note)
         return
 
     sync_sources(args.log_note)

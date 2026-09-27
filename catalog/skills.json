@@ -13442,5 +13442,17 @@
     "relative_directory": ".",
     "sha256": "5da9cbdf617b46b73220220e9767ce100fce9f1948119b6962c072b6fdbf3f55",
     "linked_local_files": []
+  },
+  {
+    "source_repo": "viseshrp/ai-skills-archive (curated)",
+    "repo_key": "curated",
+    "skill_name": "test-audit",
+    "description": "Audit new or existing tests for behavioral value, duplication, implementation coupling, brittleness, and test-only production seams. Use when writing, changing, reviewing, or pruning tests, including an independent final review of a test diff.",
+    "path": "skills/test-audit/SKILL.md",
+    "relative_directory": "skills/test-audit",
+    "sha256": "8b652f8465b4c220e67f9d774ba4744b743d8740d40ae97612ecac5c065c6c03",
+    "linked_local_files": [
+      "skills/test-audit/LICENSE"
+    ]
   }
 ]
