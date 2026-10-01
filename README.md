@@ -28,47 +28,47 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 ## Source Repositories and Gists
 
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
-  - Archived commit: `c004a74784a08295d52749b04cda634125b9a581`
+  - Archived commit: `2686b620fc1fed2e8f60c704839c766b8594c6b6`
   - Snapshot: [`archives/addyosmani__agent-skills/snapshot`](archives/addyosmani__agent-skills/snapshot)
   - Skills discovered: 25
-  - Files retained in reduced snapshot: 36
+  - Files retained in reduced snapshot: 37
 - [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
   - Archived commit: `2c606141936f1eeef17fa3043a72095b4765b9c2`
   - Snapshot: [`archives/multica-ai__andrej-karpathy-skills/snapshot`](archives/multica-ai__andrej-karpathy-skills/snapshot)
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
-  - Archived commit: `1515a2192a6051f9a793cfd964bd05e3db20607c`
+  - Archived commit: `ef44b8f4cd80df38b15d7742e163516b0ccbec57`
   - Snapshot: [`archives/Imbad0202__academic-research-skills/snapshot`](archives/Imbad0202__academic-research-skills/snapshot)
   - Skills discovered: 4
-  - Files retained in reduced snapshot: 630
+  - Files retained in reduced snapshot: 653
 - [mattpocock/skills](https://github.com/mattpocock/skills)
-  - Archived commit: `c55ee46073ed923f86ce59a5eb3b6d895095d1b7`
+  - Archived commit: `d81f3a183412e71a5b1e84ca21bc1a35eea03a60`
   - Snapshot: [`archives/mattpocock__skills/snapshot`](archives/mattpocock__skills/snapshot)
-  - Skills discovered: 38
-  - Files retained in reduced snapshot: 63
+  - Skills discovered: 37
+  - Files retained in reduced snapshot: 62
 - [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman)
-  - Archived commit: `3c62bd404e1e8673adf0a644f7fd53885c436df0`
+  - Archived commit: `f5d729488caa8f6a5b6c8086fe2cccd3e8a63f91`
   - Snapshot: [`archives/juliusbrussee__caveman/snapshot`](archives/juliusbrussee__caveman/snapshot)
   - Skills discovered: 24
   - Files retained in reduced snapshot: 40
 - [obra/Superpowers](https://github.com/obra/Superpowers)
-  - Archived commit: `5bf4e78011075bcfc0dc295f0724994cd123ee71`
+  - Archived commit: `8ca22dba9a94f28898bbce59f2537ff4d87c747d`
   - Snapshot: [`archives/obra__Superpowers/snapshot`](archives/obra__Superpowers/snapshot)
   - Skills discovered: 15
   - Files retained in reduced snapshot: 53
 - [cursor/plugins](https://github.com/cursor/plugins)
-  - Archived commit: `6ed0f7a9504f577d7529064103cecce9be7dfc5e`
+  - Archived commit: `2eb7ed4613cfc8f098dfe464a23680ea44d84c5e`
   - Snapshot: [`archives/cursor__plugins/snapshot`](archives/cursor__plugins/snapshot)
-  - Skills discovered: 92
-  - Files retained in reduced snapshot: 190
+  - Skills discovered: 101
+  - Files retained in reduced snapshot: 203
 - [affaan-m/ECC](https://github.com/affaan-m/ECC)
-  - Archived commit: `9ac593b55cba44c8b20152a5c7f28d300a67ec7e`
+  - Archived commit: `c70874fae9eb0e5ad0365beb7e2955899fd1d30f`
   - Snapshot: [`archives/affaan-m__ECC/snapshot`](archives/affaan-m__ECC/snapshot)
-  - Skills discovered: 903
-  - Files retained in reduced snapshot: 1072
+  - Skills discovered: 1027
+  - Files retained in reduced snapshot: 1236
 - [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
-  - Archived commit: `349ca444b4fda466e74d471dffa2aff36bb997f1`
+  - Archived commit: `5103ba478b380552207a3754b74c7655d64208cd`
   - Snapshot: [`archives/mvanhorn__last30days-skill/snapshot`](archives/mvanhorn__last30days-skill/snapshot)
   - Skills discovered: 1
   - Files retained in reduced snapshot: 128
@@ -88,7 +88,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 2
   - Files retained in reduced snapshot: 2
 - [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill)
-  - Archived commit: `5217fb45be2c0b302f29c9cd31cbd3237501c684`
+  - Archived commit: `ce26fc25c0e5e8cab638f883de62d9a86ee5e45b`
   - Snapshot: [`archives/Leonxlnx__taste-skill/snapshot`](archives/Leonxlnx__taste-skill/snapshot)
   - Skills discovered: 13
   - Files retained in reduced snapshot: 14
@@ -157,10 +157,12 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `domain-modeling`: [`skills/engineering/domain-modeling/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/domain-modeling/SKILL.md)
 - `grill-with-docs`: [`skills/engineering/grill-with-docs/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/grill-with-docs/SKILL.md)
 - `implement`: [`skills/engineering/implement/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/implement/SKILL.md)
+- `implement-spec`: [`skills/engineering/implement-spec/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/implement-spec/SKILL.md)
 - `improve-codebase-architecture`: [`skills/engineering/improve-codebase-architecture/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/improve-codebase-architecture/SKILL.md)
+- `pr`: [`skills/engineering/pr/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/pr/SKILL.md)
 - `prototype`: [`skills/engineering/prototype/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/prototype/SKILL.md)
 - `research`: [`skills/engineering/research/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/research/SKILL.md)
-- `resolving-merge-conflicts`: [`skills/engineering/resolving-merge-conflicts/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/resolving-merge-conflicts/SKILL.md)
+- `retro`: [`skills/engineering/retro/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/retro/SKILL.md)
 - `setup-matt-pocock-skills`: [`skills/engineering/setup-matt-pocock-skills/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/setup-matt-pocock-skills/SKILL.md)
 - `tdd`: [`skills/engineering/tdd/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/tdd/SKILL.md)
 - `to-spec`: [`skills/engineering/to-spec/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/to-spec/SKILL.md)
@@ -169,10 +171,7 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `wayfinder`: [`skills/engineering/wayfinder/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/wayfinder/SKILL.md)
 - `wizard`: [`skills/engineering/wizard/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/wizard/SKILL.md)
 - `claude-handoff`: [`skills/in-progress/claude-handoff/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/claude-handoff/SKILL.md)
-- `implement-spec`: [`skills/in-progress/implement-spec/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/implement-spec/SKILL.md)
 - `loop-me`: [`skills/in-progress/loop-me/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/loop-me/SKILL.md)
-- `pr`: [`skills/in-progress/pr/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/pr/SKILL.md)
-- `retro`: [`skills/in-progress/retro/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/retro/SKILL.md)
 - `setup-ts-deep-modules`: [`skills/in-progress/setup-ts-deep-modules/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/setup-ts-deep-modules/SKILL.md)
 - `writing-beats`: [`skills/in-progress/writing-beats/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/writing-beats/SKILL.md)
 - `writing-fragments`: [`skills/in-progress/writing-fragments/SKILL.md`](archives/mattpocock__skills/snapshot/skills/in-progress/writing-fragments/SKILL.md)
@@ -259,6 +258,11 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `what-did-i-get-done`: [`cursor-team-kit/skills/what-did-i-get-done/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/what-did-i-get-done/SKILL.md)
 - `workflow-from-chats`: [`cursor-team-kit/skills/workflow-from-chats/SKILL.md`](archives/cursor__plugins/snapshot/cursor-team-kit/skills/workflow-from-chats/SKILL.md)
 - `docs-canvas`: [`docs-canvas/skills/docs-canvas/SKILL.md`](archives/cursor__plugins/snapshot/docs-canvas/skills/docs-canvas/SKILL.md)
+- `build-figma`: [`dyl-stack/skills/build-figma/SKILL.md`](archives/cursor__plugins/snapshot/dyl-stack/skills/build-figma/SKILL.md)
+- `dyl-mode`: [`dyl-stack/skills/dyl-mode/SKILL.md`](archives/cursor__plugins/snapshot/dyl-stack/skills/dyl-mode/SKILL.md)
+- `dyl-ready-pr`: [`dyl-stack/skills/dyl-ready-pr/SKILL.md`](archives/cursor__plugins/snapshot/dyl-stack/skills/dyl-ready-pr/SKILL.md)
+- `dyl-review`: [`dyl-stack/skills/dyl-review/SKILL.md`](archives/cursor__plugins/snapshot/dyl-stack/skills/dyl-review/SKILL.md)
+- `principle-the-algorithm`: [`dyl-stack/skills/principle-the-algorithm/SKILL.md`](archives/cursor__plugins/snapshot/dyl-stack/skills/principle-the-algorithm/SKILL.md)
 - `add-dictation`: [`grok-voice/skills/add-dictation/SKILL.md`](archives/cursor__plugins/snapshot/grok-voice/skills/add-dictation/SKILL.md)
 - `add-read-aloud`: [`grok-voice/skills/add-read-aloud/SKILL.md`](archives/cursor__plugins/snapshot/grok-voice/skills/add-read-aloud/SKILL.md)
 - `add-voice`: [`grok-voice/skills/add-voice/SKILL.md`](archives/cursor__plugins/snapshot/grok-voice/skills/add-voice/SKILL.md)
@@ -323,8 +327,12 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `thermo-nuclear-code-quality-review`: [`thermos/skills/thermo-nuclear-code-quality-review/SKILL.md`](archives/cursor__plugins/snapshot/thermos/skills/thermo-nuclear-code-quality-review/SKILL.md)
 - `thermo-nuclear-review`: [`thermos/skills/thermo-nuclear-review/SKILL.md`](archives/cursor__plugins/snapshot/thermos/skills/thermo-nuclear-review/SKILL.md)
 - `thermos`: [`thermos/skills/thermos/SKILL.md`](archives/cursor__plugins/snapshot/thermos/skills/thermos/SKILL.md)
+- `google-docs`: [`third_party/google-docs/skills/google-docs/SKILL.md`](archives/cursor__plugins/snapshot/third_party/google-docs/skills/google-docs/SKILL.md)
+- `google-drive`: [`third_party/google-drive/skills/google-drive/SKILL.md`](archives/cursor__plugins/snapshot/third_party/google-drive/skills/google-drive/SKILL.md)
+- `google-sheets`: [`third_party/google-sheets/skills/google-sheets/SKILL.md`](archives/cursor__plugins/snapshot/third_party/google-sheets/skills/google-sheets/SKILL.md)
+- `google-slides`: [`third_party/google-slides/skills/google-slides/SKILL.md`](archives/cursor__plugins/snapshot/third_party/google-slides/skills/google-slides/SKILL.md)
 - `X MCP guide`: [`third_party/x/skills/x-api-mcp-guide/SKILL.md`](archives/cursor__plugins/snapshot/third_party/x/skills/x-api-mcp-guide/SKILL.md)
-- `X Chat`: [`third_party/x/skills/x-chat/SKILL.md`](archives/cursor__plugins/snapshot/third_party/x/skills/x-chat/SKILL.md)
+- `X Money guide`: [`third_party/x-money/skills/x-money-guide/SKILL.md`](archives/cursor__plugins/snapshot/third_party/x-money/skills/x-money-guide/SKILL.md)
 
 ### affaan-m/ECC
 - `agent-introspection-debugging`: [`.agents/skills/agent-introspection-debugging/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/agent-introspection-debugging/SKILL.md)
@@ -647,11 +655,11 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `rust-testing`: [`docs/ja-JP/skills/rust-testing/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/rust-testing/SKILL.md)
 - `safety-guard`: [`docs/ja-JP/skills/safety-guard/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/safety-guard/SKILL.md)
 - `santa-method`: [`docs/ja-JP/skills/santa-method/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/santa-method/SKILL.md)
-- `pubmed-database`: [`docs/ja-JP/skills/scientific-db-pubmed-database/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/scientific-db-pubmed-database/SKILL.md)
-- `uspto-database`: [`docs/ja-JP/skills/scientific-db-uspto-database/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/scientific-db-uspto-database/SKILL.md)
-- `gget`: [`docs/ja-JP/skills/scientific-pkg-gget/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/scientific-pkg-gget/SKILL.md)
-- `literature-review`: [`docs/ja-JP/skills/scientific-thinking-literature-review/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/scientific-thinking-literature-review/SKILL.md)
-- `scholar-evaluation`: [`docs/ja-JP/skills/scientific-thinking-scholar-evaluation/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/scientific-thinking-scholar-evaluation/SKILL.md)
+- `scientific-db-pubmed-database`: [`docs/ja-JP/skills/scientific-db-pubmed-database/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/scientific-db-pubmed-database/SKILL.md)
+- `scientific-db-uspto-database`: [`docs/ja-JP/skills/scientific-db-uspto-database/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/scientific-db-uspto-database/SKILL.md)
+- `scientific-pkg-gget`: [`docs/ja-JP/skills/scientific-pkg-gget/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/scientific-pkg-gget/SKILL.md)
+- `scientific-thinking-literature-review`: [`docs/ja-JP/skills/scientific-thinking-literature-review/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/scientific-thinking-literature-review/SKILL.md)
+- `scientific-thinking-scholar-evaluation`: [`docs/ja-JP/skills/scientific-thinking-scholar-evaluation/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/scientific-thinking-scholar-evaluation/SKILL.md)
 - `search-first`: [`docs/ja-JP/skills/search-first/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/search-first/SKILL.md)
 - `security-bounty-hunter`: [`docs/ja-JP/skills/security-bounty-hunter/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/security-bounty-hunter/SKILL.md)
 - `security-review`: [`docs/ja-JP/skills/security-review/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/ja-JP/skills/security-review/SKILL.md)
@@ -938,6 +946,129 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `strategic-compact`: [`docs/zh-TW/skills/strategic-compact/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-TW/skills/strategic-compact/SKILL.md)
 - `tdd-workflow`: [`docs/zh-TW/skills/tdd-workflow/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-TW/skills/tdd-workflow/SKILL.md)
 - `verification-loop`: [`docs/zh-TW/skills/verification-loop/SKILL.md`](archives/affaan-m__ECC/snapshot/docs/zh-TW/skills/verification-loop/SKILL.md)
+- `accessibility`: [`pi/core/skills/accessibility/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/accessibility/SKILL.md)
+- `agent-architecture-audit`: [`pi/core/skills/agent-architecture-audit/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/agent-architecture-audit/SKILL.md)
+- `agent-eval`: [`pi/core/skills/agent-eval/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/agent-eval/SKILL.md)
+- `agent-harness-construction`: [`pi/core/skills/agent-harness-construction/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/agent-harness-construction/SKILL.md)
+- `agent-introspection-debugging`: [`pi/core/skills/agent-introspection-debugging/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/agent-introspection-debugging/SKILL.md)
+- `agent-self-evaluation`: [`pi/core/skills/agent-self-evaluation/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/agent-self-evaluation/SKILL.md)
+- `agentic-engineering`: [`pi/core/skills/agentic-engineering/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/agentic-engineering/SKILL.md)
+- `ai-first-engineering`: [`pi/core/skills/ai-first-engineering/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/ai-first-engineering/SKILL.md)
+- `android-clean-architecture`: [`pi/core/skills/android-clean-architecture/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/android-clean-architecture/SKILL.md)
+- `angular-developer`: [`pi/core/skills/angular-developer/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/angular-developer/SKILL.md)
+- `api-connector-builder`: [`pi/core/skills/api-connector-builder/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/api-connector-builder/SKILL.md)
+- `api-design`: [`pi/core/skills/api-design/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/api-design/SKILL.md)
+- `architecture-decision-records`: [`pi/core/skills/architecture-decision-records/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/architecture-decision-records/SKILL.md)
+- `backend-patterns`: [`pi/core/skills/backend-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/backend-patterns/SKILL.md)
+- `benchmark`: [`pi/core/skills/benchmark/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/benchmark/SKILL.md)
+- `benchmark-optimization-loop`: [`pi/core/skills/benchmark-optimization-loop/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/benchmark-optimization-loop/SKILL.md)
+- `blueprint`: [`pi/core/skills/blueprint/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/blueprint/SKILL.md)
+- `bun-runtime`: [`pi/core/skills/bun-runtime/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/bun-runtime/SKILL.md)
+- `click-path-audit`: [`pi/core/skills/click-path-audit/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/click-path-audit/SKILL.md)
+- `clickhouse-io`: [`pi/core/skills/clickhouse-io/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/clickhouse-io/SKILL.md)
+- `code-tour`: [`pi/core/skills/code-tour/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/code-tour/SKILL.md)
+- `codebase-onboarding`: [`pi/core/skills/codebase-onboarding/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/codebase-onboarding/SKILL.md)
+- `coding-standards`: [`pi/core/skills/coding-standards/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/coding-standards/SKILL.md)
+- `compose-multiplatform-patterns`: [`pi/core/skills/compose-multiplatform-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/compose-multiplatform-patterns/SKILL.md)
+- `content-hash-cache-pattern`: [`pi/core/skills/content-hash-cache-pattern/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/content-hash-cache-pattern/SKILL.md)
+- `contract-first`: [`pi/core/skills/contract-first/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/contract-first/SKILL.md)
+- `cost-aware-llm-pipeline`: [`pi/core/skills/cost-aware-llm-pipeline/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/cost-aware-llm-pipeline/SKILL.md)
+- `cpp-coding-standards`: [`pi/core/skills/cpp-coding-standards/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/cpp-coding-standards/SKILL.md)
+- `cpp-testing`: [`pi/core/skills/cpp-testing/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/cpp-testing/SKILL.md)
+- `csharp-testing`: [`pi/core/skills/csharp-testing/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/csharp-testing/SKILL.md)
+- `dart-flutter-patterns`: [`pi/core/skills/dart-flutter-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/dart-flutter-patterns/SKILL.md)
+- `dashboard-builder`: [`pi/core/skills/dashboard-builder/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/dashboard-builder/SKILL.md)
+- `data-throughput-accelerator`: [`pi/core/skills/data-throughput-accelerator/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/data-throughput-accelerator/SKILL.md)
+- `database-migrations`: [`pi/core/skills/database-migrations/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/database-migrations/SKILL.md)
+- `deployment-patterns`: [`pi/core/skills/deployment-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/deployment-patterns/SKILL.md)
+- `design-system`: [`pi/core/skills/design-system/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/design-system/SKILL.md)
+- `dev-team`: [`pi/core/skills/dev-team/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/dev-team/SKILL.md)
+- `django-celery`: [`pi/core/skills/django-celery/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/django-celery/SKILL.md)
+- `django-patterns`: [`pi/core/skills/django-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/django-patterns/SKILL.md)
+- `django-security`: [`pi/core/skills/django-security/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/django-security/SKILL.md)
+- `django-tdd`: [`pi/core/skills/django-tdd/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/django-tdd/SKILL.md)
+- `django-verification`: [`pi/core/skills/django-verification/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/django-verification/SKILL.md)
+- `docker-patterns`: [`pi/core/skills/docker-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/docker-patterns/SKILL.md)
+- `dotnet-patterns`: [`pi/core/skills/dotnet-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/dotnet-patterns/SKILL.md)
+- `e2e-testing`: [`pi/core/skills/e2e-testing/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/e2e-testing/SKILL.md)
+- `ecc-council`: [`pi/core/skills/ecc-council/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/ecc-council/SKILL.md)
+- `error-handling`: [`pi/core/skills/error-handling/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/error-handling/SKILL.md)
+- `fastapi-patterns`: [`pi/core/skills/fastapi-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/fastapi-patterns/SKILL.md)
+- `flutter-dart-code-review`: [`pi/core/skills/flutter-dart-code-review/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/flutter-dart-code-review/SKILL.md)
+- `foundation-models-on-device`: [`pi/core/skills/foundation-models-on-device/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/foundation-models-on-device/SKILL.md)
+- `frontend-a11y`: [`pi/core/skills/frontend-a11y/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/frontend-a11y/SKILL.md)
+- `frontend-patterns`: [`pi/core/skills/frontend-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/frontend-patterns/SKILL.md)
+- `fsharp-testing`: [`pi/core/skills/fsharp-testing/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/fsharp-testing/SKILL.md)
+- `git-workflow`: [`pi/core/skills/git-workflow/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/git-workflow/SKILL.md)
+- `golang-patterns`: [`pi/core/skills/golang-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/golang-patterns/SKILL.md)
+- `golang-testing`: [`pi/core/skills/golang-testing/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/golang-testing/SKILL.md)
+- `hexagonal-architecture`: [`pi/core/skills/hexagonal-architecture/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/hexagonal-architecture/SKILL.md)
+- `inherit-legacy-style`: [`pi/core/skills/inherit-legacy-style/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/inherit-legacy-style/SKILL.md)
+- `intent-driven-development`: [`pi/core/skills/intent-driven-development/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/intent-driven-development/SKILL.md)
+- `java-coding-standards`: [`pi/core/skills/java-coding-standards/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/java-coding-standards/SKILL.md)
+- `jpa-patterns`: [`pi/core/skills/jpa-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/jpa-patterns/SKILL.md)
+- `kotlin-coroutines-flows`: [`pi/core/skills/kotlin-coroutines-flows/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/kotlin-coroutines-flows/SKILL.md)
+- `kotlin-exposed-patterns`: [`pi/core/skills/kotlin-exposed-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/kotlin-exposed-patterns/SKILL.md)
+- `kotlin-ktor-patterns`: [`pi/core/skills/kotlin-ktor-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/kotlin-ktor-patterns/SKILL.md)
+- `kotlin-patterns`: [`pi/core/skills/kotlin-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/kotlin-patterns/SKILL.md)
+- `kotlin-testing`: [`pi/core/skills/kotlin-testing/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/kotlin-testing/SKILL.md)
+- `kubernetes-patterns`: [`pi/core/skills/kubernetes-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/kubernetes-patterns/SKILL.md)
+- `laravel-patterns`: [`pi/core/skills/laravel-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/laravel-patterns/SKILL.md)
+- `laravel-security`: [`pi/core/skills/laravel-security/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/laravel-security/SKILL.md)
+- `laravel-tdd`: [`pi/core/skills/laravel-tdd/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/laravel-tdd/SKILL.md)
+- `laravel-verification`: [`pi/core/skills/laravel-verification/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/laravel-verification/SKILL.md)
+- `latency-critical-systems`: [`pi/core/skills/latency-critical-systems/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/latency-critical-systems/SKILL.md)
+- `liquid-glass-design`: [`pi/core/skills/liquid-glass-design/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/liquid-glass-design/SKILL.md)
+- `living-docs-governance`: [`pi/core/skills/living-docs-governance/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/living-docs-governance/SKILL.md)
+- `make-interfaces-feel-better`: [`pi/core/skills/make-interfaces-feel-better/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/make-interfaces-feel-better/SKILL.md)
+- `mcp-server-patterns`: [`pi/core/skills/mcp-server-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/mcp-server-patterns/SKILL.md)
+- `ml-adoption-playbook`: [`pi/core/skills/ml-adoption-playbook/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/ml-adoption-playbook/SKILL.md)
+- `mle-workflow`: [`pi/core/skills/mle-workflow/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/mle-workflow/SKILL.md)
+- `motion-advanced`: [`pi/core/skills/motion-advanced/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/motion-advanced/SKILL.md)
+- `motion-foundations`: [`pi/core/skills/motion-foundations/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/motion-foundations/SKILL.md)
+- `motion-patterns`: [`pi/core/skills/motion-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/motion-patterns/SKILL.md)
+- `mysql-patterns`: [`pi/core/skills/mysql-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/mysql-patterns/SKILL.md)
+- `nestjs-patterns`: [`pi/core/skills/nestjs-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/nestjs-patterns/SKILL.md)
+- `nextjs-turbopack`: [`pi/core/skills/nextjs-turbopack/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/nextjs-turbopack/SKILL.md)
+- `nuxt4-patterns`: [`pi/core/skills/nuxt4-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/nuxt4-patterns/SKILL.md)
+- `parallel-execution-optimizer`: [`pi/core/skills/parallel-execution-optimizer/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/parallel-execution-optimizer/SKILL.md)
+- `perl-patterns`: [`pi/core/skills/perl-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/perl-patterns/SKILL.md)
+- `perl-security`: [`pi/core/skills/perl-security/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/perl-security/SKILL.md)
+- `perl-testing`: [`pi/core/skills/perl-testing/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/perl-testing/SKILL.md)
+- `postgres-patterns`: [`pi/core/skills/postgres-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/postgres-patterns/SKILL.md)
+- `prisma-patterns`: [`pi/core/skills/prisma-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/prisma-patterns/SKILL.md)
+- `product-capability`: [`pi/core/skills/product-capability/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/product-capability/SKILL.md)
+- `product-lens`: [`pi/core/skills/product-lens/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/product-lens/SKILL.md)
+- `production-audit`: [`pi/core/skills/production-audit/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/production-audit/SKILL.md)
+- `python-patterns`: [`pi/core/skills/python-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/python-patterns/SKILL.md)
+- `python-testing`: [`pi/core/skills/python-testing/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/python-testing/SKILL.md)
+- `pytorch-patterns`: [`pi/core/skills/pytorch-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/pytorch-patterns/SKILL.md)
+- `quarkus-patterns`: [`pi/core/skills/quarkus-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/quarkus-patterns/SKILL.md)
+- `quarkus-security`: [`pi/core/skills/quarkus-security/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/quarkus-security/SKILL.md)
+- `quarkus-tdd`: [`pi/core/skills/quarkus-tdd/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/quarkus-tdd/SKILL.md)
+- `quarkus-verification`: [`pi/core/skills/quarkus-verification/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/quarkus-verification/SKILL.md)
+- `rails-patterns`: [`pi/core/skills/rails-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/rails-patterns/SKILL.md)
+- `react-native-patterns`: [`pi/core/skills/react-native-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/react-native-patterns/SKILL.md)
+- `react-patterns`: [`pi/core/skills/react-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/react-patterns/SKILL.md)
+- `react-performance`: [`pi/core/skills/react-performance/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/react-performance/SKILL.md)
+- `react-testing`: [`pi/core/skills/react-testing/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/react-testing/SKILL.md)
+- `redis-patterns`: [`pi/core/skills/redis-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/redis-patterns/SKILL.md)
+- `regex-vs-llm-structured-text`: [`pi/core/skills/regex-vs-llm-structured-text/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/regex-vs-llm-structured-text/SKILL.md)
+- `rust-patterns`: [`pi/core/skills/rust-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/rust-patterns/SKILL.md)
+- `rust-testing`: [`pi/core/skills/rust-testing/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/rust-testing/SKILL.md)
+- `security-review`: [`pi/core/skills/security-review/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/security-review/SKILL.md)
+- `springboot-patterns`: [`pi/core/skills/springboot-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/springboot-patterns/SKILL.md)
+- `springboot-security`: [`pi/core/skills/springboot-security/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/springboot-security/SKILL.md)
+- `springboot-tdd`: [`pi/core/skills/springboot-tdd/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/springboot-tdd/SKILL.md)
+- `springboot-verification`: [`pi/core/skills/springboot-verification/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/springboot-verification/SKILL.md)
+- `swift-actor-persistence`: [`pi/core/skills/swift-actor-persistence/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/swift-actor-persistence/SKILL.md)
+- `swift-concurrency-6-2`: [`pi/core/skills/swift-concurrency-6-2/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/swift-concurrency-6-2/SKILL.md)
+- `swift-protocol-di-testing`: [`pi/core/skills/swift-protocol-di-testing/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/swift-protocol-di-testing/SKILL.md)
+- `swiftui-patterns`: [`pi/core/skills/swiftui-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/swiftui-patterns/SKILL.md)
+- `tdd-workflow`: [`pi/core/skills/tdd-workflow/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/tdd-workflow/SKILL.md)
+- `verification-loop`: [`pi/core/skills/verification-loop/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/verification-loop/SKILL.md)
+- `vite-patterns`: [`pi/core/skills/vite-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/vite-patterns/SKILL.md)
+- `vue-patterns`: [`pi/core/skills/vue-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/pi/core/skills/vue-patterns/SKILL.md)
 - `accessibility`: [`skills/accessibility/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/accessibility/SKILL.md)
 - `agent-architecture-audit`: [`skills/agent-architecture-audit/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/agent-architecture-audit/SKILL.md)
 - `agent-eval`: [`skills/agent-eval/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/agent-eval/SKILL.md)
@@ -1070,6 +1201,7 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `homelab-vlan-segmentation`: [`skills/homelab-vlan-segmentation/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/homelab-vlan-segmentation/SKILL.md)
 - `homelab-wireguard-vpn`: [`skills/homelab-wireguard-vpn/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/homelab-wireguard-vpn/SKILL.md)
 - `hookify-rules`: [`skills/hookify-rules/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/hookify-rules/SKILL.md)
+- `i18n-sync`: [`skills/i18n-sync/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/i18n-sync/SKILL.md)
 - `inherit-legacy-style`: [`skills/inherit-legacy-style/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/inherit-legacy-style/SKILL.md)
 - `intent-driven-development`: [`skills/intent-driven-development/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/intent-driven-development/SKILL.md)
 - `inventory-demand-planning`: [`skills/inventory-demand-planning/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/inventory-demand-planning/SKILL.md)
@@ -1181,11 +1313,11 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `rust-testing`: [`skills/rust-testing/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/rust-testing/SKILL.md)
 - `safety-guard`: [`skills/safety-guard/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/safety-guard/SKILL.md)
 - `santa-method`: [`skills/santa-method/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/santa-method/SKILL.md)
-- `pubmed-database`: [`skills/scientific-db-pubmed-database/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/scientific-db-pubmed-database/SKILL.md)
-- `uspto-database`: [`skills/scientific-db-uspto-database/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/scientific-db-uspto-database/SKILL.md)
-- `gget`: [`skills/scientific-pkg-gget/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/scientific-pkg-gget/SKILL.md)
-- `literature-review`: [`skills/scientific-thinking-literature-review/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/scientific-thinking-literature-review/SKILL.md)
-- `scholar-evaluation`: [`skills/scientific-thinking-scholar-evaluation/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/scientific-thinking-scholar-evaluation/SKILL.md)
+- `scientific-db-pubmed-database`: [`skills/scientific-db-pubmed-database/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/scientific-db-pubmed-database/SKILL.md)
+- `scientific-db-uspto-database`: [`skills/scientific-db-uspto-database/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/scientific-db-uspto-database/SKILL.md)
+- `scientific-pkg-gget`: [`skills/scientific-pkg-gget/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/scientific-pkg-gget/SKILL.md)
+- `scientific-thinking-literature-review`: [`skills/scientific-thinking-literature-review/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/scientific-thinking-literature-review/SKILL.md)
+- `scientific-thinking-scholar-evaluation`: [`skills/scientific-thinking-scholar-evaluation/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/scientific-thinking-scholar-evaluation/SKILL.md)
 - `search-first`: [`skills/search-first/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/search-first/SKILL.md)
 - `security-bounty-hunter`: [`skills/security-bounty-hunter/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/security-bounty-hunter/SKILL.md)
 - `security-review`: [`skills/security-review/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/security-review/SKILL.md)
@@ -1275,8 +1407,8 @@ These skills are maintained in this repository rather than inside an upstream sn
 
 ## Duplicate Tracking
 
-- Exact duplicate groups: 5
-- Repeated skill names: 253
+- Exact duplicate groups: 127
+- Repeated skill names: 270
 - Full report: [`catalog/duplicates.json`](catalog/duplicates.json)
 
 ## Add A Source
