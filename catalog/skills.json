@@ -6,7 +6,7 @@
     "description": "Guides stable API and interface design. Use when designing APIs, module boundaries, or any public interface. Use when creating REST or GraphQL endpoints, defining type contracts between modules, or establishing boundaries between frontend and backend.",
     "path": "skills/api-and-interface-design/SKILL.md",
     "relative_directory": "skills/api-and-interface-design",
-    "sha256": "5dafd0c44a3aabf11cae5bcb34f6fcc24dfa5c01ba6e0d3176bce997f4d68bc8",
+    "sha256": "e83d34f52ff12dd8a7c5134cd7e8140ea4541ec65e204f8a1e4cd366e30c4192",
     "linked_local_files": []
   },
   {
@@ -36,7 +36,7 @@
     "description": "Conducts multi-axis code review. Use before merging any change. Use when reviewing code written by yourself, another agent, or a human. Use when you need to assess code quality across multiple dimensions before it enters the main branch. Use when asked to review a diff or a pull request, even when the diff is pasted inline.",
     "path": "skills/code-review-and-quality/SKILL.md",
     "relative_directory": "skills/code-review-and-quality",
-    "sha256": "d4ec6843e78a8ab2049185d7c2742e2f1e343143c6c915eb5b4f9a3a00a44f94",
+    "sha256": "2db1e850379f255fd3091ef278cde24cd6c7d2ba23e360cc52ea522c40d4396e",
     "linked_local_files": [
       "references/performance-checklist.md",
       "references/security-checklist.md"
@@ -101,7 +101,7 @@
     "description": "Records decisions and documentation. Use when you need to document an architecture decision (ADR) or the reasoning behind a design choice, when changing public APIs, shipping features, or when you need to record context that future engineers and agents will need to understand the codebase.",
     "path": "skills/documentation-and-adrs/SKILL.md",
     "relative_directory": "skills/documentation-and-adrs",
-    "sha256": "87ae44a0c7bb3eefc2131a9d11caabcc14e4d8dcb27d66a3a675551ee2ce1671",
+    "sha256": "359b22460045583b0233ec3f80223459c4096b0fa513f5c29ade9c3985207d65",
     "linked_local_files": []
   },
   {
@@ -193,9 +193,10 @@
     "description": "Optimizes application performance across frontend, backend, queries, and databases. Use when performance requirements exist, when you suspect performance regressions, when Core Web Vitals or load times need improvement, when N+1 query patterns need fixing, or when profiling reveals bottlenecks.",
     "path": "skills/performance-optimization/SKILL.md",
     "relative_directory": "skills/performance-optimization",
-    "sha256": "00694d0c69bbde674d0e39de24052d90afea32d9fef9553eaee21a50a7e9b8cf",
+    "sha256": "665a83a7218d6aebd02ca329a7b2422cf28f7c55cb56f870c05e12047770245c",
     "linked_local_files": [
-      "references/performance-checklist.md"
+      "references/performance-checklist.md",
+      "skills/performance-optimization/references/optimization-patterns.md"
     ]
   },
   {
@@ -230,7 +231,7 @@
     "description": "Prepares production launches. Use when preparing to deploy to production, or when asking what needs to be in place before shipping. Use when you need a pre-launch checklist, when setting up monitoring, when planning a staged rollout, or when you need a rollback strategy.",
     "path": "skills/shipping-and-launch/SKILL.md",
     "relative_directory": "skills/shipping-and-launch",
-    "sha256": "af610cf4892db7eab2e91c899e33feba90e1000bac4528b2f8dde930816ac125",
+    "sha256": "1055d25dfe6cfeb6ae31eba3e2328fd0e7c66b285f0e44c40f67c77a59813281",
     "linked_local_files": [
       "references/accessibility-checklist.md",
       "references/definition-of-done.md",
@@ -255,7 +256,7 @@
     "description": "Creates specs before coding. Use when starting a new project, feature, or significant change and no specification exists yet. Use when drafting a PRD or requirements document with objectives and scope, or when requirements are unclear, ambiguous, or only exist as a vague idea. Use when a single requirement spans several independently testable capabilities and needs decomposing into a capability map of modules before specifying.",
     "path": "skills/spec-driven-development/SKILL.md",
     "relative_directory": "skills/spec-driven-development",
-    "sha256": "f7129bca8742bad73f60209bd237e8b10dab6f1fae8576dc552fb1923bc1e721",
+    "sha256": "c4b97ce3d7f24be0e67fd612c7595f65504872e3a9f8d338d098b2363fdb66ef",
     "linked_local_files": []
   },
   {
@@ -299,7 +300,7 @@
     "description": "12-agent academic paper writing pipeline. 11 modes (full/plan/outline/revision/revision-coach/abstract/lit-review/format-convert/citation-check/disclosure/rebuttal-audit). 6 paper types, 5 citation formats, bilingual abstracts, LaTeX/DOCX-via-Pandoc/PDF output. Style Calibration + Writing Quality Check + Anti-Patterns with IRON RULE markers. Triggers: write paper, academic paper, guide my paper, parse reviews, I got reviewer comments, revision roadmap, should we push back, conference rebuttal, grant panel response, audit my rebuttal, check my response draft, AI disclosure, check citations, citation check, check my references, verify references, look over the refs, \u5beb\u8ad6\u6587, \u5b78\u8853\u8ad6\u6587, \u5f15\u5c0e\u6211\u5beb\u8ad6\u6587, \u5be9\u67e5\u610f\u898b, \u6211\u6536\u5230\u5be9\u67e5\u610f\u898b, \u4fee\u8a02\u8def\u7dda\u5716, \u8a55\u4f30\u56de\u8986, \u6aa2\u67e5\u5f15\u7528, \u5f15\u7528\u6aa2\u67e5, \u6aa2\u67e5\u53c3\u8003\u6587\u737b, \u6838\u5c0d\u6587\u737b, \ub17c\ubb38 \uc791\uc131, \ucd08\ub85d \uc791\uc131, \ub17c\ubb38 \uc218\uc815, \ub17c\ubb38 \uacc4\ud68d\uc744 \ub3c4\uc640\uc918, \uc2ec\uc0ac \uc758\uacac\uc744 \ubc1b\uc558\uc5b4, \uc2ec\uc0ac \uc758\uacac \ubc18\uc601, \ub2f5\ubcc0\uc11c \uc810\uac80, AI \uc0ac\uc6a9 \uace0\uc9c0, \uc778\uc6a9 \ud655\uc778, \uc778\uc6a9 \ud615\uc2dd \uac80\uc0ac, enmendar mi art\u00edculo, redactar art\u00edculo, gu\u00eda mi art\u00edculo, analizar rese\u00f1as, auditar mi respuesta, verificar borrador de respuesta, verificar citas, divulgaci\u00f3n de IA.",
     "path": "academic-paper/SKILL.md",
     "relative_directory": "academic-paper",
-    "sha256": "beb129d9cd1a5640522e4bfe570877e0684fb9a8fcea16290ecc2a8fb6a3f0fd",
+    "sha256": "508c6c9f15e424ce58b97580aae3941a523c839c706b8a3f7737a03fb9a1b8ed",
     "linked_local_files": [
       ".claude-plugin/marketplace.json",
       ".claude-plugin/plugin.json",
@@ -632,6 +633,7 @@
       "scripts/audit_snapshot.py",
       "scripts/bootstrap_timeline_yaml.py",
       "scripts/build_claim_standing_query_plan.py",
+      "scripts/build_content_coverage_advisory.py",
       "scripts/build_submission_packet_manifest.py",
       "scripts/check_215_field_norm.py",
       "scripts/check_216_surface_form.py",
@@ -640,6 +642,7 @@
       "scripts/check_392_citation_verification_intake.py",
       "scripts/check_394_submission_policy.py",
       "scripts/check_439_format_profile.py",
+      "scripts/check_670_revision_roadmap_integration.py",
       "scripts/check_acronyms.py",
       "scripts/check_agents_mirror_sync.py",
       "scripts/check_benchmark_report.py",
@@ -791,6 +794,7 @@
       "scripts/test_evals_citation_extraction.py",
       "scripts/test_evals_lift_report_schema.py",
       "scripts/test_evidence_rows.py",
+      "scripts/test_excluded_source_entry_schema.py",
       "scripts/test_experiment_alignment_overclaim_fixtures.py",
       "scripts/test_file_lock.py",
       "scripts/test_migrate_literature_corpus_to_v3_7_3.py",
@@ -807,6 +811,8 @@
       "scripts/test_skill_lint_marker_block.py",
       "scripts/test_slr_lineage_emission.py",
       "scripts/test_socratic_rq_non_generation_contract.py",
+      "scripts/test_sr_screener_pipeline.py",
+      "scripts/test_standing_constraint_entry_schema.py",
       "scripts/test_text_similarity.py",
       "scripts/test_transport_fixture_citation_gate.py",
       "scripts/test_v3_6_7_phase_6_6.py",
@@ -859,6 +865,7 @@
       "shared/contracts/passport/claim_drift.schema.json",
       "shared/contracts/passport/claim_intent_manifest.schema.json",
       "shared/contracts/passport/constraint_violation.schema.json",
+      "shared/contracts/passport/excluded_source_entry.schema.json",
       "shared/contracts/passport/experiment_alignment_result.schema.json",
       "shared/contracts/passport/experiment_provenance_entry.schema.json",
       "shared/contracts/passport/human_read_log.schema.json",
@@ -868,6 +875,7 @@
       "shared/contracts/passport/rejection_log.schema.json",
       "shared/contracts/passport/reset_ledger_entry.schema.json",
       "shared/contracts/passport/run_ledger.schema.json",
+      "shared/contracts/passport/standing_constraint_entry.schema.json",
       "shared/contracts/passport/terminal_policies.schema.json",
       "shared/contracts/passport/uncited_assertion.schema.json",
       "shared/contracts/passport/uncited_audit_failure.schema.json",
@@ -917,6 +925,30 @@
       "shared/sprint_contract.schema.json",
       "shared/style_calibration_protocol.md",
       "shared/templates/codex_audit_multifile_template.md",
+      "sr-screener/SKILL.md",
+      "sr-screener/agents/protocol_architect_agent.md",
+      "sr-screener/agents/qc_auditor_agent.md",
+      "sr-screener/agents/reporter_agent.md",
+      "sr-screener/agents/screening_reviewer_agent.md",
+      "sr-screener/examples/example_config_dta.json",
+      "sr-screener/examples/example_protocol_dta.md",
+      "sr-screener/examples/quick_screen_example.md",
+      "sr-screener/references/decision_rules.md",
+      "sr-screener/references/failure_paths.md",
+      "sr-screener/references/orchestration.md",
+      "sr-screener/references/protocol_template.md",
+      "sr-screener/references/quality_control.md",
+      "sr-screener/references/reporting_and_handoff.md",
+      "sr-screener/references/reviewer_roles.md",
+      "sr-screener/scripts/build_outputs.py",
+      "sr-screener/scripts/build_workflow.py",
+      "sr-screener/scripts/merge_decisions.py",
+      "sr-screener/scripts/prepare_fulltext.py",
+      "sr-screener/scripts/prepare_records.py",
+      "sr-screener/scripts/srlib.py",
+      "sr-screener/templates/prompts.md",
+      "sr-screener/templates/screening_config.template.json",
+      "sr-screener/templates/workflows/ta_screening.template.js",
       "tests/fake_msvcrt.py",
       "tests/fixtures/issue_133_routing/CALIBRATION_LOG.md",
       "tests/fixtures/issue_133_routing/README.md",
@@ -962,7 +994,7 @@
     "description": "Multi-perspective academic paper review with dynamic reviewer personas. Runs a 5-seat, role-separated review panel (Journal-Fit Reviewer + 3 peer-review roles + Devil's Advocate) with field-specific expertise; role separation is not a claim of independent error processes. Supports full review, re-review (verification), quick assessment, methodology focus, Socratic guided, and calibration modes. Triggers on: review paper, peer review, manuscript review, referee report, review my paper, critique paper, simulate review, editorial review, calibrate reviewer, reviewer calibration, measure reviewer accuracy, \u5be9\u67e5\u8ad6\u6587, \u8ad6\u6587\u5be9\u67e5, \u6a21\u64ec\u5be9\u67e5, \u540c\u5115\u5be9\u67e5, \u5e6b\u6211\u5be9\u9019\u7bc7, \u4ee5\u5be9\u67e5\u4eba\u89d2\u5ea6\u8a55\u4f30, \u5be9\u67e5\u8005\u6821\u6e96, \ub17c\ubb38 \uc2ec\uc0ac, \ub3d9\ub8cc \uc2ec\uc0ac, \ubaa8\uc758 \uc2ec\uc0ac, \uc2ec\uc0ac\uc790 \uad00\uc810\uc5d0\uc11c \ud3c9\uac00, \uc2ec\uc0ac\uc790 \ubcf4\uc815, revisar art\u00edculo, revisi\u00f3n entre pares, revisi\u00f3n de manuscrito, informe de \u00e1rbitro, revisa mi art\u00edculo, criticar art\u00edculo, simular revisi\u00f3n, revisi\u00f3n editorial, calibrar revisor.",
     "path": "academic-paper-reviewer/SKILL.md",
     "relative_directory": "academic-paper-reviewer",
-    "sha256": "25dd95645ff83a84ea7de7383e8bc241d2e59a4a22f3ddc146f7fdbf88ba601d",
+    "sha256": "dd44856b3c87eac3335e47fbc1a9bba609f74a17d75485bc07b3678e8d875869",
     "linked_local_files": [
       "academic-paper-reviewer/agents/devils_advocate_reviewer_agent.md",
       "academic-paper-reviewer/agents/domain_reviewer_agent.md",
@@ -999,7 +1031,7 @@
     "description": "Orchestrator for the full academic research pipeline: research -> write -> integrity check -> review -> revise -> re-review -> re-revise -> final integrity check -> finalize. Coordinates deep-research, academic-paper, and academic-paper-reviewer into a seamless 10-stage workflow with mandatory, coverage-bounded integrity checks, two-stage peer review, and auditable quality-assurance artifacts. Triggers on: academic pipeline, research to paper, full paper workflow, paper pipeline, end-to-end paper, research-to-publication, complete paper workflow, \uc5f0\uad6c\ubd80\ud130 \ub17c\ubb38\uae4c\uc9c0, \uc5f0\uad6c \uc8fc\uc81c \uc124\uc815\ubd80\ud130 \ub17c\ubb38 \uc644\uc131\uae4c\uc9c0, \ub17c\ubb38 \uc804\uccb4 \uc6cc\ud06c\ud50c\ub85c, flujo de trabajo acad\u00e9mico, investigaci\u00f3n a art\u00edculo, flujo completo de art\u00edculo, pipeline de investigaci\u00f3n completa, publicaci\u00f3n de investigaci\u00f3n, flujo de trabajo completo del art\u00edculo.",
     "path": "academic-pipeline/SKILL.md",
     "relative_directory": "academic-pipeline",
-    "sha256": "b8679ea628e01686101f2e6b236bf73afd0cd2de8fffcfc91e752689d8dec9a4",
+    "sha256": "1746a3c5f178ca0915019056d36bd8f31dc26758d43a18e14191e5c31c6d56b3",
     "linked_local_files": [
       ".claude-plugin/marketplace.json",
       ".claude-plugin/plugin.json",
@@ -1332,6 +1364,7 @@
       "scripts/audit_snapshot.py",
       "scripts/bootstrap_timeline_yaml.py",
       "scripts/build_claim_standing_query_plan.py",
+      "scripts/build_content_coverage_advisory.py",
       "scripts/build_submission_packet_manifest.py",
       "scripts/check_215_field_norm.py",
       "scripts/check_216_surface_form.py",
@@ -1340,6 +1373,7 @@
       "scripts/check_392_citation_verification_intake.py",
       "scripts/check_394_submission_policy.py",
       "scripts/check_439_format_profile.py",
+      "scripts/check_670_revision_roadmap_integration.py",
       "scripts/check_acronyms.py",
       "scripts/check_agents_mirror_sync.py",
       "scripts/check_benchmark_report.py",
@@ -1491,6 +1525,7 @@
       "scripts/test_evals_citation_extraction.py",
       "scripts/test_evals_lift_report_schema.py",
       "scripts/test_evidence_rows.py",
+      "scripts/test_excluded_source_entry_schema.py",
       "scripts/test_experiment_alignment_overclaim_fixtures.py",
       "scripts/test_file_lock.py",
       "scripts/test_migrate_literature_corpus_to_v3_7_3.py",
@@ -1507,6 +1542,8 @@
       "scripts/test_skill_lint_marker_block.py",
       "scripts/test_slr_lineage_emission.py",
       "scripts/test_socratic_rq_non_generation_contract.py",
+      "scripts/test_sr_screener_pipeline.py",
+      "scripts/test_standing_constraint_entry_schema.py",
       "scripts/test_text_similarity.py",
       "scripts/test_transport_fixture_citation_gate.py",
       "scripts/test_v3_6_7_phase_6_6.py",
@@ -1559,6 +1596,7 @@
       "shared/contracts/passport/claim_drift.schema.json",
       "shared/contracts/passport/claim_intent_manifest.schema.json",
       "shared/contracts/passport/constraint_violation.schema.json",
+      "shared/contracts/passport/excluded_source_entry.schema.json",
       "shared/contracts/passport/experiment_alignment_result.schema.json",
       "shared/contracts/passport/experiment_provenance_entry.schema.json",
       "shared/contracts/passport/human_read_log.schema.json",
@@ -1568,6 +1606,7 @@
       "shared/contracts/passport/rejection_log.schema.json",
       "shared/contracts/passport/reset_ledger_entry.schema.json",
       "shared/contracts/passport/run_ledger.schema.json",
+      "shared/contracts/passport/standing_constraint_entry.schema.json",
       "shared/contracts/passport/terminal_policies.schema.json",
       "shared/contracts/passport/uncited_assertion.schema.json",
       "shared/contracts/passport/uncited_audit_failure.schema.json",
@@ -1617,6 +1656,30 @@
       "shared/sprint_contract.schema.json",
       "shared/style_calibration_protocol.md",
       "shared/templates/codex_audit_multifile_template.md",
+      "sr-screener/SKILL.md",
+      "sr-screener/agents/protocol_architect_agent.md",
+      "sr-screener/agents/qc_auditor_agent.md",
+      "sr-screener/agents/reporter_agent.md",
+      "sr-screener/agents/screening_reviewer_agent.md",
+      "sr-screener/examples/example_config_dta.json",
+      "sr-screener/examples/example_protocol_dta.md",
+      "sr-screener/examples/quick_screen_example.md",
+      "sr-screener/references/decision_rules.md",
+      "sr-screener/references/failure_paths.md",
+      "sr-screener/references/orchestration.md",
+      "sr-screener/references/protocol_template.md",
+      "sr-screener/references/quality_control.md",
+      "sr-screener/references/reporting_and_handoff.md",
+      "sr-screener/references/reviewer_roles.md",
+      "sr-screener/scripts/build_outputs.py",
+      "sr-screener/scripts/build_workflow.py",
+      "sr-screener/scripts/merge_decisions.py",
+      "sr-screener/scripts/prepare_fulltext.py",
+      "sr-screener/scripts/prepare_records.py",
+      "sr-screener/scripts/srlib.py",
+      "sr-screener/templates/prompts.md",
+      "sr-screener/templates/screening_config.template.json",
+      "sr-screener/templates/workflows/ta_screening.template.js",
       "tests/fake_msvcrt.py",
       "tests/fixtures/issue_133_routing/CALIBRATION_LOG.md",
       "tests/fixtures/issue_133_routing/README.md",
@@ -1662,7 +1725,7 @@
     "description": "Universal deep research agent team. 13-agent pipeline for rigorous academic research on any topic. 8 modes: full research, quick brief, paper review, lit-review, fact-check, three-way literature scan, Socratic guided research dialogue, and systematic review with optional meta-analysis. Covers research question formulation, Socratic mentoring, methodology design, systematic literature search, source verification, cross-source synthesis, risk of bias assessment, meta-analysis, APA 7.0 report compilation, editorial review, devil's advocate challenges, ethics review, and post-research literature monitoring. Triggers on: research, deep research, literature review, systematic review, meta-analysis, PRISMA, evidence synthesis, fact-check, WHY HOW WHAT papers, 3W literature scan, guide my research, help me think through, \u7814\u7a76, \u6df1\u5ea6\u7814\u7a76, \u6587\u737b\u56de\u9867, \u6587\u737b\u63a2\u8a0e, \u7cfb\u7d71\u6027\u56de\u9867, \u5f8c\u8a2d\u5206\u6790, \u4e8b\u5be6\u67e5\u6838, \u4e09\u6bb5\u5f0f\u6587\u737b\u6383\u63cf, \u5f15\u5c0e\u6211\u7684\u7814\u7a76, \u5e6b\u6211\u91d0\u6e05, \u5e6b\u6211\u60f3\u60f3, \u6211\u4e0d\u78ba\u5b9a\u8981\u7814\u7a76\u4ec0\u9ebc, \u7814\u7a76\u65b9\u5411, \u7814\u7a76\u4e3b\u984c, \uc2ec\uce35 \uc5f0\uad6c, \ubb38\ud5cc \uc870\uc0ac, \uccb4\uacc4\uc801 \ubb38\ud5cc\uace0\ucc30, \uba54\ud0c0\ubd84\uc11d, \uc0ac\uc2e4 \ud655\uc778, \uc5f0\uad6c \ubc29\ud5a5\uc744 \uc7a1\uc544\uc918, \uc5f0\uad6c \uc8fc\uc81c \uc815\ud558\ub294 \uac83\uc744 \ub3c4\uc640\uc918, revisi\u00f3n de literatura, metaan\u00e1lisis",
     "path": "deep-research/SKILL.md",
     "relative_directory": "deep-research",
-    "sha256": "da47345ad4e3a3baf7aa64a5f4f63dd70d222a8856c45a2001a4166c6fd855fa",
+    "sha256": "ac1f3dd6818626de57228e24c69a3cd10ef3c073fc1f12632312623cba640e66",
     "linked_local_files": [
       "academic-paper/agents/literature_strategist_agent.md",
       "academic-pipeline/references/literature_corpus_consumers.md",
@@ -1716,13 +1779,47 @@
     ]
   },
   {
+    "source_repo": "Imbad0202/academic-research-skills",
+    "repo_key": "Imbad0202__academic-research-skills",
+    "skill_name": "sr-screener",
+    "description": "Protocol-driven study screening for systematic, scoping and rapid reviews. Turns a proposal or PROSPERO protocol into confirmed eligibility rules, then screens titles/abstracts and full texts with two blinded AI reviewers and a third-reviewer adjudicator: ordered exclusion codes, no silent defaults, resumable batch runs, QC (seed studies, near-miss rechecks, kappa and PABAK), PRISMA 2020 counts, EndNote/Zotero RIS groups, an Excel log, a methods draft and a literature_corpus handoff to academic-paper. Reads RIS, PubMed .nbib, Web of Science and CSV exports; removes duplicates. 8 modes: protocol, quick, pilot, ta-screen, ft-screen, adjudicate, audit, report. Use it to screen records against eligibility criteria, pilot screening, resolve screening conflicts, audit exclusions or report the selection process. Triggers on: screen these papers, title/abstract screening, full-text screening, screening conflicts, inclusion criteria, PRISMA flow, \u063a\u0631\u0628\u0627\u0644\u06af\u0631\u06cc \u0645\u0642\u0627\u0644\u0627\u062a, \u0627\u0633\u06a9\u0631\u06cc\u0646\u06cc\u0646\u06af \u0639\u0646\u0648\u0627\u0646 \u0648 \u0686\u06a9\u06cc\u062f\u0647, \u0645\u0639\u06cc\u0627\u0631\u0647\u0627\u06cc \u0648\u0631\u0648\u062f \u0648 \u062e\u0631\u0648\u062c.",
+    "path": "sr-screener/SKILL.md",
+    "relative_directory": "sr-screener",
+    "sha256": "61a7729cb59d180c482b55cbc923c09c0b6966002496ab02fa9f3308607b4f6f",
+    "linked_local_files": [
+      "sr-screener/agents/protocol_architect_agent.md",
+      "sr-screener/agents/qc_auditor_agent.md",
+      "sr-screener/agents/reporter_agent.md",
+      "sr-screener/agents/screening_reviewer_agent.md",
+      "sr-screener/examples/example_config_dta.json",
+      "sr-screener/examples/example_protocol_dta.md",
+      "sr-screener/examples/quick_screen_example.md",
+      "sr-screener/references/decision_rules.md",
+      "sr-screener/references/failure_paths.md",
+      "sr-screener/references/orchestration.md",
+      "sr-screener/references/protocol_template.md",
+      "sr-screener/references/quality_control.md",
+      "sr-screener/references/reporting_and_handoff.md",
+      "sr-screener/references/reviewer_roles.md",
+      "sr-screener/scripts/build_outputs.py",
+      "sr-screener/scripts/build_workflow.py",
+      "sr-screener/scripts/merge_decisions.py",
+      "sr-screener/scripts/prepare_fulltext.py",
+      "sr-screener/scripts/prepare_records.py",
+      "sr-screener/scripts/srlib.py",
+      "sr-screener/templates/prompts.md",
+      "sr-screener/templates/screening_config.template.json",
+      "sr-screener/templates/workflows/ta_screening.template.js"
+    ]
+  },
+  {
     "source_repo": "mattpocock/skills",
     "repo_key": "mattpocock__skills",
     "skill_name": "ask-matt",
     "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
     "path": "skills/engineering/ask-matt/SKILL.md",
     "relative_directory": "skills/engineering/ask-matt",
-    "sha256": "3f0f34614070aba3d9a7e2bd210718d78b9b942dd0f9af0c5869234fe34e16af",
+    "sha256": "32b3c71d6dbb5a7c15147e8a503a9df28e9a567f45eba6a6bb42aa903225c6ff",
     "linked_local_files": [
       "skills/engineering/ask-matt/PHASE-BOUNDARIES.md"
     ]
@@ -2131,7 +2228,7 @@
     "description": ">",
     "path": "plugins/caveman/skills/cavecrew/SKILL.md",
     "relative_directory": "plugins/caveman/skills/cavecrew",
-    "sha256": "c05f8e8d16bd8ae1c8d0b0abf6e8b9671051bde61653c4986304c2de3a1cf5d4",
+    "sha256": "d8a21355e717761746cd34e8355787c9745a72ce007a150f9d92334e5a2335e4",
     "linked_local_files": []
   },
   {
@@ -2141,7 +2238,7 @@
     "description": ">",
     "path": "plugins/caveman/skills/caveman/SKILL.md",
     "relative_directory": "plugins/caveman/skills/caveman",
-    "sha256": "0bf09a0a9a017d004a81d4b693e5a2d830e1a28230a5885df773e1ed9c0571cc",
+    "sha256": "34255a0215a7701eb83d508d03bc9560dc7bffbeb95a145ad2921ad2598a03bf",
     "linked_local_files": []
   },
   {
@@ -2169,11 +2266,31 @@
   {
     "source_repo": "juliusbrussee/caveman",
     "repo_key": "juliusbrussee__caveman",
+    "skill_name": "megacave",
+    "description": ">",
+    "path": "plugins/caveman/skills/megacave/SKILL.md",
+    "relative_directory": "plugins/caveman/skills/megacave",
+    "sha256": "f25399c535a2f8f906e06cd0c5c52146b0e747abbf80e111c96f93adade04a69",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "juliusbrussee/caveman",
+    "repo_key": "juliusbrussee__caveman",
+    "skill_name": "ultracave",
+    "description": ">",
+    "path": "plugins/caveman/skills/ultracave/SKILL.md",
+    "relative_directory": "plugins/caveman/skills/ultracave",
+    "sha256": "8afefa7ae95bfb7fd080dac0ce95b09063cbe37ea9d78ef48662b2ec96884c6c",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "juliusbrussee/caveman",
+    "repo_key": "juliusbrussee__caveman",
     "skill_name": "cavecrew",
     "description": ">",
     "path": "skills/cavecrew/SKILL.md",
     "relative_directory": "skills/cavecrew",
-    "sha256": "c05f8e8d16bd8ae1c8d0b0abf6e8b9671051bde61653c4986304c2de3a1cf5d4",
+    "sha256": "d8a21355e717761746cd34e8355787c9745a72ce007a150f9d92334e5a2335e4",
     "linked_local_files": []
   },
   {
@@ -2183,7 +2300,7 @@
     "description": ">",
     "path": "skills/caveman/SKILL.md",
     "relative_directory": "skills/caveman",
-    "sha256": "0bf09a0a9a017d004a81d4b693e5a2d830e1a28230a5885df773e1ed9c0571cc",
+    "sha256": "34255a0215a7701eb83d508d03bc9560dc7bffbeb95a145ad2921ad2598a03bf",
     "linked_local_files": []
   },
   {
@@ -2245,7 +2362,7 @@
     "description": ">",
     "path": "skills/caveman-help/SKILL.md",
     "relative_directory": "skills/caveman-help",
-    "sha256": "3effbc5b8943900c7500da48f73ab9de297866705c105df1b324d4337dec3a9a",
+    "sha256": "150dc9b454d6e897bc22f6744b90dfa02f4fe680ded69b0d880556c49a91a18e",
     "linked_local_files": []
   },
   {
@@ -2347,6 +2464,16 @@
   {
     "source_repo": "juliusbrussee/caveman",
     "repo_key": "juliusbrussee__caveman",
+    "skill_name": "megacave",
+    "description": ">",
+    "path": "skills/megacave/SKILL.md",
+    "relative_directory": "skills/megacave",
+    "sha256": "f25399c535a2f8f906e06cd0c5c52146b0e747abbf80e111c96f93adade04a69",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "juliusbrussee/caveman",
+    "repo_key": "juliusbrussee__caveman",
     "skill_name": "migration",
     "description": "Implement reversible compatibility-safe transitions. Use for schema, data, API, protocol, configuration, or dependency migrations requiring rollback and preservation proof.",
     "path": "skills/migration/SKILL.md",
@@ -2372,6 +2499,16 @@
     "path": "skills/surgical-patch/SKILL.md",
     "relative_directory": "skills/surgical-patch",
     "sha256": "81ea9f7b51409970099e04b98875dd65806cd35472f9a774b847030328187387",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "juliusbrussee/caveman",
+    "repo_key": "juliusbrussee__caveman",
+    "skill_name": "ultracave",
+    "description": ">",
+    "path": "skills/ultracave/SKILL.md",
+    "relative_directory": "skills/ultracave",
+    "sha256": "8afefa7ae95bfb7fd080dac0ce95b09063cbe37ea9d78ef48662b2ec96884c6c",
     "linked_local_files": []
   },
   {
@@ -3056,7 +3193,7 @@
     "description": "Sketch types, signatures, and module structure before code, then stay in the loop while implementation fills in. Use for /architect, 'architect this', 'design this', or non-trivial work where jumping to code would lock in the wrong shape.",
     "path": "pstack/skills/architect/SKILL.md",
     "relative_directory": "pstack/skills/architect",
-    "sha256": "691cd39f52c7b613866e6baf9ea0b05451ffa21a6a9b4102f166418b89178fde",
+    "sha256": "741901140ee382ebf93263a7ed03c6ee3719e578416d81afcd195876fa16c496",
     "linked_local_files": [
       "pstack/skills/architect/references/design-red-flags.md",
       "pstack/skills/architect/references/rationale-template.md",
@@ -3087,6 +3224,19 @@
   {
     "source_repo": "cursor/plugins",
     "repo_key": "cursor__plugins",
+    "skill_name": "benchmark-checklist",
+    "description": "Vet a perf measurement (limiter, tuning, limits, errors, repeatability, relevance, and whether the work happened) before you report or act on it. Use when you run a benchmark or report a speedup or regression you measured.",
+    "path": "pstack/skills/benchmark-checklist/SKILL.md",
+    "relative_directory": "pstack/skills/benchmark-checklist",
+    "sha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
+    "linked_local_files": [
+      "pstack/skills/principle-explain-the-number/SKILL.md",
+      "pstack/skills/principle-prove-it-works/SKILL.md"
+    ]
+  },
+  {
+    "source_repo": "cursor/plugins",
+    "repo_key": "cursor__plugins",
     "skill_name": "blast-radius",
     "description": "Find what a change could break somewhere else before it ships, beyond the diff, and prove the one fact it's safe because of by running real code instead of writing it up. Use for 'blast radius of X', 'what could this break', or reviewing a small diff you don't trust.",
     "path": "pstack/skills/blast-radius/SKILL.md",
@@ -3102,6 +3252,16 @@
     "path": "pstack/skills/bro/SKILL.md",
     "relative_directory": "pstack/skills/bro",
     "sha256": "aa329d0ceeeecb6822a7174ad76bb07a7826a3c52ceb6a588dec4138815084bb",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "cursor/plugins",
+    "repo_key": "cursor__plugins",
+    "skill_name": "correct",
+    "description": "Find the mistakes agents keep repeating in this repo and make each one impossible. Try architecture first, then types, then a lint whose error names the fix, then a test, and write docs last. Prove each check fails on a real past mistake. Repeat this each time the operator corrects you. Use for /correct.",
+    "path": "pstack/skills/correct/SKILL.md",
+    "relative_directory": "pstack/skills/correct",
+    "sha256": "bf482bacc972b3f124a4af8bf9364b4b3e280cb5845e44c326ea4f4565e5c904",
     "linked_local_files": []
   },
   {
@@ -3189,7 +3349,7 @@
     "description": "poteto's agent style for concise, detailed responses, deliberate subagents, unslopped prose, simple code, and verified work. Use for poteto, /poteto-mode, or requests to work in this style.",
     "path": "pstack/skills/poteto-mode/SKILL.md",
     "relative_directory": "pstack/skills/poteto-mode",
-    "sha256": "7645c9ee27ef9798c48a84060b6df409f8593d1058c7c25cbec28dce976195f9",
+    "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
     "linked_local_files": [
       "pstack/skills/poteto-mode/playbooks/authoring-a-skill.md",
       "pstack/skills/poteto-mode/playbooks/autonomous-run.md",
@@ -3287,6 +3447,19 @@
     "relative_directory": "pstack/skills/principle-experience-first",
     "sha256": "58903529d733b1c1a7c9ccf127d45ef3c7d0d9f0b81164a4dc6b80efe6f2912b",
     "linked_local_files": []
+  },
+  {
+    "source_repo": "cursor/plugins",
+    "repo_key": "cursor__plugins",
+    "skill_name": "principle-explain-the-number",
+    "description": "Apply before you trust, report, or act on a number you measured: a speedup, a regression, a throughput, a latency, or an eval result. Find what limits it, and rule out that it measured something other than the work you think.",
+    "path": "pstack/skills/principle-explain-the-number/SKILL.md",
+    "relative_directory": "pstack/skills/principle-explain-the-number",
+    "sha256": "5aac99e7ce0bb1b37e2579acf4fe88c32a1456d9d46afd4a57cfe1df9092e89c",
+    "linked_local_files": [
+      "pstack/skills/benchmark-checklist/SKILL.md",
+      "pstack/skills/principle-prove-it-works/SKILL.md"
+    ]
   },
   {
     "source_repo": "cursor/plugins",
@@ -3515,7 +3688,7 @@
     "description": "Fan out N parallel workers, drain them, and return one report. Use for /swarm, 'swarm this', or parallel coverage, races, gauntlets, and exploration.",
     "path": "pstack/skills/swarm/SKILL.md",
     "relative_directory": "pstack/skills/swarm",
-    "sha256": "e28057fbbd1113257b2e953c6e891c41f535dbb01400b6bfd3eb9a85a2ab861f",
+    "sha256": "bdcee4168e22428036e93d7cdeec3f391dbc4132f927f6db2540328c22db0273",
     "linked_local_files": []
   },
   {
@@ -3545,7 +3718,7 @@
     "description": "Layered technical-writing standard: Di\u00e1taxis structure, Google developer style sentences, STE instruction rules, Global English syntax. Use for /technical-writing or when writing or reviewing docs, RFCs, readmes, PR descriptions, or commit messages.",
     "path": "pstack/skills/technical-writing/SKILL.md",
     "relative_directory": "pstack/skills/technical-writing",
-    "sha256": "10c74685e1639cc4f8ff096007e5405b25ca0e824b65aaa17105c238faf6a1e8",
+    "sha256": "f5c512ffeec70bc4e0dee50f7bb4c26742e1be77967a6e8b15d1921e1c209ceb",
     "linked_local_files": []
   },
   {
@@ -3922,24 +4095,24 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "ecc-conventions",
+    "description": "Development conventions and patterns for ECC. JavaScript project with conventional commits.",
+    "path": ".agents/skills/ecc-conventions/SKILL.md",
+    "relative_directory": ".agents/skills/ecc-conventions",
+    "sha256": "d52acc0f98017c9de571520f1f4877394309cac181a4048e48dbd924ff77d6b9",
+    "linked_local_files": [
+      ".agents/skills/ecc-conventions/agents/openai.yaml"
+    ]
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "eval-harness",
     "description": "Formal evaluation framework for Claude Code sessions implementing eval-driven development (EDD) principles. Use when a Claude Code workflow needs a formal eval before it is trusted or changed.",
     "path": ".agents/skills/eval-harness/SKILL.md",
     "relative_directory": ".agents/skills/eval-harness",
     "sha256": "49a5a10975860bb2d7e3c4e260ff19b6580e43f5fbc7770b32dece02dde48e49",
     "linked_local_files": []
-  },
-  {
-    "source_repo": "affaan-m/ECC",
-    "repo_key": "affaan-m__ECC",
-    "skill_name": "everything-claude-code",
-    "description": "Development conventions and patterns for everything-claude-code. JavaScript project with conventional commits.",
-    "path": ".agents/skills/everything-claude-code/SKILL.md",
-    "relative_directory": ".agents/skills/everything-claude-code",
-    "sha256": "5364a6f8622f9a770dd84827c9c01afb7c21ddd55b6adf48b863e38b30e1dbb1",
-    "linked_local_files": [
-      ".agents/skills/everything-claude-code/agents/openai.yaml"
-    ]
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -5252,7 +5425,7 @@
     "description": "Claude Code\u3092\u6c38\u7d9a\u7684\u306a\u30e1\u30e2\u30ea\u3001\u30b9\u30b1\u30b8\u30e5\u30fc\u30eb\u6e08\u307f\u64cd\u4f5c\u3001\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u4f7f\u7528\u3001\u30bf\u30b9\u30af\u30ad\u30e5\u30fc\u30a4\u30f3\u30b0\u3092\u5099\u3048\u305f\u5b8c\u5168\u81ea\u52d5\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u30b7\u30b9\u30c6\u30e0\u306b\u5909\u63db\u3057\u307e\u3059\u3002\u30b9\u30bf\u30f3\u30c9\u30a2\u30ed\u30f3\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u30d5\u30ec\u30fc\u30e0\u30ef\u30fc\u30af\uff08Hermes\u3001AutoGPT\uff09\u3092\u3001Claude Code\u306e\u30cd\u30a4\u30c6\u30a3\u30d6crons\u3001dispatch\u3001MCP\u30c4\u30fc\u30eb\u3001\u30e1\u30e2\u30ea\u3092\u6d3b\u7528\u3057\u3066\u7f6e\u304d\u63db\u3048\u307e\u3059\u3002\u30e6\u30fc\u30b6\u30fc\u304c\u7d99\u7d9a\u7684\u306a\u81ea\u52d5\u64cd\u4f5c\u3001\u30b9\u30b1\u30b8\u30e5\u30fc\u30eb\u6e08\u307f\u30bf\u30b9\u30af\u3001\u307e\u305f\u306f\u81ea\u5df1\u6307\u4ee4\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u30eb\u30fc\u30d7\u3092\u671b\u3080\u5834\u5408\u306b\u4f7f\u7528\u3057\u307e\u3059\u3002",
     "path": "docs/ja-JP/skills/autonomous-agent-harness/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/autonomous-agent-harness",
-    "sha256": "dacdebf800cd8e39546c53e92d3fdd210aad2003e33a6f0c44260b27a2eb14a1",
+    "sha256": "ddd0cc0d1790f75ac3ed5cc9a33ae470eea3a91dd462f58a8f6b2aa2e89715d4",
     "linked_local_files": []
   },
   {
@@ -5292,7 +5465,7 @@
     "description": ">-",
     "path": "docs/ja-JP/skills/blueprint/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/blueprint",
-    "sha256": "76e26427aa9a70ddbee396baa48394c9590ab7030bddb52d80e3e3f2f436477c",
+    "sha256": "9cc050a5460f57879097312ef3a900a8f78feb8314f9bc2c08fd1a8b4d753634",
     "linked_local_files": []
   },
   {
@@ -5342,7 +5515,7 @@
     "description": ">",
     "path": "docs/ja-JP/skills/carrier-relationship-management/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/carrier-relationship-management",
-    "sha256": "9ecabb85ae8474d672efc95fcf4ebcb8d22285fb9e7500be3e6994c20bbf19a4",
+    "sha256": "c7586305ed5a1494ffa60b7f4bf33ac9a67c64cf302dc822471b5230a7e5d677",
     "linked_local_files": []
   },
   {
@@ -5442,7 +5615,7 @@
     "description": "Claude Code\u3001Codex\u3001Kimi \u5185\u3067 ECC \u306e\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3001\u66f4\u65b0\u3001\u518d\u8a2d\u5b9a\u3092\u6848\u5185\u3057\u3001\u5404\u30cf\u30fc\u30cd\u30b9\u304c\u5b9f\u969b\u306b\u5099\u3048\u308b\u30d7\u30e9\u30b0\u30a4\u30f3\u3001\u30b9\u30b3\u30fc\u30d7\u3001\u30d5\u30c3\u30af\u6a5f\u80fd\u3092\u5b88\u308a\u307e\u3059\u3002",
     "path": "docs/ja-JP/skills/configure-ecc/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/configure-ecc",
-    "sha256": "0cf6cdf53a0bfd13320e7a9375abb101c43c004c071f6356f03cb52d87153ffb",
+    "sha256": "2ce319a55b23c8b2cf43933ffe9be781a065979436a765a76fbf3633c5c7b255",
     "linked_local_files": []
   },
   {
@@ -5602,7 +5775,7 @@
     "description": ">",
     "path": "docs/ja-JP/skills/customs-trade-compliance/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/customs-trade-compliance",
-    "sha256": "24e02cda9228c909c87ba206c3b99bbcc69185866d5d214936d75e4025c7dbcf",
+    "sha256": "0caf1df339b12fbaef0aaf88e3101b14f83823ec85440a11e8a50d548b7ebbbe",
     "linked_local_files": []
   },
   {
@@ -5792,7 +5965,7 @@
     "description": "ECC \u306e\u73fe\u5728\u306e\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u3001\u30b9\u30ad\u30eb\u3001\u30b3\u30de\u30f3\u30c9\u3001\u30d5\u30c3\u30af\u3001\u30eb\u30fc\u30eb\u3001\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u30d7\u30ed\u30d5\u30a1\u30a4\u30eb\u3001\u304a\u3088\u3073\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30aa\u30f3\u30dc\u30fc\u30c7\u30a3\u30f3\u30b0\u3092\u30ac\u30a4\u30c9\u3057\u3066\u3044\u307e\u3059\u3002\u30e9\u30a4\u30d6\u30ea\u30dd\u30b8\u30c8\u30ea\u30b5\u30fc\u30d5\u30a7\u30b9\u3092\u8aad\u3093\u3067\u304b\u3089\u56de\u7b54\u3059\u308b\u3088\u3046\u30e6\u30fc\u30b6\u30fc\u3092\u30ac\u30a4\u30c9\u3057\u307e\u3059\u3002",
     "path": "docs/ja-JP/skills/ecc-guide/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/ecc-guide",
-    "sha256": "d53344f5966d2cdfbf8ab614d04078a98866cb8f81b3e7fdd459c4de4af3645a",
+    "sha256": "882bf03656add91e14e05e32099aa46b2e1ff3e74431790475fa6da0a8c820e7",
     "linked_local_files": []
   },
   {
@@ -5802,7 +5975,7 @@
     "description": "ECC \u30c4\u30fc\u30eb\u3001\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u3001\u30b9\u30ad\u30eb\u3001\u304a\u3088\u3073\u5b9f\u88c5\u306e\u30b3\u30b9\u30c8\u76e3\u67fb\u3092\u5b9f\u65bd\u3057\u307e\u3059\u3002\u30d7\u30ed\u30f3\u30d7\u30c8\u5165\u529b\u30c8\u30fc\u30af\u30f3\u3092\u5206\u6790\u3057\u3066\u3001\u8a08\u7b97\u52b9\u7387\u3092\u5b9a\u91cf\u5316\u3057\u307e\u3059\u3002",
     "path": "docs/ja-JP/skills/ecc-tools-cost-audit/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/ecc-tools-cost-audit",
-    "sha256": "63da9e48bc3b88372de7b9e40c2531c468abcdbabde45322405541b870b436e4",
+    "sha256": "0230b64b878669477a7ea4a348dcdc398b760b2be7fe96439caf623efabdfd87",
     "linked_local_files": []
   },
   {
@@ -5822,7 +5995,7 @@
     "description": "\u96fb\u6c17\u3068\u30ac\u30b9\u8abf\u9054\u3001\u6599\u91d1\u6700\u9069\u5316\u3001\u9700\u8981\u6599\u91d1\u7ba1\u7406\u3001\u518d\u751f\u53ef\u80fd\u30a8\u30cd\u30eb\u30ae\u30fcPPA\u8a55\u4fa1\u3001\u304a\u3088\u3073\u30de\u30eb\u30c1\u30d5\u30a1\u30b7\u30ea\u30c6\u30a3\u30fc\u30a8\u30cd\u30eb\u30ae\u30fc\u6226\u7565\u306e\u305f\u3081\u306e\u7b26\u53f7\u5316\u3055\u308c\u305f\u5c02\u9580\u77e5\u8b58\u3002",
     "path": "docs/ja-JP/skills/energy-procurement/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/energy-procurement",
-    "sha256": "51ca633e41e9cff66a945649c4f4dfd9204a8e6cd3da58d6626930e0a97b36fe",
+    "sha256": "ea5a4f738cf05ebe1c39e882735b4b1aae55f13dcfd5c50e43e2c0ddf436d300",
     "linked_local_files": []
   },
   {
@@ -6184,7 +6357,7 @@
     "description": "\u5728\u5eab\u7ba1\u7406\u3001\u9700\u8981\u4e88\u6e2c\u3001\u88dc\u5145\u6226\u7565\u3001\u304a\u3088\u3073\u30b5\u30d7\u30e9\u30a4\u30c1\u30a7\u30fc\u30f3\u6700\u9069\u5316\u3002",
     "path": "docs/ja-JP/skills/inventory-demand-planning/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/inventory-demand-planning",
-    "sha256": "fbcd6611fd4193c606ab06ea8dee35dd25b064c36656b9b3c633faf35d838073",
+    "sha256": "ac5b554e6ea134cbcfb40e9f9c41e95e61b8fddca2b94658e38477dfee719dae",
     "linked_local_files": []
   },
   {
@@ -6364,7 +6537,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f laravel-verification \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/laravel-verification/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/laravel-verification",
-    "sha256": "42b363b98a268edd5ecb1330648d10db72b744de009a1a2207ad9306b5ced002",
+    "sha256": "f581d17d6d7d430956bf57d51fb9db725edbf74299065f7a1e86dc44fdb577f5",
     "linked_local_files": []
   },
   {
@@ -6374,7 +6547,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f lead-intelligence \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/lead-intelligence/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/lead-intelligence",
-    "sha256": "8c7d0f32007812c399622be40d276fe9c6cfa649053c8e761264550ec7637037",
+    "sha256": "99164ba4fd1e3fe71e0510ede1a62d878d2dee97fe1bd74f1a52428c7ff038c7",
     "linked_local_files": []
   },
   {
@@ -6384,7 +6557,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f liquid-glass-design \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/liquid-glass-design/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/liquid-glass-design",
-    "sha256": "8277de1da03f3003b1333e55293f0204a3261322d6ce7ac28527c0d9045bdf55",
+    "sha256": "a7ec0dfe3c102e36acc4800caa6bd0998d884b5968ddbf78f12f6713f8389fd1",
     "linked_local_files": []
   },
   {
@@ -6394,7 +6567,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f llm-trading-agent-security \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/llm-trading-agent-security/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/llm-trading-agent-security",
-    "sha256": "973b3df9057ab24d7c0fdcbd631a4515d31f7c49d8bbcea4543cba3df8f0a41c",
+    "sha256": "785fb273161db98f95422c69eb4f3dfdb3b7f7737bdf2d2c67fd833b9f5fec41",
     "linked_local_files": []
   },
   {
@@ -6404,7 +6577,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f logistics-exception-management \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/logistics-exception-management/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/logistics-exception-management",
-    "sha256": "d06ee582418548d48992d54478054fe6e8ebbb294f2ff2d9386db67174bbba1f",
+    "sha256": "e0140382943ff90d001b331dccfed934a3635d7467585e4c84da473e684c8b7a",
     "linked_local_files": []
   },
   {
@@ -6414,7 +6587,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f make-interfaces-feel-better \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/make-interfaces-feel-better/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/make-interfaces-feel-better",
-    "sha256": "6f29bb2fef8bd5c8522656d8021185d32f896044f92bce1cb25c4238a4a417a1",
+    "sha256": "d200745ea8a560bb3dee8beed9afec6834f48be58d4870396c867cc2c7f72078",
     "linked_local_files": []
   },
   {
@@ -6424,7 +6597,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f manim-video \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/manim-video/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/manim-video",
-    "sha256": "9a1428bfc5bcd6e3e9a2ae8c2edc49d01ce9bfe4a70d2da518a77149927e1261",
+    "sha256": "cb41ab13dc9499ab55a0095ca2102ea491faaabc6fd41551f9c417e474982baf",
     "linked_local_files": []
   },
   {
@@ -6434,7 +6607,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f market-research \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/market-research/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/market-research",
-    "sha256": "24ffa7490af4df33eba654bbc4587f0103947ac3be55244ebba8650e7995257a",
+    "sha256": "f90727fff7467d635b3a9b075df7c0c2d607f6dc9aff7888580d284c215b99f5",
     "linked_local_files": []
   },
   {
@@ -6444,7 +6617,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f mcp-server-patterns \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/mcp-server-patterns/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/mcp-server-patterns",
-    "sha256": "0a9590d8279448b6fe37c638c466ae918e90eded53419539f76e818bbec675c6",
+    "sha256": "9c36f2f0329a0d11b065c0a8bf582d29b078326da483c3d163048b8ecc9f508f",
     "linked_local_files": []
   },
   {
@@ -6454,7 +6627,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f messages-ops \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/messages-ops/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/messages-ops",
-    "sha256": "e9a517e84c935e38c75afbe80f472921cbf6994f99d127b719312da8f87408df",
+    "sha256": "7bcdfce705013aac0a554cfac256f608a29ebb0644d08daa4b6b88e08162c12f",
     "linked_local_files": []
   },
   {
@@ -6464,7 +6637,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f mle-workflow \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/mle-workflow/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/mle-workflow",
-    "sha256": "a7d8e6a93f416eb325d93d21adfedf88ef848ac8c8435af5ae5c6b95dda5e9f0",
+    "sha256": "a27917889717f7fffbfde7c7fbb51a55bbbfaf68551c7d8cd095195a3b8a9022",
     "linked_local_files": []
   },
   {
@@ -6474,7 +6647,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f motion-advanced \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/motion-advanced/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/motion-advanced",
-    "sha256": "5d3086c4e7f80f9453122bd82e8e31e96998c55a219b73576f9d32db7bfac77f",
+    "sha256": "f1ec1975bbe9dccea07432257f4675dbc9dfe98b7f8ee22d035decaf0d57302f",
     "linked_local_files": []
   },
   {
@@ -6484,7 +6657,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f motion-foundations \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/motion-foundations/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/motion-foundations",
-    "sha256": "e7d3ac59e28102d31639b76f6f286ca1416b060e615fcebfbeb90f7c979a104a",
+    "sha256": "23b87a980a6011a157720c2d49c8bdb9a7e43b9a0235fe5f5c8a27a8702473be",
     "linked_local_files": []
   },
   {
@@ -6494,7 +6667,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f motion-patterns \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/motion-patterns/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/motion-patterns",
-    "sha256": "c5af872c467689abffbe1de0aac795999e3654ebfd7769658ff80d693244d626",
+    "sha256": "1ad95f46030cc8b63c0aabf61f618536417498762c99721d29d3e2d603fa7ce7",
     "linked_local_files": []
   },
   {
@@ -6504,7 +6677,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f mysql-patterns \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/mysql-patterns/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/mysql-patterns",
-    "sha256": "ae333870fac6dace3ed88d3c818dad761345205459856954d1461f3e4706d14b",
+    "sha256": "8c0d27a31429befecb23544e1571965c612b5f923a88db78f1193785a9a1c904",
     "linked_local_files": []
   },
   {
@@ -6514,7 +6687,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f nanoclaw-repl \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/nanoclaw-repl/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/nanoclaw-repl",
-    "sha256": "8f85efbb56435f2b2a1b3006e84ef15dcf0564aed538b7736c65fe41b7b6402c",
+    "sha256": "07737b212bf0a29ab6718b4eb89a7f1e14a465019f9109d1fb4a9c21d9591bfc",
     "linked_local_files": []
   },
   {
@@ -6524,7 +6697,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f nestjs-patterns \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/nestjs-patterns/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/nestjs-patterns",
-    "sha256": "0bc6d9938bb6e031aaa3b30d3643bc07e9b300b7c02261d303c05f493d63713e",
+    "sha256": "6b209cbb120bbd84748732aaf629443e97c79dba381061710e875c9a807c4848",
     "linked_local_files": []
   },
   {
@@ -6534,7 +6707,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f netmiko-ssh-automation \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/netmiko-ssh-automation/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/netmiko-ssh-automation",
-    "sha256": "3765c24bdf62a2373d38edbac758c3a7934604745687b9b939f26000edb0bd10",
+    "sha256": "3e80c00275d9512b4cf27ca0075f1de16e5ab740c57b4aee1626023484b06889",
     "linked_local_files": []
   },
   {
@@ -6544,7 +6717,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f network-bgp-diagnostics \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/network-bgp-diagnostics/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/network-bgp-diagnostics",
-    "sha256": "8f14d4aa3934f422245ffcad8100465b684939bc7d890b83826dd58ce8f8edd0",
+    "sha256": "9f853a9ed60f87362124caa107cd3e417840f412287f2a46d21d9667dcec8896",
     "linked_local_files": []
   },
   {
@@ -6554,7 +6727,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f network-config-validation \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/network-config-validation/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/network-config-validation",
-    "sha256": "17419d9a713b861d5a14adc4fa3ddaa98580c4afde13da524d053be6529211ad",
+    "sha256": "2c929752412dd9a3e138a536d3843dc5eaf456c24fe65c09b10b262cf9f060a8",
     "linked_local_files": []
   },
   {
@@ -6654,7 +6827,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f perl-testing \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/perl-testing/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/perl-testing",
-    "sha256": "a1f64d83adb487068cd31d9f798bdaea166cb12b5cbbaeef902e3b335b4e29c3",
+    "sha256": "1be7fae53be916e1ff98e279a043a1ed13332078fc79307cadaff30832e91ae3",
     "linked_local_files": []
   },
   {
@@ -6664,7 +6837,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f plan-orchestrate \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/plan-orchestrate/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/plan-orchestrate",
-    "sha256": "478da1ec6a4365ca7cd4538f5594284b254bfb7d79bf7bb7c98a596056eefe71",
+    "sha256": "8a5e0ae51d04591946c9aab8b7acad1f9e381a4373ed7500134f2305b81aa9fb",
     "linked_local_files": []
   },
   {
@@ -6674,7 +6847,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f plankton-code-quality \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/plankton-code-quality/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/plankton-code-quality",
-    "sha256": "92c00e65f1686f1a39f553ce67bb57efea83a43adb414c693849b41d198d667b",
+    "sha256": "46102743a373bfc08360a22f081b08bd9bf94de9c8eafaab12f83edaefe1378d",
     "linked_local_files": []
   },
   {
@@ -6694,7 +6867,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f product-capability \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/product-capability/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/product-capability",
-    "sha256": "ed028046a00eb57a7a62aab717d09f1c2f38e73429768300ebcdf2df1000404f",
+    "sha256": "c0056670e7f05c7e15eb7b41bf9a9905f44741fca8ca68357d635e08f720da4b",
     "linked_local_files": []
   },
   {
@@ -6704,7 +6877,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f product-lens \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/product-lens/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/product-lens",
-    "sha256": "a2e1ade63f6d67424b41f2f027e60dcae16af5f7cf9a0745c84025cf2afa64b5",
+    "sha256": "64cced271a61922c3efba84535b24d5603b3ecedf9cc8c7f74da79b6147b35f3",
     "linked_local_files": []
   },
   {
@@ -6714,7 +6887,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f production-audit \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/production-audit/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/production-audit",
-    "sha256": "c7ba4ed80068ccc371f37df75b2d10b5be2191c608c9cd6a2119e234eddc7c22",
+    "sha256": "3edec8fa1991730e7fe8f9564881800795f90f1ea163700a5435d1774ed62cd2",
     "linked_local_files": []
   },
   {
@@ -6724,7 +6897,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f production-scheduling \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/production-scheduling/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/production-scheduling",
-    "sha256": "aa862873b82480063f2bf18eb38ca94aa4056a7391ef046f4d792eed89920d30",
+    "sha256": "d10c5cda24d1bf3b5f6d7c9de80b55b12184c2e3a273e7d394f67e1ea0e5815d",
     "linked_local_files": []
   },
   {
@@ -6734,7 +6907,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f project-flow-ops \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/project-flow-ops/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/project-flow-ops",
-    "sha256": "17ada213fc5572cbfe92af14e4d661ae8b73d269a6881d22c7da139a787e8a7f",
+    "sha256": "153493e83b2f3fac848b3e04acdbb0a1a47d49c3a14d1a63f54d2ac5201cdbc5",
     "linked_local_files": []
   },
   {
@@ -6754,7 +6927,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f prompt-optimizer \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/prompt-optimizer/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/prompt-optimizer",
-    "sha256": "aed360463d2ce5164fe8fd393a48e47c6a9b06bebc132b859ef02813086a7594",
+    "sha256": "df0f33674a9c53917f57a8bc8653717f7c5a35156dd0aea4f6b1d2f202478b67",
     "linked_local_files": []
   },
   {
@@ -6784,7 +6957,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f pytorch-patterns \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/pytorch-patterns/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/pytorch-patterns",
-    "sha256": "a4afa1a951de673b4993172aa28b948e8482eac55a13bf20446727b5fd7b42b6",
+    "sha256": "58a985267d5ca678880bc85fb8114fb1006d11faf7a499892afc90bd7fa23815",
     "linked_local_files": []
   },
   {
@@ -6794,7 +6967,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f quality-nonconformance \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/quality-nonconformance/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/quality-nonconformance",
-    "sha256": "05ca33899b39fdbde1b0696ed434a4f64be38c6dca4254256a7fc319916fe218",
+    "sha256": "315f2bff19e9a9fa1beec975d3aca187146f7931e250a0c3ce6303e03a28d8d7",
     "linked_local_files": []
   },
   {
@@ -6804,7 +6977,7 @@
     "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\uff1a\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u306f quarkus-patterns \u7528\u306e\u65e5\u672c\u8a9e\u7ffb\u8a33\u304c\u5fc5\u8981\u3067\u3059",
     "path": "docs/ja-JP/skills/quarkus-patterns/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/quarkus-patterns",
-    "sha256": "c00d7d95a8c0598203c897b31ca2c7f6fbf4c7de7781d953e45c38c992c42eba",
+    "sha256": "6db8dbf262e73c3248851d881b96817ba1a52525b5f493ecf72d6733d6f31402",
     "linked_local_files": []
   },
   {
@@ -6904,7 +7077,7 @@
     "description": "\u8fd4\u54c1\u627f\u8a8d\u3001\u53d7\u53d6\u30fb\u691c\u54c1\u3001\u51e6\u5206\u6c7a\u5b9a\u3001\u8fd4\u91d1\u51e6\u7406\u3001\u4e0d\u6b63\u691c\u51fa\u3001\u4fdd\u8a3c\u30af\u30ec\u30fc\u30e0\u7ba1\u7406\u306e\u305f\u3081\u306e\u6a19\u6e96\u5316\u3055\u308c\u305f\u5c02\u9580\u77e5\u8b58\u300215\u5e74\u4ee5\u4e0a\u306e\u7d4c\u9a13\u3092\u6301\u3064\u8fd4\u54c1\u30aa\u30da\u30ec\u30fc\u30b7\u30e7\u30f3\u30de\u30cd\u30fc\u30b8\u30e3\u30fc\u306e\u77e5\u898b\u306b\u57fa\u3065\u304f\u3002\u6bb5\u968e\u7684\u30d5\u30ec\u30fc\u30e0\u30ef\u30fc\u30af\u3001\u51e6\u5206\u7d4c\u6e08\u6027\u3001\u4e0d\u6b63\u30d1\u30bf\u30fc\u30f3\u8a8d\u8b58\u3001\u30d9\u30f3\u30c0\u30fc\u56de\u53ce\u30d7\u30ed\u30bb\u30b9\u3092\u542b\u3080\u3002\u88fd\u54c1\u8fd4\u54c1\u3001\u9006\u7269\u6d41\u3001\u8fd4\u91d1\u6c7a\u5b9a\u3001\u8fd4\u54c1\u4e0d\u6b63\u691c\u51fa\u3001\u4fdd\u8a3c\u30af\u30ec\u30fc\u30e0\u3092\u6271\u3046\u5834\u5408\u306b\u4f7f\u7528\u3002",
     "path": "docs/ja-JP/skills/returns-reverse-logistics/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/returns-reverse-logistics",
-    "sha256": "3aa538584b924c96eb6d2b215be3b523577e25dd149ad918598b0e8aa857b4be",
+    "sha256": "9510046b30c591c8fb988db3729d81a058c360dca8a7baaf4a1dbb151aa8c371",
     "linked_local_files": []
   },
   {
@@ -7074,7 +7247,7 @@
     "description": "\u65b0\u3057\u3044\u30b9\u30ad\u30eb\u3092\u4f5c\u6210\u3059\u308b\u524d\u306b\u3001\u30ed\u30fc\u30ab\u30eb\u30fb\u30de\u30fc\u30b1\u30c3\u30c8\u30d7\u30ec\u30a4\u30b9\u30fbGitHub\u30fbWeb\u306e\u65e2\u5b58\u30b9\u30ad\u30eb\u3092\u691c\u7d22\u3059\u308b\u3002\u30b9\u30ad\u30eb\u306e\u4f5c\u6210\u30fb\u30d3\u30eb\u30c9\u30fb\u30d5\u30a9\u30fc\u30af\u30fb\u691c\u7d22\u3092\u884c\u3046\u969b\u306b\u4f7f\u7528\u3002",
     "path": "docs/ja-JP/skills/skill-scout/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/skill-scout",
-    "sha256": "027556913795638e58fd5daa26e3bd1a87f168fbd0cf3ff9fd10cd83157d2ed4",
+    "sha256": "ae63045de9c825fb6e59b598636debc4d8cd44e7a0d21df49292b53164e16c8e",
     "linked_local_files": []
   },
   {
@@ -8050,7 +8223,7 @@
     "description": "\u5c06 Claude Code \u8f6c\u53d8\u4e3a\u5177\u6709\u6301\u4e45\u8bb0\u5fc6\u3001\u5b9a\u65f6\u64cd\u4f5c\u3001\u8ba1\u7b97\u673a\u4f7f\u7528\u548c\u4efb\u52a1\u961f\u5217\u7684\u5b8c\u5168\u81ea\u4e3b\u4ee3\u7406\u7cfb\u7edf\u3002\u901a\u8fc7\u5229\u7528 Claude Code \u7684\u539f\u751f\u5b9a\u65f6\u4efb\u52a1\u3001\u8c03\u5ea6\u3001MCP \u5de5\u5177\u548c\u8bb0\u5fc6\uff0c\u53d6\u4ee3\u72ec\u7acb\u7684\u4ee3\u7406\u6846\u67b6\uff08Hermes\u3001AutoGPT\uff09\u3002\u5f53\u7528\u6237\u9700\u8981\u6301\u7eed\u81ea\u4e3b\u64cd\u4f5c\u3001\u5b9a\u65f6\u4efb\u52a1\u6216\u81ea\u6211\u5bfc\u5411\u7684\u4ee3\u7406\u5faa\u73af\u65f6\u4f7f\u7528\u3002",
     "path": "docs/zh-CN/skills/autonomous-agent-harness/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/autonomous-agent-harness",
-    "sha256": "45377b360c988e066864b27577d03694992a24353e8be850d4baf9ba3a1ae37c",
+    "sha256": "e93733c2b14613f42556ef6972442f7e356a73e6ed40030c395f54b8b1de36cd",
     "linked_local_files": []
   },
   {
@@ -8090,7 +8263,7 @@
     "description": "\u5c06\u5355\u884c\u76ee\u6807\u8f6c\u5316\u4e3a\u591a\u4f1a\u8bdd\u3001\u591a\u4ee3\u7406\u5de5\u7a0b\u9879\u76ee\u7684\u5206\u6b65\u6784\u5efa\u8ba1\u5212\u3002\u6bcf\u4e2a\u6b65\u9aa4\u5305\u542b\u72ec\u7acb\u7684\u4e0a\u4e0b\u6587\u7b80\u4ecb\uff0c\u4ee5\u4fbf\u65b0\u4ee3\u7406\u80fd\u76f4\u63a5\u6267\u884c\u3002\u5305\u62ec\u5bf9\u6297\u6027\u5ba1\u67e5\u95e8\u3001\u4f9d\u8d56\u56fe\u3001\u5e76\u884c\u6b65\u9aa4\u68c0\u6d4b\u3001\u53cd\u6a21\u5f0f\u76ee\u5f55\u548c\u8ba1\u5212\u7a81\u53d8\u534f\u8bae\u3002\u89e6\u53d1\u6761\u4ef6\uff1a\u5f53\u7528\u6237\u8bf7\u6c42\u590d\u6742\u591aPR\u4efb\u52a1\u7684\u8ba1\u5212\u3001\u84dd\u56fe\u6216\u8def\u7ebf\u56fe\uff0c\u6216\u63cf\u8ff0\u9700\u8981\u591a\u4e2a\u4f1a\u8bdd\u7684\u5de5\u4f5c\u65f6\u3002\u4e0d\u89e6\u53d1\u6761\u4ef6\uff1a\u4efb\u52a1\u53ef\u5728\u5355\u4e2aPR\u6216\u5c11\u4e8e3\u4e2a\u5de5\u5177\u8c03\u7528\u4e2d\u5b8c\u6210\uff0c\u6216\u7528\u6237\u8bf4\u201c\u76f4\u63a5\u6267\u884c\u201d\u65f6\u3002",
     "path": "docs/zh-CN/skills/blueprint/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/blueprint",
-    "sha256": "23911c4b178ef105996cf812b5587422e0710cfda85ffc0f1c25bfdbba4fcf2e",
+    "sha256": "36ceed75c7f280b51bb874211908462c8a92fc44d859c4a392d3281ed8f5e49d",
     "linked_local_files": []
   },
   {
@@ -8140,7 +8313,7 @@
     "description": "\u7528\u4e8e\u7ba1\u7406\u627f\u8fd0\u5546\u7ec4\u5408\u3001\u534f\u5546\u8fd0\u8d39\u3001\u8ddf\u8e2a\u627f\u8fd0\u5546\u7ee9\u6548\u3001\u5206\u914d\u8d27\u8fd0\u4ee5\u53ca\u7ef4\u62a4\u6218\u7565\u627f\u8fd0\u5546\u5173\u7cfb\u7684\u7f16\u7801\u4e13\u4e1a\u77e5\u8bc6\u3002\u57fa\u4e8e\u62e5\u670915\u5e74\u4ee5\u4e0a\u7ecf\u9a8c\u7684\u8fd0\u8f93\u7ecf\u7406\u63d0\u4f9b\u7684\u4fe1\u606f\u3002\u5305\u62ec\u8bb0\u5206\u5361\u6846\u67b6\u3001RFP\u6d41\u7a0b\u3001\u5e02\u573a\u60c5\u62a5\u548c\u5408\u89c4\u6027\u5ba1\u67e5\u3002\u9002\u7528\u4e8e\u7ba1\u7406\u627f\u8fd0\u5546\u3001\u534f\u5546\u8d39\u7387\u3001\u8bc4\u4f30\u627f\u8fd0\u5546\u7ee9\u6548\u6216\u5236\u5b9a\u8d27\u8fd0\u7b56\u7565\u65f6\u4f7f\u7528\u3002",
     "path": "docs/zh-CN/skills/carrier-relationship-management/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/carrier-relationship-management",
-    "sha256": "44e669e57846bae4556ad57783539d4a2680b622f28548fea0e86bf47954a66b",
+    "sha256": "deb5db371f381667c8f350504be47a43d650494bf8bbbfb1a8833eeaca703d35",
     "linked_local_files": []
   },
   {
@@ -8230,7 +8403,7 @@
     "description": "\u5728 Claude Code\u3001Codex \u6216 Kimi \u5185\u5f15\u5bfc ECC \u5b89\u88c5\u3001\u66f4\u65b0\u6216\u91cd\u65b0\u914d\u7f6e\uff0c\u540c\u65f6\u4e25\u683c\u9075\u5b88\u5404\u5bb6\u5de5\u5177\u771f\u5b9e\u7684\u63d2\u4ef6\u3001\u8303\u56f4\u548c Hook \u80fd\u529b\u3002",
     "path": "docs/zh-CN/skills/configure-ecc/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/configure-ecc",
-    "sha256": "4ac3146a23803fcd2c2f775e1f6e68ac06370527abc76dd8677e7af34113e8da",
+    "sha256": "9ff61c7c264e3f07e44a8be8a0e163dbd530dff87ed0b21162e51563c6ff6d11",
     "linked_local_files": []
   },
   {
@@ -8380,7 +8553,7 @@
     "description": "\u6d77\u5173\u6587\u4ef6\u3001\u5173\u7a0e\u5206\u7c7b\u3001\u5173\u7a0e\u4f18\u5316\u3001\u53d7\u9650\u65b9\u7b5b\u67e5\u4ee5\u53ca\u591a\u53f8\u6cd5\u7ba1\u8f96\u533a\u6cd5\u89c4\u5408\u89c4\u7684\u7f16\u7801\u5316\u4e13\u4e1a\u77e5\u8bc6\u3002\u7531\u62e5\u670915\u5e74\u4ee5\u4e0a\u7ecf\u9a8c\u7684\u8d38\u6613\u5408\u89c4\u4e13\u5bb6\u63d0\u4f9b\u3002\u5305\u62ecHS\u5206\u7c7b\u903b\u8f91\u3001Incoterms\u5e94\u7528\u3001\u81ea\u8d38\u534f\u5b9a\u5229\u7528\u4ee5\u53ca\u7f5a\u6b3e\u51cf\u514d\u3002\u9002\u7528\u4e8e\u5904\u7406\u6d77\u5173\u6e05\u5173\u3001\u5173\u7a0e\u5206\u7c7b\u3001\u8d38\u6613\u5408\u89c4\u3001\u8fdb\u51fa\u53e3\u6587\u4ef6\u6216\u5173\u7a0e\u4f18\u5316\u65f6\u4f7f\u7528\u3002",
     "path": "docs/zh-CN/skills/customs-trade-compliance/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/customs-trade-compliance",
-    "sha256": "0f6a7a7d2059cf2ed179f992c5522ef9957d482cb29297e4067ee2921efc7398",
+    "sha256": "2a3d710a6cf311dce831c2955c2ec24b5c6e9a39482beeb9a13f17ff0524c096",
     "linked_local_files": []
   },
   {
@@ -8560,7 +8733,7 @@
     "description": "\u5728\u56de\u7b54\u4e4b\u524d\u5148\u8bfb\u53d6\u4ed3\u5e93\u7684\u5b9e\u65f6\u72b6\u6001\uff0c\u5f15\u5bfc\u7528\u6237\u4e86\u89e3 ECC \u5f53\u524d\u7684 agents\u3001skills\u3001\u547d\u4ee4\u3001hooks\u3001\u89c4\u5219\u3001\u5b89\u88c5\u914d\u7f6e\u6863\u6848\u4ee5\u53ca\u9879\u76ee\u63a5\u5165\u6d41\u7a0b\u3002",
     "path": "docs/zh-CN/skills/ecc-guide/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/ecc-guide",
-    "sha256": "0d5f1ca2cf2fe89054f85f1749b9fd14e9d6103044c5207fd93c9649f38f8694",
+    "sha256": "ccb8f284b15d7c8499fb85cf326f0d08624d9818374566aeda7c42f73a2c739c",
     "linked_local_files": []
   },
   {
@@ -8570,7 +8743,7 @@
     "description": "\u8bc1\u636e\u4f18\u5148\u7684ECC\u5de5\u5177\u71c3\u70e7\u548c\u8ba1\u8d39\u5ba1\u8ba1\u5de5\u4f5c\u6d41\u3002\u7528\u4e8e\u8c03\u67e5ECC\u5de5\u5177\u4ed3\u5e93\u4e2d\u7684\u5931\u63a7PR\u521b\u5efa\u3001\u914d\u989d\u7ed5\u8fc7\u3001\u9ad8\u7ea7\u6a21\u578b\u6cc4\u6f0f\u3001\u91cd\u590d\u4f5c\u4e1a\u6216GitHub App\u6210\u672c\u6fc0\u589e\u3002",
     "path": "docs/zh-CN/skills/ecc-tools-cost-audit/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/ecc-tools-cost-audit",
-    "sha256": "bb4ffc75145f4a444fbf2173f94cb7e237e45a81dbc41f7476121d170570d398",
+    "sha256": "8893f2bbcab85103969bc7476228b040218cf63750d7f407e44e4b7132a35c5b",
     "linked_local_files": []
   },
   {
@@ -8590,7 +8763,7 @@
     "description": "\u7535\u529b\u4e0e\u71c3\u6c14\u91c7\u8d2d\u3001\u7535\u4ef7\u4f18\u5316\u3001\u9700\u91cf\u7535\u8d39\u7ba1\u7406\u3001\u53ef\u518d\u751f\u80fd\u6e90\u8d2d\u7535\u534f\u8bae\u8bc4\u4f30\u53ca\u591a\u8bbe\u65bd\u80fd\u6e90\u6210\u672c\u7ba1\u7406\u7684\u7f16\u7801\u5316\u4e13\u4e1a\u77e5\u8bc6\u3002\u57fa\u4e8e\u80fd\u6e90\u91c7\u8d2d\u7ecf\u7406\u5728\u5927\u578b\u5de5\u5546\u4e1a\u7528\u6237\u4e2d\u8d85\u8fc715\u5e74\u7684\u7ecf\u9a8c\u3002\u5305\u62ec\u5e02\u573a\u7ed3\u6784\u5206\u6790\u3001\u5bf9\u51b2\u7b56\u7565\u3001\u8d1f\u8377\u5206\u6790\u548c\u53ef\u6301\u7eed\u6027\u62a5\u544a\u6846\u67b6\u3002\u9002\u7528\u4e8e\u91c7\u8d2d\u80fd\u6e90\u3001\u4f18\u5316\u7535\u4ef7\u3001\u7ba1\u7406\u9700\u91cf\u7535\u8d39\u3001\u8bc4\u4f30\u8d2d\u7535\u534f\u8bae\u6216\u5236\u5b9a\u80fd\u6e90\u7b56\u7565\u65f6\u4f7f\u7528\u3002",
     "path": "docs/zh-CN/skills/energy-procurement/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/energy-procurement",
-    "sha256": "a31f396cf5318197ac6160ee8fd1d60dec1316f41817b1f54e929e81a004a9b2",
+    "sha256": "94ad534f8826159afc5f5f0d5923eeaf1d6d0d2e4faca0f01dd3e303fa85bff9",
     "linked_local_files": []
   },
   {
@@ -8852,7 +9025,7 @@
     "description": "\u4e3a\u591a\u5730\u70b9\u96f6\u552e\u5546\u63d0\u4f9b\u9700\u6c42\u9884\u6d4b\u3001\u5b89\u5168\u5e93\u5b58\u4f18\u5316\u3001\u8865\u8d27\u89c4\u5212\u53ca\u4fc3\u9500\u63d0\u5347\u4f30\u7b97\u7684\u7f16\u7801\u5316\u4e13\u4e1a\u77e5\u8bc6\u3002\u57fa\u4e8e\u62e5\u670915\u5e74\u4ee5\u4e0a\u7ba1\u7406\u6570\u767e\u4e2aSKU\u7ecf\u9a8c\u7684\u9700\u6c42\u89c4\u5212\u5e08\u7684\u4e13\u4e1a\u77e5\u8bc6\u3002\u5305\u62ec\u9884\u6d4b\u65b9\u6cd5\u9009\u62e9\u3001ABC/XYZ\u5206\u6790\u3001\u5b63\u8282\u6027\u8fc7\u6e21\u7ba1\u7406\u53ca\u4f9b\u5e94\u5546\u8c08\u5224\u6846\u67b6\u3002\u9002\u7528\u4e8e\u9884\u6d4b\u9700\u6c42\u3001\u8bbe\u5b9a\u5b89\u5168\u5e93\u5b58\u3001\u89c4\u5212\u8865\u8d27\u3001\u7ba1\u7406\u4fc3\u9500\u6216\u4f18\u5316\u5e93\u5b58\u6c34\u5e73\u65f6\u4f7f\u7528\u3002",
     "path": "docs/zh-CN/skills/inventory-demand-planning/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/inventory-demand-planning",
-    "sha256": "b47dccb81e008a07e58d314592d77a63091175a06e39fd6455c0eba6ed6e42df",
+    "sha256": "38b74a0378688959992cac53fd6051993b2526bf113b334d25d6fc3be8fa3dcd",
     "linked_local_files": []
   },
   {
@@ -9062,7 +9235,7 @@
     "description": "\u9488\u5bf9\u8d27\u8fd0\u5f02\u5e38\u3001\u8d27\u7269\u5ef6\u8bef\u3001\u635f\u574f\u3001\u4e22\u5931\u548c\u627f\u8fd0\u5546\u7ea0\u7eb7\u7684\u7f16\u7801\u5316\u4e13\u4e1a\u77e5\u8bc6\uff0c\u7531\u62e5\u670915\u5e74\u4ee5\u4e0a\u8fd0\u8425\u7ecf\u9a8c\u7684\u7269\u6d41\u4e13\u4e1a\u4eba\u58eb\u63d0\u4f9b\u3002\u5305\u62ec\u5347\u7ea7\u534f\u8bae\u3001\u627f\u8fd0\u5546\u7279\u5b9a\u884c\u4e3a\u3001\u7d22\u8d54\u7a0b\u5e8f\u548c\u5224\u65ad\u6846\u67b6\u3002\u5728\u5904\u7406\u8fd0\u8f93\u5f02\u5e38\u3001\u8d27\u8fd0\u7d22\u8d54\u3001\u4ea4\u4ed8\u95ee\u9898\u6216\u627f\u8fd0\u5546\u7ea0\u7eb7\u65f6\u4f7f\u7528\u3002",
     "path": "docs/zh-CN/skills/logistics-exception-management/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/logistics-exception-management",
-    "sha256": "946ff3fbeff902ad7d52f6ee6e392a88302e6f683e1fabe09275fc224dc8e8d3",
+    "sha256": "ce0eb981f4a8d9f55834075a37e93aa7195f5693597410930893be7a6ec0b1fd",
     "linked_local_files": []
   },
   {
@@ -9264,7 +9437,7 @@
     "description": "\u4e3a\u79bb\u6563\u548c\u6279\u91cf\u5236\u9020\u4e2d\u7684\u751f\u4ea7\u8c03\u5ea6\u3001\u4f5c\u4e1a\u6392\u5e8f\u3001\u4ea7\u7ebf\u5e73\u8861\u3001\u6362\u6a21\u4f18\u5316\u548c\u74f6\u9888\u89e3\u51b3\u63d0\u4f9b\u7f16\u7801\u5316\u4e13\u4e1a\u77e5\u8bc6\u3002\u57fa\u4e8e\u62e5\u670915\u5e74\u4ee5\u4e0a\u7ecf\u9a8c\u7684\u751f\u4ea7\u8c03\u5ea6\u5e08\u7684\u77e5\u8bc6\u3002\u5305\u62ec\u7ea6\u675f\u7406\u8bba/\u9f13-\u7f13\u51b2-\u7ef3\u3001\u5feb\u901f\u6362\u6a21\u3001\u8bbe\u5907\u7efc\u5408\u6548\u7387\u5206\u6790\u3001\u4e2d\u65ad\u54cd\u5e94\u6846\u67b6\u4ee5\u53ca\u4f01\u4e1a\u8d44\u6e90\u8ba1\u5212/\u5236\u9020\u6267\u884c\u7cfb\u7edf\u4ea4\u4e92\u6a21\u5f0f\u3002\u9002\u7528\u4e8e\u8c03\u5ea6\u751f\u4ea7\u3001\u89e3\u51b3\u74f6\u9888\u3001\u4f18\u5316\u6362\u6a21\u3001\u5e94\u5bf9\u4e2d\u65ad\u6216\u5e73\u8861\u5236\u9020\u4ea7\u7ebf\u65f6\u3002",
     "path": "docs/zh-CN/skills/production-scheduling/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/production-scheduling",
-    "sha256": "132e244618c95d2545f48b7edd9999a901ad48838b94277aabf9a8d162c398ab",
+    "sha256": "1f22a2053a5e6e20237b90b59eb17af30fd3a048f164bcb02c63df30c5b39f8e",
     "linked_local_files": []
   },
   {
@@ -9324,7 +9497,7 @@
     "description": "\u4e3a\u53d7\u76d1\u7ba1\u5236\u9020\u4e1a\u4e2d\u7684\u8d28\u91cf\u63a7\u5236\u3001\u4e0d\u5408\u683c\u8c03\u67e5\u3001\u6839\u672c\u539f\u56e0\u5206\u6790\u3001\u7ea0\u6b63\u63aa\u65bd\u548c\u4f9b\u5e94\u5546\u8d28\u91cf\u7ba1\u7406\u63d0\u4f9b\u7f16\u7801\u5316\u4e13\u4e1a\u77e5\u8bc6\u3002\u57fa\u4e8e\u5728FDA\u3001IATF 16949\u548cAS9100\u73af\u5883\u4e2d\u62e5\u670915\u5e74\u4ee5\u4e0a\u7ecf\u9a8c\u7684\u8d28\u91cf\u5de5\u7a0b\u5e08\u7684\u89c1\u89e3\u3002\u5305\u62ec\u4e0d\u5408\u683c\u62a5\u544a\u751f\u547d\u5468\u671f\u7ba1\u7406\u3001\u7ea0\u6b63\u4e0e\u9884\u9632\u63aa\u65bd\u7cfb\u7edf\u3001\u7edf\u8ba1\u8fc7\u7a0b\u63a7\u5236\u89e3\u91ca\u548c\u5ba1\u6838\u65b9\u6cd5\u3002\u9002\u7528\u4e8e\u8c03\u67e5\u4e0d\u5408\u683c\u3001\u8fdb\u884c\u6839\u672c\u539f\u56e0\u5206\u6790\u3001\u7ba1\u7406\u7ea0\u6b63\u4e0e\u9884\u9632\u63aa\u65bd\u3001\u89e3\u91ca\u7edf\u8ba1\u8fc7\u7a0b\u63a7\u5236\u6570\u636e\u6216\u5904\u7406\u4f9b\u5e94\u5546\u8d28\u91cf\u95ee\u9898\u3002",
     "path": "docs/zh-CN/skills/quality-nonconformance/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/quality-nonconformance",
-    "sha256": "e44c37d027b21e41bbc9f9895ca2f01f9726274e4ff2721bbba0a9416ab74890",
+    "sha256": "ca1924795b3e313f49c73c1ac8e872eb23636abdba0c46945d1dc7de1f07f454",
     "linked_local_files": []
   },
   {
@@ -9384,7 +9557,7 @@
     "description": "\u7528\u4e8e\u9000\u8d27\u6388\u6743\u3001\u63a5\u6536\u4e0e\u68c0\u9a8c\u3001\u5904\u7f6e\u51b3\u7b56\u3001\u9000\u6b3e\u5904\u7406\u3001\u6b3a\u8bc8\u68c0\u6d4b\u4ee5\u53ca\u4fdd\u4fee\u7d22\u8d54\u7ba1\u7406\u7684\u6807\u51c6\u5316\u4e13\u4e1a\u77e5\u8bc6\u3002\u57fa\u4e8e\u62e5\u670915\u5e74\u4ee5\u4e0a\u7ecf\u9a8c\u7684\u9000\u8d27\u8fd0\u8425\u7ecf\u7406\u7684\u89c1\u89e3\u3002\u5305\u62ec\u5206\u7ea7\u6846\u67b6\u3001\u5904\u7f6e\u7ecf\u6d4e\u5b66\u3001\u6b3a\u8bc8\u6a21\u5f0f\u8bc6\u522b\u548c\u4f9b\u5e94\u5546\u56de\u6536\u6d41\u7a0b\u3002\u9002\u7528\u4e8e\u5904\u7406\u4ea7\u54c1\u9000\u8d27\u3001\u9006\u5411\u7269\u6d41\u3001\u9000\u6b3e\u51b3\u7b56\u3001\u9000\u8d27\u6b3a\u8bc8\u68c0\u6d4b\u6216\u4fdd\u4fee\u7d22\u8d54\u65f6\u4f7f\u7528\u3002",
     "path": "docs/zh-CN/skills/returns-reverse-logistics/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/returns-reverse-logistics",
-    "sha256": "704c112b03a7bb0cc6f097cdc74cd02ca58c3c82f36e32002a34830d84944198",
+    "sha256": "1a48f8539e14d61a684e5f5e73bf83e1ec7c122cf5ed5a0884693bbcd371458a",
     "linked_local_files": []
   },
   {
@@ -10110,7 +10283,7 @@
     "description": "Turn a one-line objective into a step-by-step construction plan for multi-session, multi-agent engineering projects: one-PR-sized steps with self-contained context briefs, dependency graph with parallel-step detection, adversarial review gate, and plan mutation protocol. Use when planning a large feature, refactor, or roadmap that spans multiple PRs or sessions; not for single-PR tasks or when the user says \\\"just do it\\\".",
     "path": "pi/core/skills/blueprint/SKILL.md",
     "relative_directory": "pi/core/skills/blueprint",
-    "sha256": "34775c3f69dc16bfe967ce0472b94f5a4aa459da04ea7e989e5fcce7b509bdf7",
+    "sha256": "878eae8ed0ea4d46d21c8f88d471f6ffce7b0815202a43501060a163e7f446f3",
     "linked_local_files": []
   },
   {
@@ -11611,7 +11784,7 @@
     "description": "Turn a one-line objective into a step-by-step construction plan for multi-session, multi-agent engineering projects: one-PR-sized steps with self-contained context briefs, dependency graph with parallel-step detection, adversarial review gate, and plan mutation protocol. Use when planning a large feature, refactor, or roadmap that spans multiple PRs or sessions; not for single-PR tasks or when the user says \\\"just do it\\\".",
     "path": "skills/blueprint/SKILL.md",
     "relative_directory": "skills/blueprint",
-    "sha256": "34775c3f69dc16bfe967ce0472b94f5a4aa459da04ea7e989e5fcce7b509bdf7",
+    "sha256": "878eae8ed0ea4d46d21c8f88d471f6ffce7b0815202a43501060a163e7f446f3",
     "linked_local_files": []
   },
   {
@@ -11673,7 +11846,7 @@
     "description": "Manage truckload, LTL, and intermodal carrier portfolios: sourcing and FMCSA vetting, freight rate and fuel-surcharge negotiation, RFPs and routing guides, carrier scorecards, allocation, and renewals. Use when onboarding carriers, running freight RFPs, negotiating rates, evaluating carrier performance, reallocating freight, or building freight strategy.",
     "path": "skills/carrier-relationship-management/SKILL.md",
     "relative_directory": "skills/carrier-relationship-management",
-    "sha256": "18d1611ab27327b46c992071a2d524e0815df19f504f12dc9d636358d0bfa438",
+    "sha256": "e325d73fd0078a101e826a84178c87aeeb80700d037faf45cda8e9ba9e53b27e",
     "linked_local_files": []
   },
   {
@@ -11813,7 +11986,7 @@
     "description": "Run the conversational ECC setup wizard inside the current harness: inventory the install, collect scope (user/project/local) and hook mode (off/minimal/standard/strict) in Claude Code, use Codex's native plugin lifecycle, or install the project surface under ./.kimi-code, then preview, apply, and verify. Use when installing, updating, reconfiguring, or repairing an ECC installation, changing hook profiles, or moving ECC between install scopes.",
     "path": "skills/configure-ecc/SKILL.md",
     "relative_directory": "skills/configure-ecc",
-    "sha256": "039770f3fe9b6050b08b38f69b9c7e15ab24ac73bfbf2cf56592b985be827b4c",
+    "sha256": "ad87612e3cd745332625cd707179f4e98dc78da99183640f985637022ec9d650",
     "linked_local_files": []
   },
   {
@@ -12012,7 +12185,7 @@
     "description": "Codified customs and trade compliance expertise \u2014 HS/HTS tariff classification with GRI rules, commercial invoices and entry documentation, Incoterms 2020, FTA qualification and duty optimization (USMCA, RCEP, FTZs, drawback), denied-party screening, and penalty mitigation across US, EU, UK, and APAC jurisdictions. Use when classifying goods, preparing import/export documentation, screening restricted parties, responding to customs audits or CF-28/penalty notices, or optimizing duties.",
     "path": "skills/customs-trade-compliance/SKILL.md",
     "relative_directory": "skills/customs-trade-compliance",
-    "sha256": "3e7d8c31bed17ccf46410a7869abe068dc384c396991f56bdc0fdbe45852f20d",
+    "sha256": "f4d418c1407a0792e05e5bfea64635e752cdcfb97827851665c6c9902e7063d4",
     "linked_local_files": []
   },
   {
@@ -12239,10 +12412,10 @@
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
     "skill_name": "ecc-guide",
-    "description": "Answer questions about Everything Claude Code by reading the live repo surface \u2014 agents, skills, commands, hooks, rules, install profiles, and docs \u2014 instead of memory. Use when the user asks what ECC includes, how to install or reset it, which skill or command fits a task, or how project onboarding works.",
+    "description": "Answer questions about ECC by reading the live repo surface \u2014 agents, skills, commands, hooks, rules, install profiles, and docs \u2014 instead of memory. Use when the user asks what ECC includes, how to install or reset it, which skill or command fits a task, or how project onboarding works.",
     "path": "skills/ecc-guide/SKILL.md",
     "relative_directory": "skills/ecc-guide",
-    "sha256": "dde17e1db324312003aca0d603cb34cc633da62d13e547686cc9fcbd83e02f96",
+    "sha256": "472d72a270cbd7f4eaf7fc73a1313f40a4995575c5e2d2ff4f91c280f5ee5df9",
     "linked_local_files": []
   },
   {
@@ -12262,7 +12435,7 @@
     "description": "Evidence-first ECC Tools burn and billing audit workflow. Use when investigating runaway PR creation, quota bypass, premium-model leakage, duplicate jobs, or GitHub App cost spikes in the ECC Tools repo.",
     "path": "skills/ecc-tools-cost-audit/SKILL.md",
     "relative_directory": "skills/ecc-tools-cost-audit",
-    "sha256": "d5c4c7925166703eb5fca83c0f1dcdeffb9c5808dc3cc08c337136f512fddbac",
+    "sha256": "efcc5b7c850d5a2f1b853c25a92b392fa0bf62451e5799b9a5efb905dbf45337",
     "linked_local_files": []
   },
   {
@@ -12282,7 +12455,7 @@
     "description": "Procure electricity and natural gas for commercial and industrial facilities: tariff and rate-schedule optimization, demand-charge mitigation, supplier RFPs, fixed/index/block-and-index hedging, renewable PPA and REC evaluation, and sustainability reporting. Use when procuring energy, optimizing utility tariffs, managing demand charges, evaluating PPAs, or building energy budgets and hedge strategies.",
     "path": "skills/energy-procurement/SKILL.md",
     "relative_directory": "skills/energy-procurement",
-    "sha256": "61d30fc709582de31cd48d67561ad12c2c650c918e970eddc022a6daeaeb0af2",
+    "sha256": "4b4cb5d87f571cf02c26631e647fa06df21601a4faed6baf97a8100e1f32cc50",
     "linked_local_files": []
   },
   {
@@ -12724,7 +12897,7 @@
     "description": "Codified demand planning expertise for multi-location retailers: demand forecasting method selection, ABC/XYZ segmentation, safety stock and reorder-point optimization, promotional lift and post-promo dip estimation, and seasonal transition and markdown timing. Use when forecasting demand, setting safety stock, planning replenishment, managing promotions, or optimizing inventory levels.",
     "path": "skills/inventory-demand-planning/SKILL.md",
     "relative_directory": "skills/inventory-demand-planning",
-    "sha256": "3640dc44998624053bc0504b3e8c642859f046ed6b0c445ef63e835459201dd8",
+    "sha256": "ad5bf71e6d95d80611beb8c4f424f8bbd6a49fb7e4766562d45133e9fdf4a6f2",
     "linked_local_files": []
   },
   {
@@ -13016,7 +13189,7 @@
     "description": "Codified freight-exception handling expertise for shipment delays, damages, losses, shortages, and carrier disputes, with escalation protocols, carrier-specific behaviors by mode, claims procedures, and eat-the-cost vs fight-the-claim judgment frameworks. Use when handling shipping exceptions, freight claims, delivery issues, or carrier disputes.",
     "path": "skills/logistics-exception-management/SKILL.md",
     "relative_directory": "skills/logistics-exception-management",
-    "sha256": "a152bca4bc8fbb39eb2f87d248d687ba3b48dba6a41824a07b4976ccb7ef073b",
+    "sha256": "7a1723164c36771a57601ade98296293a864c608d189a459dfbe18ab2259b877",
     "linked_local_files": []
   },
   {
@@ -13547,7 +13720,7 @@
     "description": "Codified expertise for production scheduling, job sequencing, line balancing, changeover optimization, and bottleneck resolution in discrete and batch manufacturing. Informed by production schedulers with 15+ years experience. Includes TOC/drum-buffer-rope, SMED, OEE analysis, disruption response frameworks, and ERP/MES interaction patterns. Use when scheduling production, resolving bottlenecks, optimizing changeovers, responding to disruptions, or balancing manufacturing lines.",
     "path": "skills/production-scheduling/SKILL.md",
     "relative_directory": "skills/production-scheduling",
-    "sha256": "b5d480a03e42a73ce9e85aee5a6ee1f87a3974d22c5aef4640f753a9d9ac03b8",
+    "sha256": "25704073f7bed19d61353ccba3ac1a988202375638637ff91b391b32c9053822",
     "linked_local_files": []
   },
   {
@@ -13607,7 +13780,7 @@
     "description": "Quality control and non-conformance management for regulated manufacturing (FDA 21 CFR 820, IATF 16949, AS9100): NCR lifecycle and disposition, 5-Why/Ishikawa/fault-tree/8D root cause analysis, CAPA systems, SPC interpretation, AQL sampling, and supplier quality audits. Use when investigating non-conformances, performing root cause analysis, managing CAPAs, interpreting SPC data, or handling supplier quality issues.",
     "path": "skills/quality-nonconformance/SKILL.md",
     "relative_directory": "skills/quality-nonconformance",
-    "sha256": "20354b8e4041041c434c57c6a28b0a3ae55d2e22cb415ba15f5473b9942f4bf1",
+    "sha256": "6aad53af0d1a5580f12f8901aca65946b29db88c5a394239d580cd0a57322edd",
     "linked_local_files": []
   },
   {
@@ -13968,7 +14141,7 @@
     "description": "Codified expertise for returns authorization, receipt and inspection, disposition decisions, refund processing, fraud detection, and warranty claims management. Informed by returns operations managers with 15+ years experience. Includes grading frameworks, disposition economics, fraud pattern recognition, and vendor recovery processes. Use when handling product returns, reverse logistics, refund decisions, return fraud detection, or warranty claims.",
     "path": "skills/returns-reverse-logistics/SKILL.md",
     "relative_directory": "skills/returns-reverse-logistics",
-    "sha256": "d717769eba2072dc4f515c6c1a48ee8524bcf8019c66a85411dabc4c78854bca",
+    "sha256": "e5091d29cedd093a80321615d9670ebdb3c15856f3a99da644e07335167c86df",
     "linked_local_files": []
   },
   {
@@ -14138,7 +14311,7 @@
     "description": "Search existing local, marketplace, GitHub, and web skill sources before creating a new skill. Use when the user wants to create, build, fork, or find a skill for a workflow.",
     "path": "skills/skill-scout/SKILL.md",
     "relative_directory": "skills/skill-scout",
-    "sha256": "71b1e8a4aedebeaf4468838389c0a93e4d3bf4e2779bd0a99e0396b045f82d32",
+    "sha256": "73ac14373108c29e35f6f950b43762e3e50848d693b712f7c3e989ec21e7abe8",
     "linked_local_files": []
   },
   {
@@ -14717,7 +14890,7 @@
     "description": "Audit the whole repo for over-engineering. A ranked list of what to delete, simplify, or replace with stdlib or native features.",
     "path": ".openclaw/skills/ponytail-audit/SKILL.md",
     "relative_directory": ".openclaw/skills/ponytail-audit",
-    "sha256": "baba579ec3261cef555797c06484b4374ff4febbdb3eb0b4333e6d92b3434f87",
+    "sha256": "e4cdead76dd34470490454e9518a4c9e0294c8045e1b206aec382b75bc792f96",
     "linked_local_files": []
   },
   {
@@ -14727,7 +14900,7 @@
     "description": "Harvest every ponytail: shortcut comment into one debt ledger, so deferrals get tracked instead of forgotten. One-shot report.",
     "path": ".openclaw/skills/ponytail-debt/SKILL.md",
     "relative_directory": ".openclaw/skills/ponytail-debt",
-    "sha256": "b0281c1d96fa5acc411ab6bbc219802c5551ecc73f4e3be3a3b74ada78a84bcb",
+    "sha256": "a88162567a541a7ac72c73c6d2b7397fece608b3aab58bd6f3260bdfe72f5d77",
     "linked_local_files": []
   },
   {
@@ -14747,7 +14920,7 @@
     "description": "Quick reference for ponytail's modes, skills, and commands. One-shot display.",
     "path": ".openclaw/skills/ponytail-help/SKILL.md",
     "relative_directory": ".openclaw/skills/ponytail-help",
-    "sha256": "be2bab79e073c0cc5d58f21a4e2d5bdfdaa3baec832d9575493636752b79161b",
+    "sha256": "fbafefaed07225f1d8fd79e62d976fdebe680294cbe78c3e6acc00353ae61999",
     "linked_local_files": []
   },
   {
@@ -14757,7 +14930,7 @@
     "description": "Review a diff for over-engineering. Finds what to delete: reinvented stdlib, needless deps, speculative abstractions. One line per finding.",
     "path": ".openclaw/skills/ponytail-review/SKILL.md",
     "relative_directory": ".openclaw/skills/ponytail-review",
-    "sha256": "76addbc1c5293d5a2da42828f4bff1cee5050492d06c194354df2f6329398df5",
+    "sha256": "82d219c6c96d96c9775b811d9c7d0b5d5f5d94d3a667d993c6e0fe63de295326",
     "linked_local_files": []
   },
   {
@@ -14777,7 +14950,7 @@
     "description": ">",
     "path": "skills/ponytail-audit/SKILL.md",
     "relative_directory": "skills/ponytail-audit",
-    "sha256": "5560b8e383dbe2ddfddc873a1e2bf2e586e23e0cd7d995537482b2315331f6d1",
+    "sha256": "554b7ac9c78a6b1a5e6b2bf0ba67eedf092baf71e465d03e591d0cfeb7947774",
     "linked_local_files": []
   },
   {
@@ -14787,7 +14960,7 @@
     "description": ">",
     "path": "skills/ponytail-debt/SKILL.md",
     "relative_directory": "skills/ponytail-debt",
-    "sha256": "c84fba75f0ca12bfe83f9a78ea02fd125c5dd3f1fbb18124105a489937f284e6",
+    "sha256": "d3611761039bdb2955e31856834feeec6ed5483a3fc64576e9a166f949a131d1",
     "linked_local_files": []
   },
   {
@@ -14807,7 +14980,7 @@
     "description": ">",
     "path": "skills/ponytail-help/SKILL.md",
     "relative_directory": "skills/ponytail-help",
-    "sha256": "2264d1615117b02b0fd5a69ec84cd2757006471a78e4d6c22eed6d581c1d37a4",
+    "sha256": "23d9baf1b9a9464b40ebe1b5b50752795210b934fc8e248e791496e4c9a39fd2",
     "linked_local_files": []
   },
   {
@@ -14817,7 +14990,7 @@
     "description": ">",
     "path": "skills/ponytail-review/SKILL.md",
     "relative_directory": "skills/ponytail-review",
-    "sha256": "40df33b58fc6ef889b93585733feb9566b76e9586efa7f376785c1e995197ac0",
+    "sha256": "7f8bfd0da3ba7c6fe0cd0de53e6f910adfef52166c6e99d7fa4de3360650b9b6",
     "linked_local_files": []
   },
   {

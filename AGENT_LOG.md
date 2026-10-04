@@ -655,3 +655,31 @@
 - Synced `ayghri__i-have-adhd` at commit `839872f9d1cd` with 2 skills and 2 files.
 - Synced `Leonxlnx__taste-skill` at commit `ce26fc25c0e5` with 13 skills and 14 files.
 - Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+
+## 2026-10-04 19:03:53Z
+
+- Action: Weekly automation refresh
+- Sources synced: 14
+- Skills indexed: 1273
+- Exact duplicate groups: 129
+- Repeated skill names: 272
+- Synced `addyosmani__agent-skills` at commit `1401c8b8030e` with 25 skills and 38 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `6ab4b03bf70a` with 5 skills and 684 files.
+- Synced `mattpocock__skills` at commit `24fe0ef7737e` with 37 skills and 62 files.
+- Synced `juliusbrussee__caveman` at commit `6571943370f7` with 28 skills and 44 files.
+- Synced `obra__Superpowers` at commit `8ca22dba9a94` with 15 skills and 53 files.
+- Synced `cursor__plugins` at commit `e43c7ee26e00` with 104 skills and 206 files.
+- Synced `affaan-m__ECC` at commit `ef648e01899b` with 1027 skills and 1236 files.
+- Synced `mvanhorn__last30days-skill` at commit `5103ba478b38` with 1 skills and 128 files.
+- Synced `DietrichGebert__ponytail` at commit `c982cd411abb` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `000650b15698` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `839872f9d1cd` with 2 skills and 2 files.
+- Synced `Leonxlnx__taste-skill` at commit `ce26fc25c0e5` with 13 skills and 14 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+
+- Reviewed delta: 1,265 -> 1,273 indexed skills; 9 skill paths added, 1 removed, and 98 existing skill hashes changed. Seven upstream source commits advanced; seven were unchanged.
+- New skill paths: academic-research-skills `sr-screener`; Caveman `megacave` and `ultracave` in both root and plugin copies; Cursor `benchmark-checklist`, `correct`, and `principle-explain-the-number`; ECC `.agents/skills/ecc-conventions` replaces `.agents/skills/everything-claude-code`, including its linked `agents/openai.yaml`.
+- Retained files: 2,444 -> 2,483; 41 added, 2 removed, and 180 modified. The two deletions are the old ECC conventions skill and its linked agent metadata; replacement files are retained from the new upstream path.
+- Duplicate review: exact groups 127 -> 129 and repeated-name groups 270 -> 272, both increased by the new `megacave` and `ultracave` pairs. Existing Caveman, cavecrew, and ECC blueprint exact groups retained their membership with refreshed hashes.
+- Source fetch failures: none; the canonical sync succeeded on its first attempt. Validation passed for recursive linked-file and directory-glob closure, source-byte parity for all 2,483 retained files, 2,461 retained text hashes, 1,273 skill records, 2,325 linked references, duplicate recomputation, README and local links, append-only log behavior, preserved automation policy, sync-script compilation, whitespace, and change scope.

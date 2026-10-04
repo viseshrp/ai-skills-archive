@@ -28,42 +28,42 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 ## Source Repositories and Gists
 
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
-  - Archived commit: `2686b620fc1fed2e8f60c704839c766b8594c6b6`
+  - Archived commit: `1401c8b8030e023baeebb31781a6653fe8e93026`
   - Snapshot: [`archives/addyosmani__agent-skills/snapshot`](archives/addyosmani__agent-skills/snapshot)
   - Skills discovered: 25
-  - Files retained in reduced snapshot: 37
+  - Files retained in reduced snapshot: 38
 - [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
   - Archived commit: `2c606141936f1eeef17fa3043a72095b4765b9c2`
   - Snapshot: [`archives/multica-ai__andrej-karpathy-skills/snapshot`](archives/multica-ai__andrej-karpathy-skills/snapshot)
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
-  - Archived commit: `ef44b8f4cd80df38b15d7742e163516b0ccbec57`
+  - Archived commit: `6ab4b03bf70a118a1b3ee7f3263ed9f19031061b`
   - Snapshot: [`archives/Imbad0202__academic-research-skills/snapshot`](archives/Imbad0202__academic-research-skills/snapshot)
-  - Skills discovered: 4
-  - Files retained in reduced snapshot: 653
+  - Skills discovered: 5
+  - Files retained in reduced snapshot: 684
 - [mattpocock/skills](https://github.com/mattpocock/skills)
-  - Archived commit: `d81f3a183412e71a5b1e84ca21bc1a35eea03a60`
+  - Archived commit: `24fe0ef7737efae15c87225755e9f6f5965e4888`
   - Snapshot: [`archives/mattpocock__skills/snapshot`](archives/mattpocock__skills/snapshot)
   - Skills discovered: 37
   - Files retained in reduced snapshot: 62
 - [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman)
-  - Archived commit: `f5d729488caa8f6a5b6c8086fe2cccd3e8a63f91`
+  - Archived commit: `6571943370f7c9d4de1946481177ee7b306cd8e8`
   - Snapshot: [`archives/juliusbrussee__caveman/snapshot`](archives/juliusbrussee__caveman/snapshot)
-  - Skills discovered: 24
-  - Files retained in reduced snapshot: 40
+  - Skills discovered: 28
+  - Files retained in reduced snapshot: 44
 - [obra/Superpowers](https://github.com/obra/Superpowers)
   - Archived commit: `8ca22dba9a94f28898bbce59f2537ff4d87c747d`
   - Snapshot: [`archives/obra__Superpowers/snapshot`](archives/obra__Superpowers/snapshot)
   - Skills discovered: 15
   - Files retained in reduced snapshot: 53
 - [cursor/plugins](https://github.com/cursor/plugins)
-  - Archived commit: `2eb7ed4613cfc8f098dfe464a23680ea44d84c5e`
+  - Archived commit: `e43c7ee26e0038c6c1fa8380dd34ce86ff94cb2a`
   - Snapshot: [`archives/cursor__plugins/snapshot`](archives/cursor__plugins/snapshot)
-  - Skills discovered: 101
-  - Files retained in reduced snapshot: 203
+  - Skills discovered: 104
+  - Files retained in reduced snapshot: 206
 - [affaan-m/ECC](https://github.com/affaan-m/ECC)
-  - Archived commit: `c70874fae9eb0e5ad0365beb7e2955899fd1d30f`
+  - Archived commit: `ef648e01899ba3e8dc6371642deaaf64b4477775`
   - Snapshot: [`archives/affaan-m__ECC/snapshot`](archives/affaan-m__ECC/snapshot)
   - Skills discovered: 1027
   - Files retained in reduced snapshot: 1236
@@ -73,7 +73,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 128
 - [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
-  - Archived commit: `e3ba2aa6f1e6f0bc4d69eb09c9f0d0a93af56156`
+  - Archived commit: `c982cd411abb53323c4baa1baa3c2f020b8d0b08`
   - Snapshot: [`archives/DietrichGebert__ponytail/snapshot`](archives/DietrichGebert__ponytail/snapshot)
   - Skills discovered: 12
   - Files retained in reduced snapshot: 12
@@ -148,6 +148,7 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `academic-paper-reviewer`: [`academic-paper-reviewer/SKILL.md`](archives/Imbad0202__academic-research-skills/snapshot/academic-paper-reviewer/SKILL.md)
 - `academic-pipeline`: [`academic-pipeline/SKILL.md`](archives/Imbad0202__academic-research-skills/snapshot/academic-pipeline/SKILL.md)
 - `deep-research`: [`deep-research/SKILL.md`](archives/Imbad0202__academic-research-skills/snapshot/deep-research/SKILL.md)
+- `sr-screener`: [`sr-screener/SKILL.md`](archives/Imbad0202__academic-research-skills/snapshot/sr-screener/SKILL.md)
 
 ### mattpocock/skills
 - `ask-matt`: [`skills/engineering/ask-matt/SKILL.md`](archives/mattpocock__skills/snapshot/skills/engineering/ask-matt/SKILL.md)
@@ -193,6 +194,8 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `caveman`: [`plugins/caveman/skills/caveman/SKILL.md`](archives/juliusbrussee__caveman/snapshot/plugins/caveman/skills/caveman/SKILL.md)
 - `caveman-compress`: [`plugins/caveman/skills/caveman-compress/SKILL.md`](archives/juliusbrussee__caveman/snapshot/plugins/caveman/skills/caveman-compress/SKILL.md)
 - `caveman-stats`: [`plugins/caveman/skills/caveman-stats/SKILL.md`](archives/juliusbrussee__caveman/snapshot/plugins/caveman/skills/caveman-stats/SKILL.md)
+- `megacave`: [`plugins/caveman/skills/megacave/SKILL.md`](archives/juliusbrussee__caveman/snapshot/plugins/caveman/skills/megacave/SKILL.md)
+- `ultracave`: [`plugins/caveman/skills/ultracave/SKILL.md`](archives/juliusbrussee__caveman/snapshot/plugins/caveman/skills/ultracave/SKILL.md)
 - `cavecrew`: [`skills/cavecrew/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/cavecrew/SKILL.md)
 - `caveman`: [`skills/caveman/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman/SKILL.md)
 - `caveman-commit`: [`skills/caveman-commit/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-commit/SKILL.md)
@@ -209,9 +212,11 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `caveman-stats`: [`skills/caveman-stats/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/caveman-stats/SKILL.md)
 - `investigate-first`: [`skills/investigate-first/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/investigate-first/SKILL.md)
 - `lean-build`: [`skills/lean-build/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/lean-build/SKILL.md)
+- `megacave`: [`skills/megacave/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/megacave/SKILL.md)
 - `migration`: [`skills/migration/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/migration/SKILL.md)
 - `safe-refactor`: [`skills/safe-refactor/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/safe-refactor/SKILL.md)
 - `surgical-patch`: [`skills/surgical-patch/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/surgical-patch/SKILL.md)
+- `ultracave`: [`skills/ultracave/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/ultracave/SKILL.md)
 - `verify-and-stop`: [`skills/verify-and-stop/SKILL.md`](archives/juliusbrussee__caveman/snapshot/skills/verify-and-stop/SKILL.md)
 
 ### obra/Superpowers
@@ -275,8 +280,10 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `architect`: [`pstack/skills/architect/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/architect/SKILL.md)
 - `arena`: [`pstack/skills/arena/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/arena/SKILL.md)
 - `automate-me`: [`pstack/skills/automate-me/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/automate-me/SKILL.md)
+- `benchmark-checklist`: [`pstack/skills/benchmark-checklist/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/benchmark-checklist/SKILL.md)
 - `blast-radius`: [`pstack/skills/blast-radius/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/blast-radius/SKILL.md)
 - `bro`: [`pstack/skills/bro/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/bro/SKILL.md)
+- `correct`: [`pstack/skills/correct/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/correct/SKILL.md)
 - `create-verification-skill`: [`pstack/skills/create-verification-skill/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/create-verification-skill/SKILL.md)
 - `figure-it-out`: [`pstack/skills/figure-it-out/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/figure-it-out/SKILL.md)
 - `how`: [`pstack/skills/how/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/how/SKILL.md)
@@ -291,6 +298,7 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `principle-encode-lessons-in-structure`: [`pstack/skills/principle-encode-lessons-in-structure/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-encode-lessons-in-structure/SKILL.md)
 - `principle-exhaust-the-design-space`: [`pstack/skills/principle-exhaust-the-design-space/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-exhaust-the-design-space/SKILL.md)
 - `principle-experience-first`: [`pstack/skills/principle-experience-first/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-experience-first/SKILL.md)
+- `principle-explain-the-number`: [`pstack/skills/principle-explain-the-number/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-explain-the-number/SKILL.md)
 - `principle-fix-root-causes`: [`pstack/skills/principle-fix-root-causes/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-fix-root-causes/SKILL.md)
 - `principle-foundational-thinking`: [`pstack/skills/principle-foundational-thinking/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-foundational-thinking/SKILL.md)
 - `principle-guard-the-context-window`: [`pstack/skills/principle-guard-the-context-window/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-guard-the-context-window/SKILL.md)
@@ -353,8 +361,8 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `dmux-workflows`: [`.agents/skills/dmux-workflows/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/dmux-workflows/SKILL.md)
 - `documentation-lookup`: [`.agents/skills/documentation-lookup/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/documentation-lookup/SKILL.md)
 - `e2e-testing`: [`.agents/skills/e2e-testing/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/e2e-testing/SKILL.md)
+- `ecc-conventions`: [`.agents/skills/ecc-conventions/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/ecc-conventions/SKILL.md)
 - `eval-harness`: [`.agents/skills/eval-harness/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/eval-harness/SKILL.md)
-- `everything-claude-code`: [`.agents/skills/everything-claude-code/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/everything-claude-code/SKILL.md)
 - `exa-search`: [`.agents/skills/exa-search/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/exa-search/SKILL.md)
 - `fal-ai-media`: [`.agents/skills/fal-ai-media/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/fal-ai-media/SKILL.md)
 - `frontend-patterns`: [`.agents/skills/frontend-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/frontend-patterns/SKILL.md)
@@ -1407,8 +1415,8 @@ These skills are maintained in this repository rather than inside an upstream sn
 
 ## Duplicate Tracking
 
-- Exact duplicate groups: 127
-- Repeated skill names: 270
+- Exact duplicate groups: 129
+- Repeated skill names: 272
 - Full report: [`catalog/duplicates.json`](catalog/duplicates.json)
 
 ## Add A Source

@@ -5,9 +5,9 @@
   "url": "https://github.com/DietrichGebert/ponytail",
   "notes": "Added with scripts/sync_sources.py add from https://github.com/DietrichGebert/ponytail.",
   "default_branch": "main",
-  "commit": "e3ba2aa6f1e6f0bc4d69eb09c9f0d0a93af56156",
-  "commit_date": "2026-09-14T16:34:42+02:00",
-  "archived_at": "2026-10-01T15:54:51.462776+00:00",
+  "commit": "c982cd411abb53323c4baa1baa3c2f020b8d0b08",
+  "commit_date": "2026-10-03T07:12:55+02:00",
+  "archived_at": "2026-10-04T19:03:51.232984+00:00",
   "archive_path": "archives/DietrichGebert__ponytail",
   "snapshot_path": "archives/DietrichGebert__ponytail/snapshot",
   "file_count": 12,
@@ -30,16 +30,16 @@
   ],
   "all_text_file_hashes": {
     "skills/ponytail/SKILL.md": "1316a2f3f95741d2300b116fe0c2d81ce4a9568656ed0a62643f54aaf09957f2",
-    "skills/ponytail-audit/SKILL.md": "5560b8e383dbe2ddfddc873a1e2bf2e586e23e0cd7d995537482b2315331f6d1",
-    "skills/ponytail-help/SKILL.md": "2264d1615117b02b0fd5a69ec84cd2757006471a78e4d6c22eed6d581c1d37a4",
-    "skills/ponytail-review/SKILL.md": "40df33b58fc6ef889b93585733feb9566b76e9586efa7f376785c1e995197ac0",
+    "skills/ponytail-audit/SKILL.md": "554b7ac9c78a6b1a5e6b2bf0ba67eedf092baf71e465d03e591d0cfeb7947774",
+    "skills/ponytail-help/SKILL.md": "23d9baf1b9a9464b40ebe1b5b50752795210b934fc8e248e791496e4c9a39fd2",
+    "skills/ponytail-review/SKILL.md": "7f8bfd0da3ba7c6fe0cd0de53e6f910adfef52166c6e99d7fa4de3360650b9b6",
     "skills/ponytail-gain/SKILL.md": "24e01d1c9715cb136ba1c4f1e52a95940c0193558b876828e537736480d6408b",
-    "skills/ponytail-debt/SKILL.md": "c84fba75f0ca12bfe83f9a78ea02fd125c5dd3f1fbb18124105a489937f284e6",
+    "skills/ponytail-debt/SKILL.md": "d3611761039bdb2955e31856834feeec6ed5483a3fc64576e9a166f949a131d1",
     ".openclaw/skills/ponytail/SKILL.md": "dd240060d5734a58fe2783916a63f9401fed75c5f87742dd663a66f9ed4c8c65",
-    ".openclaw/skills/ponytail-audit/SKILL.md": "baba579ec3261cef555797c06484b4374ff4febbdb3eb0b4333e6d92b3434f87",
-    ".openclaw/skills/ponytail-help/SKILL.md": "be2bab79e073c0cc5d58f21a4e2d5bdfdaa3baec832d9575493636752b79161b",
-    ".openclaw/skills/ponytail-review/SKILL.md": "76addbc1c5293d5a2da42828f4bff1cee5050492d06c194354df2f6329398df5",
+    ".openclaw/skills/ponytail-audit/SKILL.md": "e4cdead76dd34470490454e9518a4c9e0294c8045e1b206aec382b75bc792f96",
+    ".openclaw/skills/ponytail-help/SKILL.md": "fbafefaed07225f1d8fd79e62d976fdebe680294cbe78c3e6acc00353ae61999",
+    ".openclaw/skills/ponytail-review/SKILL.md": "82d219c6c96d96c9775b811d9c7d0b5d5f5d94d3a667d993c6e0fe63de295326",
     ".openclaw/skills/ponytail-gain/SKILL.md": "6268baa130520efa48406ee9463e0c844cbfea9a299a4687b1adf8352f2471f6",
-    ".openclaw/skills/ponytail-debt/SKILL.md": "b0281c1d96fa5acc411ab6bbc219802c5551ecc73f4e3be3a3b74ada78a84bcb"
+    ".openclaw/skills/ponytail-debt/SKILL.md": "a88162567a541a7ac72c73c6d2b7397fece608b3aab58bd6f3260bdfe72f5d77"
   }
 }
