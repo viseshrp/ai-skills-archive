@@ -15323,6 +15323,94 @@
     "linked_local_files": []
   },
   {
+    "source_repo": "humanlayer/skills",
+    "repo_key": "humanlayer__skills",
+    "skill_name": "build-iterated-agentic-loop",
+    "description": "build a repo-local skill and install a matching iterated coding-agent GitHub Actions workflow, prompt, memory file, and reference templates",
+    "path": "plugins/build-iterated-agentic-loop/skills/build-iterated-agentic-loop/SKILL.md",
+    "relative_directory": "plugins/build-iterated-agentic-loop/skills/build-iterated-agentic-loop",
+    "sha256": "dea5c29e2cb6133896b0bb518775e18863df377ebe0198f8d867e28e52155671",
+    "linked_local_files": [
+      "plugins/build-iterated-agentic-loop/skills/build-iterated-agentic-loop/references/agent-iteration.ts",
+      "plugins/build-iterated-agentic-loop/skills/build-iterated-agentic-loop/references/agent-runner-templates.md",
+      "plugins/build-iterated-agentic-loop/skills/build-iterated-agentic-loop/references/example-skill.md",
+      "plugins/build-iterated-agentic-loop/skills/build-iterated-agentic-loop/references/memory-template.md",
+      "plugins/build-iterated-agentic-loop/skills/build-iterated-agentic-loop/references/prompt-template.md",
+      "plugins/build-iterated-agentic-loop/skills/build-iterated-agentic-loop/references/response-template.md",
+      "plugins/build-iterated-agentic-loop/skills/build-iterated-agentic-loop/references/skill-template.md",
+      "plugins/build-iterated-agentic-loop/skills/build-iterated-agentic-loop/references/workflow-template.yml"
+    ]
+  },
+  {
+    "source_repo": "humanlayer/skills",
+    "repo_key": "humanlayer__skills",
+    "skill_name": "design-control-loop",
+    "description": "interview the user to design an agentic control loop (sensor, controller, actuator under disturbances) tailored to their codebase, then build it as locally-runnable components plus a scheduled coding-agent workflow",
+    "path": "plugins/design-control-loop/skills/design-control-loop/SKILL.md",
+    "relative_directory": "plugins/design-control-loop/skills/design-control-loop",
+    "sha256": "4e31d397362b23a88c7bd027cc5935fb3e5aa24eb0a5f934be0967f8974fc080",
+    "linked_local_files": [
+      "plugins/design-control-loop/skills/design-control-loop/references/agent-iteration.ts",
+      "plugins/design-control-loop/skills/design-control-loop/references/agent-runner-templates.md",
+      "plugins/design-control-loop/skills/design-control-loop/references/control-loop-taxonomy.md",
+      "plugins/design-control-loop/skills/design-control-loop/references/example-control-loop.md",
+      "plugins/design-control-loop/skills/design-control-loop/references/example-skill.md",
+      "plugins/design-control-loop/skills/design-control-loop/references/memory-template.md",
+      "plugins/design-control-loop/skills/design-control-loop/references/prompt-template.md",
+      "plugins/design-control-loop/skills/design-control-loop/references/response-template.md",
+      "plugins/design-control-loop/skills/design-control-loop/references/skill-template.md",
+      "plugins/design-control-loop/skills/design-control-loop/references/workflow-template.yml"
+    ]
+  },
+  {
+    "source_repo": "humanlayer/skills",
+    "repo_key": "humanlayer__skills",
+    "skill_name": "improve-claude-md",
+    "description": "improve a CLAUDE.md file using <important if> blocks to improve instruction adherence",
+    "path": "plugins/improve-claude-md/skills/improve-claude-md/SKILL.md",
+    "relative_directory": "plugins/improve-claude-md/skills/improve-claude-md",
+    "sha256": "dbc3019c52f2409c031c4261664381c338d206b53ed700120743e374a87a9b8c",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "humanlayer/skills",
+    "repo_key": "humanlayer__skills",
+    "skill_name": "narrow-react-prop-types",
+    "description": "narrow React component prop types to match live code paths",
+    "path": "plugins/narrow-react-prop-types/skills/narrow-react-prop-types/SKILL.md",
+    "relative_directory": "plugins/narrow-react-prop-types/skills/narrow-react-prop-types",
+    "sha256": "bfcea79a20074a9178c6aa21c34629951d9646ea381e8be4c83a0a136e3aa288",
+    "linked_local_files": [
+      "plugins/narrow-react-prop-types/skills/narrow-react-prop-types/references/agent-narrow-component-props.yml",
+      "plugins/narrow-react-prop-types/skills/narrow-react-prop-types/references/narrow-component-props-memory.md",
+      "plugins/narrow-react-prop-types/skills/narrow-react-prop-types/references/response-template.md"
+    ]
+  },
+  {
+    "source_repo": "humanlayer/skills",
+    "repo_key": "humanlayer__skills",
+    "skill_name": "show-me",
+    "description": "Help the user understand the current topic visually with concise diagrams, code-shape sketches, and focused HTML artifacts.",
+    "path": "plugins/show-me/skills/show-me/SKILL.md",
+    "relative_directory": "plugins/show-me/skills/show-me",
+    "sha256": "434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "humanlayer/skills",
+    "repo_key": "humanlayer__skills",
+    "skill_name": "visual-pr",
+    "description": "Only use when the user explicitly invokes this skill by name.",
+    "path": "plugins/visual-pr/skills/visual-pr/SKILL.md",
+    "relative_directory": "plugins/visual-pr/skills/visual-pr",
+    "sha256": "89df56774d8ec522bd0d0f03cd553dae5d70bff9364749874b5a0c0ae390eec0",
+    "linked_local_files": [
+      "plugins/visual-pr/skills/visual-pr/references/describe_pr_final_answer.md",
+      "plugins/visual-pr/skills/visual-pr/references/pr_description_template.md",
+      "plugins/visual-pr/skills/visual-pr/references/show-me.md"
+    ]
+  },
+  {
     "source_repo": "viseshrp/ai-skills-archive (curated)",
     "repo_key": "curated",
     "skill_name": "test-audit",

@@ -73,7 +73,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 128
 - [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
-  - Archived commit: `c982cd411abb53323c4baa1baa3c2f020b8d0b08`
+  - Archived commit: `be934f9ed781047b436f3f31e00429b0cd2ba646`
   - Snapshot: [`archives/DietrichGebert__ponytail/snapshot`](archives/DietrichGebert__ponytail/snapshot)
   - Skills discovered: 12
   - Files retained in reduced snapshot: 12
@@ -104,6 +104,12 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 14
   - Files retained in reduced snapshot: 22
   - Upstream license: [`LICENSE`](archives/emilkowalski__skills/LICENSE)
+- [humanlayer/skills](https://github.com/humanlayer/skills)
+  - Archived commit: `ca7c8088db69e315a8b2deea43820270457f8f3c`
+  - Snapshot: [`archives/humanlayer__skills/snapshot`](archives/humanlayer__skills/snapshot)
+  - Skills discovered: 6
+  - Files retained in reduced snapshot: 30
+  - Upstream license: [`LICENSE`](archives/humanlayer__skills/LICENSE)
 
 ## Curated Adaptations
 
@@ -1435,6 +1441,14 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `prototype`: [`skills/prototype/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/prototype/SKILL.md)
 - `review-animations`: [`skills/review-animations/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/review-animations/SKILL.md)
 - `write-swift`: [`skills/write-swift/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/write-swift/SKILL.md)
+
+### humanlayer/skills
+- `build-iterated-agentic-loop`: [`plugins/build-iterated-agentic-loop/skills/build-iterated-agentic-loop/SKILL.md`](archives/humanlayer__skills/snapshot/plugins/build-iterated-agentic-loop/skills/build-iterated-agentic-loop/SKILL.md)
+- `design-control-loop`: [`plugins/design-control-loop/skills/design-control-loop/SKILL.md`](archives/humanlayer__skills/snapshot/plugins/design-control-loop/skills/design-control-loop/SKILL.md)
+- `improve-claude-md`: [`plugins/improve-claude-md/skills/improve-claude-md/SKILL.md`](archives/humanlayer__skills/snapshot/plugins/improve-claude-md/skills/improve-claude-md/SKILL.md)
+- `narrow-react-prop-types`: [`plugins/narrow-react-prop-types/skills/narrow-react-prop-types/SKILL.md`](archives/humanlayer__skills/snapshot/plugins/narrow-react-prop-types/skills/narrow-react-prop-types/SKILL.md)
+- `show-me`: [`plugins/show-me/skills/show-me/SKILL.md`](archives/humanlayer__skills/snapshot/plugins/show-me/skills/show-me/SKILL.md)
+- `visual-pr`: [`plugins/visual-pr/skills/visual-pr/SKILL.md`](archives/humanlayer__skills/snapshot/plugins/visual-pr/skills/visual-pr/SKILL.md)
 
 ## Duplicate Tracking
 

@@ -763,3 +763,32 @@
 - Preserved the previously missing upstream MIT license beside `archive.json`, recorded its SHA-256, linked it in the README, and configured `license_files` so weekly refreshes update the notice.
 - Source, skill, and duplicate counts are unchanged: 15 sources, 1,287 skill records, 129 exact duplicate groups, and 273 repeated-name groups. The six existing Ponytail repeated-name groups retain both variants and their provenance. Existing source commits and all skill records are unchanged; source fetch failures: none.
 - Validation passed for all 2,505 snapshot files against upstream bytes, 2,483 text hashes, recursive closure and 2,333 linked references, both configured license files and their hashes, source metadata, duplicate recomputation, README generation and 1,309 local links, append-only log history, preserved weekly automation policy, and whitespace.
+
+## 2026-10-04 22:11:37Z
+
+- Action: Added source(s): https://github.com/humanlayer/skills
+- Sources synced: 16
+- Skills indexed: 1293
+- Exact duplicate groups: 129
+- Repeated skill names: 273
+- Synced `addyosmani__agent-skills` at commit `1401c8b8030e` with 25 skills and 38 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `6ab4b03bf70a` with 5 skills and 684 files.
+- Synced `mattpocock__skills` at commit `24fe0ef7737e` with 37 skills and 62 files.
+- Synced `juliusbrussee__caveman` at commit `6571943370f7` with 28 skills and 44 files.
+- Synced `obra__Superpowers` at commit `8ca22dba9a94` with 15 skills and 53 files.
+- Synced `cursor__plugins` at commit `e43c7ee26e00` with 104 skills and 206 files.
+- Synced `affaan-m__ECC` at commit `ef648e01899b` with 1027 skills and 1236 files.
+- Synced `mvanhorn__last30days-skill` at commit `5103ba478b38` with 1 skills and 128 files.
+- Synced `DietrichGebert__ponytail` at commit `be934f9ed781` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `000650b15698` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `839872f9d1cd` with 2 skills and 2 files.
+- Synced `Leonxlnx__taste-skill` at commit `ce26fc25c0e5` with 13 skills and 14 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+- Synced `emilkowalski__skills` at commit `e8a175de22ae` with 14 skills and 22 files.
+- Synced `humanlayer__skills` at commit `ca7c8088db69` with 6 skills and 30 files.
+
+- Complete import review: `humanlayer/skills` pinned to `ca7c8088db69e315a8b2deea43820270457f8f3c`; all six upstream skills and their recursively linked local resources are preserved in 30 snapshot files. `show-me` has no required local companion files. The upstream MIT license is preserved beside `archive.json`, hashed, and linked from the generated README.
+- Source/skill delta: 15 -> 16 sources, 1,287 -> 1,293 skills, and 2,505 -> 2,535 snapshot files. Existing skill records and snapshot contents are unchanged. The canonical sync advanced Ponytail's upstream commit metadata from `c982cd411abb` to `be934f9ed781` without changing its retained skill or license content. Source fetch failures: none.
+- Duplicate review: exact groups remain 129 and repeated-name groups remain 273; no existing duplicate or source material was removed.
+- Validation passed for all 2,535 retained files against upstream bytes, 2,513 text hashes, recursive closure and 2,356 linked references, all three preserved licenses, source metadata, duplicate recomputation, generated README and local links, append-only log history, and whitespace. The workflow will reference the published archive copy of `show-me` rather than its upstream URL.

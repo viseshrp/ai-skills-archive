@@ -64,5 +64,12 @@
     "license_files": [
       "LICENSE"
     ]
+  },
+  {
+    "url": "https://github.com/humanlayer/skills",
+    "notes": "Imported for the ai-coding-workflow show-me dependency; preserve every upstream skill and recursively linked local resource.",
+    "license_files": [
+      "LICENSE"
+    ]
   }
 ]
