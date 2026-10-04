@@ -15168,6 +15168,161 @@
     "linked_local_files": []
   },
   {
+    "source_repo": "emilkowalski/skills",
+    "repo_key": "emilkowalski__skills",
+    "skill_name": "animate",
+    "description": "Build an animation from scratch, making the decisions in the order that determines whether it feels right \u2014 should it animate at all, what purpose, which tool, which properties, which curve and duration, how it interrupts, how it exits. Writes the implementation. Use when asked to animate something, add motion, make a component feel alive, or build a transition. For critiquing existing motion use review-animations; for auditing a whole codebase use improve-animations.",
+    "path": "skills/animate/SKILL.md",
+    "relative_directory": "skills/animate",
+    "sha256": "b8ede161270458e6ae2e45e8a1985373515d4c63de5568ddb0f9012d7634356c",
+    "linked_local_files": [
+      "skills/animate/RECIPES.md"
+    ]
+  },
+  {
+    "source_repo": "emilkowalski/skills",
+    "repo_key": "emilkowalski__skills",
+    "skill_name": "animate-expo",
+    "description": "Build animations in React Native and Expo, making the decisions in the order that determines whether they feel right \u2014 should it animate, which thread it runs on, which properties, spring or timing, how the gesture hands off, how it degrades. Writes the implementation with Reanimated, Gesture Handler, Expo Router and expo-haptics. Use when animating anything in an Expo app, adding gestures, sheets, screen transitions, press feedback or haptics, or fixing motion that stutters on device. For web animation use `animate`.",
+    "path": "skills/animate-expo/SKILL.md",
+    "relative_directory": "skills/animate-expo",
+    "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+    "linked_local_files": [
+      "skills/animate-expo/RECIPES.md"
+    ]
+  },
+  {
+    "source_repo": "emilkowalski/skills",
+    "repo_key": "emilkowalski__skills",
+    "skill_name": "animation-vocabulary",
+    "description": "Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term (\"the bouncy thing when a popover opens\" \u2192 Pop in; \"the iOS rubber-band scroll\" \u2192 Rubber-banding). Use when the user asks \"what's it called when\u2026\", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one.",
+    "path": "skills/animation-vocabulary/SKILL.md",
+    "relative_directory": "skills/animation-vocabulary",
+    "sha256": "40d2b27adfdfeb0570a9f20e7d0255109d9233c50603878bcd0dcd04c923fd94",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "emilkowalski/skills",
+    "repo_key": "emilkowalski__skills",
+    "skill_name": "apple-design",
+    "description": "Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-motion, or the design foundations (feedback, spatial consistency, restraint) behind Apple-style interfaces.",
+    "path": "skills/apple-design/SKILL.md",
+    "relative_directory": "skills/apple-design",
+    "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "emilkowalski/skills",
+    "repo_key": "emilkowalski__skills",
+    "skill_name": "ask-sonner",
+    "description": "Guide to Sonner, the React toast library \u2014 install and wire up the Toaster, pick the right toast() call, promise and loading toasts, updating, dismissing and persisting toasts, styling, theming and icons, positioning and multiple toasters. Use when working with Sonner or troubleshooting it \u2014 toasts that don't appear, appear twice, lose their styles, ignore Tailwind classes, sit behind a modal, or don't follow dark mode.",
+    "path": "skills/ask-sonner/SKILL.md",
+    "relative_directory": "skills/ask-sonner",
+    "sha256": "39f3ee185b3aa2cf70a689052ff078953ce7ba5915ed7a9391d232e9d4dcf57f",
+    "linked_local_files": [
+      "skills/ask-sonner/API.md"
+    ]
+  },
+  {
+    "source_repo": "emilkowalski/skills",
+    "repo_key": "emilkowalski__skills",
+    "skill_name": "break-ui",
+    "description": "Try to break a piece of UI by feeding it worst-case data \u2014 long names, unbreakable emails, one-letter names, missing fields, huge counts, zero items, long labels, non-Latin text, emoji, extreme numbers \u2014 then render it behind a \"Demo data / Worst case\" toggle and report everything that broke, with the fix for each. Use when the user asks to stress-test, break, or find edge cases in a component or screen, or to \"try the worst case\". For visual design critique use emil-design-eng; for motion use review-animations.",
+    "path": "skills/break-ui/SKILL.md",
+    "relative_directory": "skills/break-ui",
+    "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+    "linked_local_files": [
+      "skills/break-ui/CATALOG.md"
+    ]
+  },
+  {
+    "source_repo": "emilkowalski/skills",
+    "repo_key": "emilkowalski__skills",
+    "skill_name": "emil-design-eng",
+    "description": "This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great.",
+    "path": "skills/emil-design-eng/SKILL.md",
+    "relative_directory": "skills/emil-design-eng",
+    "sha256": "ffbe68e6007fb42cb8149f089b400a1ca007d59ba23e8948e2be4476f3175939",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "emilkowalski/skills",
+    "repo_key": "emilkowalski__skills",
+    "skill_name": "find-animation-opportunities",
+    "description": "Search a codebase or UI for places that don't animate but should, and reject everything that shouldn't. Read-only; it proposes motion with exact values, it does not implement it. Use when the user asks \"what could be animated here?\" or wants to \"make this feel more alive\". For fixing existing animations, use improve-animations or review-animations instead.",
+    "path": "skills/find-animation-opportunities/SKILL.md",
+    "relative_directory": "skills/find-animation-opportunities",
+    "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "emilkowalski/skills",
+    "repo_key": "emilkowalski__skills",
+    "skill_name": "improve-animations",
+    "description": "Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code \u2014 it plans improvements, it does not apply them. Use when the user asks to \"improve the animations\", \"audit the motion\", \"make this app feel better\", or wants a roadmap of animation fixes rather than a review of a single diff.",
+    "path": "skills/improve-animations/SKILL.md",
+    "relative_directory": "skills/improve-animations",
+    "sha256": "73962447464433476343e2c12cd08ab39cc99a9e5f3c118c5fb54ed897574ef6",
+    "linked_local_files": [
+      "skills/improve-animations/AUDIT.md",
+      "skills/improve-animations/PLAN-TEMPLATE.md"
+    ]
+  },
+  {
+    "source_repo": "emilkowalski/skills",
+    "repo_key": "emilkowalski__skills",
+    "skill_name": "mobile-native",
+    "description": "Make a web app feel native on a phone \u2014 the small CSS and meta-tag fixes that separate \"a website in a browser\" from something that feels installed. Covers sticky hover states, tap highlight flashes, the 100vh bug, inputs that zoom the page, laggy taps, pull-to-refresh hijacking scroll, content under the notch, long-press selecting button text, carousels that scroll the wrong way, mismatched status bars, and the rule that you test on real hardware. Use when a web app is being built for or reviewed on mobile, when something \"works in Chrome but feels wrong on my phone\", when building a PWA, a bottom sheet, a carousel, a full-screen layout, or any touch interaction. For motion itself use animate; for React Native use animate-expo.",
+    "path": "skills/mobile-native/SKILL.md",
+    "relative_directory": "skills/mobile-native",
+    "sha256": "888b7651d66d66dbac4e72b7c554638eb19bd971d686d6cbdf030a5ef3788f55",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "emilkowalski/skills",
+    "repo_key": "emilkowalski__skills",
+    "skill_name": "pick-ui-library",
+    "description": "Pick the right library for a given frontend task from a curated, opinionated list \u2014 numbers, OTP inputs, charts, command menus, virtualization, drag and drop, toasts, state, styling, and more. Only runs when explicitly invoked; it does not trigger on its own.",
+    "path": "skills/pick-ui-library/SKILL.md",
+    "relative_directory": "skills/pick-ui-library",
+    "sha256": "675fdce308683256ed617351a9b74d23457a5fbd0a562d9831b9c764b8c5e682",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "emilkowalski/skills",
+    "repo_key": "emilkowalski__skills",
+    "skill_name": "prototype",
+    "description": "Build multiple genuinely different versions of a UI piece you describe, rendered behind a visual picker so you can flip through them live and promote the one that feels right. Only runs when explicitly invoked; it does not trigger on its own.",
+    "path": "skills/prototype/SKILL.md",
+    "relative_directory": "skills/prototype",
+    "sha256": "bba39c955eb1871c5a02733976ceec5d0324198e0812e667604756489c89f7b9",
+    "linked_local_files": [
+      "skills/prototype/PICKER.md"
+    ]
+  },
+  {
+    "source_repo": "emilkowalski/skills",
+    "repo_key": "emilkowalski__skills",
+    "skill_name": "review-animations",
+    "description": "Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned.",
+    "path": "skills/review-animations/SKILL.md",
+    "relative_directory": "skills/review-animations",
+    "sha256": "6ff590d29e436766135aa3d137be1fac2a867165c7257fc315b189361f1873af",
+    "linked_local_files": [
+      "skills/review-animations/STANDARDS.md"
+    ]
+  },
+  {
+    "source_repo": "emilkowalski/skills",
+    "repo_key": "emilkowalski__skills",
+    "skill_name": "write-swift",
+    "description": "How to write modern Swift well \u2014 modeling with value types, Swift 6 data-race safety and approachable concurrency (@concurrent, main-actor-by-default, actors, task groups), protocols and generics (some vs any), API design, performance and ARC, Swift Testing, macros, and the modern language features agents don't know about yet. Use when writing, reviewing, or migrating Swift, or when a concurrency error, a hang, a data race, a retain cycle, or a performance problem needs fixing.",
+    "path": "skills/write-swift/SKILL.md",
+    "relative_directory": "skills/write-swift",
+    "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+    "linked_local_files": []
+  },
+  {
     "source_repo": "viseshrp/ai-skills-archive (curated)",
     "repo_key": "curated",
     "skill_name": "test-audit",

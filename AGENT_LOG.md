@@ -683,3 +683,55 @@
 - Retained files: 2,444 -> 2,483; 41 added, 2 removed, and 180 modified. The two deletions are the old ECC conventions skill and its linked agent metadata; replacement files are retained from the new upstream path.
 - Duplicate review: exact groups 127 -> 129 and repeated-name groups 270 -> 272, both increased by the new `megacave` and `ultracave` pairs. Existing Caveman, cavecrew, and ECC blueprint exact groups retained their membership with refreshed hashes.
 - Source fetch failures: none; the canonical sync succeeded on its first attempt. Validation passed for recursive linked-file and directory-glob closure, source-byte parity for all 2,483 retained files, 2,461 retained text hashes, 1,273 skill records, 2,325 linked references, duplicate recomputation, README and local links, append-only log behavior, preserved automation policy, sync-script compilation, whitespace, and change scope.
+
+## 2026-10-04 19:56:57Z
+
+- Action: Added source(s): https://github.com/emilkowalski/skills
+- Sources synced: 15
+- Skills indexed: 1287
+- Exact duplicate groups: 129
+- Repeated skill names: 273
+- Synced `addyosmani__agent-skills` at commit `1401c8b8030e` with 25 skills and 38 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `6ab4b03bf70a` with 5 skills and 684 files.
+- Synced `mattpocock__skills` at commit `24fe0ef7737e` with 37 skills and 62 files.
+- Synced `juliusbrussee__caveman` at commit `6571943370f7` with 28 skills and 44 files.
+- Synced `obra__Superpowers` at commit `8ca22dba9a94` with 15 skills and 53 files.
+- Synced `cursor__plugins` at commit `e43c7ee26e00` with 104 skills and 206 files.
+- Synced `affaan-m__ECC` at commit `ef648e01899b` with 1027 skills and 1236 files.
+- Synced `mvanhorn__last30days-skill` at commit `5103ba478b38` with 1 skills and 128 files.
+- Synced `DietrichGebert__ponytail` at commit `c982cd411abb` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `000650b15698` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `839872f9d1cd` with 2 skills and 2 files.
+- Synced `Leonxlnx__taste-skill` at commit `ce26fc25c0e5` with 13 skills and 14 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+- Synced `emilkowalski__skills` at commit `e8a175de22ae` with 14 skills and 22 files.
+
+## 2026-10-04 19:58:46Z
+
+- Action: Preserved the upstream MIT license for the complete emilkowalski/skills import
+- Sources synced: 15
+- Skills indexed: 1287
+- Exact duplicate groups: 129
+- Repeated skill names: 273
+- Synced `addyosmani__agent-skills` at commit `1401c8b8030e` with 25 skills and 38 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `6ab4b03bf70a` with 5 skills and 684 files.
+- Synced `mattpocock__skills` at commit `24fe0ef7737e` with 37 skills and 62 files.
+- Synced `juliusbrussee__caveman` at commit `6571943370f7` with 28 skills and 44 files.
+- Synced `obra__Superpowers` at commit `8ca22dba9a94` with 15 skills and 53 files.
+- Synced `cursor__plugins` at commit `e43c7ee26e00` with 104 skills and 206 files.
+- Synced `affaan-m__ECC` at commit `ef648e01899b` with 1027 skills and 1236 files.
+- Synced `mvanhorn__last30days-skill` at commit `5103ba478b38` with 1 skills and 128 files.
+- Synced `DietrichGebert__ponytail` at commit `c982cd411abb` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `000650b15698` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `839872f9d1cd` with 2 skills and 2 files.
+- Synced `Leonxlnx__taste-skill` at commit `ce26fc25c0e5` with 13 skills and 14 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+- Synced `emilkowalski__skills` at commit `e8a175de22ae` with 14 skills and 22 files.
+
+- Complete import review: `emilkowalski/skills` pinned to `e8a175de22ae1e49370fc144c1f3bb9aeedf988d`; all 14 skills and all 8 companion files under upstream `skills/` are retained byte-for-byte. The upstream MIT license is retained separately beside `archive.json`, with its SHA-256 recorded and a README link.
+- The optional `license_files` source setting preserves and refreshes root-level license notices without expanding reduced snapshots. License preservation, updates, generated links, default behavior, and seven invalid/missing/symlink/collision cases passed isolated validation.
+- Catalog delta: 14 -> 15 sources; 1,273 -> 1,287 skills; 2,483 -> 2,505 retained snapshot files. Existing source commits and skill records were unchanged; source fetch failures: none.
+- Duplicate review: exact groups remain 129; repeated-name groups 272 -> 273. The new `prototype` name matches Matt Pocock's independently authored skill; both versions and their provenance remain indexed. No new exact duplicates were introduced.
+- Validation passed for all 2,505 retained files against upstream bytes, 2,483 text hashes, recursive closure and 2,333 linked references, source metadata, duplicate recomputation, README generation and 1,308 local links, the MIT license hash, append-only log history, preserved weekly automation policy, sync-script compilation, and whitespace.

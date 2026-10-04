@@ -97,6 +97,12 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Snapshot: [`archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot`](archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot)
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
+- [emilkowalski/skills](https://github.com/emilkowalski/skills)
+  - Archived commit: `e8a175de22ae1e49370fc144c1f3bb9aeedf988d`
+  - Snapshot: [`archives/emilkowalski__skills/snapshot`](archives/emilkowalski__skills/snapshot)
+  - Skills discovered: 14
+  - Files retained in reduced snapshot: 22
+  - Upstream license: [`LICENSE`](archives/emilkowalski__skills/LICENSE)
 
 ## Curated Adaptations
 
@@ -1413,10 +1419,26 @@ These skills are maintained in this repository rather than inside an upstream sn
 ### ChewingGlass/9a380da5d5a69a540b56d6449556ac5b
 - `review-with-me`: [`SKILL.md`](archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot/SKILL.md)
 
+### emilkowalski/skills
+- `animate`: [`skills/animate/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/animate/SKILL.md)
+- `animate-expo`: [`skills/animate-expo/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/animate-expo/SKILL.md)
+- `animation-vocabulary`: [`skills/animation-vocabulary/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/animation-vocabulary/SKILL.md)
+- `apple-design`: [`skills/apple-design/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/apple-design/SKILL.md)
+- `ask-sonner`: [`skills/ask-sonner/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/ask-sonner/SKILL.md)
+- `break-ui`: [`skills/break-ui/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/break-ui/SKILL.md)
+- `emil-design-eng`: [`skills/emil-design-eng/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/emil-design-eng/SKILL.md)
+- `find-animation-opportunities`: [`skills/find-animation-opportunities/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/find-animation-opportunities/SKILL.md)
+- `improve-animations`: [`skills/improve-animations/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/improve-animations/SKILL.md)
+- `mobile-native`: [`skills/mobile-native/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/mobile-native/SKILL.md)
+- `pick-ui-library`: [`skills/pick-ui-library/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/pick-ui-library/SKILL.md)
+- `prototype`: [`skills/prototype/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/prototype/SKILL.md)
+- `review-animations`: [`skills/review-animations/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/review-animations/SKILL.md)
+- `write-swift`: [`skills/write-swift/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/write-swift/SKILL.md)
+
 ## Duplicate Tracking
 
 - Exact duplicate groups: 129
-- Repeated skill names: 272
+- Repeated skill names: 273
 - Full report: [`catalog/duplicates.json`](catalog/duplicates.json)
 
 ## Add A Source

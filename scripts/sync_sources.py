@@ -462,6 +462,20 @@ def build_repo_report(source: dict[str, Any], clone_dir: Path, archive_root: Pat
         )
 
     counts = copy_selected_files(clone_dir, snapshot_dir, selected_files)
+    license_files: dict[str, str] = {}
+    for license_name in source.get("license_files", []):
+        if (
+            not isinstance(license_name, str)
+            or Path(license_name).name != license_name
+            or license_name in {"archive.json", "snapshot"}
+        ):
+            raise ValueError(f"License must be a root-level file: {license_name!r}")
+        license_path = clone_dir / license_name
+        if not license_path.is_file() or license_path.is_symlink():
+            raise ValueError(f"Missing or unsafe license file: {license_path}")
+        copy_file_with_retry(license_path, archive_root / license_name)
+        license_files[license_name] = file_sha256(license_path)
+
     all_files = [path for path in snapshot_dir.rglob("*") if path.is_file()]
     report = {
         "owner": owner,
@@ -486,6 +500,8 @@ def build_repo_report(source: dict[str, Any], clone_dir: Path, archive_root: Pat
             if read_text_if_possible(path) is not None
         },
     }
+    if license_files:
+        report["license_files"] = license_files
     return report, skill_records
 
 
@@ -618,6 +634,9 @@ def render_readme(repo_reports: list[dict[str, Any]], skill_records: list[dict[s
                 f"  - Files retained in reduced snapshot: {report['file_count']}",
             ]
         )
+        for license_name in report.get("license_files", {}):
+            license_link = f"{report['archive_path']}/{license_name}"
+            lines.append(f"  - Upstream license: [`{license_name}`]({license_link})")
 
     curated_skills = [
         record for record in skill_records if record["repo_key"] == "curated"
