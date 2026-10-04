@@ -77,6 +77,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Snapshot: [`archives/DietrichGebert__ponytail/snapshot`](archives/DietrichGebert__ponytail/snapshot)
   - Skills discovered: 12
   - Files retained in reduced snapshot: 12
+  - Upstream license: [`LICENSE`](archives/DietrichGebert__ponytail/LICENSE)
 - [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop)
   - Archived commit: `000650b156983f5159695b441477f4e63b25dc85`
   - Snapshot: [`archives/petergyang__no-ai-slop/snapshot`](archives/petergyang__no-ai-slop/snapshot)

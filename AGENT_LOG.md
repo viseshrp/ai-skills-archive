@@ -735,3 +735,31 @@
 - Catalog delta: 14 -> 15 sources; 1,273 -> 1,287 skills; 2,483 -> 2,505 retained snapshot files. Existing source commits and skill records were unchanged; source fetch failures: none.
 - Duplicate review: exact groups remain 129; repeated-name groups 272 -> 273. The new `prototype` name matches Matt Pocock's independently authored skill; both versions and their provenance remain indexed. No new exact duplicates were introduced.
 - Validation passed for all 2,505 retained files against upstream bytes, 2,483 text hashes, recursive closure and 2,333 linked references, source metadata, duplicate recomputation, README generation and 1,308 local links, the MIT license hash, append-only log history, preserved weekly automation policy, sync-script compilation, and whitespace.
+
+## 2026-10-04 20:11:36Z
+
+- Action: Verified complete existing DietrichGebert/ponytail import and preserved upstream MIT license
+- Sources synced: 15
+- Skills indexed: 1287
+- Exact duplicate groups: 129
+- Repeated skill names: 273
+- Synced `addyosmani__agent-skills` at commit `1401c8b8030e` with 25 skills and 38 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `6ab4b03bf70a` with 5 skills and 684 files.
+- Synced `mattpocock__skills` at commit `24fe0ef7737e` with 37 skills and 62 files.
+- Synced `juliusbrussee__caveman` at commit `6571943370f7` with 28 skills and 44 files.
+- Synced `obra__Superpowers` at commit `8ca22dba9a94` with 15 skills and 53 files.
+- Synced `cursor__plugins` at commit `e43c7ee26e00` with 104 skills and 206 files.
+- Synced `affaan-m__ECC` at commit `ef648e01899b` with 1027 skills and 1236 files.
+- Synced `mvanhorn__last30days-skill` at commit `5103ba478b38` with 1 skills and 128 files.
+- Synced `DietrichGebert__ponytail` at commit `c982cd411abb` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `000650b15698` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `839872f9d1cd` with 2 skills and 2 files.
+- Synced `Leonxlnx__taste-skill` at commit `ce26fc25c0e5` with 13 skills and 14 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+- Synced `emilkowalski__skills` at commit `e8a175de22ae` with 14 skills and 22 files.
+
+- Completeness review: `DietrichGebert/ponytail` was already registered once and pinned to current upstream commit `c982cd411abb53323c4baa1baa3c2f020b8d0b08`. All six standard skills and six OpenClaw variants (12 `SKILL.md` files) are present byte-for-byte; both upstream skill trees contain no additional local companion files.
+- Preserved the previously missing upstream MIT license beside `archive.json`, recorded its SHA-256, linked it in the README, and configured `license_files` so weekly refreshes update the notice.
+- Source, skill, and duplicate counts are unchanged: 15 sources, 1,287 skill records, 129 exact duplicate groups, and 273 repeated-name groups. The six existing Ponytail repeated-name groups retain both variants and their provenance. Existing source commits and all skill records are unchanged; source fetch failures: none.
+- Validation passed for all 2,505 snapshot files against upstream bytes, 2,483 text hashes, recursive closure and 2,333 linked references, both configured license files and their hashes, source metadata, duplicate recomputation, README generation and 1,309 local links, append-only log history, preserved weekly automation policy, and whitespace.

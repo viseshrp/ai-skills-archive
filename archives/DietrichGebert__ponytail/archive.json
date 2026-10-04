@@ -7,7 +7,7 @@
   "default_branch": "main",
   "commit": "c982cd411abb53323c4baa1baa3c2f020b8d0b08",
   "commit_date": "2026-10-03T07:12:55+02:00",
-  "archived_at": "2026-10-04T19:58:43.544176+00:00",
+  "archived_at": "2026-10-04T20:11:34.000577+00:00",
   "archive_path": "archives/DietrichGebert__ponytail",
   "snapshot_path": "archives/DietrichGebert__ponytail/snapshot",
   "file_count": 12,
@@ -41,5 +41,8 @@
     ".openclaw/skills/ponytail-review/SKILL.md": "82d219c6c96d96c9775b811d9c7d0b5d5f5d94d3a667d993c6e0fe63de295326",
     ".openclaw/skills/ponytail-gain/SKILL.md": "6268baa130520efa48406ee9463e0c844cbfea9a299a4687b1adf8352f2471f6",
     ".openclaw/skills/ponytail-debt/SKILL.md": "a88162567a541a7ac72c73c6d2b7397fece608b3aab58bd6f3260bdfe72f5d77"
+  },
+  "license_files": {
+    "LICENSE": "fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab"
   }
 }
