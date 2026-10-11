@@ -101,7 +101,7 @@
     "description": "Records decisions and documentation. Use when you need to document an architecture decision (ADR) or the reasoning behind a design choice, when changing public APIs, shipping features, or when you need to record context that future engineers and agents will need to understand the codebase.",
     "path": "skills/documentation-and-adrs/SKILL.md",
     "relative_directory": "skills/documentation-and-adrs",
-    "sha256": "359b22460045583b0233ec3f80223459c4096b0fa513f5c29ade9c3985207d65",
+    "sha256": "b60d503925bbaacee7fd63935db70b9ced5b2514ff5a56a672130e01b9690bc5",
     "linked_local_files": []
   },
   {
@@ -123,7 +123,7 @@
     "description": "Builds production-quality, accessible, responsive user-facing UIs. Use when building or modifying interfaces and pages, creating components, implementing layouts, meeting WCAG accessibility requirements, managing state, or when the output needs to look and feel production-quality rather than AI-generated.",
     "path": "skills/frontend-ui-engineering/SKILL.md",
     "relative_directory": "skills/frontend-ui-engineering",
-    "sha256": "549044e9bd8d7fe993ce8e5c0d2b0f5465650676dc15805329973f936179eb1e",
+    "sha256": "29a3e53d57c0a128831a20730ae874a8c4fda40c001fcdc15f8e9ad4b5f72f1b",
     "linked_local_files": [
       "references/accessibility-checklist.md"
     ]
@@ -231,7 +231,7 @@
     "description": "Prepares production launches. Use when preparing to deploy to production, or when asking what needs to be in place before shipping. Use when you need a pre-launch checklist, when setting up monitoring, when planning a staged rollout, or when you need a rollback strategy.",
     "path": "skills/shipping-and-launch/SKILL.md",
     "relative_directory": "skills/shipping-and-launch",
-    "sha256": "1055d25dfe6cfeb6ae31eba3e2328fd0e7c66b285f0e44c40f67c77a59813281",
+    "sha256": "726f3e546369db289160b8d42195590f00b6432887e17bf19070dcc9a347fe39",
     "linked_local_files": [
       "references/accessibility-checklist.md",
       "references/definition-of-done.md",
@@ -300,7 +300,7 @@
     "description": "12-agent academic paper writing pipeline. 11 modes (full/plan/outline/revision/revision-coach/abstract/lit-review/format-convert/citation-check/disclosure/rebuttal-audit). 6 paper types, 5 citation formats, bilingual abstracts, LaTeX/DOCX-via-Pandoc/PDF output. Style Calibration + Writing Quality Check + Anti-Patterns with IRON RULE markers. Triggers: write paper, academic paper, guide my paper, parse reviews, I got reviewer comments, revision roadmap, should we push back, conference rebuttal, grant panel response, audit my rebuttal, check my response draft, AI disclosure, check citations, citation check, check my references, verify references, look over the refs, \u5beb\u8ad6\u6587, \u5b78\u8853\u8ad6\u6587, \u5f15\u5c0e\u6211\u5beb\u8ad6\u6587, \u5be9\u67e5\u610f\u898b, \u6211\u6536\u5230\u5be9\u67e5\u610f\u898b, \u4fee\u8a02\u8def\u7dda\u5716, \u8a55\u4f30\u56de\u8986, \u6aa2\u67e5\u5f15\u7528, \u5f15\u7528\u6aa2\u67e5, \u6aa2\u67e5\u53c3\u8003\u6587\u737b, \u6838\u5c0d\u6587\u737b, \ub17c\ubb38 \uc791\uc131, \ucd08\ub85d \uc791\uc131, \ub17c\ubb38 \uc218\uc815, \ub17c\ubb38 \uacc4\ud68d\uc744 \ub3c4\uc640\uc918, \uc2ec\uc0ac \uc758\uacac\uc744 \ubc1b\uc558\uc5b4, \uc2ec\uc0ac \uc758\uacac \ubc18\uc601, \ub2f5\ubcc0\uc11c \uc810\uac80, AI \uc0ac\uc6a9 \uace0\uc9c0, \uc778\uc6a9 \ud655\uc778, \uc778\uc6a9 \ud615\uc2dd \uac80\uc0ac, enmendar mi art\u00edculo, redactar art\u00edculo, gu\u00eda mi art\u00edculo, analizar rese\u00f1as, auditar mi respuesta, verificar borrador de respuesta, verificar citas, divulgaci\u00f3n de IA.",
     "path": "academic-paper/SKILL.md",
     "relative_directory": "academic-paper",
-    "sha256": "508c6c9f15e424ce58b97580aae3941a523c839c706b8a3f7737a03fb9a1b8ed",
+    "sha256": "a763f94239292cef3f1c204f2ab681034065ba5fd18cd1a08662ea9b9954937e",
     "linked_local_files": [
       ".claude-plugin/marketplace.json",
       ".claude-plugin/plugin.json",
@@ -994,7 +994,7 @@
     "description": "Multi-perspective academic paper review with dynamic reviewer personas. Runs a 5-seat, role-separated review panel (Journal-Fit Reviewer + 3 peer-review roles + Devil's Advocate) with field-specific expertise; role separation is not a claim of independent error processes. Supports full review, re-review (verification), quick assessment, methodology focus, Socratic guided, and calibration modes. Triggers on: review paper, peer review, manuscript review, referee report, review my paper, critique paper, simulate review, editorial review, calibrate reviewer, reviewer calibration, measure reviewer accuracy, \u5be9\u67e5\u8ad6\u6587, \u8ad6\u6587\u5be9\u67e5, \u6a21\u64ec\u5be9\u67e5, \u540c\u5115\u5be9\u67e5, \u5e6b\u6211\u5be9\u9019\u7bc7, \u4ee5\u5be9\u67e5\u4eba\u89d2\u5ea6\u8a55\u4f30, \u5be9\u67e5\u8005\u6821\u6e96, \ub17c\ubb38 \uc2ec\uc0ac, \ub3d9\ub8cc \uc2ec\uc0ac, \ubaa8\uc758 \uc2ec\uc0ac, \uc2ec\uc0ac\uc790 \uad00\uc810\uc5d0\uc11c \ud3c9\uac00, \uc2ec\uc0ac\uc790 \ubcf4\uc815, revisar art\u00edculo, revisi\u00f3n entre pares, revisi\u00f3n de manuscrito, informe de \u00e1rbitro, revisa mi art\u00edculo, criticar art\u00edculo, simular revisi\u00f3n, revisi\u00f3n editorial, calibrar revisor.",
     "path": "academic-paper-reviewer/SKILL.md",
     "relative_directory": "academic-paper-reviewer",
-    "sha256": "dd44856b3c87eac3335e47fbc1a9bba609f74a17d75485bc07b3678e8d875869",
+    "sha256": "f768bf8f22b208c37bd066c22a4e9ee95104f64acbc49578e47ff44b06ca4efe",
     "linked_local_files": [
       "academic-paper-reviewer/agents/devils_advocate_reviewer_agent.md",
       "academic-paper-reviewer/agents/domain_reviewer_agent.md",
@@ -1031,7 +1031,7 @@
     "description": "Orchestrator for the full academic research pipeline: research -> write -> integrity check -> review -> revise -> re-review -> re-revise -> final integrity check -> finalize. Coordinates deep-research, academic-paper, and academic-paper-reviewer into a seamless 10-stage workflow with mandatory, coverage-bounded integrity checks, two-stage peer review, and auditable quality-assurance artifacts. Triggers on: academic pipeline, research to paper, full paper workflow, paper pipeline, end-to-end paper, research-to-publication, complete paper workflow, \uc5f0\uad6c\ubd80\ud130 \ub17c\ubb38\uae4c\uc9c0, \uc5f0\uad6c \uc8fc\uc81c \uc124\uc815\ubd80\ud130 \ub17c\ubb38 \uc644\uc131\uae4c\uc9c0, \ub17c\ubb38 \uc804\uccb4 \uc6cc\ud06c\ud50c\ub85c, flujo de trabajo acad\u00e9mico, investigaci\u00f3n a art\u00edculo, flujo completo de art\u00edculo, pipeline de investigaci\u00f3n completa, publicaci\u00f3n de investigaci\u00f3n, flujo de trabajo completo del art\u00edculo.",
     "path": "academic-pipeline/SKILL.md",
     "relative_directory": "academic-pipeline",
-    "sha256": "1746a3c5f178ca0915019056d36bd8f31dc26758d43a18e14191e5c31c6d56b3",
+    "sha256": "67c2f52260800e9f78af34134539ea381eede8d5e6f29a93a58540eb7fb89ea2",
     "linked_local_files": [
       ".claude-plugin/marketplace.json",
       ".claude-plugin/plugin.json",
@@ -1725,7 +1725,7 @@
     "description": "Universal deep research agent team. 13-agent pipeline for rigorous academic research on any topic. 8 modes: full research, quick brief, paper review, lit-review, fact-check, three-way literature scan, Socratic guided research dialogue, and systematic review with optional meta-analysis. Covers research question formulation, Socratic mentoring, methodology design, systematic literature search, source verification, cross-source synthesis, risk of bias assessment, meta-analysis, APA 7.0 report compilation, editorial review, devil's advocate challenges, ethics review, and post-research literature monitoring. Triggers on: research, deep research, literature review, systematic review, meta-analysis, PRISMA, evidence synthesis, fact-check, WHY HOW WHAT papers, 3W literature scan, guide my research, help me think through, \u7814\u7a76, \u6df1\u5ea6\u7814\u7a76, \u6587\u737b\u56de\u9867, \u6587\u737b\u63a2\u8a0e, \u7cfb\u7d71\u6027\u56de\u9867, \u5f8c\u8a2d\u5206\u6790, \u4e8b\u5be6\u67e5\u6838, \u4e09\u6bb5\u5f0f\u6587\u737b\u6383\u63cf, \u5f15\u5c0e\u6211\u7684\u7814\u7a76, \u5e6b\u6211\u91d0\u6e05, \u5e6b\u6211\u60f3\u60f3, \u6211\u4e0d\u78ba\u5b9a\u8981\u7814\u7a76\u4ec0\u9ebc, \u7814\u7a76\u65b9\u5411, \u7814\u7a76\u4e3b\u984c, \uc2ec\uce35 \uc5f0\uad6c, \ubb38\ud5cc \uc870\uc0ac, \uccb4\uacc4\uc801 \ubb38\ud5cc\uace0\ucc30, \uba54\ud0c0\ubd84\uc11d, \uc0ac\uc2e4 \ud655\uc778, \uc5f0\uad6c \ubc29\ud5a5\uc744 \uc7a1\uc544\uc918, \uc5f0\uad6c \uc8fc\uc81c \uc815\ud558\ub294 \uac83\uc744 \ub3c4\uc640\uc918, revisi\u00f3n de literatura, metaan\u00e1lisis",
     "path": "deep-research/SKILL.md",
     "relative_directory": "deep-research",
-    "sha256": "ac1f3dd6818626de57228e24c69a3cd10ef3c073fc1f12632312623cba640e66",
+    "sha256": "b88810707ced8285ae88fb3186284cd4d4e40303ddbb98165175b4761305756e",
     "linked_local_files": [
       "academic-paper/agents/literature_strategist_agent.md",
       "academic-pipeline/references/literature_corpus_consumers.md",
@@ -1785,7 +1785,7 @@
     "description": "Protocol-driven study screening for systematic, scoping and rapid reviews. Turns a proposal or PROSPERO protocol into confirmed eligibility rules, then screens titles/abstracts and full texts with two blinded AI reviewers and a third-reviewer adjudicator: ordered exclusion codes, no silent defaults, resumable batch runs, QC (seed studies, near-miss rechecks, kappa and PABAK), PRISMA 2020 counts, EndNote/Zotero RIS groups, an Excel log, a methods draft and a literature_corpus handoff to academic-paper. Reads RIS, PubMed .nbib, Web of Science and CSV exports; removes duplicates. 8 modes: protocol, quick, pilot, ta-screen, ft-screen, adjudicate, audit, report. Use it to screen records against eligibility criteria, pilot screening, resolve screening conflicts, audit exclusions or report the selection process. Triggers on: screen these papers, title/abstract screening, full-text screening, screening conflicts, inclusion criteria, PRISMA flow, \u063a\u0631\u0628\u0627\u0644\u06af\u0631\u06cc \u0645\u0642\u0627\u0644\u0627\u062a, \u0627\u0633\u06a9\u0631\u06cc\u0646\u06cc\u0646\u06af \u0639\u0646\u0648\u0627\u0646 \u0648 \u0686\u06a9\u06cc\u062f\u0647, \u0645\u0639\u06cc\u0627\u0631\u0647\u0627\u06cc \u0648\u0631\u0648\u062f \u0648 \u062e\u0631\u0648\u062c.",
     "path": "sr-screener/SKILL.md",
     "relative_directory": "sr-screener",
-    "sha256": "61a7729cb59d180c482b55cbc923c09c0b6966002496ab02fa9f3308607b4f6f",
+    "sha256": "b737e314865c0d26cbfc2721a2e7a2df430a0687be950636329cb6ad52cd15f0",
     "linked_local_files": [
       "sr-screener/agents/protocol_architect_agent.md",
       "sr-screener/agents/qc_auditor_agent.md",
@@ -1819,7 +1819,7 @@
     "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
     "path": "skills/engineering/ask-matt/SKILL.md",
     "relative_directory": "skills/engineering/ask-matt",
-    "sha256": "32b3c71d6dbb5a7c15147e8a503a9df28e9a567f45eba6a6bb42aa903225c6ff",
+    "sha256": "1371f5ce005de0992a44b137748bfb960a56948aa9871b405fe9d90b24332e3c",
     "linked_local_files": [
       "skills/engineering/ask-matt/PHASE-BOUNDARIES.md"
     ]
@@ -1831,7 +1831,7 @@
     "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \\\"review since X\\\".",
     "path": "skills/engineering/code-review/SKILL.md",
     "relative_directory": "skills/engineering/code-review",
-    "sha256": "47f4e52c21694def9c7c11cbfbf891ca35eac7a93e395797515be3c8a409ae50",
+    "sha256": "09eb147f793e4647949edd32dbad278f0554dfb56e0d46b699cd4c2c55bf0357",
     "linked_local_files": []
   },
   {
@@ -1854,7 +1854,7 @@
     "description": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
     "path": "skills/engineering/diagnosing-bugs/SKILL.md",
     "relative_directory": "skills/engineering/diagnosing-bugs",
-    "sha256": "9168404abda0967a5d32977e3498cd95fda6807018852f3de736a78357c82b40",
+    "sha256": "849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d",
     "linked_local_files": [
       "skills/engineering/diagnosing-bugs/scripts/hitl-loop.template.sh"
     ]
@@ -1889,7 +1889,7 @@
     "description": "Implement a piece of work based on a spec or set of tickets.",
     "path": "skills/engineering/implement/SKILL.md",
     "relative_directory": "skills/engineering/implement",
-    "sha256": "6d3fd9e83b8f36e5213854779db49b256a457a7ebb4a503e53fa7dcff696adc3",
+    "sha256": "483bdc4ccf4ac31d86ac7beeaa0d0db80313e71e120bb8c59b3196ae5decd53d",
     "linked_local_files": []
   },
   {
@@ -1964,7 +1964,7 @@
     "description": "Configure this repo for the engineering skills: set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
     "path": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
     "relative_directory": "skills/engineering/setup-matt-pocock-skills",
-    "sha256": "9a0c21694be19fa3eefc39343355d3af7414716ba364882c7432c2f821eac3e9",
+    "sha256": "f148858ffb7f63c03c06fca06e6fdb1d91a35c6b293244b8fdfacd5f4cc028c4",
     "linked_local_files": [
       "skills/engineering/setup-matt-pocock-skills/domain.md",
       "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
@@ -1980,7 +1980,7 @@
     "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
     "path": "skills/engineering/tdd/SKILL.md",
     "relative_directory": "skills/engineering/tdd",
-    "sha256": "93ea419b76e9caaf26153b828e984f7c3fb136f4caa67b14af95f32ea965a1cc",
+    "sha256": "5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0",
     "linked_local_files": [
       "skills/engineering/tdd/mocking.md",
       "skills/engineering/tdd/tests.md"
@@ -2003,7 +2003,7 @@
     "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).",
     "path": "skills/engineering/to-tickets/SKILL.md",
     "relative_directory": "skills/engineering/to-tickets",
-    "sha256": "5c9fba69845c2519b9b35b9af42ae5142c21f8ca15ac2123dc2722002c8058ae",
+    "sha256": "56ec23c5b2782785d4e65bff9e315b6d3aeb4ef977c174a219e99489fada1995",
     "linked_local_files": []
   },
   {
@@ -2026,7 +2026,7 @@
     "description": "Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
     "path": "skills/engineering/wayfinder/SKILL.md",
     "relative_directory": "skills/engineering/wayfinder",
-    "sha256": "fee6e1d0c50f0e736b4ef8a599060c959afae904c9a97d82c97f049fcc3aa0f1",
+    "sha256": "9be7b478c389605a24517d27752f278933588da97a1b5921b165f455edf4c5b7",
     "linked_local_files": []
   },
   {
@@ -2044,11 +2044,21 @@
   {
     "source_repo": "mattpocock/skills",
     "repo_key": "mattpocock__skills",
+    "skill_name": "chief-of-staff",
+    "description": "Pursue a long-running goal in a single session by co-ordinating subagents.",
+    "path": "skills/in-progress/chief-of-staff/SKILL.md",
+    "relative_directory": "skills/in-progress/chief-of-staff",
+    "sha256": "6cc6e47ab5022f3e45e5be0fedbb0f6e645f4f0190d6b0c51c7cd60c2d7c1d98",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "mattpocock/skills",
+    "repo_key": "mattpocock__skills",
     "skill_name": "claude-handoff",
     "description": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
     "path": "skills/in-progress/claude-handoff/SKILL.md",
     "relative_directory": "skills/in-progress/claude-handoff",
-    "sha256": "6738e8b7c7899ea0038fb7a5c859ca1b90c7b1eb40123dcdbe94c51b5b119f12",
+    "sha256": "79357a18425d66d4c24048bedf83dceb79d3bba356f38014950f764a7fab4026",
     "linked_local_files": []
   },
   {
@@ -2162,7 +2172,7 @@
     "description": "Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.",
     "path": "skills/productivity/grilling/SKILL.md",
     "relative_directory": "skills/productivity/grilling",
-    "sha256": "10ff989e7498b23b5acb49d5048f11dcd906757d2f79c5cdf8a00001381296f2",
+    "sha256": "befdff1e27a1dfe2a294d5871169ac1afe16d983911daa4f32627514a48c1e15",
     "linked_local_files": []
   },
   {
@@ -2172,7 +2182,7 @@
     "description": "Compact the current conversation into a handoff document for another agent to pick up.",
     "path": "skills/productivity/handoff/SKILL.md",
     "relative_directory": "skills/productivity/handoff",
-    "sha256": "7c62de979fdc7ac32fb5ddb2146156c917f80ee070d30fadc9d40343c4b6ed25",
+    "sha256": "4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3",
     "linked_local_files": []
   },
   {
@@ -2182,7 +2192,7 @@
     "description": "Teach the user a new skill or concept, within this workspace.",
     "path": "skills/productivity/teach/SKILL.md",
     "relative_directory": "skills/productivity/teach",
-    "sha256": "a32df9dcdfc0c4fdc1c98e1ed3940c5f56b84c1aa90ff60346f32b8b53915b43",
+    "sha256": "550482c2d674b085c9043b87bfdc14a8f2ec453c736119e7fcbb1e9332bffeba",
     "linked_local_files": [
       "skills/productivity/teach/LEARNING-RECORD-FORMAT.md",
       "skills/productivity/teach/MISSION-FORMAT.md",
@@ -2228,7 +2238,7 @@
     "description": ">",
     "path": "plugins/caveman/skills/cavecrew/SKILL.md",
     "relative_directory": "plugins/caveman/skills/cavecrew",
-    "sha256": "d8a21355e717761746cd34e8355787c9745a72ce007a150f9d92334e5a2335e4",
+    "sha256": "534c0a70d4c7728815214a11e80e66cecbd2104f905f96414e6e32504381c002",
     "linked_local_files": []
   },
   {
@@ -2238,7 +2248,7 @@
     "description": ">",
     "path": "plugins/caveman/skills/caveman/SKILL.md",
     "relative_directory": "plugins/caveman/skills/caveman",
-    "sha256": "34255a0215a7701eb83d508d03bc9560dc7bffbeb95a145ad2921ad2598a03bf",
+    "sha256": "415d43518f2b1a9498c15a445d4657117b129ee5e81b19454ce348439cc6672b",
     "linked_local_files": []
   },
   {
@@ -2270,7 +2280,7 @@
     "description": ">",
     "path": "plugins/caveman/skills/megacave/SKILL.md",
     "relative_directory": "plugins/caveman/skills/megacave",
-    "sha256": "f25399c535a2f8f906e06cd0c5c52146b0e747abbf80e111c96f93adade04a69",
+    "sha256": "139105296c0686c1ee24610caca1db293ab84162beb0d94aa7a9ad7cbc3352bf",
     "linked_local_files": []
   },
   {
@@ -2280,7 +2290,7 @@
     "description": ">",
     "path": "plugins/caveman/skills/ultracave/SKILL.md",
     "relative_directory": "plugins/caveman/skills/ultracave",
-    "sha256": "8afefa7ae95bfb7fd080dac0ce95b09063cbe37ea9d78ef48662b2ec96884c6c",
+    "sha256": "a8da5b0b3501b853e1b98f2ae09fe8dc9c0edf481b1d3fa9529f8557011c1ef8",
     "linked_local_files": []
   },
   {
@@ -2290,7 +2300,7 @@
     "description": ">",
     "path": "skills/cavecrew/SKILL.md",
     "relative_directory": "skills/cavecrew",
-    "sha256": "d8a21355e717761746cd34e8355787c9745a72ce007a150f9d92334e5a2335e4",
+    "sha256": "534c0a70d4c7728815214a11e80e66cecbd2104f905f96414e6e32504381c002",
     "linked_local_files": []
   },
   {
@@ -2300,7 +2310,7 @@
     "description": ">",
     "path": "skills/caveman/SKILL.md",
     "relative_directory": "skills/caveman",
-    "sha256": "34255a0215a7701eb83d508d03bc9560dc7bffbeb95a145ad2921ad2598a03bf",
+    "sha256": "415d43518f2b1a9498c15a445d4657117b129ee5e81b19454ce348439cc6672b",
     "linked_local_files": []
   },
   {
@@ -2362,7 +2372,7 @@
     "description": ">",
     "path": "skills/caveman-help/SKILL.md",
     "relative_directory": "skills/caveman-help",
-    "sha256": "150dc9b454d6e897bc22f6744b90dfa02f4fe680ded69b0d880556c49a91a18e",
+    "sha256": "0bf9ee3fc8a9258b2d5f6b8bf24ac21f0bf2e4b9b4641dbc426b74f18186f81d",
     "linked_local_files": []
   },
   {
@@ -2468,7 +2478,7 @@
     "description": ">",
     "path": "skills/megacave/SKILL.md",
     "relative_directory": "skills/megacave",
-    "sha256": "f25399c535a2f8f906e06cd0c5c52146b0e747abbf80e111c96f93adade04a69",
+    "sha256": "139105296c0686c1ee24610caca1db293ab84162beb0d94aa7a9ad7cbc3352bf",
     "linked_local_files": []
   },
   {
@@ -2508,7 +2518,7 @@
     "description": ">",
     "path": "skills/ultracave/SKILL.md",
     "relative_directory": "skills/ultracave",
-    "sha256": "8afefa7ae95bfb7fd080dac0ce95b09063cbe37ea9d78ef48662b2ec96884c6c",
+    "sha256": "a8da5b0b3501b853e1b98f2ae09fe8dc9c0edf481b1d3fa9529f8557011c1ef8",
     "linked_local_files": []
   },
   {
@@ -2525,11 +2535,19 @@
     "source_repo": "obra/Superpowers",
     "repo_key": "obra__Superpowers",
     "skill_name": "brainstorming",
-    "description": "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.",
+    "description": "You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or planning anything new, in software or out of it (a talk, a business, a renovation).",
     "path": "skills/brainstorming/SKILL.md",
     "relative_directory": "skills/brainstorming",
-    "sha256": "a32d2255354775aa124855aa7100cf276bea096fff4ebb3a0edf57be216e6c72",
-    "linked_local_files": []
+    "sha256": "6ee10d1481b8a2580d5336ff66c5c08acc9d4b251b13bbc3bfd31be99c261d43",
+    "linked_local_files": [
+      "skills/brainstorming/builder-check-prompt.md",
+      "skills/brainstorming/scripts/frame-template.html",
+      "skills/brainstorming/scripts/helper.js",
+      "skills/brainstorming/scripts/server.cjs",
+      "skills/brainstorming/scripts/start-server.sh",
+      "skills/brainstorming/scripts/stop-server.sh",
+      "skills/brainstorming/visual-companion.md"
+    ]
   },
   {
     "source_repo": "obra/Superpowers",
@@ -2606,7 +2624,7 @@
     "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
     "path": "skills/requesting-code-review/SKILL.md",
     "relative_directory": "skills/requesting-code-review",
-    "sha256": "cfcee1b06774e7c0517f1e09be1a11f2d5680257072723e709ddbcf7e08b795a",
+    "sha256": "2180e14a448e9410bec88e6646a2d1f0ce7fdd58de27388c1e052e929679d2bc",
     "linked_local_files": [
       "skills/requesting-code-review/code-reviewer.md"
     ]
@@ -2636,7 +2654,7 @@
     "description": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes",
     "path": "skills/systematic-debugging/SKILL.md",
     "relative_directory": "skills/systematic-debugging",
-    "sha256": "808fc5717aa88ad65efff312b11c186294d3e6ee301afb584e2f86599b137787",
+    "sha256": "51c6435d98c83c42c96ba7c35725a0b2c376cd487fb1a4e6bd0ddbe7e33ef202",
     "linked_local_files": [
       "skills/systematic-debugging/condition-based-waiting-example.ts",
       "skills/systematic-debugging/condition-based-waiting.md",
@@ -3139,6 +3157,28 @@
   {
     "source_repo": "cursor/plugins",
     "repo_key": "cursor__plugins",
+    "skill_name": "origin-api",
+    "description": ">-",
+    "path": "origin-apps/skills/origin-api/SKILL.md",
+    "relative_directory": "origin-apps/skills/origin-api",
+    "sha256": "97c1d9475a3949d32f8455ac6cb1c935978c272873de8d04816350a5aab66709",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "cursor/plugins",
+    "repo_key": "cursor__plugins",
+    "skill_name": "port-github-app-to-origin",
+    "description": ">-",
+    "path": "origin-apps/skills/port-github-app-to-origin/SKILL.md",
+    "relative_directory": "origin-apps/skills/port-github-app-to-origin",
+    "sha256": "b4401e45b9a98aacc1dd544d2aa9c782e9a1cecac170489348c3c5ddef71988b",
+    "linked_local_files": [
+      "origin-apps/skills/port-github-app-to-origin/references/brief.md"
+    ]
+  },
+  {
+    "source_repo": "cursor/plugins",
+    "repo_key": "cursor__plugins",
     "skill_name": "pr-review-canvas",
     "description": ">-",
     "path": "pr-review-canvas/skills/pr-review-canvas/SKILL.md",
@@ -3193,7 +3233,7 @@
     "description": "Sketch types, signatures, and module structure before code, then stay in the loop while implementation fills in. Use for /architect, 'architect this', 'design this', or non-trivial work where jumping to code would lock in the wrong shape.",
     "path": "pstack/skills/architect/SKILL.md",
     "relative_directory": "pstack/skills/architect",
-    "sha256": "741901140ee382ebf93263a7ed03c6ee3719e578416d81afcd195876fa16c496",
+    "sha256": "31f8e97a52bfa5432edd61f68ade2a8632ef0bacbc2d2a6802d7a0e6821944ac",
     "linked_local_files": [
       "pstack/skills/architect/references/design-red-flags.md",
       "pstack/skills/architect/references/rationale-template.md",
@@ -3208,7 +3248,7 @@
     "description": "Spawn N parallel candidates at the same task, pick a base, graft the strongest parts of the losers into it. Use for /arena, 'arena this', 'throw it in the arena', or when one attempt at a non-trivial artifact would lock in the wrong shape.",
     "path": "pstack/skills/arena/SKILL.md",
     "relative_directory": "pstack/skills/arena",
-    "sha256": "e3a1f6c49a08b7e0b92134e53300d146f1f22ba83386d2019926e736df421851",
+    "sha256": "f15524f216c1c63804b89edb4ff8e53bb21a7b8ed367368dedeb9468eeec6a92",
     "linked_local_files": []
   },
   {
@@ -3228,11 +3268,8 @@
     "description": "Vet a perf measurement (limiter, tuning, limits, errors, repeatability, relevance, and whether the work happened) before you report or act on it. Use when you run a benchmark or report a speedup or regression you measured.",
     "path": "pstack/skills/benchmark-checklist/SKILL.md",
     "relative_directory": "pstack/skills/benchmark-checklist",
-    "sha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
-    "linked_local_files": [
-      "pstack/skills/principle-explain-the-number/SKILL.md",
-      "pstack/skills/principle-prove-it-works/SKILL.md"
-    ]
+    "sha256": "ba109e96c8f6c1c391baccf19e5d11e14370df7b3f2605e1572cd565a6c0fca0",
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -3241,7 +3278,7 @@
     "description": "Find what a change could break somewhere else before it ships, beyond the diff, and prove the one fact it's safe because of by running real code instead of writing it up. Use for 'blast radius of X', 'what could this break', or reviewing a small diff you don't trust.",
     "path": "pstack/skills/blast-radius/SKILL.md",
     "relative_directory": "pstack/skills/blast-radius",
-    "sha256": "5f02db9101ccf26c20254718f0fcd5c2c7ac5d4292b0e0923d0944ac47237aff",
+    "sha256": "2e10745b97f5862323dcda3b29ca60d56b5c3c98e37020085d26b48efbe0a436",
     "linked_local_files": []
   },
   {
@@ -3278,10 +3315,10 @@
     "source_repo": "cursor/plugins",
     "repo_key": "cursor__plugins",
     "skill_name": "figure-it-out",
-    "description": "Design an auditable playbook when no narrower one fits: a large migration, an ambitious multi-part change, or work a human reviews after stepping away. Scales rigor to the task, runs a hypothesis loop, and logs decisions via show-me-your-work. Use for /figure-it-out, 'figure it out', a large migration, or when no narrower playbook applies.",
+    "description": "Design an auditable playbook when no narrower one fits: a large migration, an ambitious multi-part change, or work a human reviews after stepping away. Scales rigor to the task, runs a hypothesis loop, and logs decisions. Use for /figure-it-out or 'figure it out'.",
     "path": "pstack/skills/figure-it-out/SKILL.md",
     "relative_directory": "pstack/skills/figure-it-out",
-    "sha256": "0eb9485f0e7d84fee56b5d0f0af0faf4635e3ca87c8cba3970c01293b76ecc19",
+    "sha256": "d9574cc24929773d5c23f40626ae1e09660afddd7de48e08dd6494d9fff9bbf0",
     "linked_local_files": []
   },
   {
@@ -3291,7 +3328,7 @@
     "description": "Use for \\\"how does X work\\\", code walkthroughs before changing something, and placement / ownership / layering questions (\\\"where should this live\\\", \\\"which package owns this\\\", \\\"is this the right layer\\\"). Explains subsystem architecture, runtime flow, onboarding mental models. Use why for motivation.",
     "path": "pstack/skills/how/SKILL.md",
     "relative_directory": "pstack/skills/how",
-    "sha256": "d31805589c7f6a63a6db6c9fadebbd79fb9660682cf1654e9b2e5e1e7cd30bc0",
+    "sha256": "47cfe3e6fe55c49c3bdf8ad1b645dcd5fece8f0c36fd22d2e7221f9faa71f648",
     "linked_local_files": [
       "pstack/skills/how/references/explainer-prompt.md",
       "pstack/skills/how/references/explorer-prompt.md"
@@ -3304,12 +3341,24 @@
     "description": "Use for \\\"interrogate\\\", \\\"adversarial review\\\", \\\"multi-model review\\\", \\\"challenge this\\\", \\\"stress test this code\\\", \\\"find blind spots\\\", or \\\"tear this apart\\\". Multiple LLM reviewers challenge changes from independent angles.",
     "path": "pstack/skills/interrogate/SKILL.md",
     "relative_directory": "pstack/skills/interrogate",
-    "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+    "sha256": "25341c393f515c1e1fa9bce668b7551e9f98c195113a460ff524d3c1f7f50cd9",
     "linked_local_files": [
       "pstack/skills/interrogate/references/code-quality-review.md",
       "pstack/skills/interrogate/references/lead-judgment.md",
       "pstack/skills/interrogate/references/reviewer-prompt.md",
       "pstack/skills/interrogate/references/rubric.md"
+    ]
+  },
+  {
+    "source_repo": "cursor/plugins",
+    "repo_key": "cursor__plugins",
+    "skill_name": "ketchup",
+    "description": "Catch the user up on everything in this chat since their last message, in plain words. Give each action item an executive summary with enough context to make the call. Use for /ketchup.",
+    "path": "pstack/skills/ketchup/SKILL.md",
+    "relative_directory": "pstack/skills/ketchup",
+    "sha256": "f460a861cf2179808abc24b5588c94709f8cc3e58d4da2e44baf89556f53b587",
+    "linked_local_files": [
+      "pstack/skills/bro/SKILL.md"
     ]
   },
   {
@@ -3345,12 +3394,66 @@
   {
     "source_repo": "cursor/plugins",
     "repo_key": "cursor__plugins",
-    "skill_name": "Poteto Mode",
-    "description": "poteto's agent style for concise, detailed responses, deliberate subagents, unslopped prose, simple code, and verified work. Use for poteto, /poteto-mode, or requests to work in this style.",
-    "path": "pstack/skills/poteto-mode/SKILL.md",
-    "relative_directory": "pstack/skills/poteto-mode",
-    "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+    "skill_name": "poteto-help",
+    "description": "Guides users through pstack setup, /poteto-mode, and picking the skill, playbook, or principle for a task. Type /poteto-help with a question.",
+    "path": "pstack/skills/poteto-help/SKILL.md",
+    "relative_directory": "pstack/skills/poteto-help",
+    "sha256": "3fe669c7c3b8f52c18b7c68ecce01c8691e844b9d2b41a8a6ff6432341451986",
     "linked_local_files": [
+      "pstack/README.md",
+      "pstack/agents/comment-sicko.md",
+      "pstack/agents/poteto-agent.md",
+      "pstack/automations/benny/FOR_AGENTS.md",
+      "pstack/automations/benny/README.md",
+      "pstack/automations/benny/skills/reproduce-and-fix-issues/references/control-adapter.md",
+      "pstack/automations/benny/skills/reproduce-and-fix-issues/references/feature-map.example.md",
+      "pstack/automations/benny/skills/setup-benny/SKILL.md",
+      "pstack/automations/benny/skills/triage-issue-reports/references/routing.example.md",
+      "pstack/automations/benny/templates/configuration.example.yaml",
+      "pstack/docs/guide/01-setup.md",
+      "pstack/docs/guide/02-poteto-mode.md",
+      "pstack/docs/guide/03-understand.md",
+      "pstack/docs/guide/04-design.md",
+      "pstack/docs/guide/05-build-and-clean.md",
+      "pstack/docs/guide/06-verify-and-ship.md",
+      "pstack/docs/guide/07-overnight.md",
+      "pstack/docs/guide/08-principles.md",
+      "pstack/docs/guide/09-make-it-yours.md",
+      "pstack/docs/guide/10-recipes-and-pitfalls.md",
+      "pstack/docs/guide/README.md",
+      "pstack/docs/guide/images/design.jpg",
+      "pstack/docs/guide/images/overnight.jpg",
+      "pstack/docs/guide/images/recipes.jpg",
+      "pstack/docs/guide/images/router.jpg",
+      "pstack/docs/guide/images/understanding.jpg",
+      "pstack/docs/guide/images/verification.jpg",
+      "pstack/skills/architect/SKILL.md",
+      "pstack/skills/architect/references/design-red-flags.md",
+      "pstack/skills/architect/references/rationale-template.md",
+      "pstack/skills/architect/references/runner-prompt.md",
+      "pstack/skills/arena/SKILL.md",
+      "pstack/skills/automate-me/SKILL.md",
+      "pstack/skills/benchmark-checklist/SKILL.md",
+      "pstack/skills/blast-radius/SKILL.md",
+      "pstack/skills/bro/SKILL.md",
+      "pstack/skills/correct/SKILL.md",
+      "pstack/skills/create-verification-skill/SKILL.md",
+      "pstack/skills/figure-it-out/SKILL.md",
+      "pstack/skills/how/SKILL.md",
+      "pstack/skills/how/references/explainer-prompt.md",
+      "pstack/skills/how/references/explorer-prompt.md",
+      "pstack/skills/interrogate/SKILL.md",
+      "pstack/skills/interrogate/references/code-quality-review.md",
+      "pstack/skills/interrogate/references/lead-judgment.md",
+      "pstack/skills/interrogate/references/reviewer-prompt.md",
+      "pstack/skills/interrogate/references/rubric.md",
+      "pstack/skills/ketchup/SKILL.md",
+      "pstack/skills/maintain-verification-skill/SKILL.md",
+      "pstack/skills/make-bot-ui/SKILL.md",
+      "pstack/skills/no-comments/SKILL.md",
+      "pstack/skills/poteto-help/references/prompting.md",
+      "pstack/skills/poteto-help/references/recipes.md",
+      "pstack/skills/poteto-mode/SKILL.md",
       "pstack/skills/poteto-mode/playbooks/authoring-a-skill.md",
       "pstack/skills/poteto-mode/playbooks/autonomous-run.md",
       "pstack/skills/poteto-mode/playbooks/autopilot-full.md",
@@ -3373,6 +3476,78 @@
       "pstack/skills/poteto-mode/playbooks/shipping.md",
       "pstack/skills/poteto-mode/playbooks/trace-forensics.md",
       "pstack/skills/poteto-mode/playbooks/visual-parity.md",
+      "pstack/skills/poteto-mode/playbooks/worktree-cleanup.md",
+      "pstack/skills/poteto-mode/references/bugbot-triage.md",
+      "pstack/skills/principle-attack-the-premise/SKILL.md",
+      "pstack/skills/principle-boundary-discipline/SKILL.md",
+      "pstack/skills/principle-build-the-lever/SKILL.md",
+      "pstack/skills/principle-encode-lessons-in-structure/SKILL.md",
+      "pstack/skills/principle-exhaust-the-design-space/SKILL.md",
+      "pstack/skills/principle-experience-first/SKILL.md",
+      "pstack/skills/principle-explain-the-number/SKILL.md",
+      "pstack/skills/principle-fix-root-causes/SKILL.md",
+      "pstack/skills/principle-foundational-thinking/SKILL.md",
+      "pstack/skills/principle-guard-the-context-window/SKILL.md",
+      "pstack/skills/principle-laziness-protocol/SKILL.md",
+      "pstack/skills/principle-make-operations-idempotent/SKILL.md",
+      "pstack/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+      "pstack/skills/principle-minimize-reader-load/SKILL.md",
+      "pstack/skills/principle-model-the-domain/SKILL.md",
+      "pstack/skills/principle-never-block-on-the-human/SKILL.md",
+      "pstack/skills/principle-outcome-oriented-execution/SKILL.md",
+      "pstack/skills/principle-prove-it-works/SKILL.md",
+      "pstack/skills/principle-redesign-from-first-principles/SKILL.md",
+      "pstack/skills/principle-separate-before-serializing-shared-state/SKILL.md",
+      "pstack/skills/principle-sequence-verifiable-units/SKILL.md",
+      "pstack/skills/principle-subtract-before-you-add/SKILL.md",
+      "pstack/skills/principle-test-behavior-not-implementation/SKILL.md",
+      "pstack/skills/principle-type-system-discipline/SKILL.md",
+      "pstack/skills/recall/SKILL.md",
+      "pstack/skills/reflect/SKILL.md",
+      "pstack/skills/reflect/references/divergent-reviewer.md",
+      "pstack/skills/reflect/references/judgment-reviewer.md",
+      "pstack/skills/reflect/references/synthesizer.md",
+      "pstack/skills/reflect/references/tooling-reviewer.md",
+      "pstack/skills/setup-pstack/SKILL.md",
+      "pstack/skills/show-me-your-work/SKILL.md",
+      "pstack/skills/show-me-your-work/references/decision-log-template.tsv",
+      "pstack/skills/show-me-your-work/scripts/log.sh",
+      "pstack/skills/swarm/SKILL.md",
+      "pstack/skills/tdd/SKILL.md",
+      "pstack/skills/teach/SKILL.md",
+      "pstack/skills/technical-writing/SKILL.md",
+      "pstack/skills/typescript-best-practices/SKILL.md",
+      "pstack/skills/typescript-best-practices/references/patterns.md",
+      "pstack/skills/unslop/SKILL.md",
+      "pstack/skills/why/SKILL.md",
+      "pstack/skills/why/references/epistemics.md",
+      "pstack/skills/why/references/investigator-prompt.md",
+      "pstack/skills/why/references/source-playbook.md",
+      "pstack/skills/why/references/sources/code-archaeology.md",
+      "pstack/skills/why/references/sources/databricks.md",
+      "pstack/skills/why/references/sources/datadog.md",
+      "pstack/skills/why/references/sources/incident-postmortem.md",
+      "pstack/skills/why/references/sources/linear.md",
+      "pstack/skills/why/references/sources/notion.md",
+      "pstack/skills/why/references/sources/sentry.md",
+      "pstack/skills/why/references/sources/slack.md",
+      "pstack/skills/why/references/synthesizer-prompt.md"
+    ]
+  },
+  {
+    "source_repo": "cursor/plugins",
+    "repo_key": "cursor__plugins",
+    "skill_name": "Poteto Mode",
+    "description": "poteto's agent style for concise, detailed responses, deliberate subagents, unslopped prose, simple code, and verified work. Use for poteto, /poteto-mode, or requests to work in this style.",
+    "path": "pstack/skills/poteto-mode/SKILL.md",
+    "relative_directory": "pstack/skills/poteto-mode",
+    "sha256": "03d61d15c5a0f7abc2c558c7323ff3c360dedc2915ebadf3c76c9e872f41cb64",
+    "linked_local_files": [
+      "pstack/skills/poteto-mode/playbooks/authoring-a-skill.md",
+      "pstack/skills/poteto-mode/playbooks/babysit.md",
+      "pstack/skills/poteto-mode/playbooks/multi-phase-plan.md",
+      "pstack/skills/poteto-mode/playbooks/prototype.md",
+      "pstack/skills/poteto-mode/playbooks/shipping.md",
       "pstack/skills/poteto-mode/playbooks/worktree-cleanup.md",
       "pstack/skills/poteto-mode/references/bugbot-triage.md"
     ]
@@ -3411,7 +3586,7 @@
     "description": "Apply to any non-trivial work, not just bulk work: edits, migrations, analyses, checks. Build the tool that does it or proves it (codemod, script, generator, or a skill your subagents follow) instead of working by hand. The tool is the artifact a reviewer can rerun.",
     "path": "pstack/skills/principle-build-the-lever/SKILL.md",
     "relative_directory": "pstack/skills/principle-build-the-lever",
-    "sha256": "458b269eab8e95a1573276955312f7d2a13ae8599879a9efc748248f6bc34b56",
+    "sha256": "3434b0ad0c640c6f1d7960be7a8986c3bcdc14e26060360dec29903df60074ff",
     "linked_local_files": [
       "pstack/skills/principle-encode-lessons-in-structure/SKILL.md",
       "pstack/skills/principle-laziness-protocol/SKILL.md",
@@ -3425,7 +3600,7 @@
     "description": "Apply when you catch yourself writing the same instruction a second time, or notice a recurring correction. Encode the rule as a lint, metadata flag, runtime check, or script instead of more text.",
     "path": "pstack/skills/principle-encode-lessons-in-structure/SKILL.md",
     "relative_directory": "pstack/skills/principle-encode-lessons-in-structure",
-    "sha256": "77044c83a9ac6df78fc643887ea5f1f11f082adaf14b717c060cdaed03cce863",
+    "sha256": "ad12c26209770c52f632d9480c048ac5334ce8e5d6297f83ade59652a56cb3ef",
     "linked_local_files": []
   },
   {
@@ -3455,7 +3630,7 @@
     "description": "Apply before you trust, report, or act on a number you measured: a speedup, a regression, a throughput, a latency, or an eval result. Find what limits it, and rule out that it measured something other than the work you think.",
     "path": "pstack/skills/principle-explain-the-number/SKILL.md",
     "relative_directory": "pstack/skills/principle-explain-the-number",
-    "sha256": "5aac99e7ce0bb1b37e2579acf4fe88c32a1456d9d46afd4a57cfe1df9092e89c",
+    "sha256": "cd5a25f9e7cf023627ccb470dc5faa97542f29b4319496a32b839a8e1e988047",
     "linked_local_files": [
       "pstack/skills/benchmark-checklist/SKILL.md",
       "pstack/skills/principle-prove-it-works/SKILL.md"
@@ -3528,7 +3703,7 @@
     "description": "Apply when reviewing or shaping code that's hard to trace. Count layers between question and answer, and hidden state in the reader's head; collapse one-caller wrappers and shrink mutable scope.",
     "path": "pstack/skills/principle-minimize-reader-load/SKILL.md",
     "relative_directory": "pstack/skills/principle-minimize-reader-load",
-    "sha256": "42551c5dc74cd578163c148da552db3ff67d29b78600ef216bfd311fb828fe69",
+    "sha256": "1ea2b7fef2391cae5844c4efdbd59031f775e8a52d06b7495d707229a200dcca",
     "linked_local_files": [
       "pstack/skills/principle-guard-the-context-window/SKILL.md"
     ]
@@ -3537,20 +3712,20 @@
     "source_repo": "cursor/plugins",
     "repo_key": "cursor__plugins",
     "skill_name": "principle-model-the-domain",
-    "description": "Apply when writing stateful logic, or when code branches a lot or repeats a shape assumption across files. Encode the domain in a structure instead of scattered conditionals.",
+    "description": "Apply when writing stateful logic, or when code branches a lot or repeats a shape assumption across files.",
     "path": "pstack/skills/principle-model-the-domain/SKILL.md",
     "relative_directory": "pstack/skills/principle-model-the-domain",
-    "sha256": "bbadbb9a723fac3f76e782ae45665eb94058ec10993e4bae36d4dc6b0e4eac07",
+    "sha256": "52c0d85e0c3827c41c18299b642657d7b47eaf77b7b31609e42e0df42b84c75f",
     "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
     "repo_key": "cursor__plugins",
     "skill_name": "principle-never-block-on-the-human",
-    "description": "Apply when tempted to ask 'should I do X?' on reversible work. Proceed, present the result, let the human course-correct after the fact; reserve confirmation for irreversible actions.",
+    "description": "Apply when tempted to ask 'should I do X?' on reversible work.",
     "path": "pstack/skills/principle-never-block-on-the-human/SKILL.md",
     "relative_directory": "pstack/skills/principle-never-block-on-the-human",
-    "sha256": "f2764bb9338cbfc788c903cf4b9cd0a5f4042d3a04dd6d59cbd525d9beaadd0a",
+    "sha256": "05030a7a083c337676f793881b4e93cd218e8f1dd676529f56e6ac1d3efb8d1f",
     "linked_local_files": []
   },
   {
@@ -3577,10 +3752,10 @@
     "source_repo": "cursor/plugins",
     "repo_key": "cursor__plugins",
     "skill_name": "principle-redesign-from-first-principles",
-    "description": "Apply when integrating a new requirement into an existing design. Redesign as if the requirement had been a foundational assumption from day one, instead of bolting it on.",
+    "description": "Apply when integrating a new requirement into an existing design.",
     "path": "pstack/skills/principle-redesign-from-first-principles/SKILL.md",
     "relative_directory": "pstack/skills/principle-redesign-from-first-principles",
-    "sha256": "a1c7fd0a96b40e12a74bceb0e6bb20a9666dd844dcabfb624acb27da23b929fe",
+    "sha256": "170e0a658783e43fee8ec5a8c2422a4abb8f69cef621dd1819a95910b8207034",
     "linked_local_files": []
   },
   {
@@ -3610,17 +3785,17 @@
     "description": "Apply when sequencing an addition, refactor, or rewrite. Remove dead code, redundant validators, and stub references first, then build on the simpler base.",
     "path": "pstack/skills/principle-subtract-before-you-add/SKILL.md",
     "relative_directory": "pstack/skills/principle-subtract-before-you-add",
-    "sha256": "a983a50e732c1ed315eba7aaf47a61329e31c4794eb1ab9d25d9945265b31e03",
+    "sha256": "8c93bb9d1a7f38e2ef37655d93f0e790fa59903105af3d500cc8a663ebe45f3f",
     "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
     "repo_key": "cursor__plugins",
     "skill_name": "principle-test-behavior-not-implementation",
-    "description": "Apply when you write, change, or keep a test. Call the code the way its users do and assert the result they observe against a literal expected value. If the test would still pass when every imported function returns undefined, rewrite the assertion or delete the test.",
+    "description": "Apply when you write, change, or keep a test. Call the code as its users do and assert the exact result they see. Rewrite or delete a test that would pass if every imported function returned undefined.",
     "path": "pstack/skills/principle-test-behavior-not-implementation/SKILL.md",
     "relative_directory": "pstack/skills/principle-test-behavior-not-implementation",
-    "sha256": "87e40efe4e486f7ea639d2ed1fc0abe6c93b8fd0e89a81218086909d2470a52e",
+    "sha256": "b2b73ba42920f9c3174ecdf808ec6e4591b3a9266ada9a05814f386004266d3a",
     "linked_local_files": []
   },
   {
@@ -3630,7 +3805,7 @@
     "description": "Apply when designing types, reviewing a function signature, or writing code in any statically-typed language. Make illegal states unrepresentable, brand semantic primitives, parse external data at boundaries, refuse to lie to the compiler, exhaust variants, derive from authoritative schemas.",
     "path": "pstack/skills/principle-type-system-discipline/SKILL.md",
     "relative_directory": "pstack/skills/principle-type-system-discipline",
-    "sha256": "c83da8031ffb4c86410030d3e261f659598fca2b7d8158fd9dc269d70a3a025e",
+    "sha256": "2e492cef34bb25a20b9115df61f9ef3a9837e3fda144ffda8079e5f45a1b72e8",
     "linked_local_files": []
   },
   {
@@ -3650,7 +3825,7 @@
     "description": "Spawn three parallel review subagents over the active transcript, surface learnings, and route each to a concrete edit on an existing skill. Use when the user says reflect.",
     "path": "pstack/skills/reflect/SKILL.md",
     "relative_directory": "pstack/skills/reflect",
-    "sha256": "36efa48cc4ec2ba6f8131651aae24c6321682b098ed47a1069a7509462bf4a84",
+    "sha256": "f5e9200f37e2a4567c0eeb0ba244fde66c1b3f35e3b7a883de2f85b3bda7365a",
     "linked_local_files": [
       "pstack/skills/reflect/references/divergent-reviewer.md",
       "pstack/skills/reflect/references/judgment-reviewer.md",
@@ -3665,7 +3840,7 @@
     "description": "Configure which models pstack uses per role and at what reasoning budget. Detects your available models and writes an always-applied rule that overrides the skill defaults. Use for /setup-pstack, \"configure pstack models\", \"pstack budget\", or changing pstack's model choices.",
     "path": "pstack/skills/setup-pstack/SKILL.md",
     "relative_directory": "pstack/skills/setup-pstack",
-    "sha256": "125dd0c8f588782cfb271efae8f97a0719e43e79f56b3495c095f460bcee6389",
+    "sha256": "d61b47256a18155a81c8e5ef95e3cc6569ce8c18317c35c4dd9c8015cf68cb59",
     "linked_local_files": []
   },
   {
@@ -3718,7 +3893,7 @@
     "description": "Layered technical-writing standard: Di\u00e1taxis structure, Google developer style sentences, STE instruction rules, Global English syntax. Use for /technical-writing or when writing or reviewing docs, RFCs, readmes, PR descriptions, or commit messages.",
     "path": "pstack/skills/technical-writing/SKILL.md",
     "relative_directory": "pstack/skills/technical-writing",
-    "sha256": "f5c512ffeec70bc4e0dee50f7bb4c26742e1be77967a6e8b15d1921e1c209ceb",
+    "sha256": "61fe9c424a798ebf36ad94941f87be049cb8827bdf86d21474a0dde37b513c43",
     "linked_local_files": []
   },
   {
@@ -3740,7 +3915,7 @@
     "description": "Cut AI tells from any writing. Must always apply.",
     "path": "pstack/skills/unslop/SKILL.md",
     "relative_directory": "pstack/skills/unslop",
-    "sha256": "195411d320b5b328f9f642baf59757ed19aaf0931c0838740e0aca273d538dc1",
+    "sha256": "3126b9e2cf46022f5e0c332e84be5e17a9730669cb3d6ac0a7e5e7e94b1e24fa",
     "linked_local_files": []
   },
   {
@@ -3750,7 +3925,7 @@
     "description": "Use for 'why does X work this way', 'why we picked Y', design rationale, regressions, postmortems, or data-backed thresholds. Discovers available MCPs and queries each evidence category (source control, issue tracker, long-form docs, real-time chat, infrastructure observability, error tracking, product analytics warehouse) in parallel, then returns a cited read on decisions and tradeoffs. Use how for runtime behavior.",
     "path": "pstack/skills/why/SKILL.md",
     "relative_directory": "pstack/skills/why",
-    "sha256": "2a852ec8680920109d2b56538b027c52867896a597250ac5d18a13e0b42e5b06",
+    "sha256": "fa1d1e9dec14b15381c1ccccad74044d6b6ea3b4af56821f59ba2d8e59b07545",
     "linked_local_files": [
       "pstack/skills/why/references/epistemics.md",
       "pstack/skills/why/references/investigator-prompt.md",
@@ -3893,7 +4068,7 @@
     "description": ">-",
     "path": "third_party/x/skills/x-api-mcp-guide/SKILL.md",
     "relative_directory": "third_party/x/skills/x-api-mcp-guide",
-    "sha256": "c45693ef2bd73fd21e7c23cbed97e8c6205bba5dd1afdaa823959921fe324771",
+    "sha256": "fd93c852590c82cb5494fea1055726ccedbdb3c5c906ff234445537fa8f2fd8e",
     "linked_local_files": [
       "third_party/x/skills/x-api-mcp-guide/references/pricing.md"
     ]
@@ -3999,7 +4174,17 @@
     "description": "Bun as runtime, package manager, bundler, and test runner. When to choose Bun vs Node, migration notes, and Vercel support.",
     "path": ".agents/skills/bun-runtime/SKILL.md",
     "relative_directory": ".agents/skills/bun-runtime",
-    "sha256": "b93720b74ea93e870ca87418f490f939b16e4cddace7fb3c97d2fa21398cc985",
+    "sha256": "27c101ca25477e7e70442a465d803395910c7264e321157b0ad30bb40e2d319e",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "change-impact",
+    "description": ">-",
+    "path": ".agents/skills/change-impact/SKILL.md",
+    "relative_directory": ".agents/skills/change-impact",
+    "sha256": "b8d8a11417af8b84e93983a8eb682e3b9a16d04f926778eb635c96e90019bf18",
     "linked_local_files": []
   },
   {
@@ -4045,6 +4230,18 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "context-and-decisions",
+    "description": ">-",
+    "path": ".agents/skills/context-and-decisions/SKILL.md",
+    "relative_directory": ".agents/skills/context-and-decisions",
+    "sha256": "5158283621d6d15288dab50fc2e884cf114b8d91137e45e619bf3dff4740f3e0",
+    "linked_local_files": [
+      ".agents/skills/context-and-decisions/templates/context.example.md"
+    ]
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "crosspost",
     "description": "Multi-platform content distribution across X, LinkedIn, Threads, and Bluesky. Adapts content per platform using content-engine patterns. Never posts identical content cross-platform. Use when the user wants to distribute content across social platforms.",
     "path": ".agents/skills/crosspost/SKILL.md",
@@ -4071,6 +4268,19 @@
     "relative_directory": ".agents/skills/dmux-workflows",
     "sha256": "75eef4455c91b14c2dd67196f4be8b50e53bbbc82b6d060d5aa6c0a58e8c4daa",
     "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "docs-governance",
+    "description": "Route broad documentation-governance requests to existing ECC skills and run an opt-in, read-only audit of mapped documentation roles, links, ADR indexes, and evidence references. Use when a user asks for documentation governance, project-knowledge organization, documentation integrity, or a deterministic docs audit without naming a narrower skill.",
+    "path": ".agents/skills/docs-governance/SKILL.md",
+    "relative_directory": ".agents/skills/docs-governance",
+    "sha256": "499ac59071e6e2b8fb60f085e337a3a1ec16e200adb8f5b8bc027afb338cf3eb",
+    "linked_local_files": [
+      ".agents/skills/docs-governance/references/artifact-role-contract.md",
+      ".agents/skills/docs-governance/scripts/audit-docs.py"
+    ]
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -4189,6 +4399,16 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "mcp-dependency-review",
+    "description": "Statically review MCP configuration for mutable package references before approval or CI, without executing discovered MCP servers. Use when reviewing .mcp.json, Cursor, VS Code, Claude, Windsurf, or other repo-scoped MCP config.",
+    "path": ".agents/skills/mcp-dependency-review/SKILL.md",
+    "relative_directory": ".agents/skills/mcp-dependency-review",
+    "sha256": "de1943e53a17dfec493e92ab5f0c89eb0783c131e11dbd9cd36076f82527f279",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "mcp-server-patterns",
     "description": "Build MCP servers with Node/TypeScript SDK \u2014 tools, resources, prompts, Zod validation, stdio vs Streamable HTTP. Use Context7 or official MCP docs for latest API. Use when building or debugging an MCP server \u2014 tools, resources, prompts, validation, or transport choice.",
     "path": ".agents/skills/mcp-server-patterns/SKILL.md",
@@ -4204,6 +4424,16 @@
     "path": ".agents/skills/mle-workflow/SKILL.md",
     "relative_directory": ".agents/skills/mle-workflow",
     "sha256": "9366d2b47d58e6bd1b9426d40a36c88efd1ba93919623b5002185cc80be87ecb",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "module-regression",
+    "description": ">-",
+    "path": ".agents/skills/module-regression/SKILL.md",
+    "relative_directory": ".agents/skills/module-regression",
+    "sha256": "5c3db104f8e4aec868d010fa9354ec64b4c138557a59d13d7355fc9eacdcc846",
     "linked_local_files": []
   },
   {
@@ -4249,6 +4479,18 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "skill-host-compat",
+    "description": "Lint ECC skills for Codex/Cursor-safe frontmatter and Claude-only substitutions before a skill PR.",
+    "path": ".agents/skills/skill-host-compat/SKILL.md",
+    "relative_directory": ".agents/skills/skill-host-compat",
+    "sha256": "c0ee3dc8ae4c65ea3134da9969f0e8e12e7c30cb682c618be467b128bc4e2d36",
+    "linked_local_files": [
+      ".agents/skills/skill-host-compat/agents/openai.yaml"
+    ]
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "strategic-compact",
     "description": "Suggests manual context compaction at logical intervals to preserve context through task phases rather than arbitrary auto-compaction. Use when a session is approaching a context limit and a task phase is a natural place to compact.",
     "path": ".agents/skills/strategic-compact/SKILL.md",
@@ -4265,6 +4507,18 @@
     "relative_directory": ".agents/skills/tdd-workflow",
     "sha256": "e9507695657b05f26dd62127f1d6ff58e4015d624df65dd4d7e07f6470317393",
     "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "test-collaboration",
+    "description": "Inventory and govern a project's test assets. Connect requirements, business rules, risks, bugs, and cross-boundary contracts to stable TEST-IDs and executable evidence in the repository's existing test registry or TESTS.md. Use for test inventory, test gap analysis, unit/integration/contract/E2E/smoke classification, bug-to-test regression protection, consumer/provider contract testing, test-necessity review, and pre-delivery evidence review.",
+    "path": ".agents/skills/test-collaboration/SKILL.md",
+    "relative_directory": ".agents/skills/test-collaboration",
+    "sha256": "741138330940e2c9d3cc7bec9e671787f24a361ff89be44e09a56abc8e10dcfa",
+    "linked_local_files": [
+      ".agents/skills/test-collaboration/templates/TESTS.example.md"
+    ]
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -4323,7 +4577,7 @@
     "description": "Bun as runtime, package manager, bundler, and test runner. When to choose Bun vs Node, migration notes, and Vercel support.",
     "path": ".cursor/skills/bun-runtime/SKILL.md",
     "relative_directory": ".cursor/skills/bun-runtime",
-    "sha256": "2929d1f227962d86bfb2f0e45efd81590cfc90aeaad5b449f4630207e4e07204",
+    "sha256": "8d30e8c0c9e218433e140792b94756c6bbe2c8e06c94e66ddb49900e84af4043",
     "linked_local_files": []
   },
   {
@@ -4386,6 +4640,16 @@
     "path": ".cursor/skills/market-research/SKILL.md",
     "relative_directory": ".cursor/skills/market-research",
     "sha256": "7ef3fa13d6272fd295eeb2aca9f6a2f09f6a8270cf33b0675fc5a0018cf6e406",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "mcp-dependency-review",
+    "description": "Statically review MCP configuration for mutable package references before approval or CI, without executing discovered MCP servers.",
+    "path": ".cursor/skills/mcp-dependency-review/SKILL.md",
+    "relative_directory": ".cursor/skills/mcp-dependency-review",
+    "sha256": "28ce6c3f86cec0591e9c47a6c397f607621a7a4a3ddb282d326f499a5c328207",
     "linked_local_files": []
   },
   {
@@ -5292,10 +5556,10 @@
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
     "skill_name": "agent-payment-x402",
-    "description": "\u30bf\u30b9\u30af\u3054\u3068\u306e\u30d0\u30b8\u30a7\u30c3\u30c8\u3001\u652f\u51fa\u30b3\u30f3\u30c8\u30ed\u30fc\u30eb\u3001\u30ce\u30f3\u30ab\u30b9\u30c8\u30c7\u30a3\u30a2\u30eb\u30a6\u30a9\u30ec\u30c3\u30c8\u3092\u5099\u3048\u305f x402 \u6c7a\u6e08\u5b9f\u884c\u3092 AI \u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u306b\u8ffd\u52a0\u3057\u307e\u3059\u3002agentwallet-sdk \u3092\u901a\u3058\u3066 Base \u3092\u30b5\u30dd\u30fc\u30c8\u3057\u3001OKX Payments / OKX \u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u6c7a\u6e08\u30d7\u30ed\u30c8\u30b3\u30eb\u3092\u901a\u3058\u3066 X Layer \u3092\u30b5\u30dd\u30fc\u30c8\u3057\u307e\u3059\u3002",
+    "description": "\u30bf\u30b9\u30af\u3054\u3068\u306e\u30d0\u30b8\u30a7\u30c3\u30c8\u3001\u652f\u51fa\u30b3\u30f3\u30c8\u30ed\u30fc\u30eb\u3001\u30ce\u30f3\u30ab\u30b9\u30c8\u30c7\u30a3\u30a2\u30eb\u30a6\u30a9\u30ec\u30c3\u30c8\u3092\u5099\u3048\u305f x402 \u6c7a\u6e08\u5b9f\u884c\u3092 AI \u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u306b\u8ffd\u52a0\u3057\u307e\u3059\u3002agentwallet-sdk \u3092\u901a\u3058\u3066 Base \u3092\u3001OKX Payments / OKX \u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u6c7a\u6e08\u30d7\u30ed\u30c8\u30b3\u30eb\u3092\u901a\u3058\u3066 X Layer \u3092\u3001\u30a2\u30c3\u30d7\u30b9\u30c8\u30ea\u30fc\u30e0\u306e x402 \u30d1\u30c3\u30b1\u30fc\u30b8\u3068\u30d5\u30a1\u30b7\u30ea\u30c6\u30fc\u30bf\u30fc\u30d9\u30fc\u30b9\u306e\u6c7a\u6e08\u3092\u901a\u3058\u3066 Solana \u3068\u30de\u30eb\u30c1\u30cd\u30c3\u30c8\u30ef\u30fc\u30af EVM \u3092\u30b5\u30dd\u30fc\u30c8\u3057\u307e\u3059\u3002",
     "path": "docs/ja-JP/skills/agent-payment-x402/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/agent-payment-x402",
-    "sha256": "4acffa042fc53edafaacaa6e211dd040fbb4bcfc9a76be97ef29c6a454180751",
+    "sha256": "1731b847e80e66220c40f9a14f843ca559f66e7c9df57ad8bb21c588609d6c33",
     "linked_local_files": []
   },
   {
@@ -5495,7 +5759,7 @@
     "description": "\u30e9\u30f3\u30bf\u30a4\u30e0\u3068\u3057\u3066\u306eBun\u3001\u30d1\u30c3\u30b1\u30fc\u30b8\u30de\u30cd\u30fc\u30b8\u30e3\u30fc\u3001\u30d0\u30f3\u30c9\u30e9\u30fc\u3001\u30c6\u30b9\u30c8\u30e9\u30f3\u30ca\u30fc\u3002Bun\u5bfeNode\u3092\u9078\u629e\u3059\u308b\u5834\u5408\u3001\u79fb\u884c\u30e1\u30e2\u3001Vercel\u30b5\u30dd\u30fc\u30c8\u3002",
     "path": "docs/ja-JP/skills/bun-runtime/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/bun-runtime",
-    "sha256": "dccef02ef0a232af955b41912d22ee6034f79c8325f027a8317b63287f74e418",
+    "sha256": "c321e505e9f5287a90201736af2b0b9b7cf59c3e2eb4957356d0ee2ea0684fb2",
     "linked_local_files": []
   },
   {
@@ -6167,7 +6431,7 @@
     "description": "API\u3001\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u3001\u304a\u3088\u3073LLM\u30a8\u30f3\u30c9\u30dd\u30a4\u30f3\u30c8\u306e\u30a2\u30af\u30bb\u30b9\u5236\u5fa1\u3068\u8a8d\u53ef\u30d1\u30bf\u30fc\u30f3\u3002",
     "path": "docs/ja-JP/skills/gateguard/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/gateguard",
-    "sha256": "9b7decacbc8021e8c2a1c37b418e6d57232d19e30723e53dfd65ac43b4d86806",
+    "sha256": "a888b06883e6365e25d086fb22bbbcb1700f8599f9c663990da7416c6ad69aa2",
     "linked_local_files": []
   },
   {
@@ -7394,11 +7658,13 @@
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
     "skill_name": "tinystruct-patterns",
-    "description": "tinystruct\u30d5\u30ec\u30fc\u30e0\u30ef\u30fc\u30af\u3067\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u30e2\u30b8\u30e5\u30fc\u30eb\u307e\u305f\u306f\u30de\u30a4\u30af\u30ed\u30b5\u30fc\u30d3\u30b9\u3092\u958b\u767a\u3059\u308b\u969b\u306b\u4f7f\u7528\u3002\u30eb\u30fc\u30c6\u30a3\u30f3\u30b0\u3001\u30b3\u30f3\u30c6\u30ad\u30b9\u30c8\u7ba1\u7406\u3001Builder\u306b\u3088\u308bJSON\u51e6\u7406\u3001CLI/HTTP\u30c7\u30e5\u30a2\u30eb\u30e2\u30fc\u30c9\u306e\u30d1\u30bf\u30fc\u30f3\u3092\u30ab\u30d0\u30fc\u3002",
+    "description": "tinystruct Java \u30d5\u30ec\u30fc\u30e0\u30ef\u30fc\u30af\u3067\u958b\u767a\u3059\u308b\u969b\u306e\u5c02\u9580\u30ac\u30a4\u30c0\u30f3\u30b9\u3002tinystruct \u30b3\u30fc\u30c9\u30d9\u30fc\u30b9\u3001\u307e\u305f\u306f tinystruct \u4e0a\u306b\u69cb\u7bc9\u3055\u308c\u305f\u3042\u3089\u3086\u308b\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u3067\u4f5c\u696d\u3059\u308b\u969b\u306b\u4f7f\u7528\u3057\u307e\u3059 \u2014 \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u306b\u5b58\u5728\u3057\u306a\u3044\u5834\u5408\u306e bin/dispatcher\u30fbbin/dispatcher.cmd \u8d77\u52d5\u30b9\u30af\u30ea\u30d7\u30c8\u306e\u751f\u6210\u3001Application \u30af\u30e9\u30b9\u306e\u4f5c\u6210\u3001@Action \u306b\u3088\u308b\u30eb\u30fc\u30c8\u5b9a\u7fa9\u3001\u30e6\u30cb\u30c3\u30c8\u30c6\u30b9\u30c8\u3001ActionRegistry\u3001HTTP/CLI \u30c7\u30e5\u30a2\u30eb\u30e2\u30fc\u30c9\u5bfe\u5fdc\u3001\u7d44\u307f\u8fbc\u307f HTTP \u30b5\u30fc\u30d0\u30fc\u3001\u30a4\u30d9\u30f3\u30c8\u30b7\u30b9\u30c6\u30e0\u3001Builder/Builders \u306b\u3088\u308b JSON \u51e6\u7406\u3001AbstractData \u306b\u3088\u308b\u30c7\u30fc\u30bf\u30d9\u30fc\u30b9\u6c38\u7d9a\u5316\u3001POJO \u751f\u6210\u3001Server-Sent Events (SSE)\u3001\u30d5\u30a1\u30a4\u30eb\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u3001\u30a2\u30a6\u30c8\u30d0\u30a6\u30f3\u30c9 HTTP \u901a\u4fe1\u3092\u542b\u307f\u307e\u3059\u3002",
     "path": "docs/ja-JP/skills/tinystruct-patterns/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/tinystruct-patterns",
-    "sha256": "d2b04c7102a394b100525b31341239a969aa44f8c6c988598ed46754f2061ed4",
-    "linked_local_files": []
+    "sha256": "934f82b41c8adcde44c984ffcf229fdd33f07770a923162e63079bc753c3f091",
+    "linked_local_files": [
+      "docs/ja-JP/skills/tinystruct-patterns/references/database.md"
+    ]
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -8110,10 +8376,10 @@
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
     "skill_name": "agent-payment-x402",
-    "description": "\u5c06 x402 \u652f\u4ed8\u6267\u884c\u6dfb\u52a0\u5230 AI \u4ee3\u7406\u4e2d\u2014\u2014\u901a\u8fc7 MCP \u5de5\u5177\u5b9e\u73b0\u6bcf\u4efb\u52a1\u9884\u7b97\u3001\u652f\u51fa\u63a7\u5236\u548c\u975e\u6258\u7ba1\u94b1\u5305\u3002\u5f53\u4ee3\u7406\u9700\u8981\u4e3a API\u3001\u670d\u52a1\u6216\u5176\u4ed6\u4ee3\u7406\u4ed8\u8d39\u65f6\u4f7f\u7528\u3002",
+    "description": "\u5c06 x402 \u652f\u4ed8\u6267\u884c\u6dfb\u52a0\u5230 AI \u4ee3\u7406\u4e2d\uff0c\u5177\u5907\u6bcf\u4efb\u52a1\u9884\u7b97\u3001\u652f\u51fa\u63a7\u5236\u548c\u975e\u6258\u7ba1\u94b1\u5305\u3002\u901a\u8fc7 agentwallet-sdk \u652f\u6301 Base\uff0c\u901a\u8fc7 OKX Payments / OKX \u4ee3\u7406\u652f\u4ed8\u534f\u8bae\u652f\u6301 X Layer\uff0c\u5e76\u901a\u8fc7\u4e0a\u6e38 x402 \u5305\u4e0e\u57fa\u4e8e\u7ed3\u7b97\u5668\u7684\u7ed3\u7b97\u652f\u6301 Solana \u53ca\u591a\u7f51\u7edc EVM\u3002",
     "path": "docs/zh-CN/skills/agent-payment-x402/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/agent-payment-x402",
-    "sha256": "0159ac38cc8421b13d542e10fcb8765622376b8c6b54604e74ddca0885736504",
+    "sha256": "c4cb90f662724526a2a4eecad4ea8c7d93b03237fa4a2101d7cee6986838dcb9",
     "linked_local_files": []
   },
   {
@@ -8293,7 +8559,7 @@
     "description": "Bun \u4f5c\u4e3a\u8fd0\u884c\u65f6\u3001\u5305\u7ba1\u7406\u5668\u3001\u6253\u5305\u5668\u548c\u6d4b\u8bd5\u8fd0\u884c\u5668\u3002\u4f55\u65f6\u9009\u62e9 Bun \u800c\u975e Node\u3001\u8fc1\u79fb\u6ce8\u610f\u4e8b\u9879\u4ee5\u53ca Vercel \u652f\u6301\u3002",
     "path": "docs/zh-CN/skills/bun-runtime/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/bun-runtime",
-    "sha256": "979e540af73e82800ab62c2623f4784fd46a46bf847ec60d9f0091d94afe6d65",
+    "sha256": "c7230a4a5c3977cb15eff064bee38bd25023a6c888d78ab4b2b7080328c7539d",
     "linked_local_files": []
   },
   {
@@ -8885,7 +9151,7 @@
     "description": "\u5f3a\u5236\u4e8b\u5b9e\u7684\u95e8\u63a7\uff0c\u963b\u6b62\u7f16\u8f91/\u5199\u5165/Bash\uff08\u5305\u62ecMultiEdit\uff09\uff0c\u5e76\u8981\u6c42\u5728\u5141\u8bb8\u64cd\u4f5c\u4e4b\u524d\u8fdb\u884c\u5177\u4f53\u8c03\u67e5\uff08\u5bfc\u5165\u5668\u3001\u6570\u636e\u6a21\u5f0f\u3001\u7528\u6237\u6307\u4ee4\uff09\u3002\u4e0e\u65e0\u95e8\u63a7\u4ee3\u7406\u76f8\u6bd4\uff0c\u53ef\u6d4b\u91cf\u5730\u5c06\u8f93\u51fa\u8d28\u91cf\u63d0\u9ad82.25\u5206\u3002",
     "path": "docs/zh-CN/skills/gateguard/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/gateguard",
-    "sha256": "b3f741cd759bf2ec8ca0eff1e701ce45dc7738a3e11a2cd22fd56fb284dab536",
+    "sha256": "32c51c44c98d19e4ee6d6318f1a65aa68c8da77e8d469407cc7fb4a1a926d791",
     "linked_local_files": []
   },
   {
@@ -10130,6 +10396,16 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "agent-security-hardening",
+    "description": "Security hardening guidance for AI agent frameworks that process untrusted content, invoke tools, write workspace files, manage runtime identifiers, or handle credentials. Use when building or reviewing an agent runtime, autonomous worker, tool gateway, memory service, or multi-tenant agent deployment. Do not use for general web application security or offensive testing.",
+    "path": "pi/core/skills/agent-security-hardening/SKILL.md",
+    "relative_directory": "pi/core/skills/agent-security-hardening",
+    "sha256": "0e0895ada90aa8fa085e4257961ebe15f2dff43b843785b1533d4c731186ad81",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "agent-self-evaluation",
     "description": "Use after completing any non-trivial task. The agent self-rates its output on 5 axes \u2014 accuracy, completeness, clarity, actionability, conciseness \u2014 with concrete evidence per criterion. Produces a structured 1-5 scorecard with specific improvement suggestions.",
     "path": "pi/core/skills/agent-self-evaluation/SKILL.md",
@@ -10279,6 +10555,16 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "bengali-nlp",
+    "description": "Bengali (Bangla) text processing patterns including Unicode normalization, script detection, tokenization, conjunct handling, and Bangla-specific NLP best practices for AI applications.",
+    "path": "pi/core/skills/bengali-nlp/SKILL.md",
+    "relative_directory": "pi/core/skills/bengali-nlp",
+    "sha256": "7080235437516fbc227f759aac138219e85c95e8ce271187c3c978e51b094bde",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "blueprint",
     "description": "Turn a one-line objective into a step-by-step construction plan for multi-session, multi-agent engineering projects: one-PR-sized steps with self-contained context briefs, dependency graph with parallel-step detection, adversarial review gate, and plan mutation protocol. Use when planning a large feature, refactor, or roadmap that spans multiple PRs or sessions; not for single-PR tasks or when the user says \\\"just do it\\\".",
     "path": "pi/core/skills/blueprint/SKILL.md",
@@ -10293,7 +10579,17 @@
     "description": "Bun as runtime, package manager, bundler, and test runner. When to choose Bun vs Node, migration notes, and Vercel support.",
     "path": "pi/core/skills/bun-runtime/SKILL.md",
     "relative_directory": "pi/core/skills/bun-runtime",
-    "sha256": "8015a977827ddd8536e89c4693a575b8deb5b04073b8a483c320c5419abc35da",
+    "sha256": "fc0ff230f098d3537c5a6c6fa0466a4d3cc20c3a903cee40c774713fb52aa61f",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "change-impact",
+    "description": ">-",
+    "path": "pi/core/skills/change-impact/SKILL.md",
+    "relative_directory": "pi/core/skills/change-impact",
+    "sha256": "b8d8a11417af8b84e93983a8eb682e3b9a16d04f926778eb635c96e90019bf18",
     "linked_local_files": []
   },
   {
@@ -10369,11 +10665,33 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "context-and-decisions",
+    "description": ">-",
+    "path": "pi/core/skills/context-and-decisions/SKILL.md",
+    "relative_directory": "pi/core/skills/context-and-decisions",
+    "sha256": "5158283621d6d15288dab50fc2e884cf114b8d91137e45e619bf3dff4740f3e0",
+    "linked_local_files": [
+      "pi/core/skills/context-and-decisions/templates/context.example.md"
+    ]
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "contract-first",
     "description": "Coordinate frontend/backend or service-to-service work through one authoritative machine-checkable contract (OpenAPI, AsyncAPI, Protocol Buffers, or JSON Schema), with generated consumer types and contract-verified integration. Use when parallel consumer and provider work must evolve an API or event schema without field drift, mock/production shape mismatch, or one side silently redefining the interface.",
     "path": "pi/core/skills/contract-first/SKILL.md",
     "relative_directory": "pi/core/skills/contract-first",
     "sha256": "3eaacf16a9bbd92888659e9c1e15b0fa4eb96a41c257dd9e08f2e63b824f0cea",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "conventional-commit-review",
+    "description": "Reviews staged changes and drafts a Conventional Commits-compliant commit message with the right type, scope, and length. Use before committing, or when the user asks to write, fix, or review a commit message.",
+    "path": "pi/core/skills/conventional-commit-review/SKILL.md",
+    "relative_directory": "pi/core/skills/conventional-commit-review",
+    "sha256": "c81397a4bfc2ec66986aae7a4dff5a02f78c519bc9774a80778fa9055e7fa2fe",
     "linked_local_files": []
   },
   {
@@ -10543,8 +10861,21 @@
     "description": "Docker and Docker Compose patterns for local development, hardened CLI installer harnesses, container security, networking, volumes, and multi-service orchestration. Use when creating or reviewing Dockerfiles and Compose services, testing installers across Linux distributions, or planning accurate native macOS and Windows validation.",
     "path": "pi/core/skills/docker-patterns/SKILL.md",
     "relative_directory": "pi/core/skills/docker-patterns",
-    "sha256": "2a880cf2f6401874151daa9bcc0eacd10cf79f5f48b97f98e93a877a8f3fd12b",
+    "sha256": "c0cedeb9b64d4468f5af3bb0a97659c654f0ceb916acbec867a29dc682dd633f",
     "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "docs-governance",
+    "description": "Route broad documentation-governance requests to existing ECC skills and run an opt-in, read-only audit of mapped documentation roles, links, ADR indexes, and evidence references. Use when a user asks for documentation governance, project-knowledge organization, documentation integrity, or a deterministic docs audit without naming a narrower skill.",
+    "path": "pi/core/skills/docs-governance/SKILL.md",
+    "relative_directory": "pi/core/skills/docs-governance",
+    "sha256": "499ac59071e6e2b8fb60f085e337a3a1ec16e200adb8f5b8bc027afb338cf3eb",
+    "linked_local_files": [
+      "pi/core/skills/docs-governance/references/artifact-role-contract.md",
+      "pi/core/skills/docs-governance/scripts/audit-docs.py"
+    ]
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -10803,7 +11134,7 @@
     "description": "Laravel security best practices \u2014 authentication, authorization, Eloquent safety, CSRF, XSS prevention, API security, and secure deployment configurations. Use when reviewing Laravel auth, Eloquent safety, CSRF, XSS, API security, or deployment configuration.",
     "path": "pi/core/skills/laravel-security/SKILL.md",
     "relative_directory": "pi/core/skills/laravel-security",
-    "sha256": "0440ddff450c63a9338f15b765ec35486f3f3266b321e0b27128faa3c29784fe",
+    "sha256": "3a46a2883f08ab1004f33982dbb17fd7ef00c14a24c5c586c7f6575819ec02b4",
     "linked_local_files": []
   },
   {
@@ -10899,6 +11230,16 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "module-regression",
+    "description": ">-",
+    "path": "pi/core/skills/module-regression/SKILL.md",
+    "relative_directory": "pi/core/skills/module-regression",
+    "sha256": "5c3db104f8e4aec868d010fa9354ec64b4c138557a59d13d7355fc9eacdcc846",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "motion-advanced",
     "description": "Advanced motion patterns for React / Next.js \u2014 drag & drop, gestures, text animations, SVG path drawing, custom hooks, imperative sequences (useAnimate), loaders, and the full API decision tree. Requires motion-foundations. Use when building drag and drop, gestures, text or SVG animation, or imperative animation sequences in React or Next.js.",
     "path": "pi/core/skills/motion-advanced/SKILL.md",
@@ -10924,6 +11265,16 @@
     "path": "pi/core/skills/motion-patterns/SKILL.md",
     "relative_directory": "pi/core/skills/motion-patterns",
     "sha256": "9d78bcd2c3b52abdb6fb29162f289b9c709547de264ad064b12e00bedb031907",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "mybatis-patterns",
+    "description": "MyBatis and MyBatis-Spring patterns for mapper design, XML and annotation SQL, result mapping, dynamic SQL safety, transactions, batching, pagination, and query performance. Use when building or reviewing Java persistence code with MyBatis, Spring Boot, MyBatis-Spring, or MyBatis-based legacy applications.",
+    "path": "pi/core/skills/mybatis-patterns/SKILL.md",
+    "relative_directory": "pi/core/skills/mybatis-patterns",
+    "sha256": "9b1d2d79222a57ab7bdbebeeb53a92aa87849f329a96c7df5b9ada651796f9f0",
     "linked_local_files": []
   },
   {
@@ -11451,11 +11802,23 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "test-collaboration",
+    "description": "Inventory and govern a project's test assets. Connect requirements, business rules, risks, bugs, and cross-boundary contracts to stable TEST-IDs and executable evidence in the repository's existing test registry or TESTS.md. Use for test inventory, test gap analysis, unit/integration/contract/E2E/smoke classification, bug-to-test regression protection, consumer/provider contract testing, test-necessity review, and pre-delivery evidence review.",
+    "path": "pi/core/skills/test-collaboration/SKILL.md",
+    "relative_directory": "pi/core/skills/test-collaboration",
+    "sha256": "741138330940e2c9d3cc7bec9e671787f24a361ff89be44e09a56abc8e10dcfa",
+    "linked_local_files": [
+      "pi/core/skills/test-collaboration/templates/TESTS.example.md"
+    ]
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "verification-loop",
     "description": "Run a six-phase verification of a Claude Code session's work \u2014 build, type check, lint, tests with coverage, security grep, and diff review \u2014 then produce a PASS/FAIL verification report. Use when verifying work after completing a feature or refactor, before creating a PR, or when quality gates must pass.",
     "path": "pi/core/skills/verification-loop/SKILL.md",
     "relative_directory": "pi/core/skills/verification-loop",
-    "sha256": "503aebee7d414f559c4874600081a40b1e7aea269b58073c5c9660c6641b00a0",
+    "sha256": "5b06be54d4852f60e6cf1b04c6e9a4748554334eb3e41af6c0959b544e6464ae",
     "linked_local_files": []
   },
   {
@@ -11532,10 +11895,30 @@
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
     "skill_name": "agent-payment-x402",
-    "description": "Add x402 payment execution to AI agents with per-task budgets, spending controls, and non-custodial wallets. Supports Base through agentwallet-sdk and X Layer through OKX Payments / OKX Agent Payments Protocol. Use when an agent must pay for something itself and needs per-task budgets, spending controls, and a non-custodial wallet.",
+    "description": "Add x402 payment execution to AI agents with per-task budgets, spending controls, and non-custodial wallets. Supports Base through agentwallet-sdk, X Layer through OKX Payments / OKX Agent Payments Protocol, and Solana plus multi-network EVM through the upstream x402 packages with facilitator-based settlement. Use when an agent must pay for something itself and needs per-task budgets, spending controls, and a non-custodial wallet.",
     "path": "skills/agent-payment-x402/SKILL.md",
     "relative_directory": "skills/agent-payment-x402",
-    "sha256": "78ac50508665d894f1cbf02fe7d121c6ffc5c72cc66d68174db77ffdb30b6b89",
+    "sha256": "07e9231d4bf62a3fbdead8937d707001ddb4e266328fc769950aecae82c3f1a3",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "agent-runtime-gateway-smoke-test",
+    "description": "Verify a local agent API, temporary gateway tunnel, and remote sandbox callback with a tool-free task, then restore the original app connection.",
+    "path": "skills/agent-runtime-gateway-smoke-test/SKILL.md",
+    "relative_directory": "skills/agent-runtime-gateway-smoke-test",
+    "sha256": "69c3a3825244aed5b5d3b2de517185f9cf0adfc3db83b128049440a626f2ddbf",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "agent-security-hardening",
+    "description": "Security hardening guidance for AI agent frameworks that process untrusted content, invoke tools, write workspace files, manage runtime identifiers, or handle credentials. Use when building or reviewing an agent runtime, autonomous worker, tool gateway, memory service, or multi-tenant agent deployment. Do not use for general web application security or offensive testing.",
+    "path": "skills/agent-security-hardening/SKILL.md",
+    "relative_directory": "skills/agent-security-hardening",
+    "sha256": "0e0895ada90aa8fa085e4257961ebe15f2dff43b843785b1533d4c731186ad81",
     "linked_local_files": []
   },
   {
@@ -11770,6 +12153,16 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "bengali-nlp",
+    "description": "Bengali (Bangla) text processing patterns including Unicode normalization, script detection, tokenization, conjunct handling, and Bangla-specific NLP best practices for AI applications.",
+    "path": "skills/bengali-nlp/SKILL.md",
+    "relative_directory": "skills/bengali-nlp",
+    "sha256": "7080235437516fbc227f759aac138219e85c95e8ce271187c3c978e51b094bde",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "blender-motion-state-inspection",
     "description": "Use this skill when inspecting Blender characters, rigs, poses, animation retargeting, ground contact, facing direction, or model-vs-motion alignment where screenshots alone are not enough.",
     "path": "skills/blender-motion-state-inspection/SKILL.md",
@@ -11812,6 +12205,16 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "brownfield-retrospective",
+    "description": "Run the ECC engineering process retroactively against an existing project slice. Audit current state, reconstruct past decisions, produce a four-axis gap register (thinking, coding practice, missing features, technology selection), then execute fixes forward through the plan-TDD-review pipeline. Use when adopting ECC mid-project, taking over an inherited codebase, or asking what was missed and what would have been built differently from day one.",
+    "path": "skills/brownfield-retrospective/SKILL.md",
+    "relative_directory": "skills/brownfield-retrospective",
+    "sha256": "805439bc795d40dff6bceb34da6a2ab2115badfea6c9f4729e7fe0ccda62c382",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "browser-qa",
     "description": "Run automated post-deploy UI verification with a browser automation MCP (claude-in-chrome, Playwright, or Puppeteer): console-error and Core Web Vitals smoke checks, form and auth-flow interaction tests, screenshot visual regression across three breakpoints, and axe-core accessibility audits ending in a SHIP / DO-NOT-SHIP verdict. Use when testing a deployed feature on staging or preview, before shipping frontend changes, reviewing a frontend PR, or checking responsive layout and accessibility.",
     "path": "skills/browser-qa/SKILL.md",
@@ -11826,7 +12229,7 @@
     "description": "Bun as runtime, package manager, bundler, and test runner. When to choose Bun vs Node, migration notes, and Vercel support.",
     "path": "skills/bun-runtime/SKILL.md",
     "relative_directory": "skills/bun-runtime",
-    "sha256": "8015a977827ddd8536e89c4693a575b8deb5b04073b8a483c320c5419abc35da",
+    "sha256": "fc0ff230f098d3537c5a6c6fa0466a4d3cc20c3a903cee40c774713fb52aa61f",
     "linked_local_files": []
   },
   {
@@ -11847,6 +12250,16 @@
     "path": "skills/carrier-relationship-management/SKILL.md",
     "relative_directory": "skills/carrier-relationship-management",
     "sha256": "e325d73fd0078a101e826a84178c87aeeb80700d037faf45cda8e9ba9e53b27e",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "change-impact",
+    "description": ">-",
+    "path": "skills/change-impact/SKILL.md",
+    "relative_directory": "skills/change-impact",
+    "sha256": "b8d8a11417af8b84e93983a8eb682e3b9a16d04f926778eb635c96e90019bf18",
     "linked_local_files": []
   },
   {
@@ -12022,11 +12435,23 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "context-and-decisions",
+    "description": ">-",
+    "path": "skills/context-and-decisions/SKILL.md",
+    "relative_directory": "skills/context-and-decisions",
+    "sha256": "5158283621d6d15288dab50fc2e884cf114b8d91137e45e619bf3dff4740f3e0",
+    "linked_local_files": [
+      "skills/context-and-decisions/templates/context.example.md"
+    ]
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "context-budget",
-    "description": "Audits Claude Code context window consumption across agents, skills, MCP servers, and rules. Identifies bloat, redundant components, and produces prioritized token-savings recommendations. Use when the context window is filling up too fast and the agents, skills, MCP servers, or rules consuming it need to be identified.",
+    "description": "Routes live context checks to the native Codex or Claude Code meter without scanning files, and performs a bounded static component audit only when explicitly requested. Use for context-budget requests about remaining capacity or installed context overhead.",
     "path": "skills/context-budget/SKILL.md",
     "relative_directory": "skills/context-budget",
-    "sha256": "a9ade47d2e8387ce1362cfaa613722b6f35ae082b6cb8c61aad57c866d92fe69",
+    "sha256": "793d51ac6639a466213800c228189a48b102c88d7cfb5b0651baa3480a577206",
     "linked_local_files": []
   },
   {
@@ -12073,6 +12498,16 @@
     "path": "skills/contract-first/SKILL.md",
     "relative_directory": "skills/contract-first",
     "sha256": "3eaacf16a9bbd92888659e9c1e15b0fa4eb96a41c257dd9e08f2e63b824f0cea",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "conventional-commit-review",
+    "description": "Reviews staged changes and drafts a Conventional Commits-compliant commit message with the right type, scope, and length. Use before committing, or when the user asks to write, fix, or review a commit message.",
+    "path": "skills/conventional-commit-review/SKILL.md",
+    "relative_directory": "skills/conventional-commit-review",
+    "sha256": "c81397a4bfc2ec66986aae7a4dff5a02f78c519bc9774a80778fa9055e7fa2fe",
     "linked_local_files": []
   },
   {
@@ -12251,6 +12686,16 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "deepseek-harness-setup",
+    "description": "Install and operate Everything Claude Code (ECC) on the DeepSeek Harness (DSH): native skill roots (~/.dsh/skills, .agents/skills), the @deepseek-ai/dsh-hooks-claude-code bridge for command hooks, bare-insert patch mounting, generator usage, event-support limits, and update workflow. Use when setting up ECC on DeepSeek Harness, wiring ECC hooks into a DSH profile, or debugging why ECC skills or hooks do not appear in a DSH session.",
+    "path": "skills/deepseek-harness-setup/SKILL.md",
+    "relative_directory": "skills/deepseek-harness-setup",
+    "sha256": "63431ebd83dbcf712031cf22efccc55179ecff6352aca34213121bd7a5685180",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "defi-amm-security",
     "description": "Security checklist for Solidity AMM contracts, liquidity pools, and swap flows. Covers reentrancy, CEI ordering, donation or inflation attacks, oracle manipulation, slippage, admin controls, and integer math. Use when auditing or writing Solidity AMM, liquidity pool, or swap code.",
     "path": "skills/defi-amm-security/SKILL.md",
@@ -12265,7 +12710,7 @@
     "description": "Stop hook that blocks Claude from finishing until quality checks pass. Detects rationalization patterns (surface text heuristics), stale learning logs (filesystem mtime), and low disk space. Complements self-audit by mechanically enforcing learning capture habits. Use when Claude should be mechanically blocked from declaring work finished before quality checks and learning capture actually pass.",
     "path": "skills/delivery-gate/SKILL.md",
     "relative_directory": "skills/delivery-gate",
-    "sha256": "147a971c26b7bf4f9fbc3e1f624ec7c888eb8d74911d8ffbbe0418d9aaaa9767",
+    "sha256": "1f20dd3c7f10aa459fa025f2070bd9cb2d93028a71c01e46d2c60906da000b5b",
     "linked_local_files": []
   },
   {
@@ -12365,8 +12810,21 @@
     "description": "Docker and Docker Compose patterns for local development, hardened CLI installer harnesses, container security, networking, volumes, and multi-service orchestration. Use when creating or reviewing Dockerfiles and Compose services, testing installers across Linux distributions, or planning accurate native macOS and Windows validation.",
     "path": "skills/docker-patterns/SKILL.md",
     "relative_directory": "skills/docker-patterns",
-    "sha256": "2a880cf2f6401874151daa9bcc0eacd10cf79f5f48b97f98e93a877a8f3fd12b",
+    "sha256": "c0cedeb9b64d4468f5af3bb0a97659c654f0ceb916acbec867a29dc682dd633f",
     "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "docs-governance",
+    "description": "Route broad documentation-governance requests to existing ECC skills and run an opt-in, read-only audit of mapped documentation roles, links, ADR indexes, and evidence references. Use when a user asks for documentation governance, project-knowledge organization, documentation integrity, or a deterministic docs audit without naming a narrower skill.",
+    "path": "skills/docs-governance/SKILL.md",
+    "relative_directory": "skills/docs-governance",
+    "sha256": "499ac59071e6e2b8fb60f085e337a3a1ec16e200adb8f5b8bc027afb338cf3eb",
+    "linked_local_files": [
+      "skills/docs-governance/references/artifact-role-contract.md",
+      "skills/docs-governance/scripts/audit-docs.py"
+    ]
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -12597,8 +13055,10 @@
     "description": "Set an ECC-specific frontend design direction for production UI work. Use when building or improving websites, dashboards, applications, components, landing pages, visual tools, or any web UI that needs stronger product-specific design judgment.",
     "path": "skills/frontend-design-direction/SKILL.md",
     "relative_directory": "skills/frontend-design-direction",
-    "sha256": "fa254de821f708e5791c4c80d30309ac7da89c2888301e967becb3b21ac73331",
-    "linked_local_files": []
+    "sha256": "71a40f7bc4a28da01b54527fe5590f6055c93adc630e6ceee8c892b35c980893",
+    "linked_local_files": [
+      "skills/frontend-design-direction/scripts/check-evidence.js"
+    ]
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -12646,10 +13106,10 @@
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
     "skill_name": "gateguard",
-    "description": "PreToolUse fact-forcing gate that denies the first Edit/Write/Bash (including MultiEdit) attempt until the agent presents concrete facts (importers, data schemas, verbatim user instruction), then allows retry; A/B-tested at +2.25 quality points. Use when enabling or configuring the GateGuard hook, exempting paths via env vars, or handling first-touch denials.",
+    "description": "PreToolUse fact-forcing gate that denies the first Edit/Write/Bash (including MultiEdit and NotebookEdit) attempt until the agent presents concrete facts (importers, data schemas, verbatim user instruction), then allows retry; A/B-tested at +2.25 quality points. Use when enabling or configuring the GateGuard hook, exempting paths via env vars, or handling first-touch denials.",
     "path": "skills/gateguard/SKILL.md",
     "relative_directory": "skills/gateguard",
-    "sha256": "33e89b52b5f76ade2508165271bcf425fc3b792e56a92405c356a7e94077610a",
+    "sha256": "54083368cd78dea6ea178a8cf666557f41bbc70edaa3be32b8639df9de1c1795",
     "linked_local_files": []
   },
   {
@@ -12851,7 +13311,7 @@
     "description": "Create and configure hookify rules \u2014 markdown files with YAML frontmatter that match bash, file, prompt, or stop events by regex or conditions and show warn/block messages to the agent. Use when creating a hookify rule, writing hook rule syntax, configuring hookify, or adding pattern guardrails such as blocking dangerous commands, .env edits, or debug code.",
     "path": "skills/hookify-rules/SKILL.md",
     "relative_directory": "skills/hookify-rules",
-    "sha256": "b4dd83139c322577c39f0e8ae1800e75368169323ba6bedb24d34acad7827c18",
+    "sha256": "6d1fdfe8e594ad1465ee1e02ee2fb6fce51570ef9e4ee1231bdc43df937ed4c4",
     "linked_local_files": []
   },
   {
@@ -13109,7 +13569,7 @@
     "description": "Laravel security best practices \u2014 authentication, authorization, Eloquent safety, CSRF, XSS prevention, API security, and secure deployment configurations. Use when reviewing Laravel auth, Eloquent safety, CSRF, XSS, API security, or deployment configuration.",
     "path": "skills/laravel-security/SKILL.md",
     "relative_directory": "skills/laravel-security",
-    "sha256": "0440ddff450c63a9338f15b765ec35486f3f3266b321e0b27128faa3c29784fe",
+    "sha256": "3a46a2883f08ab1004f33982dbb17fd7ef00c14a24c5c586c7f6575819ec02b4",
     "linked_local_files": []
   },
   {
@@ -13270,6 +13730,16 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "mcp-dependency-review",
+    "description": "Statically review MCP configuration for mutable package references before approval or CI, without executing discovered MCP servers. Use when reviewing .mcp.json, Cursor, VS Code, Claude, Windsurf, or other repo-scoped MCP config.",
+    "path": "skills/mcp-dependency-review/SKILL.md",
+    "relative_directory": "skills/mcp-dependency-review",
+    "sha256": "766536baa981710a85c8f761675f6a57f58600fff42b23ccf6171606180f4c12",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "mcp-server-patterns",
     "description": "Build MCP servers with Node/TypeScript SDK \u2014 tools, resources, prompts, Zod validation, stdio vs Streamable HTTP. Use Context7 or official MCP docs for latest API. Use when building or debugging an MCP server \u2014 tools, resources, prompts, validation, or transport choice.",
     "path": "skills/mcp-server-patterns/SKILL.md",
@@ -13312,6 +13782,16 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "module-regression",
+    "description": ">-",
+    "path": "skills/module-regression/SKILL.md",
+    "relative_directory": "skills/module-regression",
+    "sha256": "5c3db104f8e4aec868d010fa9354ec64b4c138557a59d13d7355fc9eacdcc846",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "motion-advanced",
     "description": "Advanced motion patterns for React / Next.js \u2014 drag & drop, gestures, text animations, SVG path drawing, custom hooks, imperative sequences (useAnimate), loaders, and the full API decision tree. Requires motion-foundations. Use when building drag and drop, gestures, text or SVG animation, or imperative animation sequences in React or Next.js.",
     "path": "skills/motion-advanced/SKILL.md",
@@ -13337,6 +13817,16 @@
     "path": "skills/motion-patterns/SKILL.md",
     "relative_directory": "skills/motion-patterns",
     "sha256": "9d78bcd2c3b52abdb6fb29162f289b9c709547de264ad064b12e00bedb031907",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "mybatis-patterns",
+    "description": "MyBatis and MyBatis-Spring patterns for mapper design, XML and annotation SQL, result mapping, dynamic SQL safety, transactions, batching, pagination, and query performance. Use when building or reviewing Java persistence code with MyBatis, Spring Boot, MyBatis-Spring, or MyBatis-based legacy applications.",
+    "path": "skills/mybatis-patterns/SKILL.md",
+    "relative_directory": "skills/mybatis-patterns",
+    "sha256": "9b1d2d79222a57ab7bdbebeeb53a92aa87849f329a96c7df5b9ada651796f9f0",
     "linked_local_files": []
   },
   {
@@ -13484,7 +13974,7 @@
     "description": "Open-source pipeline: fork, sanitize, and package private projects for safe public release. Chains 3 agents (forker, sanitizer, packager). Triggers: '/opensource', 'open source this', 'make this public', 'prepare for open source'. Use when a private project must be forked, stripped of secrets, and packaged for public release.",
     "path": "skills/opensource-pipeline/SKILL.md",
     "relative_directory": "skills/opensource-pipeline",
-    "sha256": "7032623ed2108d638c1ce5afa7a0738d632551aea2adc9767385375782993a81",
+    "sha256": "1d4ef417d0254893968f9e9479ac23fea3643b95e86fb42d98d3de3e020a1a33",
     "linked_local_files": []
   },
   {
@@ -13573,6 +14063,22 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "osint-investigation",
+    "description": "Sparse-clue OSINT investigation methodology for extracting overlooked leads, connecting fragmented evidence, and testing explanations across sources. Use for multi-step CTF challenges, image/video geolocation, event reconstruction, public-account and entity verification, artifact interpretation, infrastructure research, or stalled investigations.",
+    "path": "skills/osint-investigation/SKILL.md",
+    "relative_directory": "skills/osint-investigation",
+    "sha256": "f30f873cb28cd3befc757dc7ea63d29250d6537c20c7fe4de8394fde0c2bd78b",
+    "linked_local_files": [
+      "skills/deep-research/SKILL.md",
+      "skills/exa-search/SKILL.md",
+      "skills/osint-investigation/LICENSE.txt",
+      "skills/research-ops/SKILL.md",
+      "skills/security-review/SKILL.md"
+    ]
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "parallel-execution-optimizer",
     "description": "Speed up a task by turning it into a dependency graph of parallel lanes with a lane matrix, batched reads and checks, write surfaces isolated by file, worktree, branch, or service, and a final verification table. Use when the user wants a task done much faster through parallel work, concurrent agents, batched tool calls, isolated worktrees, or many independent verification lanes without losing correctness.",
     "path": "skills/parallel-execution-optimizer/SKILL.md",
@@ -13627,10 +14133,10 @@
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
     "skill_name": "plan-orchestrate",
-    "description": "Read a plan document, decompose it into steps, design a per-step agent chain from the ECC catalogue, and emit ready-to-paste /orchestrate custom prompts. Generative only \u2014 never invokes /orchestrate itself. Use when the user has a multi-step plan and wants to drive it through orchestrate without composing chains by hand.",
+    "description": "Read a plan document, decompose it into steps, classify each step, and emit the ready-to-paste ECC slash command for that step, carrying the step identifier and scope in the command's own documented argument form. Generative only \u2014 never invokes commands itself and never claims to control what a command runs internally. Steps whose command cannot carry plan scope fail closed instead of being emitted. Use when the user has a multi-step plan and wants the right command for each step without picking it by hand.",
     "path": "skills/plan-orchestrate/SKILL.md",
     "relative_directory": "skills/plan-orchestrate",
-    "sha256": "d104fb71594fd9385c4a7c23e4835907be124b8effb34f49fa5cf7d28e3494e3",
+    "sha256": "df127a46f7b5db2608f00da04d0cdfe5ed4a075ecc7e2876189e1de26c99d4fe",
     "linked_local_files": []
   },
   {
@@ -13731,6 +14237,16 @@
     "path": "skills/project-flow-ops/SKILL.md",
     "relative_directory": "skills/project-flow-ops",
     "sha256": "6d59e4118a91419fdc66cf51925371a3f9fad66881c5a1720ed1c5cc490df1f7",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "prompt-caching-strategy",
+    "description": ">-",
+    "path": "skills/prompt-caching-strategy/SKILL.md",
+    "relative_directory": "skills/prompt-caching-strategy",
+    "sha256": "bde64446760754680a6e821fce96ed70e4a409adc7145cb056a815aa64eb5b81",
     "linked_local_files": []
   },
   {
@@ -14085,6 +14601,7 @@
       "skills/remotion-video-creation/rules/3d.md",
       "skills/remotion-video-creation/rules/animations.md",
       "skills/remotion-video-creation/rules/assets.md",
+      "skills/remotion-video-creation/rules/assets/charts-bar-chart.tsx",
       "skills/remotion-video-creation/rules/assets/text-animations-typewriter.tsx",
       "skills/remotion-video-creation/rules/assets/text-animations-word-highlight.tsx",
       "skills/remotion-video-creation/rules/audio.md",
@@ -14307,6 +14824,16 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "skill-host-compat",
+    "description": "Lint ECC skills for Codex/Cursor-safe frontmatter and Claude-only substitutions before a skill PR.",
+    "path": "skills/skill-host-compat/SKILL.md",
+    "relative_directory": "skills/skill-host-compat",
+    "sha256": "246242187c2da04369c23d782ba0970bcb9b9fb74acb421161649e4c572d4b54",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "skill-scout",
     "description": "Search existing local, marketplace, GitHub, and web skill sources before creating a new skill. Use when the user wants to create, build, fork, or find a skill for a workflow.",
     "path": "skills/skill-scout/SKILL.md",
@@ -14321,7 +14848,7 @@
     "description": "Use when auditing Claude skills and commands for quality. Supports Quick Scan (changed skills only) and Full Stocktake modes with sequential subagent batch evaluation.",
     "path": "skills/skill-stocktake/SKILL.md",
     "relative_directory": "skills/skill-stocktake",
-    "sha256": "aa8f287c48c5a33bf15094358ffccbe0d4faff9eee9fa2ffcd70c8e9f3d22cdd",
+    "sha256": "3de326f8f87216b024bf524433b91607068d805286394d5ed8e293b4799b7314",
     "linked_local_files": []
   },
   {
@@ -14383,6 +14910,18 @@
     "relative_directory": "skills/springboot-verification",
     "sha256": "c9449f169a3b920fd01875e3b2b2712c743c5fe8f469d2eabfe78886c590d04a",
     "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "story-lifecycle",
+    "description": "Manage a file-based epic \u2192 story \u2192 sprint development loop without requiring an external project management tool. Creates and tracks epics, breaks them into user stories, assigns them to sprints, and drives implementation story by story. Use when starting a new feature initiative or when the team has no Jira/Linear/Taiga but needs structured delivery tracking.",
+    "path": "skills/story-lifecycle/SKILL.md",
+    "relative_directory": "skills/story-lifecycle",
+    "sha256": "1492a724d4df362d8e95a340fabd22423e20965b1d0f9ebc6d2d319aca843194",
+    "linked_local_files": [
+      "skills/story-lifecycle/scripts/ledger.js"
+    ]
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -14552,11 +15091,23 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "test-collaboration",
+    "description": "Inventory and govern a project's test assets. Connect requirements, business rules, risks, bugs, and cross-boundary contracts to stable TEST-IDs and executable evidence in the repository's existing test registry or TESTS.md. Use for test inventory, test gap analysis, unit/integration/contract/E2E/smoke classification, bug-to-test regression protection, consumer/provider contract testing, test-necessity review, and pre-delivery evidence review.",
+    "path": "skills/test-collaboration/SKILL.md",
+    "relative_directory": "skills/test-collaboration",
+    "sha256": "741138330940e2c9d3cc7bec9e671787f24a361ff89be44e09a56abc8e10dcfa",
+    "linked_local_files": [
+      "skills/test-collaboration/templates/TESTS.example.md"
+    ]
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "tinystruct-patterns",
-    "description": "Expert guidance for developing with the tinystruct Java framework. Use when working on the tinystruct codebase or any project built on tinystruct \u2014 including creating Application classes, @Action-mapped routes, unit tests, ActionRegistry, HTTP/CLI dual-mode handling, the built-in HTTP server, the event system, JSON with Builder/Builders, database persistence with AbstractData, POJO generation, Server-Sent Events (SSE), file uploads, and outbound HTTP networking.",
+    "description": "Expert guidance for developing with the tinystruct Java framework. Use when working on the tinystruct codebase or any project built on tinystruct \u2014 including generating the bin/dispatcher and bin/dispatcher.cmd launcher scripts when a project lacks them, creating Application classes, @Action-mapped routes, unit tests, ActionRegistry, HTTP/CLI dual-mode handling, the built-in HTTP server, the event system, JSON with Builder/Builders, database persistence with AbstractData, POJO generation, Server-Sent Events (SSE), file uploads, and outbound HTTP networking.",
     "path": "skills/tinystruct-patterns/SKILL.md",
     "relative_directory": "skills/tinystruct-patterns",
-    "sha256": "6f5d16090aa5b1913002480ecfb00feb3ad894a05c9b84d8f3645e2297b6024b",
+    "sha256": "ee23f46cbdf7d0a8fd9fe2e50df2e29d9acab6913459cf293a7ecd77173a3369",
     "linked_local_files": [
       "skills/tinystruct-patterns/references/architecture.md",
       "skills/tinystruct-patterns/references/data-handling.md",
@@ -14577,6 +15128,16 @@
     "linked_local_files": [
       "skills/context-budget/SKILL.md"
     ]
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "token-card",
+    "description": "Render a token-usage stat card from local Claude Code, Codex, Gemini CLI, and OpenCode session logs and commit it into the repository as a file. Use when someone wants a current usage figure in a README, or asks for a shareable card of their coding-agent activity.",
+    "path": "skills/token-card/SKILL.md",
+    "relative_directory": "skills/token-card",
+    "sha256": "ac297ba33187d7d2d66a6b151b1492a8757aac64938715f6eaabfbb1287cfd26",
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -14635,7 +15196,7 @@
     "description": "Run a six-phase verification of a Claude Code session's work \u2014 build, type check, lint, tests with coverage, security grep, and diff review \u2014 then produce a PASS/FAIL verification report. Use when verifying work after completing a feature or refactor, before creating a PR, or when quality gates must pass.",
     "path": "skills/verification-loop/SKILL.md",
     "relative_directory": "skills/verification-loop",
-    "sha256": "503aebee7d414f559c4874600081a40b1e7aea269b58073c5c9660c6641b00a0",
+    "sha256": "5b06be54d4852f60e6cf1b04c6e9a4748554334eb3e41af6c0959b544e6464ae",
     "linked_local_files": []
   },
   {
@@ -14742,9 +15303,23 @@
     "description": "Research what people actually say about any topic in the last 30 days. Pulls posts and engagement from Reddit, X, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the web. Includes a doctor health check to diagnose broken or missing sources.",
     "path": "skills/last30days/SKILL.md",
     "relative_directory": "skills/last30days",
-    "sha256": "c2bf3a4745e58dabd18387d2291b48991257bccacc2e3ceaa273c471250261c2",
+    "sha256": "afccc5bf61eba07d1833a74a011b25374a6b9d1b3886eeb8334e2922e4e67b41",
     "linked_local_files": [
+      "skills/last30days/references/agent-mode.md",
+      "skills/last30days/references/category-peers.md",
+      "skills/last30days/references/comparison.md",
+      "skills/last30days/references/competitors.md",
+      "skills/last30days/references/discovery.md",
+      "skills/last30days/references/followups.md",
+      "skills/last30days/references/grok-bot-x.md",
+      "skills/last30days/references/hiring-signals.md",
+      "skills/last30days/references/library-queue.md",
+      "skills/last30days/references/recommendations.md",
+      "skills/last30days/references/research-runbook.md",
+      "skills/last30days/references/runtime.md",
       "skills/last30days/references/save-html-brief.md",
+      "skills/last30days/references/setup-wizard.md",
+      "skills/last30days/references/synthesis.md",
       "skills/last30days/scripts/box_chrome_login.py",
       "skills/last30days/scripts/briefing.py",
       "skills/last30days/scripts/build-skill.sh",
@@ -14758,6 +15333,7 @@
       "skills/last30days/scripts/lib/backends.py",
       "skills/last30days/scripts/lib/bird_x.py",
       "skills/last30days/scripts/lib/bluesky.py",
+      "skills/last30days/scripts/lib/bounded_get.py",
       "skills/last30days/scripts/lib/brightdata.py",
       "skills/last30days/scripts/lib/categories.py",
       "skills/last30days/scripts/lib/chrome_cdp.py",
@@ -14766,9 +15342,11 @@
       "skills/last30days/scripts/lib/cluster.py",
       "skills/last30days/scripts/lib/competitors.py",
       "skills/last30days/scripts/lib/cookie_extract.py",
+      "skills/last30days/scripts/lib/cookie_paths.py",
       "skills/last30days/scripts/lib/corpus.py",
       "skills/last30days/scripts/lib/dates.py",
       "skills/last30days/scripts/lib/dedupe.py",
+      "skills/last30days/scripts/lib/devto.py",
       "skills/last30days/scripts/lib/digg.py",
       "skills/last30days/scripts/lib/discovery_handoff.py",
       "skills/last30days/scripts/lib/doctor.py",
@@ -14777,6 +15355,7 @@
       "skills/last30days/scripts/lib/env.py",
       "skills/last30days/scripts/lib/fanout.py",
       "skills/last30days/scripts/lib/feed.py",
+      "skills/last30days/scripts/lib/fetch_memo.py",
       "skills/last30days/scripts/lib/freshness.py",
       "skills/last30days/scripts/lib/fusion.py",
       "skills/last30days/scripts/lib/github.py",
@@ -14806,6 +15385,7 @@
       "skills/last30days/scripts/lib/polymarket.py",
       "skills/last30days/scripts/lib/preflight.py",
       "skills/last30days/scripts/lib/prescriptions.py",
+      "skills/last30days/scripts/lib/private_files.py",
       "skills/last30days/scripts/lib/providers.py",
       "skills/last30days/scripts/lib/quality_nudge.py",
       "skills/last30days/scripts/lib/query.py",
@@ -14839,6 +15419,7 @@
       "skills/last30days/scripts/lib/trustpilot.py",
       "skills/last30days/scripts/lib/truthsocial.py",
       "skills/last30days/scripts/lib/ui.py",
+      "skills/last30days/scripts/lib/usage.py",
       "skills/last30days/scripts/lib/vendor/bird-search/LICENSE",
       "skills/last30days/scripts/lib/vendor/bird-search/bird-search.mjs",
       "skills/last30days/scripts/lib/vendor/bird-search/lib/cookies.js",
@@ -14856,6 +15437,7 @@
       "skills/last30days/scripts/lib/vendor/bird-search/package.json",
       "skills/last30days/scripts/lib/web_fetch_keyless.py",
       "skills/last30days/scripts/lib/web_search_keyless.py",
+      "skills/last30days/scripts/lib/windows_job.py",
       "skills/last30days/scripts/lib/x_api.py",
       "skills/last30days/scripts/lib/x_envelope.py",
       "skills/last30days/scripts/lib/x_judge.py",
@@ -14870,47 +15452,48 @@
       "skills/last30days/scripts/test-v1-vs-v2.sh",
       "skills/last30days/scripts/test_device_auth.py",
       "skills/last30days/scripts/verify_v3.py",
-      "skills/last30days/scripts/watchlist.py"
+      "skills/last30days/scripts/watchlist.py",
+      "skills/last30days/scripts/x_lane_parity.py"
     ]
   },
   {
     "source_repo": "DietrichGebert/ponytail",
     "repo_key": "DietrichGebert__ponytail",
     "skill_name": "ponytail",
-    "description": "Lazy senior dev mode for any coding task (write, refactor, fix, review): YAGNI, stdlib first, no unrequested abstractions. Not for non-coding requests.",
+    "description": "Lazy senior dev mode for any coding task: the smallest change that fully solves it, and a reply a busy human understands in one read.",
     "path": ".openclaw/skills/ponytail/SKILL.md",
     "relative_directory": ".openclaw/skills/ponytail",
-    "sha256": "dd240060d5734a58fe2783916a63f9401fed75c5f87742dd663a66f9ed4c8c65",
+    "sha256": "3868c7aa7cc721b7391a6a136ce609bc1e08a2b29d393fe2e637297d8d45f379",
     "linked_local_files": []
   },
   {
     "source_repo": "DietrichGebert/ponytail",
     "repo_key": "DietrichGebert__ponytail",
     "skill_name": "ponytail-audit",
-    "description": "Audit the whole repo for over-engineering. A ranked list of what to delete, simplify, or replace with stdlib or native features.",
+    "description": "Quality audit of the whole repo: bugs, security, real load, missing tests, speed, and what to delete. Most important first.",
     "path": ".openclaw/skills/ponytail-audit/SKILL.md",
     "relative_directory": ".openclaw/skills/ponytail-audit",
-    "sha256": "e4cdead76dd34470490454e9518a4c9e0294c8045e1b206aec382b75bc792f96",
+    "sha256": "3dc1c18ec325632db297f2c34d03e6f4b3fe5f50a8eaee727f02d223b1ee3d4b",
     "linked_local_files": []
   },
   {
     "source_repo": "DietrichGebert/ponytail",
     "repo_key": "DietrichGebert__ponytail",
     "skill_name": "ponytail-debt",
-    "description": "Harvest every ponytail: shortcut comment into one debt ledger, so deferrals get tracked instead of forgotten. One-shot report.",
+    "description": "Harvest every shortcut: comment into one debt ledger, so deferrals get tracked instead of forgotten. One-shot report.",
     "path": ".openclaw/skills/ponytail-debt/SKILL.md",
     "relative_directory": ".openclaw/skills/ponytail-debt",
-    "sha256": "a88162567a541a7ac72c73c6d2b7397fece608b3aab58bd6f3260bdfe72f5d77",
+    "sha256": "111a7abae3f000f20a0752e082ae27583724f79b962e8b3829f643738e2f81f1",
     "linked_local_files": []
   },
   {
     "source_repo": "DietrichGebert/ponytail",
     "repo_key": "DietrichGebert__ponytail",
     "skill_name": "ponytail-gain",
-    "description": "Show ponytail measured impact as a scoreboard: less code, less cost, more speed, from the benchmark medians. One-shot display.",
+    "description": "Show ponytail measured impact as a scoreboard: less code, less cost, more speed, from the agentic benchmark averages. One-shot display.",
     "path": ".openclaw/skills/ponytail-gain/SKILL.md",
     "relative_directory": ".openclaw/skills/ponytail-gain",
-    "sha256": "6268baa130520efa48406ee9463e0c844cbfea9a299a4687b1adf8352f2471f6",
+    "sha256": "7799bf2f22985caf5ef5db41d3afd41511ae7a767aeb3a95feb3a63aa503ab6d",
     "linked_local_files": []
   },
   {
@@ -14920,17 +15503,17 @@
     "description": "Quick reference for ponytail's modes, skills, and commands. One-shot display.",
     "path": ".openclaw/skills/ponytail-help/SKILL.md",
     "relative_directory": ".openclaw/skills/ponytail-help",
-    "sha256": "fbafefaed07225f1d8fd79e62d976fdebe680294cbe78c3e6acc00353ae61999",
+    "sha256": "a40197337100b5c2f66fb0f9e898ac659049aefe6c790075a8c167e914aa6ff2",
     "linked_local_files": []
   },
   {
     "source_repo": "DietrichGebert/ponytail",
     "repo_key": "DietrichGebert__ponytail",
     "skill_name": "ponytail-review",
-    "description": "Review a diff for over-engineering. Finds what to delete: reinvented stdlib, needless deps, speculative abstractions. One line per finding.",
+    "description": "Quality review of a diff: bugs, security, real load, missing tests, speed, and what to delete. Each finding says what goes wrong and how to fix it.",
     "path": ".openclaw/skills/ponytail-review/SKILL.md",
     "relative_directory": ".openclaw/skills/ponytail-review",
-    "sha256": "82d219c6c96d96c9775b811d9c7d0b5d5f5d94d3a667d993c6e0fe63de295326",
+    "sha256": "1f010d87a90d9e801f5634e3b863510b40121608f6e980f20bb3db8b2d165299",
     "linked_local_files": []
   },
   {
@@ -14940,7 +15523,7 @@
     "description": ">",
     "path": "skills/ponytail/SKILL.md",
     "relative_directory": "skills/ponytail",
-    "sha256": "1316a2f3f95741d2300b116fe0c2d81ce4a9568656ed0a62643f54aaf09957f2",
+    "sha256": "ba68ff26239c3c3b05b2a9a47ee0d9a6b93a69639a2555ec87a5d44bffaf2f0c",
     "linked_local_files": []
   },
   {
@@ -14950,7 +15533,7 @@
     "description": ">",
     "path": "skills/ponytail-audit/SKILL.md",
     "relative_directory": "skills/ponytail-audit",
-    "sha256": "554b7ac9c78a6b1a5e6b2bf0ba67eedf092baf71e465d03e591d0cfeb7947774",
+    "sha256": "2b3223a02c386d1263e1b08343cb8eb3a53e444cdafb1d79e26c8ec2a8fcad28",
     "linked_local_files": []
   },
   {
@@ -14960,7 +15543,7 @@
     "description": ">",
     "path": "skills/ponytail-debt/SKILL.md",
     "relative_directory": "skills/ponytail-debt",
-    "sha256": "d3611761039bdb2955e31856834feeec6ed5483a3fc64576e9a166f949a131d1",
+    "sha256": "63168f0e1475affb1211bc004261aa51a037f79e484571aae484bf27fe4d17c2",
     "linked_local_files": []
   },
   {
@@ -14970,7 +15553,7 @@
     "description": ">",
     "path": "skills/ponytail-gain/SKILL.md",
     "relative_directory": "skills/ponytail-gain",
-    "sha256": "24e01d1c9715cb136ba1c4f1e52a95940c0193558b876828e537736480d6408b",
+    "sha256": "60e05eaf65e8e404c8975a944eda9d3ed4ae3345478b3550b0e74570982c187e",
     "linked_local_files": []
   },
   {
@@ -14980,7 +15563,7 @@
     "description": ">",
     "path": "skills/ponytail-help/SKILL.md",
     "relative_directory": "skills/ponytail-help",
-    "sha256": "23d9baf1b9a9464b40ebe1b5b50752795210b934fc8e248e791496e4c9a39fd2",
+    "sha256": "2927276bc9c10221ce8bcf80adb798db130cd70eb33a95db91ab3a0d105f5109",
     "linked_local_files": []
   },
   {
@@ -14990,7 +15573,7 @@
     "description": ">",
     "path": "skills/ponytail-review/SKILL.md",
     "relative_directory": "skills/ponytail-review",
-    "sha256": "7f8bfd0da3ba7c6fe0cd0de53e6f910adfef52166c6e99d7fa4de3360650b9b6",
+    "sha256": "33fe4ebe22a460924e5d4a261e223df22e409cc94ab76182bee9fb91a3ef022e",
     "linked_local_files": []
   },
   {
@@ -15012,7 +15595,7 @@
     "description": "Shape output for a reader with ADHD: lead with the next action, number multi-step work, restate state across turns, suppress tangents, give specific time estimates, make wins visible. Invoke with /i-have-adhd; stays on until \"stop adhd mode\".",
     "path": ".cursor/skills/i-have-adhd/SKILL.md",
     "relative_directory": ".cursor/skills/i-have-adhd",
-    "sha256": "3170b16ace00aecb0dd7feb54c0b5aa642e7502acda06ecd24fd89a11c7127e9",
+    "sha256": "88955c019bbb1419ff4b49dbb1f80a867467de6233d7865af2e06a7d7b76c7d3",
     "linked_local_files": []
   },
   {
@@ -15022,7 +15605,7 @@
     "description": "Shape output for a reader with ADHD: lead with the next action, number multi-step work, restate state across turns, suppress tangents, give specific time estimates, make wins visible. Invoke with /i-have-adhd; stays on until \"stop adhd mode\".",
     "path": "skills/i-have-adhd/SKILL.md",
     "relative_directory": "skills/i-have-adhd",
-    "sha256": "3170b16ace00aecb0dd7feb54c0b5aa642e7502acda06ecd24fd89a11c7127e9",
+    "sha256": "88955c019bbb1419ff4b49dbb1f80a867467de6233d7865af2e06a7d7b76c7d3",
     "linked_local_files": []
   },
   {
@@ -15190,6 +15773,16 @@
     "linked_local_files": [
       "skills/animate-expo/RECIPES.md"
     ]
+  },
+  {
+    "source_repo": "emilkowalski/skills",
+    "repo_key": "emilkowalski__skills",
+    "skill_name": "animation-performance",
+    "description": "Keep web animations inside the frame budget \u2014 animate composite-only properties, keep motion off the main thread when the page is busy, and find the cause when an animation drops frames. Covers the layout/paint/composite pipeline, cheaper property swaps, CSS vs WAAPI vs requestAnimationFrame, Framer Motion's hardware-accelerated path, React re-rendering per frame, inherited CSS variable recalculation, blur cost, and when `will-change` actually helps. Use when an animation is janky, choppy, stutters, or drops frames; when choosing which property to animate; when deciding between CSS and JS animation on performance grounds; or when reaching for `will-change` or GPU layers. For choosing easing, duration, or whether to animate at all use animate; for reviewing motion as a whole use review-animations.",
+    "path": "skills/animation-performance/SKILL.md",
+    "relative_directory": "skills/animation-performance",
+    "sha256": "ceb9dd3fe912615830f725a0120ccf8d012d15a6218001a5cd6c15d38e39a957",
+    "linked_local_files": []
   },
   {
     "source_repo": "emilkowalski/skills",
@@ -15384,6 +15977,68 @@
       "plugins/narrow-react-prop-types/skills/narrow-react-prop-types/references/agent-narrow-component-props.yml",
       "plugins/narrow-react-prop-types/skills/narrow-react-prop-types/references/narrow-component-props-memory.md",
       "plugins/narrow-react-prop-types/skills/narrow-react-prop-types/references/response-template.md"
+    ]
+  },
+  {
+    "source_repo": "humanlayer/skills",
+    "repo_key": "humanlayer__skills",
+    "skill_name": "rpi",
+    "description": "Only use when the user explicitly invokes this skill by name.",
+    "path": "plugins/rpi/skills/rpi/SKILL.md",
+    "relative_directory": "plugins/rpi/skills/rpi",
+    "sha256": "309bed87e4c4ac88d59cca3f27ca44cf152ebf4cd4342e0095f3d72b5cb1188f",
+    "linked_local_files": [
+      "plugins/rpi/skills/rpi/references/create-design-discussion/process.md",
+      "plugins/rpi/skills/rpi/references/create-design-discussion/references/design_discussion_final_answer.md",
+      "plugins/rpi/skills/rpi/references/create-design-discussion/references/design_discussion_final_answer_resolved.md",
+      "plugins/rpi/skills/rpi/references/create-design-discussion/references/design_discussion_template.md",
+      "plugins/rpi/skills/rpi/references/create-prd/process.md",
+      "plugins/rpi/skills/rpi/references/create-prd/references/prd_final_answer_resolved.md",
+      "plugins/rpi/skills/rpi/references/create-prd/references/prd_template.md",
+      "plugins/rpi/skills/rpi/references/create-research-questions/process.md",
+      "plugins/rpi/skills/rpi/references/create-research-questions/references/request_template.md",
+      "plugins/rpi/skills/rpi/references/create-research-questions/references/research_questions_final_answer.md",
+      "plugins/rpi/skills/rpi/references/create-research-questions/references/research_questions_template.md",
+      "plugins/rpi/skills/rpi/references/create-research/process.md",
+      "plugins/rpi/skills/rpi/references/create-research/references/research_final_answer.md",
+      "plugins/rpi/skills/rpi/references/create-research/references/research_template.md",
+      "plugins/rpi/skills/rpi/references/create-structure-outline/process.md",
+      "plugins/rpi/skills/rpi/references/create-structure-outline/references/structure_outline_final_answer.md",
+      "plugins/rpi/skills/rpi/references/create-structure-outline/references/structure_outline_template.md",
+      "plugins/rpi/skills/rpi/references/create-tdd/process.md",
+      "plugins/rpi/skills/rpi/references/create-tdd/references/tdd_final_answer_resolved.md",
+      "plugins/rpi/skills/rpi/references/create-tdd/references/tdd_template.md",
+      "plugins/rpi/skills/rpi/references/implement-outline/process.md",
+      "plugins/rpi/skills/rpi/references/implement-outline/references/implement_outline_final_answer.md",
+      "plugins/rpi/skills/rpi/references/iterate-design-discussion/process.md",
+      "plugins/rpi/skills/rpi/references/iterate-design-discussion/references/design_discussion_final_answer.md",
+      "plugins/rpi/skills/rpi/references/iterate-design-discussion/references/design_discussion_final_answer_resolved.md",
+      "plugins/rpi/skills/rpi/references/iterate-design-discussion/references/design_discussion_template.md",
+      "plugins/rpi/skills/rpi/references/iterate-implementation/process.md",
+      "plugins/rpi/skills/rpi/references/iterate-implementation/references/iterate_implementation_final_answer.md",
+      "plugins/rpi/skills/rpi/references/iterate-prd/process.md",
+      "plugins/rpi/skills/rpi/references/iterate-prd/references/prd_final_answer_resolved.md",
+      "plugins/rpi/skills/rpi/references/iterate-prd/references/prd_template.md",
+      "plugins/rpi/skills/rpi/references/iterate-research-questions/process.md",
+      "plugins/rpi/skills/rpi/references/iterate-research-questions/references/research_questions_final_answer.md",
+      "plugins/rpi/skills/rpi/references/iterate-research-questions/references/research_questions_template.md",
+      "plugins/rpi/skills/rpi/references/iterate-research/process.md",
+      "plugins/rpi/skills/rpi/references/iterate-research/references/research_final_answer.md",
+      "plugins/rpi/skills/rpi/references/iterate-research/references/research_template.md",
+      "plugins/rpi/skills/rpi/references/iterate-structure-outline/process.md",
+      "plugins/rpi/skills/rpi/references/iterate-structure-outline/references/structure_outline_final_answer.md",
+      "plugins/rpi/skills/rpi/references/iterate-structure-outline/references/structure_outline_template.md",
+      "plugins/rpi/skills/rpi/references/iterate-tdd/process.md",
+      "plugins/rpi/skills/rpi/references/iterate-tdd/references/tdd_final_answer_resolved.md",
+      "plugins/rpi/skills/rpi/references/iterate-tdd/references/tdd_template.md",
+      "plugins/rpi/skills/rpi/references/show-me.md",
+      "plugins/rpi/skills/rpi/references/subagents/codebase-analyzer.md",
+      "plugins/rpi/skills/rpi/references/subagents/codebase-locator.md",
+      "plugins/rpi/skills/rpi/references/subagents/codebase-pattern-finder.md",
+      "plugins/rpi/skills/rpi/references/subagents/outline-implementer-agent.md",
+      "plugins/rpi/skills/rpi/references/subagents/web-search-researcher.md",
+      "plugins/rpi/skills/rpi/references/workflow-choice.md",
+      "plugins/rpi/skills/rpi/references/workflow.md"
     ]
   },
   {

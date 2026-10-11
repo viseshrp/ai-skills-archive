@@ -76,6 +76,9 @@ BARE_FILE_TOKEN_RE = re.compile(
 DIRECTORY_GLOB_TOKEN_RE = re.compile(
     r"(?P<path>(?:\.\.?/)?(?:[A-Za-z0-9._-]+/)+\*+(?:/\*+)*)"
 )
+SKILL_BASE_TOKEN_RE = re.compile(
+    r"\$(?:SKILLBASE|\{SKILLBASE\})/(?P<path>[^\s\140'\"()]+)"
+)
 MD_LINK_RE = re.compile(r"\[[^\]]+\]\((?P<link>[^)]+)\)")
 NAME_RE = re.compile(r"^name:\s*[\"']?(.*?)[\"']?\s*$", re.MULTILINE)
 DESC_RE = re.compile(r"^description:\s*[\"']?(.*?)[\"']?\s*$", re.MULTILINE)
@@ -342,12 +345,68 @@ def expand_local_directory_glob(
     return sorted(expanded)
 
 
-def extract_local_file_refs(path: Path, repo_root: Path) -> list[Path]:
+def extract_skill_base_refs(
+    path: Path, repo_root: Path, skill_root: Path
+) -> list[Path]:
     content = read_text_if_possible(path)
     if content is None:
         return []
 
+    repo_root = repo_root.resolve()
+    skill_root = skill_root.resolve()
     found: set[Path] = set()
+    for match in SKILL_BASE_TOKEN_RE.finditer(content):
+        candidate = normalize_reference(match.group("path"))
+        resolved = resolve_local_reference(
+            skill_root / "SKILL.md", repo_root, candidate
+        )
+        if resolved is not None:
+            found.add(resolved)
+            continue
+
+        # Source-declared placeholders name a bounded set of local companions.
+        pattern = re.sub(r"<[A-Za-z][A-Za-z0-9_-]*>", "*", candidate)
+        pattern = re.sub(r"(?<=/)[A-Z][A-Z0-9_]+(?=\.[A-Za-z0-9]+$)", "*", pattern)
+        if not pattern or Path(pattern).is_absolute() or "*" not in pattern:
+            continue
+        prefix_parts: list[str] = []
+        for part in Path(pattern).parts:
+            if "*" in part:
+                break
+            prefix_parts.append(part)
+        prefix = (skill_root / Path(*prefix_parts)).resolve()
+        try:
+            prefix.relative_to(repo_root)
+        except ValueError:
+            continue
+        if ".git" in prefix.parts:
+            continue
+
+        for matched in skill_root.glob(pattern):
+            paths = matched.rglob("*") if matched.is_dir() else [matched]
+            for target in paths:
+                if not target.is_file() or target.is_symlink():
+                    continue
+                resolved = target.resolve()
+                try:
+                    resolved.relative_to(repo_root)
+                except ValueError:
+                    continue
+                if ".git" not in resolved.parts:
+                    found.add(resolved)
+    return sorted(found)
+
+
+def extract_local_file_refs(
+    path: Path, repo_root: Path, skill_root: Path | None = None
+) -> list[Path]:
+    content = read_text_if_possible(path)
+    if content is None:
+        return []
+
+    found: set[Path] = set(
+        extract_skill_base_refs(path, repo_root, skill_root or path.parent)
+    )
     for match in MD_LINK_RE.finditer(content):
         resolved = resolve_local_reference(path, repo_root, match.group("link"))
         if resolved is not None:
@@ -384,7 +443,9 @@ def collect_related_files(start_path: Path, repo_root: Path) -> list[str]:
         if current in visited_text_files:
             continue
         visited_text_files.add(current)
-        for linked_path in extract_local_file_refs(current, repo_root):
+        for linked_path in extract_local_file_refs(
+            current, repo_root, start_path.parent
+        ):
             if linked_path == start_path:
                 continue
             if linked_path not in related_files:

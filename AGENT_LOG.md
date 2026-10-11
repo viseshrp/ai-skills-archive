@@ -865,3 +865,35 @@
 - Restored only this run's archive, catalog, and README outputs to the preflight baseline `19dc2526e9c5a0e1900f55dcae69e008c2dc9cf3`; removed only this run's newly generated snapshot files. No source code or curated adaptation was changed.
 - Final publication scope: append-only `AGENT_LOG.md` diagnostics only. The archived source data remains at the previous verified baseline; no incomplete source refresh will be pushed.
 - Required next step: approve adding the resolver fix and regression tests to the refresh scope, then regenerate and revalidate the complete archive before publication.
+
+## 2026-10-11 21:34:58Z
+
+- Action: Repair SKILLBASE companion closure and complete weekly refresh
+- Sources synced: 16
+- Skills indexed: 1335
+- Exact duplicate groups: 138
+- Repeated skill names: 284
+- Synced `addyosmani__agent-skills` at commit `1be8e34187e3` with 25 skills and 38 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `d1e51716e53f` with 5 skills and 684 files.
+- Synced `mattpocock__skills` at commit `49dd158d1076` with 38 skills and 63 files.
+- Synced `juliusbrussee__caveman` at commit `2e08b9177c07` with 28 skills and 44 files.
+- Synced `obra__Superpowers` at commit `bb92a7774141` with 15 skills and 60 files.
+- Synced `cursor__plugins` at commit `11713c683fe4` with 108 skills and 234 files.
+- Synced `affaan-m__ECC` at commit `d4a44ded8c15` with 1062 skills and 1289 files.
+- Synced `mvanhorn__last30days-skill` at commit `50998cd1ba58` with 1 skills and 150 files.
+- Synced `DietrichGebert__ponytail` at commit `9b58c1ffb790` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `000650b15698` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `1ecea1993b7f` with 2 skills and 2 files.
+- Synced `Leonxlnx__taste-skill` at commit `717446e07a78` with 13 skills and 14 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+- Synced `emilkowalski__skills` at commit `2d228630ba14` with 15 skills and 23 files.
+- Synced `humanlayer__skills` at commit `653b6411c1f7` with 7 skills and 82 files.
+
+## 2026-10-11 21:37:02Z
+
+- Completed the previously blocked weekly refresh after explicit repair and publication authorization.
+- Added SKILLBASE literal, braced, glob, and placeholder reference resolution with 11 regression tests; escaping paths and Git metadata remain excluded.
+- Independent package check proved all 52 HumanLayer rpi files are present with exact upstream bytes, including all 51 previously missing companions.
+- Full validation passed: 16 sources, 1,335 skills, 2,699 snapshot Git blobs, 2,671 text hashes, 2,574 linked references, directory-glob closure, licenses, duplicate recomputation, generated README, unchanged curated content and registries, append-only log, and whitespace. No source fetch failures occurred.
+- Catalog adds 42 skill paths and revises 98 existing skills; exact duplicate groups are 138 and repeated-name groups are 284.
