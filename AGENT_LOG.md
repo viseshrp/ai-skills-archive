@@ -792,3 +792,76 @@
 - Source/skill delta: 15 -> 16 sources, 1,287 -> 1,293 skills, and 2,505 -> 2,535 snapshot files. Existing skill records and snapshot contents are unchanged. The canonical sync advanced Ponytail's upstream commit metadata from `c982cd411abb` to `be934f9ed781` without changing its retained skill or license content. Source fetch failures: none.
 - Duplicate review: exact groups remain 129 and repeated-name groups remain 273; no existing duplicate or source material was removed.
 - Validation passed for all 2,535 retained files against upstream bytes, 2,513 text hashes, recursive closure and 2,356 linked references, all three preserved licenses, source metadata, duplicate recomputation, generated README and local links, append-only log history, and whitespace. The workflow will reference the published archive copy of `show-me` rather than its upstream URL.
+
+## 2026-10-11 19:03:09Z
+
+- Action: Weekly automation refresh cache recovery.
+- Source fetch failure: `addyosmani__agent-skills`; `git fetch --depth 1 origin` exited 128. The disposable clone lacked `.git/HEAD` and `.git/config`; `git rev-parse --is-inside-work-tree` confirmed `fatal: not a git repository`.
+- Preserved the malformed cache at `/private/var/folders/5p/_dj0hq2x1zngsn49qlgvxdy80000gn/T/ai-skills-archive-sync.corrupt-2026-10-11T190309Z` and restarted the canonical sync from fresh clones.
+
+## 2026-10-11 19:03:54Z
+
+- Action: Weekly automation refresh
+- Sources synced: 16
+- Skills indexed: 1335
+- Exact duplicate groups: 138
+- Repeated skill names: 284
+- Synced `addyosmani__agent-skills` at commit `1be8e34187e3` with 25 skills and 38 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `d1e51716e53f` with 5 skills and 684 files.
+- Synced `mattpocock__skills` at commit `49dd158d1076` with 38 skills and 63 files.
+- Synced `juliusbrussee__caveman` at commit `2e08b9177c07` with 28 skills and 44 files.
+- Synced `obra__Superpowers` at commit `bb92a7774141` with 15 skills and 60 files.
+- Synced `cursor__plugins` at commit `11713c683fe4` with 108 skills and 234 files.
+- Synced `affaan-m__ECC` at commit `d4a44ded8c15` with 1062 skills and 1289 files.
+- Synced `mvanhorn__last30days-skill` at commit `71716263b9c3` with 1 skills and 150 files.
+- Synced `DietrichGebert__ponytail` at commit `9b58c1ffb790` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `000650b15698` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `1ecea1993b7f` with 2 skills and 2 files.
+- Synced `Leonxlnx__taste-skill` at commit `717446e07a78` with 13 skills and 14 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+- Synced `emilkowalski__skills` at commit `2d228630ba14` with 15 skills and 23 files.
+- Synced `humanlayer__skills` at commit `653b6411c1f7` with 7 skills and 31 files.
+
+## 2026-10-11 19:17:12Z
+
+- Action: Weekly automation refresh content review; publication held for a linked-resource coverage defect.
+- Refresh candidate: 1293 -> 1335 indexed skills; 42 paths added, none removed, and 98 existing skill hashes changed. Snapshots: 2535 -> 2648 files (113 added, 188 modified, none removed).
+- Source commits advanced for 13 of 16 registered sources. The Taste commit advanced without retained-content changes; multica-ai, no-ai-slop, and ChewingGlass commits were unchanged.
+
+| Source | Previous commit | Refreshed commit | Skills | Snapshot files |
+| --- | --- | --- | --- | --- |
+| `addyosmani__agent-skills` | `1401c8b8030e` | `1be8e34187e3` | 25 -> 25 | 38 -> 38 |
+| `Imbad0202__academic-research-skills` | `6ab4b03bf70a` | `d1e51716e53f` | 5 -> 5 | 684 -> 684 |
+| `mattpocock__skills` | `24fe0ef7737e` | `49dd158d1076` | 37 -> 38 | 62 -> 63 |
+| `juliusbrussee__caveman` | `6571943370f7` | `2e08b9177c07` | 28 -> 28 | 44 -> 44 |
+| `obra__Superpowers` | `8ca22dba9a94` | `bb92a7774141` | 15 -> 15 | 53 -> 60 |
+| `cursor__plugins` | `e43c7ee26e00` | `11713c683fe4` | 104 -> 108 | 206 -> 234 |
+| `affaan-m__ECC` | `ef648e01899b` | `d4a44ded8c15` | 1027 -> 1062 | 1236 -> 1289 |
+| `mvanhorn__last30days-skill` | `5103ba478b38` | `71716263b9c3` | 1 -> 1 | 128 -> 150 |
+| `DietrichGebert__ponytail` | `be934f9ed781` | `9b58c1ffb790` | 12 -> 12 | 12 -> 12 |
+| `ayghri__i-have-adhd` | `839872f9d1cd` | `1ecea1993b7f` | 2 -> 2 | 2 -> 2 |
+| `Leonxlnx__taste-skill` | `ce26fc25c0e5` | `717446e07a78` | 13 -> 13 | 14 -> 14 |
+| `emilkowalski__skills` | `e8a175de22ae` | `2d228630ba14` | 14 -> 15 | 22 -> 23 |
+| `humanlayer__skills` | `ca7c8088db69` | `653b6411c1f7` | 6 -> 7 | 30 -> 31 |
+
+- Added skill names by source (mirror paths are counted separately above):
+  - `affaan-m__ECC`: `agent-runtime-gateway-smoke-test`, `agent-security-hardening`, `bengali-nlp`, `brownfield-retrospective`, `change-impact`, `context-and-decisions`, `conventional-commit-review`, `deepseek-harness-setup`, `docs-governance`, `mcp-dependency-review`, `module-regression`, `mybatis-patterns`, `osint-investigation`, `prompt-caching-strategy`, `skill-host-compat`, `story-lifecycle`, `test-collaboration`, `token-card`.
+  - `cursor__plugins`: `ketchup`, `origin-api`, `port-github-app-to-origin`, `poteto-help`.
+  - `emilkowalski__skills`: `animation-performance`.
+  - `humanlayer__skills`: `rpi`.
+  - `mattpocock__skills`: `chief-of-staff`.
+- Duplicate review: exact groups 129 -> 138, with nine new ECC mirror memberships and nine existing groups receiving new hashes; no exact-group membership was removed. Repeated-name groups 273 -> 284, with eleven new repeated names and 27 existing groups receiving updated entries.
+- Recognized-reference integrity checks passed for all 16 clones, 2,648 snapshot Git blobs, 2,620 text hashes, 1,335 skill records, 2,523 linked references, three licenses, generated README/local links, duplicate recomputation, append-only log behavior, automation/source registry preservation, compilation, whitespace, and changed-path scope.
+- Comprehensive coverage check failed: the new HumanLayer `plugins/rpi/skills/rpi/SKILL.md` uses `$SKILLBASE` references and source-declared step/subagent placeholders. The canonical resolver retained the skill but omitted all 51 local companion files. The incomplete refresh must not be published.
+- Prepared a resolver fix and 11 passing regression tests outside the checkout. Read-only comparison across all current skills confirms that only `rpi` gains references and that the proposed fix preserves its complete 52-file package. `git apply --check` passed.
+- Proposed patch and validation evidence: `/Users/viseshprasad/.codex/automations/weekly-ai-skills-refresh/artifacts/2026-10-11T190309Z`.
+- Requested explicit scope approval because the publication policy restricts staged changes to archive, catalog, README, and agent-log files; the proposed repair additionally changes `scripts/sync_sources.py` and adds `scripts/test_sync_sources.py`.
+
+## 2026-10-11 19:18:44Z
+
+- Action: Withheld the incomplete weekly refresh pending explicit approval to repair the resolver.
+- Preserved the generated candidate as `/Users/viseshprasad/.codex/automations/weekly-ai-skills-refresh/artifacts/2026-10-11T190309Z/unpublished-refresh.tar.gz` and the proposed resolver patch plus validation evidence beside it.
+- Restored only this run's archive, catalog, and README outputs to the preflight baseline `19dc2526e9c5a0e1900f55dcae69e008c2dc9cf3`; removed only this run's newly generated snapshot files. No source code or curated adaptation was changed.
+- Final publication scope: append-only `AGENT_LOG.md` diagnostics only. The archived source data remains at the previous verified baseline; no incomplete source refresh will be pushed.
+- Required next step: approve adding the resolver fix and regression tests to the refresh scope, then regenerate and revalidate the complete archive before publication.
