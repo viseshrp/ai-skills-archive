@@ -897,3 +897,85 @@
 - Independent package check proved all 52 HumanLayer rpi files are present with exact upstream bytes, including all 51 previously missing companions.
 - Full validation passed: 16 sources, 1,335 skills, 2,699 snapshot Git blobs, 2,671 text hashes, 2,574 linked references, directory-glob closure, licenses, duplicate recomputation, generated README, unchanged curated content and registries, append-only log, and whitespace. No source fetch failures occurred.
 - Catalog adds 42 skill paths and revises 98 existing skills; exact duplicate groups are 138 and repeated-name groups are 284.
+
+## 2026-10-18 18:59:23Z
+
+- Action: Weekly automation refresh
+- Sources synced: 16
+- Skills indexed: 1395
+- Exact duplicate groups: 172
+- Repeated skill names: 337
+- Synced `addyosmani__agent-skills` at commit `aeac41d4d005` with 25 skills and 38 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `cfd081d8f309` with 5 skills and 684 files.
+- Synced `mattpocock__skills` at commit `49dd158d1076` with 38 skills and 63 files.
+- Synced `juliusbrussee__caveman` at commit `bad48a0e1df5` with 28 skills and 48 files.
+- Synced `obra__Superpowers` at commit `bb92a7774141` with 15 skills and 60 files.
+- Synced `cursor__plugins` at commit `0b8e952052d4` with 167 skills and 369 files.
+- Synced `affaan-m__ECC` at commit `76aaa77df6ad` with 1062 skills and 1289 files.
+- Synced `mvanhorn__last30days-skill` at commit `0341304f8ecb` with 1 skills and 150 files.
+- Synced `DietrichGebert__ponytail` at commit `09c434ab73ca` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `000650b15698` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `1ecea1993b7f` with 2 skills and 2 files.
+- Synced `Leonxlnx__taste-skill` at commit `f624f37a8c65` with 14 skills and 33 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+- Synced `emilkowalski__skills` at commit `2d228630ba14` with 15 skills and 23 files.
+- Synced `humanlayer__skills` at commit `653b6411c1f7` with 7 skills and 82 files.
+
+## 2026-10-18 19:16:05Z
+
+- Action: Diagnose recoverable cache and companion-coverage failures before publishing the weekly refresh.
+- Initial canonical sync failed on `addyosmani__agent-skills`: `git fetch --depth 1 origin` exited 128. One diagnostic retry returned `fatal: not a git repository`; the disposable cache lacked `.git/HEAD` and `.git/config`. The upstream HEAD remained reachable. Preserved the cache at `/var/folders/5p/_dj0hq2x1zngsn49qlgvxdy80000gn/T/ai-skills-archive-sync.corrupt-2026-10-18T185903Z` and completed all 16 source fetches from fresh clones; no unresolved source-access failure remained.
+- Withheld the first regenerated candidate after independent review found eight missing Taste library JSON files, Cursor example directories and package-relative runtime helpers, and Caveman Python module companions. Seven sanitized regression failures reproduced the missing-reference forms before the repair.
+- Repaired only `scripts/sync_sources.py` and `scripts/test_sync_sources.py`: preserve literal JS/Bun module-relative data and lockfiles, package-local directory links/declarations, helper paths in linked guides, recursive globs, and imports from extensionless shebang scripts. No archived code was executed.
+- Rejected overly broad resolver candidates during read-only scope comparison. Regression cases now prevent reanchoring parent-relative paths, generic project inventories, source-root configuration examples, and links to sibling application trees. Superseded read-only probes were stopped; none of their proposed broad snapshots was generated or published.
+- All 28 regression tests pass. Source-wide impact review adds 264 declared companion files to the initial candidate and removes none: `addyosmani__agent-skills` +1; `Imbad0202__academic-research-skills` +128; `juliusbrussee__caveman` +10; `obra__Superpowers` +14; `cursor__plugins` +36; `affaan-m__ECC` +67; `Leonxlnx__taste-skill` +8. The HumanLayer rpi package remains complete at 52 files. The repaired candidate will be rebuilt and fully validated before the focused main-branch commit.
+
+## 2026-10-18 19:16:25Z
+
+- Action: Weekly automation refresh
+- Sources synced: 16
+- Skills indexed: 1395
+- Exact duplicate groups: 172
+- Repeated skill names: 337
+- Synced `addyosmani__agent-skills` at commit `aeac41d4d005` with 25 skills and 39 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `cfd081d8f309` with 5 skills and 812 files.
+- Synced `mattpocock__skills` at commit `49dd158d1076` with 38 skills and 63 files.
+- Synced `juliusbrussee__caveman` at commit `bad48a0e1df5` with 28 skills and 58 files.
+- Synced `obra__Superpowers` at commit `bb92a7774141` with 15 skills and 74 files.
+- Synced `cursor__plugins` at commit `0b8e952052d4` with 167 skills and 405 files.
+- Synced `affaan-m__ECC` at commit `76aaa77df6ad` with 1062 skills and 1356 files.
+- Synced `mvanhorn__last30days-skill` at commit `0341304f8ecb` with 1 skills and 150 files.
+- Synced `DietrichGebert__ponytail` at commit `09c434ab73ca` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `000650b15698` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `1ecea1993b7f` with 2 skills and 2 files.
+- Synced `Leonxlnx__taste-skill` at commit `f624f37a8c65` with 14 skills and 41 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+- Synced `emilkowalski__skills` at commit `2d228630ba14` with 15 skills and 23 files.
+- Synced `humanlayer__skills` at commit `653b6411c1f7` with 7 skills and 82 files.
+
+## 2026-10-18 19:18:08Z
+
+- Action: Validate the complete repaired weekly refresh for direct publication on main.
+- Validation passed against all 16 fetched source commits: 3,121 exact Git blobs and executable modes, 3,082 retained text hashes, 3,333 linked references, recursive closure, three license files, catalog metadata, duplicate recomputation, generated README/local links, path/symlink containment, unchanged curated content and registries, append-only log behavior, compilation, and whitespace.
+- All 28 regression tests pass. Independent coverage checks confirm the full 52-file HumanLayer rpi package, all eight Taste library JSON files, both seven-file Caveman compression modules, both three-file Cursor feature-map example directories, and both Cursor runtime helper/import/manifest/lockfile chains.
+- Catalog: 1,335 -> 1,395 skills; 60 paths added, none removed, and 54 existing skill hashes changed. Snapshots: 2,699 -> 3,121 files; 422 added, none removed, and 166 modified. The resolver repair accounts for 264 of the added companions; upstream changes account for the other 158.
+- Duplicates: 138 -> 172 exact groups, comprising 34 new Cursor mirror memberships and one existing Caveman compression hash rotation; no exact membership was removed. Repeated-name groups: 284 -> 337, with 53 new names and none removed.
+
+| Source | Previous commit | Current commit | Skills | Snapshot files |
+| --- | --- | --- | --- | --- |
+| `addyosmani__agent-skills` | `1be8e34187e3` | `aeac41d4d005` | 25 -> 25 | 38 -> 39 |
+| `Imbad0202__academic-research-skills` | `d1e51716e53f` | `cfd081d8f309` | 5 -> 5 | 684 -> 812 |
+| `juliusbrussee__caveman` | `2e08b9177c07` | `bad48a0e1df5` | 28 -> 28 | 44 -> 58 |
+| `obra__Superpowers` | `bb92a7774141` | `bb92a7774141` | 15 -> 15 | 60 -> 74 |
+| `cursor__plugins` | `11713c683fe4` | `0b8e952052d4` | 108 -> 167 | 234 -> 405 |
+| `affaan-m__ECC` | `d4a44ded8c15` | `76aaa77df6ad` | 1062 -> 1062 | 1289 -> 1356 |
+| `mvanhorn__last30days-skill` | `50998cd1ba58` | `0341304f8ecb` | 1 -> 1 | 150 -> 150 |
+| `DietrichGebert__ponytail` | `9b58c1ffb790` | `09c434ab73ca` | 12 -> 12 | 12 -> 12 |
+| `Leonxlnx__taste-skill` | `717446e07a78` | `f624f37a8c65` | 13 -> 14 | 14 -> 41 |
+
+- Eight upstream source commits advanced. Superpowers retains 14 additional declared companions at its unchanged upstream commit; the remaining seven source commits and retained snapshots are unchanged.
+- Cursor adds 55 Claude Code harness skill paths, `create-formal-verification-skill`, `in-your-own-words`, `sharpen`, and `tailscale-setup`. Taste adds `design-taste-frontend-v2-experimental`; its existing frontend skill now carries the v2 direction library, inspection scripts, references, and assets.
+- Other retained updates include academic-research-skills v3.23.1 write-scope/CSV repairs plus recursively linked examples and templates; Addy Osmani idea-refinement/performance guidance and its declared helper; Caveman compression disclosures and module helpers; last30days search/rendering fixes; Ponytail debt-scan/toggle guidance; and restored ECC helper scripts/modules. Archived code was not executed.
+- Reviewed the complete owned diff through upstream-object parity, generated-output recomputation, source/skill/duplicate deltas, and the authored resolver/test changes. No source-access failure or incomplete required package remains. Publication scope is archive snapshots/metadata, three generated catalogs, README, this append-only log, and the two authorized resolver/test files.

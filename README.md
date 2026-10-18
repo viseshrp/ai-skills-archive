@@ -28,52 +28,52 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 ## Source Repositories and Gists
 
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
-  - Archived commit: `1be8e34187e34647bb83adc3a1323b26ae6f6abe`
+  - Archived commit: `aeac41d4d005999432bb7312f7ff06383a91d59d`
   - Snapshot: [`archives/addyosmani__agent-skills/snapshot`](archives/addyosmani__agent-skills/snapshot)
   - Skills discovered: 25
-  - Files retained in reduced snapshot: 38
+  - Files retained in reduced snapshot: 39
 - [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
   - Archived commit: `2c606141936f1eeef17fa3043a72095b4765b9c2`
   - Snapshot: [`archives/multica-ai__andrej-karpathy-skills/snapshot`](archives/multica-ai__andrej-karpathy-skills/snapshot)
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
-  - Archived commit: `d1e51716e53fc371727ea6164dd709fc8ea28c97`
+  - Archived commit: `cfd081d8f309ec65254d9f9f04c845ee78b1ec1d`
   - Snapshot: [`archives/Imbad0202__academic-research-skills/snapshot`](archives/Imbad0202__academic-research-skills/snapshot)
   - Skills discovered: 5
-  - Files retained in reduced snapshot: 684
+  - Files retained in reduced snapshot: 812
 - [mattpocock/skills](https://github.com/mattpocock/skills)
   - Archived commit: `49dd158d1076134a641b33efb035946536778336`
   - Snapshot: [`archives/mattpocock__skills/snapshot`](archives/mattpocock__skills/snapshot)
   - Skills discovered: 38
   - Files retained in reduced snapshot: 63
 - [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman)
-  - Archived commit: `2e08b9177c07bb7249a8a2d1a6758e5db281d002`
+  - Archived commit: `bad48a0e1df55e05e3f52249afa35ecc1909ee76`
   - Snapshot: [`archives/juliusbrussee__caveman/snapshot`](archives/juliusbrussee__caveman/snapshot)
   - Skills discovered: 28
-  - Files retained in reduced snapshot: 44
+  - Files retained in reduced snapshot: 58
 - [obra/Superpowers](https://github.com/obra/Superpowers)
   - Archived commit: `bb92a77741419a4ab5f06e711a283343f1ada0c3`
   - Snapshot: [`archives/obra__Superpowers/snapshot`](archives/obra__Superpowers/snapshot)
   - Skills discovered: 15
-  - Files retained in reduced snapshot: 60
+  - Files retained in reduced snapshot: 74
 - [cursor/plugins](https://github.com/cursor/plugins)
-  - Archived commit: `11713c683fe4add4fd403ea880580abbc9e0875f`
+  - Archived commit: `0b8e952052d482ee6de06deebf14d590d77b1b34`
   - Snapshot: [`archives/cursor__plugins/snapshot`](archives/cursor__plugins/snapshot)
-  - Skills discovered: 108
-  - Files retained in reduced snapshot: 234
+  - Skills discovered: 167
+  - Files retained in reduced snapshot: 405
 - [affaan-m/ECC](https://github.com/affaan-m/ECC)
-  - Archived commit: `d4a44ded8c150aac89b37c1f665b5a749fe52b02`
+  - Archived commit: `76aaa77df6adc5b889e689007bf99b9a4f74af34`
   - Snapshot: [`archives/affaan-m__ECC/snapshot`](archives/affaan-m__ECC/snapshot)
   - Skills discovered: 1062
-  - Files retained in reduced snapshot: 1289
+  - Files retained in reduced snapshot: 1356
 - [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
-  - Archived commit: `50998cd1ba583f13a63b20e3fb5d906c71c31655`
+  - Archived commit: `0341304f8ecb307ca0a939e48ecd002761ef23b2`
   - Snapshot: [`archives/mvanhorn__last30days-skill/snapshot`](archives/mvanhorn__last30days-skill/snapshot)
   - Skills discovered: 1
   - Files retained in reduced snapshot: 150
 - [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
-  - Archived commit: `9b58c1ffb790c075ca32e70a89cf1d80588f4abf`
+  - Archived commit: `09c434ab73ca43761c5d8b0c5d341926c2fba710`
   - Snapshot: [`archives/DietrichGebert__ponytail/snapshot`](archives/DietrichGebert__ponytail/snapshot)
   - Skills discovered: 12
   - Files retained in reduced snapshot: 12
@@ -89,10 +89,10 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 2
   - Files retained in reduced snapshot: 2
 - [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill)
-  - Archived commit: `717446e07a78d4e6d7918b1fde1a263378eebac9`
+  - Archived commit: `f624f37a8c650b9cc550253104925efe4c8de246`
   - Snapshot: [`archives/Leonxlnx__taste-skill/snapshot`](archives/Leonxlnx__taste-skill/snapshot)
-  - Skills discovered: 13
-  - Files retained in reduced snapshot: 14
+  - Skills discovered: 14
+  - Files retained in reduced snapshot: 41
 - [ChewingGlass/9a380da5d5a69a540b56d6449556ac5b](https://gist.github.com/ChewingGlass/9a380da5d5a69a540b56d6449556ac5b)
   - Archived commit: `daad13e3446186762f0e248e0696ed99c32e5939`
   - Snapshot: [`archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot`](archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot)
@@ -286,6 +286,61 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `add-read-aloud`: [`grok-voice/skills/add-read-aloud/SKILL.md`](archives/cursor__plugins/snapshot/grok-voice/skills/add-read-aloud/SKILL.md)
 - `add-voice`: [`grok-voice/skills/add-voice/SKILL.md`](archives/cursor__plugins/snapshot/grok-voice/skills/add-voice/SKILL.md)
 - `debug-voice`: [`grok-voice/skills/debug-voice/SKILL.md`](archives/cursor__plugins/snapshot/grok-voice/skills/debug-voice/SKILL.md)
+- `architect`: [`harness/pstack/claude-code/skills/architect/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/architect/SKILL.md)
+- `arena`: [`harness/pstack/claude-code/skills/arena/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/arena/SKILL.md)
+- `automate-me`: [`harness/pstack/claude-code/skills/automate-me/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/automate-me/SKILL.md)
+- `benchmark-checklist`: [`harness/pstack/claude-code/skills/benchmark-checklist/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/benchmark-checklist/SKILL.md)
+- `blast-radius`: [`harness/pstack/claude-code/skills/blast-radius/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/blast-radius/SKILL.md)
+- `bro`: [`harness/pstack/claude-code/skills/bro/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/bro/SKILL.md)
+- `correct`: [`harness/pstack/claude-code/skills/correct/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/correct/SKILL.md)
+- `create-formal-verification-skill`: [`harness/pstack/claude-code/skills/create-formal-verification-skill/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/create-formal-verification-skill/SKILL.md)
+- `create-verification-skill`: [`harness/pstack/claude-code/skills/create-verification-skill/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/create-verification-skill/SKILL.md)
+- `figure-it-out`: [`harness/pstack/claude-code/skills/figure-it-out/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/figure-it-out/SKILL.md)
+- `how`: [`harness/pstack/claude-code/skills/how/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/how/SKILL.md)
+- `in-your-own-words`: [`harness/pstack/claude-code/skills/in-your-own-words/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/in-your-own-words/SKILL.md)
+- `interrogate`: [`harness/pstack/claude-code/skills/interrogate/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/interrogate/SKILL.md)
+- `ketchup`: [`harness/pstack/claude-code/skills/ketchup/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/ketchup/SKILL.md)
+- `maintain-verification-skill`: [`harness/pstack/claude-code/skills/maintain-verification-skill/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/maintain-verification-skill/SKILL.md)
+- `make-bot-ui`: [`harness/pstack/claude-code/skills/make-bot-ui/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/make-bot-ui/SKILL.md)
+- `no-comments`: [`harness/pstack/claude-code/skills/no-comments/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/no-comments/SKILL.md)
+- `poteto-help`: [`harness/pstack/claude-code/skills/poteto-help/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/poteto-help/SKILL.md)
+- `poteto-mode`: [`harness/pstack/claude-code/skills/poteto-mode/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/poteto-mode/SKILL.md)
+- `principle-attack-the-premise`: [`harness/pstack/claude-code/skills/principle-attack-the-premise/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-attack-the-premise/SKILL.md)
+- `principle-boundary-discipline`: [`harness/pstack/claude-code/skills/principle-boundary-discipline/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-boundary-discipline/SKILL.md)
+- `principle-build-the-lever`: [`harness/pstack/claude-code/skills/principle-build-the-lever/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-build-the-lever/SKILL.md)
+- `principle-encode-lessons-in-structure`: [`harness/pstack/claude-code/skills/principle-encode-lessons-in-structure/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-encode-lessons-in-structure/SKILL.md)
+- `principle-exhaust-the-design-space`: [`harness/pstack/claude-code/skills/principle-exhaust-the-design-space/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-exhaust-the-design-space/SKILL.md)
+- `principle-experience-first`: [`harness/pstack/claude-code/skills/principle-experience-first/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-experience-first/SKILL.md)
+- `principle-explain-the-number`: [`harness/pstack/claude-code/skills/principle-explain-the-number/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-explain-the-number/SKILL.md)
+- `principle-fix-root-causes`: [`harness/pstack/claude-code/skills/principle-fix-root-causes/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-fix-root-causes/SKILL.md)
+- `principle-foundational-thinking`: [`harness/pstack/claude-code/skills/principle-foundational-thinking/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-foundational-thinking/SKILL.md)
+- `principle-guard-the-context-window`: [`harness/pstack/claude-code/skills/principle-guard-the-context-window/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-guard-the-context-window/SKILL.md)
+- `principle-laziness-protocol`: [`harness/pstack/claude-code/skills/principle-laziness-protocol/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-laziness-protocol/SKILL.md)
+- `principle-make-operations-idempotent`: [`harness/pstack/claude-code/skills/principle-make-operations-idempotent/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-make-operations-idempotent/SKILL.md)
+- `principle-migrate-callers-then-delete-legacy-apis`: [`harness/pstack/claude-code/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md)
+- `principle-minimize-reader-load`: [`harness/pstack/claude-code/skills/principle-minimize-reader-load/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-minimize-reader-load/SKILL.md)
+- `principle-model-the-domain`: [`harness/pstack/claude-code/skills/principle-model-the-domain/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-model-the-domain/SKILL.md)
+- `principle-never-block-on-the-human`: [`harness/pstack/claude-code/skills/principle-never-block-on-the-human/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-never-block-on-the-human/SKILL.md)
+- `principle-outcome-oriented-execution`: [`harness/pstack/claude-code/skills/principle-outcome-oriented-execution/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-outcome-oriented-execution/SKILL.md)
+- `principle-prove-it-works`: [`harness/pstack/claude-code/skills/principle-prove-it-works/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-prove-it-works/SKILL.md)
+- `principle-redesign-from-first-principles`: [`harness/pstack/claude-code/skills/principle-redesign-from-first-principles/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-redesign-from-first-principles/SKILL.md)
+- `principle-separate-before-serializing-shared-state`: [`harness/pstack/claude-code/skills/principle-separate-before-serializing-shared-state/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-separate-before-serializing-shared-state/SKILL.md)
+- `principle-sequence-verifiable-units`: [`harness/pstack/claude-code/skills/principle-sequence-verifiable-units/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-sequence-verifiable-units/SKILL.md)
+- `principle-subtract-before-you-add`: [`harness/pstack/claude-code/skills/principle-subtract-before-you-add/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-subtract-before-you-add/SKILL.md)
+- `principle-test-behavior-not-implementation`: [`harness/pstack/claude-code/skills/principle-test-behavior-not-implementation/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-test-behavior-not-implementation/SKILL.md)
+- `principle-type-system-discipline`: [`harness/pstack/claude-code/skills/principle-type-system-discipline/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/principle-type-system-discipline/SKILL.md)
+- `recall`: [`harness/pstack/claude-code/skills/recall/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/recall/SKILL.md)
+- `reflect`: [`harness/pstack/claude-code/skills/reflect/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/reflect/SKILL.md)
+- `setup-pstack`: [`harness/pstack/claude-code/skills/setup-pstack/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/setup-pstack/SKILL.md)
+- `sharpen`: [`harness/pstack/claude-code/skills/sharpen/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/sharpen/SKILL.md)
+- `show-me-your-work`: [`harness/pstack/claude-code/skills/show-me-your-work/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/show-me-your-work/SKILL.md)
+- `swarm`: [`harness/pstack/claude-code/skills/swarm/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/swarm/SKILL.md)
+- `tdd`: [`harness/pstack/claude-code/skills/tdd/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/tdd/SKILL.md)
+- `teach`: [`harness/pstack/claude-code/skills/teach/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/teach/SKILL.md)
+- `technical-writing`: [`harness/pstack/claude-code/skills/technical-writing/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/technical-writing/SKILL.md)
+- `typescript-best-practices`: [`harness/pstack/claude-code/skills/typescript-best-practices/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/typescript-best-practices/SKILL.md)
+- `unslop`: [`harness/pstack/claude-code/skills/unslop/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/unslop/SKILL.md)
+- `why`: [`harness/pstack/claude-code/skills/why/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/why/SKILL.md)
 - `orchestrate`: [`orchestrate/skills/orchestrate/SKILL.md`](archives/cursor__plugins/snapshot/orchestrate/skills/orchestrate/SKILL.md)
 - `origin-api`: [`origin-apps/skills/origin-api/SKILL.md`](archives/cursor__plugins/snapshot/origin-apps/skills/origin-api/SKILL.md)
 - `port-github-app-to-origin`: [`origin-apps/skills/port-github-app-to-origin/SKILL.md`](archives/cursor__plugins/snapshot/origin-apps/skills/port-github-app-to-origin/SKILL.md)
@@ -300,16 +355,18 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `blast-radius`: [`pstack/skills/blast-radius/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/blast-radius/SKILL.md)
 - `bro`: [`pstack/skills/bro/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/bro/SKILL.md)
 - `correct`: [`pstack/skills/correct/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/correct/SKILL.md)
+- `create-formal-verification-skill`: [`pstack/skills/create-formal-verification-skill/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/create-formal-verification-skill/SKILL.md)
 - `create-verification-skill`: [`pstack/skills/create-verification-skill/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/create-verification-skill/SKILL.md)
 - `figure-it-out`: [`pstack/skills/figure-it-out/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/figure-it-out/SKILL.md)
 - `how`: [`pstack/skills/how/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/how/SKILL.md)
+- `in-your-own-words`: [`pstack/skills/in-your-own-words/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/in-your-own-words/SKILL.md)
 - `interrogate`: [`pstack/skills/interrogate/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/interrogate/SKILL.md)
 - `ketchup`: [`pstack/skills/ketchup/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/ketchup/SKILL.md)
 - `maintain-verification-skill`: [`pstack/skills/maintain-verification-skill/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/maintain-verification-skill/SKILL.md)
-- `Make Bot UI`: [`pstack/skills/make-bot-ui/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/make-bot-ui/SKILL.md)
+- `make-bot-ui`: [`pstack/skills/make-bot-ui/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/make-bot-ui/SKILL.md)
 - `no-comments`: [`pstack/skills/no-comments/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/no-comments/SKILL.md)
 - `poteto-help`: [`pstack/skills/poteto-help/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/poteto-help/SKILL.md)
-- `Poteto Mode`: [`pstack/skills/poteto-mode/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/poteto-mode/SKILL.md)
+- `poteto-mode`: [`pstack/skills/poteto-mode/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/poteto-mode/SKILL.md)
 - `principle-attack-the-premise`: [`pstack/skills/principle-attack-the-premise/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-attack-the-premise/SKILL.md)
 - `principle-boundary-discipline`: [`pstack/skills/principle-boundary-discipline/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-boundary-discipline/SKILL.md)
 - `principle-build-the-lever`: [`pstack/skills/principle-build-the-lever/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/principle-build-the-lever/SKILL.md)
@@ -337,6 +394,7 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `recall`: [`pstack/skills/recall/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/recall/SKILL.md)
 - `reflect`: [`pstack/skills/reflect/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/reflect/SKILL.md)
 - `setup-pstack`: [`pstack/skills/setup-pstack/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/setup-pstack/SKILL.md)
+- `sharpen`: [`pstack/skills/sharpen/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/sharpen/SKILL.md)
 - `show-me-your-work`: [`pstack/skills/show-me-your-work/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/show-me-your-work/SKILL.md)
 - `swarm`: [`pstack/skills/swarm/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/swarm/SKILL.md)
 - `tdd`: [`pstack/skills/tdd/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/tdd/SKILL.md)
@@ -357,6 +415,7 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `google-drive`: [`third_party/google-drive/skills/google-drive/SKILL.md`](archives/cursor__plugins/snapshot/third_party/google-drive/skills/google-drive/SKILL.md)
 - `google-sheets`: [`third_party/google-sheets/skills/google-sheets/SKILL.md`](archives/cursor__plugins/snapshot/third_party/google-sheets/skills/google-sheets/SKILL.md)
 - `google-slides`: [`third_party/google-slides/skills/google-slides/SKILL.md`](archives/cursor__plugins/snapshot/third_party/google-slides/skills/google-slides/SKILL.md)
+- `tailscale-setup`: [`third_party/tailscale/skills/tailscale-setup/SKILL.md`](archives/cursor__plugins/snapshot/third_party/tailscale/skills/tailscale-setup/SKILL.md)
 - `X MCP guide`: [`third_party/x/skills/x-api-mcp-guide/SKILL.md`](archives/cursor__plugins/snapshot/third_party/x/skills/x-api-mcp-guide/SKILL.md)
 - `X Money guide`: [`third_party/x-money/skills/x-money-guide/SKILL.md`](archives/cursor__plugins/snapshot/third_party/x-money/skills/x-money-guide/SKILL.md)
 
@@ -1462,6 +1521,7 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `stitch-design-taste`: [`skills/stitch-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/stitch-skill/SKILL.md)
 - `design-taste-frontend`: [`skills/taste-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/taste-skill/SKILL.md)
 - `design-taste-frontend-v1`: [`skills/taste-skill-v1/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/taste-skill-v1/SKILL.md)
+- `design-taste-frontend-v2-experimental`: [`skills/taste-skill-v2-experimental/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/taste-skill-v2-experimental/SKILL.md)
 
 ### ChewingGlass/9a380da5d5a69a540b56d6449556ac5b
 - `review-with-me`: [`SKILL.md`](archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot/SKILL.md)
@@ -1494,8 +1554,8 @@ These skills are maintained in this repository rather than inside an upstream sn
 
 ## Duplicate Tracking
 
-- Exact duplicate groups: 138
-- Repeated skill names: 284
+- Exact duplicate groups: 172
+- Repeated skill names: 337
 - Full report: [`catalog/duplicates.json`](catalog/duplicates.json)
 
 ## Add A Source

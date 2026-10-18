@@ -133,6 +133,184 @@ class SkillBaseReferenceTests(unittest.TestCase):
             },
         )
 
+    def test_module_relative_library_directory_is_preserved(self):
+        self.write(
+            "skills/demo/scripts/draw.mjs",
+            "const HERE = dirname(fileURLToPath(import.meta.url));\n"
+            "const LIB = join(HERE, '..', 'library');\n"
+            "const load = name => readFileSync(join(LIB, name + '.json'));\n",
+        )
+        self.write("skills/demo/library/directions.json", "{}")
+        self.write("skills/demo/library/nested/palettes.json", "{}")
+        self.write("skills/demo/unrelated.md")
+        self.assertEqual(
+            self.related("Run `scripts/draw.mjs`."),
+            {
+                "skills/demo/scripts/draw.mjs",
+                "skills/demo/library/directions.json",
+                "skills/demo/library/nested/palettes.json",
+            },
+        )
+
+    def test_module_relative_library_rejects_escape_and_dynamic_bases(self):
+        outside = Path(self.temp.name + "-outside")
+        outside.mkdir()
+        self.addCleanup(outside.rmdir)
+        payload = outside / "private.json"
+        payload.write_text("{}")
+        self.addCleanup(payload.unlink)
+        self.write(
+            "skills/demo/scripts/draw.mjs",
+            "const HERE = dirname(fileURLToPath(import.meta.url));\n"
+            f"const LIB = join(HERE, '../../../..', '{outside.name}');\n"
+            "const OTHER = join(process.cwd(), 'library');\n",
+        )
+        self.write("skills/demo/scripts/library/unrelated.json", "{}")
+        self.assertEqual(
+            self.related("Run `scripts/draw.mjs`."),
+            {"skills/demo/scripts/draw.mjs"},
+        )
+
+    def test_module_relative_library_rejects_symlink_escape(self):
+        outside = Path(self.temp.name + "-outside")
+        outside.mkdir()
+        self.addCleanup(outside.rmdir)
+        payload = outside / "private.json"
+        payload.write_text("{}")
+        self.addCleanup(payload.unlink)
+        self.write(
+            "skills/demo/scripts/draw.mjs",
+            "const HERE = dirname(fileURLToPath(import.meta.url));\n"
+            "const LIB = join(HERE, '..', 'library');\n",
+        )
+        (self.root / "skills/demo/library").symlink_to(outside, target_is_directory=True)
+        self.assertEqual(
+            self.related("Run `scripts/draw.mjs`."),
+            {"skills/demo/scripts/draw.mjs"},
+        )
+
+    def test_linked_guide_can_reference_skill_root_helpers(self):
+        self.write("skills/demo/guides/run.md", "Run `scripts/check.mjs`.")
+        self.write("skills/demo/scripts/check.mjs")
+        self.assertEqual(
+            self.related("Read [guide](guides/run.md)."),
+            {"skills/demo/guides/run.md", "skills/demo/scripts/check.mjs"},
+        )
+
+    def test_repository_relative_reference_in_linked_guide(self):
+        self.write(
+            "skills/demo/guides/run.md",
+            "Run `node skills/demo/scripts/check.mjs`.",
+        )
+        self.write("skills/demo/scripts/check.mjs")
+        self.assertEqual(
+            self.related("Read [guide](guides/run.md)."),
+            {"skills/demo/guides/run.md", "skills/demo/scripts/check.mjs"},
+        )
+
+    def test_markdown_directory_link_preserves_examples(self):
+        self.write("skills/demo/references/examples/README.md", "Read [case](case.md).")
+        self.write("skills/demo/references/examples/case.md")
+        self.write("skills/demo/unrelated.md")
+        self.assertEqual(
+            self.related("Follow [examples](references/examples/)."),
+            {
+                "skills/demo/references/examples/README.md",
+                "skills/demo/references/examples/case.md",
+            },
+        )
+
+    def test_link_to_sibling_application_does_not_mirror_its_tree(self):
+        self.write("engine/runtime.go")
+        self.write("engine/runtime_test.go")
+        self.assertEqual(
+            self.related("See the [application](../../engine/)."), set()
+        )
+
+    def test_explicit_inline_directory_preserves_module_helpers(self):
+        self.write("skills/demo/scripts/__main__.py", "from .cli import main")
+        self.write("skills/demo/scripts/cli.py")
+        self.write("skills/demo/unrelated.md")
+        self.assertEqual(
+            self.related("The module lives in `scripts/`."),
+            {"skills/demo/scripts/__main__.py", "skills/demo/scripts/cli.py"},
+        )
+
+    def test_linked_extensionless_script_preserves_imports(self):
+        self.write("skills/demo/scripts/runner", "#!/usr/bin/env bun\nimport './cli.ts';")
+        self.write("skills/demo/scripts/cli.ts", "import '../bootstrap.ts';")
+        self.write("skills/demo/bootstrap.ts")
+        self.assertEqual(
+            self.related("Run `scripts/runner`."),
+            {
+                "skills/demo/scripts/runner",
+                "skills/demo/scripts/cli.ts",
+                "skills/demo/bootstrap.ts",
+            },
+        )
+
+    def test_linked_guide_directory_glob_is_recursive(self):
+        self.write("skills/demo/guides/run.md", "Use `scripts/*`.")
+        self.write("skills/demo/scripts/deep/check.mjs")
+        self.assertEqual(
+            self.related("Read [guide](guides/run.md)."),
+            {"skills/demo/guides/run.md", "skills/demo/scripts/deep/check.mjs"},
+        )
+
+    def test_root_and_git_directories_are_not_expanded(self):
+        self.write("unrelated.md")
+        self.write(".git/private")
+        self.assertEqual(self.related("Read [root](../../) and `.git/`."), set())
+
+    def test_nearest_local_file_wins_over_skill_and_repo_fallbacks(self):
+        self.write("skills/demo/guides/run.md", "Read `references/guide.md`.")
+        self.write("skills/demo/guides/references/guide.md")
+        self.write("skills/demo/references/guide.md")
+        self.write("references/guide.md")
+        self.assertEqual(
+            self.related("Read [guide](guides/run.md)."),
+            {
+                "skills/demo/guides/run.md",
+                "skills/demo/guides/references/guide.md",
+            },
+        )
+
+    def test_inline_directory_does_not_include_git_metadata(self):
+        self.write("skills/demo/scripts/check.py")
+        self.write("skills/demo/scripts/.git/config")
+        self.assertEqual(
+            self.related("Read `scripts/`."), {"skills/demo/scripts/check.py"}
+        )
+
+    def test_generic_directory_examples_do_not_import_repo_configuration(self):
+        self.write(".claude/owner.md")
+        self.write("scripts/unrelated.py")
+        self.assertEqual(self.related("Examples: `.claude/` and `scripts/`."), set())
+
+    def test_generic_skill_glob_is_not_source_root_anchored(self):
+        self.write("skills/another/SKILL.md")
+        self.assertEqual(self.related("Classify `skills/*` in the target project."), set())
+
+    def test_parent_relative_reference_keeps_containing_file_anchor(self):
+        self.write("skills/demo/guides/run.md", "Read `../../owner.md`.")
+        self.write("owner.md")
+        self.assertEqual(
+            self.related("Read [guide](guides/run.md)."),
+            {"skills/demo/guides/run.md"},
+        )
+
+    def test_bun_module_directory_preserves_declared_lockfile(self):
+        self.write(
+            "skills/demo/scripts/bootstrap.ts",
+            'const scriptsDirectory = import.meta.dir;\n'
+            'readFileSync(join(scriptsDirectory, "bun.lock"));\n',
+        )
+        self.write("skills/demo/scripts/bun.lock", "{}")
+        self.assertEqual(
+            self.related("Run `scripts/bootstrap.ts`."),
+            {"skills/demo/scripts/bootstrap.ts", "skills/demo/scripts/bun.lock"},
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

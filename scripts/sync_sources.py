@@ -79,6 +79,18 @@ DIRECTORY_GLOB_TOKEN_RE = re.compile(
 SKILL_BASE_TOKEN_RE = re.compile(
     r"\$(?:SKILLBASE|\{SKILLBASE\})/(?P<path>[^\s\140'\"()]+)"
 )
+INLINE_DIRECTORY_RE = re.compile(
+    r"`(?P<path>(?:\.\.?/)*(?:[A-Za-z0-9._-]+/)+)`"
+)
+JS_MODULE_DIRECTORY_RE = re.compile(
+    r"\b(?:const|let|var)\s+(?P<name>[A-Za-z_$][\w$]*)\s*=\s*"
+    r"(?:(?:path\.)?dirname\(\s*fileURLToPath\(\s*import\.meta\.url\s*\)\s*\)"
+    r"|import\.meta\.dir\b)"
+)
+JS_MODULE_PATH_RE = re.compile(
+    r"\b(?:path\.)?(?:join|resolve)\(\s*(?P<base>[A-Za-z_$][\w$]*)\s*"
+    r"(?P<segments>(?:,\s*(?:'[^'\\]*'|\"[^\"\\]*\")\s*)+)\)"
+)
 MD_LINK_RE = re.compile(r"\[[^\]]+\]\((?P<link>[^)]+)\)")
 NAME_RE = re.compile(r"^name:\s*[\"']?(.*?)[\"']?\s*$", re.MULTILINE)
 DESC_RE = re.compile(r"^description:\s*[\"']?(.*?)[\"']?\s*$", re.MULTILINE)
@@ -284,7 +296,10 @@ def file_sha256(path: Path) -> str:
 
 def read_text_if_possible(path: Path) -> str | None:
     if path.suffix.lower() not in TEXT_EXTENSIONS and path.name != "SKILL.md":
-        return None
+        # Executable companions may have no suffix but still import local files.
+        with path.open("rb") as handle:
+            if handle.read(2) != b"#!":
+                return None
     try:
         return path.read_text(encoding="utf-8")
     except UnicodeDecodeError:
@@ -315,6 +330,8 @@ def expand_local_directory_glob(
     base_path: Path, repo_root: Path, candidate: str
 ) -> list[Path]:
     candidate = normalize_reference(candidate)
+    if not candidate or Path(candidate).is_absolute() or ":" in candidate:
+        return []
     directory_parts: list[str] = []
     for part in Path(candidate).parts:
         if "*" in part:
@@ -329,7 +346,7 @@ def expand_local_directory_glob(
         directory.relative_to(repo_root)
     except ValueError:
         return []
-    if not directory.is_dir() or ".git" in directory.parts:
+    if directory == repo_root or not directory.is_dir() or ".git" in directory.parts:
         return []
 
     expanded: list[Path] = []
@@ -343,6 +360,33 @@ def expand_local_directory_glob(
             continue
         expanded.append(resolved)
     return sorted(expanded)
+
+
+def extract_module_relative_refs(
+    path: Path, repo_root: Path, content: str
+) -> list[Path]:
+    # Resolve only literal paths anchored to the current JS module. Never execute
+    # upstream code or infer a dynamic cwd, environment variable, or expression.
+    if path.suffix.lower() not in {".js", ".mjs", ".cjs", ".ts", ".tsx"}:
+        return []
+    module_bases = {"__dirname"}
+    module_bases.update(
+        match.group("name") for match in JS_MODULE_DIRECTORY_RE.finditer(content)
+    )
+    found: set[Path] = set()
+    for match in JS_MODULE_PATH_RE.finditer(content):
+        if match.group("base") not in module_bases:
+            continue
+        parts = re.findall(r"['\"]([^'\"]*)['\"]", match.group("segments"))
+        if any(Path(part).is_absolute() for part in parts):
+            continue
+        candidate = Path(*parts).as_posix()
+        resolved = resolve_local_reference(path, repo_root, candidate)
+        if resolved is not None:
+            found.add(resolved)
+        else:
+            found.update(expand_local_directory_glob(path, repo_root, candidate))
+    return sorted(found)
 
 
 def extract_skill_base_refs(
@@ -404,29 +448,67 @@ def extract_local_file_refs(
     if content is None:
         return []
 
-    found: set[Path] = set(
-        extract_skill_base_refs(path, repo_root, skill_root or path.parent)
-    )
-    for match in MD_LINK_RE.finditer(content):
-        resolved = resolve_local_reference(path, repo_root, match.group("link"))
-        if resolved is not None:
-            found.add(resolved)
+    skill_root = skill_root or path.parent
 
-    for match in PATH_TOKEN_RE.finditer(content):
-        resolved = resolve_local_reference(path, repo_root, match.group("path"))
-        if resolved is not None:
-            found.add(resolved)
+    def reference_bases(candidate: str) -> list[Path]:
+        bases = [path]
+        parts = Path(candidate).parts
+        # Linked guides often keep paths relative to their skill package.
+        # Explicit ../ paths retain their original, containing-file anchor.
+        if parts and parts[0] in {
+            "scripts", "references", "assets", "templates", "examples",
+            "library", "playbooks",
+        }:
+            bases.append(skill_root / "SKILL.md")
+        # Fully named skill paths can instead be anchored at the source root.
+        if len(parts) >= 3 and parts[0] != ".." and "skills" in parts[:-2]:
+            bases.append(repo_root / "SKILL.md")
+        return list(dict.fromkeys(bases))
 
-    for match in BARE_FILE_TOKEN_RE.finditer(content):
-        resolved = resolve_local_reference(path, repo_root, match.group("path"))
-        if resolved is not None:
-            found.add(resolved)
+    found: set[Path] = set(extract_skill_base_refs(path, repo_root, skill_root))
+    found.update(extract_module_relative_refs(path, repo_root, content))
 
+    for pattern, group in (
+        (MD_LINK_RE, "link"), (PATH_TOKEN_RE, "path"), (BARE_FILE_TOKEN_RE, "path")
+    ):
+        for match in pattern.finditer(content):
+            candidate = match.group(group)
+            for base in reference_bases(candidate):
+                resolved = resolve_local_reference(base, repo_root, candidate)
+                if resolved is not None:
+                    found.add(resolved)
+                    break
+                if pattern is MD_LINK_RE:
+                    # A named example/template directory is part of its skill
+                    # package. A link to a sibling application or repository
+                    # directory is not a request to mirror that whole tree.
+                    directory = (base.parent / normalize_reference(candidate)).resolve()
+                    if not directory.is_relative_to(skill_root.resolve()):
+                        continue
+                    expanded = expand_local_directory_glob(base, repo_root, candidate)
+                    if expanded:
+                        found.update(expanded)
+                        break
+
+    patterns = [DIRECTORY_GLOB_TOKEN_RE]
     if path.name == "SKILL.md":
-        for match in DIRECTORY_GLOB_TOKEN_RE.finditer(content):
-            found.update(
-                expand_local_directory_glob(path, repo_root, match.group("path"))
-            )
+        patterns.append(INLINE_DIRECTORY_RE)
+    for pattern in patterns:
+        for match in pattern.finditer(content):
+            candidate = match.group("path")
+            # A bare directory example must not fall back to an unrelated
+            # repository-root directory with the same name.
+            bases = [path]
+            if Path(candidate).parts[0] in {
+                "scripts", "references", "assets", "templates", "examples",
+                "library", "playbooks",
+            }:
+                bases.append(skill_root / "SKILL.md")
+            for base in dict.fromkeys(bases):
+                expanded = expand_local_directory_glob(base, repo_root, candidate)
+                if expanded:
+                    found.update(expanded)
+                    break
 
     return sorted(found)
 
