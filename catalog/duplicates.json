@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T19:16:25.062940+00:00",
+  "generated_at": "2026-10-25T19:08:58.825177+00:00",
   "exact_skill_duplicates": [
     {
       "sha256": "00a0d01e234f213d343f0040bbebd56e042978768ce5bb7117776a75bd9547e8",
@@ -836,6 +836,20 @@
       ]
     },
     {
+      "sha256": "563dfc460c605d311e650726288e2f1cbd61eab817db178d6e7e29643e07e7a2",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "cursor/plugins",
+          "path": "harness/pstack/claude-code/skills/sharpen/SKILL.md"
+        },
+        {
+          "source_repo": "cursor/plugins",
+          "path": "pstack/skills/sharpen/SKILL.md"
+        }
+      ]
+    },
+    {
       "sha256": "566ecf928bf76812d15efd62e2f00841652e1618f0a97d8dda93e1c247a162c5",
       "count": 2,
       "locations": [
@@ -1022,20 +1036,6 @@
       ]
     },
     {
-      "sha256": "5f5c08d6f5787ce18ffc9f018113e9cc6e7ddcc7878aa7ae94ef56978978497b",
-      "count": 2,
-      "locations": [
-        {
-          "source_repo": "cursor/plugins",
-          "path": "harness/pstack/claude-code/skills/create-formal-verification-skill/SKILL.md"
-        },
-        {
-          "source_repo": "cursor/plugins",
-          "path": "pstack/skills/create-formal-verification-skill/SKILL.md"
-        }
-      ]
-    },
-    {
       "sha256": "5f91bed186170a23837452508fc731ec4cada0a337ae95b1327f80311fa6ab6b",
       "count": 2,
       "locations": [
@@ -1162,20 +1162,6 @@
       ]
     },
     {
-      "sha256": "6bcd73916696eb9c5b79b6f960983760c34bcc28937c11142dd8d86b5107aa46",
-      "count": 2,
-      "locations": [
-        {
-          "source_repo": "cursor/plugins",
-          "path": "harness/pstack/claude-code/skills/sharpen/SKILL.md"
-        },
-        {
-          "source_repo": "cursor/plugins",
-          "path": "pstack/skills/sharpen/SKILL.md"
-        }
-      ]
-    },
-    {
       "sha256": "6cabb1cd03174a0584ff3538371c780aba90da156db15260691278ed3307d8fe",
       "count": 2,
       "locations": [
@@ -1274,6 +1260,20 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/test-collaboration/SKILL.md"
+        }
+      ]
+    },
+    {
+      "sha256": "74f1b9e61f8479e2be5b91a4f53136f6ad8e144fd950c9848de6aa1cdbb7645c",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "cursor/plugins",
+          "path": "harness/pstack/claude-code/skills/ketchup-video/SKILL.md"
+        },
+        {
+          "source_repo": "cursor/plugins",
+          "path": "pstack/skills/ketchup-video/SKILL.md"
         }
       ]
     },
@@ -1666,6 +1666,20 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/e2e-testing/SKILL.md"
+        }
+      ]
+    },
+    {
+      "sha256": "b1c544782b1527ba09e63311e4faa4c277c86aa33b0506590f8082b7b4bea505",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "cursor/plugins",
+          "path": "harness/pstack/claude-code/skills/statechart/SKILL.md"
+        },
+        {
+          "source_repo": "cursor/plugins",
+          "path": "pstack/skills/statechart/SKILL.md"
         }
       ]
     },
@@ -4171,12 +4185,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/create-formal-verification-skill/SKILL.md",
-          "sha256": "5f5c08d6f5787ce18ffc9f018113e9cc6e7ddcc7878aa7ae94ef56978978497b"
+          "sha256": "ccb867bf102dfa2d0b2d5cc3b801eaa1781f527a5a0f4e73d4eedc8b1b0cfd8b"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/create-formal-verification-skill/SKILL.md",
-          "sha256": "5f5c08d6f5787ce18ffc9f018113e9cc6e7ddcc7878aa7ae94ef56978978497b"
+          "sha256": "5e489d938620883502c27c9c2f32143ae7aa8c0543088dad996b2c815d2acc52"
         }
       ]
     },
@@ -6213,6 +6227,22 @@
       ]
     },
     {
+      "skill_name": "ketchup-video",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "cursor/plugins",
+          "path": "harness/pstack/claude-code/skills/ketchup-video/SKILL.md",
+          "sha256": "74f1b9e61f8479e2be5b91a4f53136f6ad8e144fd950c9848de6aa1cdbb7645c"
+        },
+        {
+          "source_repo": "cursor/plugins",
+          "path": "pstack/skills/ketchup-video/SKILL.md",
+          "sha256": "74f1b9e61f8479e2be5b91a4f53136f6ad8e144fd950c9848de6aa1cdbb7645c"
+        }
+      ]
+    },
+    {
       "skill_name": "knowledge-ops",
       "count": 3,
       "locations": [
@@ -6692,6 +6722,22 @@
           "source_repo": "affaan-m/ECC",
           "path": "skills/logistics-exception-management/SKILL.md",
           "sha256": "7a1723164c36771a57601ade98296293a864c608d189a459dfbe18ab2259b877"
+        }
+      ]
+    },
+    {
+      "skill_name": "maintain-formal-verification-skill",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "cursor/plugins",
+          "path": "harness/pstack/claude-code/skills/maintain-formal-verification-skill/SKILL.md",
+          "sha256": "adea4eb5afe20fd07bb90e675ab6c0c6232e5447e29faa3ebf58049c57cdc060"
+        },
+        {
+          "source_repo": "cursor/plugins",
+          "path": "pstack/skills/maintain-formal-verification-skill/SKILL.md",
+          "sha256": "0c96f54293542d3818b68754562b338073958781a9684454611dca37592e2d2c"
         }
       ]
     },
@@ -7656,12 +7702,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/poteto-help/SKILL.md",
-          "sha256": "e5a0cb1396c44ace1ced9e11f3bf5edc0526c7d72ce2918896f38e5276367ebe"
+          "sha256": "7ff3de22e41337d06169820d7ecc6bf4e44b3e0ecafc98a4120db4853a02c5dc"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/poteto-help/SKILL.md",
-          "sha256": "ef80c5480b4e9403635036282a9f90d9c3e79ca65e5fb74f96583f320c00c029"
+          "sha256": "587793b0f9959dbea7d5d009b8a6513795380d7150dd478a6cb05e604058e315"
         }
       ]
     },
@@ -8683,12 +8729,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/reflect/SKILL.md",
-          "sha256": "0b87ca5262c75e9f9e66e64dc008795969e144db5ecc4261efcf6160e09ebee0"
+          "sha256": "03d12ba1c5f9d85946aa6ce2ccf5de7acc9506657370300c5c6251f654501482"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/reflect/SKILL.md",
-          "sha256": "1f5a8c246cdee8251f8667d85bd5d97f6c2801f505843c26ddbd6c621632519b"
+          "sha256": "9648df23cabaae99b78ed59cd93b6f35ebbf02105d228e3d0b5c3a3b3419d753"
         }
       ]
     },
@@ -9179,12 +9225,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/setup-pstack/SKILL.md",
-          "sha256": "fb6695fed1701dce6e3112ad600ad417c8d1042d86c850b0b645e44ed01ddd05"
+          "sha256": "770e36786c5c355d7f496d19b327f80ddb8e6715a47bb09ba06cf9769a89dbd0"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/setup-pstack/SKILL.md",
-          "sha256": "d61b47256a18155a81c8e5ef95e3cc6569ce8c18317c35c4dd9c8015cf68cb59"
+          "sha256": "b45512f6ca5e96e81681984683b7472bfe892581da3a89a73cca4159438f29ed"
         }
       ]
     },
@@ -9195,12 +9241,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/sharpen/SKILL.md",
-          "sha256": "6bcd73916696eb9c5b79b6f960983760c34bcc28937c11142dd8d86b5107aa46"
+          "sha256": "563dfc460c605d311e650726288e2f1cbd61eab817db178d6e7e29643e07e7a2"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/sharpen/SKILL.md",
-          "sha256": "6bcd73916696eb9c5b79b6f960983760c34bcc28937c11142dd8d86b5107aa46"
+          "sha256": "563dfc460c605d311e650726288e2f1cbd61eab817db178d6e7e29643e07e7a2"
         }
       ]
     },
@@ -9470,6 +9516,22 @@
       ]
     },
     {
+      "skill_name": "statechart",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "cursor/plugins",
+          "path": "harness/pstack/claude-code/skills/statechart/SKILL.md",
+          "sha256": "b1c544782b1527ba09e63311e4faa4c277c86aa33b0506590f8082b7b4bea505"
+        },
+        {
+          "source_repo": "cursor/plugins",
+          "path": "pstack/skills/statechart/SKILL.md",
+          "sha256": "b1c544782b1527ba09e63311e4faa4c277c86aa33b0506590f8082b7b4bea505"
+        }
+      ]
+    },
+    {
       "skill_name": "strategic-compact",
       "count": 7,
       "locations": [
@@ -9517,12 +9579,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/swarm/SKILL.md",
-          "sha256": "bdcbb390bac886a03d3e6873202fb84c9f4841909f5921b3320facf9b7829ecc"
+          "sha256": "34fb1420f1a0ad343bcf3c3e531db67b0ed43ba09c421e97936ce11200c43546"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/swarm/SKILL.md",
-          "sha256": "031657cb81e490f9aed5c75d6ff2a4fda35ccafbaf72be604e59481cc4080cdc"
+          "sha256": "fea6bfbbf21e067a4e2d2ebab034bc3af508118e9df1abc9d2ba040d58a6df3a"
         }
       ]
     },

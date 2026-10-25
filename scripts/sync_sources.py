@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import ast
 import datetime as dt
 import hashlib
 import json
@@ -389,6 +390,54 @@ def extract_module_relative_refs(
     return sorted(found)
 
 
+def extract_python_import_refs(
+    path: Path, repo_root: Path, content: str
+) -> list[Path]:
+    first_line = content.split("\n", 1)[0]
+    if path.suffix != ".py" and not (
+        first_line.startswith("#!") and "python" in first_line
+    ):
+        return []
+    try:
+        module = ast.parse(content)
+    except SyntaxError:
+        return []
+
+    # Read literal imports without loading upstream modules. Absolute imports
+    # use only this script's directory; never guess a source-root/sys.path base.
+    found: set[Path] = set()
+
+    def add_module(base: Path, parts: list[str]) -> None:
+        candidates = [Path(*parts).with_suffix(".py")] if parts else []
+        candidates.extend(
+            Path(*parts[:index]) / "__init__.py"
+            for index in range(1, len(parts) + 1)
+        )
+        if not parts:
+            candidates.append(Path("__init__.py"))
+        for candidate in candidates:
+            resolved = resolve_local_reference(
+                base / "__imports__.py", repo_root, str(candidate)
+            )
+            if resolved is not None:
+                found.add(resolved)
+
+    for node in ast.walk(module):
+        if isinstance(node, ast.Import):
+            for alias in node.names:
+                add_module(path.parent, alias.name.split("."))
+        elif isinstance(node, ast.ImportFrom):
+            base = path.parent
+            for _ in range(max(0, node.level - 1)):
+                base = base.parent
+            parts = node.module.split(".") if node.module else []
+            add_module(base, parts)
+            for alias in node.names:
+                if alias.name != "*":
+                    add_module(base, parts + [alias.name])
+    return sorted(found)
+
+
 def extract_skill_base_refs(
     path: Path, repo_root: Path, skill_root: Path
 ) -> list[Path]:
@@ -467,6 +516,7 @@ def extract_local_file_refs(
 
     found: set[Path] = set(extract_skill_base_refs(path, repo_root, skill_root))
     found.update(extract_module_relative_refs(path, repo_root, content))
+    found.update(extract_python_import_refs(path, repo_root, content))
 
     for pattern, group in (
         (MD_LINK_RE, "link"), (PATH_TOKEN_RE, "path"), (BARE_FILE_TOKEN_RE, "path")

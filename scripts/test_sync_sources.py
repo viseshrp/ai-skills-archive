@@ -311,6 +311,96 @@ class SkillBaseReferenceTests(unittest.TestCase):
             {"skills/demo/scripts/bootstrap.ts", "skills/demo/scripts/bun.lock"},
         )
 
+    def test_python_sibling_imports_are_followed_recursively_without_execution(self):
+        self.write(
+            "skills/demo/scripts/check.py",
+            "raise RuntimeError('must not execute')\nimport helper as local\n",
+        )
+        self.write("skills/demo/scripts/helper.py", "from final_helper import VALUE\n")
+        self.write("skills/demo/scripts/final_helper.py", "VALUE = 1\n")
+        self.write("skills/demo/scripts/unrelated.py")
+        self.assertEqual(
+            self.related("Run `scripts/check.py`."),
+            {
+                "skills/demo/scripts/check.py",
+                "skills/demo/scripts/helper.py",
+                "skills/demo/scripts/final_helper.py",
+            },
+        )
+
+    def test_python_package_and_relative_imports_preserve_initializers(self):
+        self.write("skills/demo/scripts/check.py", "from pkg.tools import run\n")
+        self.write("skills/demo/scripts/pkg/__init__.py", "")
+        self.write("skills/demo/scripts/pkg/tools.py", "from . import detail\n")
+        self.write("skills/demo/scripts/pkg/detail.py", "from ..shared import VALUE\n")
+        self.write("skills/demo/scripts/shared.py", "VALUE = 1\n")
+        self.assertEqual(
+            self.related("Run `scripts/check.py`."),
+            {
+                "skills/demo/scripts/check.py",
+                "skills/demo/scripts/pkg/__init__.py",
+                "skills/demo/scripts/pkg/tools.py",
+                "skills/demo/scripts/pkg/detail.py",
+                "skills/demo/scripts/shared.py",
+            },
+        )
+
+    def test_python_from_package_imports_local_submodule(self):
+        self.write("skills/demo/scripts/check.py", "from pkg import worker as local\n")
+        self.write("skills/demo/scripts/pkg/__init__.py", "")
+        self.write("skills/demo/scripts/pkg/worker.py", "")
+        self.write("skills/demo/scripts/pkg/unrelated.py", "")
+        self.assertEqual(
+            self.related("Run `scripts/check.py`."),
+            {
+                "skills/demo/scripts/check.py",
+                "skills/demo/scripts/pkg/__init__.py",
+                "skills/demo/scripts/pkg/worker.py",
+            },
+        )
+
+    def test_extensionless_python_shebang_preserves_local_import(self):
+        self.write(
+            "skills/demo/scripts/runner",
+            "#!/usr/bin/env python3\nfrom helper import main\n",
+        )
+        self.write("skills/demo/scripts/helper.py", "")
+        self.assertEqual(
+            self.related("Run `scripts/runner`."),
+            {"skills/demo/scripts/runner", "skills/demo/scripts/helper.py"},
+        )
+
+    def test_python_imports_do_not_use_source_root_or_dynamic_fallbacks(self):
+        self.write(
+            "skills/demo/scripts/check.py",
+            "import owner\nimport importlib\nimportlib.import_module('hidden')\n",
+        )
+        self.write("owner.py", "")
+        self.write("skills/demo/scripts/hidden.py", "")
+        self.assertEqual(
+            self.related("Run `scripts/check.py`."), {"skills/demo/scripts/check.py"}
+        )
+
+    def test_python_import_rejects_symlink_escape_and_git_metadata(self):
+        outside = self.root.parent / (self.root.name + "-outside.py")
+        outside.write_text("private")
+        self.addCleanup(outside.unlink)
+        self.write(".git/private.py", "private")
+        self.write("skills/demo/scripts/check.py", "import escaped\nimport secret\n")
+        (self.root / "skills/demo/scripts/escaped.py").symlink_to(outside)
+        (self.root / "skills/demo/scripts/secret.py").symlink_to(self.root / ".git/private.py")
+        self.assertEqual(
+            self.related("Run `scripts/check.py`."), {"skills/demo/scripts/check.py"}
+        )
+
+    def test_python_syntax_error_keeps_ordinary_file_references(self):
+        self.write("skills/demo/scripts/check.py", "not python (\n# Read notes.md\n")
+        self.write("skills/demo/scripts/notes.md")
+        self.assertEqual(
+            self.related("Run `scripts/check.py`."),
+            {"skills/demo/scripts/check.py", "skills/demo/scripts/notes.md"},
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

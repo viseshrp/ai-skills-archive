@@ -38,40 +38,40 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
-  - Archived commit: `cfd081d8f309ec65254d9f9f04c845ee78b1ec1d`
+  - Archived commit: `93608d8045df2ca2b1f462df4f79f4fce3e00ef3`
   - Snapshot: [`archives/Imbad0202__academic-research-skills/snapshot`](archives/Imbad0202__academic-research-skills/snapshot)
   - Skills discovered: 5
-  - Files retained in reduced snapshot: 812
+  - Files retained in reduced snapshot: 829
 - [mattpocock/skills](https://github.com/mattpocock/skills)
-  - Archived commit: `49dd158d1076134a641b33efb035946536778336`
+  - Archived commit: `5beb35b040e3de97e54fa9e386d7e42d15c295c2`
   - Snapshot: [`archives/mattpocock__skills/snapshot`](archives/mattpocock__skills/snapshot)
   - Skills discovered: 38
   - Files retained in reduced snapshot: 63
 - [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman)
-  - Archived commit: `bad48a0e1df55e05e3f52249afa35ecc1909ee76`
+  - Archived commit: `9b68f7ed12b05e7efaff18e65c5a3fc2849fd0a4`
   - Snapshot: [`archives/juliusbrussee__caveman/snapshot`](archives/juliusbrussee__caveman/snapshot)
   - Skills discovered: 28
   - Files retained in reduced snapshot: 58
 - [obra/Superpowers](https://github.com/obra/Superpowers)
-  - Archived commit: `bb92a77741419a4ab5f06e711a283343f1ada0c3`
+  - Archived commit: `2ce8aa15d05bd57213e6f746f953aafb7ded7a8b`
   - Snapshot: [`archives/obra__Superpowers/snapshot`](archives/obra__Superpowers/snapshot)
   - Skills discovered: 15
-  - Files retained in reduced snapshot: 74
+  - Files retained in reduced snapshot: 84
 - [cursor/plugins](https://github.com/cursor/plugins)
-  - Archived commit: `0b8e952052d482ee6de06deebf14d590d77b1b34`
+  - Archived commit: `99b609a72323b70204eab407c622f436e858e112`
   - Snapshot: [`archives/cursor__plugins/snapshot`](archives/cursor__plugins/snapshot)
-  - Skills discovered: 167
-  - Files retained in reduced snapshot: 405
+  - Skills discovered: 173
+  - Files retained in reduced snapshot: 452
 - [affaan-m/ECC](https://github.com/affaan-m/ECC)
-  - Archived commit: `76aaa77df6adc5b889e689007bf99b9a4f74af34`
+  - Archived commit: `4c28a7be9edac24f28ee8e54a958167894fa97a0`
   - Snapshot: [`archives/affaan-m__ECC/snapshot`](archives/affaan-m__ECC/snapshot)
   - Skills discovered: 1062
-  - Files retained in reduced snapshot: 1356
+  - Files retained in reduced snapshot: 1359
 - [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
-  - Archived commit: `0341304f8ecb307ca0a939e48ecd002761ef23b2`
+  - Archived commit: `f3cd06a620e385ce15109ed6d3b70fc20c89eccc`
   - Snapshot: [`archives/mvanhorn__last30days-skill/snapshot`](archives/mvanhorn__last30days-skill/snapshot)
   - Skills discovered: 1
-  - Files retained in reduced snapshot: 150
+  - Files retained in reduced snapshot: 151
 - [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
   - Archived commit: `09c434ab73ca43761c5d8b0c5d341926c2fba710`
   - Snapshot: [`archives/DietrichGebert__ponytail/snapshot`](archives/DietrichGebert__ponytail/snapshot)
@@ -89,10 +89,10 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 2
   - Files retained in reduced snapshot: 2
 - [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill)
-  - Archived commit: `f624f37a8c650b9cc550253104925efe4c8de246`
+  - Archived commit: `12af471f627f866411b4bd785b19646d3672784c`
   - Snapshot: [`archives/Leonxlnx__taste-skill/snapshot`](archives/Leonxlnx__taste-skill/snapshot)
-  - Skills discovered: 14
-  - Files retained in reduced snapshot: 41
+  - Skills discovered: 1
+  - Files retained in reduced snapshot: 37
 - [ChewingGlass/9a380da5d5a69a540b56d6449556ac5b](https://gist.github.com/ChewingGlass/9a380da5d5a69a540b56d6449556ac5b)
   - Archived commit: `daad13e3446186762f0e248e0696ed99c32e5939`
   - Snapshot: [`archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot`](archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot)
@@ -300,6 +300,8 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `in-your-own-words`: [`harness/pstack/claude-code/skills/in-your-own-words/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/in-your-own-words/SKILL.md)
 - `interrogate`: [`harness/pstack/claude-code/skills/interrogate/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/interrogate/SKILL.md)
 - `ketchup`: [`harness/pstack/claude-code/skills/ketchup/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/ketchup/SKILL.md)
+- `ketchup-video`: [`harness/pstack/claude-code/skills/ketchup-video/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/ketchup-video/SKILL.md)
+- `maintain-formal-verification-skill`: [`harness/pstack/claude-code/skills/maintain-formal-verification-skill/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/maintain-formal-verification-skill/SKILL.md)
 - `maintain-verification-skill`: [`harness/pstack/claude-code/skills/maintain-verification-skill/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/maintain-verification-skill/SKILL.md)
 - `make-bot-ui`: [`harness/pstack/claude-code/skills/make-bot-ui/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/make-bot-ui/SKILL.md)
 - `no-comments`: [`harness/pstack/claude-code/skills/no-comments/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/no-comments/SKILL.md)
@@ -334,6 +336,7 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `setup-pstack`: [`harness/pstack/claude-code/skills/setup-pstack/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/setup-pstack/SKILL.md)
 - `sharpen`: [`harness/pstack/claude-code/skills/sharpen/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/sharpen/SKILL.md)
 - `show-me-your-work`: [`harness/pstack/claude-code/skills/show-me-your-work/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/show-me-your-work/SKILL.md)
+- `statechart`: [`harness/pstack/claude-code/skills/statechart/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/statechart/SKILL.md)
 - `swarm`: [`harness/pstack/claude-code/skills/swarm/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/swarm/SKILL.md)
 - `tdd`: [`harness/pstack/claude-code/skills/tdd/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/tdd/SKILL.md)
 - `teach`: [`harness/pstack/claude-code/skills/teach/SKILL.md`](archives/cursor__plugins/snapshot/harness/pstack/claude-code/skills/teach/SKILL.md)
@@ -362,6 +365,8 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `in-your-own-words`: [`pstack/skills/in-your-own-words/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/in-your-own-words/SKILL.md)
 - `interrogate`: [`pstack/skills/interrogate/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/interrogate/SKILL.md)
 - `ketchup`: [`pstack/skills/ketchup/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/ketchup/SKILL.md)
+- `ketchup-video`: [`pstack/skills/ketchup-video/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/ketchup-video/SKILL.md)
+- `maintain-formal-verification-skill`: [`pstack/skills/maintain-formal-verification-skill/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/maintain-formal-verification-skill/SKILL.md)
 - `maintain-verification-skill`: [`pstack/skills/maintain-verification-skill/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/maintain-verification-skill/SKILL.md)
 - `make-bot-ui`: [`pstack/skills/make-bot-ui/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/make-bot-ui/SKILL.md)
 - `no-comments`: [`pstack/skills/no-comments/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/no-comments/SKILL.md)
@@ -396,6 +401,7 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `setup-pstack`: [`pstack/skills/setup-pstack/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/setup-pstack/SKILL.md)
 - `sharpen`: [`pstack/skills/sharpen/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/sharpen/SKILL.md)
 - `show-me-your-work`: [`pstack/skills/show-me-your-work/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/show-me-your-work/SKILL.md)
+- `statechart`: [`pstack/skills/statechart/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/statechart/SKILL.md)
 - `swarm`: [`pstack/skills/swarm/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/swarm/SKILL.md)
 - `tdd`: [`pstack/skills/tdd/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/tdd/SKILL.md)
 - `teach`: [`pstack/skills/teach/SKILL.md`](archives/cursor__plugins/snapshot/pstack/skills/teach/SKILL.md)
@@ -1508,20 +1514,7 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `i-have-adhd`: [`skills/i-have-adhd/SKILL.md`](archives/ayghri__i-have-adhd/snapshot/skills/i-have-adhd/SKILL.md)
 
 ### Leonxlnx/taste-skill
-- `brandkit`: [`skills/brandkit/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/brandkit/SKILL.md)
-- `industrial-brutalist-ui`: [`skills/brutalist-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/brutalist-skill/SKILL.md)
-- `gpt-taste`: [`skills/gpt-tasteskill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/gpt-tasteskill/SKILL.md)
-- `image-to-code`: [`skills/image-to-code-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/image-to-code-skill/SKILL.md)
-- `imagegen-frontend-mobile`: [`skills/imagegen-frontend-mobile/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/imagegen-frontend-mobile/SKILL.md)
-- `imagegen-frontend-web`: [`skills/imagegen-frontend-web/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/imagegen-frontend-web/SKILL.md)
-- `minimalist-ui`: [`skills/minimalist-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/minimalist-skill/SKILL.md)
-- `full-output-enforcement`: [`skills/output-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/output-skill/SKILL.md)
-- `redesign-existing-projects`: [`skills/redesign-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/redesign-skill/SKILL.md)
-- `high-end-visual-design`: [`skills/soft-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/soft-skill/SKILL.md)
-- `stitch-design-taste`: [`skills/stitch-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/stitch-skill/SKILL.md)
 - `design-taste-frontend`: [`skills/taste-skill/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/taste-skill/SKILL.md)
-- `design-taste-frontend-v1`: [`skills/taste-skill-v1/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/taste-skill-v1/SKILL.md)
-- `design-taste-frontend-v2-experimental`: [`skills/taste-skill-v2-experimental/SKILL.md`](archives/Leonxlnx__taste-skill/snapshot/skills/taste-skill-v2-experimental/SKILL.md)
 
 ### ChewingGlass/9a380da5d5a69a540b56d6449556ac5b
 - `review-with-me`: [`SKILL.md`](archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot/SKILL.md)
@@ -1554,8 +1547,8 @@ These skills are maintained in this repository rather than inside an upstream sn
 
 ## Duplicate Tracking
 
-- Exact duplicate groups: 172
-- Repeated skill names: 337
+- Exact duplicate groups: 173
+- Repeated skill names: 340
 - Full report: [`catalog/duplicates.json`](catalog/duplicates.json)
 
 ## Add A Source
