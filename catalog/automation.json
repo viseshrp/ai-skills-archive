@@ -3,5 +3,5 @@
   "schedule_local_time": "Every Sunday at 3:00 PM America/New_York",
   "purpose": "Refresh archived skill repositories, regenerate indexes, and append to AGENT_LOG.md.",
   "command": "python3 scripts/sync_sources.py --log-note 'Weekly automation refresh'",
-  "branch_policy": "Run only from a clean, remote-aligned main checkout; commit and push directly to origin/main; never create or use feature branches or worktrees."
+  "branch_policy": "Continue with dirty owner work and preserve its files and index; use an isolated remote-aligned publication checkout when needed; commit and push only validated job-owned changes to origin/main and verify the live remote SHA."
 }
