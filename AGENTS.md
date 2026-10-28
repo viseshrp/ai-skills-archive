@@ -30,7 +30,7 @@ These requirements came directly from the user and should continue to govern fut
 - Maintain an append-only agent log of substantive archive operations.
 - Reduce snapshots so they only keep skills and related files, not full repo mirrors.
 - Keep the repo clean after changes; do not leave long-lived uncommitted archive refreshes around.
-- Run archive refreshes directly on `main`; do not create or use feature branches or automation worktrees.
+- Publish archive refreshes directly to `main`; preserve dirty owner work by using an isolated publication checkout when needed, without feature branches or pull requests.
 
 ## Key Files
 
@@ -68,14 +68,14 @@ These requirements came directly from the user and should continue to govern fut
 
 When adding or refreshing sources:
 
-1. Start from a clean, remote-aligned `main` checkout using `git pull --ff-only origin main`; stop on dirt or divergence instead of stashing or resetting.
+1. Record original owner/index state and verify `origin/main`. Continue with dirty, overlapping, divergent, or differently checked-out owner work by automatically using an isolated remote-aligned publication checkout. Never stash, reset, or commit owner work to clean up.
 2. Update `catalog/sources.json` if a new repo is being added.
 3. Run `python3 scripts/sync_sources.py` or `python3 scripts/sync_sources.py add <url>`.
 4. Verify the reduced snapshots still contain all skills and their related files.
 5. Verify the generated catalogs and README are updated.
 6. Verify duplicate detection still makes sense.
 7. Append the operation to `AGENT_LOG.md`.
-8. Create one focused commit, push it directly to `origin/main`, verify the remote SHA, and leave the worktree clean.
+8. Create one focused published commit, push it directly to `origin/main`, verify the remote SHA in the publication checkout, and preserve original owner state. Recover failed publication attempts safely.
 
 For a curated adaptation, replace steps 2-4 with adding or updating `skills/<skill-name>/` and running the `reindex-curated` command above. Validate the skill before committing.
 
@@ -91,7 +91,7 @@ For a curated adaptation, replace steps 2-4 with adding or updating `skills/<ski
 - The Codex automation id is `weekly-ai-skills-refresh`.
 - Schedule: Sunday at 3:00 PM America/New_York.
 - Purpose: refresh all registered sources, rebuild reduced snapshots and catalogs, and append to `AGENT_LOG.md`.
-- Branch policy: use the saved local checkout on `main`, never create or use a feature branch or worktree, and publish verified refreshes directly to `origin/main` without a pull request.
+- Branch policy: publish verified refreshes directly to `origin/main` without a pull request. Isolated publication checkouts are authorized when necessary to preserve dirty owner state or recover concurrency; do not switch the owner's branch.
 
 ## Notes For Future Agents
 
@@ -101,3 +101,33 @@ For a curated adaptation, replace steps 2-4 with adding or updating `skills/<ski
 - Be conservative about deleting source-linked files from snapshots; if a retained file references another local file, keep following the chain recursively.
 - If a repo refresh causes a large deletion set, verify that the new reduced snapshot rules explain it before committing.
 - Keep explanations concise, but keep the repository metadata thorough.
+
+## Scheduled automation ownership and recovery
+
+The user's October 28, 2026 instruction takes precedence over earlier
+clean-worktree or original-checkout-only automation rules. Dirty working
+directories never block scheduled jobs. Automations must commit and push their
+own validated changes without committing or rearranging pre-existing work.
+
+- Record the original branch, HEAD, index entries, and owner file hashes.
+  Preserve staged, unstaged, untracked, overlapping, private, and live state.
+- Use exact owned paths or hunks only. A path that already contains owner edits
+  is not wholly owned by the job. If existing staging, overlap, another branch,
+  divergence, or concurrent publication complicates separation, automatically
+  use an isolated checkout at the verified remote destination and run the job
+  there. Its registered output paths are relative to that checkout. Do not
+  require the original checkout to be clean or synchronized before proceeding.
+- Never stash, reset, clean, move owner files out of the way, stage everything,
+  or commit pre-existing work to satisfy a preflight check. Review and validate
+  only the job's complete delta, commit it, and push the configured destination.
+- Recover a rejected push by fetching the destination in an isolated checkout,
+  reapplying only the owned delta, reconciling concurrent append-only changes,
+  rerunning affected checks, and retrying normally. Never force-push or alter
+  owner history. Verify the published checkout and live remote SHA, required
+  CI, and original owner-state preservation; failed attempts may be retried.
+- Diagnose and fix recoverable failures within the job's existing scope, then
+  rerun validation and finish publication. A missing credential or unavailable
+  source fact cannot be invented: report that precise external prerequisite
+  and finish independent valid work. Preserve source permissions, privacy,
+  validation, no-execution rules, and no-change behavior. Record reusable
+  symptom/cause/fix/verification evidence in the existing job continuity files.
