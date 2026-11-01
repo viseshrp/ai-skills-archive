@@ -208,6 +208,122 @@ class SkillBaseReferenceTests(unittest.TestCase):
             {"skills/demo/guides/run.md", "skills/demo/scripts/check.mjs"},
         )
 
+    def test_explicit_repository_file_list_preserves_recursive_companions(self):
+        self.write(
+            "rules/typescript/coding-style.md",
+            "Extends [common](../common/coding-style.md).",
+        )
+        self.write("rules/typescript/patterns.md")
+        self.write("rules/common/coding-style.md")
+        self.write("rules/unrelated.md")
+        self.assertEqual(
+            self.related(
+                "See `rules/typescript/coding-style.md` and "
+                "`rules/typescript/patterns.md` in this repository, installed as "
+                "`rules/ecc/typescript/coding-style.md`."
+            ),
+            {
+                "rules/typescript/coding-style.md",
+                "rules/typescript/patterns.md",
+                "rules/common/coding-style.md",
+            },
+        )
+
+    def test_explicit_repository_reference_in_linked_guide(self):
+        self.write(
+            "skills/demo/guides/run.md",
+            "Read `rules/common/guide.md` in this repository.",
+        )
+        self.write("rules/common/guide.md")
+        self.assertEqual(
+            self.related("Read [guide](guides/run.md)."),
+            {"skills/demo/guides/run.md", "rules/common/guide.md"},
+        )
+
+    def test_repository_declaration_does_not_reanchor_generic_inventories(self):
+        self.write("AGENTS.md")
+        self.write("rules/common/guide.md")
+        self.write("rules/ecc/common/guide.md")
+        self.assertEqual(
+            self.related(
+                "Read `AGENTS.md` in this repository. "
+                "For the target project use `rules/common/guide.md`, installed as "
+                "`rules/ecc/common/guide.md`."
+            ),
+            set(),
+        )
+
+    def test_repository_declaration_does_not_expand_whole_directories(self):
+        self.write("rules/common/guide.md")
+        self.assertEqual(
+            self.related("Read `rules/` and `rules/*` in this repository."),
+            set(),
+        )
+
+    def test_repository_declaration_rejects_escape_and_git_metadata(self):
+        outside = self.root.parent / (self.root.name + "-outside.md")
+        outside.write_text("private")
+        self.addCleanup(outside.unlink)
+        self.write(".git/private.md")
+        self.write("rules/common/placeholder.md")
+        (self.root / "rules/common/escape.md").symlink_to(outside)
+        (self.root / "rules/common/secret.md").symlink_to(self.root / ".git/private.md")
+        self.assertEqual(
+            self.related(
+                f"Read `../{outside.name}` in this repository.\n"
+                "Read `.git/private.md` in this repository.\n"
+                "Read `rules/common/escape.md` in this repository.\n"
+                "Read `rules/common/secret.md` in this repository."
+            ),
+            set(),
+        )
+
+    def test_top_level_skill_preserves_shared_source_files(self):
+        skill = self.write(
+            "reviewer/SKILL.md",
+            "Read `shared/references/consumer.md`. "
+            "Validate using `scripts/provenance.py`.",
+        )
+        self.write("shared/references/consumer.md", "Read [common](../common.md).")
+        self.write("shared/common.md")
+        self.write("scripts/provenance.py", "from helper import check\n")
+        self.write("scripts/helper.py")
+        self.write("scripts/unrelated.py")
+        self.assertEqual(
+            set(sync_sources.collect_related_files(skill, self.root)),
+            {
+                "shared/references/consumer.md",
+                "shared/common.md",
+                "scripts/provenance.py",
+                "scripts/helper.py",
+            },
+        )
+
+    def test_top_level_skill_does_not_reanchor_globs_or_project_inventories(self):
+        skill = self.write(
+            "reviewer/SKILL.md",
+            "Create `docs/roadmap.md` and `src/client.py`; inspect `scripts/*`.",
+        )
+        self.write("docs/roadmap.md")
+        self.write("src/client.py")
+        self.write("scripts/unrelated.py")
+        self.assertEqual(set(sync_sources.collect_related_files(skill, self.root)), set())
+
+    def test_nested_skill_does_not_assume_root_shared_directories(self):
+        self.write("shared/guide.md")
+        self.write("scripts/provenance.py")
+        self.assertEqual(
+            self.related("Read `shared/guide.md` and `scripts/provenance.py`."),
+            set(),
+        )
+
+    def test_top_level_shared_reference_rejects_git_symlink(self):
+        skill = self.write("reviewer/SKILL.md", "Read `shared/secret.md`.")
+        private = self.write(".git/private.md")
+        self.write("shared/placeholder.md")
+        (self.root / "shared/secret.md").symlink_to(private)
+        self.assertEqual(set(sync_sources.collect_related_files(skill, self.root)), set())
+
     def test_markdown_directory_link_preserves_examples(self):
         self.write("skills/demo/references/examples/README.md", "Read [case](case.md).")
         self.write("skills/demo/references/examples/case.md")

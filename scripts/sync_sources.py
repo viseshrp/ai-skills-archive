@@ -93,6 +93,11 @@ JS_MODULE_PATH_RE = re.compile(
     r"(?P<segments>(?:,\s*(?:'[^'\\]*'|\"[^\"\\]*\")\s*)+)\)"
 )
 MD_LINK_RE = re.compile(r"\[[^\]]+\]\((?P<link>[^)]+)\)")
+DECLARED_REPO_FILES_RE = re.compile(
+    r"(?P<files>`[^`\n]+`"
+    r"(?:(?:[ \t]*,[ \t]*(?:(?:and|or)[ \t]+)?|[ \t]+(?:and|or)[ \t]+)"
+    r"`[^`\n]+`)*)[ \t]+in this repository\b"
+)
 NAME_RE = re.compile(r"^name:\s*[\"']?(.*?)[\"']?\s*$", re.MULTILINE)
 DESC_RE = re.compile(r"^description:\s*[\"']?(.*?)[\"']?\s*$", re.MULTILINE)
 
@@ -512,11 +517,34 @@ def extract_local_file_refs(
         # Fully named skill paths can instead be anchored at the source root.
         if len(parts) >= 3 and parts[0] != ".." and "skills" in parts[:-2]:
             bases.append(repo_root / "SKILL.md")
+        # Top-level skill packages may share source-owned scripts/resources.
+        # This applies only to literal files, not directory-glob expansion or
+        # arbitrary target-project paths such as docs/ and src/.
+        if (
+            len(parts) >= 2
+            and parts[0] in {"shared", "scripts"}
+            and skill_root.resolve().parent == repo_root.resolve()
+        ):
+            bases.append(repo_root / "SKILL.md")
         return list(dict.fromkeys(bases))
 
     found: set[Path] = set(extract_skill_base_refs(path, repo_root, skill_root))
     found.update(extract_module_relative_refs(path, repo_root, content))
     found.update(extract_python_import_refs(path, repo_root, content))
+
+    # Explicit source declarations can name files outside the skill package.
+    # Never infer source-root anchors for generic target-project inventories,
+    # installed paths, or whole directories.
+    for declaration in DECLARED_REPO_FILES_RE.finditer(content):
+        for candidate in re.findall(r"`([^`\n]+)`", declaration.group("files")):
+            candidate_path = Path(normalize_reference(candidate))
+            if candidate_path.is_absolute() or len(candidate_path.parts) < 2:
+                continue
+            resolved = resolve_local_reference(
+                repo_root / "SKILL.md", repo_root, candidate
+            )
+            if resolved is not None:
+                found.add(resolved)
 
     for pattern, group in (
         (MD_LINK_RE, "link"), (PATH_TOKEN_RE, "path"), (BARE_FILE_TOKEN_RE, "path")

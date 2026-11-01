@@ -59,7 +59,7 @@ When a repair is requested or doctor indicates a host-specific repair, return to
 
 **Grok session expiry handling:** The grok CLI backend for X reports three auth states: `ok` (non-expired credentials), `expired` (access_token `expires_at` is past), and `missing` (never signed in). When doctor reports grok as **degraded** with an expiry timestamp, say "Grok session expired at {timestamp}; will attempt refresh at run time. If refresh fails, run `grok login --device-auth`" — not "Grok CLI is not signed in" (which misrepresents the history). The refresh attempt happens automatically at research time: an expired access_token does not prove the refresh_token is dead. If the run then fails with `auth_revoked` or `invalid_grant`, the user truly needs to re-login. **Host-facing copy:** when `sources.x.run_outcome.state` is `auth-failed` and the prior run's outcome was `ok`, say "X used {fallback} after the Grok session expired — run `grok login --device-auth` to restore first-party X." Avoid "Grok CLI is not signed in" when `run_outcome` history shows it worked recently. Avoid proactively installing grok or prompting about grok unless the user asks for first-party X search; the cookie and XAI_API_KEY paths work without a Grok subscription.
 
-**Grok build compatibility:** X research supports only `grok 1.0.46 (2765805b9442)`, optionally followed by `[stable]`. The engine checks the build before staging credentials and uses an agent profile with no local tools. If the engine reports `unsupported grok CLI version`, explain that the installed build has not passed the tool-boundary audit. Suggest removing the `LAST30DAYS_X_BACKEND=grok` pin or choosing another configured X backend. Do not bypass the build check or retry with unrestricted Grok tools.
+**Grok build compatibility:** X research needs a stable `grok` build at 1.0.46 or newer; the engine audits each new build locally (no credits, no xAI traffic) before staging credentials. `unsupported grok CLI version` means the build is older or not stable: suggest updating grok. `failed the grok tool-boundary audit` means the build exposed forbidden tools: suggest updating grok, removing the `LAST30DAYS_X_BACKEND=grok` pin, or another X backend. `could not complete the grok tool-boundary audit` retries next run. Never bypass the build check or the audit, or retry with unrestricted Grok tools.
 
 
 Then display (use "and more" if 5+ sources, otherwise list all with Oxford comma):
@@ -513,7 +513,8 @@ Only show lines for platforms where something was resolved. Skip empty lines. On
 - `search_query` should be concise and keyword-heavy - match how content is TITLED on platforms
 - `ranking_query` should read like a natural language question
 - **X disambiguation:** express your disambiguation intent in `ranking_query` (e.g., "What are people saying about Rome the city in Italy, not AS Roma or Rome Odunze?") — do not phrase-quote `search_query` for X or invent X operators; the engine handles X query compilation internally.
-- **DISAMBIGUATION (mandatory for collision-prone names — the #1 cause of off-topic noise).** Anchor the `search_query` with the disambiguating context you resolved in Step 0.5 / 0.55 — the entity's company, role, or domain — when the topic name (a) is a common word or has non-product meanings ("Loom" = weaving tool, "Tella" = soccer player), OR (b) is a PERSON whose name collides with other public figures or common words. Apply the anchor to **EVERY subquery, not just the primary**, and mirror it in the `ranking_query`. Anchor on a SPECIFIC named entity (a company/product/firm), not a generic domain word. Examples: `"kevin rose digg founder"` not `"kevin rose"` (collides with Kevin Warsh / Leon Rose / Kevin Hart); `"lan xuezhao basis set ventures"` not `"lan xuezhao"` (collides with "Lanzhou" food, cdrama edits); `"trevin chow compound engineering"` not `"trevin chow"` (collides with Trevin Wax / Trevin Brown); `"tella screen recording"` not `"tella"`. The `ranking_query` carries the same anchor: `"ranking_query": "What has Kevin Rose, founder of Digg, been doing in the last 30 days?"`, not a bare `"...Kevin Rose..."`. A bare collision-prone name as a subquery is the named 2026-06-17 failure mode — "Kevin Rose" returned 55 items with ~0 about the actual founder until every subquery was anchored to "Digg founder". When the name is globally unambiguous (Kanye West, Nvidia, Peter Steinberger/OpenClaw), no anchor is needed.
+- For collision-prone people, set `"person_identity_anchors"` to bare verified org names (`["Digg"]`); for an org whose first word also names others, its full name (`["Pace Capital"]`; never a descriptor like `Stripe payments`). Evidence must name one. Only the X subject is exempt.
+- **DISAMBIGUATION (mandatory for collision-prone names — the #1 cause of off-topic noise).** Anchor the `search_query` with the disambiguating context you resolved in Step 0.5 / 0.55 — the entity's company, role, or domain — when the topic name (a) is a common word or has non-product meanings ("Loom" = weaving tool, "Tella" = soccer player), OR (b) is a PERSON whose name collides with other public figures or common words. Apply the anchor to **EVERY subquery, not just the primary**, and mirror it in the `ranking_query`. Anchor on a SPECIFIC named entity (a company/product/firm), not a generic domain word. Examples: `"kevin rose digg founder"` not `"kevin rose"` (collides with Kevin Warsh / Leon Rose / Kevin Hart); `"lan xuezhao basis set ventures"` not `"lan xuezhao"` (collides with "Lanzhou" food, cdrama edits); `"trevin chow compound engineering"` not `"trevin chow"` (collides with Trevin Wax / Trevin Brown); `"tella screen recording"` not `"tella"`. The `ranking_query` carries the same anchor: `"ranking_query": "What has Kevin Rose, founder of Digg, been doing in the last 30 days?"`, not a bare `"...Kevin Rose..."`. When the name is globally unambiguous (Kanye West, Nvidia, Peter Steinberger/OpenClaw), no anchor is needed.
 - **For comparison queries**, each main-entity subquery should include TOPIC_A's product category: "tella screen recorder review" not just "tella review".
 - NEVER include temporal phrases in search_query: no "last 30 days", "recent", month names, year numbers
 - NEVER include meta-research phrases: no "news", "updates", "public appearances"
@@ -552,7 +553,7 @@ Store your plan as `QUERY_PLAN_JSON` - you'll pass it to the script in the next 
 2. **If WebSearch IS available:** you MUST have run Step 0.55 (Pre-Research Intelligence - resolved subreddits, X handles, TikTok hashtags/creators, Instagram creators, GitHub user/repo where applicable) AND Step 0.75 (Query Planner - produced `QUERY_PLAN_JSON` according to its schema and guidance). These are NOT optional. If either was skipped, return to that step now.
 3. **If WebSearch is NOT available:** you MUST add `--auto-resolve` to the command instead. Do not attempt Steps 0.55 / 0.75 without WebSearch.
 4. **The command you are about to run uses `--emit=compact`.** `--emit md` is a debugging/inspection mode and is DISALLOWED as the primary user-facing flow. If you find yourself about to run `--emit md`, stop and switch to `--emit=compact`.
-5. **On WebSearch platforms the command MUST include `--plan "$QUERY_PLAN_FILE"`** (the tmpfile you wrote via heredoc in Step 1 - never inline `--plan 'QUERY_PLAN_JSON'`; an apostrophe in any search or ranking string breaks shell parsing) plus every resolved handle/subreddit/hashtag/creator flag from Step 0.55. Omit only flags whose value was not resolvable.
+5. **On WebSearch platforms the command MUST include `--plan -`** with the quoted JSON heredoc from Step 1, plus every resolved handle/subreddit/hashtag/creator flag from Step 0.55. Omit only flags whose value was not resolvable.
 
 **Degraded path (missing any of the above on a WebSearch platform) is a known regression shape. It produces bland 4-bullet summaries instead of rich synthesis. Do not take it.**
 
@@ -593,29 +594,21 @@ RESEARCH_TOPIC=${RESEARCH_TOPIC%$'\n'}
 "${LAST30DAYS_PYTHON}" "${SKILL_DIR}/scripts/last30days.py" "$RESEARCH_TOPIC" --emit=compact --save-dir="${LAST30DAYS_MEMORY_DIR}" --save-suffix=v3
 ```
 
-**If you ran Steps 0.55 and 0.75 (agent planning), pass the plan via a tmpfile and add the targeting flags:**
+**If you ran Steps 0.55 and 0.75 (agent planning), replace the engine invocation above with this command and add the targeting flags before the heredoc:**
 
 ```bash
-# Write QUERY_PLAN_JSON to a tmpfile before the engine invocation above.
-# parse_plan() reads file paths transparently; this avoids inline-JSON
-# shell-quoting hazards (apostrophes in search_query / ranking_query
-# strings break single-quoted command-line JSON). Trailing XXXXXX (no
-# .json suffix) for BSD/macOS portability — BSD mktemp only substitutes
-# X's at the end of the template.
-QUERY_PLAN_FILE=$(mktemp "${TMPDIR:-/tmp}/last30days-plan.XXXXXX")
-trap 'rm -f "$QUERY_PLAN_FILE"' EXIT
-# >| not >: mktemp already created the file, so a plain > is refused under
-# `set -o noclobber` (leaving the plan empty -> deterministic fallback).
-cat >| "$QUERY_PLAN_FILE" <<'PLAN_EOF'
+# --plan - reads JSON from stdin. The quoted delimiter keeps apostrophes,
+# dollar signs, and backticks literal without a temporary file or cleanup.
+# Choose a delimiter that does not occur as a line in the JSON.
+"${LAST30DAYS_PYTHON}" "${SKILL_DIR}/scripts/last30days.py" "$RESEARCH_TOPIC" --emit=compact --save-dir="${LAST30DAYS_MEMORY_DIR}" --save-suffix=v3 --plan - <<'PLAN_EOF'
 {QUERY_PLAN_JSON_FROM_STEP_0.75}
 PLAN_EOF
 ```
 
 **Run this block directly in your shell tool. Do NOT wrap it in `bash -lc '...'` or `zsh -lc '...'`** - the outer single quotes terminate at the first apostrophe inside the heredoc body (a ranking string like `What did Kanye West's album do?`), which aborts the command with a `zsh: unmatched "` error before the engine ever runs. The quoted `<<'PLAN_EOF'` marker already makes the heredoc body apostrophe-safe; the `-lc '...'` wrapper is what breaks it.
 
-Then add to the engine command:
+Add these targeting flags to that engine command before `<<'PLAN_EOF'`:
 
-- `--plan "$QUERY_PLAN_FILE"` (path to the file you just wrote)
 - `--x-handle={RESOLVED_HANDLE}` (from Step 0.5)
 - `--subreddits={RESOLVED_SUBREDDITS}` (broad/category subs, from Step 0.55)
 - `--dedicated-subreddits={RESOLVED_DEDICATED_SUBREDDITS}` (entity-home subs, from Step 0.55; pulled in full + floor-exempt)

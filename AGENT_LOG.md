@@ -1061,3 +1061,109 @@ Source commit matrix:
 - `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b`: `daad13e34461` -> `daad13e34461`; skills 1 -> 1, retained files 1 -> 1.
 - `emilkowalski__skills`: `2d228630ba14` -> `2d228630ba14`; skills 15 -> 15, retained files 23 -> 23.
 - `humanlayer__skills`: `653b6411c1f7` -> `653b6411c1f7`; skills 7 -> 7, retained files 82 -> 82.
+
+## 2026-11-01 20:06:48Z
+
+- Action: Weekly automation refresh
+- Sources synced: 16
+- Skills indexed: 1396
+- Exact duplicate groups: 175
+- Repeated skill names: 342
+- Synced `addyosmani__agent-skills` at commit `301b02b12bff` with 25 skills and 40 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `3970a91de752` with 5 skills and 832 files.
+- Synced `mattpocock__skills` at commit `4ae2317ddb22` with 39 skills and 69 files.
+- Synced `juliusbrussee__caveman` at commit `9b68f7ed12b0` with 28 skills and 58 files.
+- Synced `obra__Superpowers` at commit `2ce8aa15d05b` with 15 skills and 84 files.
+- Synced `cursor__plugins` at commit `ae5650febf43` with 173 skills and 454 files.
+- Synced `affaan-m__ECC` at commit `b38be6a7f635` with 1068 skills and 1383 files.
+- Synced `mvanhorn__last30days-skill` at commit `6894d44e088c` with 1 skills and 152 files.
+- Synced `DietrichGebert__ponytail` at commit `96608e078b2d` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `000650b15698` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `1ecea1993b7f` with 2 skills and 2 files.
+- Synced `Leonxlnx__taste-skill` at commit `12af471f627f` with 1 skills and 37 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+- Synced `emilkowalski__skills` at commit `a81dbca07f22` with 16 skills and 24 files.
+- Synced `humanlayer__skills` at commit `69d5fc61d6ca` with 7 skills and 83 files.
+
+## 2026-11-01 20:12:44Z
+
+- Action: Weekly automation refresh after repository-rule reference repair
+- Sources synced: 16
+- Skills indexed: 1396
+- Exact duplicate groups: 175
+- Repeated skill names: 342
+- Synced `addyosmani__agent-skills` at commit `301b02b12bff` with 25 skills and 40 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `3970a91de752` with 5 skills and 832 files.
+- Synced `mattpocock__skills` at commit `4ae2317ddb22` with 39 skills and 69 files.
+- Synced `juliusbrussee__caveman` at commit `9b68f7ed12b0` with 28 skills and 58 files.
+- Synced `obra__Superpowers` at commit `2ce8aa15d05b` with 15 skills and 84 files.
+- Synced `cursor__plugins` at commit `ae5650febf43` with 173 skills and 454 files.
+- Synced `affaan-m__ECC` at commit `b38be6a7f635` with 1068 skills and 1386 files.
+- Synced `mvanhorn__last30days-skill` at commit `6894d44e088c` with 1 skills and 152 files.
+- Synced `DietrichGebert__ponytail` at commit `96608e078b2d` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `000650b15698` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `1ecea1993b7f` with 2 skills and 2 files.
+- Synced `Leonxlnx__taste-skill` at commit `12af471f627f` with 1 skills and 37 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+- Synced `emilkowalski__skills` at commit `a81dbca07f22` with 16 skills and 24 files.
+- Synced `humanlayer__skills` at commit `69d5fc61d6ca` with 7 skills and 83 files.
+
+## 2026-11-01 20:17:39Z
+
+- Action: Weekly automation refresh after declared-reference repairs
+- Sources synced: 16
+- Skills indexed: 1396
+- Exact duplicate groups: 175
+- Repeated skill names: 342
+- Synced `addyosmani__agent-skills` at commit `301b02b12bff` with 25 skills and 40 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `3970a91de752` with 5 skills and 1103 files.
+- Synced `mattpocock__skills` at commit `4ae2317ddb22` with 39 skills and 69 files.
+- Synced `juliusbrussee__caveman` at commit `9b68f7ed12b0` with 28 skills and 58 files.
+- Synced `obra__Superpowers` at commit `2ce8aa15d05b` with 15 skills and 84 files.
+- Synced `cursor__plugins` at commit `ae5650febf43` with 173 skills and 454 files.
+- Synced `affaan-m__ECC` at commit `b38be6a7f635` with 1068 skills and 1386 files.
+- Synced `mvanhorn__last30days-skill` at commit `6894d44e088c` with 1 skills and 152 files.
+- Synced `DietrichGebert__ponytail` at commit `96608e078b2d` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `000650b15698` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `1ecea1993b7f` with 2 skills and 2 files.
+- Synced `Leonxlnx__taste-skill` at commit `12af471f627f` with 1 skills and 37 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+- Synced `emilkowalski__skills` at commit `a81dbca07f22` with 16 skills and 24 files.
+- Synced `humanlayer__skills` at commit `69d5fc61d6ca` with 7 skills and 83 files.
+
+## 2026-11-01 20:20:23Z — weekly refresh validation and automatic recovery
+
+- Recorded the original main checkout at `20bb489381c7e0fa970fcd19df38d633d35ff012`: index bytes and entries, tracked/untracked/ignored file states, and identities, modes, mtimes and SHA-256 hashes for all 3,232 files. It was clean but stale. Verified live origin/main and created a disposable, remote-aligned main clone at `fcb3ff2441b590899a77a972936f98c89d4c7af9`. The owner checkout, branch and index remain unchanged; no stash, reset, cleanup or owner commit was used.
+- Both prior-run memory and the October 11 recovery cases were read. Used a fresh run-specific `AI_SKILLS_ARCHIVE_TMP_DIR` to avoid the known malformed shared-cache problem without touching older caches. The initial sync and both repaired rebuilds fetched all 16 registered sources successfully at stable upstream commits. No source fetch failure or unavailable source remains. Archived scripts and tests were preserved as data and never executed.
+- Withheld the initial candidate after source-context review found that ECC TypeScript skills explicitly name repository-root rule files, but the resolver only tried skill-relative paths. Added five sanitized regression cases; two failed before the repair. The resolver now follows only explicit multi-component file lists declared “in this repository”, preserving their recursive companions while rejecting metadata, escapes, source-root directory expansion, generic target-project inventories and installed-path examples. Read-only closure comparison found three new files and four changed skill closures: TypeScript rules plus Ruby patterns, with two companion rules already present through other skills. No repair-driven removal occurred.
+- A wider review found two required academic reviewer dependencies missing: `shared/references/review_criteria_consumer_protocol.md` and `scripts/review_panel_provenance.py`. Added four regression cases; one failed before the second repair. Top-level skill packages now resolve literal `shared/` and `scripts/` file references against the source root. This fallback does not apply to nested skills, arbitrary docs/src paths, explicit parent paths or directory globs. Existing containment and no-execution gates remain in force.
+- All 44 regression tests pass (35 original, nine added; three cases reproduced the defects before repair). The final resolver/test diff was reviewed directly. Repairs are limited to `scripts/sync_sources.py` and `scripts/test_sync_sources.py`. The second repair restores 271 recursively referenced academic companions: helpers, schemas, and explicitly referenced tests/fixtures. A reference-chain audit proves all 271 reachable from current source skills (longest chain 13 files). Across both repairs, exactly 274 companions are restored beyond the first candidate, with no removals. No unrelated repository tree was mirrored.
+- Final independent validation passed for all 3,508 retained upstream Git blobs and executable modes, 3,466 retained text hashes, 1,396 skill records (one curated), 7,440 upstream linked references plus one curated reference, three declared licenses, complete recognized recursive closure, archive metadata, generated catalogs and README, 1,420 README local links, independent duplicate recomputation, compilation and whitespace. A separate static Python audit checked 1,456 existing local import edges with no missing modules or syntax skips. Curated content, source registry, automation manifest and repository instructions are unchanged; the previous agent log is a byte-preserved prefix.
+- Required package checks were derived from the recorded upstream Git trees, not historical counts: all 53 HumanLayer rpi files (52 companions); both seven-file Caveman compression modules; both 27-file Cursor statechart runtime packages; Taste’s nine library files, six assets and ten scripts; five ECC repository rules; and eight explicitly required academic reviewer helper/schema files.
+- Temporary diagnostic failures were recovered without changing source data: `$CODEX_HOME` was unset, so the first memory read addressed `/automations/...`; reading the configured absolute automation path succeeded. Diagnostic Git/log/copy commands used the artifact directory or checkout-relative names in the wrong directory; explicit checkout/artifact paths and rerun copies/checks succeeded. The first statechart package audit incorrectly included unreferenced development `package.json`/`tsconfig.json`; inspection showed a test-only devDependency and noEmit compiler config, while all runtime modules and the launcher were independently verified. An initial preview assertion guessed four new files/two records; actual closures proved three new files/four records because two rules were already retained and Rails also declares its rule. The corrected count proof and the final broader closure audit passed. No archive gate was relaxed.
+- Nine upstream commits advanced; seven remained unchanged. Added eight skill paths and removed none; 109 existing skill hashes changed. ECC adds module-governance in three mirrors, typescript-patterns in two mirrors, and issue-review; Emil Kowalski adds remove-animations; Matt Pocock adds software-factory with five companion guides. Academic pipeline advances to v3.24.0; last30days to v3.31.0; Cursor replaces its statechart MJS runtime with TypeScript and updates review/orchestration guidance; HumanLayer adds the rpi prose reference. Addy Osmani updates workflow/design guidance, and Ponytail advances without retained-content changes.
+- Reviewed all 54 removed snapshot paths against their exact current upstream Git trees: every path is deleted upstream. These are Cursor statechart MJS files, obsolete interrogate references and removed orchestration helpers. No SKILL.md was removed. Snapshot count increases 3,195 -> 3,508, including the verified repair companions.
+- Exact duplicate groups increase 173 -> 175, adding module-governance and typescript-patterns with no membership removals; 16 existing groups rotate hashes. Repeated-name groups increase 340 -> 342 for the same two names, with no name removals and 36 existing groups updated.
+- Complete owned-diff review uses upstream-object parity, exact generated-output recomputation, all removed-path proofs, restored-file reference chains, skill/source/duplicate deltas, and the authored parser/test diff. Publication is limited to archive snapshots/metadata, three generated catalogs, README, this append-only log, and the two authorized repair files. GitHub reports no active rulesets, main is unprotected with required checks off, and the repository has no GitHub Actions workflows. Final staged/commit/publication evidence and owner-preservation proof are retained in automation continuity artifacts; the publication SHA is recorded in automation memory.
+
+| Source | Previous commit | Current commit | Skills | Snapshot files |
+| --- | --- | --- | --- | --- |
+| `addyosmani__agent-skills` | `aeac41d4d005` | `301b02b12bff` | 25 -> 25 | 39 -> 40 |
+| `multica-ai__andrej-karpathy-skills` | `2c606141936f` | `2c606141936f` | 1 -> 1 | 1 -> 1 |
+| `Imbad0202__academic-research-skills` | `93608d8045df` | `3970a91de752` | 5 -> 5 | 829 -> 1103 |
+| `mattpocock__skills` | `5beb35b040e3` | `4ae2317ddb22` | 38 -> 39 | 63 -> 69 |
+| `juliusbrussee__caveman` | `9b68f7ed12b0` | `9b68f7ed12b0` | 28 -> 28 | 58 -> 58 |
+| `obra__Superpowers` | `2ce8aa15d05b` | `2ce8aa15d05b` | 15 -> 15 | 84 -> 84 |
+| `cursor__plugins` | `99b609a72323` | `ae5650febf43` | 173 -> 173 | 452 -> 454 |
+| `affaan-m__ECC` | `4c28a7be9eda` | `b38be6a7f635` | 1062 -> 1068 | 1359 -> 1386 |
+| `mvanhorn__last30days-skill` | `f3cd06a620e3` | `6894d44e088c` | 1 -> 1 | 151 -> 152 |
+| `DietrichGebert__ponytail` | `09c434ab73ca` | `96608e078b2d` | 12 -> 12 | 12 -> 12 |
+| `petergyang__no-ai-slop` | `000650b15698` | `000650b15698` | 1 -> 1 | 2 -> 2 |
+| `ayghri__i-have-adhd` | `1ecea1993b7f` | `1ecea1993b7f` | 2 -> 2 | 2 -> 2 |
+| `Leonxlnx__taste-skill` | `12af471f627f` | `12af471f627f` | 1 -> 1 | 37 -> 37 |
+| `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` | `daad13e34461` | `daad13e34461` | 1 -> 1 | 1 -> 1 |
+| `emilkowalski__skills` | `2d228630ba14` | `a81dbca07f22` | 15 -> 16 | 23 -> 24 |
+| `humanlayer__skills` | `653b6411c1f7` | `69d5fc61d6ca` | 7 -> 7 | 82 -> 83 |
