@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T20:17:39.281106+00:00",
+  "generated_at": "2026-11-08T20:06:48.371426+00:00",
   "exact_skill_duplicates": [
     {
       "sha256": "00a0d01e234f213d343f0040bbebd56e042978768ce5bb7117776a75bd9547e8",
@@ -846,20 +846,6 @@
       ]
     },
     {
-      "sha256": "534c0a70d4c7728815214a11e80e66cecbd2104f905f96414e6e32504381c002",
-      "count": 2,
-      "locations": [
-        {
-          "source_repo": "juliusbrussee/caveman",
-          "path": "plugins/caveman/skills/cavecrew/SKILL.md"
-        },
-        {
-          "source_repo": "juliusbrussee/caveman",
-          "path": "skills/cavecrew/SKILL.md"
-        }
-      ]
-    },
-    {
       "sha256": "556d1c2d04e3e0ef10f474ed413013646088ff057f9be02d3a3c4f833ccc33c5",
       "count": 2,
       "locations": [
@@ -1302,6 +1288,20 @@
       ]
     },
     {
+      "sha256": "788d6fd86a35007845fd709fbcb788c7eda3c7dc51e63c67e276b0964d77faec",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "plugins/caveman/skills/caveman-compress/SKILL.md"
+        },
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "skills/caveman-compress/SKILL.md"
+        }
+      ]
+    },
+    {
       "sha256": "79e3c8b5b7c38fa04778b1084cddc2f8db5f671e682b0e9c1d5bd2f95800f690",
       "count": 2,
       "locations": [
@@ -1312,6 +1312,20 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/swiftui-patterns/SKILL.md"
+        }
+      ]
+    },
+    {
+      "sha256": "7a5acd01a87896d82bc9cb0bfcf1bc1eb7008fb437f0bc60d692b30fd81ac084",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "plugins/caveman/skills/cavecrew/SKILL.md"
+        },
+        {
+          "source_repo": "juliusbrussee/caveman",
+          "path": "skills/cavecrew/SKILL.md"
         }
       ]
     },
@@ -2066,20 +2080,6 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/database-migrations/SKILL.md"
-        }
-      ]
-    },
-    {
-      "sha256": "dd5388f085316f9f6a8b34ad906441023033596f8ac1d63b81fb20e8d3f50283",
-      "count": 2,
-      "locations": [
-        {
-          "source_repo": "juliusbrussee/caveman",
-          "path": "plugins/caveman/skills/caveman-compress/SKILL.md"
-        },
-        {
-          "source_repo": "juliusbrussee/caveman",
-          "path": "skills/caveman-compress/SKILL.md"
         }
       ]
     },
@@ -3424,12 +3424,12 @@
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "plugins/caveman/skills/cavecrew/SKILL.md",
-          "sha256": "534c0a70d4c7728815214a11e80e66cecbd2104f905f96414e6e32504381c002"
+          "sha256": "7a5acd01a87896d82bc9cb0bfcf1bc1eb7008fb437f0bc60d692b30fd81ac084"
         },
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/cavecrew/SKILL.md",
-          "sha256": "534c0a70d4c7728815214a11e80e66cecbd2104f905f96414e6e32504381c002"
+          "sha256": "7a5acd01a87896d82bc9cb0bfcf1bc1eb7008fb437f0bc60d692b30fd81ac084"
         }
       ]
     },
@@ -3456,12 +3456,12 @@
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "plugins/caveman/skills/caveman-compress/SKILL.md",
-          "sha256": "dd5388f085316f9f6a8b34ad906441023033596f8ac1d63b81fb20e8d3f50283"
+          "sha256": "788d6fd86a35007845fd709fbcb788c7eda3c7dc51e63c67e276b0964d77faec"
         },
         {
           "source_repo": "juliusbrussee/caveman",
           "path": "skills/caveman-compress/SKILL.md",
-          "sha256": "dd5388f085316f9f6a8b34ad906441023033596f8ac1d63b81fb20e8d3f50283"
+          "sha256": "788d6fd86a35007845fd709fbcb788c7eda3c7dc51e63c67e276b0964d77faec"
         }
       ]
     },

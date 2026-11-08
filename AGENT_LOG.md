@@ -1167,3 +1167,36 @@ Source commit matrix:
 | `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` | `daad13e34461` | `daad13e34461` | 1 -> 1 | 1 -> 1 |
 | `emilkowalski__skills` | `2d228630ba14` | `a81dbca07f22` | 15 -> 16 | 23 -> 24 |
 | `humanlayer__skills` | `653b6411c1f7` | `69d5fc61d6ca` | 7 -> 7 | 82 -> 83 |
+
+## 2026-11-08 20:06:48Z
+
+- Action: Weekly automation refresh
+- Sources synced: 16
+- Skills indexed: 1398
+- Exact duplicate groups: 175
+- Repeated skill names: 342
+- Synced `addyosmani__agent-skills` at commit `301b02b12bff` with 25 skills and 40 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `6d9388674de1` with 5 skills and 1103 files.
+- Synced `mattpocock__skills` at commit `4ae2317ddb22` with 39 skills and 69 files.
+- Synced `juliusbrussee__caveman` at commit `1e91f1306d60` with 28 skills and 61 files.
+- Synced `obra__Superpowers` at commit `22f0b463e7a5` with 15 skills and 80 files.
+- Synced `cursor__plugins` at commit `6b0300214a09` with 173 skills and 454 files.
+- Synced `affaan-m__ECC` at commit `d2ef2680594f` with 1068 skills and 1386 files.
+- Synced `mvanhorn__last30days-skill` at commit `71dc2a1529f2` with 1 skills and 152 files.
+- Synced `DietrichGebert__ponytail` at commit `96608e078b2d` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `000650b15698` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `1ecea1993b7f` with 2 skills and 2 files.
+- Synced `Leonxlnx__taste-skill` at commit `f6b76575f949` with 1 skills and 1631 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+- Synced `emilkowalski__skills` at commit `5206a950b715` with 18 skills and 27 files.
+- Synced `humanlayer__skills` at commit `4d69d20f6e9b` with 7 skills and 83 files.
+
+## 2026-11-08 — weekly refresh validation
+
+- Preserved the original main checkout at `20bb489381c7e0fa970fcd19df38d633d35ff012` and its index, staged/unstaged diffs and untracked inventory. It was clean but behind; the publication clone started at verified `origin/main` `1e4d8301ca8f947a044dfe27b179ad7be396b8e6`. A fresh run-specific source cache avoided the previously recorded malformed shared cache. All 16 source fetches succeeded; no archived code was executed.
+- Nine upstream heads advanced: academic research `3970a91de752` -> `6d9388674de1`, Caveman `9b68f7ed12b0` -> `1e91f1306d60`, Superpowers `2ce8aa15d05b` -> `22f0b463e7a5`, Cursor `ae5650febf43` -> `6b0300214a09`, ECC `b38be6a7f635` -> `d2ef2680594f`, last30days `6894d44e088c` -> `71dc2a1529f2`, Taste `12af471f627f` -> `f6b76575f949`, Emil Kowalski `a81dbca07f22` -> `5206a950b715`, and HumanLayer `69d5fc61d6ca` -> `4d69d20f6e9b`. Seven heads were unchanged.
+- Added Emil Kowalski's `choreograph` and `gestures` skills; no skills were removed. Sixteen existing skill hashes changed. Academic Pipeline advances from v3.24.0 to v3.24.2. Taste advances to 2.5.1 and replaces its asset kit; its skill explicitly instructs copying `assets`, accounting for 1,594 retained upstream asset files. All 36 removed snapshot paths (31 Taste, five Superpowers) are absent from the corresponding current upstream Git trees.
+- Exact duplicate groups remain 175 and repeated-name groups remain 342. The `cavecrew` and `caveman-compress` mirrored pairs retain their membership but their hashes change; their two repeated-name entries update accordingly.
+- All 44 archive regression tests pass. Validated 5,104 snapshot files against recorded upstream Git blob IDs and executable modes, 4,908 text hashes, 1,398 skill records including one curated skill, 9,034 upstream linked references, three licenses, generated catalogs and README, 1,422 local README links, duplicate recomputation, recognized recursive closure, containment, append-only log, compilation and whitespace. An independent static audit found 1,459 local Python import edges, no missing source modules and no syntax skips. HumanLayer `rpi` independently matches all 53 current upstream package files; both Caveman compression packages, both Cursor statechart runtime packages, Taste's current asset kit, the declared ECC rules and academic reviewer dependencies passed the package checks.
+- Diagnostic handling: `CODEX_HOME` was unset, so the first optional automation-memory read pointed at an empty path; the configured absolute memory path was read successfully. A local `.github` listing found no directory; GitHub's workflow API separately reports one active workflow, `Add taste-skill archive source`. The branch-protection endpoint returned its expected 404 with `Branch not protected`; no required branch protection was reported. These diagnostics did not affect source fetches or validation.

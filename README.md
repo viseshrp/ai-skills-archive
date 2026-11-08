@@ -38,7 +38,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
-  - Archived commit: `3970a91de7527b2e6149a48537b9ef6a876ef806`
+  - Archived commit: `6d9388674de1ad0437ad95db3d52f92b92204d84`
   - Snapshot: [`archives/Imbad0202__academic-research-skills/snapshot`](archives/Imbad0202__academic-research-skills/snapshot)
   - Skills discovered: 5
   - Files retained in reduced snapshot: 1103
@@ -48,27 +48,27 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 39
   - Files retained in reduced snapshot: 69
 - [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman)
-  - Archived commit: `9b68f7ed12b05e7efaff18e65c5a3fc2849fd0a4`
+  - Archived commit: `1e91f1306d602d4ca23618701b1185575ae1869b`
   - Snapshot: [`archives/juliusbrussee__caveman/snapshot`](archives/juliusbrussee__caveman/snapshot)
   - Skills discovered: 28
-  - Files retained in reduced snapshot: 58
+  - Files retained in reduced snapshot: 61
 - [obra/Superpowers](https://github.com/obra/Superpowers)
-  - Archived commit: `2ce8aa15d05bd57213e6f746f953aafb7ded7a8b`
+  - Archived commit: `22f0b463e7a5e579904dd6211a520321035526f7`
   - Snapshot: [`archives/obra__Superpowers/snapshot`](archives/obra__Superpowers/snapshot)
   - Skills discovered: 15
-  - Files retained in reduced snapshot: 84
+  - Files retained in reduced snapshot: 80
 - [cursor/plugins](https://github.com/cursor/plugins)
-  - Archived commit: `ae5650febf4320793844c12c4adaa937f417f8da`
+  - Archived commit: `6b0300214a09fd6029cfb7077043125758cd1fd2`
   - Snapshot: [`archives/cursor__plugins/snapshot`](archives/cursor__plugins/snapshot)
   - Skills discovered: 173
   - Files retained in reduced snapshot: 454
 - [affaan-m/ECC](https://github.com/affaan-m/ECC)
-  - Archived commit: `b38be6a7f6350964d59328b52f0624e1d1d552d1`
+  - Archived commit: `d2ef2680594f9a17526a6e1a2e18b3d242c5d17b`
   - Snapshot: [`archives/affaan-m__ECC/snapshot`](archives/affaan-m__ECC/snapshot)
   - Skills discovered: 1068
   - Files retained in reduced snapshot: 1386
 - [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
-  - Archived commit: `6894d44e088c449ecdd7246a18763fddba1ff805`
+  - Archived commit: `71dc2a1529f23dfe7b0d0e3b3e11d4a7e8afd428`
   - Snapshot: [`archives/mvanhorn__last30days-skill/snapshot`](archives/mvanhorn__last30days-skill/snapshot)
   - Skills discovered: 1
   - Files retained in reduced snapshot: 152
@@ -89,23 +89,23 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 2
   - Files retained in reduced snapshot: 2
 - [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill)
-  - Archived commit: `12af471f627f866411b4bd785b19646d3672784c`
+  - Archived commit: `f6b76575f949707b4e3c37cd86cb44b0b98643e8`
   - Snapshot: [`archives/Leonxlnx__taste-skill/snapshot`](archives/Leonxlnx__taste-skill/snapshot)
   - Skills discovered: 1
-  - Files retained in reduced snapshot: 37
+  - Files retained in reduced snapshot: 1631
 - [ChewingGlass/9a380da5d5a69a540b56d6449556ac5b](https://gist.github.com/ChewingGlass/9a380da5d5a69a540b56d6449556ac5b)
   - Archived commit: `daad13e3446186762f0e248e0696ed99c32e5939`
   - Snapshot: [`archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot`](archives/ChewingGlass__9a380da5d5a69a540b56d6449556ac5b/snapshot)
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [emilkowalski/skills](https://github.com/emilkowalski/skills)
-  - Archived commit: `a81dbca07f2217b7103e510c0f13f8d5b017afc9`
+  - Archived commit: `5206a950b715e0cabe7043ea0b2304332b91494e`
   - Snapshot: [`archives/emilkowalski__skills/snapshot`](archives/emilkowalski__skills/snapshot)
-  - Skills discovered: 16
-  - Files retained in reduced snapshot: 24
+  - Skills discovered: 18
+  - Files retained in reduced snapshot: 27
   - Upstream license: [`LICENSE`](archives/emilkowalski__skills/LICENSE)
 - [humanlayer/skills](https://github.com/humanlayer/skills)
-  - Archived commit: `69d5fc61d6ca6f7056d283a2ee2a045be741a1d6`
+  - Archived commit: `4d69d20f6e9b57b4fcf0d501ccfb1be961f0f329`
   - Snapshot: [`archives/humanlayer__skills/snapshot`](archives/humanlayer__skills/snapshot)
   - Skills discovered: 7
   - Files retained in reduced snapshot: 83
@@ -1534,8 +1534,10 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `apple-design`: [`skills/apple-design/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/apple-design/SKILL.md)
 - `ask-sonner`: [`skills/ask-sonner/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/ask-sonner/SKILL.md)
 - `break-ui`: [`skills/break-ui/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/break-ui/SKILL.md)
+- `choreograph`: [`skills/choreograph/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/choreograph/SKILL.md)
 - `emil-design-eng`: [`skills/emil-design-eng/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/emil-design-eng/SKILL.md)
 - `find-animation-opportunities`: [`skills/find-animation-opportunities/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/find-animation-opportunities/SKILL.md)
+- `gestures`: [`skills/gestures/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/gestures/SKILL.md)
 - `improve-animations`: [`skills/improve-animations/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/improve-animations/SKILL.md)
 - `mobile-native`: [`skills/mobile-native/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/mobile-native/SKILL.md)
 - `pick-ui-library`: [`skills/pick-ui-library/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/pick-ui-library/SKILL.md)
