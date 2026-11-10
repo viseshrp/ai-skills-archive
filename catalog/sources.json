@@ -71,5 +71,12 @@
     "license_files": [
       "LICENSE"
     ]
+  },
+  {
+    "url": "https://github.com/janestreet/agent_skills",
+    "notes": "Added with scripts/sync_sources.py add from https://github.com/janestreet/agent_skills.",
+    "license_files": [
+      "LICENSE.md"
+    ]
   }
 ]

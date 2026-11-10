@@ -1200,3 +1200,12 @@ Source commit matrix:
 - Exact duplicate groups remain 175 and repeated-name groups remain 342. The `cavecrew` and `caveman-compress` mirrored pairs retain their membership but their hashes change; their two repeated-name entries update accordingly.
 - All 44 archive regression tests pass. Validated 5,104 snapshot files against recorded upstream Git blob IDs and executable modes, 4,908 text hashes, 1,398 skill records including one curated skill, 9,034 upstream linked references, three licenses, generated catalogs and README, 1,422 local README links, duplicate recomputation, recognized recursive closure, containment, append-only log, compilation and whitespace. An independent static audit found 1,459 local Python import edges, no missing source modules and no syntax skips. HumanLayer `rpi` independently matches all 53 current upstream package files; both Caveman compression packages, both Cursor statechart runtime packages, Taste's current asset kit, the declared ECC rules and academic reviewer dependencies passed the package checks.
 - Diagnostic handling: `CODEX_HOME` was unset, so the first optional automation-memory read pointed at an empty path; the configured absolute memory path was read successfully. A local `.github` listing found no directory; GitHub's workflow API separately reports one active workflow, `Add taste-skill archive source`. The branch-protection endpoint returned its expected 404 with `Branch not protected`; no required branch protection was reported. These diagnostics did not affect source fetches or validation.
+
+## 2026-11-10 03:19:39Z
+
+- Action: Added source: https://github.com/janestreet/agent_skills (scoped add; other registered sources not refreshed)
+- Sources synced: 1
+- Skills indexed: 1399
+- Exact duplicate groups: 175
+- Repeated skill names: 342
+- Synced `janestreet__agent_skills` at commit `7c6715c29548` with 1 skills and 1 files.

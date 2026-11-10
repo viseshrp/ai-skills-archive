@@ -23210,6 +23210,16 @@
     ]
   },
   {
+    "source_repo": "janestreet/agent_skills",
+    "repo_key": "janestreet__agent_skills",
+    "skill_name": "socratic-tutor",
+    "description": "Structured Socratic tutoring when the user explicitly asks to be taught, quizzed, or drilled to mastery on a topic: diagnostic placement, a skill map with levels 0-5, spaced review, and a final assessment. Trigger phrases: 'teach me', 'tutor me', 'quiz me', 'drill me', 'help me master'. Not for one-off 'explain X' or 'what is X' questions.",
+    "path": "socratic-tutor/SKILL.md",
+    "relative_directory": "socratic-tutor",
+    "sha256": "9190b68440ad99be4d865c63b87939f23a362efac0776c5a67c93d1498bb5e37",
+    "linked_local_files": []
+  },
+  {
     "source_repo": "viseshrp/ai-skills-archive (curated)",
     "repo_key": "curated",
     "skill_name": "test-audit",

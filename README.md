@@ -110,6 +110,12 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 7
   - Files retained in reduced snapshot: 83
   - Upstream license: [`LICENSE`](archives/humanlayer__skills/LICENSE)
+- [janestreet/agent_skills](https://github.com/janestreet/agent_skills)
+  - Archived commit: `7c6715c29548a3b39d4a9545c698ee4fd17a7213`
+  - Snapshot: [`archives/janestreet__agent_skills/snapshot`](archives/janestreet__agent_skills/snapshot)
+  - Skills discovered: 1
+  - Files retained in reduced snapshot: 1
+  - Upstream license: [`LICENSE.md`](archives/janestreet__agent_skills/LICENSE.md)
 
 ## Curated Adaptations
 
@@ -1554,6 +1560,9 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `rpi`: [`plugins/rpi/skills/rpi/SKILL.md`](archives/humanlayer__skills/snapshot/plugins/rpi/skills/rpi/SKILL.md)
 - `show-me`: [`plugins/show-me/skills/show-me/SKILL.md`](archives/humanlayer__skills/snapshot/plugins/show-me/skills/show-me/SKILL.md)
 - `visual-pr`: [`plugins/visual-pr/skills/visual-pr/SKILL.md`](archives/humanlayer__skills/snapshot/plugins/visual-pr/skills/visual-pr/SKILL.md)
+
+### janestreet/agent_skills
+- `socratic-tutor`: [`socratic-tutor/SKILL.md`](archives/janestreet__agent_skills/snapshot/socratic-tutor/SKILL.md)
 
 ## Duplicate Tracking
 
