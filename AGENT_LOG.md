@@ -1227,3 +1227,49 @@ Source commit matrix:
 - Exact duplicate groups: 175
 - Repeated skill names: 342
 - Synced `cloudflare__security-audit-skill` at commit `c1c8a8c14710` with 1 skills and 18 files.
+
+## 2026-11-15 20:00:52Z
+
+- Action: Weekly automation refresh
+- Sources synced: 19
+- Skills indexed: 1404
+- Exact duplicate groups: 176
+- Repeated skill names: 342
+- Synced `addyosmani__agent-skills` at commit `39b723ceebf8` with 25 skills and 40 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `23bd688bbc12` with 5 skills and 1111 files.
+- Synced `mattpocock__skills` at commit `5863806dd4e1` with 39 skills and 69 files.
+- Synced `juliusbrussee__caveman` at commit `b4ee71d557d9` with 28 skills and 61 files.
+- Synced `obra__Superpowers` at commit `22f0b463e7a5` with 15 skills and 80 files.
+- Synced `cursor__plugins` at commit `bf0c7cd80abd` with 173 skills and 426 files.
+- Synced `affaan-m__ECC` at commit `d2ef2680594f` with 1068 skills and 1386 files.
+- Synced `mvanhorn__last30days-skill` at commit `0d5f0b028e42` with 1 skills and 172 files.
+- Synced `DietrichGebert__ponytail` at commit `96608e078b2d` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `000650b15698` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `1ecea1993b7f` with 2 skills and 2 files.
+- Synced `Leonxlnx__taste-skill` at commit `f6b76575f949` with 1 skills and 1631 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+- Synced `emilkowalski__skills` at commit `64eb3deb9a5f` with 20 skills and 29 files.
+- Synced `humanlayer__skills` at commit `4d69d20f6e9b` with 7 skills and 83 files.
+- Synced `janestreet__agent_skills` at commit `7c6715c29548` with 1 skills and 1 files.
+- Synced `googlechrome__modern-web-guidance` at commit `4dd968349e54` with 2 skills and 234 files.
+- Synced `cloudflare__security-audit-skill` at commit `c1c8a8c14710` with 1 skills and 18 files.
+
+## 2026-11-15 — weekly refresh validation
+
+- Refreshed all 19 registered sources in a disposable checkout based on verified `origin/main` `f4ca503b63ac5e6d70662585c9e835da33260807`. All source fetches succeeded; no archived code was executed. Original owner branch, index and files were recorded for preservation checks.
+- Seven upstream commits advanced; 12 were unchanged. Added Emil Kowalski `ask-emil` and `learn-taste`, removed no skills, and changed 63 existing skill hashes. Academic Pipeline advances to v3.24.3; last30days advances to v4.0.2 with new patent and job research resources. Cursor simplifies `how` and `why`; all 28 removed snapshot paths are absent from current upstream Git trees.
+- Exact duplicate groups increase 175 -> 176 as the two Cursor `why` skills become byte-identical; no duplicate membership was removed. Repeated-name groups remain 342; 16 entries update member hashes.
+- All 48 pre-refresh regression tests passed. Validated all 5,359 retained snapshot files against recorded upstream Git blobs and executable modes, 5,163 text hashes, 1,404 skill records including one curated skill, 9,082 linked references, six licenses, declared companion directories, containment, generated catalogs and README, 1,435 local README links, independently recomputed duplicate groups, and append-only log. A static audit found 1,577 local Python import edges, with no missing modules or syntax skips; it did not execute source code.
+- Complete HumanLayer `plugins/rpi/skills/rpi/` matches all 53 current upstream Git files. Caveman, Cursor statechart, Taste, ECC repository rules and academic reviewer dependencies passed their package checks. Removed paths were checked individually against current upstream Git trees.
+- The first optional memory lookup used an unset `CODEX_HOME` and therefore found no file; reading the configured absolute automation path recovered prior continuity. No source fetch or validation failure remained.
+
+| Source | Previous commit | Current commit | Skills | Snapshot files |
+| --- | --- | --- | --- | --- |
+| `addyosmani__agent-skills` | `301b02b12bff` | `39b723ceebf8` | 25 -> 25 | 40 -> 40 |
+| `Imbad0202__academic-research-skills` | `6d9388674de1` | `23bd688bbc12` | 5 -> 5 | 1103 -> 1111 |
+| `mattpocock__skills` | `4ae2317ddb22` | `5863806dd4e1` | 39 -> 39 | 69 -> 69 |
+| `juliusbrussee__caveman` | `1e91f1306d60` | `b4ee71d557d9` | 28 -> 28 | 61 -> 61 |
+| `cursor__plugins` | `6b0300214a09` | `bf0c7cd80abd` | 173 -> 173 | 454 -> 426 |
+| `mvanhorn__last30days-skill` | `71dc2a1529f2` | `0d5f0b028e42` | 1 -> 1 | 152 -> 172 |
+| `emilkowalski__skills` | `5206a950b715` | `64eb3deb9a5f` | 18 -> 20 | 27 -> 29 |

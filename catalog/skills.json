@@ -33,10 +33,10 @@
     "source_repo": "addyosmani/agent-skills",
     "repo_key": "addyosmani__agent-skills",
     "skill_name": "code-review-and-quality",
-    "description": "Conducts multi-axis code review. Use before merging any change. Use when reviewing code written by yourself, another agent, or a human. Use when you need to assess code quality across multiple dimensions before it enters the main branch. Use when asked to review a diff or a pull request, even when the diff is pasted inline.",
+    "description": "Conducts multi-axis code review. Use before merging any change. Use when reviewing code written by yourself, another agent, or a human. Use when you need to assess code quality across multiple dimensions before it enters the main branch. Use when asked to review a diff or a pull request, even when the diff is pasted inline and the review looks quick to do from reading it.",
     "path": "skills/code-review-and-quality/SKILL.md",
     "relative_directory": "skills/code-review-and-quality",
-    "sha256": "a47551daf26e3cc5670f5286f9e4850c2fc662d5ba08b86eee895254f3851797",
+    "sha256": "5dc8f98d9d23e74676091a945b2649bb52456e34f293238ee2511281104a94c0",
     "linked_local_files": [
       "references/performance-checklist.md",
       "references/security-checklist.md"
@@ -59,7 +59,7 @@
     "description": "Establishes a project's quality bar as a written contract and stops agents quietly lowering it. Interviews the user on which dimensions matter, supplies sane default thresholds when they have no number in mind, records everything in CONSTRAINTS.md, and watches the diff for a weakened bar \u2014 new @ts-ignore or eslint-disable suppressions, skipped or deleted tests, assertions stripped out, unimplemented stubs, thresholds edited down. Use when no quality bar is written down, when the user says \"set up constraints\" or \"define our standards\", when the user wants dimensions they care about \u2014 accessibility, web performance, coverage \u2014 set up as enforced constraints, when an agent keeps silencing checks or skipping tests to get to green, when you need a coverage or performance threshold and don't know what number to pick, or when an agent writes more code than anyone will read.",
     "path": "skills/constraint-driven-development/SKILL.md",
     "relative_directory": "skills/constraint-driven-development",
-    "sha256": "5a690018d415fa972d1ecc85aed943a4f86b0d3c2305eea84f286ff391422008",
+    "sha256": "4b8934e4026745ae663dbe80150230f2bbcdbb3dec49a6fbcaef23e07f34b22a",
     "linked_local_files": [
       "skills/constraint-driven-development/references/floor-guard.md",
       "skills/constraint-driven-development/scripts/quality-gate.mjs"
@@ -79,10 +79,10 @@
     "source_repo": "addyosmani/agent-skills",
     "repo_key": "addyosmani__agent-skills",
     "skill_name": "debugging-and-error-recovery",
-    "description": "Guides systematic root-cause debugging. Use when tests fail, builds break, something that worked yesterday broke, behavior doesn't match expectations, or you encounter any unexpected error. Use when you need to figure out what broke and why \u2014 a systematic approach to finding and fixing the root cause rather than guessing.",
+    "description": "Guides systematic root-cause debugging. Use when tests fail, builds break, something that worked yesterday broke, behavior doesn't match expectations, or you encounter any unexpected error. Use when you need to figure out what broke and why \u2014 a systematic approach to finding and fixing the root cause rather than guessing. Use when asked what broke, why a test started failing, or why code throws, even when the diff, the function, or the stack trace is pasted inline and the cause looks obvious from reading it, so that the cause is named, the fix is minimal, and the reply says how to confirm it.",
     "path": "skills/debugging-and-error-recovery/SKILL.md",
     "relative_directory": "skills/debugging-and-error-recovery",
-    "sha256": "01cff31fbd8796b444225f8a8386219792c25cebb5d4d76df664afd1d13ed610",
+    "sha256": "95e393819043b50b3ba6f4d89f0fea620d03e560eb52b592b3eb7a41836aaea1",
     "linked_local_files": []
   },
   {
@@ -99,10 +99,10 @@
     "source_repo": "addyosmani/agent-skills",
     "repo_key": "addyosmani__agent-skills",
     "skill_name": "documentation-and-adrs",
-    "description": "Records decisions and documentation. Use when you need to document an architecture decision (ADR) or the reasoning behind a design choice, when changing public APIs, shipping features, or when you need to record context that future engineers and agents will need to understand the codebase.",
+    "description": "Records decisions and documentation, and detects when documentation has drifted from the code it describes. Use when you need to document an architecture decision (ADR) or the reasoning behind a design choice, when changing public APIs, shipping features, when docs may be stale or out of sync with the code they describe, when working out which module docs are still accurate, or when setting up a check so docs cannot silently go out of date again.",
     "path": "skills/documentation-and-adrs/SKILL.md",
     "relative_directory": "skills/documentation-and-adrs",
-    "sha256": "6fccf3088d5042a3c889faa25113ffa47b9f7f999f4fc9e527d5e5226888442f",
+    "sha256": "a55e540b4544237c2d76873965869e2e6add1e7eee935324f194411eee11e096",
     "linked_local_files": []
   },
   {
@@ -124,7 +124,7 @@
     "description": "Builds production-quality, accessible, responsive user-facing UIs. Use when building or modifying interfaces and pages, creating components, implementing layouts, meeting WCAG accessibility requirements, managing state, or when the output needs to look and feel production-quality rather than AI-generated.",
     "path": "skills/frontend-ui-engineering/SKILL.md",
     "relative_directory": "skills/frontend-ui-engineering",
-    "sha256": "93a0ebffbb6075340d85255ae50724bc5e5e19b0fcbf2ae5d5857b9c5ddf9498",
+    "sha256": "5c322ec445ed5a2094617c8c01b4b5b138aaf73fccf5c89ec95081fe4e50923a",
     "linked_local_files": [
       "references/accessibility-checklist.md"
     ]
@@ -208,7 +208,7 @@
     "description": "Breaks work into ordered tasks. Use when you have a spec or clear requirements and need to break work into implementable tasks. Use when a task feels too large to start, when you need to estimate scope, or when parallel work is possible.",
     "path": "skills/planning-and-task-breakdown/SKILL.md",
     "relative_directory": "skills/planning-and-task-breakdown",
-    "sha256": "ed0f90cc5951ddd4bcab7f871f64efec93a49af9279ef93bc470da77ad8da3f7",
+    "sha256": "b38e35d4f6030a11423082679b1c4d0988c91a3569a3434ff0f8b9799657d630",
     "linked_local_files": [
       "references/definition-of-done.md"
     ]
@@ -220,7 +220,7 @@
     "description": "Hardens code against vulnerabilities. Use when auditing an input handler for vulnerabilities, when handling user input, authentication, data storage, or external integrations, or when checking a login flow is safe against the OWASP Top Ten. Use when building any feature that accepts untrusted data, manages user sessions or session cookies, or interacts with third-party services. Use when auditing dependencies for known vulnerabilities, triaging package-manager audit findings, or assessing supply-chain risk in a new package. Use when personal data or privacy compliance (GDPR, CCPA) is involved.",
     "path": "skills/security-and-hardening/SKILL.md",
     "relative_directory": "skills/security-and-hardening",
-    "sha256": "358566859a3d791c474eb9fa36939b45875c7480d7d4650eaa092dceae2c1c37",
+    "sha256": "f78655c64329b53ee216c9bc1b8c01f6cd40d2e9caad35944f4b0dbed8fd16b7",
     "linked_local_files": [
       "references/security-checklist.md",
       "skills/security-and-hardening/references/hardening-patterns.md"
@@ -255,10 +255,10 @@
     "source_repo": "addyosmani/agent-skills",
     "repo_key": "addyosmani__agent-skills",
     "skill_name": "spec-driven-development",
-    "description": "Creates specs before coding. Use when starting a new project, feature, or significant change and no specification exists yet. Use when drafting a PRD or requirements document with objectives and scope, or when requirements are unclear, ambiguous, or only exist as a vague idea. Use when a single requirement spans several independently testable capabilities and needs decomposing into a capability map of modules before specifying.",
+    "description": "Creates specs before coding. Use when starting a new project, feature, or significant change and no specification exists yet. Use when drafting a PRD or requirements document with objectives and scope, or when requirements are unclear, ambiguous, or only exist as a vague idea. Use when a single requirement spans several independently testable capabilities and needs decomposing into a capability map of modules before specifying. Use when evolving a shipped spec \u2014 scoping a V1, deferring ideas to a V2 backlog, or writing a follow-up spec for a change to an existing feature.",
     "path": "skills/spec-driven-development/SKILL.md",
     "relative_directory": "skills/spec-driven-development",
-    "sha256": "b9d05b4259c14550bbffbaafd8201492129926d37ede716db352c6e4f91b404d",
+    "sha256": "58dd9f5f2e53830c0c0dd9651998bd6ee4e2a1cc520c9dcf855dfb2fbb3f5059",
     "linked_local_files": [
       "references/definition-of-done.md",
       "references/testing-patterns.md",
@@ -271,10 +271,10 @@
     "source_repo": "addyosmani/agent-skills",
     "repo_key": "addyosmani__agent-skills",
     "skill_name": "test-driven-development",
-    "description": "Drives development with tests using the red-green-refactor loop. Use when implementing any logic, fixing any bug, or changing any behavior. Use when you need to prove that code works, when a bug report arrives, or when you're about to modify existing functionality. Use when asked to add tests to a function, fix a bug in it or change its behavior, even when the code is pasted inline and the request does not mention tests.",
+    "description": "Drives development with tests using the red-green-refactor loop. Use when implementing any logic, fixing any bug, or changing any behavior. Use when you need to prove that code works, when a bug report arrives, or when you're about to modify existing functionality. Use when asked to add tests to a function, fix a bug in it or change its behavior, even when the code is pasted inline, the request does not mention tests and the answer looks obvious from reading it. The skill writes the failing test first and changes the function second, never the change alone.",
     "path": "skills/test-driven-development/SKILL.md",
     "relative_directory": "skills/test-driven-development",
-    "sha256": "8fcaa57cf445ca6111fd20d2321bcfc0f424db7cfe526836db7b9bf8828fee39",
+    "sha256": "24ff76db6227bd74075381f16a5830add333439968f23c3f73987fac2290fe2a",
     "linked_local_files": [
       "references/testing-patterns.md"
     ]
@@ -308,7 +308,7 @@
     "description": "12-agent academic paper writing pipeline. 11 modes (full/plan/outline/revision/revision-coach/abstract/lit-review/format-convert/citation-check/disclosure/rebuttal-audit). 6 paper types, 5 citation formats, bilingual abstracts, LaTeX/DOCX-via-Pandoc/PDF output. Style Calibration + Writing Quality Check + Anti-Patterns with IRON RULE markers. Triggers: write paper, academic paper, guide my paper, parse reviews, I got reviewer comments, revision roadmap, should we push back, conference rebuttal, grant panel response, audit my rebuttal, check my response draft, AI disclosure, check citations, citation check, check my references, verify references, look over the refs, \u5beb\u8ad6\u6587, \u5b78\u8853\u8ad6\u6587, \u5f15\u5c0e\u6211\u5beb\u8ad6\u6587, \u5be9\u67e5\u610f\u898b, \u6211\u6536\u5230\u5be9\u67e5\u610f\u898b, \u4fee\u8a02\u8def\u7dda\u5716, \u8a55\u4f30\u56de\u8986, \u6aa2\u67e5\u5f15\u7528, \u5f15\u7528\u6aa2\u67e5, \u6aa2\u67e5\u53c3\u8003\u6587\u737b, \u6838\u5c0d\u6587\u737b, \ub17c\ubb38 \uc791\uc131, \ucd08\ub85d \uc791\uc131, \ub17c\ubb38 \uc218\uc815, \ub17c\ubb38 \uacc4\ud68d\uc744 \ub3c4\uc640\uc918, \uc2ec\uc0ac \uc758\uacac\uc744 \ubc1b\uc558\uc5b4, \uc2ec\uc0ac \uc758\uacac \ubc18\uc601, \ub2f5\ubcc0\uc11c \uc810\uac80, AI \uc0ac\uc6a9 \uace0\uc9c0, \uc778\uc6a9 \ud655\uc778, \uc778\uc6a9 \ud615\uc2dd \uac80\uc0ac, enmendar mi art\u00edculo, redactar art\u00edculo, gu\u00eda mi art\u00edculo, analizar rese\u00f1as, auditar mi respuesta, verificar borrador de respuesta, verificar citas, divulgaci\u00f3n de IA.",
     "path": "academic-paper/SKILL.md",
     "relative_directory": "academic-paper",
-    "sha256": "8a7bb8ae8bfebefb9e3ea4a11ab2a42c024dd6a27d4ecc04c2865471ab8137b3",
+    "sha256": "49057d083298f9e80ffa206b265cf90a227417629374c653b512231ae228f413",
     "linked_local_files": [
       ".claude-plugin/marketplace.json",
       ".claude-plugin/plugin.json",
@@ -364,6 +364,7 @@
       "academic-paper-reviewer/references/sprint_contract_protocol.md",
       "academic-paper-reviewer/references/statistical_reporting_standards.md",
       "academic-paper-reviewer/references/top_journals_by_field.md",
+      "academic-paper-reviewer/templates/author_letter_template.md",
       "academic-paper-reviewer/templates/editorial_decision_template.md",
       "academic-paper-reviewer/templates/peer_review_report_template.md",
       "academic-paper-reviewer/templates/revision_response_template.md",
@@ -459,6 +460,8 @@
       "audits/harness-retirement-2026-07-04.md",
       "audits/harness-retirement-2026-09-model-update.md",
       "audits/harness-retirement-2026-09-opus-5-5.md",
+      "audits/harness-retirement-2026-11-fable-5-2.md",
+      "audits/harness-retirement-2026-11.md",
       "audits/iso42001-spirit-gap-assessment-2026-08-17.md",
       "audits/rq-advisory-505-exemption-sharpening-2026-07-11.md",
       "audits/rq-advisory-heldout-measurement-2026-07-11.md",
@@ -725,6 +728,7 @@
       "scripts/_passport_yaml.py",
       "scripts/_skill_lint.py",
       "scripts/_text_similarity.py",
+      "scripts/_unspaced_scripts.py",
       "scripts/adapters/README.md",
       "scripts/adapters/_common.py",
       "scripts/adapters/examples/folder_scan/expected_passport.yaml",
@@ -798,6 +802,7 @@
       "scripts/check_acronyms.py",
       "scripts/check_agents_mirror_sync.py",
       "scripts/check_audit_artifact_consistency.py",
+      "scripts/check_author_letter.py",
       "scripts/check_benchmark_report.py",
       "scripts/check_bibliographic_integrity_signals.py",
       "scripts/check_calibration_tiers.py",
@@ -938,6 +943,7 @@
       "scripts/fixtures/tortured_phrase_screening/snapshot_manifest.json",
       "scripts/fixtures/transport_bodies/README.md",
       "scripts/fixtures/write_scope_guard/captured_payloads.json",
+      "scripts/gen_unspaced_scripts.py",
       "scripts/human_read_attestation_resolver.py",
       "scripts/ideation_diversity_assignment_gate.py",
       "scripts/inquiry_branch_ledger.py",
@@ -1014,6 +1020,7 @@
       "scripts/test_check_acronyms.py",
       "scripts/test_check_agents_mirror_sync.py",
       "scripts/test_check_audit_artifact_consistency.py",
+      "scripts/test_check_author_letter.py",
       "scripts/test_check_benchmark_report.py",
       "scripts/test_check_bibliographic_integrity_signals.py",
       "scripts/test_check_calibration_tiers.py",
@@ -1184,6 +1191,7 @@
       "scripts/test_tortured_phrase_screening.py",
       "scripts/test_transport_fixture_citation_gate.py",
       "scripts/test_uncited_assertion.py",
+      "scripts/test_unspaced_scripts.py",
       "scripts/test_v3_6_7_phase_6_6.py",
       "scripts/test_validate_ideation_diversity_assets.py",
       "scripts/test_venue_disclosure_contract.py",
@@ -1419,7 +1427,7 @@
     "description": "Multi-perspective academic paper review with dynamic reviewer personas. Runs a 5-seat, role-separated review panel (Journal-Fit Reviewer + 3 peer-review roles + Devil's Advocate) with field-specific expertise; role separation is not a claim of independent error processes. Supports full review, re-review (verification), quick assessment, methodology focus, Socratic guided, and calibration modes. Triggers on: review paper, peer review, manuscript review, referee report, review my paper, critique paper, simulate review, editorial review, calibrate reviewer, reviewer calibration, measure reviewer accuracy, \u5be9\u67e5\u8ad6\u6587, \u8ad6\u6587\u5be9\u67e5, \u6a21\u64ec\u5be9\u67e5, \u540c\u5115\u5be9\u67e5, \u5e6b\u6211\u5be9\u9019\u7bc7, \u4ee5\u5be9\u67e5\u4eba\u89d2\u5ea6\u8a55\u4f30, \u5be9\u67e5\u8005\u6821\u6e96, \ub17c\ubb38 \uc2ec\uc0ac, \ub3d9\ub8cc \uc2ec\uc0ac, \ubaa8\uc758 \uc2ec\uc0ac, \uc2ec\uc0ac\uc790 \uad00\uc810\uc5d0\uc11c \ud3c9\uac00, \uc2ec\uc0ac\uc790 \ubcf4\uc815, revisar art\u00edculo, revisi\u00f3n entre pares, revisi\u00f3n de manuscrito, informe de \u00e1rbitro, revisa mi art\u00edculo, criticar art\u00edculo, simular revisi\u00f3n, revisi\u00f3n editorial, calibrar revisor.",
     "path": "academic-paper-reviewer/SKILL.md",
     "relative_directory": "academic-paper-reviewer",
-    "sha256": "61c0b64e0b0cfe4bdbba2a9c50f35a56b4b3d4d63235d0f538e39205ea064ccb",
+    "sha256": "f0f35b2b666ce674bf14eecff23e9183ee2df7effab79adb457112f73b23b428",
     "linked_local_files": [
       ".claude-plugin/marketplace.json",
       ".claude-plugin/plugin.json",
@@ -1474,6 +1482,7 @@
       "academic-paper-reviewer/references/sprint_contract_protocol.md",
       "academic-paper-reviewer/references/statistical_reporting_standards.md",
       "academic-paper-reviewer/references/top_journals_by_field.md",
+      "academic-paper-reviewer/templates/author_letter_template.md",
       "academic-paper-reviewer/templates/editorial_decision_template.md",
       "academic-paper-reviewer/templates/peer_review_report_template.md",
       "academic-paper-reviewer/templates/revision_response_template.md",
@@ -1570,6 +1579,8 @@
       "audits/harness-retirement-2026-07-04.md",
       "audits/harness-retirement-2026-09-model-update.md",
       "audits/harness-retirement-2026-09-opus-5-5.md",
+      "audits/harness-retirement-2026-11-fable-5-2.md",
+      "audits/harness-retirement-2026-11.md",
       "audits/iso42001-spirit-gap-assessment-2026-08-17.md",
       "audits/rq-advisory-505-exemption-sharpening-2026-07-11.md",
       "audits/rq-advisory-heldout-measurement-2026-07-11.md",
@@ -1836,6 +1847,7 @@
       "scripts/_passport_yaml.py",
       "scripts/_skill_lint.py",
       "scripts/_text_similarity.py",
+      "scripts/_unspaced_scripts.py",
       "scripts/adapters/README.md",
       "scripts/adapters/_common.py",
       "scripts/adapters/examples/folder_scan/expected_passport.yaml",
@@ -1909,6 +1921,7 @@
       "scripts/check_acronyms.py",
       "scripts/check_agents_mirror_sync.py",
       "scripts/check_audit_artifact_consistency.py",
+      "scripts/check_author_letter.py",
       "scripts/check_benchmark_report.py",
       "scripts/check_bibliographic_integrity_signals.py",
       "scripts/check_calibration_tiers.py",
@@ -2049,6 +2062,7 @@
       "scripts/fixtures/tortured_phrase_screening/snapshot_manifest.json",
       "scripts/fixtures/transport_bodies/README.md",
       "scripts/fixtures/write_scope_guard/captured_payloads.json",
+      "scripts/gen_unspaced_scripts.py",
       "scripts/human_read_attestation_resolver.py",
       "scripts/ideation_diversity_assignment_gate.py",
       "scripts/inquiry_branch_ledger.py",
@@ -2125,6 +2139,7 @@
       "scripts/test_check_acronyms.py",
       "scripts/test_check_agents_mirror_sync.py",
       "scripts/test_check_audit_artifact_consistency.py",
+      "scripts/test_check_author_letter.py",
       "scripts/test_check_benchmark_report.py",
       "scripts/test_check_bibliographic_integrity_signals.py",
       "scripts/test_check_calibration_tiers.py",
@@ -2295,6 +2310,7 @@
       "scripts/test_tortured_phrase_screening.py",
       "scripts/test_transport_fixture_citation_gate.py",
       "scripts/test_uncited_assertion.py",
+      "scripts/test_unspaced_scripts.py",
       "scripts/test_v3_6_7_phase_6_6.py",
       "scripts/test_validate_ideation_diversity_assets.py",
       "scripts/test_venue_disclosure_contract.py",
@@ -2530,7 +2546,7 @@
     "description": "Orchestrator for the full academic research pipeline: research -> write -> integrity check -> review -> revise -> re-review -> re-revise -> final integrity check -> finalize. Coordinates deep-research, academic-paper, and academic-paper-reviewer into a seamless 10-stage workflow with mandatory, coverage-bounded integrity checks, two-stage peer review, and auditable quality-assurance artifacts. Triggers on: academic pipeline, research to paper, full paper workflow, paper pipeline, end-to-end paper, research-to-publication, complete paper workflow, \uc5f0\uad6c\ubd80\ud130 \ub17c\ubb38\uae4c\uc9c0, \uc5f0\uad6c \uc8fc\uc81c \uc124\uc815\ubd80\ud130 \ub17c\ubb38 \uc644\uc131\uae4c\uc9c0, \ub17c\ubb38 \uc804\uccb4 \uc6cc\ud06c\ud50c\ub85c, flujo de trabajo acad\u00e9mico, investigaci\u00f3n a art\u00edculo, flujo completo de art\u00edculo, pipeline de investigaci\u00f3n completa, publicaci\u00f3n de investigaci\u00f3n, flujo de trabajo completo del art\u00edculo.",
     "path": "academic-pipeline/SKILL.md",
     "relative_directory": "academic-pipeline",
-    "sha256": "5519dcd757d157efa72b27268c4aaa0ec1eb3019ebdbe3cde5d51ac22d76bf28",
+    "sha256": "4b5003834032de3f647c7c66d25f894311e3ea6e5dbbd3a5525b3d1524495733",
     "linked_local_files": [
       ".claude-plugin/marketplace.json",
       ".claude-plugin/plugin.json",
@@ -2586,6 +2602,7 @@
       "academic-paper-reviewer/references/sprint_contract_protocol.md",
       "academic-paper-reviewer/references/statistical_reporting_standards.md",
       "academic-paper-reviewer/references/top_journals_by_field.md",
+      "academic-paper-reviewer/templates/author_letter_template.md",
       "academic-paper-reviewer/templates/editorial_decision_template.md",
       "academic-paper-reviewer/templates/peer_review_report_template.md",
       "academic-paper-reviewer/templates/revision_response_template.md",
@@ -2682,6 +2699,8 @@
       "audits/harness-retirement-2026-07-04.md",
       "audits/harness-retirement-2026-09-model-update.md",
       "audits/harness-retirement-2026-09-opus-5-5.md",
+      "audits/harness-retirement-2026-11-fable-5-2.md",
+      "audits/harness-retirement-2026-11.md",
       "audits/iso42001-spirit-gap-assessment-2026-08-17.md",
       "audits/rq-advisory-505-exemption-sharpening-2026-07-11.md",
       "audits/rq-advisory-heldout-measurement-2026-07-11.md",
@@ -2948,6 +2967,7 @@
       "scripts/_passport_yaml.py",
       "scripts/_skill_lint.py",
       "scripts/_text_similarity.py",
+      "scripts/_unspaced_scripts.py",
       "scripts/adapters/README.md",
       "scripts/adapters/_common.py",
       "scripts/adapters/examples/folder_scan/expected_passport.yaml",
@@ -3021,6 +3041,7 @@
       "scripts/check_acronyms.py",
       "scripts/check_agents_mirror_sync.py",
       "scripts/check_audit_artifact_consistency.py",
+      "scripts/check_author_letter.py",
       "scripts/check_benchmark_report.py",
       "scripts/check_bibliographic_integrity_signals.py",
       "scripts/check_calibration_tiers.py",
@@ -3161,6 +3182,7 @@
       "scripts/fixtures/tortured_phrase_screening/snapshot_manifest.json",
       "scripts/fixtures/transport_bodies/README.md",
       "scripts/fixtures/write_scope_guard/captured_payloads.json",
+      "scripts/gen_unspaced_scripts.py",
       "scripts/human_read_attestation_resolver.py",
       "scripts/ideation_diversity_assignment_gate.py",
       "scripts/inquiry_branch_ledger.py",
@@ -3237,6 +3259,7 @@
       "scripts/test_check_acronyms.py",
       "scripts/test_check_agents_mirror_sync.py",
       "scripts/test_check_audit_artifact_consistency.py",
+      "scripts/test_check_author_letter.py",
       "scripts/test_check_benchmark_report.py",
       "scripts/test_check_bibliographic_integrity_signals.py",
       "scripts/test_check_calibration_tiers.py",
@@ -3407,6 +3430,7 @@
       "scripts/test_tortured_phrase_screening.py",
       "scripts/test_transport_fixture_citation_gate.py",
       "scripts/test_uncited_assertion.py",
+      "scripts/test_unspaced_scripts.py",
       "scripts/test_v3_6_7_phase_6_6.py",
       "scripts/test_validate_ideation_diversity_assets.py",
       "scripts/test_venue_disclosure_contract.py",
@@ -3698,6 +3722,7 @@
       "academic-paper-reviewer/references/sprint_contract_protocol.md",
       "academic-paper-reviewer/references/statistical_reporting_standards.md",
       "academic-paper-reviewer/references/top_journals_by_field.md",
+      "academic-paper-reviewer/templates/author_letter_template.md",
       "academic-paper-reviewer/templates/editorial_decision_template.md",
       "academic-paper-reviewer/templates/peer_review_report_template.md",
       "academic-paper-reviewer/templates/revision_response_template.md",
@@ -3794,6 +3819,8 @@
       "audits/harness-retirement-2026-07-04.md",
       "audits/harness-retirement-2026-09-model-update.md",
       "audits/harness-retirement-2026-09-opus-5-5.md",
+      "audits/harness-retirement-2026-11-fable-5-2.md",
+      "audits/harness-retirement-2026-11.md",
       "audits/iso42001-spirit-gap-assessment-2026-08-17.md",
       "audits/rq-advisory-505-exemption-sharpening-2026-07-11.md",
       "audits/rq-advisory-heldout-measurement-2026-07-11.md",
@@ -4060,6 +4087,7 @@
       "scripts/_passport_yaml.py",
       "scripts/_skill_lint.py",
       "scripts/_text_similarity.py",
+      "scripts/_unspaced_scripts.py",
       "scripts/adapters/README.md",
       "scripts/adapters/_common.py",
       "scripts/adapters/examples/folder_scan/expected_passport.yaml",
@@ -4133,6 +4161,7 @@
       "scripts/check_acronyms.py",
       "scripts/check_agents_mirror_sync.py",
       "scripts/check_audit_artifact_consistency.py",
+      "scripts/check_author_letter.py",
       "scripts/check_benchmark_report.py",
       "scripts/check_bibliographic_integrity_signals.py",
       "scripts/check_calibration_tiers.py",
@@ -4273,6 +4302,7 @@
       "scripts/fixtures/tortured_phrase_screening/snapshot_manifest.json",
       "scripts/fixtures/transport_bodies/README.md",
       "scripts/fixtures/write_scope_guard/captured_payloads.json",
+      "scripts/gen_unspaced_scripts.py",
       "scripts/human_read_attestation_resolver.py",
       "scripts/ideation_diversity_assignment_gate.py",
       "scripts/inquiry_branch_ledger.py",
@@ -4349,6 +4379,7 @@
       "scripts/test_check_acronyms.py",
       "scripts/test_check_agents_mirror_sync.py",
       "scripts/test_check_audit_artifact_consistency.py",
+      "scripts/test_check_author_letter.py",
       "scripts/test_check_benchmark_report.py",
       "scripts/test_check_bibliographic_integrity_signals.py",
       "scripts/test_check_calibration_tiers.py",
@@ -4519,6 +4550,7 @@
       "scripts/test_tortured_phrase_screening.py",
       "scripts/test_transport_fixture_citation_gate.py",
       "scripts/test_uncited_assertion.py",
+      "scripts/test_unspaced_scripts.py",
       "scripts/test_v3_6_7_phase_6_6.py",
       "scripts/test_validate_ideation_diversity_assets.py",
       "scripts/test_venue_disclosure_contract.py",
@@ -4810,6 +4842,7 @@
       "academic-paper-reviewer/references/sprint_contract_protocol.md",
       "academic-paper-reviewer/references/statistical_reporting_standards.md",
       "academic-paper-reviewer/references/top_journals_by_field.md",
+      "academic-paper-reviewer/templates/author_letter_template.md",
       "academic-paper-reviewer/templates/editorial_decision_template.md",
       "academic-paper-reviewer/templates/peer_review_report_template.md",
       "academic-paper-reviewer/templates/revision_response_template.md",
@@ -4906,6 +4939,8 @@
       "audits/harness-retirement-2026-07-04.md",
       "audits/harness-retirement-2026-09-model-update.md",
       "audits/harness-retirement-2026-09-opus-5-5.md",
+      "audits/harness-retirement-2026-11-fable-5-2.md",
+      "audits/harness-retirement-2026-11.md",
       "audits/iso42001-spirit-gap-assessment-2026-08-17.md",
       "audits/rq-advisory-505-exemption-sharpening-2026-07-11.md",
       "audits/rq-advisory-heldout-measurement-2026-07-11.md",
@@ -5172,6 +5207,7 @@
       "scripts/_passport_yaml.py",
       "scripts/_skill_lint.py",
       "scripts/_text_similarity.py",
+      "scripts/_unspaced_scripts.py",
       "scripts/adapters/README.md",
       "scripts/adapters/_common.py",
       "scripts/adapters/examples/folder_scan/expected_passport.yaml",
@@ -5245,6 +5281,7 @@
       "scripts/check_acronyms.py",
       "scripts/check_agents_mirror_sync.py",
       "scripts/check_audit_artifact_consistency.py",
+      "scripts/check_author_letter.py",
       "scripts/check_benchmark_report.py",
       "scripts/check_bibliographic_integrity_signals.py",
       "scripts/check_calibration_tiers.py",
@@ -5385,6 +5422,7 @@
       "scripts/fixtures/tortured_phrase_screening/snapshot_manifest.json",
       "scripts/fixtures/transport_bodies/README.md",
       "scripts/fixtures/write_scope_guard/captured_payloads.json",
+      "scripts/gen_unspaced_scripts.py",
       "scripts/human_read_attestation_resolver.py",
       "scripts/ideation_diversity_assignment_gate.py",
       "scripts/inquiry_branch_ledger.py",
@@ -5461,6 +5499,7 @@
       "scripts/test_check_acronyms.py",
       "scripts/test_check_agents_mirror_sync.py",
       "scripts/test_check_audit_artifact_consistency.py",
+      "scripts/test_check_author_letter.py",
       "scripts/test_check_benchmark_report.py",
       "scripts/test_check_bibliographic_integrity_signals.py",
       "scripts/test_check_calibration_tiers.py",
@@ -5631,6 +5670,7 @@
       "scripts/test_tortured_phrase_screening.py",
       "scripts/test_transport_fixture_citation_gate.py",
       "scripts/test_uncited_assertion.py",
+      "scripts/test_unspaced_scripts.py",
       "scripts/test_v3_6_7_phase_6_6.py",
       "scripts/test_validate_ideation_diversity_assets.py",
       "scripts/test_venue_disclosure_contract.py",
@@ -6136,7 +6176,7 @@
     "description": "Shared language for designing a software factory: the tasks it runs and the services it plugs into.",
     "path": "skills/in-progress/software-factory/SKILL.md",
     "relative_directory": "skills/in-progress/software-factory",
-    "sha256": "645ab761b6cca61a480072b1b510eb05fe0fe5cde2ce0495b6fc234311692253",
+    "sha256": "8a3d04e2ebcf2f863a514784ee0307ef8fb53ac0892deb29b75a406c0c84de7b",
     "linked_local_files": [
       "skills/in-progress/software-factory/EXAMPLE-TASKS.md",
       "skills/in-progress/software-factory/GIT-HOSTS.md",
@@ -7300,7 +7340,7 @@
     "description": "Sketch types, signatures, and module structure before code, then stay in the loop while implementation fills in. Use for /architect, 'architect this', 'design this', or non-trivial work where jumping to code would lock in the wrong shape.",
     "path": "harness/pstack/claude-code/skills/architect/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/architect",
-    "sha256": "dc74c4810a53a4ee25812278280f2580c00fb06408890e993be0623722a07aaa",
+    "sha256": "7528304e130742121ca3bc074f58971663608d0130b4633bb598560a3a5f7856",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md",
       "harness/pstack/claude-code/skills/architect/references/design-red-flags.md",
@@ -7316,7 +7356,7 @@
     "description": "Spawn N parallel candidates at the same task, pick a base, graft the strongest parts of the losers into it. Use for /arena, 'arena this', 'throw it in the arena', or when one attempt at a non-trivial artifact would lock in the wrong shape.",
     "path": "harness/pstack/claude-code/skills/arena/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/arena",
-    "sha256": "a70df68e26420f783b09ac10b1ce6951b1438fa2233d5a0a5ad789720ba9c7b5",
+    "sha256": "7c5bdb6a838b24a98dd41aaf125d1d99e89d7f7e2ff2898899fa95d1e9552c0b",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md"
     ]
@@ -7350,7 +7390,7 @@
     "description": "Find what a change could break somewhere else before it ships, beyond the diff, and prove the one fact it's safe because of by running real code instead of writing it up. Use for 'blast radius of X', 'what could this break', or reviewing a small diff you don't trust.",
     "path": "harness/pstack/claude-code/skills/blast-radius/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/blast-radius",
-    "sha256": "2e10745b97f5862323dcda3b29ca60d56b5c3c98e37020085d26b48efbe0a436",
+    "sha256": "4248d03e22365207d2e5f90c9542720f80a88a6b42fd542ef88dde3cf9f9223f",
     "linked_local_files": []
   },
   {
@@ -7448,11 +7488,9 @@
     "description": "Use for \\\"how does X work\\\", code walkthroughs before changing something, and placement / ownership / layering questions (\\\"where should this live\\\", \\\"which package owns this\\\", \\\"is this the right layer\\\"). Explains subsystem architecture, runtime flow, onboarding mental models. Use why for motivation.",
     "path": "harness/pstack/claude-code/skills/how/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/how",
-    "sha256": "f2aad836aa83cac7385e734ab888d573e1736def5b061aa8a72b1717f085606c",
+    "sha256": "50cd58f4a3e4df5616977ef92dcabd3d67cf09de30368eebd148cbfbac113d36",
     "linked_local_files": [
-      "harness/pstack/claude-code/docs/harness/claude-code.md",
-      "harness/pstack/claude-code/skills/how/references/explainer-prompt.md",
-      "harness/pstack/claude-code/skills/how/references/explorer-prompt.md"
+      "harness/pstack/claude-code/docs/harness/claude-code.md"
     ]
   },
   {
@@ -7545,7 +7583,7 @@
     "description": "Spawn Comment Sicko, fix accepted findings, and offer encodings for claimed constraints.",
     "path": "harness/pstack/claude-code/skills/no-comments/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/no-comments",
-    "sha256": "52e05eb2578f7316421be8174430c1fd2c17bf5d6ac57d9e6a1c452b98d3a570",
+    "sha256": "ab4c6ec6dd7512227c87d818bf6593e71249dbf51d2ce251d80d082f8ebaad74",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md"
     ]
@@ -7557,7 +7595,7 @@
     "description": "Guides users through pstack setup, /poteto-mode, and picking the skill, playbook, or principle for a task. Type /poteto-help with a question.",
     "path": "harness/pstack/claude-code/skills/poteto-help/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/poteto-help",
-    "sha256": "8ebc580b6970b7baac8da07fb03e1fe201a50d519cd3004073e73ff49f189352",
+    "sha256": "7c86a6ab9324a29092a34919044f88d37e032e2e9a71fdc94488e81725d27e56",
     "linked_local_files": [
       "harness/pstack/claude-code/README.md",
       "harness/pstack/claude-code/agents/comment-sicko.md",
@@ -7597,8 +7635,6 @@
       "harness/pstack/claude-code/skills/create-verification-skill/references/feature-map-example/search.md",
       "harness/pstack/claude-code/skills/figure-it-out/SKILL.md",
       "harness/pstack/claude-code/skills/how/SKILL.md",
-      "harness/pstack/claude-code/skills/how/references/explainer-prompt.md",
-      "harness/pstack/claude-code/skills/how/references/explorer-prompt.md",
       "harness/pstack/claude-code/skills/in-your-own-words/SKILL.md",
       "harness/pstack/claude-code/skills/interrogate/SKILL.md",
       "harness/pstack/claude-code/skills/ketchup-video/SKILL.md",
@@ -7706,21 +7742,6 @@
       "harness/pstack/claude-code/skills/typescript-best-practices/references/patterns.md",
       "harness/pstack/claude-code/skills/unslop/SKILL.md",
       "harness/pstack/claude-code/skills/why/SKILL.md",
-      "harness/pstack/claude-code/skills/why/references/epistemics.md",
-      "harness/pstack/claude-code/skills/why/references/investigator-prompt.md",
-      "harness/pstack/claude-code/skills/why/references/source-playbook.md",
-      "harness/pstack/claude-code/skills/why/references/sources/code-archaeology.md",
-      "harness/pstack/claude-code/skills/why/references/sources/databricks.md",
-      "harness/pstack/claude-code/skills/why/references/sources/datadog.md",
-      "harness/pstack/claude-code/skills/why/references/sources/incident-postmortem.md",
-      "harness/pstack/claude-code/skills/why/references/sources/linear.md",
-      "harness/pstack/claude-code/skills/why/references/sources/notion.md",
-      "harness/pstack/claude-code/skills/why/references/sources/sentry.md",
-      "harness/pstack/claude-code/skills/why/references/sources/slack.md",
-      "harness/pstack/claude-code/skills/why/references/synthesizer-prompt.md",
-      "pstack/skills/how/SKILL.md",
-      "pstack/skills/how/references/explainer-prompt.md",
-      "pstack/skills/how/references/explorer-prompt.md",
       "pstack/skills/interrogate/SKILL.md",
       "pstack/skills/poteto-mode/playbooks/opening-a-pr.md",
       "pstack/skills/poteto-mode/scripts/check-plan.mjs",
@@ -7737,7 +7758,7 @@
     "description": "poteto's agent style for concise, detailed responses, deliberate subagents, unslopped prose, simple code, and verified work. Use for poteto, /poteto-mode, or requests to work in this style.",
     "path": "harness/pstack/claude-code/skills/poteto-mode/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/poteto-mode",
-    "sha256": "9e9e77f996512b0309a6d2d136f20dd20e394739c3bfe3a9e473003a95c4a3b2",
+    "sha256": "f41c347f1e5f9e1704cde688715f5d275daf9ed3a276f35d81535015a2da70ad",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md",
       "harness/pstack/claude-code/skills/poteto-mode/playbooks/authoring-a-skill.md",
@@ -7764,9 +7785,6 @@
       "harness/pstack/claude-code/skills/poteto-mode/scripts/watch-pr/types.ts",
       "harness/pstack/claude-code/skills/poteto-mode/scripts/watch-pr/watch-pr",
       "harness/pstack/claude-code/skills/poteto-mode/scripts/worktree-audit.sh",
-      "pstack/skills/how/SKILL.md",
-      "pstack/skills/how/references/explainer-prompt.md",
-      "pstack/skills/how/references/explorer-prompt.md",
       "pstack/skills/interrogate/SKILL.md",
       "pstack/skills/poteto-mode/playbooks/opening-a-pr.md",
       "pstack/skills/poteto-mode/scripts/check-plan.mjs",
@@ -8044,7 +8062,7 @@
     "description": "Reconstruct your recent working context from your own chat history, live state, and the shared record (user reports, prior fixes, incidents), then hand back a tight current-state brief. Use for 'recall my work on X', 'catch me up', 'what have I been working on', 'where did I leave off', before starting or resuming work.",
     "path": "harness/pstack/claude-code/skills/recall/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/recall",
-    "sha256": "5b8fa47d6929c60e0db6de9d4ce78f4d9c02b93f4242219eb0a60a052801d22e",
+    "sha256": "fad599597156643e247606cc6fbeee323e5e91202e6d464e8f14f8e10ad23264",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md"
     ]
@@ -8056,7 +8074,7 @@
     "description": "Spawn three parallel review subagents over the active transcript, surface learnings, and route each to a concrete edit on an existing skill. Use when the user says reflect.",
     "path": "harness/pstack/claude-code/skills/reflect/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/reflect",
-    "sha256": "03d12ba1c5f9d85946aa6ce2ccf5de7acc9506657370300c5c6251f654501482",
+    "sha256": "689529f795cc466ec8507abc64cd5796dd3c773c16d21838b4fcf29a0b1581e4",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md",
       "harness/pstack/claude-code/skills/reflect/references/divergent-reviewer.md",
@@ -8072,7 +8090,7 @@
     "description": "Configure which models pstack uses per role and at what reasoning budget. Detects your available models and writes an always-applied rule that overrides the skill defaults. Use for /setup-pstack, \"configure pstack models\", \"pstack budget\", or changing pstack's model choices.",
     "path": "harness/pstack/claude-code/skills/setup-pstack/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/setup-pstack",
-    "sha256": "97e90db5a6ab33cc609bd0f2f05e2a2707ea8d337d1375935fd2c8da21f8b4d4",
+    "sha256": "d2623ef1447401ce6bd8ed0fa6e435f4f3271c5a569e5118cadde89061d179f8",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md"
     ]
@@ -8084,7 +8102,7 @@
     "description": "Make a task deeper, not bigger, then rewrite the prompt. Use for /sharpen.",
     "path": "harness/pstack/claude-code/skills/sharpen/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/sharpen",
-    "sha256": "563dfc460c605d311e650726288e2f1cbd61eab817db178d6e7e29643e07e7a2",
+    "sha256": "aac4f8e6a1ffd70e3763314db37d3c2eb0cfea08bc63e98907aca6dae0343031",
     "linked_local_files": []
   },
   {
@@ -8147,7 +8165,7 @@
     "description": "Fan out N parallel workers, drain them, and return one report. Use for /swarm, 'swarm this', or parallel coverage, races, gauntlets, and exploration.",
     "path": "harness/pstack/claude-code/skills/swarm/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/swarm",
-    "sha256": "34fb1420f1a0ad343bcf3c3e531db67b0ed43ba09c421e97936ce11200c43546",
+    "sha256": "9de585cfbd6830bf7968c114c5fcacc0afb8fc98333ee4c09c21b290122f28b6",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md"
     ]
@@ -8169,7 +8187,7 @@
     "description": "Explain a body of work plainly so a person actually understands it. Runs the `how` and `why` skills and weaves what they find into one clear explanation. Use for 'teach me this', 'help me really understand X', 'explain this change or subsystem to me'.",
     "path": "harness/pstack/claude-code/skills/teach/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/teach",
-    "sha256": "7f759a4ab2d8206d75f8c9984a113249135c45b1af95a5c2907681d56c76489f",
+    "sha256": "c837c2b78584407d69143282846448fc6e3c49349606959ab1df58e5cbebb553",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md"
     ]
@@ -8212,25 +8230,11 @@
     "source_repo": "cursor/plugins",
     "repo_key": "cursor__plugins",
     "skill_name": "why",
-    "description": "Use for 'why does X work this way', 'why we picked Y', design rationale, regressions, postmortems, or data-backed thresholds. Discovers available MCPs and queries each evidence category (source control, issue tracker, long-form docs, real-time chat, infrastructure observability, error tracking, product analytics warehouse) in parallel, then returns a cited read on decisions and tradeoffs. Use how for runtime behavior.",
+    "description": "Use for 'why does X work this way', 'why we picked Y', design rationale, regressions, postmortems, or data-backed thresholds. Returns a cited read on decisions and tradeoffs. Use how for runtime behavior.",
     "path": "harness/pstack/claude-code/skills/why/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/why",
-    "sha256": "09405adc5afda90841f16318e471f25329d17da908956d79973edb34cdccb188",
-    "linked_local_files": [
-      "harness/pstack/claude-code/docs/harness/claude-code.md",
-      "harness/pstack/claude-code/skills/why/references/epistemics.md",
-      "harness/pstack/claude-code/skills/why/references/investigator-prompt.md",
-      "harness/pstack/claude-code/skills/why/references/source-playbook.md",
-      "harness/pstack/claude-code/skills/why/references/sources/code-archaeology.md",
-      "harness/pstack/claude-code/skills/why/references/sources/databricks.md",
-      "harness/pstack/claude-code/skills/why/references/sources/datadog.md",
-      "harness/pstack/claude-code/skills/why/references/sources/incident-postmortem.md",
-      "harness/pstack/claude-code/skills/why/references/sources/linear.md",
-      "harness/pstack/claude-code/skills/why/references/sources/notion.md",
-      "harness/pstack/claude-code/skills/why/references/sources/sentry.md",
-      "harness/pstack/claude-code/skills/why/references/sources/slack.md",
-      "harness/pstack/claude-code/skills/why/references/synthesizer-prompt.md"
-    ]
+    "sha256": "6b65b3180f1f1bd3b696d7933daf900747410c82931d220a3f57a98addb1c0fd",
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -8310,7 +8314,7 @@
     "description": "Reproduce triaged Slack bugs through a configured app-control adapter, verify existing fixes, and open a bounded draft pull request only after before-and-after proof. Use only from the configured Benny repro automation.",
     "path": "pstack/automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
     "relative_directory": "pstack/automations/benny/skills/reproduce-and-fix-issues",
-    "sha256": "1363cc07343fe86aab42853b1bd4563288cbcbdf12f1c265b3b3b1afa25c09cb",
+    "sha256": "809659da0bbd0303d2a42dbe380dd117ae06b6fa3e19e4a31832a2756ae841fe",
     "linked_local_files": [
       "pstack/automations/benny/skills/reproduce-and-fix-issues/references/control-adapter.md",
       "pstack/automations/benny/skills/reproduce-and-fix-issues/references/feature-map.example.md",
@@ -8324,7 +8328,7 @@
     "description": "Configure Benny and prepare its triage and repro automations. Use when installing Benny or changing its Slack, tracker, repository, routing, control, model, or budget settings.",
     "path": "pstack/automations/benny/skills/setup-benny/SKILL.md",
     "relative_directory": "pstack/automations/benny/skills/setup-benny",
-    "sha256": "5a3cbe63360c9f6373b6cb6c79a1eaf7e0eba181bfaa1577e2e6431af3407282",
+    "sha256": "1b1298536804eef289718f497a42f48aec135c8f4175b03e5ecfa11075758c59",
     "linked_local_files": [
       "pstack/automations/benny/FOR_AGENTS.md",
       "pstack/automations/benny/skills/reproduce-and-fix-issues/references/control-adapter.md",
@@ -8340,7 +8344,7 @@
     "description": "Triage Slack issue reports with one thread-only verdict, evidence review, cause-aware routing, tracker dedupe, and fail-closed ticket creation. Use only from the configured Benny triage automation.",
     "path": "pstack/automations/benny/skills/triage-issue-reports/SKILL.md",
     "relative_directory": "pstack/automations/benny/skills/triage-issue-reports",
-    "sha256": "216a758b8711e64d19a55e6032c496527daac6364d010611040f3c04ef1a448f",
+    "sha256": "e88bb1ccc619f93d4b787bd9156fba5159f061c653fca00b6f08c65b6c77701a",
     "linked_local_files": []
   },
   {
@@ -8350,7 +8354,7 @@
     "description": "Sketch types, signatures, and module structure before code, then stay in the loop while implementation fills in. Use for /architect, 'architect this', 'design this', or non-trivial work where jumping to code would lock in the wrong shape.",
     "path": "pstack/skills/architect/SKILL.md",
     "relative_directory": "pstack/skills/architect",
-    "sha256": "31f8e97a52bfa5432edd61f68ade2a8632ef0bacbc2d2a6802d7a0e6821944ac",
+    "sha256": "42be68c2883bd10d867c46930fa11c44a25910b62b85e0c9a40326b4f25d7b6e",
     "linked_local_files": [
       "pstack/skills/architect/references/design-red-flags.md",
       "pstack/skills/architect/references/rationale-template.md",
@@ -8365,7 +8369,7 @@
     "description": "Spawn N parallel candidates at the same task, pick a base, graft the strongest parts of the losers into it. Use for /arena, 'arena this', 'throw it in the arena', or when one attempt at a non-trivial artifact would lock in the wrong shape.",
     "path": "pstack/skills/arena/SKILL.md",
     "relative_directory": "pstack/skills/arena",
-    "sha256": "d0adeca6c9b19d43d90ed8f0484f0ddd362f05006d628b8f4cc6c9b55fa4d2b3",
+    "sha256": "2e418753dfc64239e4d6412e7b739196d268e22ef1a4ecfbb8c0498bd3c82636",
     "linked_local_files": []
   },
   {
@@ -8395,7 +8399,7 @@
     "description": "Find what a change could break somewhere else before it ships, beyond the diff, and prove the one fact it's safe because of by running real code instead of writing it up. Use for 'blast radius of X', 'what could this break', or reviewing a small diff you don't trust.",
     "path": "pstack/skills/blast-radius/SKILL.md",
     "relative_directory": "pstack/skills/blast-radius",
-    "sha256": "2e10745b97f5862323dcda3b29ca60d56b5c3c98e37020085d26b48efbe0a436",
+    "sha256": "4248d03e22365207d2e5f90c9542720f80a88a6b42fd542ef88dde3cf9f9223f",
     "linked_local_files": []
   },
   {
@@ -8489,11 +8493,8 @@
     "description": "Use for \\\"how does X work\\\", code walkthroughs before changing something, and placement / ownership / layering questions (\\\"where should this live\\\", \\\"which package owns this\\\", \\\"is this the right layer\\\"). Explains subsystem architecture, runtime flow, onboarding mental models. Use why for motivation.",
     "path": "pstack/skills/how/SKILL.md",
     "relative_directory": "pstack/skills/how",
-    "sha256": "08a00079bb15b4258874ac3ff62d4ca7e94350ffedb521d0fd296dc9dd21904e",
-    "linked_local_files": [
-      "pstack/skills/how/references/explainer-prompt.md",
-      "pstack/skills/how/references/explorer-prompt.md"
-    ]
+    "sha256": "23d5cc79a449b9838242e7af5563aa8a4f0417bab136bbcc054b4bebc7284680",
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -8577,7 +8578,7 @@
     "description": "Spawn Comment Sicko, fix accepted findings, and offer encodings for claimed constraints.",
     "path": "pstack/skills/no-comments/SKILL.md",
     "relative_directory": "pstack/skills/no-comments",
-    "sha256": "078ecfe224eafbb017f6476870612838bf6dbe38c0b697e12f0c887d0313f17e",
+    "sha256": "9cc934e7541c4db609deeb5fd4e5882c1a4d3956975b5ae1ee693ed340527b9b",
     "linked_local_files": []
   },
   {
@@ -8587,7 +8588,7 @@
     "description": "Guides users through pstack setup, /poteto-mode, and picking the skill, playbook, or principle for a task. Type /poteto-help with a question.",
     "path": "pstack/skills/poteto-help/SKILL.md",
     "relative_directory": "pstack/skills/poteto-help",
-    "sha256": "768368881379d688c4e3bbdae55dd2d7874fde98a258324d3527de1bf09f9bd1",
+    "sha256": "5b14be54fc543b8f282953febc641f19f03919e7f77858347baa6957522f0c51",
     "linked_local_files": [
       "pstack/README.md",
       "pstack/agents/comment-sicko.md",
@@ -8634,8 +8635,6 @@
       "pstack/skills/create-verification-skill/references/feature-map-example/search.md",
       "pstack/skills/figure-it-out/SKILL.md",
       "pstack/skills/how/SKILL.md",
-      "pstack/skills/how/references/explainer-prompt.md",
-      "pstack/skills/how/references/explorer-prompt.md",
       "pstack/skills/in-your-own-words/SKILL.md",
       "pstack/skills/interrogate/SKILL.md",
       "pstack/skills/ketchup-video/SKILL.md",
@@ -8743,19 +8742,7 @@
       "pstack/skills/typescript-best-practices/SKILL.md",
       "pstack/skills/typescript-best-practices/references/patterns.md",
       "pstack/skills/unslop/SKILL.md",
-      "pstack/skills/why/SKILL.md",
-      "pstack/skills/why/references/epistemics.md",
-      "pstack/skills/why/references/investigator-prompt.md",
-      "pstack/skills/why/references/source-playbook.md",
-      "pstack/skills/why/references/sources/code-archaeology.md",
-      "pstack/skills/why/references/sources/databricks.md",
-      "pstack/skills/why/references/sources/datadog.md",
-      "pstack/skills/why/references/sources/incident-postmortem.md",
-      "pstack/skills/why/references/sources/linear.md",
-      "pstack/skills/why/references/sources/notion.md",
-      "pstack/skills/why/references/sources/sentry.md",
-      "pstack/skills/why/references/sources/slack.md",
-      "pstack/skills/why/references/synthesizer-prompt.md"
+      "pstack/skills/why/SKILL.md"
     ]
   },
   {
@@ -8765,11 +8752,8 @@
     "description": "poteto's agent style for concise, detailed responses, deliberate subagents, unslopped prose, simple code, and verified work. Use for poteto, /poteto-mode, or requests to work in this style.",
     "path": "pstack/skills/poteto-mode/SKILL.md",
     "relative_directory": "pstack/skills/poteto-mode",
-    "sha256": "ee1848c973a112026f09ba12ea7a13c1654006e7bf170d1c34bf5d5816bc439b",
+    "sha256": "c1816b328fa174361dfb719f31ecc264991c8f020b0ba971ea79ca223c79c047",
     "linked_local_files": [
-      "pstack/skills/how/SKILL.md",
-      "pstack/skills/how/references/explainer-prompt.md",
-      "pstack/skills/how/references/explorer-prompt.md",
       "pstack/skills/interrogate/SKILL.md",
       "pstack/skills/poteto-mode/playbooks/authoring-a-skill.md",
       "pstack/skills/poteto-mode/playbooks/autopilot-full.md",
@@ -9064,7 +9048,7 @@
     "description": "Reconstruct your recent working context from your own chat history, live state, and the shared record (user reports, prior fixes, incidents), then hand back a tight current-state brief. Use for 'recall my work on X', 'catch me up', 'what have I been working on', 'where did I leave off', before starting or resuming work.",
     "path": "pstack/skills/recall/SKILL.md",
     "relative_directory": "pstack/skills/recall",
-    "sha256": "b0ceb996259c3404532f61e4b010df4e3d80d7ddbed85b3c302895723eb62a89",
+    "sha256": "44673475f0523b83db7ea09388562b844ad7f2026f54e7d980f537e33109b1c8",
     "linked_local_files": []
   },
   {
@@ -9074,7 +9058,7 @@
     "description": "Spawn three parallel review subagents over the active transcript, surface learnings, and route each to a concrete edit on an existing skill. Use when the user says reflect.",
     "path": "pstack/skills/reflect/SKILL.md",
     "relative_directory": "pstack/skills/reflect",
-    "sha256": "9648df23cabaae99b78ed59cd93b6f35ebbf02105d228e3d0b5c3a3b3419d753",
+    "sha256": "3b78774e9659a516d8ed48616cab34bd3ec771904c63929aa74270da66b99cf0",
     "linked_local_files": [
       "pstack/skills/reflect/references/divergent-reviewer.md",
       "pstack/skills/reflect/references/judgment-reviewer.md",
@@ -9089,7 +9073,7 @@
     "description": "Configure which models pstack uses per role and at what reasoning budget. Detects your available models and writes an always-applied rule that overrides the skill defaults. Use for /setup-pstack, \"configure pstack models\", \"pstack budget\", or changing pstack's model choices.",
     "path": "pstack/skills/setup-pstack/SKILL.md",
     "relative_directory": "pstack/skills/setup-pstack",
-    "sha256": "df8ad3638a4dca31fb4b43d58056f0299f23ad0530614166d55ef989062b41ec",
+    "sha256": "4c53ea532bbfc429833c8cf5480a0fffcd10c3e32bc26256feff3d7ee7c9da85",
     "linked_local_files": []
   },
   {
@@ -9099,7 +9083,7 @@
     "description": "Make a task deeper, not bigger, then rewrite the prompt. Use for /sharpen.",
     "path": "pstack/skills/sharpen/SKILL.md",
     "relative_directory": "pstack/skills/sharpen",
-    "sha256": "563dfc460c605d311e650726288e2f1cbd61eab817db178d6e7e29643e07e7a2",
+    "sha256": "aac4f8e6a1ffd70e3763314db37d3c2eb0cfea08bc63e98907aca6dae0343031",
     "linked_local_files": []
   },
   {
@@ -9161,7 +9145,7 @@
     "description": "Fan out N parallel workers, drain them, and return one report. Use for /swarm, 'swarm this', or parallel coverage, races, gauntlets, and exploration.",
     "path": "pstack/skills/swarm/SKILL.md",
     "relative_directory": "pstack/skills/swarm",
-    "sha256": "fea6bfbbf21e067a4e2d2ebab034bc3af508118e9df1abc9d2ba040d58a6df3a",
+    "sha256": "411f9d1a29a8a6f59b7bfcd4726330ddb62c4c1298ebf53d5773d82703701038",
     "linked_local_files": []
   },
   {
@@ -9181,7 +9165,7 @@
     "description": "Explain a body of work plainly so a person actually understands it. Runs the `how` and `why` skills and weaves what they find into one clear explanation. Use for 'teach me this', 'help me really understand X', 'explain this change or subsystem to me'.",
     "path": "pstack/skills/teach/SKILL.md",
     "relative_directory": "pstack/skills/teach",
-    "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+    "sha256": "2c17f3c0a79536ca2fa3c20983def027ffd8abb4063d9bb3c97778b77557600d",
     "linked_local_files": []
   },
   {
@@ -9220,24 +9204,11 @@
     "source_repo": "cursor/plugins",
     "repo_key": "cursor__plugins",
     "skill_name": "why",
-    "description": "Use for 'why does X work this way', 'why we picked Y', design rationale, regressions, postmortems, or data-backed thresholds. Discovers available MCPs and queries each evidence category (source control, issue tracker, long-form docs, real-time chat, infrastructure observability, error tracking, product analytics warehouse) in parallel, then returns a cited read on decisions and tradeoffs. Use how for runtime behavior.",
+    "description": "Use for 'why does X work this way', 'why we picked Y', design rationale, regressions, postmortems, or data-backed thresholds. Returns a cited read on decisions and tradeoffs. Use how for runtime behavior.",
     "path": "pstack/skills/why/SKILL.md",
     "relative_directory": "pstack/skills/why",
-    "sha256": "144d42e7712723d763e607bc0a969e5f1cdf83ec7228519d87677cc534571bed",
-    "linked_local_files": [
-      "pstack/skills/why/references/epistemics.md",
-      "pstack/skills/why/references/investigator-prompt.md",
-      "pstack/skills/why/references/source-playbook.md",
-      "pstack/skills/why/references/sources/code-archaeology.md",
-      "pstack/skills/why/references/sources/databricks.md",
-      "pstack/skills/why/references/sources/datadog.md",
-      "pstack/skills/why/references/sources/incident-postmortem.md",
-      "pstack/skills/why/references/sources/linear.md",
-      "pstack/skills/why/references/sources/notion.md",
-      "pstack/skills/why/references/sources/sentry.md",
-      "pstack/skills/why/references/sources/slack.md",
-      "pstack/skills/why/references/synthesizer-prompt.md"
-    ]
+    "sha256": "6b65b3180f1f1bd3b696d7933daf900747410c82931d220a3f57a98addb1c0fd",
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -20903,7 +20874,7 @@
     "description": "Research what people actually say about any topic in the last 30 days. Pulls posts and engagement from Reddit, X, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the web. Includes a doctor health check to diagnose broken or missing sources.",
     "path": "skills/last30days/SKILL.md",
     "relative_directory": "skills/last30days",
-    "sha256": "625e8743aead5448cfc9872cbb66af11ae6b2bce6e4679ff29ce64331b113dce",
+    "sha256": "14a2f0cea89f258bbb5104dad28f3b67200daecb3f663881810131aa085d2d46",
     "linked_local_files": [
       "skills/last30days/references/agent-mode.md",
       "skills/last30days/references/category-peers.md",
@@ -20914,6 +20885,7 @@
       "skills/last30days/references/grok-bot-x.md",
       "skills/last30days/references/hiring-signals.md",
       "skills/last30days/references/library-queue.md",
+      "skills/last30days/references/patent-signals.md",
       "skills/last30days/references/recommendations.md",
       "skills/last30days/references/research-runbook.md",
       "skills/last30days/references/runtime.md",
@@ -20940,6 +20912,9 @@
       "skills/last30days/scripts/lib/chrome_cookies.py",
       "skills/last30days/scripts/lib/cjk.py",
       "skills/last30days/scripts/lib/cluster.py",
+      "skills/last30days/scripts/lib/cluster_diversity.py",
+      "skills/last30days/scripts/lib/company_names.py",
+      "skills/last30days/scripts/lib/company_resolve.py",
       "skills/last30days/scripts/lib/competitors.py",
       "skills/last30days/scripts/lib/cookie_extract.py",
       "skills/last30days/scripts/lib/cookie_paths.py",
@@ -20970,7 +20945,19 @@
       "skills/last30days/scripts/lib/html_render.py",
       "skills/last30days/scripts/lib/http.py",
       "skills/last30days/scripts/lib/instagram.py",
+      "skills/last30days/scripts/lib/job_boards/__init__.py",
+      "skills/last30days/scripts/lib/job_boards/detect.py",
+      "skills/last30days/scripts/lib/job_boards/google.py",
+      "skills/last30days/scripts/lib/job_boards/ibm.py",
+      "skills/last30days/scripts/lib/job_boards/jibe.py",
+      "skills/last30days/scripts/lib/job_boards/oracle.py",
+      "skills/last30days/scripts/lib/job_boards/phenom.py",
+      "skills/last30days/scripts/lib/job_boards/robots.py",
+      "skills/last30days/scripts/lib/job_boards/sitemap.py",
+      "skills/last30days/scripts/lib/job_boards/talentbrew.py",
+      "skills/last30days/scripts/lib/job_boilerplate.py",
       "skills/last30days/scripts/lib/jobs.py",
+      "skills/last30days/scripts/lib/jobs_digest.py",
       "skills/last30days/scripts/lib/library.py",
       "skills/last30days/scripts/lib/library_index.py",
       "skills/last30days/scripts/lib/linkedin.py",
@@ -20978,6 +20965,8 @@
       "skills/last30days/scripts/lib/meta_ads.py",
       "skills/last30days/scripts/lib/normalize.py",
       "skills/last30days/scripts/lib/parallel_mcp.py",
+      "skills/last30days/scripts/lib/patent_digest.py",
+      "skills/last30days/scripts/lib/patents.py",
       "skills/last30days/scripts/lib/permission_preflight.py",
       "skills/last30days/scripts/lib/perplexity.py",
       "skills/last30days/scripts/lib/pinterest.py",
@@ -21001,6 +20990,7 @@
       "skills/last30days/scripts/lib/registers.py",
       "skills/last30days/scripts/lib/relevance.py",
       "skills/last30days/scripts/lib/render.py",
+      "skills/last30days/scripts/lib/report_checklist.py",
       "skills/last30days/scripts/lib/rerank.py",
       "skills/last30days/scripts/lib/resolve.py",
       "skills/last30days/scripts/lib/safari_cookies.py",
@@ -21047,6 +21037,7 @@
       "skills/last30days/scripts/lib/xiaohongshu_api.py",
       "skills/last30days/scripts/lib/xquik.py",
       "skills/last30days/scripts/lib/xurl_x.py",
+      "skills/last30days/scripts/lib/yahoo_finance.py",
       "skills/last30days/scripts/lib/youtube_yt.py",
       "skills/last30days/scripts/setup-keychain.sh",
       "skills/last30days/scripts/setup-pass.sh",
@@ -22868,9 +22859,12 @@
     "description": "Build an animation from scratch, making the decisions in the order that determines whether it feels right \u2014 should it animate at all, what purpose, which tool, which properties, which curve and duration, how it interrupts, how it exits. Writes the implementation. Use when asked to animate something, add motion, make a component feel alive, or build a transition. For critiquing existing motion use review-animations; for auditing a whole codebase use improve-animations.",
     "path": "skills/animate/SKILL.md",
     "relative_directory": "skills/animate",
-    "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+    "sha256": "4ce49ea635ec175b45552bae070ea07b2d6aa5367047994250c1c095b71c8585",
     "linked_local_files": [
-      "skills/animate/RECIPES.md"
+      "skills/animate/RECIPES.md",
+      "skills/choreograph/RECIPES.md",
+      "skills/choreograph/SKILL.md",
+      "skills/pick-ui-library/SKILL.md"
     ]
   },
   {
@@ -22880,7 +22874,7 @@
     "description": "Build animations in React Native and Expo, making the decisions in the order that determines whether they feel right \u2014 should it animate, which thread it runs on, which properties, spring or timing, how the gesture hands off, how it degrades. Writes the implementation with Reanimated, Gesture Handler, Expo Router and expo-haptics. Use when animating anything in an Expo app, adding gestures, sheets, screen transitions, press feedback or haptics, or fixing motion that stutters on device. For web animation use `animate`.",
     "path": "skills/animate-expo/SKILL.md",
     "relative_directory": "skills/animate-expo",
-    "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+    "sha256": "67e5d2ebe23b3edf52ce9d399532f2ead2bd7eff127919dd1c3bbe489b04dd4d",
     "linked_local_files": [
       "skills/animate-expo/RECIPES.md"
     ]
@@ -22889,10 +22883,10 @@
     "source_repo": "emilkowalski/skills",
     "repo_key": "emilkowalski__skills",
     "skill_name": "animation-performance",
-    "description": "Keep web animations inside the frame budget \u2014 animate composite-only properties, keep motion off the main thread when the page is busy, and find the cause when an animation drops frames. Covers the layout/paint/composite pipeline, cheaper property swaps, CSS vs WAAPI vs requestAnimationFrame, Motion's hardware-accelerated path, React re-rendering per frame, inherited CSS variable recalculation, blur cost, and when `will-change` actually helps. Use when an animation is janky, choppy, stutters, or drops frames; when choosing which property to animate; when deciding between CSS and JS animation on performance grounds; or when reaching for `will-change` or GPU layers. For choosing easing, duration, or whether to animate at all use animate; for reviewing motion as a whole use review-animations.",
+    "description": "Keep web animations inside the frame budget \u2014 animate composite-only properties, keep motion off the main thread when the page is busy, and find the cause when an animation drops frames. Use when an animation is janky, choppy, stutters, or drops frames; when choosing which property to animate; when deciding between CSS and JS animation on performance grounds; or when reaching for `will-change` or GPU layers. For choosing easing, duration, or whether to animate at all use animate; for reviewing motion as a whole use review-animations.",
     "path": "skills/animation-performance/SKILL.md",
     "relative_directory": "skills/animation-performance",
-    "sha256": "6c60f45ab416ff3f7d7765a5427beead77fab0d82487fe610d2a298397558d0a",
+    "sha256": "6481e7a611b54c0d1d229ac3ac516c05648e63aa79de88c0a1bdc5ae2666ab80",
     "linked_local_files": []
   },
   {
@@ -22902,7 +22896,7 @@
     "description": "Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term (\"the bouncy thing when a popover opens\" \u2192 Pop in; \"the iOS rubber-band scroll\" \u2192 Rubber-banding). Use when the user asks \"what's it called when\u2026\", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one.",
     "path": "skills/animation-vocabulary/SKILL.md",
     "relative_directory": "skills/animation-vocabulary",
-    "sha256": "40d2b27adfdfeb0570a9f20e7d0255109d9233c50603878bcd0dcd04c923fd94",
+    "sha256": "42df33f1583483cc441fcd76693b3399148602705d2e9b8a26665d6b1951cd0b",
     "linked_local_files": []
   },
   {
@@ -22912,7 +22906,19 @@
     "description": "Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-motion, or the design foundations (feedback, spatial consistency, restraint) behind Apple-style interfaces.",
     "path": "skills/apple-design/SKILL.md",
     "relative_directory": "skills/apple-design",
-    "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+    "sha256": "7fbacf928637e136da6d475358d0639667a3637ba772f03f8e815bb4c0b86946",
+    "linked_local_files": [
+      "skills/animation-performance/SKILL.md"
+    ]
+  },
+  {
+    "source_repo": "emilkowalski/skills",
+    "repo_key": "emilkowalski__skills",
+    "skill_name": "ask-emil",
+    "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
+    "path": "skills/ask-emil/SKILL.md",
+    "relative_directory": "skills/ask-emil",
+    "sha256": "b14d6fec27af1ce59e48c5444520c08abc3ae90e93e1843e19ca382512ac6233",
     "linked_local_files": []
   },
   {
@@ -22922,7 +22928,7 @@
     "description": "Guide to Sonner, the React toast library \u2014 install and wire up the Toaster, pick the right toast() call, promise and loading toasts, updating, dismissing and persisting toasts, styling, theming and icons, positioning and multiple toasters. Use when working with Sonner or troubleshooting it \u2014 toasts that don't appear, appear twice, lose their styles, ignore Tailwind classes, sit behind a modal, or don't follow dark mode.",
     "path": "skills/ask-sonner/SKILL.md",
     "relative_directory": "skills/ask-sonner",
-    "sha256": "39f3ee185b3aa2cf70a689052ff078953ce7ba5915ed7a9391d232e9d4dcf57f",
+    "sha256": "4350ebfef0437875de80cc989059900b21ad621ea09f4709cc2917e7dee82d46",
     "linked_local_files": [
       "skills/ask-sonner/API.md"
     ]
@@ -22934,7 +22940,7 @@
     "description": "Try to break a piece of UI by feeding it worst-case data \u2014 long names, unbreakable emails, one-letter names, missing fields, huge counts, zero items, long labels, non-Latin text, emoji, extreme numbers \u2014 then render it behind a \"Demo data / Worst case\" toggle and report everything that broke, with the fix for each. Use when the user asks to stress-test, break, or find edge cases in a component or screen, or to \"try the worst case\". For visual design critique use emil-design-eng; for motion use review-animations.",
     "path": "skills/break-ui/SKILL.md",
     "relative_directory": "skills/break-ui",
-    "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+    "sha256": "fb126d176f3b6bf7dfe71f2ae6620ab3dd81e6282c672a1801720055addfce18",
     "linked_local_files": [
       "skills/break-ui/CATALOG.md"
     ]
@@ -22943,10 +22949,10 @@
     "source_repo": "emilkowalski/skills",
     "repo_key": "emilkowalski__skills",
     "skill_name": "choreograph",
-    "description": "Coordinate several elements that animate together \u2014 decide what moves, in what order, how much they overlap, and what stays still \u2014 so a group reads as one intentional motion instead of a pile of separate animations. Use when building or fixing a staggered list, a hero entrance, a view swap inside a container, a multi-step flow, an element leaving while its siblings close the gap, a morph between rich states, or any interaction with several moving parts (icon + background + lines, panel + content, items flying into a target). Triggers on \u2014 stagger, staggerChildren, delayChildren, animation-delay, sequence, sequencing, orchestration, choreography, cascade, wave, timeline, \"one after another\", \"at the same time\", crossfade, popLayout, mode=\"wait\", AnimatePresence mode, hero entrance, list entrance, multi-step, step transition, morph, useAnimate, Promise.all animations, \"feels mechanical\", \"feels robotic\", \"too much going on\", \"feels slow to open\".",
+    "description": "Coordinate several elements that animate together \u2014 decide what moves, in what order, how much they overlap, and what stays still \u2014 so a group reads as one intentional motion instead of a pile of separate animations. Use when building or fixing a staggered list, a hero entrance, a view swap inside a container, a multi-step flow, an element leaving while its siblings close the gap, a morph between rich states, or any interaction with several moving parts (icon + background + lines, panel + content, items flying into a target). Triggers on \u2014 stagger, sequence, choreography, \"one after another\", crossfade, AnimatePresence mode, hero entrance, multi-step, useAnimate, \"feels mechanical\", \"too much going on\", \"feels slow to open\".",
     "path": "skills/choreograph/SKILL.md",
     "relative_directory": "skills/choreograph",
-    "sha256": "815c7d889230bafc72c03bb0769087aeede310130e8795c7949b3e3a1684e464",
+    "sha256": "0a6802bb2fd5a3993842d48332b8ab56ae5bab369ffa8700f85f6fcff56b8478",
     "linked_local_files": [
       "skills/choreograph/RECIPES.md"
     ]
@@ -22955,11 +22961,14 @@
     "source_repo": "emilkowalski/skills",
     "repo_key": "emilkowalski__skills",
     "skill_name": "emil-design-eng",
-    "description": "This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great.",
+    "description": "Emil Kowalski's design-engineering philosophy for UI polish, component design, animation decisions, and the invisible details that make software feel great. Use when building or reviewing a UI component's interactions and polish (press and hover states, popover origin, tooltip timing, transitions vs keyframes, clip-path techniques, drag details) and no narrower skill fits.",
     "path": "skills/emil-design-eng/SKILL.md",
     "relative_directory": "skills/emil-design-eng",
-    "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
-    "linked_local_files": []
+    "sha256": "cdbfe467e6c9a4940c3a19e795cecf1ba659378d7412e06c245c6ae49da47da6",
+    "linked_local_files": [
+      "skills/choreograph/RECIPES.md",
+      "skills/choreograph/SKILL.md"
+    ]
   },
   {
     "source_repo": "emilkowalski/skills",
@@ -22968,18 +22977,23 @@
     "description": "Search a codebase or UI for places that don't animate but should, and reject everything that shouldn't. Read-only; it proposes motion with exact values, it does not implement it. Use when the user asks \"what could be animated here?\" or wants to \"make this feel more alive\". For fixing existing animations, use improve-animations or review-animations instead.",
     "path": "skills/find-animation-opportunities/SKILL.md",
     "relative_directory": "skills/find-animation-opportunities",
-    "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
-    "linked_local_files": []
+    "sha256": "331479e0d867f90d637ef3ef1bdbbd38498d144ab493442afdfbc138abc751b4",
+    "linked_local_files": [
+      "skills/choreograph/RECIPES.md",
+      "skills/choreograph/SKILL.md"
+    ]
   },
   {
     "source_repo": "emilkowalski/skills",
     "repo_key": "emilkowalski__skills",
     "skill_name": "gestures",
-    "description": "Build drag, swipe, and sheet interactions that track the finger 1:1 and stay interruptible. Use when building or fixing anything the user drags, swipes, flings, holds, or dismisses with a gesture \u2014 drawers, sheets, swipe-to-dismiss toasts and cards, drag-to-reorder, pull-to-refresh, hold-to-confirm \u2014 or when a gesture feels laggy, disconnected from the finger, jumps on release, or can't be caught mid-animation. Triggers on \u2014 gesture, drag, draggable, swipe, swipe to dismiss, fling, momentum, velocity, drawer, sheet, bottom sheet, snap points, Vaul, dragConstraints, dragElastic, dragMomentum, onDragEnd, whileDrag, useMotionValue, rubber-band, overscroll, pull to refresh, hold to delete, press and hold, touch-action, dismiss threshold, \"doesn't follow my finger\", \"jumps when I let go\", \"can't grab it mid-animation\".",
+    "description": "Build drag, swipe, and sheet interactions that track the finger 1:1 and stay interruptible. Use when building or fixing anything the user drags, swipes, flings, holds, or dismisses with a gesture \u2014 drawers, sheets, swipe-to-dismiss toasts and cards, drag-to-reorder, pull-to-refresh, hold-to-confirm \u2014 or when a gesture feels laggy, disconnected from the finger, jumps on release, or can't be caught mid-animation. Triggers on \u2014 gesture, drag, swipe, fling, sheet, snap points, Vaul, Motion drag props, rubber-band, pull to refresh, hold to delete, touch-action, \"doesn't follow my finger\", \"jumps when I let go\", \"can't grab it mid-animation\".",
     "path": "skills/gestures/SKILL.md",
     "relative_directory": "skills/gestures",
-    "sha256": "3301a3528632e7b6e980e79f2708f2faa60340e833ce5816b5b081e8cfe83e7f",
-    "linked_local_files": []
+    "sha256": "1928c86cce924a2a178ddd156ba5ed0f184665a1f95b549724ffb5ae703e994f",
+    "linked_local_files": [
+      "skills/pick-ui-library/SKILL.md"
+    ]
   },
   {
     "source_repo": "emilkowalski/skills",
@@ -22988,11 +23002,24 @@
     "description": "Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code \u2014 it plans improvements, it does not apply them. Use when the user asks to \"improve the animations\", \"audit the motion\", \"make this app feel better\", or wants a roadmap of animation fixes rather than a review of a single diff.",
     "path": "skills/improve-animations/SKILL.md",
     "relative_directory": "skills/improve-animations",
-    "sha256": "73962447464433476343e2c12cd08ab39cc99a9e5f3c118c5fb54ed897574ef6",
+    "sha256": "632be90e04261192112571b05abd5708fbb846808a4a7780717ee206daa6c6f6",
     "linked_local_files": [
+      "skills/choreograph/RECIPES.md",
+      "skills/choreograph/SKILL.md",
       "skills/improve-animations/AUDIT.md",
-      "skills/improve-animations/PLAN-TEMPLATE.md"
+      "skills/improve-animations/PLAN-TEMPLATE.md",
+      "skills/review-animations/STANDARDS.md"
     ]
+  },
+  {
+    "source_repo": "emilkowalski/skills",
+    "repo_key": "emilkowalski__skills",
+    "skill_name": "learn-taste",
+    "description": "Turn a session's design corrections into rules, with their why, in DESIGN.md, a project skill, or a lint check.",
+    "path": "skills/learn-taste/SKILL.md",
+    "relative_directory": "skills/learn-taste",
+    "sha256": "d624b8cd475eec24c5dc3f49b0380b56c8dab8399df11b92d7c9685aa8d4d33e",
+    "linked_local_files": []
   },
   {
     "source_repo": "emilkowalski/skills",
@@ -23001,27 +23028,27 @@
     "description": "Make a web app feel native on a phone \u2014 the small CSS and meta-tag fixes that separate \"a website in a browser\" from something that feels installed. Covers sticky hover states, tap highlight flashes, the 100vh bug, inputs that zoom the page, laggy taps, pull-to-refresh hijacking scroll, content under the notch, long-press selecting button text, carousels that scroll the wrong way, mismatched status bars, and the rule that you test on real hardware. Use when a web app is being built for or reviewed on mobile, when something \"works in Chrome but feels wrong on my phone\", when building a PWA, a bottom sheet, a carousel, a full-screen layout, or any touch interaction. For motion itself use animate; for React Native use animate-expo.",
     "path": "skills/mobile-native/SKILL.md",
     "relative_directory": "skills/mobile-native",
-    "sha256": "888b7651d66d66dbac4e72b7c554638eb19bd971d686d6cbdf030a5ef3788f55",
+    "sha256": "705e267bc47ea61e4c6f94d121efeebdb994055f482673b8a72f4a0dd62f1968",
     "linked_local_files": []
   },
   {
     "source_repo": "emilkowalski/skills",
     "repo_key": "emilkowalski__skills",
     "skill_name": "pick-ui-library",
-    "description": "Pick the right library for a given frontend task from a curated, opinionated list \u2014 numbers, OTP inputs, charts, command menus, virtualization, drag and drop, toasts, state, styling, and more. Only runs when explicitly invoked; it does not trigger on its own.",
+    "description": "Pick the library for a frontend task from a curated list \u2014 primitives, toasts, drawers, command menus, OTP, numbers, charts, virtualization, drag and drop, state, styling.",
     "path": "skills/pick-ui-library/SKILL.md",
     "relative_directory": "skills/pick-ui-library",
-    "sha256": "675fdce308683256ed617351a9b74d23457a5fbd0a562d9831b9c764b8c5e682",
+    "sha256": "db10dc6b2a0c340d873f69e35140ceb3c929e15664b33fcacd1ecb25c5574df3",
     "linked_local_files": []
   },
   {
     "source_repo": "emilkowalski/skills",
     "repo_key": "emilkowalski__skills",
     "skill_name": "prototype",
-    "description": "Build multiple genuinely different versions of a UI piece you describe, rendered behind a visual picker so you can flip through them live and promote the one that feels right. Only runs when explicitly invoked; it does not trigger on its own.",
+    "description": "Build multiple genuinely different versions of a UI piece you describe, rendered behind a visual picker so you can flip through them live and promote the one that feels right.",
     "path": "skills/prototype/SKILL.md",
     "relative_directory": "skills/prototype",
-    "sha256": "bba39c955eb1871c5a02733976ceec5d0324198e0812e667604756489c89f7b9",
+    "sha256": "30def86c5a5a0794a954b2a046d24c847c7129f316d79892abff73d54d79adc0",
     "linked_local_files": [
       "skills/prototype/PICKER.md"
     ]
@@ -23033,7 +23060,7 @@
     "description": "Find the animations an interface doesn't need and remove them \u2014 motion on keyboard actions, high-frequency surfaces, functional data, and decoration with no purpose \u2014 then clean up what they leave behind. Edits code, but only to subtract; it never adds or retunes motion. Use when the user says the app \"feels slow\", \"has too much animation\", \"feels over-animated\", wants to \"tone down the motion\", or asks what animations to remove. For finding places that should animate, use find-animation-opportunities; for fixing animations that should stay, use improve-animations or review-animations.",
     "path": "skills/remove-animations/SKILL.md",
     "relative_directory": "skills/remove-animations",
-    "sha256": "dea95b7a7ef81cba312c7f70a3c5c67d7e06a287cb16b16d2f90f2b1fb0afff9",
+    "sha256": "228d98a3d05637f2ff8fc2d1c2bd88c14783c8c901105cac39a7ae24a4d3e408",
     "linked_local_files": []
   },
   {
@@ -23043,8 +23070,10 @@
     "description": "Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned.",
     "path": "skills/review-animations/SKILL.md",
     "relative_directory": "skills/review-animations",
-    "sha256": "5f9fb98b69cace7107af8b393a4196fd42fa42d98bce0e5afc1f866ff3b8a41c",
+    "sha256": "9ceb5072ce5d5e51b07efa60817c66d06fc6492b7900b44dff5ff0f8f7bcf188",
     "linked_local_files": [
+      "skills/choreograph/RECIPES.md",
+      "skills/choreograph/SKILL.md",
       "skills/review-animations/STANDARDS.md"
     ]
   },
@@ -23055,7 +23084,7 @@
     "description": "How to write modern Swift well \u2014 modeling with value types, Swift 6 data-race safety and approachable concurrency (@concurrent, main-actor-by-default, actors, task groups), protocols and generics (some vs any), API design, performance and ARC, Swift Testing, macros, and the modern language features agents don't know about yet. Use when writing, reviewing, or migrating Swift, or when a concurrency error, a hang, a data race, a retain cycle, or a performance problem needs fixing.",
     "path": "skills/write-swift/SKILL.md",
     "relative_directory": "skills/write-swift",
-    "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+    "sha256": "ad8f3af70b627c165ecd73ecdba49449e35301dd845c397cf813f06582bbdac2",
     "linked_local_files": []
   },
   {

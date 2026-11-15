@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T05:03:00.024526+00:00",
+  "generated_at": "2026-11-15T20:00:52.821833+00:00",
   "exact_skill_duplicates": [
     {
       "sha256": "00a0d01e234f213d343f0040bbebd56e042978768ce5bb7117776a75bd9547e8",
@@ -548,20 +548,6 @@
       ]
     },
     {
-      "sha256": "2e10745b97f5862323dcda3b29ca60d56b5c3c98e37020085d26b48efbe0a436",
-      "count": 2,
-      "locations": [
-        {
-          "source_repo": "cursor/plugins",
-          "path": "harness/pstack/claude-code/skills/blast-radius/SKILL.md"
-        },
-        {
-          "source_repo": "cursor/plugins",
-          "path": "pstack/skills/blast-radius/SKILL.md"
-        }
-      ]
-    },
-    {
       "sha256": "336034322d2022f47b097e55b5448cbc1e204c11f964910fa6fb3baeab06a474",
       "count": 2,
       "locations": [
@@ -698,6 +684,20 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/code-tour/SKILL.md"
+        }
+      ]
+    },
+    {
+      "sha256": "4248d03e22365207d2e5f90c9542720f80a88a6b42fd542ef88dde3cf9f9223f",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "cursor/plugins",
+          "path": "harness/pstack/claude-code/skills/blast-radius/SKILL.md"
+        },
+        {
+          "source_repo": "cursor/plugins",
+          "path": "pstack/skills/blast-radius/SKILL.md"
         }
       ]
     },
@@ -856,20 +856,6 @@
         {
           "source_repo": "affaan-m/ECC",
           "path": "skills/quarkus-tdd/SKILL.md"
-        }
-      ]
-    },
-    {
-      "sha256": "563dfc460c605d311e650726288e2f1cbd61eab817db178d6e7e29643e07e7a2",
-      "count": 2,
-      "locations": [
-        {
-          "source_repo": "cursor/plugins",
-          "path": "harness/pstack/claude-code/skills/sharpen/SKILL.md"
-        },
-        {
-          "source_repo": "cursor/plugins",
-          "path": "pstack/skills/sharpen/SKILL.md"
         }
       ]
     },
@@ -1168,6 +1154,20 @@
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/principle-attack-the-premise/SKILL.md"
+        }
+      ]
+    },
+    {
+      "sha256": "6b65b3180f1f1bd3b696d7933daf900747410c82931d220a3f57a98addb1c0fd",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "cursor/plugins",
+          "path": "harness/pstack/claude-code/skills/why/SKILL.md"
+        },
+        {
+          "source_repo": "cursor/plugins",
+          "path": "pstack/skills/why/SKILL.md"
         }
       ]
     },
@@ -1708,6 +1708,20 @@
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/bro/SKILL.md"
+        }
+      ]
+    },
+    {
+      "sha256": "aac4f8e6a1ffd70e3763314db37d3c2eb0cfea08bc63e98907aca6dae0343031",
+      "count": 2,
+      "locations": [
+        {
+          "source_repo": "cursor/plugins",
+          "path": "harness/pstack/claude-code/skills/sharpen/SKILL.md"
+        },
+        {
+          "source_repo": "cursor/plugins",
+          "path": "pstack/skills/sharpen/SKILL.md"
         }
       ]
     },
@@ -2906,12 +2920,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/architect/SKILL.md",
-          "sha256": "dc74c4810a53a4ee25812278280f2580c00fb06408890e993be0623722a07aaa"
+          "sha256": "7528304e130742121ca3bc074f58971663608d0130b4633bb598560a3a5f7856"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/architect/SKILL.md",
-          "sha256": "31f8e97a52bfa5432edd61f68ade2a8632ef0bacbc2d2a6802d7a0e6821944ac"
+          "sha256": "42be68c2883bd10d867c46930fa11c44a25910b62b85e0c9a40326b4f25d7b6e"
         }
       ]
     },
@@ -2948,12 +2962,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/arena/SKILL.md",
-          "sha256": "a70df68e26420f783b09ac10b1ce6951b1438fa2233d5a0a5ad789720ba9c7b5"
+          "sha256": "7c5bdb6a838b24a98dd41aaf125d1d99e89d7f7e2ff2898899fa95d1e9552c0b"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/arena/SKILL.md",
-          "sha256": "d0adeca6c9b19d43d90ed8f0484f0ddd362f05006d628b8f4cc6c9b55fa4d2b3"
+          "sha256": "2e418753dfc64239e4d6412e7b739196d268e22ef1a4ecfbb8c0498bd3c82636"
         }
       ]
     },
@@ -3225,12 +3239,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/blast-radius/SKILL.md",
-          "sha256": "2e10745b97f5862323dcda3b29ca60d56b5c3c98e37020085d26b48efbe0a436"
+          "sha256": "4248d03e22365207d2e5f90c9542720f80a88a6b42fd542ef88dde3cf9f9223f"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/blast-radius/SKILL.md",
-          "sha256": "2e10745b97f5862323dcda3b29ca60d56b5c3c98e37020085d26b48efbe0a436"
+          "sha256": "4248d03e22365207d2e5f90c9542720f80a88a6b42fd542ef88dde3cf9f9223f"
         }
       ]
     },
@@ -5930,12 +5944,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/how/SKILL.md",
-          "sha256": "f2aad836aa83cac7385e734ab888d573e1736def5b061aa8a72b1717f085606c"
+          "sha256": "50cd58f4a3e4df5616977ef92dcabd3d67cf09de30368eebd148cbfbac113d36"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/how/SKILL.md",
-          "sha256": "08a00079bb15b4258874ac3ff62d4ca7e94350ffedb521d0fd296dc9dd21904e"
+          "sha256": "23d5cc79a449b9838242e7af5563aa8a4f0417bab136bbcc054b4bebc7284680"
         }
       ]
     },
@@ -7335,12 +7349,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/no-comments/SKILL.md",
-          "sha256": "52e05eb2578f7316421be8174430c1fd2c17bf5d6ac57d9e6a1c452b98d3a570"
+          "sha256": "ab4c6ec6dd7512227c87d818bf6593e71249dbf51d2ce251d80d082f8ebaad74"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/no-comments/SKILL.md",
-          "sha256": "078ecfe224eafbb017f6476870612838bf6dbe38c0b697e12f0c887d0313f17e"
+          "sha256": "9cc934e7541c4db609deeb5fd4e5882c1a4d3956975b5ae1ee693ed340527b9b"
         }
       ]
     },
@@ -7755,12 +7769,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/poteto-help/SKILL.md",
-          "sha256": "8ebc580b6970b7baac8da07fb03e1fe201a50d519cd3004073e73ff49f189352"
+          "sha256": "7c86a6ab9324a29092a34919044f88d37e032e2e9a71fdc94488e81725d27e56"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/poteto-help/SKILL.md",
-          "sha256": "768368881379d688c4e3bbdae55dd2d7874fde98a258324d3527de1bf09f9bd1"
+          "sha256": "5b14be54fc543b8f282953febc641f19f03919e7f77858347baa6957522f0c51"
         }
       ]
     },
@@ -7771,12 +7785,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/poteto-mode/SKILL.md",
-          "sha256": "9e9e77f996512b0309a6d2d136f20dd20e394739c3bfe3a9e473003a95c4a3b2"
+          "sha256": "f41c347f1e5f9e1704cde688715f5d275daf9ed3a276f35d81535015a2da70ad"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/poteto-mode/SKILL.md",
-          "sha256": "ee1848c973a112026f09ba12ea7a13c1654006e7bf170d1c34bf5d5816bc439b"
+          "sha256": "c1816b328fa174361dfb719f31ecc264991c8f020b0ba971ea79ca223c79c047"
         }
       ]
     },
@@ -8365,7 +8379,7 @@
         {
           "source_repo": "emilkowalski/skills",
           "path": "skills/prototype/SKILL.md",
-          "sha256": "bba39c955eb1871c5a02733976ceec5d0324198e0812e667604756489c89f7b9"
+          "sha256": "30def86c5a5a0794a954b2a046d24c847c7129f316d79892abff73d54d79adc0"
         }
       ]
     },
@@ -8745,12 +8759,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/recall/SKILL.md",
-          "sha256": "5b8fa47d6929c60e0db6de9d4ce78f4d9c02b93f4242219eb0a60a052801d22e"
+          "sha256": "fad599597156643e247606cc6fbeee323e5e91202e6d464e8f14f8e10ad23264"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/recall/SKILL.md",
-          "sha256": "b0ceb996259c3404532f61e4b010df4e3d80d7ddbed85b3c302895723eb62a89"
+          "sha256": "44673475f0523b83db7ea09388562b844ad7f2026f54e7d980f537e33109b1c8"
         }
       ]
     },
@@ -8782,12 +8796,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/reflect/SKILL.md",
-          "sha256": "03d12ba1c5f9d85946aa6ce2ccf5de7acc9506657370300c5c6251f654501482"
+          "sha256": "689529f795cc466ec8507abc64cd5796dd3c773c16d21838b4fcf29a0b1581e4"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/reflect/SKILL.md",
-          "sha256": "9648df23cabaae99b78ed59cd93b6f35ebbf02105d228e3d0b5c3a3b3419d753"
+          "sha256": "3b78774e9659a516d8ed48616cab34bd3ec771904c63929aa74270da66b99cf0"
         }
       ]
     },
@@ -9278,12 +9292,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/setup-pstack/SKILL.md",
-          "sha256": "97e90db5a6ab33cc609bd0f2f05e2a2707ea8d337d1375935fd2c8da21f8b4d4"
+          "sha256": "d2623ef1447401ce6bd8ed0fa6e435f4f3271c5a569e5118cadde89061d179f8"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/setup-pstack/SKILL.md",
-          "sha256": "df8ad3638a4dca31fb4b43d58056f0299f23ad0530614166d55ef989062b41ec"
+          "sha256": "4c53ea532bbfc429833c8cf5480a0fffcd10c3e32bc26256feff3d7ee7c9da85"
         }
       ]
     },
@@ -9294,12 +9308,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/sharpen/SKILL.md",
-          "sha256": "563dfc460c605d311e650726288e2f1cbd61eab817db178d6e7e29643e07e7a2"
+          "sha256": "aac4f8e6a1ffd70e3763314db37d3c2eb0cfea08bc63e98907aca6dae0343031"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/sharpen/SKILL.md",
-          "sha256": "563dfc460c605d311e650726288e2f1cbd61eab817db178d6e7e29643e07e7a2"
+          "sha256": "aac4f8e6a1ffd70e3763314db37d3c2eb0cfea08bc63e98907aca6dae0343031"
         }
       ]
     },
@@ -9632,12 +9646,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/swarm/SKILL.md",
-          "sha256": "34fb1420f1a0ad343bcf3c3e531db67b0ed43ba09c421e97936ce11200c43546"
+          "sha256": "9de585cfbd6830bf7968c114c5fcacc0afb8fc98333ee4c09c21b290122f28b6"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/swarm/SKILL.md",
-          "sha256": "fea6bfbbf21e067a4e2d2ebab034bc3af508118e9df1abc9d2ba040d58a6df3a"
+          "sha256": "411f9d1a29a8a6f59b7bfcd4726330ddb62c4c1298ebf53d5773d82703701038"
         }
       ]
     },
@@ -9844,12 +9858,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/teach/SKILL.md",
-          "sha256": "7f759a4ab2d8206d75f8c9984a113249135c45b1af95a5c2907681d56c76489f"
+          "sha256": "c837c2b78584407d69143282846448fc6e3c49349606959ab1df58e5cbebb553"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/teach/SKILL.md",
-          "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4"
+          "sha256": "2c17f3c0a79536ca2fa3c20983def027ffd8abb4063d9bb3c97778b77557600d"
         }
       ]
     },
@@ -9939,7 +9953,7 @@
         {
           "source_repo": "addyosmani/agent-skills",
           "path": "skills/test-driven-development/SKILL.md",
-          "sha256": "8fcaa57cf445ca6111fd20d2321bcfc0f424db7cfe526836db7b9bf8828fee39"
+          "sha256": "24ff76db6227bd74075381f16a5830add333439968f23c3f73987fac2290fe2a"
         },
         {
           "source_repo": "obra/Superpowers",
@@ -10312,12 +10326,12 @@
         {
           "source_repo": "cursor/plugins",
           "path": "harness/pstack/claude-code/skills/why/SKILL.md",
-          "sha256": "09405adc5afda90841f16318e471f25329d17da908956d79973edb34cdccb188"
+          "sha256": "6b65b3180f1f1bd3b696d7933daf900747410c82931d220a3f57a98addb1c0fd"
         },
         {
           "source_repo": "cursor/plugins",
           "path": "pstack/skills/why/SKILL.md",
-          "sha256": "144d42e7712723d763e607bc0a969e5f1cdf83ec7228519d87677cc534571bed"
+          "sha256": "6b65b3180f1f1bd3b696d7933daf900747410c82931d220a3f57a98addb1c0fd"
         }
       ]
     },

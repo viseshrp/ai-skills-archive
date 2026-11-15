@@ -28,7 +28,7 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 ## Source Repositories and Gists
 
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
-  - Archived commit: `301b02b12bff98e4688e6984af6556802322bbde`
+  - Archived commit: `39b723ceebf81474d0557c1fecd01eddab585563`
   - Snapshot: [`archives/addyosmani__agent-skills/snapshot`](archives/addyosmani__agent-skills/snapshot)
   - Skills discovered: 25
   - Files retained in reduced snapshot: 40
@@ -38,17 +38,17 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
-  - Archived commit: `6d9388674de1ad0437ad95db3d52f92b92204d84`
+  - Archived commit: `23bd688bbc121da6ae98ec3c4d4a7675cefc4c83`
   - Snapshot: [`archives/Imbad0202__academic-research-skills/snapshot`](archives/Imbad0202__academic-research-skills/snapshot)
   - Skills discovered: 5
-  - Files retained in reduced snapshot: 1103
+  - Files retained in reduced snapshot: 1111
 - [mattpocock/skills](https://github.com/mattpocock/skills)
-  - Archived commit: `4ae2317ddb22b046e26455e4f9c9b3aaaf62212d`
+  - Archived commit: `5863806dd4e15c63174bee4e7515a4256792ecfa`
   - Snapshot: [`archives/mattpocock__skills/snapshot`](archives/mattpocock__skills/snapshot)
   - Skills discovered: 39
   - Files retained in reduced snapshot: 69
 - [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman)
-  - Archived commit: `1e91f1306d602d4ca23618701b1185575ae1869b`
+  - Archived commit: `b4ee71d557d96e3cbc14f88fa6e953a1362865f5`
   - Snapshot: [`archives/juliusbrussee__caveman/snapshot`](archives/juliusbrussee__caveman/snapshot)
   - Skills discovered: 28
   - Files retained in reduced snapshot: 61
@@ -58,20 +58,20 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 15
   - Files retained in reduced snapshot: 80
 - [cursor/plugins](https://github.com/cursor/plugins)
-  - Archived commit: `6b0300214a09fd6029cfb7077043125758cd1fd2`
+  - Archived commit: `bf0c7cd80abdbf7fe47b634978a7d1b4071f71a7`
   - Snapshot: [`archives/cursor__plugins/snapshot`](archives/cursor__plugins/snapshot)
   - Skills discovered: 173
-  - Files retained in reduced snapshot: 454
+  - Files retained in reduced snapshot: 426
 - [affaan-m/ECC](https://github.com/affaan-m/ECC)
   - Archived commit: `d2ef2680594f9a17526a6e1a2e18b3d242c5d17b`
   - Snapshot: [`archives/affaan-m__ECC/snapshot`](archives/affaan-m__ECC/snapshot)
   - Skills discovered: 1068
   - Files retained in reduced snapshot: 1386
 - [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
-  - Archived commit: `71dc2a1529f23dfe7b0d0e3b3e11d4a7e8afd428`
+  - Archived commit: `0d5f0b028e42b6a9174424bc7dc9849b40b115c3`
   - Snapshot: [`archives/mvanhorn__last30days-skill/snapshot`](archives/mvanhorn__last30days-skill/snapshot)
   - Skills discovered: 1
-  - Files retained in reduced snapshot: 152
+  - Files retained in reduced snapshot: 172
 - [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
   - Archived commit: `96608e078b2d5ea607c5c3b8b5a54d1c1fba6846`
   - Snapshot: [`archives/DietrichGebert__ponytail/snapshot`](archives/DietrichGebert__ponytail/snapshot)
@@ -99,10 +99,10 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [emilkowalski/skills](https://github.com/emilkowalski/skills)
-  - Archived commit: `5206a950b715e0cabe7043ea0b2304332b91494e`
+  - Archived commit: `64eb3deb9a5fbfa041faf783e0bc3fd635872e9c`
   - Snapshot: [`archives/emilkowalski__skills/snapshot`](archives/emilkowalski__skills/snapshot)
-  - Skills discovered: 18
-  - Files retained in reduced snapshot: 27
+  - Skills discovered: 20
+  - Files retained in reduced snapshot: 29
   - Upstream license: [`LICENSE`](archives/emilkowalski__skills/LICENSE)
 - [humanlayer/skills](https://github.com/humanlayer/skills)
   - Archived commit: `4d69d20f6e9b57b4fcf0d501ccfb1be961f0f329`
@@ -1551,6 +1551,7 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `animation-performance`: [`skills/animation-performance/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/animation-performance/SKILL.md)
 - `animation-vocabulary`: [`skills/animation-vocabulary/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/animation-vocabulary/SKILL.md)
 - `apple-design`: [`skills/apple-design/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/apple-design/SKILL.md)
+- `ask-emil`: [`skills/ask-emil/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/ask-emil/SKILL.md)
 - `ask-sonner`: [`skills/ask-sonner/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/ask-sonner/SKILL.md)
 - `break-ui`: [`skills/break-ui/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/break-ui/SKILL.md)
 - `choreograph`: [`skills/choreograph/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/choreograph/SKILL.md)
@@ -1558,6 +1559,7 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `find-animation-opportunities`: [`skills/find-animation-opportunities/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/find-animation-opportunities/SKILL.md)
 - `gestures`: [`skills/gestures/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/gestures/SKILL.md)
 - `improve-animations`: [`skills/improve-animations/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/improve-animations/SKILL.md)
+- `learn-taste`: [`skills/learn-taste/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/learn-taste/SKILL.md)
 - `mobile-native`: [`skills/mobile-native/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/mobile-native/SKILL.md)
 - `pick-ui-library`: [`skills/pick-ui-library/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/pick-ui-library/SKILL.md)
 - `prototype`: [`skills/prototype/SKILL.md`](archives/emilkowalski__skills/snapshot/skills/prototype/SKILL.md)
@@ -1586,7 +1588,7 @@ These skills are maintained in this repository rather than inside an upstream sn
 
 ## Duplicate Tracking
 
-- Exact duplicate groups: 175
+- Exact duplicate groups: 176
 - Repeated skill names: 342
 - Full report: [`catalog/duplicates.json`](catalog/duplicates.json)
 
