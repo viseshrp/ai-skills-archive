@@ -23264,6 +23264,34 @@
     "linked_local_files": []
   },
   {
+    "source_repo": "cloudflare/security-audit-skill",
+    "repo_key": "cloudflare__security-audit-skill",
+    "skill_name": "security-audit",
+    "description": "Security guidance and vulnerability review for codebases, APIs, services, CLI tools, libraries, and daemons. Use for security questions, focused reviews, vulnerability research, security audits, or pen tests. Run the complete workflow only for explicit codebase audit or pen-test requests, full/comprehensive/end-to-end reviews, or requested report artifacts.",
+    "path": "skills/security-audit/SKILL.md",
+    "relative_directory": "skills/security-audit",
+    "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+    "linked_local_files": [
+      "skills/security-audit/AI-AND-LLM.md",
+      "skills/security-audit/ATTACK-CLASSES.md",
+      "skills/security-audit/CLIENT-SIDE.md",
+      "skills/security-audit/CLOUD-AND-DEPLOYMENT.md",
+      "skills/security-audit/DATA-ISOLATION-AND-LIFECYCLE.md",
+      "skills/security-audit/DESKTOP-MOBILE-AND-LOCAL-IPC.md",
+      "skills/security-audit/HUNTING.md",
+      "skills/security-audit/MEMORY-SAFETY-AND-BINARY.md",
+      "skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md",
+      "skills/security-audit/RECONNAISSANCE.md",
+      "skills/security-audit/RESOURCE-EXHAUSTION-AND-AVAILABILITY.md",
+      "skills/security-audit/SUPPLY-CHAIN-AND-RELEASE.md",
+      "skills/security-audit/VALIDATION-AND-REPORTING.md",
+      "skills/security-audit/WEB-PROTOCOL-AND-AUTH.md",
+      "skills/security-audit/report-schema.json",
+      "skills/security-audit/validate-coverage-ledger.cjs",
+      "skills/security-audit/validate-findings.cjs"
+    ]
+  },
+  {
     "source_repo": "viseshrp/ai-skills-archive (curated)",
     "repo_key": "curated",
     "skill_name": "test-audit",

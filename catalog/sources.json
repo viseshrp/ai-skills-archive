@@ -88,5 +88,12 @@
     "companion_dirs": [
       "skills/modern-web-guidance/guides"
     ]
+  },
+  {
+    "url": "https://github.com/cloudflare/security-audit-skill",
+    "notes": "Added with scripts/sync_sources.py add from https://github.com/cloudflare/security-audit-skill.",
+    "license_files": [
+      "LICENSE"
+    ]
   }
 ]

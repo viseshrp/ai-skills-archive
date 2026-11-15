@@ -123,6 +123,12 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Files retained in reduced snapshot: 234
   - Upstream license: [`LICENSE`](archives/googlechrome__modern-web-guidance/LICENSE)
   - Registered companion directory: [`skills/modern-web-guidance/guides`](archives/googlechrome__modern-web-guidance/snapshot/skills/modern-web-guidance/guides)
+- [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill)
+  - Archived commit: `c1c8a8c1471069fb0e188eeaff69b8e8db6564a8`
+  - Snapshot: [`archives/cloudflare__security-audit-skill/snapshot`](archives/cloudflare__security-audit-skill/snapshot)
+  - Skills discovered: 1
+  - Files retained in reduced snapshot: 18
+  - Upstream license: [`LICENSE`](archives/cloudflare__security-audit-skill/LICENSE)
 
 ## Curated Adaptations
 
@@ -1574,6 +1580,9 @@ These skills are maintained in this repository rather than inside an upstream sn
 ### googlechrome/modern-web-guidance
 - `chrome-extensions`: [`skills/chrome-extensions/SKILL.md`](archives/googlechrome__modern-web-guidance/snapshot/skills/chrome-extensions/SKILL.md)
 - `modern-web-guidance`: [`skills/modern-web-guidance/SKILL.md`](archives/googlechrome__modern-web-guidance/snapshot/skills/modern-web-guidance/SKILL.md)
+
+### cloudflare/security-audit-skill
+- `security-audit`: [`skills/security-audit/SKILL.md`](archives/cloudflare__security-audit-skill/snapshot/skills/security-audit/SKILL.md)
 
 ## Duplicate Tracking
 
