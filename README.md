@@ -116,6 +116,13 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
   - Upstream license: [`LICENSE.md`](archives/janestreet__agent_skills/LICENSE.md)
+- [googlechrome/modern-web-guidance](https://github.com/googlechrome/modern-web-guidance)
+  - Archived commit: `4dd968349e54ca45a05dd5c818fb035c9054b022`
+  - Snapshot: [`archives/googlechrome__modern-web-guidance/snapshot`](archives/googlechrome__modern-web-guidance/snapshot)
+  - Skills discovered: 2
+  - Files retained in reduced snapshot: 234
+  - Upstream license: [`LICENSE`](archives/googlechrome__modern-web-guidance/LICENSE)
+  - Registered companion directory: [`skills/modern-web-guidance/guides`](archives/googlechrome__modern-web-guidance/snapshot/skills/modern-web-guidance/guides)
 
 ## Curated Adaptations
 
@@ -1563,6 +1570,10 @@ These skills are maintained in this repository rather than inside an upstream sn
 
 ### janestreet/agent_skills
 - `socratic-tutor`: [`socratic-tutor/SKILL.md`](archives/janestreet__agent_skills/snapshot/socratic-tutor/SKILL.md)
+
+### googlechrome/modern-web-guidance
+- `chrome-extensions`: [`skills/chrome-extensions/SKILL.md`](archives/googlechrome__modern-web-guidance/snapshot/skills/chrome-extensions/SKILL.md)
+- `modern-web-guidance`: [`skills/modern-web-guidance/SKILL.md`](archives/googlechrome__modern-web-guidance/snapshot/skills/modern-web-guidance/SKILL.md)
 
 ## Duplicate Tracking
 

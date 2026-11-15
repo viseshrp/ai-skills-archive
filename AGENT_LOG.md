@@ -1209,3 +1209,12 @@ Source commit matrix:
 - Exact duplicate groups: 175
 - Repeated skill names: 342
 - Synced `janestreet__agent_skills` at commit `7c6715c29548` with 1 skills and 1 files.
+
+## 2026-11-15 00:37:23Z
+
+- Action: Added source: https://github.com/googlechrome/modern-web-guidance (scoped add; other registered sources not refreshed)
+- Sources synced: 1
+- Skills indexed: 1401
+- Exact duplicate groups: 175
+- Repeated skill names: 342
+- Synced `googlechrome__modern-web-guidance` at commit `4dd968349e54` with 2 skills and 234 files.

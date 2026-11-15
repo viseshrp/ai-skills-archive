@@ -51,6 +51,7 @@ These requirements came directly from the user and should continue to govern fut
 - A snapshot should contain:
   - every `SKILL.md` discovered in the source repo
   - recursively referenced local files reachable from those skills
+  - every file under a directory that the source registers in `companion_dirs` in `catalog/sources.json`, for a skill that loads its corpus through a published command instead of a local link
 - A snapshot should not contain:
   - upstream `.git` data
   - unrelated docs, tests, configs, or packaging files unless they are actually referenced by a retained skill-related file

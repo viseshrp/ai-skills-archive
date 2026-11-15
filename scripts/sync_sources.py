@@ -650,6 +650,32 @@ def build_curated_skill_records() -> list[dict[str, Any]]:
     return skill_records
 
 
+def collect_companion_dir_files(source: dict[str, Any], clone_dir: Path) -> set[Path]:
+    """Return every file under the directories a source registers as companions.
+
+    Some skills load their corpus through a published command instead of a local
+    link, so reference tracing cannot find it. `companion_dirs` in
+    `catalog/sources.json` names those repository-relative directories.
+    """
+    clone_root = clone_dir.resolve()
+    found: set[Path] = set()
+    for companion_dir in source.get("companion_dirs", []):
+        if not isinstance(companion_dir, str) or not companion_dir:
+            raise ValueError(f"Companion directory must be a path: {companion_dir!r}")
+        relative = Path(companion_dir)
+        if relative.is_absolute() or ".." in relative.parts or ".git" in relative.parts:
+            raise ValueError(f"Unsafe companion directory: {companion_dir!r}")
+        directory = clone_dir / relative
+        if directory.is_symlink() or not directory.is_dir():
+            raise ValueError(f"Missing or unsafe companion directory: {directory}")
+        for path in directory.rglob("*"):
+            if not path.is_file() or path.is_symlink() or ".git" in path.parts:
+                continue
+            # Reject a file that a symlinked parent places outside the clone.
+            found.add(path.resolve().relative_to(clone_root))
+    return found
+
+
 def build_repo_report(source: dict[str, Any], clone_dir: Path, archive_root: Path) -> tuple[dict[str, Any], list[dict[str, Any]]]:
     owner, repo = parse_repo_url(source["url"])
     branch = run(["git", "branch", "--show-current"], cwd=clone_dir)
@@ -682,6 +708,7 @@ def build_repo_report(source: dict[str, Any], clone_dir: Path, archive_root: Pat
             }
         )
 
+    selected_files.update(collect_companion_dir_files(source, clone_dir))
     counts = copy_selected_files(clone_dir, snapshot_dir, selected_files)
     license_files: dict[str, str] = {}
     for license_name in source.get("license_files", []):
@@ -723,6 +750,8 @@ def build_repo_report(source: dict[str, Any], clone_dir: Path, archive_root: Pat
     }
     if license_files:
         report["license_files"] = license_files
+    if source.get("companion_dirs"):
+        report["companion_dirs"] = list(source["companion_dirs"])
     return report, skill_records
 
 
@@ -858,6 +887,11 @@ def render_readme(repo_reports: list[dict[str, Any]], skill_records: list[dict[s
         for license_name in report.get("license_files", {}):
             license_link = f"{report['archive_path']}/{license_name}"
             lines.append(f"  - Upstream license: [`{license_name}`]({license_link})")
+        for companion_dir in report.get("companion_dirs", []):
+            companion_link = f"{report['snapshot_path']}/{companion_dir}"
+            lines.append(
+                f"  - Registered companion directory: [`{companion_dir}`]({companion_link})"
+            )
 
     curated_skills = [
         record for record in skill_records if record["repo_key"] == "curated"

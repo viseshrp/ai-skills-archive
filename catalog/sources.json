@@ -78,5 +78,15 @@
     "license_files": [
       "LICENSE.md"
     ]
+  },
+  {
+    "url": "https://github.com/googlechrome/modern-web-guidance",
+    "notes": "Added with scripts/sync_sources.py add from https://github.com/googlechrome/modern-web-guidance. The modern-web-guidance skill loads its guides through a published command, so its guide directory is registered as a companion.",
+    "license_files": [
+      "LICENSE"
+    ],
+    "companion_dirs": [
+      "skills/modern-web-guidance/guides"
+    ]
   }
 ]

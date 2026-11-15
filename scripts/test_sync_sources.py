@@ -518,5 +518,51 @@ class SkillBaseReferenceTests(unittest.TestCase):
         )
 
 
+class CompanionDirTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name).resolve()
+
+    def write(self, relative):
+        path = self.root / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("payload")
+
+    def collect(self, *companion_dirs):
+        source = {"companion_dirs": list(companion_dirs)}
+        return sync_sources.collect_companion_dir_files(source, self.root)
+
+    def test_registered_directory_is_preserved_recursively(self):
+        self.write("skills/demo/guides/css/layout.md")
+        self.write("skills/demo/guides/forms.md")
+        self.write("skills/other/notes.md")
+        self.assertEqual(
+            self.collect("skills/demo/guides"),
+            {
+                Path("skills/demo/guides/css/layout.md"),
+                Path("skills/demo/guides/forms.md"),
+            },
+        )
+
+    def test_source_without_companion_dirs_adds_nothing(self):
+        self.write("skills/demo/guides/forms.md")
+        self.assertEqual(
+            sync_sources.collect_companion_dir_files({}, self.root), set()
+        )
+
+    def test_unsafe_or_missing_directory_is_rejected(self):
+        self.write("skills/demo/guides/forms.md")
+        for unsafe in ("../outside", "/etc", ".git/hooks", "skills/missing", ""):
+            with self.subTest(unsafe=unsafe), self.assertRaises(ValueError):
+                self.collect(unsafe)
+
+    def test_symlinked_directory_is_rejected(self):
+        self.write("real/forms.md")
+        (self.root / "linked").symlink_to(self.root / "real")
+        with self.assertRaises(ValueError):
+            self.collect("linked")
+
+
 if __name__ == "__main__":
     unittest.main()
