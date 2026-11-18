@@ -24,6 +24,7 @@ from . import (
     meta_ads,
     patent_digest,
     polymarket,
+    reddit_refs,
     registers,
     relevance,
     rerank,
@@ -31,6 +32,13 @@ from . import (
     signals,
     skill_meta,
     x_envelope,
+)
+from .library import (
+    PRIVATE_CORPUS_END,
+    PRIVATE_CORPUS_START,
+    PUBLIC_CLUSTERS_MARKER,
+    PUBLIC_DRILL_MARKER,
+    PUBLIC_FRESHNESS_MARKER,
 )
 
 
@@ -251,10 +259,6 @@ SOURCE_LABELS = {
     "corpus": "Your files",
 }
 
-PRIVATE_CORPUS_START = "<!-- LAST30DAYS_PRIVATE_CORPUS_START -->"
-PRIVATE_CORPUS_END = "<!-- LAST30DAYS_PRIVATE_CORPUS_END -->"
-
-
 # vote_weight = max points a fully on-topic, max-upvoted top comment can add to
 # the LLM humor score. Tuned against real runs: typical funny comments score
 # ~52 and the best on-topic comments carry hundreds-to-thousands of votes, so
@@ -298,7 +302,7 @@ def _render_drill_context(report: schema.Report) -> list[str]:
     sources = context.get("sources") or []
     source_text = ", ".join(_source_label(source) for source in sources) or "none"
     original = context.get("original_summary") or "No cached summary was available."
-    return [
+    lines = [
         "## Drill Follow-up",
         "",
         f"- Target: {context.get('target') or report.drill_of}",
@@ -313,6 +317,9 @@ def _render_drill_context(report: schema.Report) -> list[str]:
         f"- {int(context.get('new_items') or 0)} new items after dedupe",
         f"- Re-researched sources: {source_text}",
     ]
+    if schema.drill_has_corpus_context(report):
+        return [PRIVATE_CORPUS_START, *map(_defang_corpus_sentinels, lines), PRIVATE_CORPUS_END]
+    return [PUBLIC_DRILL_MARKER, *lines]
 
 
 def _render_library_context(report: schema.Report) -> list[str]:
@@ -414,8 +421,11 @@ def _render_ranked_clusters(
     clusters: list[schema.Cluster],
     *,
     digest_urls: Collection[str] = (),
+    mark_public_clusters: bool = False,
 ) -> list[str]:
     lines = ["## Ranked Evidence Clusters", ""]
+    if mark_public_clusters:
+        lines.insert(0, PUBLIC_CLUSTERS_MARKER)
     candidate_by_id = {
         candidate.candidate_id: candidate for candidate in report.ranked_candidates
     }
@@ -671,20 +681,30 @@ def _candidate_freshness_flag(report: schema.Report, candidate_id: str) -> str:
 
 
 def _render_freshness_verdicts(report: schema.Report) -> list[str]:
-    if not report.freshness_verdicts:
-        return []
+    public, private = schema.partition_freshness_verdicts(report, {"corpus"})
+    lines = [PUBLIC_FRESHNESS_MARKER, *_freshness_table(public, "Freshness Verification")] if public else []
+    if private:
+        if lines:
+            lines.append("")
+        local = _freshness_table(private, "Local freshness verification")
+        lines.extend([PRIVATE_CORPUS_START, *map(_defang_corpus_sentinels, local), PRIVATE_CORPUS_END])
+    return lines
+
+
+def _freshness_table(verdicts: list[schema.FreshnessVerdict], heading: str) -> list[str]:
     lines = [
-        "## Freshness Verification",
+        f"## {heading}",
         "",
         "| Verdict | Claim | Evidence | Checked |",
         "| --- | --- | --- | --- |",
     ]
-    for verdict in report.freshness_verdicts:
-        claim = verdict.claim.replace("|", "\\|")
+    for verdict in verdicts:
+        claim = " ".join(verdict.claim.splitlines()).replace("|", "\\|")
         if verdict.detail:
             # The verifier's detail carries the formatted movement for stale
             # rows and the reason a claim could not be re-checked otherwise.
-            claim += f" ({verdict.detail.replace('|', chr(92) + '|')})"
+            detail = " ".join(verdict.detail.splitlines()).replace("|", "\\|")
+            claim += f" ({detail})"
         evidence_label = (
             verdict.evidence_timestamp or verdict.source_timestamp or "source"
         )
@@ -727,6 +747,7 @@ def _render_registered_sections(
     cluster_limit: int,
     *,
     include_source_diagnostics: bool = True,
+    mark_public_clusters: bool = False,
 ) -> list[str]:
     """Render one audience preset's ordered, budgeted evidence sections."""
 
@@ -791,6 +812,7 @@ def _render_registered_sections(
         "clusters": _render_ranked_clusters(
             report,
             visible_clusters,
+            mark_public_clusters=mark_public_clusters,
         ),
         "stats": _render_stats(report),
         "best_takes": best_takes,
@@ -832,6 +854,7 @@ def render_compact(
 ) -> str:
     audience = registers.get_register(register)
     evidence_report = schema.without_sources(report, {"corpus"})
+    has_corpus = schema.report_has_corpus(report)
     non_empty = [s for s, items in sorted(report.items_by_source.items()) if items]
     lines = [
         *_render_badge(report.topic, report.range_from, report.range_to),
@@ -923,6 +946,7 @@ def render_compact(
         # a synthesis-only voice change, so it intentionally takes this path.
         lines.extend(_render_ranked_clusters(
             evidence_report, visible_clusters, digest_urls=jobs_digest_urls,
+            mark_public_clusters=has_corpus,
         ))
         lines.extend(_render_stats(evidence_report))
 
@@ -955,7 +979,8 @@ def render_compact(
     else:
         lines.extend(
             _render_registered_sections(
-                evidence_report, audience, fun_params, cluster_limit
+                evidence_report, audience, fun_params, cluster_limit,
+                mark_public_clusters=has_corpus,
             )
         )
     corpus_section = _render_corpus_section(report)
@@ -1048,6 +1073,7 @@ def render_for_html(
                     fun_params,
                     8,
                     include_source_diagnostics=False,
+                    mark_public_clusters=schema.report_has_corpus(report),
                 ),
             ]
         )
@@ -1844,7 +1870,10 @@ def render_full(report: schema.Report, save_path: str | None = None) -> str:
         lines.append("")
 
     # ALL clusters (no limit)
-    lines.extend(_render_ranked_clusters(evidence_report, evidence_report.clusters))
+    lines.extend(_render_ranked_clusters(
+        evidence_report, evidence_report.clusters,
+        mark_public_clusters=schema.report_has_corpus(report),
+    ))
 
     fun_params = _FUN_LEVELS["medium"]
     full_clusters = _clusters_clearing_relevance_floor(
@@ -2023,7 +2052,7 @@ def render_full(report: schema.Report, save_path: str | None = None) -> str:
         lines.extend(corpus_section)
         lines.append("")
 
-    freshness_verdicts = _render_freshness_verdicts(evidence_report)
+    freshness_verdicts = _render_freshness_verdicts(report)
     if freshness_verdicts:
         lines.extend(freshness_verdicts)
         lines.append("")
@@ -2074,6 +2103,9 @@ def _format_item_engagement(item: schema.SourceItem) -> str:
         "ratings",
     ]:
         val = eng.get(key)
+        if key == "score" and item.source == "reddit" and reddit_refs.score_pending(item.metadata):
+            parts.append("score pending")
+            continue
         if val is not None and val != 0:
             parts.append(f"{val} {key}")
     # Same drift as the source list above: this allowlist silently blanks the
@@ -2181,6 +2213,7 @@ def render_brief(report: schema.Report, cluster_limit: int = 8) -> str:
     is no matching data; Sections 1 and 5 always appear.
     """
     evidence_report = schema.without_sources(report, {"corpus"})
+    public_cluster_boundary = [PUBLIC_CLUSTERS_MARKER] if schema.report_has_corpus(report) else []
     non_empty = [s for s, items in sorted(report.items_by_source.items()) if items]
     lines = [
         f"# Production Brief: {report.topic}",
@@ -2199,8 +2232,7 @@ def render_brief(report: schema.Report, cluster_limit: int = 8) -> str:
     if library_context:
         lines.extend([*library_context, ""])
 
-    lines.append("## Ranked Storylines")
-    lines.append("")
+    lines.extend([*public_cluster_boundary, "## Ranked Storylines", ""])
     candidate_by_id = {c.candidate_id: c for c in evidence_report.ranked_candidates}
     requested_clusters = evidence_report.clusters[:cluster_limit]
     visible_clusters = _clusters_clearing_relevance_floor(
@@ -2280,8 +2312,7 @@ def render_brief(report: schema.Report, cluster_limit: int = 8) -> str:
 
     tensions = [c for c in visible_clusters if c.uncertainty]
     if tensions:
-        lines.append("## Topic Tensions")
-        lines.append("")
+        lines.extend([*public_cluster_boundary, "## Topic Tensions", ""])
         for cluster in tensions[:cluster_limit]:
             label = (
                 cluster.uncertainty.replace("-", " ").title()
@@ -2300,8 +2331,7 @@ def render_brief(report: schema.Report, cluster_limit: int = 8) -> str:
             lines.append(f"- {q}")
         lines.append("")
 
-    lines.append("## Source Clusters")
-    lines.append("")
+    lines.extend([*public_cluster_boundary, "## Source Clusters", ""])
     for cluster in visible_clusters:
         source_tags = " + ".join(_source_label(s) for s in cluster.sources)
         lines.append(f"- **{_safe_title(cluster.title)}**: {source_tags}")
@@ -2554,9 +2584,21 @@ def _jobs_digest_block(report: schema.Report) -> tuple[list[str], set[str]]:
         (
             f"- Roles listed: {len(entries):,} of {distinct:,} distinct roles, {chosen}"
             "board by department, location and title wording. Each carries the text "
-            "no other role on the board repeats."
+            "no other role on the board repeats"
+            + _story_search_status(board.get("story_search")) + "."
         ),
     ]
+    sites = [site for site in board.get("board_sites") or [] if isinstance(site, dict)]
+    if len(sites) > 1:
+        # A Workday tenant read across its career sites: each site's own count.
+        counts = [(str(site.get("site") or ""), int(site.get("roles") or 0)) for site in sites]
+        out[-1] += f" Read from {len(sites)} Workday sites: " + ", ".join(
+            f"{_escape_markdown_plain_text(name)} ({roles:,} role{'' if roles == 1 else 's'})"
+            for name, roles in counts
+        ) + "."
+    teams = _named_teams_line(digest.get("teams"))
+    if teams:
+        out.append(teams)
     if digest.get("note"):
         out.append(f"- Note: {digest['note']}")
     size = sum(len(line) + 1 for line in out)
@@ -2576,6 +2618,15 @@ def _jobs_digest_block(report: schema.Report) -> tuple[list[str], set[str]]:
         )
         if entry.get("posted"):
             parts.append(f"posted {entry['posted']}")
+        if entry.get("story_term"):
+            parts.append("story term: " + _format_untrusted_evidence(
+                " ".join(str(entry["story_term"]).split()), 80))
+        if entry.get("team_lead"):
+            parts.append("new-team lead")
+        team = entry.get("team")
+        if isinstance(team, dict) and team.get("name"):
+            parts.append("team: " + _format_untrusted_evidence(
+                " ".join(str(team["name"]).split()), 80) + f" ({int(team.get('roles') or 0):,} roles)")
         line = "- " + " | ".join(parts)
         text = " ".join(str(entry.get("text") or "").split())
         if text:
@@ -2586,6 +2637,47 @@ def _jobs_digest_block(report: schema.Report) -> tuple[list[str], set[str]]:
         out.append(line)
         shown.update(url for url in (entry.get("url"), *(entry.get("urls") or [])) if url)
     return out, shown
+
+
+def _named_teams_line(teams: object) -> str:
+    """The board's named teams, each with its role count and, when the board
+    gives true posted dates, how many of them were posted in the window.
+    Empty when the board names none."""
+    if not isinstance(teams, list):
+        return ""
+    named = []
+    for team in teams:
+        if not isinstance(team, dict) or not team.get("name"):
+            continue
+        roles = int(team.get("roles") or 0)
+        count = f"{roles:,} roles"
+        if isinstance(team.get("new"), int) and not isinstance(team.get("new"), bool):
+            count += f", {team['new']:,} new"
+        named.append(_format_untrusted_evidence(" ".join(str(team["name"]).split()), 80) + f" ({count})")
+    if not named:
+        return ""
+    return "- Named teams (team names repeated across this board's titles): " + "; ".join(named) + "."
+
+
+def _story_search_status(record: object) -> str:
+    """What a board's story search did, as the end of the Roles listed line:
+    the terms searched and roles matched, no matches, or not run. Empty when
+    the run had no story terms."""
+    if not isinstance(record, dict):
+        return ""
+    if not record.get("ran"):
+        status = "story search: not run"
+    else:
+        terms = len(record.get("terms") or [])
+        matches = int(record.get("matches") or 0)
+        status = (
+            f"story search: {terms} term{'' if terms == 1 else 's'}, "
+            f"{matches:,} match{'' if matches == 1 else 'es'}"
+            if matches else "story search: no matches"
+        )
+    if record.get("story_partial"):
+        status += " (partial)"
+    return f"; {status}"
 
 
 def _patent_digest_block(report: schema.Report) -> list[str]:
@@ -2887,10 +2979,25 @@ def _polymarket_headline(item: schema.SourceItem) -> tuple[str, float, str] | No
     return question, float(price), " ".join(str(headline.get("label") or "").split())
 
 
+def _polymarket_names_topic(item: schema.SourceItem, topic: str) -> bool:
+    """Whether a market names the whole topic, read from the event title, its
+    question and its headline. An item carrying a matched market was already
+    judged against the topic, its aliases and related names by the entity
+    matcher, so it is kept; the word check covers items saved by older builds."""
+    if isinstance(item.metadata.get("matched_market"), dict):
+        return True
+    return polymarket.names_whole_topic(
+        topic,
+        item.title,
+        str(item.metadata.get("question") or ""),
+        (_polymarket_headline(item) or ("",))[0],
+    )
+
+
 def _polymarket_top_markets(
     items: list[schema.SourceItem], limit: int = 3, topic: str = "",
 ) -> list[str]:
-    """Build summary strings for the top Polymarket markets by volume.
+    """Build summary strings for the top Polymarket markets in selection order.
 
     Returns list like: ['Waymo launch in Denver, CO by Dec 31, 2026 74%'].
     Each market is named once, by its whole question, with the price of that
@@ -2899,21 +3006,8 @@ def _polymarket_top_markets(
     named the older way: ['UK visit 5.5%', 'blocked from entering 36%'].
     """
     if topic:
-        items = [
-            item for item in items
-            if polymarket.names_whole_topic(
-                topic,
-                item.title,
-                str(item.metadata.get("question") or ""),
-                (_polymarket_headline(item) or ("",))[0],
-            )
-        ]
-    # Sort by volume descending
-    sorted_items = sorted(
-        items,
-        key=lambda it: it.engagement.get("volume") or 0,
-        reverse=True,
-    )
+        items = [item for item in items if _polymarket_names_topic(item, topic)]
+    sorted_items = polymarket.by_selection(items)
 
     # One market per series first, a substantive question before a recurring
     # count bracket ("# tweets this week"); a count series is never repeated,
@@ -4097,6 +4191,14 @@ def _format_engagement(item: schema.SourceItem | None) -> str | None:
     fields = ENGAGEMENT_DISPLAY.get(item.source)
     if fields:
         text = _fmt_pairs([(engagement.get(field), label) for field, label in fields])
+        if item.source == "reddit" and reddit_refs.score_pending(item.metadata):
+            # A fresh archive snapshot reads 0 or 1 whatever the thread's
+            # real score is, so it is withheld rather than shown.
+            text = ", ".join(part for part in ("score pending", text) if part)
+        matched = (item.metadata or {}).get("matched_comment_date") if item.source == "reddit" else None
+        if matched and str(matched) != str(item.published_at or "")[:10]:
+            # Kept for a comment that falls in the window on an older thread.
+            text = ", ".join(part for part in (text, f"comment {matched}") if part)
     else:
         # Generic fallback: engagement.items() yields (key, value) but
         # _fmt_pairs expects (value, label), so swap them.
@@ -4462,7 +4564,15 @@ def _top_comments_list(
         return []
     if min_score is None:
         min_score = _TOP_COMMENT_MIN_SCORE.get(item.source, 0)
-    return [c for c in comments if (c.get("score") or 0) >= min_score][:limit]
+    # A pending comment (a fresh archive snapshot, score withheld) is exempt
+    # from the vote floor; it is listed after every scored comment and printed
+    # with no vote count.
+    scored = [
+        c for c in comments
+        if isinstance(c, dict) and not c.get("score_pending") and (c.get("score") or 0) >= min_score
+    ]
+    pending = [c for c in comments if isinstance(c, dict) and c.get("score_pending")]
+    return (scored + pending)[:limit]
 
 
 def _comment_insight(item: schema.SourceItem | None) -> str | None:
@@ -4920,6 +5030,46 @@ _POLYMARKET_MOVEMENT_PARTS = re.compile(
 )
 
 
+def _polymarket_matched_part(
+    item: schema.SourceItem, entries: list[dict],
+) -> tuple[str, dict | None] | None:
+    """The odds-line part for the market the parser matched to the subject,
+    and the odds entry it repeats (left off the rest of the line).
+
+    None when the line already says all of it: no matched market, or one
+    already listed among the outcomes that is neither a top contender nor
+    matched through a related name.
+    """
+    matched = item.metadata.get("matched_market")
+    if not isinstance(matched, dict):
+        return None
+    price = matched.get("price")
+    if isinstance(price, bool) or not isinstance(price, (int, float)):
+        return None
+    label = " ".join(str(matched.get("label") or "").split())
+    same = next(
+        (
+            entry for entry in entries
+            if (label and " ".join(str(entry.get("label") or "").split()) == label)
+            or entry.get("price") == price
+        ),
+        None,
+    )
+    relation = str(matched.get("relation") or "").strip()
+    related = bool(label and matched.get("related_name") and relation)
+    rank, size = matched.get("rank"), matched.get("race_size")
+    contender = bool(matched.get("contender")) and isinstance(rank, int) and isinstance(size, int)
+    if same is not None and not (related or contender):
+        return None
+    if related:
+        label = f"{label} ({relation})"
+    percent = f"{price * 100:.1f}".removesuffix(".0") + "%"
+    text = f"{_odds_label(label)} {percent}" if label else percent
+    if contender:
+        text += f", #{rank} of {size}"
+    return text + _odds_points((same or {}).get("move")), same
+
+
 def _polymarket_odds_line(item: schema.SourceItem, window_year: str) -> str:
     """``📊 Polymarket · {subject}: {outcome} {price} · ...``: a market's odds
     as the report prints them on a line of their own.
@@ -4929,18 +5079,41 @@ def _polymarket_odds_line(item: schema.SourceItem, window_year: str) -> str:
     leading outcomes of brackets under their own labels (``12-15 at 79%``),
     or a single market's one price. A movement follows the outcome it belongs
     to, in points. Never a volume.
+
+    A market the parser matched to the subject leads, by its own label and
+    price: ``San Francisco 49ers 14.5%, #1 of 32``, the rank when the subject
+    is a top contender, and the relation when a related name matched
+    (``Yaxel Lendeborg (player) 34.6%``).
     """
     odds = _polymarket_odds(item)
     if not odds:
-        return ""
+        # The race's other odds were withheld; the subject's own outcome of
+        # the race (the only kind that carries a rank) is still priced on its
+        # own book.
+        own = item.metadata.get("matched_market")
+        if not isinstance(own, dict) or not isinstance(own.get("rank"), int):
+            return ""
+        matched = _polymarket_matched_part(item, [])
+        subject = _odds_subject(str(item.title or ""))
+        if not matched or not subject:
+            return ""
+        return f"📊 Polymarket · {subject}: {matched[0]}"
+    entries = odds["parts"][:3]
     parts: list[str] = []
-    for index, entry in enumerate(odds["parts"][:3]):
+    matched = _polymarket_matched_part(
+        item, [entry for entry in odds["parts"] if isinstance(entry, dict)],
+    )
+    if matched:
+        text, repeated = matched
+        parts.append(text)
+        entries = [entry for entry in odds["parts"] if entry is not repeated][:2]
+    for index, entry in enumerate(entries):
         if not isinstance(entry, dict):
             continue
         price = entry.get("price")
         if isinstance(price, bool) or not isinstance(price, (int, float)):
             continue
-        if index and odds.get("kind") != "ladder" and price < _ODDS_LINE_MIN_PRICE:
+        if (index or matched) and odds.get("kind") != "ladder" and price < _ODDS_LINE_MIN_PRICE:
             continue
         percent = _polymarket_percent(price)
         by = entry.get("by")
@@ -4968,20 +5141,14 @@ def _render_polymarket_markets(
     metadata: the URL, the close date, and how many outcomes are not listed.
 
     The copyable part ends before the first `` — ``, as a quote pool entry's
-    does. Largest volume first, as in the footer, and like the footer it
+    does. In selection order, as in the footer, and like the footer it
     prints odds only, never a dollar amount.
     """
-    items = [
+    items = polymarket.by_selection([
         item
         for item in report.items_by_source.get("polymarket") or []
-        if polymarket.names_whole_topic(
-            report.topic,
-            item.title,
-            str(item.metadata.get("question") or ""),
-            (_polymarket_headline(item) or ("",))[0],
-        )
-    ]
-    items.sort(key=lambda item: -((item.engagement or {}).get("volume") or 0))
+        if _polymarket_names_topic(item, report.topic)
+    ])
     window_year = str(report.range_to or "")[:4]
     lines: list[str] = []
     for item in items:
@@ -5092,6 +5259,46 @@ def _is_community_comment(item: schema.SourceItem, comment: dict, text: str) -> 
     return not (_author_key(author) and _author_key(author) == _author_key(item.author))
 
 
+def _comment_entities(report) -> tuple[list[str] | None, str]:
+    """The entities a Reddit comment can be about: the comparison's, or the
+    single topic's primary entity."""
+    from . import rerank
+
+    topic = report.topic or ""
+    compared = _parse_comparison_entities(topic)
+    raw = (report.query_plan.raw_topic if report.query_plan else "") or topic
+    return compared, rerank._primary_entity(raw)
+
+
+def _comment_entity_tags(
+    item: schema.SourceItem,
+    comment: dict,
+    text: str,
+    compared: list[str] | None,
+    entity: str,
+) -> list[str] | None:
+    """Whether a Reddit comment names the topic, and for a comparison which of
+    its entities.
+
+    Returns None when the comment is not quotable. A single-topic run returns
+    ``[]`` for a quotable comment: it names the entity, or it is a top-level
+    reply (``depth`` 0, or unset) to a post whose title does. A comparison has no reply
+    exemption: the comment must itself name an entity, and the result lists
+    each one it names.
+    """
+    from . import rerank
+
+    if compared:
+        tags = [name for name in compared if rerank._entity_grounded(text, name)]
+        return tags or None
+    if not entity or rerank._entity_grounded(text, entity):
+        return []
+    # A flat top-comment list (no ``depth`` field) holds top-level replies.
+    if comment.get("depth") in (0, None) and rerank._entity_grounded(item.title or "", entity):
+        return []
+    return None
+
+
 def _quotable(body: str) -> bool:
     """Long enough to quote, and words rather than a row of emoji."""
     return len(body) >= 12 and sum(ch.isalnum() for ch in body) >= 4
@@ -5142,6 +5349,7 @@ def _render_top_comments(
     """
     candidate_pool = report.ranked_candidates if candidates is None else candidates
     subject_handle = _subject_x_handle(report)
+    compared_entities, comment_entity = _comment_entities(report)
     floor_candidates = [
         cand
         for cand in candidate_pool
@@ -5190,34 +5398,51 @@ def _render_top_comments(
             # item author's own, or one with nothing quotable in it is not a
             # reaction to quote, so the next comment takes its position.
             community: list[tuple[dict, str]] = []
+            entity_tags: dict[int, list[str]] = {}
             for tc in item.metadata.get("top_comments") or []:
                 if not isinstance(tc, dict):
                     continue
                 raw = str(tc.get("excerpt") or tc.get("text") or tc.get("body") or "")
                 if not _is_community_comment(item, tc, raw):
                     continue
+                if item.source == "reddit":
+                    tags = _comment_entity_tags(
+                        item, tc, raw, compared_entities, comment_entity
+                    )
+                    if tags is None:
+                        continue
+                    entity_tags[id(tc)] = tags
                 body = _quote_text(raw, _QUOTE_TEXT_LIMIT)
                 if _quotable(body):
                     community.append((tc, body))
-            if community and item.source in _QUOTE_POOL_VOTE_COUNTING_SOURCES:
-                top_score = community[0][0].get("score")
+            # A pending comment (a fresh archive snapshot, its score withheld)
+            # has no vote count to clear the vote floors with; it is quoted
+            # without one, after every scored line.
+            scored = [(tc, body) for tc, body in community if not tc.get("score_pending")]
+            if scored and item.source in _QUOTE_POOL_VOTE_COUNTING_SOURCES:
+                top_score = scored[0][0].get("score")
                 if not (
                     isinstance(top_score, (int, float))
                     and not isinstance(top_score, bool)
                     and top_score >= _quote_pool_item_floor(item)
                 ):
                     # Too few voted for the item's best comment: skip the item.
-                    community = []
+                    community = [
+                        (tc, body) for tc, body in community if tc.get("score_pending")
+                    ]
             for position, (tc, body) in enumerate(
                 community[:_QUOTE_POOL_COMMENTS_PER_ITEM]
             ):
                 score = tc.get("score")
-                if not _quote_pool_has_vote(item.source, score):
+                pending = bool(tc.get("score_pending"))
+                if not pending and not _quote_pool_has_vote(item.source, score):
                     continue
                 rows.append({
+                    "pending": pending,
                     "position": position, "cand": cand, "item": item, "funny": funny,
                     "author": tc.get("author"), "score": score,
                     "vote_label": _vote_label_for(item.source), "body": body,
+                    "entities": entity_tags.get(id(tc), []),
                     # A comment with no link of its own is cited by the item it
                     # sits on. The candidate's URL is another item's whenever
                     # the candidate fused several.
@@ -5305,6 +5530,11 @@ def _render_top_comments(
         *other_first,
         *other_second,
     ]
+    # Pending lines carry no vote count, so they never take a place or a
+    # printed position ahead of a scored line from any platform.
+    priority.sort(key=lambda row: bool(row.get("pending")))
+    first_order.sort(key=lambda row: bool(row.get("pending")))
+    second_order.sort(key=lambda row: bool(row.get("pending")))
 
     # Eligibility is settled above; only now are duplicates removed, and the
     # limit applied, in the order of who is covered first.
@@ -5341,10 +5571,11 @@ def _render_top_comments(
             label = "post"
         else:
             label = _QUOTE_POOL_POSITION_LABELS[position]
+        about = f" (about {', '.join(row['entities'])})" if row.get("entities") else ""
         lines.append(
             f'- "{row["body"]}" '
             f"{_quote_attribution(item, row['author'], row['score'], row['vote_label'])}"
-            f"{url_part}{origin} — {label}{' — funny' if row['funny'] else ''}"
+            f"{url_part}{origin} — {label}{about}{' — funny' if row['funny'] else ''}"
         )
     return lines
 

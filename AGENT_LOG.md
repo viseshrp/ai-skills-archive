@@ -1273,3 +1273,33 @@ Source commit matrix:
 | `cursor__plugins` | `6b0300214a09` | `bf0c7cd80abd` | 173 -> 173 | 454 -> 426 |
 | `mvanhorn__last30days-skill` | `71dc2a1529f2` | `0d5f0b028e42` | 1 -> 1 | 152 -> 172 |
 | `emilkowalski__skills` | `5206a950b715` | `64eb3deb9a5f` | 18 -> 20 | 27 -> 29 |
+
+## 2026-11-18 17:42:47Z
+
+- Action: Added sources https://github.com/nextlevelbuilder/ui-ux-pro-max-skill, https://github.com/Graphify-Labs/graphify and https://github.com/shadcn/improve at the user's request after a usefulness assessment; https://github.com/Leonxlnx/taste-skill was already registered. Skill discovery now matches SKILL.md in any letter case and per-host skill-<host>.md variants beside a skill.md; placeholder package paths such as playbooks/<title>.md keep every matching file in the skill package; source clones disable core.autocrlf and generated files use LF so Windows runs stay byte-identical.
+- Sources synced: 22
+- Skills indexed: 1453
+- Exact duplicate groups: 189
+- Repeated skill names: 353
+- Synced `addyosmani__agent-skills` at commit `39b723ceebf8` with 25 skills and 40 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `016e65f311b5` with 5 skills and 1126 files.
+- Synced `mattpocock__skills` at commit `5863806dd4e1` with 39 skills and 69 files.
+- Synced `juliusbrussee__caveman` at commit `a192894723a8` with 28 skills and 42 files.
+- Synced `obra__Superpowers` at commit `22f0b463e7a5` with 15 skills and 80 files.
+- Synced `cursor__plugins` at commit `35a90942a7f0` with 173 skills and 411 files.
+- Synced `affaan-m__ECC` at commit `3f14a103a869` with 1087 skills and 1438 files.
+- Synced `mvanhorn__last30days-skill` at commit `a854f3bcb2c4` with 1 skills and 183 files.
+- Synced `DietrichGebert__ponytail` at commit `96608e078b2d` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `000650b15698` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `1ecea1993b7f` with 2 skills and 2 files.
+- Synced `Leonxlnx__taste-skill` at commit `f6b76575f949` with 1 skills and 1631 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+- Synced `emilkowalski__skills` at commit `64eb3deb9a5f` with 20 skills and 29 files.
+- Synced `humanlayer__skills` at commit `4d69d20f6e9b` with 7 skills and 83 files.
+- Synced `janestreet__agent_skills` at commit `469868f4489c` with 1 skills and 1 files.
+- Synced `googlechrome__modern-web-guidance` at commit `64a6d708f5a4` with 2 skills and 235 files.
+- Synced `cloudflare__security-audit-skill` at commit `c1c8a8c14710` with 1 skills and 18 files.
+- Synced `nextlevelbuilder__ui-ux-pro-max-skill` at commit `ed766d3bf62f` with 13 skills and 380 files.
+- Synced `Graphify-Labs__graphify` at commit `340268a70a83` with 16 skills and 128 files.
+- Synced `shadcn__improve` at commit `cac56e1ebd3c` with 1 skills and 4 files.

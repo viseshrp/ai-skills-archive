@@ -564,5 +564,64 @@ class CompanionDirTests(unittest.TestCase):
             self.collect("linked")
 
 
+class SkillDiscoveryTests(unittest.TestCase):
+    FRONTMATTER = "---\nname: demo\ndescription: Demo skill.\n---\n\nBody\n"
+
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name).resolve()
+
+    def write(self, relative, content=FRONTMATTER):
+        path = self.root / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(content, encoding="utf-8")
+
+    def discover(self):
+        return [
+            path.relative_to(self.root).as_posix()
+            for path in sync_sources.discover_skill_files(self.root)
+        ]
+
+    def test_skill_file_name_matches_in_any_case(self):
+        self.write("skills/upper/SKILL.md")
+        self.write("pkg/skill.md")
+        self.write("pkg/notes.md")
+        self.assertEqual(self.discover(), ["pkg/skill.md", "skills/upper/SKILL.md"])
+
+    def test_host_variants_beside_skill_file_are_skills(self):
+        self.write("pkg/skill.md")
+        self.write("pkg/skill-codex.md")
+        self.write("pkg/skill-notes.md", "No frontmatter here.\n")
+        self.assertEqual(self.discover(), ["pkg/skill-codex.md", "pkg/skill.md"])
+
+    def test_variant_named_file_without_sibling_skill_is_ignored(self):
+        self.write("commands/skill-create.md")
+        self.assertEqual(self.discover(), [])
+
+    def test_git_metadata_is_ignored(self):
+        self.write(".git/modules/x/SKILL.md")
+        self.assertEqual(self.discover(), [])
+
+    def test_package_placeholder_keeps_matching_package_files(self):
+        self.write(
+            "skills/demo/SKILL.md",
+            self.FRONTMATTER + "Open the steps at `playbooks/<title>.md`.\n",
+        )
+        self.write("skills/demo/playbooks/ship.md", "Run `scripts/watch/run`.\n")
+        self.write("skills/demo/playbooks/notes.txt", "not matched\n")
+        self.write("skills/demo/scripts/watch/run", "#!/bin/sh\n")
+        self.write("skills/other/playbooks/ship.md", "other package\n")
+        self.assertEqual(
+            sync_sources.collect_related_files(
+                self.root / "skills/demo/SKILL.md", self.root
+            ),
+            [
+                "skills/demo/playbooks/ship.md",
+                "skills/demo/scripts/watch/run",
+            ],
+        )
+
+
 if __name__ == "__main__":
     unittest.main()

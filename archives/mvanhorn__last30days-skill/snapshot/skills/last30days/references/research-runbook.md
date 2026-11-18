@@ -37,8 +37,20 @@ Common patterns:
 **Confirm the topic with a branded, truthful message. Build ACTIVE_SOURCES_LIST from the engine's own source diagnostic — do NOT infer availability by checking env vars or `.env`.** The engine resolves credentials at runtime from several places (process environment, `.env`, macOS Keychain, etc.), so a config-file check under-reports sources whose key is not written literally in `.env`. Run the engine's `--diagnose` and read its result:
 
 ```bash
-"${LAST30DAYS_PYTHON}" "${SKILL_DIR}/scripts/last30days.py" --diagnose
+"${LAST30DAYS_PYTHON}" "${SKILL_DIR}/scripts/last30days.py" --diagnose --include-research-backend
 ```
+
+`--include-research-backend` adds `research_backend` (`hosted` or `local`) to the diagnostic JSON. Include any requested `--corpus`, `--deep-research`, and `--perplexity-search-type` flags to account for local routing.
+
+### Hosted API route
+
+When `research_backend=hosted`, check the root's HTML/export intent before submitting research. Stop before submitting a hosted search when the user asked for HTML as the main output or an additional copy. Natural-language requests such as "give me a shareable HTML brief" also require this gate. Ask whether to run locally to produce the HTML.
+
+Ask whether to run locally for an explicit comparison or competitor request before peer discovery or submitting a hosted search. Per-entity research, peer discovery, and comparison synthesis use the local route. Wait for the user's choice. If the user chooses local research for any of these requests, leave `LAST30DAYS_API_BASE` unset for this run, repeat diagnosis, and follow the local route.
+
+For a supported hosted request, announce the hosted backend without listing local sources. Run Step 0.45, skip Steps 0.5 through 0.75, and use the first Step 1 command without `--plan`, `--auto-resolve`, host-generated targeting flags, or host X/Reddit envelopes. This applies to named entities as well. Preserve explicit user scope and output requests. Surface any unsupported-option error before offering a local run. Relay the server's finished report and its citations.
+
+### Local engine route
 
 `--diagnose` prints JSON. `ACTIVE_SOURCES_LIST` is its `available_sources` array — the engine's authoritative source set, computed after credential resolution. Map the tokens to display names: `reddit`→Reddit, `hackernews`→Hacker News, `polymarket`→Polymarket, `github`→GitHub, `digg`→Digg, `x`→X, `youtube`→YouTube, `tiktok`→TikTok, `instagram`→Instagram, `threads`→Threads, `pinterest`→Pinterest, `linkedin`→LinkedIn, `bluesky`→Bluesky, `perplexity`→Perplexity, `grounding`→Web, `jobs`→Jobs, `meta_ads`→Meta Ads, `corpus`→Your files, `dripstack`→DripStack.
 
@@ -48,15 +60,17 @@ Common patterns:
 
 **Perplexity search type:** pass `--perplexity-search-type fast` (or `web`) only when the user asks for Perplexity Fast Search or a specific Perplexity search type; never add it on your own initiative or because a key is configured. It changes only direct Perplexity Search API and Agent `web_search` requests, does not enable the Perplexity source (add the source only if the user also asked for Perplexity), and needs a direct `PERPLEXITY_API_KEY`; OpenRouter Sonar ignores it.
 
-**Perplexity source:** use it only when the user asks for Perplexity, Deep Research, or paid grounded synthesis, or when `perplexity` is already enabled in `INCLUDE_SOURCES` / `--search`. Prefer `PERPLEXITY_API_KEY`: normal runs use the controlled Agent API path, `search` returns raw Search API rows, and `both` combines them. Existing `OPENROUTER_API_KEY` installs stay compatible through one synchronous Sonar call; `search` and `both` fall back to Sonar because those direct APIs need a Perplexity key. Every normal mode is capped at one whole-topic planner subquery per command, including competitor fanout, and is not repeated during thin-source retries. With a direct key, normal Agent mode supplies only `web_search`, forces it for citation-critical grounding, uses a bounded step count, and supplies a local instruction. `sonar` remains a deprecated direct-key alias for `agent`. `LAST30DAYS_PERPLEXITY_AGENT_PRESET` is an explicit direct-key choice only; never set it for the user. `--deep-research` requires a normal positional topic. A direct key starts at most one paid `high`-preset background run with a 600-second default wall timeout; OpenRouter preserves the synchronous `perplexity/sonar-deep-research` fallback. It cannot be combined with discovery, drill, cached-only, competitor, or vs-mode. A local timeout does not stop a direct remote run. Report safe model and response metadata, but never expose request headers or raw tool traces.
+**Perplexity source:** use only when requested (including Deep Research or paid grounded synthesis) or enabled in `INCLUDE_SOURCES`/`--search`. Prefer `PERPLEXITY_API_KEY`. In direct mode, `agent` (default, deprecated alias `sonar`) forces `web_search`, its only tool, for citations, with bounded steps and local instructions. `search` returns raw rows and `both` combines them. `OPENROUTER_API_KEY` uses one synchronous Sonar call in every mode. Use `LAST30DAYS_PERPLEXITY_AGENT_PRESET` only with a direct key at the user's request. Cap at one whole-topic subquery per command across competitors. Skip thin-source retries.
 
-**Reddit backend pin:** Reddit defaults to the free keyless backend. When `SCRAPECREATORS_API_KEY` is available, ScrapeCreators Reddit **search** backfills when that free path returns **fewer than 5 items** (the default floor; at most one ScrapeCreators Reddit backfill per distinct query, date window, and subreddit set per run; each backfill is several API calls, roughly 10 at default depth). If the user wants to avoid that credit spend, tell them to set `LAST30DAYS_REDDIT_SC_MIN_ITEMS=0` (backfill only when the free path returns nothing); any other `<N>` backfills when free yield is below N. If they say public Reddit is shallow, bot-gated, or missing nested comments, tell them they can set `LAST30DAYS_REDDIT_BACKEND=scrapecreators` alongside `SCRAPECREATORS_API_KEY` to make ScrapeCreators primary and keep the free path as fallback. Do not set these automatically for normal runs.
+`--deep-research` requires one normal positional topic. Exclude discovery, drill, cached-only, competitor, and vs modes. Use one paid background `high` preset with a direct key, or synchronous `perplexity/sonar-deep-research` with OpenRouter. A local timeout can leave the remote job running. Report safe model and response metadata. Keep headers and raw tool traces private.
+
+**Reddit backend pin:** Reddit defaults to the free keyless backend. With `SCRAPECREATORS_API_KEY`, ScrapeCreators Reddit **search** backfills when the free path returns **fewer than 5 items** (at most one backfill per distinct query, date window and subreddit set per run, roughly 10 API calls at default depth). To avoid that spend, suggest `LAST30DAYS_REDDIT_SC_MIN_ITEMS=0` (backfill only when the free path returns nothing; any other `<N>` backfills below N). If public Reddit is shallow, bot-gated, or missing nested comments, suggest `LAST30DAYS_REDDIT_BACKEND=scrapecreators` with the key to make ScrapeCreators primary, free path as fallback. Do not set these automatically for normal runs.
 
 **Doctor health check:** When the user asks for a health check ("is X working?", "why is a source missing?", "what's broken?", "did setup work?"), run `"${LAST30DAYS_PYTHON}" "${SKILL_DIR}/scripts/last30days.py" doctor` (append `--json` for the machine contract) and relay the audit and fix prescriptions. `doctor` renders a **four-state audit** - **WORKING** (verified this run/last run or keyless-always-on), **TURNED ON - UNVERIFIED** (configured/opted-in but no run evidence), **NOT WORKING** (configured but failing, or the last run errored), **COULD BE ON** (available, not yet configured) - one line per source, plus a **CLI-health** block for sources that need a downloaded binary and indented **backup/comment** sub-lanes. Two on-demand modes: `doctor --postmortem` reads the last run's `last-report.json` and reports what actually broke per source (Failed/Partial/Succeeded with fix hints) - reach for it right after a run that returned less than expected; `doctor --probe` runs a **bounded** live test (free HTTP + keyless CLI sources only; credit-gated sources are never probed) to verify WORKING instead of guessing, and the same bounded probe auto-fires on a plain `doctor` when there is no fresh run. Per-source probe deadline is `LAST30DAYS_DOCTOR_PROBE_TIMEOUT` (default 10s). **MANDATORY standing rule.** Before research that depends on login-backed sources (X via cookies, Reddit's ScrapeCreators backfill), consult `doctor --cached --json` — it serves the report cached at `~/.config/last30days/doctor-cache.json` within its TTL (`LAST30DAYS_DOCTOR_TTL` seconds, default 900) for the cost of one file read. Re-run live `doctor` only when the cache is stale or the previous run reported a degraded login-backed source. When X is in ACTIVE_SOURCES_LIST, announce its predicted backend from the report's `sources.x.active_backend` (e.g. "X will use: bird") in the pre-research status line.
 
 When a repair is requested or doctor indicates a host-specific repair, return to the root **Source repair requested or indicated by doctor** gate and read `references/setup-wizard.md` in full before giving the applicable repair procedure or acting. A doctor result is not authorization to install tools, launch a browser, read cookies, or change configuration; follow the repair entry's consent and host restrictions. For a health-check-only request, relay the audit and repair guidance, then stop; do not fall through to topic planning or research.
 
-**Grok session expiry handling:** The grok CLI backend for X reports three auth states: `ok` (non-expired credentials), `expired` (access_token `expires_at` is past), and `missing` (never signed in). When doctor reports grok as **degraded** with an expiry timestamp, say "Grok session expired at {timestamp}; will attempt refresh at run time. If refresh fails, run `grok login --device-auth`" — not "Grok CLI is not signed in" (which misrepresents the history). The refresh attempt happens automatically at research time: an expired access_token does not prove the refresh_token is dead. If the run then fails with `auth_revoked` or `invalid_grant`, the user truly needs to re-login. **Host-facing copy:** when `sources.x.run_outcome.state` is `auth-failed` and the prior run's outcome was `ok`, say "X used {fallback} after the Grok session expired — run `grok login --device-auth` to restore first-party X." Avoid "Grok CLI is not signed in" when `run_outcome` history shows it worked recently. Avoid proactively installing grok or prompting about grok unless the user asks for first-party X search; the cookie and XAI_API_KEY paths work without a Grok subscription.
+**Grok session expiry handling:** The grok CLI backend for X reports `ok`, `expired` (access_token `expires_at` is past), or `missing` (never signed in). When doctor reports grok **degraded** with an expiry timestamp, say "Grok session expired at {timestamp}; will attempt refresh at run time. If refresh fails, run `grok login --device-auth`", never "Grok CLI is not signed in". An expired access_token does not prove the refresh_token is dead; only a run failing with `auth_revoked` or `invalid_grant` needs a re-login. **Host-facing copy:** when `sources.x.run_outcome.state` is `auth-failed` after a prior `ok`, say "X used {fallback} after the Grok session expired — run `grok login --device-auth` to restore first-party X." Do not proactively install or prompt about grok unless the user asks for first-party X search; the cookie and XAI_API_KEY paths need no Grok subscription.
 
 **Grok build compatibility:** X research needs a stable `grok` build at 1.0.46 or newer; the engine audits each new build locally (no credits, no xAI traffic) before staging credentials. `unsupported grok CLI version` means the build is older or not stable: suggest updating grok. `failed the grok tool-boundary audit` means the build exposed forbidden tools: suggest updating grok, removing the `LAST30DAYS_X_BACKEND=grok` pin, or another X backend. `could not complete the grok tool-boundary audit` retries next run. Never bypass the build check or the audit, or retry with unrestricted Grok tools.
 
@@ -93,7 +107,7 @@ Known keyword-trap classes and how to handle each:
 - If the user declines to narrow ("just run it"), reframe to generic-demographic and scope to gift subreddits:
   - Drop the literal age (age 42 reads identically to 41 or 43 in social content; the number causes keyword collisions like Jackie Robinson #42)
   - Rewrite as `gifts for men in their 40s` or `gifts for men who [hobby]`
-  - Scope `--subreddits=GiftIdeas,BuyItForLife,AskMen,malefashionadvice,Dads` (plus hobby-specific subs when known)
+  - For local engine research, scope `--subreddits=GiftIdeas,BuyItForLife,AskMen,malefashionadvice,Dads` (plus hobby-specific subs when known)
   - Note in the Resolved block: "Reframed demographic shopping query. Dropping literal age; scoping to gift communities."
 
 **Class 2: Numeric / age keyword trap**
@@ -126,7 +140,7 @@ Known keyword-trap classes and how to handle each:
 2. If the topic matches a class, ALWAYS emit a visible pre-flight note before the Resolved block:
    - `Pre-Flight: topic matches {Class N} ({class name}). {Action: clarifying question / reframe / specificity ask}.`
 3. If the action is a clarifying question, STOP after emitting it. Wait for the user response before any engine work.
-4. If the topic does NOT match any class, emit a one-liner: `Pre-Flight: topic is a {named-entity / comparison / concept} - proceeding to Step 0.5.` Then proceed.
+4. If the topic does NOT match any class, give one line naming the topic class and proceed on the selected backend. Continue at Step 0.5 for local engine research.
 
 **One-turn gate rule:** do NOT run the engine on a keyword-trap topic without either (a) explicit user confirmation to "just run it anyway", or (b) a concrete reframed query.
 
@@ -388,6 +402,14 @@ Label conservatively: only a sub clearly named for / dedicated to the entity goe
 
 **Category peers:** when the product eligibility rule above applies, follow the root routing gate for `category-peers.md` before continuing.
 
+**2b. Host Reddit threads.** Keep each `reddit.com/r/<sub>/comments/<id>/` URL found (no `/s/` share or redirect links; max 50). The engine reads only `url`, rehydrates each thread, drops off-topic or stale ones. Only if any were found, write them with a single-quoted heredoc and add `--reddit-threads=/tmp/l30d-threads.json` (single-topic runs):
+
+```bash
+cat > /tmp/l30d-threads.json <<'THREADS_EOF'
+{"schema": "last30days-reddit-threads/1", "topic": "{TOPIC}", "threads": [{"url": "{THREAD_URL}"}]}
+THREADS_EOF
+```
+
 **3. TikTok hashtags + creators** - **INFER these from your topic knowledge. Do NOT WebSearch for "{PERSON} TikTok account" - most people/CEOs don't have TikTok, and the search is wasted.**
 
 - **Hashtags:** Infer 2-3 from the topic name + category. Examples: "Kanye West" → `kanyewest,ye,bully`. "Claude Code" → `claudecode,aiagent,aicoding`. "Sam Altman" → `samaltman,openai,chatgpt`.
@@ -517,11 +539,12 @@ Only show lines for platforms where something was resolved. On the Reddit line, 
 
 **Rules for your plan:**
 - Emit 1 to 4 subqueries (more for multi-faceted topics, fewer for simple ones)
-- **CRITICAL: Your PRIMARY subquery MUST include every applicable source from `ACTIVE_SOURCES_LIST`, including installed lanes such as digg, arxiv, techmeme, bluesky, and linkedin.** Leave out only `grounding`, `corpus`, `perplexity` (engine-attached) and `amazon` / `meta_ads` (the engine adds them when `--search` names them; Step 0.5e / 0.5f). For a company or the person who leads it, name `jobs` (unlisted). Never invent an unavailable source. Preserve X whenever it is active; when it is unavailable, continue with the rest. Never omit active Reddit (highest-signal discussion) or active YouTube (unique transcripts + official content). Secondary subqueries can target specific platforms. Above quick depth, an installed lane named in no subquery is added to the primary subquery unless it cannot run (Trustpilot when `trustpilot_can_run` is false); `EXCLUDE_SOURCES` or `--search` keeps one out.
+- **CRITICAL: Your PRIMARY subquery MUST include every applicable source from `ACTIVE_SOURCES_LIST`, including installed lanes such as digg, arxiv, techmeme, bluesky, and linkedin.** Leave out only `grounding`, `corpus`, `perplexity` (engine-attached) and `amazon` / `meta_ads` (the engine adds them when `--search` names them; Step 0.5e / 0.5f). For a company or the person who leads it, name `jobs` (unlisted) plus top-level `jobs_queries`: 2-4 product or team terms, not the company name. Never invent an unavailable source. Preserve X whenever it is active. Never omit active Reddit (highest-signal discussion) or active YouTube (unique transcripts + official content). Secondary subqueries can target specific platforms. Above quick depth, an installed lane named in no subquery is added to the primary subquery unless it cannot run (Trustpilot when `trustpilot_can_run` is false); exclusions win.
 - `search_query` should be concise and keyword-heavy - match how content is TITLED on platforms
 - `ranking_query` should read like a natural language question
 - **X disambiguation:** express your disambiguation intent in `ranking_query` (e.g., "What are people saying about Rome the city in Italy, not AS Roma or Rome Odunze?") — do not phrase-quote `search_query` for X or invent X operators; the engine handles X query compilation internally.
 - For collision-prone people, set `"person_identity_anchors"` to bare verified org names (`["Digg"]`); for an org whose first word also names others, its full name (`["Pace Capital"]`; never a descriptor like `Stripe payments`). Evidence must name one. Only the X subject is exempt.
+- For Polymarket, set `"polymarket_hints": {"kind": "team", "aliases": ["San Francisco 49ers"], "related": [{"name": "...", "relation": "player"}]}` when you know the subject. `kind`: team, company, person, product, or other; `team` keeps its title odds even when low. `aliases` name the same subject (Formula 1 → "F1", Claude Code → "Claude"). `related`: people or products tied to it right now (`relation` player, person, or product), e.g. the Warriors' stars and current rookie; they count only when leading a race. Unsure who? Check your Step 0.55 WebSearch. At most 5 each.
 - **DISAMBIGUATION (mandatory for collision-prone names — the #1 cause of off-topic noise).** Anchor the `search_query` with the disambiguating context you resolved in Step 0.5 / 0.55 — the entity's company, role, or domain — when the topic name (a) is a common word or has non-product meanings ("Loom" = weaving tool, "Tella" = soccer player), OR (b) is a PERSON whose name collides with other public figures or common words. Apply the anchor to **EVERY subquery, not just the primary**, and mirror it in the `ranking_query`. Anchor on a SPECIFIC named entity (a company/product/firm), not a generic domain word. Examples: `"kevin rose digg founder"` not `"kevin rose"` (collides with Kevin Warsh / Leon Rose / Kevin Hart); `"lan xuezhao basis set ventures"` not `"lan xuezhao"` (collides with "Lanzhou" food, cdrama edits); `"trevin chow compound engineering"` not `"trevin chow"` (collides with Trevin Wax / Trevin Brown); `"tella screen recording"` not `"tella"`. The `ranking_query` carries the same anchor: `"ranking_query": "What has Kevin Rose, founder of Digg, been doing in the last 30 days?"`, not a bare `"...Kevin Rose..."`. When the name is globally unambiguous (Kanye West, Nvidia, Peter Steinberger/OpenClaw), no anchor is needed.
 - **For comparison queries**, each main-entity subquery should include TOPIC_A's product category: "tella screen recorder review" not just "tella review".
 - NEVER include temporal phrases in search_query: no "last 30 days", "recent", month names, year numbers
@@ -555,30 +578,26 @@ Store your plan as `QUERY_PLAN_JSON` - you'll pass it to the script in the next 
 
 ### PRECONDITION GATE - read before running the script
 
-**STOP. Before invoking `last30days.py`, verify ALL of the following are true for this turn:**
+**For local engine research, verify all of the following before submitting the command. Hosted API research follows its separate route above.**
 
-1. **Platform branch chosen.** You know whether this session has WebSearch (Claude Code) or does not (OpenClaw, raw CLI, Codex without web tools).
-2. **If WebSearch IS available:** you MUST have run Step 0.55 (Pre-Research Intelligence - resolved subreddits, X handles, TikTok hashtags/creators, Instagram creators, GitHub user/repo where applicable) AND Step 0.75 (Query Planner - produced `QUERY_PLAN_JSON` according to its schema and guidance). These are NOT optional. If either was skipped, return to that step now.
-3. **If WebSearch is NOT available:** you MUST add `--auto-resolve` to the command instead. Do not attempt Steps 0.55 / 0.75 without WebSearch.
-4. **The command you are about to run uses `--emit=compact`.** `--emit md` is a debugging/inspection mode and is DISALLOWED as the primary user-facing flow. If you find yourself about to run `--emit md`, stop and switch to `--emit=compact`.
-5. **On WebSearch platforms the command MUST include `--plan -`** with the quoted JSON heredoc from Step 1, plus every resolved handle/subreddit/hashtag/creator flag from Step 0.55. Omit only flags whose value was not resolvable.
-
-**Degraded path (missing any of the above on a WebSearch platform) is a known regression shape. It produces bland 4-bullet summaries instead of rich synthesis. Do not take it.**
+1. With host WebSearch, complete Steps 0.55 and 0.75 before running the engine. Pass `--plan -` with the quoted JSON heredoc and every targeting flag resolved in Step 0.55. Return to either step if it was skipped.
+2. Without host WebSearch, skip Steps 0.55 and 0.75 and pass `--auto-resolve`.
+3. Use `--emit=compact` for the standard research flow. Reserve `--emit md` for inspection.
 
 ---
 
 
-**Grok Bot X:** on a Grok Bot host, follow the root routing gate for `grok-bot-x.md` before the engine command.
+**Grok Bot X:** for local engine research on a Grok Bot host, follow the root routing gate for `grok-bot-x.md` before the engine command.
 
-**Step 1: Run the research script WITH your query plan (FOREGROUND)**
+**Step 1: Run the research script in the foreground**
 
-**CRITICAL: Run this command in the FOREGROUND with a 5-minute timeout. Do NOT use run_in_background. The full output contains Reddit, X, AND YouTube data that you need to read completely.**
+Run in the foreground with a `300000` ms timeout for ordinary research. For `--deep-research`, allow the configured `LAST30DAYS_PERPLEXITY_DEEP_TIMEOUT_SECONDS` (default 600 seconds) plus five minutes. If foreground time is limited, start one managed background task or persistent session and wait for it to finish without resubmitting.
 
-**On hosts with web search, pass your QUERY_PLAN_JSON via the --plan flag.** This tells the Python script to use your plan instead of its internal planner. On hosts without web search, omit `--plan` and use `--auto-resolve`.
+**For local engine research on hosts with web search, pass your QUERY_PLAN_JSON via the --plan flag.** This tells the Python script to use your plan instead of its internal planner. For local research without host web search, omit `--plan` and use `--auto-resolve`.
 
-**IMPORTANT: Include `--x-handle={RESOLVED_HANDLE}` in the command. For comparison mode, use the single parallel comparison invocation in `comparison.md`, with outer targeting for the main entity and per-peer targeting in `--competitors-plan`. Also include the resolved Step 0.55 flags listed below.**
+**For local engine research, include `--x-handle={RESOLVED_HANDLE}` in the command. For comparison mode, use the single parallel comparison invocation in `comparison.md`, with outer targeting for the main entity and per-peer targeting in `--competitors-plan`. Also include the resolved Step 0.55 flags listed below.**
 
-Fill `{TOPIC}` below with the parsed topic as literal data, excluding skill-mode controls and engine CLI flags. Choose a quoted heredoc delimiter that does not occur as a line in the topic. Map recognized CLI flags separately to the engine command. Never evaluate raw slash-command text or depend on a shell `$ARGUMENTS` variable.
+Put only the parsed topic in `{TOPIC}` and pass engine flags separately. Choose a quoted heredoc delimiter absent from the topic's lines. Never evaluate raw slash input or use shell `$ARGUMENTS`.
 
 For research topics matching administrative commands (for example `setup`), add `--research-only` to treat the topic as text. Omit it for explicitly requested administrative actions and follow their runtime flow.
 
@@ -613,7 +632,7 @@ RESEARCH_TOPIC=${RESEARCH_TOPIC%$'\n'}
 PLAN_EOF
 ```
 
-**Run this block directly in your shell tool. Do NOT wrap it in `bash -lc '...'` or `zsh -lc '...'`** - the outer single quotes terminate at the first apostrophe inside the heredoc body (a ranking string like `What did Kanye West's album do?`), which aborts the command with a `zsh: unmatched "` error before the engine ever runs. The quoted `<<'PLAN_EOF'` marker already makes the heredoc body apostrophe-safe; the `-lc '...'` wrapper is what breaks it.
+Run this block directly in the shell tool. Avoid `bash -lc '...'` and `zsh -lc '...'` wrappers. An apostrophe in the heredoc can close the wrapper's quotes and trigger `zsh: unmatched "`.
 
 Add these targeting flags to that engine command before `<<'PLAN_EOF'`:
 
@@ -630,17 +649,10 @@ Add these targeting flags to that engine command before `<<'PLAN_EOF'`:
 - `--trustpilot-domain={RESOLVED_TRUSTPILOT_DOMAIN}` (from Step 0.5d, only when `trustpilot_can_run`; the flag also activates Trustpilot)
 - Omit any flag where the value was not resolved (empty).
 
-**If you skipped Steps 0.55 and 0.75 (no WebSearch -- OpenClaw, Codex, etc.), add:**
+**For local engine research, if you skipped Steps 0.55 and 0.75 (no WebSearch -- OpenClaw, Codex, etc.), add:**
 - `--auto-resolve` (the engine will use Brave/Exa/Serper to discover subreddits and context, then plans internally)
 
-Under a detected agent host, a research run with neither `--plan` nor `--auto-resolve` exits 2 (LAW 7).
-
-Use a **timeout of 300000** (5 minutes) on the Bash call. The script typically takes 1-3 minutes.
-
-The script will automatically:
-- Detect available API keys
-- Run Reddit/X/YouTube/TikTok/Instagram/Hacker News/Polymarket searches
-- Output ALL results including YouTube transcripts, TikTok captions, Instagram captions, HN comments, and prediction market odds
+Under a detected agent host, a local engine research run with neither `--plan` nor `--auto-resolve` exits 2 (LAW 7).
 
 **Read the ENTIRE output.** It holds the top ranked clusters (not every item), `## Stats`, `## Posts by @handle`, `## Polymarket Markets`, the quote pool `## Top Community Comments`, the footer and a format checklist. The saved raw file is the archive.
 

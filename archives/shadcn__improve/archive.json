@@ -1,0 +1,29 @@
+{
+  "owner": "shadcn",
+  "repo": "improve",
+  "repo_key": "shadcn__improve",
+  "url": "https://github.com/shadcn/improve",
+  "notes": "Added from https://github.com/shadcn/improve at the user's request after a usefulness assessment.",
+  "default_branch": "main",
+  "commit": "cac56e1ebd3c279aa9153616cfeac7b174ab90f9",
+  "commit_date": "2026-09-12T15:29:28+04:00",
+  "archived_at": "2026-11-18T17:42:47.363295+00:00",
+  "archive_path": "archives/shadcn__improve",
+  "snapshot_path": "archives/shadcn__improve/snapshot",
+  "file_count": 4,
+  "directory_count": 2,
+  "skill_count": 1,
+  "snapshot_mode": "skills-and-related-files-only",
+  "skill_paths": [
+    "skills/improve/SKILL.md"
+  ],
+  "all_text_file_hashes": {
+    "skills/improve/SKILL.md": "1599aa29e9b16424cb767779efac53fa56e3f38be92dff4ac587393a1ad5070a",
+    "skills/improve/references/audit-playbook.md": "587c1b927070f3c28139ad95ac34cc21a7da32618cfeb966cb774e58a865d4c8",
+    "skills/improve/references/closing-the-loop.md": "5d526bb378e1783bbeb68d7af527776cbe98cde27a1aeccbd13e818e5b73b454",
+    "skills/improve/references/plan-template.md": "7be76dd3c29442288fa7cee4432fc6e95c2fdbf748c9b356344bf647c5f8722e"
+  },
+  "license_files": {
+    "LICENSE.md": "00ff8408e93e2ecc4d90c0edeabdf434100c3aff50acc5d330e17eccd4a3faa5"
+  }
+}

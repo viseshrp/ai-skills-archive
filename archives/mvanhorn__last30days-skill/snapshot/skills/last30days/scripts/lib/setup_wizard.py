@@ -131,6 +131,9 @@ def run_auto_setup(config: Dict[str, Any], *, allow_browser_cookies: bool = Fals
         browsers = cookie_extraction_browsers(cookie_config)
 
         for source_name, spec in COOKIE_DOMAINS.items():
+            if spec.get("consent_key"):
+                # The Reddit login has its own consent: setup --reddit-session.
+                continue
             domain = spec["domain"]
             cookie_names = spec["cookies"]
 
@@ -193,6 +196,7 @@ def run_auto_setup(config: Dict[str, Any], *, allow_browser_cookies: bool = Fals
             if scan_attempted and "x" not in cookies_found else []
         ),
         "browser_cookie_scan_attempted": scan_attempted,
+        "firefox_scanned": scan_attempted and "firefox" in browsers,
         "ytdlp_installed": ytdlp_installed,
         "ytdlp_action": ytdlp_action,
         "digg_installed": digg_installed,
@@ -320,7 +324,27 @@ def _run_npx_install(slug: str) -> Tuple[str, str]:
         stderr = proc.stderr or f"npx install {slug} exited {proc.returncode}"
         logger.warning("npx install %s failed (rc=%s): %s", slug, proc.returncode, stderr)
         return "install_failed", stderr
+    # On a fresh Windows setup the managed Printing Press bin dir only exists
+    # now, so the engine's startup PATH append skipped it. Add it before the
+    # caller's shutil.which check, or setup asks for a PATH edit the next
+    # engine run would not need.
+    health.add_managed_bin_dir_to_path()
     return "", (proc.stderr or "")
+
+
+def _install_failed_line(name: str, install_cmd: str, stderr: str) -> str:
+    """Summary line for a failed Printing Press install.
+
+    The installer names a missing prerequisite (Go) on stderr; re-running the
+    same command fails the same way, so lead with that cause (#1434).
+    """
+    prereq = next(
+        (line.strip() for line in stderr.splitlines() if "Go is required" in line),
+        "",
+    )
+    if prereq:
+        return f"  - {name} CLI install failed: {prereq} Then run `{install_cmd}`"
+    return f"  - {name} CLI install failed — run `{install_cmd}` manually"
 
 
 def _upgrade_helper(slug: str, bin_name: str) -> Tuple[bool, str, str, str]:
@@ -841,6 +865,19 @@ def get_setup_status_text(results: Dict[str, Any]) -> str:
             f"{', '.join(denied_browsers)}. {X_COOKIE_ACCESS_FIX}"
         )
 
+    if (results.get("browser_cookie_scan_attempted")
+            and "x" not in cookies_found and not denied_browsers):
+        lines.append("  - No complete X login was found in the scanned browser profiles.")
+        if results.get("firefox_scanned"):
+            lines.append(
+                "    Firefox permanent private browsing or clearing cookies on exit can "
+                "prevent saved cookies from being found."
+            )
+        lines.append(
+            "    Sign in with persistent browser cookies, or set AUTH_TOKEN and CT0 "
+            "manually in ~/.config/last30days/.env."
+        )
+
     ytdlp_action = results.get("ytdlp_action", "")
     if ytdlp_action == "installed":
         lines.append("  - Installed yt-dlp via Homebrew")
@@ -889,7 +926,7 @@ def get_setup_status_text(results: Dict[str, Any]) -> str:
             f"its searches fail — run `{DIGG_INSTALL_CMD}` manually"
         )
     elif digg_action == "install_failed":
-        lines.append(f"  - Digg CLI install failed — run `{DIGG_INSTALL_CMD}` manually")
+        lines.append(_install_failed_line("Digg", DIGG_INSTALL_CMD, results.get("digg_stderr", "")))
     elif digg_action == "no_npx" and results.get("digg_installed"):
         lines.append(
             "  - Digg CLI is older than the engine can call. Install Node/npx, "
@@ -946,9 +983,7 @@ def get_setup_status_text(results: Dict[str, Any]) -> str:
                     f"{name} to activate"
                 )
         elif action == "install_failed":
-            lines.append(
-                f"  - {name} CLI install failed — run `{install_cmd}` manually"
-            )
+            lines.append(_install_failed_line(name, install_cmd, entry.get("stderr", "")))
         elif action == "no_npx":
             lines.append(
                 f"  - {name} CLI not installed (free, optional). Install Node/npx, "
@@ -1584,3 +1619,74 @@ def run_github_auth(timeout: int = 300) -> Dict[str, Any]:
     tokens.
     """
     return run_full_device_auth(timeout=timeout)
+
+
+# ---------------------------------------------------------------------------
+# Opt-in logged-in Reddit session (setup --reddit-session / --no-reddit-session)
+# ---------------------------------------------------------------------------
+
+REDDIT_SESSION_NOTE = (
+    "With a Reddit login, research reads Reddit as your own account (search, "
+    "comment search, communities, threads; never posts, votes, your feed, inbox "
+    "or saved items). Automated use of a logged-in account may breach Reddit's "
+    "terms and puts that account at risk."
+)
+
+
+def _reddit_scan_order(config: Dict[str, Any]) -> list[str]:
+    from . import env as _env
+
+    recorded = str(config.get(_env.REDDIT_FROM_BROWSER_VAR) or "").strip().lower()
+    order = [recorded] if recorded in _env.COOKIE_BROWSER_NAMES else []
+    return order + [b for b in _env.REDDIT_SETUP_BROWSERS if b not in order]
+
+
+def run_reddit_session_setup(
+    config: Dict[str, Any],
+    env_path: Path,
+    *,
+    consent: bool,
+    reader: Optional[Any] = None,
+) -> Dict[str, Any]:
+    """Record the user's Reddit-session answer and, on yes, find the login.
+
+    The answer itself is the consent, so this is the one place that reads the
+    reddit.com cookie outside a research run, and only on a yes. It reads
+    browsers in order (the recorded one, then Chrome, then the rest), stops at
+    the first with a ``reddit_session`` cookie, records that browser as
+    ``REDDIT_FROM_BROWSER`` and never prints or saves the cookie.
+    ``FROM_BROWSER=off`` and a Grok Bot host read nothing; a
+    ``BROWSER_CONSENT=false`` saved for X does not block this explicit yes. Either answer writes ``REDDIT_SESSION_OFFERED=true``
+    so a returning user is asked once.
+    """
+    from . import env as _env
+
+    host = str(config.get(_env.X_HOST_VAR) or os.environ.get(_env.X_HOST_VAR) or "").strip().lower()
+    if host == _env.GROK_BOT_HOST:
+        return {"status": "unavailable", "note": "The Reddit session is never used on a Grok Bot host."}
+    written = write_api_key(env_path, "true", key_name=_env.REDDIT_OFFERED_VAR, replace=True)
+    written = write_api_key(
+        env_path, "true" if consent else "false", key_name=_env.REDDIT_CONSENT_VAR, replace=True,
+    ) and written
+    if not consent:
+        return {"status": "declined", "consent": False, "env_written": written}
+    result: Dict[str, Any] = {"consent": True, "env_written": written, "note": REDDIT_SESSION_NOTE}
+    probe = dict(config)
+    probe["_BROWSER_COOKIE_MODE"] = "read"
+    # This setup call is the Reddit yes itself, so only FROM_BROWSER=off vetoes it.
+    refusal = _env.global_cookie_refusal(probe, reddit_consent=True)
+    if refusal:
+        result.update(status="vetoed", reason=refusal, checked=[])
+        return result
+    checked = []
+    for browser in _reddit_scan_order(config):
+        cookie, state = (reader or _env.read_reddit_session_cookie)(config, browser)
+        checked.append({"browser": browser, "result": state})
+        if cookie:
+            result["env_written"] = write_api_key(
+                env_path, browser, key_name=_env.REDDIT_FROM_BROWSER_VAR, replace=True,
+            ) and written
+            result.update(status="found", browser=browser, checked=checked)
+            return result
+    result.update(status="not-found", checked=checked)
+    return result

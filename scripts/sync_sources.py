@@ -80,6 +80,10 @@ DIRECTORY_GLOB_TOKEN_RE = re.compile(
 SKILL_BASE_TOKEN_RE = re.compile(
     r"\$(?:SKILLBASE|\{SKILLBASE\})/(?P<path>[^\s\140'\"()]+)"
 )
+PACKAGE_PLACEHOLDER_RE = re.compile(
+    r"`(?P<path>(?:scripts|references|assets|templates|examples|library|playbooks)/"
+    r"[A-Za-z0-9._/<>-]*<[A-Za-z][A-Za-z0-9_-]*>[A-Za-z0-9._/<>-]*)`"
+)
 INLINE_DIRECTORY_RE = re.compile(
     r"`(?P<path>(?:\.\.?/)*(?:[A-Za-z0-9._-]+/)+)`"
 )
@@ -180,7 +184,10 @@ def repo_relpath(path: Path) -> str:
 
 
 def clone_or_update(url: str, destination: Path) -> None:
+    # Snapshots must match upstream blobs byte for byte, so never let a
+    # machine-level core.autocrlf rewrite line endings on checkout.
     if destination.exists():
+        run(["git", "config", "core.autocrlf", "false"], cwd=destination)
         run(["git", "fetch", "--depth", "1", "origin"], cwd=destination)
         default_branch = run(
             ["git", "symbolic-ref", "refs/remotes/origin/HEAD"],
@@ -189,7 +196,9 @@ def clone_or_update(url: str, destination: Path) -> None:
         run(["git", "checkout", default_branch], cwd=destination)
         run(["git", "reset", "--hard", f"origin/{default_branch}"], cwd=destination)
     else:
-        run(["git", "clone", "--depth", "1", url, str(destination)])
+        run(
+            ["git", "clone", "-c", "core.autocrlf=false", "--depth", "1", url, str(destination)]
+        )
 
 
 def mkdir_with_retry(path: Path) -> None:
@@ -256,7 +265,8 @@ def write_text_file(path: Path, content: str) -> None:
     temp_path = temp_dir / (
         hashlib.sha256(str(path).encode("utf-8")).hexdigest() + (path.suffix or ".tmp")
     )
-    temp_path.write_text(content, encoding="utf-8")
+    # Generated files use LF on every OS so reruns do not rewrite them.
+    temp_path.write_text(content, encoding="utf-8", newline="\n")
     mkdir_with_retry(path.parent)
     copy_file_with_retry(temp_path, path)
 
@@ -588,6 +598,24 @@ def extract_local_file_refs(
                     found.update(expanded)
                     break
 
+    # A skill may name its package files through a placeholder, such as
+    # `playbooks/<title>.md`. That declares every matching file in the
+    # skill's own package directory, never anything outside it.
+    resolved_repo_root = repo_root.resolve()
+    for match in PACKAGE_PLACEHOLDER_RE.finditer(content):
+        pattern = re.sub(r"<[A-Za-z][A-Za-z0-9_-]*>", "*", match.group("path"))
+        if ".." in Path(pattern).parts:
+            continue
+        for target in skill_root.glob(pattern):
+            if not target.is_file() or target.is_symlink():
+                continue
+            resolved = target.resolve()
+            if (
+                resolved.is_relative_to(resolved_repo_root)
+                and ".git" not in resolved.parts
+            ):
+                found.add(resolved)
+
     return sorted(found)
 
 
@@ -676,15 +704,58 @@ def collect_companion_dir_files(source: dict[str, Any], clone_dir: Path) -> set[
     return found
 
 
+def has_skill_frontmatter(path: Path) -> bool:
+    try:
+        content = path.read_text(encoding="utf-8-sig")
+    except (UnicodeDecodeError, OSError):
+        return False
+    if not content.startswith("---"):
+        return False
+    end = content.find("\n---", 3)
+    if end == -1:
+        return False
+    frontmatter = content[3:end]
+    return bool(NAME_RE.search(frontmatter) and DESC_RE.search(frontmatter))
+
+
+def discover_skill_files(clone_dir: Path) -> list[Path]:
+    """Find skill files by explicit name comparison so every OS agrees.
+
+    Matches `SKILL.md` in any letter case. A source may also ship per-host
+    variants named `skill-<host>.md` beside its `skill.md`; those count as
+    skills when they carry skill frontmatter (name and description). A
+    `skill-*.md` file with no sibling `skill.md` is not a skill.
+    """
+    found: set[Path] = set()
+    for path in clone_dir.rglob("*"):
+        if (
+            path.name.lower() != "skill.md"
+            or ".git" in path.parts
+            or path.is_symlink()
+            or not path.is_file()
+        ):
+            continue
+        found.add(path)
+        for sibling in path.parent.iterdir():
+            lowered = sibling.name.lower()
+            if (
+                lowered.startswith("skill-")
+                and lowered.endswith(".md")
+                and sibling.is_file()
+                and not sibling.is_symlink()
+                and has_skill_frontmatter(sibling)
+            ):
+                found.add(sibling)
+    return sorted(found)
+
+
 def build_repo_report(source: dict[str, Any], clone_dir: Path, archive_root: Path) -> tuple[dict[str, Any], list[dict[str, Any]]]:
     owner, repo = parse_repo_url(source["url"])
     branch = run(["git", "branch", "--show-current"], cwd=clone_dir)
     commit = run(["git", "rev-parse", "HEAD"], cwd=clone_dir)
     commit_date = run(["git", "show", "-s", "--format=%cI", "HEAD"], cwd=clone_dir)
     snapshot_dir = archive_root / "snapshot"
-    source_skill_paths = sorted(
-        path for path in clone_dir.rglob("SKILL.md") if ".git" not in path.parts
-    )
+    source_skill_paths = discover_skill_files(clone_dir)
 
     selected_files: set[Path] = set()
     skill_records: list[dict[str, Any]] = []

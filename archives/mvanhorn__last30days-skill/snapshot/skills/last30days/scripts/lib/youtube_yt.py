@@ -254,6 +254,9 @@ def _lane_seconds_left() -> Optional[float]:
 
 
 def _lane_out_of_time() -> bool:
+    limit = _sc_spend_limit.get()
+    if limit is not None and limit.cancel is not None and limit.cancel.is_set():
+        return True
     seconds_left = _lane_seconds_left()
     return seconds_left is not None and seconds_left <= 0
 
@@ -434,21 +437,33 @@ def _run_ytdlp(
         if abort_if_blocked and _youtube_transcripts_blocked():
             raise _YtdlpBlocked()
 
-    seconds_left = _lane_seconds_left()
-    if seconds_left is None:
+    limit = _sc_spend_limit.get()
+    cancel = limit.cancel if limit else None
+    deadline = _lane_deadline()
+    if deadline is None and cancel is None:
         with _ytdlp_slots:
             _abort_if_blocked()
             return _remember_youtube_block(subproc.run_with_timeout(cmd, timeout=timeout))
-    if not _ytdlp_slots.acquire(timeout=max(0.0, seconds_left)):
-        raise subproc.SubprocTimeout("no yt-dlp slot before the lane deadline", started=False)
+    if deadline is None:
+        deadline = time.monotonic() + timeout
+    while True:
+        if cancel is not None and cancel.is_set():
+            raise subproc.SubprocTimeout("YouTube lane cancelled", started=False)
+        seconds_left = deadline - time.monotonic()
+        if seconds_left <= 0:
+            raise subproc.SubprocTimeout("no yt-dlp slot before the lane deadline", started=False)
+        if _ytdlp_slots.acquire(timeout=min(0.05, seconds_left) if cancel is not None else seconds_left):
+            break
     try:
         _abort_if_blocked()
-        seconds_left = _lane_seconds_left() or 0.0
+        seconds_left = deadline - time.monotonic()
         if seconds_left <= 0:
             raise subproc.SubprocTimeout("lane deadline passed", started=False)
         bounded = min(timeout, seconds_left)
         try:
-            result = subproc.run_with_timeout(cmd, timeout=bounded)
+            result = subproc.run_with_timeout(
+                cmd, timeout=bounded, deadline_monotonic=deadline, cancel=cancel,
+            )
         except subproc.SubprocTimeout as exc:
             # The attempt cap was not what stopped the process. The lane
             # deadline was shorter, so don't report the full cap.
@@ -1342,6 +1357,18 @@ def _transcript_backoff(video_id: str, attempt: int) -> float:
     return _TRANSCRIPT_BACKOFF_BASE * (attempt + 1) + offset
 
 
+def _wait_for_transcript_retry(video_id: str, attempt: int) -> bool:
+    delay = _transcript_backoff(video_id, attempt)
+    remaining = _lane_seconds_left()
+    if remaining is not None and delay >= remaining:
+        return False
+    limit = _sc_spend_limit.get()
+    if limit is not None and limit.cancel is not None:
+        return not limit.cancel.wait(delay)
+    time.sleep(delay)
+    return True
+
+
 def _read_vtt(video_id: str, temp_dir: str) -> Optional[str]:
     """Return the VTT text yt-dlp wrote for ``video_id``, or None if absent."""
     vtt_path = _pick_ytdlp_vtt(video_id, temp_dir, _ytdlp_sub_langs().split(","))
@@ -1428,8 +1455,7 @@ def _fetch_transcript_ytdlp(
             partial_vtt = _read_vtt(video_id, temp_dir)
             if partial_vtt is not None:
                 return partial_vtt
-            if attempt < attempts - 1:
-                time.sleep(_transcript_backoff(video_id, attempt))
+            if attempt < attempts - 1 and _wait_for_transcript_retry(video_id, attempt):
                 continue
             break
         except FileNotFoundError:
@@ -1467,10 +1493,12 @@ def _fetch_transcript_ytdlp(
             # Treat as genuine no-captions, not an error worth retrying.
             return None
         last_reason = snippet
-        if _TRANSIENT_RE.search(stderr) and attempt < attempts - 1:
+        if (
+            _TRANSIENT_RE.search(stderr) and attempt < attempts - 1
+            and _wait_for_transcript_retry(video_id, attempt)
+        ):
             _log(f"yt-dlp transcript transient failure for {video_id} "
                  f"(attempt {attempt + 1}/{attempts}): {snippet}")
-            time.sleep(_transcript_backoff(video_id, attempt))
             continue
         # Non-transient, or retries exhausted — surface the real reason.
         _log(f"yt-dlp transcript failed for {video_id} "
@@ -2337,14 +2365,22 @@ def search_youtube_sc(
             raw.get("id") or raw.get("video_id") or raw.get("videoId") or ""
         )
         title = raw.get("title", "")
+        # SC's /v1/youtube/search returns camelCase fields (viewCountInt,
+        # publishedTime, lengthSeconds) and `channel` as an object; the
+        # snake_case names stay as fallbacks.
         channel = raw.get("channel") or raw.get("channel_name") or raw.get("uploader", "")
+        if isinstance(channel, dict):
+            channel = channel.get("title") or channel.get("handle") or ""
         description = str(raw.get("description", ""))[:500]
-        view_count = raw.get("view_count") or raw.get("views", 0)
+        view_count = raw.get("view_count") or raw.get("viewCountInt") or raw.get("views", 0)
         like_count = raw.get("like_count") or raw.get("likes", 0)
         comment_count = raw.get("comment_count") or raw.get("comments", 0)
 
         # Date: try multiple field names
-        date_str = raw.get("upload_date") or raw.get("date") or raw.get("published_at", "")
+        date_str = (
+            raw.get("upload_date") or raw.get("date") or raw.get("published_at")
+            or raw.get("publishedTime") or ""
+        )
         if date_str and len(date_str) == 8 and date_str.isdigit():
             date_str = f"{date_str[:4]}-{date_str[4:6]}-{date_str[6:8]}"
         elif date_str and "T" in date_str:
@@ -2365,7 +2401,7 @@ def search_youtube_sc(
                 "likes": like_count or 0,
                 "comments": comment_count or 0,
             },
-            "duration": raw.get("duration"),
+            "duration": raw.get("duration") or raw.get("lengthSeconds"),
             "relevance": _compute_relevance(core_topic, f"{title} {description}"),
             "why_relevant": f"YouTube: {title[:60]}" if title else f"YouTube: {core_topic}",
             "description": description,

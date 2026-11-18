@@ -95,5 +95,35 @@
     "license_files": [
       "LICENSE"
     ]
+  },
+  {
+    "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "notes": "Added from https://github.com/nextlevelbuilder/ui-ux-pro-max-skill at the user's request after a usefulness assessment. The skills load their CSV databases, fonts and templates through bundled search scripts instead of local links, so both skill package trees are registered as companions.",
+    "license_files": [
+      "LICENSE"
+    ],
+    "companion_dirs": [
+      ".claude/skills",
+      "cli/assets/skills"
+    ]
+  },
+  {
+    "url": "https://github.com/Graphify-Labs/graphify",
+    "notes": "Added from https://github.com/Graphify-Labs/graphify at the user's request after a usefulness assessment. The skill ships as graphify/skill.md plus per-host graphify/skill-<host>.md variants; the installer copies each host's references from graphify/skills/<host>/, so that directory is registered as a companion.",
+    "license_files": [
+      "LICENSE",
+      "LICENSE-MIT",
+      "NOTICE"
+    ],
+    "companion_dirs": [
+      "graphify/skills"
+    ]
+  },
+  {
+    "url": "https://github.com/shadcn/improve",
+    "notes": "Added from https://github.com/shadcn/improve at the user's request after a usefulness assessment.",
+    "license_files": [
+      "LICENSE.md"
+    ]
   }
 ]

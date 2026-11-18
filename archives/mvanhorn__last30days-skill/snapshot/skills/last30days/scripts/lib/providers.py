@@ -7,6 +7,8 @@ import json
 import os
 import re
 import sys
+import time
+from threading import Event
 from typing import Any
 from urllib.parse import urlsplit, urlunsplit
 
@@ -125,6 +127,12 @@ class ReasoningClient:
         self._usage_prompt_tokens = 0
         self._usage_completion_tokens = 0
         self._usage_complete = True
+        self._request_deadline: float | None = None
+        self._request_cancel: Event | None = None
+
+    def set_request_budget(self, deadline: float, cancel: Event | None) -> None:
+        self._request_deadline = deadline
+        self._request_cancel = cancel
 
     @staticmethod
     def _valid_token_count(value: Any) -> bool:
@@ -177,6 +185,14 @@ class ReasoningClient:
         self._usage_complete = False
 
     def _post(self, url: str, payload: dict[str, Any], **kwargs: Any) -> dict[str, Any]:
+        if self._request_deadline is not None:
+            now = time.monotonic()
+            if now >= self._request_deadline or (
+                self._request_cancel is not None and self._request_cancel.is_set()
+            ):
+                raise http.DeadlineExceeded()
+            kwargs["deadline_monotonic"] = min(self._request_deadline, now + kwargs["timeout"])
+            kwargs["cancel"] = self._request_cancel
         try:
             return http.post(url, payload, on_retry=self._mark_usage_incomplete, **kwargs)
         except Exception:
@@ -566,12 +582,18 @@ def extract_json(text: str) -> dict[str, Any]:
     if not text:
         raise ValueError("Expected JSON response, got empty text")
     try:
-        return json.loads(text)
+        value = json.loads(text)
     except json.JSONDecodeError:
         match = re.search(r"\{[\s\S]*\}", text)
         if not match:
             raise
-        return json.loads(match.group(0))
+        value = json.loads(match.group(0))
+    # Valid JSON is not always an object (Gemini's JSON mode allows a
+    # top-level array). Callers read it with .get(), so a list, null, or
+    # number must fail here, where their ValueError fallback catches it.
+    if not isinstance(value, dict):
+        raise ValueError(f"Expected a JSON object, got {type(value).__name__}")
+    return value
 
 
 def extract_gemini_text(payload: dict[str, Any]) -> str:

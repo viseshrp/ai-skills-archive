@@ -308,7 +308,7 @@
     "description": "12-agent academic paper writing pipeline. 11 modes (full/plan/outline/revision/revision-coach/abstract/lit-review/format-convert/citation-check/disclosure/rebuttal-audit). 6 paper types, 5 citation formats, bilingual abstracts, LaTeX/DOCX-via-Pandoc/PDF output. Style Calibration + Writing Quality Check + Anti-Patterns with IRON RULE markers. Triggers: write paper, academic paper, guide my paper, parse reviews, I got reviewer comments, revision roadmap, should we push back, conference rebuttal, grant panel response, audit my rebuttal, check my response draft, AI disclosure, check citations, citation check, check my references, verify references, look over the refs, \u5beb\u8ad6\u6587, \u5b78\u8853\u8ad6\u6587, \u5f15\u5c0e\u6211\u5beb\u8ad6\u6587, \u5be9\u67e5\u610f\u898b, \u6211\u6536\u5230\u5be9\u67e5\u610f\u898b, \u4fee\u8a02\u8def\u7dda\u5716, \u8a55\u4f30\u56de\u8986, \u6aa2\u67e5\u5f15\u7528, \u5f15\u7528\u6aa2\u67e5, \u6aa2\u67e5\u53c3\u8003\u6587\u737b, \u6838\u5c0d\u6587\u737b, \ub17c\ubb38 \uc791\uc131, \ucd08\ub85d \uc791\uc131, \ub17c\ubb38 \uc218\uc815, \ub17c\ubb38 \uacc4\ud68d\uc744 \ub3c4\uc640\uc918, \uc2ec\uc0ac \uc758\uacac\uc744 \ubc1b\uc558\uc5b4, \uc2ec\uc0ac \uc758\uacac \ubc18\uc601, \ub2f5\ubcc0\uc11c \uc810\uac80, AI \uc0ac\uc6a9 \uace0\uc9c0, \uc778\uc6a9 \ud655\uc778, \uc778\uc6a9 \ud615\uc2dd \uac80\uc0ac, enmendar mi art\u00edculo, redactar art\u00edculo, gu\u00eda mi art\u00edculo, analizar rese\u00f1as, auditar mi respuesta, verificar borrador de respuesta, verificar citas, divulgaci\u00f3n de IA.",
     "path": "academic-paper/SKILL.md",
     "relative_directory": "academic-paper",
-    "sha256": "49057d083298f9e80ffa206b265cf90a227417629374c653b512231ae228f413",
+    "sha256": "3f2463eeaed1f94cb64046a40ecd464177a2a52755f439835baebd835cdd0511",
     "linked_local_files": [
       ".claude-plugin/marketplace.json",
       ".claude-plugin/plugin.json",
@@ -662,6 +662,12 @@
       "evals/heldout/execution_manifest.schema.json",
       "evals/heldout/measurement_report.schema.json",
       "evals/heldout/measurement_report.template.json",
+      "evals/heldout/reviewer_seeded_defects/README.md",
+      "evals/heldout/reviewer_seeded_defects/manifests/ms01_quant.defects.json",
+      "evals/heldout/reviewer_seeded_defects/manifests/ms02_qual.defects.json",
+      "evals/heldout/reviewer_seeded_defects/manuscripts/ms00_clean_control.md",
+      "evals/heldout/reviewer_seeded_defects/manuscripts/ms01_quant_defective.md",
+      "evals/heldout/reviewer_seeded_defects/manuscripts/ms02_qual_defective.md",
       "evals/heldout/revision_claim_drift/adjudication_rubric.md",
       "evals/heldout/revision_claim_drift/measurement-2026-07-22.json",
       "evals/heldout/revision_claim_drift/measurement-2026-08-07.json",
@@ -717,6 +723,7 @@
       "plugin-evals-citation-locale/README.md",
       "plugin-evals/README.md",
       "requirements-dev.txt",
+      "scripts/_anchored_open.py",
       "scripts/_block_parser.py",
       "scripts/_calibration_pdf_text.py",
       "scripts/_ci_pytest_manifest.toml",
@@ -786,6 +793,7 @@
       "scripts/build_cross_document_consistency_advisory.py",
       "scripts/build_review_pathway_rule_trace.py",
       "scripts/build_submission_packet_manifest.py",
+      "scripts/check_1098_premise_rule_sync.py",
       "scripts/check_215_field_norm.py",
       "scripts/check_216_surface_form.py",
       "scripts/check_268_nested_commitment_ledger.py",
@@ -827,6 +835,7 @@
       "scripts/check_degradation_registry.py",
       "scripts/check_distribution_surface_claims.py",
       "scripts/check_domain_evidence_profile.py",
+      "scripts/check_e4_promotion.py",
       "scripts/check_evals_gold_set.py",
       "scripts/check_experiment_provenance.py",
       "scripts/check_field_norm_severity.py",
@@ -918,6 +927,7 @@
       "scripts/cross_model_smoke_test_codex.sh",
       "scripts/cross_model_verification/normalize_compat_verdict.py",
       "scripts/cross_model_verification/openai_effort_guard.sh",
+      "scripts/cross_model_verification/openai_has_completed_web_search.jq",
       "scripts/crossref_client.py",
       "scripts/dispatch_calibration_panel.py",
       "scripts/dispatch_e4_panel.py",
@@ -965,6 +975,7 @@
       "scripts/research_workflow_profile.py",
       "scripts/resolve_human_subjects_authority.py",
       "scripts/resolve_review_target_context.py",
+      "scripts/resume_e4_record.py",
       "scripts/retraction_status.py",
       "scripts/review_criteria_binding.py",
       "scripts/review_panel_provenance.py",
@@ -990,6 +1001,7 @@
       "scripts/test__next_verified_at_ms.py",
       "scripts/test_adjacent_framing_probe_lint.py",
       "scripts/test_adjudication_activity.py",
+      "scripts/test_anchored_open.py",
       "scripts/test_ars_anchorize_draft.py",
       "scripts/test_ars_apply_revision_patch.py",
       "scripts/test_ars_mark_read.py",
@@ -1004,6 +1016,7 @@
       "scripts/test_build_claim_standing_candidate_ledger.py",
       "scripts/test_build_claim_standing_query_plan.py",
       "scripts/test_build_submission_packet_manifest.py",
+      "scripts/test_check_1098_premise_rule_sync.py",
       "scripts/test_check_215_field_norm.py",
       "scripts/test_check_216_surface_form.py",
       "scripts/test_check_268_nested_commitment_ledger.py",
@@ -1170,6 +1183,7 @@
       "scripts/test_review_panel_provenance.py",
       "scripts/test_review_pathway_rule_trace.py",
       "scripts/test_revision_roadmap.py",
+      "scripts/test_revision_roadmap_consensus_levels.py",
       "scripts/test_run_codex_audit_e2e.py",
       "scripts/test_run_evals.py",
       "scripts/test_run_guard_launcher.py",
@@ -1427,7 +1441,7 @@
     "description": "Multi-perspective academic paper review with dynamic reviewer personas. Runs a 5-seat, role-separated review panel (Journal-Fit Reviewer + 3 peer-review roles + Devil's Advocate) with field-specific expertise; role separation is not a claim of independent error processes. Supports full review, re-review (verification), quick assessment, methodology focus, Socratic guided, and calibration modes. Triggers on: review paper, peer review, manuscript review, referee report, review my paper, critique paper, simulate review, editorial review, calibrate reviewer, reviewer calibration, measure reviewer accuracy, \u5be9\u67e5\u8ad6\u6587, \u8ad6\u6587\u5be9\u67e5, \u6a21\u64ec\u5be9\u67e5, \u540c\u5115\u5be9\u67e5, \u5e6b\u6211\u5be9\u9019\u7bc7, \u4ee5\u5be9\u67e5\u4eba\u89d2\u5ea6\u8a55\u4f30, \u5be9\u67e5\u8005\u6821\u6e96, \ub17c\ubb38 \uc2ec\uc0ac, \ub3d9\ub8cc \uc2ec\uc0ac, \ubaa8\uc758 \uc2ec\uc0ac, \uc2ec\uc0ac\uc790 \uad00\uc810\uc5d0\uc11c \ud3c9\uac00, \uc2ec\uc0ac\uc790 \ubcf4\uc815, revisar art\u00edculo, revisi\u00f3n entre pares, revisi\u00f3n de manuscrito, informe de \u00e1rbitro, revisa mi art\u00edculo, criticar art\u00edculo, simular revisi\u00f3n, revisi\u00f3n editorial, calibrar revisor.",
     "path": "academic-paper-reviewer/SKILL.md",
     "relative_directory": "academic-paper-reviewer",
-    "sha256": "f0f35b2b666ce674bf14eecff23e9183ee2df7effab79adb457112f73b23b428",
+    "sha256": "f65faaf1414f95c729307af7604ef253bb93ccf80484af61bc9f390b68141bd6",
     "linked_local_files": [
       ".claude-plugin/marketplace.json",
       ".claude-plugin/plugin.json",
@@ -1468,6 +1482,7 @@
       "academic-paper-reviewer/agents/perspective_reviewer_agent.md",
       "academic-paper-reviewer/examples/hei_paper_review_example.md",
       "academic-paper-reviewer/examples/interdisciplinary_review_example.md",
+      "academic-paper-reviewer/examples/subclaim_decomposition_example.md",
       "academic-paper-reviewer/references/calibration_mode_protocol.md",
       "academic-paper-reviewer/references/changelog.md",
       "academic-paper-reviewer/references/editorial_decision_standards.md",
@@ -1781,6 +1796,12 @@
       "evals/heldout/execution_manifest.schema.json",
       "evals/heldout/measurement_report.schema.json",
       "evals/heldout/measurement_report.template.json",
+      "evals/heldout/reviewer_seeded_defects/README.md",
+      "evals/heldout/reviewer_seeded_defects/manifests/ms01_quant.defects.json",
+      "evals/heldout/reviewer_seeded_defects/manifests/ms02_qual.defects.json",
+      "evals/heldout/reviewer_seeded_defects/manuscripts/ms00_clean_control.md",
+      "evals/heldout/reviewer_seeded_defects/manuscripts/ms01_quant_defective.md",
+      "evals/heldout/reviewer_seeded_defects/manuscripts/ms02_qual_defective.md",
       "evals/heldout/revision_claim_drift/adjudication_rubric.md",
       "evals/heldout/revision_claim_drift/measurement-2026-07-22.json",
       "evals/heldout/revision_claim_drift/measurement-2026-08-07.json",
@@ -1836,6 +1857,7 @@
       "plugin-evals-citation-locale/README.md",
       "plugin-evals/README.md",
       "requirements-dev.txt",
+      "scripts/_anchored_open.py",
       "scripts/_block_parser.py",
       "scripts/_calibration_pdf_text.py",
       "scripts/_ci_pytest_manifest.toml",
@@ -1905,6 +1927,7 @@
       "scripts/build_cross_document_consistency_advisory.py",
       "scripts/build_review_pathway_rule_trace.py",
       "scripts/build_submission_packet_manifest.py",
+      "scripts/check_1098_premise_rule_sync.py",
       "scripts/check_215_field_norm.py",
       "scripts/check_216_surface_form.py",
       "scripts/check_268_nested_commitment_ledger.py",
@@ -1946,6 +1969,7 @@
       "scripts/check_degradation_registry.py",
       "scripts/check_distribution_surface_claims.py",
       "scripts/check_domain_evidence_profile.py",
+      "scripts/check_e4_promotion.py",
       "scripts/check_evals_gold_set.py",
       "scripts/check_experiment_provenance.py",
       "scripts/check_field_norm_severity.py",
@@ -2037,6 +2061,7 @@
       "scripts/cross_model_smoke_test_codex.sh",
       "scripts/cross_model_verification/normalize_compat_verdict.py",
       "scripts/cross_model_verification/openai_effort_guard.sh",
+      "scripts/cross_model_verification/openai_has_completed_web_search.jq",
       "scripts/crossref_client.py",
       "scripts/dispatch_calibration_panel.py",
       "scripts/dispatch_e4_panel.py",
@@ -2084,6 +2109,7 @@
       "scripts/research_workflow_profile.py",
       "scripts/resolve_human_subjects_authority.py",
       "scripts/resolve_review_target_context.py",
+      "scripts/resume_e4_record.py",
       "scripts/retraction_status.py",
       "scripts/review_criteria_binding.py",
       "scripts/review_panel_provenance.py",
@@ -2109,6 +2135,7 @@
       "scripts/test__next_verified_at_ms.py",
       "scripts/test_adjacent_framing_probe_lint.py",
       "scripts/test_adjudication_activity.py",
+      "scripts/test_anchored_open.py",
       "scripts/test_ars_anchorize_draft.py",
       "scripts/test_ars_apply_revision_patch.py",
       "scripts/test_ars_mark_read.py",
@@ -2123,6 +2150,7 @@
       "scripts/test_build_claim_standing_candidate_ledger.py",
       "scripts/test_build_claim_standing_query_plan.py",
       "scripts/test_build_submission_packet_manifest.py",
+      "scripts/test_check_1098_premise_rule_sync.py",
       "scripts/test_check_215_field_norm.py",
       "scripts/test_check_216_surface_form.py",
       "scripts/test_check_268_nested_commitment_ledger.py",
@@ -2289,6 +2317,7 @@
       "scripts/test_review_panel_provenance.py",
       "scripts/test_review_pathway_rule_trace.py",
       "scripts/test_revision_roadmap.py",
+      "scripts/test_revision_roadmap_consensus_levels.py",
       "scripts/test_run_codex_audit_e2e.py",
       "scripts/test_run_evals.py",
       "scripts/test_run_guard_launcher.py",
@@ -2901,6 +2930,12 @@
       "evals/heldout/execution_manifest.schema.json",
       "evals/heldout/measurement_report.schema.json",
       "evals/heldout/measurement_report.template.json",
+      "evals/heldout/reviewer_seeded_defects/README.md",
+      "evals/heldout/reviewer_seeded_defects/manifests/ms01_quant.defects.json",
+      "evals/heldout/reviewer_seeded_defects/manifests/ms02_qual.defects.json",
+      "evals/heldout/reviewer_seeded_defects/manuscripts/ms00_clean_control.md",
+      "evals/heldout/reviewer_seeded_defects/manuscripts/ms01_quant_defective.md",
+      "evals/heldout/reviewer_seeded_defects/manuscripts/ms02_qual_defective.md",
       "evals/heldout/revision_claim_drift/adjudication_rubric.md",
       "evals/heldout/revision_claim_drift/measurement-2026-07-22.json",
       "evals/heldout/revision_claim_drift/measurement-2026-08-07.json",
@@ -2956,6 +2991,7 @@
       "plugin-evals-citation-locale/README.md",
       "plugin-evals/README.md",
       "requirements-dev.txt",
+      "scripts/_anchored_open.py",
       "scripts/_block_parser.py",
       "scripts/_calibration_pdf_text.py",
       "scripts/_ci_pytest_manifest.toml",
@@ -3025,6 +3061,7 @@
       "scripts/build_cross_document_consistency_advisory.py",
       "scripts/build_review_pathway_rule_trace.py",
       "scripts/build_submission_packet_manifest.py",
+      "scripts/check_1098_premise_rule_sync.py",
       "scripts/check_215_field_norm.py",
       "scripts/check_216_surface_form.py",
       "scripts/check_268_nested_commitment_ledger.py",
@@ -3066,6 +3103,7 @@
       "scripts/check_degradation_registry.py",
       "scripts/check_distribution_surface_claims.py",
       "scripts/check_domain_evidence_profile.py",
+      "scripts/check_e4_promotion.py",
       "scripts/check_evals_gold_set.py",
       "scripts/check_experiment_provenance.py",
       "scripts/check_field_norm_severity.py",
@@ -3157,6 +3195,7 @@
       "scripts/cross_model_smoke_test_codex.sh",
       "scripts/cross_model_verification/normalize_compat_verdict.py",
       "scripts/cross_model_verification/openai_effort_guard.sh",
+      "scripts/cross_model_verification/openai_has_completed_web_search.jq",
       "scripts/crossref_client.py",
       "scripts/dispatch_calibration_panel.py",
       "scripts/dispatch_e4_panel.py",
@@ -3204,6 +3243,7 @@
       "scripts/research_workflow_profile.py",
       "scripts/resolve_human_subjects_authority.py",
       "scripts/resolve_review_target_context.py",
+      "scripts/resume_e4_record.py",
       "scripts/retraction_status.py",
       "scripts/review_criteria_binding.py",
       "scripts/review_panel_provenance.py",
@@ -3229,6 +3269,7 @@
       "scripts/test__next_verified_at_ms.py",
       "scripts/test_adjacent_framing_probe_lint.py",
       "scripts/test_adjudication_activity.py",
+      "scripts/test_anchored_open.py",
       "scripts/test_ars_anchorize_draft.py",
       "scripts/test_ars_apply_revision_patch.py",
       "scripts/test_ars_mark_read.py",
@@ -3243,6 +3284,7 @@
       "scripts/test_build_claim_standing_candidate_ledger.py",
       "scripts/test_build_claim_standing_query_plan.py",
       "scripts/test_build_submission_packet_manifest.py",
+      "scripts/test_check_1098_premise_rule_sync.py",
       "scripts/test_check_215_field_norm.py",
       "scripts/test_check_216_surface_form.py",
       "scripts/test_check_268_nested_commitment_ledger.py",
@@ -3409,6 +3451,7 @@
       "scripts/test_review_panel_provenance.py",
       "scripts/test_review_pathway_rule_trace.py",
       "scripts/test_revision_roadmap.py",
+      "scripts/test_revision_roadmap_consensus_levels.py",
       "scripts/test_run_codex_audit_e2e.py",
       "scripts/test_run_evals.py",
       "scripts/test_run_guard_launcher.py",
@@ -4021,6 +4064,12 @@
       "evals/heldout/execution_manifest.schema.json",
       "evals/heldout/measurement_report.schema.json",
       "evals/heldout/measurement_report.template.json",
+      "evals/heldout/reviewer_seeded_defects/README.md",
+      "evals/heldout/reviewer_seeded_defects/manifests/ms01_quant.defects.json",
+      "evals/heldout/reviewer_seeded_defects/manifests/ms02_qual.defects.json",
+      "evals/heldout/reviewer_seeded_defects/manuscripts/ms00_clean_control.md",
+      "evals/heldout/reviewer_seeded_defects/manuscripts/ms01_quant_defective.md",
+      "evals/heldout/reviewer_seeded_defects/manuscripts/ms02_qual_defective.md",
       "evals/heldout/revision_claim_drift/adjudication_rubric.md",
       "evals/heldout/revision_claim_drift/measurement-2026-07-22.json",
       "evals/heldout/revision_claim_drift/measurement-2026-08-07.json",
@@ -4076,6 +4125,7 @@
       "plugin-evals-citation-locale/README.md",
       "plugin-evals/README.md",
       "requirements-dev.txt",
+      "scripts/_anchored_open.py",
       "scripts/_block_parser.py",
       "scripts/_calibration_pdf_text.py",
       "scripts/_ci_pytest_manifest.toml",
@@ -4145,6 +4195,7 @@
       "scripts/build_cross_document_consistency_advisory.py",
       "scripts/build_review_pathway_rule_trace.py",
       "scripts/build_submission_packet_manifest.py",
+      "scripts/check_1098_premise_rule_sync.py",
       "scripts/check_215_field_norm.py",
       "scripts/check_216_surface_form.py",
       "scripts/check_268_nested_commitment_ledger.py",
@@ -4186,6 +4237,7 @@
       "scripts/check_degradation_registry.py",
       "scripts/check_distribution_surface_claims.py",
       "scripts/check_domain_evidence_profile.py",
+      "scripts/check_e4_promotion.py",
       "scripts/check_evals_gold_set.py",
       "scripts/check_experiment_provenance.py",
       "scripts/check_field_norm_severity.py",
@@ -4277,6 +4329,7 @@
       "scripts/cross_model_smoke_test_codex.sh",
       "scripts/cross_model_verification/normalize_compat_verdict.py",
       "scripts/cross_model_verification/openai_effort_guard.sh",
+      "scripts/cross_model_verification/openai_has_completed_web_search.jq",
       "scripts/crossref_client.py",
       "scripts/dispatch_calibration_panel.py",
       "scripts/dispatch_e4_panel.py",
@@ -4324,6 +4377,7 @@
       "scripts/research_workflow_profile.py",
       "scripts/resolve_human_subjects_authority.py",
       "scripts/resolve_review_target_context.py",
+      "scripts/resume_e4_record.py",
       "scripts/retraction_status.py",
       "scripts/review_criteria_binding.py",
       "scripts/review_panel_provenance.py",
@@ -4349,6 +4403,7 @@
       "scripts/test__next_verified_at_ms.py",
       "scripts/test_adjacent_framing_probe_lint.py",
       "scripts/test_adjudication_activity.py",
+      "scripts/test_anchored_open.py",
       "scripts/test_ars_anchorize_draft.py",
       "scripts/test_ars_apply_revision_patch.py",
       "scripts/test_ars_mark_read.py",
@@ -4363,6 +4418,7 @@
       "scripts/test_build_claim_standing_candidate_ledger.py",
       "scripts/test_build_claim_standing_query_plan.py",
       "scripts/test_build_submission_packet_manifest.py",
+      "scripts/test_check_1098_premise_rule_sync.py",
       "scripts/test_check_215_field_norm.py",
       "scripts/test_check_216_surface_form.py",
       "scripts/test_check_268_nested_commitment_ledger.py",
@@ -4529,6 +4585,7 @@
       "scripts/test_review_panel_provenance.py",
       "scripts/test_review_pathway_rule_trace.py",
       "scripts/test_revision_roadmap.py",
+      "scripts/test_revision_roadmap_consensus_levels.py",
       "scripts/test_run_codex_audit_e2e.py",
       "scripts/test_run_evals.py",
       "scripts/test_run_guard_launcher.py",
@@ -5141,6 +5198,12 @@
       "evals/heldout/execution_manifest.schema.json",
       "evals/heldout/measurement_report.schema.json",
       "evals/heldout/measurement_report.template.json",
+      "evals/heldout/reviewer_seeded_defects/README.md",
+      "evals/heldout/reviewer_seeded_defects/manifests/ms01_quant.defects.json",
+      "evals/heldout/reviewer_seeded_defects/manifests/ms02_qual.defects.json",
+      "evals/heldout/reviewer_seeded_defects/manuscripts/ms00_clean_control.md",
+      "evals/heldout/reviewer_seeded_defects/manuscripts/ms01_quant_defective.md",
+      "evals/heldout/reviewer_seeded_defects/manuscripts/ms02_qual_defective.md",
       "evals/heldout/revision_claim_drift/adjudication_rubric.md",
       "evals/heldout/revision_claim_drift/measurement-2026-07-22.json",
       "evals/heldout/revision_claim_drift/measurement-2026-08-07.json",
@@ -5196,6 +5259,7 @@
       "plugin-evals-citation-locale/README.md",
       "plugin-evals/README.md",
       "requirements-dev.txt",
+      "scripts/_anchored_open.py",
       "scripts/_block_parser.py",
       "scripts/_calibration_pdf_text.py",
       "scripts/_ci_pytest_manifest.toml",
@@ -5265,6 +5329,7 @@
       "scripts/build_cross_document_consistency_advisory.py",
       "scripts/build_review_pathway_rule_trace.py",
       "scripts/build_submission_packet_manifest.py",
+      "scripts/check_1098_premise_rule_sync.py",
       "scripts/check_215_field_norm.py",
       "scripts/check_216_surface_form.py",
       "scripts/check_268_nested_commitment_ledger.py",
@@ -5306,6 +5371,7 @@
       "scripts/check_degradation_registry.py",
       "scripts/check_distribution_surface_claims.py",
       "scripts/check_domain_evidence_profile.py",
+      "scripts/check_e4_promotion.py",
       "scripts/check_evals_gold_set.py",
       "scripts/check_experiment_provenance.py",
       "scripts/check_field_norm_severity.py",
@@ -5397,6 +5463,7 @@
       "scripts/cross_model_smoke_test_codex.sh",
       "scripts/cross_model_verification/normalize_compat_verdict.py",
       "scripts/cross_model_verification/openai_effort_guard.sh",
+      "scripts/cross_model_verification/openai_has_completed_web_search.jq",
       "scripts/crossref_client.py",
       "scripts/dispatch_calibration_panel.py",
       "scripts/dispatch_e4_panel.py",
@@ -5444,6 +5511,7 @@
       "scripts/research_workflow_profile.py",
       "scripts/resolve_human_subjects_authority.py",
       "scripts/resolve_review_target_context.py",
+      "scripts/resume_e4_record.py",
       "scripts/retraction_status.py",
       "scripts/review_criteria_binding.py",
       "scripts/review_panel_provenance.py",
@@ -5469,6 +5537,7 @@
       "scripts/test__next_verified_at_ms.py",
       "scripts/test_adjacent_framing_probe_lint.py",
       "scripts/test_adjudication_activity.py",
+      "scripts/test_anchored_open.py",
       "scripts/test_ars_anchorize_draft.py",
       "scripts/test_ars_apply_revision_patch.py",
       "scripts/test_ars_mark_read.py",
@@ -5483,6 +5552,7 @@
       "scripts/test_build_claim_standing_candidate_ledger.py",
       "scripts/test_build_claim_standing_query_plan.py",
       "scripts/test_build_submission_packet_manifest.py",
+      "scripts/test_check_1098_premise_rule_sync.py",
       "scripts/test_check_215_field_norm.py",
       "scripts/test_check_216_surface_form.py",
       "scripts/test_check_268_nested_commitment_ledger.py",
@@ -5649,6 +5719,7 @@
       "scripts/test_review_panel_provenance.py",
       "scripts/test_review_pathway_rule_trace.py",
       "scripts/test_revision_roadmap.py",
+      "scripts/test_revision_roadmap_consensus_levels.py",
       "scripts/test_run_codex_audit_e2e.py",
       "scripts/test_run_evals.py",
       "scripts/test_run_guard_launcher.py",
@@ -6499,28 +6570,7 @@
     "path": "skills/caveman-learn/SKILL.md",
     "relative_directory": "skills/caveman-learn",
     "sha256": "05e803e8024786b4abf78cb89ccbd6aa3834a042f398fc84a69f5652368b2d0a",
-    "linked_local_files": [
-      "engine/CLAUDE.md",
-      "engine/ccr/store_integrity.go",
-      "engine/ccr/store_reclaim.go",
-      "engine/ccr/store_repair.go",
-      "engine/compressors/invariants.go",
-      "engine/compressors/redundancy.go",
-      "mcp/BINARY_LICENSE.md",
-      "mcp/CLAUDE.md",
-      "mcp/README.md",
-      "mcp/bin/binary-installer.generated.mjs",
-      "mcp/bin/caveman-mcp.mjs",
-      "mcp/bin/release.generated.mjs",
-      "mcp/package.json",
-      "mcp/tests/launcher.test.mjs",
-      "mcp/tests/package.test.mjs",
-      "mem/CLAUDE.md",
-      "packages/cli/scripts/gen-wedge-installer.mjs",
-      "skills/caveman-explore/SKILL.md",
-      "skills/caveman-learn/CLAUDE.md",
-      "skills/caveman-learn/tests/skill-file.test.mjs"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "juliusbrussee/caveman",
@@ -7256,6 +7306,9 @@
     "relative_directory": "dyl-stack/skills/dyl-mode",
     "sha256": "1dafd1a4c2b441ee681eedeb333c2ede81b7f2f966f0adef052b2ffe82458c42",
     "linked_local_files": [
+      "dyl-stack/skills/dyl-mode/playbooks/bug-fix.md",
+      "dyl-stack/skills/dyl-mode/playbooks/feature.md",
+      "dyl-stack/skills/dyl-mode/playbooks/opening-a-pr.md",
       "dyl-stack/skills/dyl-mode/references/requirements.md"
     ]
   },
@@ -7340,13 +7393,9 @@
     "description": "Sketch types, signatures, and module structure before code, then stay in the loop while implementation fills in. Use for /architect, 'architect this', 'design this', or non-trivial work where jumping to code would lock in the wrong shape.",
     "path": "harness/pstack/claude-code/skills/architect/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/architect",
-    "sha256": "7528304e130742121ca3bc074f58971663608d0130b4633bb598560a3a5f7856",
+    "sha256": "f23b6e508f7ff0bec1245bd0e04509e788901e66b59eabe54a7779d0000e7358",
     "linked_local_files": [
-      "harness/pstack/claude-code/docs/harness/claude-code.md",
-      "harness/pstack/claude-code/skills/architect/references/design-red-flags.md",
-      "harness/pstack/claude-code/skills/architect/references/rationale-template.md",
-      "harness/pstack/claude-code/skills/architect/references/runner-prompt.md",
-      "harness/pstack/claude-code/skills/arena/SKILL.md"
+      "harness/pstack/claude-code/docs/harness/claude-code.md"
     ]
   },
   {
@@ -7356,7 +7405,7 @@
     "description": "Spawn N parallel candidates at the same task, pick a base, graft the strongest parts of the losers into it. Use for /arena, 'arena this', 'throw it in the arena', or when one attempt at a non-trivial artifact would lock in the wrong shape.",
     "path": "harness/pstack/claude-code/skills/arena/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/arena",
-    "sha256": "7c5bdb6a838b24a98dd41aaf125d1d99e89d7f7e2ff2898899fa95d1e9552c0b",
+    "sha256": "064dc62bb5ffa4fcd050d20ff487dfaf5fd15f3700d2d1e2993057c3a907da8d",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md"
     ]
@@ -7368,7 +7417,7 @@
     "description": "Use for \\\"automate me\\\", \\\"create/update/refresh my -mode skill\\\", \\\"turn/capture my preferences or working style into a skill\\\", or wanting agents to follow how the user works. Drafts or revises a personal -mode skill via create-skill + unslop, optionally pulling fresh evidence from recent transcripts.",
     "path": "harness/pstack/claude-code/skills/automate-me/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/automate-me",
-    "sha256": "0849f9835a8a66bb4e1ef510eabe480562319f94bd89264d67dcf20133f4c73d",
+    "sha256": "f3f7df05694ecd5b916b7fb008d97214ab8de977bcd46ec4461e6bdddbc5b9ff",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md"
     ]
@@ -7380,7 +7429,7 @@
     "description": "Vet a perf measurement (limiter, tuning, limits, errors, repeatability, relevance, and whether the work happened) before you report or act on it. Use when you run a benchmark or report a speedup or regression you measured.",
     "path": "harness/pstack/claude-code/skills/benchmark-checklist/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/benchmark-checklist",
-    "sha256": "ba109e96c8f6c1c391baccf19e5d11e14370df7b3f2605e1572cd565a6c0fca0",
+    "sha256": "5efd79495e3eebf3b53814861330fe812458212958f8f009492e866c329161f6",
     "linked_local_files": []
   },
   {
@@ -7476,7 +7525,7 @@
     "description": "Design an auditable playbook when no narrower one fits: a large migration, an ambitious multi-part change, or work a human reviews after stepping away. Scales rigor to the task, runs a hypothesis loop, and logs decisions. Use for /figure-it-out or 'figure it out'.",
     "path": "harness/pstack/claude-code/skills/figure-it-out/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/figure-it-out",
-    "sha256": "1c0167ba3c88aef79118e90357e465960fea09af291a3c815abfd2dfe6c75126",
+    "sha256": "b4d864df63f3045d064b73616331f66671b5207da6b2a8e35113df6b007435ff",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md"
     ]
@@ -7583,7 +7632,7 @@
     "description": "Spawn Comment Sicko, fix accepted findings, and offer encodings for claimed constraints.",
     "path": "harness/pstack/claude-code/skills/no-comments/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/no-comments",
-    "sha256": "ab4c6ec6dd7512227c87d818bf6593e71249dbf51d2ce251d80d082f8ebaad74",
+    "sha256": "bf4ed029ba60cd34e7f068079fd3e16a686a8c2b4cafeef26d0a77831bd22142",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md"
     ]
@@ -7595,7 +7644,7 @@
     "description": "Guides users through pstack setup, /poteto-mode, and picking the skill, playbook, or principle for a task. Type /poteto-help with a question.",
     "path": "harness/pstack/claude-code/skills/poteto-help/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/poteto-help",
-    "sha256": "7c86a6ab9324a29092a34919044f88d37e032e2e9a71fdc94488e81725d27e56",
+    "sha256": "929c228757b2c11836a86525898be3d6fcf1803e2da4240615a0c1f67c028fe2",
     "linked_local_files": [
       "harness/pstack/claude-code/README.md",
       "harness/pstack/claude-code/agents/comment-sicko.md",
@@ -7619,9 +7668,6 @@
       "harness/pstack/claude-code/docs/guide/images/verification.jpg",
       "harness/pstack/claude-code/docs/harness/claude-code.md",
       "harness/pstack/claude-code/skills/architect/SKILL.md",
-      "harness/pstack/claude-code/skills/architect/references/design-red-flags.md",
-      "harness/pstack/claude-code/skills/architect/references/rationale-template.md",
-      "harness/pstack/claude-code/skills/architect/references/runner-prompt.md",
       "harness/pstack/claude-code/skills/arena/SKILL.md",
       "harness/pstack/claude-code/skills/automate-me/SKILL.md",
       "harness/pstack/claude-code/skills/benchmark-checklist/SKILL.md",
@@ -7658,7 +7704,6 @@
       "harness/pstack/claude-code/skills/poteto-mode/playbooks/investigation.md",
       "harness/pstack/claude-code/skills/poteto-mode/playbooks/multi-phase-plan.md",
       "harness/pstack/claude-code/skills/poteto-mode/playbooks/opening-a-pr.md",
-      "harness/pstack/claude-code/skills/poteto-mode/playbooks/orchestrate.md",
       "harness/pstack/claude-code/skills/poteto-mode/playbooks/pause-safely.md",
       "harness/pstack/claude-code/skills/poteto-mode/playbooks/perf-issue.md",
       "harness/pstack/claude-code/skills/poteto-mode/playbooks/prototype.md",
@@ -7670,6 +7715,7 @@
       "harness/pstack/claude-code/skills/poteto-mode/playbooks/visual-parity.md",
       "harness/pstack/claude-code/skills/poteto-mode/playbooks/worktree-cleanup.md",
       "harness/pstack/claude-code/skills/poteto-mode/references/bugbot-triage.md",
+      "harness/pstack/claude-code/skills/poteto-mode/worker.md",
       "harness/pstack/claude-code/skills/principle-attack-the-premise/SKILL.md",
       "harness/pstack/claude-code/skills/principle-boundary-discipline/SKILL.md",
       "harness/pstack/claude-code/skills/principle-build-the-lever/SKILL.md",
@@ -7696,10 +7742,6 @@
       "harness/pstack/claude-code/skills/principle-type-system-discipline/SKILL.md",
       "harness/pstack/claude-code/skills/recall/SKILL.md",
       "harness/pstack/claude-code/skills/reflect/SKILL.md",
-      "harness/pstack/claude-code/skills/reflect/references/divergent-reviewer.md",
-      "harness/pstack/claude-code/skills/reflect/references/judgment-reviewer.md",
-      "harness/pstack/claude-code/skills/reflect/references/synthesizer.md",
-      "harness/pstack/claude-code/skills/reflect/references/tooling-reviewer.md",
       "harness/pstack/claude-code/skills/setup-pstack/SKILL.md",
       "harness/pstack/claude-code/skills/sharpen/SKILL.md",
       "harness/pstack/claude-code/skills/show-me-your-work/SKILL.md",
@@ -7741,14 +7783,7 @@
       "harness/pstack/claude-code/skills/typescript-best-practices/SKILL.md",
       "harness/pstack/claude-code/skills/typescript-best-practices/references/patterns.md",
       "harness/pstack/claude-code/skills/unslop/SKILL.md",
-      "harness/pstack/claude-code/skills/why/SKILL.md",
-      "pstack/skills/interrogate/SKILL.md",
-      "pstack/skills/poteto-mode/playbooks/opening-a-pr.md",
-      "pstack/skills/poteto-mode/scripts/check-plan.mjs",
-      "pstack/skills/show-me-your-work/SKILL.md",
-      "pstack/skills/show-me-your-work/references/decision-log-template.tsv",
-      "pstack/skills/show-me-your-work/scripts/log.sh",
-      "pstack/skills/swarm/SKILL.md"
+      "harness/pstack/claude-code/skills/why/SKILL.md"
     ]
   },
   {
@@ -7758,24 +7793,34 @@
     "description": "poteto's agent style for concise, detailed responses, deliberate subagents, unslopped prose, simple code, and verified work. Use for poteto, /poteto-mode, or requests to work in this style.",
     "path": "harness/pstack/claude-code/skills/poteto-mode/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/poteto-mode",
-    "sha256": "f41c347f1e5f9e1704cde688715f5d275daf9ed3a276f35d81535015a2da70ad",
+    "sha256": "9fa7b2ea5b6164064199439f7a03c291f1a1a6f4cd24dfeb2b4eaebf2bf56f48",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md",
       "harness/pstack/claude-code/skills/poteto-mode/playbooks/authoring-a-skill.md",
+      "harness/pstack/claude-code/skills/poteto-mode/playbooks/autonomous-run.md",
       "harness/pstack/claude-code/skills/poteto-mode/playbooks/autopilot-full.md",
       "harness/pstack/claude-code/skills/poteto-mode/playbooks/autopilot-stack.md",
       "harness/pstack/claude-code/skills/poteto-mode/playbooks/babysit.md",
+      "harness/pstack/claude-code/skills/poteto-mode/playbooks/bug-fix.md",
+      "harness/pstack/claude-code/skills/poteto-mode/playbooks/eval.md",
+      "harness/pstack/claude-code/skills/poteto-mode/playbooks/feature.md",
+      "harness/pstack/claude-code/skills/poteto-mode/playbooks/hillclimb.md",
+      "harness/pstack/claude-code/skills/poteto-mode/playbooks/investigation.md",
       "harness/pstack/claude-code/skills/poteto-mode/playbooks/multi-phase-plan.md",
       "harness/pstack/claude-code/skills/poteto-mode/playbooks/opening-a-pr.md",
-      "harness/pstack/claude-code/skills/poteto-mode/playbooks/orchestrate.md",
+      "harness/pstack/claude-code/skills/poteto-mode/playbooks/pause-safely.md",
+      "harness/pstack/claude-code/skills/poteto-mode/playbooks/perf-issue.md",
       "harness/pstack/claude-code/skills/poteto-mode/playbooks/prototype.md",
+      "harness/pstack/claude-code/skills/poteto-mode/playbooks/refactoring.md",
+      "harness/pstack/claude-code/skills/poteto-mode/playbooks/runtime-forensics.md",
+      "harness/pstack/claude-code/skills/poteto-mode/playbooks/session-pickup.md",
       "harness/pstack/claude-code/skills/poteto-mode/playbooks/shipping.md",
+      "harness/pstack/claude-code/skills/poteto-mode/playbooks/trace-forensics.md",
+      "harness/pstack/claude-code/skills/poteto-mode/playbooks/visual-parity.md",
       "harness/pstack/claude-code/skills/poteto-mode/playbooks/worktree-cleanup.md",
       "harness/pstack/claude-code/skills/poteto-mode/references/bugbot-triage.md",
       "harness/pstack/claude-code/skills/poteto-mode/scripts/bootstrap.ts",
       "harness/pstack/claude-code/skills/poteto-mode/scripts/bun.lock",
-      "harness/pstack/claude-code/skills/poteto-mode/scripts/check-plan.mjs",
-      "harness/pstack/claude-code/skills/poteto-mode/scripts/check-plan.test.ts",
       "harness/pstack/claude-code/skills/poteto-mode/scripts/package.json",
       "harness/pstack/claude-code/skills/poteto-mode/scripts/watch-pr/cli.ts",
       "harness/pstack/claude-code/skills/poteto-mode/scripts/watch-pr/github.ts",
@@ -7784,14 +7829,7 @@
       "harness/pstack/claude-code/skills/poteto-mode/scripts/watch-pr/tsconfig.json",
       "harness/pstack/claude-code/skills/poteto-mode/scripts/watch-pr/types.ts",
       "harness/pstack/claude-code/skills/poteto-mode/scripts/watch-pr/watch-pr",
-      "harness/pstack/claude-code/skills/poteto-mode/scripts/worktree-audit.sh",
-      "pstack/skills/interrogate/SKILL.md",
-      "pstack/skills/poteto-mode/playbooks/opening-a-pr.md",
-      "pstack/skills/poteto-mode/scripts/check-plan.mjs",
-      "pstack/skills/show-me-your-work/SKILL.md",
-      "pstack/skills/show-me-your-work/references/decision-log-template.tsv",
-      "pstack/skills/show-me-your-work/scripts/log.sh",
-      "pstack/skills/swarm/SKILL.md"
+      "harness/pstack/claude-code/skills/poteto-mode/scripts/worktree-audit.sh"
     ]
   },
   {
@@ -7801,16 +7839,8 @@
     "description": "Apply when two or more fixes that share one premise have failed the same gate. Write the premise down and test it directly before you write another fix that assumes it.",
     "path": "harness/pstack/claude-code/skills/principle-attack-the-premise/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/principle-attack-the-premise",
-    "sha256": "6a932884daad4aa189e9b5d1665226bbc75621d4d2a398fd4003bebd382f4599",
-    "linked_local_files": [
-      "harness/pstack/claude-code/docs/harness/claude-code.md",
-      "harness/pstack/claude-code/skills/principle-build-the-lever/SKILL.md",
-      "harness/pstack/claude-code/skills/principle-encode-lessons-in-structure/SKILL.md",
-      "harness/pstack/claude-code/skills/principle-fix-root-causes/SKILL.md",
-      "harness/pstack/claude-code/skills/principle-laziness-protocol/SKILL.md",
-      "harness/pstack/claude-code/skills/principle-prove-it-works/SKILL.md",
-      "harness/pstack/claude-code/skills/principle-redesign-from-first-principles/SKILL.md"
-    ]
+    "sha256": "831e916c540f4b6b720b7472aeea6e6ef93996655e36cc2517221f6f2081b480",
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -7819,7 +7849,7 @@
     "description": "Apply when wiring validation, error handling, or framework adapters. Concentrate guards at system boundaries (CLI, config, network, external APIs); trust internal types and keep business logic in pure functions.",
     "path": "harness/pstack/claude-code/skills/principle-boundary-discipline/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/principle-boundary-discipline",
-    "sha256": "62ac2862c2caa22dd14531f51c9c6bb445ceb198ca98a687e25b4d47c1f10a28",
+    "sha256": "c02c26cca3906bfd57829535f8fa7ee9e00df037b4dbb24e5f85ec9e12710b48",
     "linked_local_files": []
   },
   {
@@ -7829,13 +7859,8 @@
     "description": "Apply to any non-trivial work, not just bulk work: edits, migrations, analyses, checks. Build the tool that does it or proves it (codemod, script, generator, or a skill your subagents follow) instead of working by hand. The tool is the artifact a reviewer can rerun.",
     "path": "harness/pstack/claude-code/skills/principle-build-the-lever/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/principle-build-the-lever",
-    "sha256": "3434b0ad0c640c6f1d7960be7a8986c3bcdc14e26060360dec29903df60074ff",
-    "linked_local_files": [
-      "harness/pstack/claude-code/docs/harness/claude-code.md",
-      "harness/pstack/claude-code/skills/principle-encode-lessons-in-structure/SKILL.md",
-      "harness/pstack/claude-code/skills/principle-laziness-protocol/SKILL.md",
-      "harness/pstack/claude-code/skills/principle-prove-it-works/SKILL.md"
-    ]
+    "sha256": "753d81cf9ca2a4e9d1f057429f0c63c9c622e6022dd877ec97ec15f442076aac",
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -7874,11 +7899,9 @@
     "description": "Apply before you measure, and before you trust, report, or act on a number you measured: a speedup, a regression, a throughput, a latency, or an eval result. Find what limits it, and rule out that it measured something other than the work you think.",
     "path": "harness/pstack/claude-code/skills/principle-explain-the-number/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/principle-explain-the-number",
-    "sha256": "3c84fbf9a7d9842abcfcd134010782b32092ac3d3fb4aaf9ed5732dca83aa58c",
+    "sha256": "e6a3f00991f4949cf18a0b5c77dd3126ca4402b8553f88c9c7905e577512676e",
     "linked_local_files": [
-      "harness/pstack/claude-code/docs/harness/claude-code.md",
-      "harness/pstack/claude-code/skills/benchmark-checklist/SKILL.md",
-      "harness/pstack/claude-code/skills/principle-prove-it-works/SKILL.md"
+      "harness/pstack/claude-code/skills/benchmark-checklist/SKILL.md"
     ]
   },
   {
@@ -7888,7 +7911,7 @@
     "description": "Apply when debugging. Trace each symptom back to the first place the system went wrong and fix it there. A guard is a fix only when the state it handles is legitimate.",
     "path": "harness/pstack/claude-code/skills/principle-fix-root-causes/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/principle-fix-root-causes",
-    "sha256": "8df3c8c3fe57eb0055a5c8efab8ab144557fdf301da70b1cdc77a3a3ef3f3052",
+    "sha256": "79afd7e67d8951203231f6f1ccfc7b4a1f30d8d6cdb68e92755c80012414dbeb",
     "linked_local_files": []
   },
   {
@@ -7898,7 +7921,7 @@
     "description": "Apply before writing logic: choosing core types and data structures, sequencing scaffold-vs-feature work, asking what concurrent actors share. Get the data structures right so downstream code becomes obvious.",
     "path": "harness/pstack/claude-code/skills/principle-foundational-thinking/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/principle-foundational-thinking",
-    "sha256": "864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2",
+    "sha256": "5c63eecf4b83ea5a99eda7a95a96cac0929d2dce7393d7089c83917bc12cf820",
     "linked_local_files": []
   },
   {
@@ -7928,7 +7951,7 @@
     "description": "Apply when designing commands, lifecycle steps, or processing loops that run amid crashes, restarts, and retries. Converge to the same end state regardless of partial prior runs.",
     "path": "harness/pstack/claude-code/skills/principle-make-operations-idempotent/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/principle-make-operations-idempotent",
-    "sha256": "7aa9327cf1f1aa057e95d47a0a78bd88a8f9d556b608866fee939d455a53a019",
+    "sha256": "76ad0a99b6ff2a05a159accfeee48412d62f62774eb8d05bbff26a1f3aa3eab5",
     "linked_local_files": []
   },
   {
@@ -7948,10 +7971,8 @@
     "description": "Apply when reviewing or shaping code that's hard to trace. Count layers between question and answer, and hidden state in the reader's head; collapse one-caller wrappers and shrink mutable scope.",
     "path": "harness/pstack/claude-code/skills/principle-minimize-reader-load/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/principle-minimize-reader-load",
-    "sha256": "1ea2b7fef2391cae5844c4efdbd59031f775e8a52d06b7495d707229a200dcca",
-    "linked_local_files": [
-      "harness/pstack/claude-code/skills/principle-guard-the-context-window/SKILL.md"
-    ]
+    "sha256": "22d27deffb0a3726858d0d4b02d71acd4a3eb4d44e218bc89b66e49dc9823937",
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -7960,7 +7981,7 @@
     "description": "Apply when writing stateful logic, or when code branches a lot or repeats a shape assumption across files.",
     "path": "harness/pstack/claude-code/skills/principle-model-the-domain/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/principle-model-the-domain",
-    "sha256": "52c0d85e0c3827c41c18299b642657d7b47eaf77b7b31609e42e0df42b84c75f",
+    "sha256": "97c6214dc6a18b93177dda6429185a8640878b36ddee6ec9400c23a0eb9be2d8",
     "linked_local_files": []
   },
   {
@@ -7990,10 +8011,8 @@
     "description": "Apply after completing a task, before declaring done. Verify against the real artifact (run the feature, read the actual value, inspect the diff), not a proxy, self-report, or 'it compiles.'",
     "path": "harness/pstack/claude-code/skills/principle-prove-it-works/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/principle-prove-it-works",
-    "sha256": "d3912cce868a276ce611eb08178311958e5df929b0a4e5340f1afa4774be81f2",
-    "linked_local_files": [
-      "harness/pstack/claude-code/docs/harness/claude-code.md"
-    ]
+    "sha256": "3d6c482e341974cfcb8d19ebf66fb1d4274d8673af35e36d3c231a6aa9e03f25",
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -8012,7 +8031,7 @@
     "description": "Apply when concurrent actors might write to the same file, branch, key, or state object. Eliminate the sharing first; serialize structurally only when one shared writer is a real invariant.",
     "path": "harness/pstack/claude-code/skills/principle-separate-before-serializing-shared-state/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/principle-separate-before-serializing-shared-state",
-    "sha256": "05294b40448e927c5da1c7b6f5c6b9fed3744637e3833d2d948b9154a9dd00bb",
+    "sha256": "2e5625d686b657e0b607c329fd8043bf50261b808239308fe4c6776e2817e95a",
     "linked_local_files": []
   },
   {
@@ -8022,7 +8041,7 @@
     "description": "Apply to multi-step work (sweeps, migrations, runs of similar edits) and to how you stack commits and PRs. Break work into small units that each end in a verifiable state, check each before the next, and order delivery so the sequence proves itself to a reviewer.",
     "path": "harness/pstack/claude-code/skills/principle-sequence-verifiable-units/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/principle-sequence-verifiable-units",
-    "sha256": "2ccbbacc56ace5afdfb8670cef19d7bd009fb2a0033b9a741cbdf2b6baf72187",
+    "sha256": "ab0cc331cf317c07bb0ed6dd13ee9f618338b36e4e851521977bc5c4a8d429e1",
     "linked_local_files": []
   },
   {
@@ -8042,7 +8061,7 @@
     "description": "Apply when you write, change, or keep a test. Assert what the code's users can observe, so that the test fails when that behavior breaks and keeps passing when only the internals change.",
     "path": "harness/pstack/claude-code/skills/principle-test-behavior-not-implementation/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/principle-test-behavior-not-implementation",
-    "sha256": "f7223698623b6a26fea49c751e466b38e6691b1f32ce841d3983e7ffbe2b74a6",
+    "sha256": "42afc1a2c7176363b6410cfde06a9fd3e96f5022ba86bdb8de4838ad65c2442d",
     "linked_local_files": []
   },
   {
@@ -8052,8 +8071,10 @@
     "description": "Apply when designing types, reviewing a function signature, or writing code in any statically-typed language. Make illegal states unrepresentable, brand semantic primitives, parse external data at boundaries, exhaust variants, derive from authoritative schemas.",
     "path": "harness/pstack/claude-code/skills/principle-type-system-discipline/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/principle-type-system-discipline",
-    "sha256": "5cdaf79785e3c12b2592b9469ee8c272143eb86ab7a18d8382197cea5fd30106",
-    "linked_local_files": []
+    "sha256": "8ccf6a8f4fd5ff948280dae49e24dca1232e5bc952b3262bfb800d54716aa7c5",
+    "linked_local_files": [
+      "harness/pstack/claude-code/docs/harness/claude-code.md"
+    ]
   },
   {
     "source_repo": "cursor/plugins",
@@ -8062,7 +8083,7 @@
     "description": "Reconstruct your recent working context from your own chat history, live state, and the shared record (user reports, prior fixes, incidents), then hand back a tight current-state brief. Use for 'recall my work on X', 'catch me up', 'what have I been working on', 'where did I leave off', before starting or resuming work.",
     "path": "harness/pstack/claude-code/skills/recall/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/recall",
-    "sha256": "fad599597156643e247606cc6fbeee323e5e91202e6d464e8f14f8e10ad23264",
+    "sha256": "505e9493a26cdc9d31d6aeac95f9f6661586853db21b23759bda2653a8a06e28",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md"
     ]
@@ -8071,16 +8092,12 @@
     "source_repo": "cursor/plugins",
     "repo_key": "cursor__plugins",
     "skill_name": "reflect",
-    "description": "Spawn three parallel review subagents over the active transcript, surface learnings, and route each to a concrete edit on an existing skill. Use when the user says reflect.",
+    "description": "Mine the active transcript for durable learnings and route each to a concrete edit on an existing skill. Use when the user says reflect.",
     "path": "harness/pstack/claude-code/skills/reflect/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/reflect",
-    "sha256": "689529f795cc466ec8507abc64cd5796dd3c773c16d21838b4fcf29a0b1581e4",
+    "sha256": "81118b71e40bdf4bf9075d5c4a0b2240b1ed19e1eccf114a295083acfc331831",
     "linked_local_files": [
-      "harness/pstack/claude-code/docs/harness/claude-code.md",
-      "harness/pstack/claude-code/skills/reflect/references/divergent-reviewer.md",
-      "harness/pstack/claude-code/skills/reflect/references/judgment-reviewer.md",
-      "harness/pstack/claude-code/skills/reflect/references/synthesizer.md",
-      "harness/pstack/claude-code/skills/reflect/references/tooling-reviewer.md"
+      "harness/pstack/claude-code/docs/harness/claude-code.md"
     ]
   },
   {
@@ -8090,7 +8107,7 @@
     "description": "Configure which models pstack uses per role and at what reasoning budget. Detects your available models and writes an always-applied rule that overrides the skill defaults. Use for /setup-pstack, \"configure pstack models\", \"pstack budget\", or changing pstack's model choices.",
     "path": "harness/pstack/claude-code/skills/setup-pstack/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/setup-pstack",
-    "sha256": "d2623ef1447401ce6bd8ed0fa6e435f4f3271c5a569e5118cadde89061d179f8",
+    "sha256": "e34fdd6724899eeaee8d52f936235f6086cedd4f2e980691abaac9eb6c8e95fc",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md"
     ]
@@ -8112,7 +8129,7 @@
     "description": "Keep a reviewable decision trail for long-running or unattended work: a TSV log with one row per decision (what, why, evidence, result). Local by default; commit it when a reviewer needs the trail to trust the result. Use for /show-me-your-work, autonomous or multi-phase runs, or work a human reviews after stepping away.",
     "path": "harness/pstack/claude-code/skills/show-me-your-work/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/show-me-your-work",
-    "sha256": "4936325425064cbbbd1e82a7813cef5593ed8a273671d43ac5b1360de93f880a",
+    "sha256": "9934273a814cd87c0188957fdc2fee806e3e26c547204e7489164357820d3af3",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md",
       "harness/pstack/claude-code/skills/show-me-your-work/references/decision-log-template.tsv",
@@ -8165,7 +8182,7 @@
     "description": "Fan out N parallel workers, drain them, and return one report. Use for /swarm, 'swarm this', or parallel coverage, races, gauntlets, and exploration.",
     "path": "harness/pstack/claude-code/skills/swarm/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/swarm",
-    "sha256": "9de585cfbd6830bf7968c114c5fcacc0afb8fc98333ee4c09c21b290122f28b6",
+    "sha256": "dd30f8ab9c4cce8beb1db6b00f35ab3f3ce4eb14da63792cfd6d72e18236b58f",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md"
     ]
@@ -8199,7 +8216,7 @@
     "description": "Layered technical-writing standard: Di\u00e1taxis structure, Google developer style sentences, STE instruction rules, Global English syntax. Use for /technical-writing or when writing or reviewing docs, RFCs, readmes, PR descriptions, or commit messages.",
     "path": "harness/pstack/claude-code/skills/technical-writing/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/technical-writing",
-    "sha256": "f52de47ccac67a713d5cb5d8bd5dc525ee8f624507d31a804e37efa339038430",
+    "sha256": "a7febc22d493cac7bf26fb4ca2b153ae47f4175886d25f7cc44fd0740956bfa7",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md"
     ]
@@ -8223,7 +8240,7 @@
     "description": "Cut AI tells from any writing.",
     "path": "harness/pstack/claude-code/skills/unslop/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/unslop",
-    "sha256": "ccab208e315ce05e2fab8eeee2f7879f1289b5c6844840b2d307adf31c79144f",
+    "sha256": "2b823fd069e031c1420180be8e0d4f5e2fd25bf2c428049e5c835c59a489b5e0",
     "linked_local_files": []
   },
   {
@@ -8354,13 +8371,8 @@
     "description": "Sketch types, signatures, and module structure before code, then stay in the loop while implementation fills in. Use for /architect, 'architect this', 'design this', or non-trivial work where jumping to code would lock in the wrong shape.",
     "path": "pstack/skills/architect/SKILL.md",
     "relative_directory": "pstack/skills/architect",
-    "sha256": "42be68c2883bd10d867c46930fa11c44a25910b62b85e0c9a40326b4f25d7b6e",
-    "linked_local_files": [
-      "pstack/skills/architect/references/design-red-flags.md",
-      "pstack/skills/architect/references/rationale-template.md",
-      "pstack/skills/architect/references/runner-prompt.md",
-      "pstack/skills/arena/SKILL.md"
-    ]
+    "sha256": "aea83d7aa109eb73402182701b14c289844663ad9c8f959fedbef2df66787ce0",
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -8369,7 +8381,7 @@
     "description": "Spawn N parallel candidates at the same task, pick a base, graft the strongest parts of the losers into it. Use for /arena, 'arena this', 'throw it in the arena', or when one attempt at a non-trivial artifact would lock in the wrong shape.",
     "path": "pstack/skills/arena/SKILL.md",
     "relative_directory": "pstack/skills/arena",
-    "sha256": "2e418753dfc64239e4d6412e7b739196d268e22ef1a4ecfbb8c0498bd3c82636",
+    "sha256": "04f79ee8239251bc0c8a9e92f895ebe7bff42e785a5f6ef8ed2dc34dae18e85d",
     "linked_local_files": []
   },
   {
@@ -8379,7 +8391,7 @@
     "description": "Use for \\\"automate me\\\", \\\"create/update/refresh my -mode skill\\\", \\\"turn/capture my preferences or working style into a skill\\\", or wanting agents to follow how the user works. Drafts or revises a personal -mode skill via create-skill + unslop, optionally pulling fresh evidence from recent transcripts.",
     "path": "pstack/skills/automate-me/SKILL.md",
     "relative_directory": "pstack/skills/automate-me",
-    "sha256": "30b35f3628c4fd8c11af0ada06d14cdc3b28901810caca2480f627d4d21acfbe",
+    "sha256": "ffdb2db6d56b29518f50837d4e5d9194034bb3a767d77eb76efe82351ab1489c",
     "linked_local_files": []
   },
   {
@@ -8389,7 +8401,7 @@
     "description": "Vet a perf measurement (limiter, tuning, limits, errors, repeatability, relevance, and whether the work happened) before you report or act on it. Use when you run a benchmark or report a speedup or regression you measured.",
     "path": "pstack/skills/benchmark-checklist/SKILL.md",
     "relative_directory": "pstack/skills/benchmark-checklist",
-    "sha256": "ba109e96c8f6c1c391baccf19e5d11e14370df7b3f2605e1572cd565a6c0fca0",
+    "sha256": "5efd79495e3eebf3b53814861330fe812458212958f8f009492e866c329161f6",
     "linked_local_files": []
   },
   {
@@ -8483,7 +8495,7 @@
     "description": "Design an auditable playbook when no narrower one fits: a large migration, an ambitious multi-part change, or work a human reviews after stepping away. Scales rigor to the task, runs a hypothesis loop, and logs decisions. Use for /figure-it-out or 'figure it out'.",
     "path": "pstack/skills/figure-it-out/SKILL.md",
     "relative_directory": "pstack/skills/figure-it-out",
-    "sha256": "bdb23cdbd82a1e6af094b495691c832a6f7f3ab9706ba9edbeb664ef51a726e1",
+    "sha256": "30693f2510b111128a6bae0d0ac35f97d972a30c0b84364dc87290b9fdc3b699",
     "linked_local_files": []
   },
   {
@@ -8578,7 +8590,7 @@
     "description": "Spawn Comment Sicko, fix accepted findings, and offer encodings for claimed constraints.",
     "path": "pstack/skills/no-comments/SKILL.md",
     "relative_directory": "pstack/skills/no-comments",
-    "sha256": "9cc934e7541c4db609deeb5fd4e5882c1a4d3956975b5ae1ee693ed340527b9b",
+    "sha256": "054a46f2662c725add02d9e0440d8dcb4351f3bd0afcf797acc22a501b527b54",
     "linked_local_files": []
   },
   {
@@ -8588,7 +8600,7 @@
     "description": "Guides users through pstack setup, /poteto-mode, and picking the skill, playbook, or principle for a task. Type /poteto-help with a question.",
     "path": "pstack/skills/poteto-help/SKILL.md",
     "relative_directory": "pstack/skills/poteto-help",
-    "sha256": "5b14be54fc543b8f282953febc641f19f03919e7f77858347baa6957522f0c51",
+    "sha256": "d6d72057e5cdfa5cebeec88ee50d1ebf8f46f2e64788f5580968a73a16aba08d",
     "linked_local_files": [
       "pstack/README.md",
       "pstack/agents/comment-sicko.md",
@@ -8619,9 +8631,6 @@
       "pstack/docs/guide/images/verification.jpg",
       "pstack/docs/harness/claude-code.md",
       "pstack/skills/architect/SKILL.md",
-      "pstack/skills/architect/references/design-red-flags.md",
-      "pstack/skills/architect/references/rationale-template.md",
-      "pstack/skills/architect/references/runner-prompt.md",
       "pstack/skills/arena/SKILL.md",
       "pstack/skills/automate-me/SKILL.md",
       "pstack/skills/benchmark-checklist/SKILL.md",
@@ -8658,7 +8667,6 @@
       "pstack/skills/poteto-mode/playbooks/investigation.md",
       "pstack/skills/poteto-mode/playbooks/multi-phase-plan.md",
       "pstack/skills/poteto-mode/playbooks/opening-a-pr.md",
-      "pstack/skills/poteto-mode/playbooks/orchestrate.md",
       "pstack/skills/poteto-mode/playbooks/pause-safely.md",
       "pstack/skills/poteto-mode/playbooks/perf-issue.md",
       "pstack/skills/poteto-mode/playbooks/prototype.md",
@@ -8670,7 +8678,7 @@
       "pstack/skills/poteto-mode/playbooks/visual-parity.md",
       "pstack/skills/poteto-mode/playbooks/worktree-cleanup.md",
       "pstack/skills/poteto-mode/references/bugbot-triage.md",
-      "pstack/skills/poteto-mode/scripts/check-plan.mjs",
+      "pstack/skills/poteto-mode/worker.md",
       "pstack/skills/principle-attack-the-premise/SKILL.md",
       "pstack/skills/principle-boundary-discipline/SKILL.md",
       "pstack/skills/principle-build-the-lever/SKILL.md",
@@ -8697,10 +8705,6 @@
       "pstack/skills/principle-type-system-discipline/SKILL.md",
       "pstack/skills/recall/SKILL.md",
       "pstack/skills/reflect/SKILL.md",
-      "pstack/skills/reflect/references/divergent-reviewer.md",
-      "pstack/skills/reflect/references/judgment-reviewer.md",
-      "pstack/skills/reflect/references/synthesizer.md",
-      "pstack/skills/reflect/references/tooling-reviewer.md",
       "pstack/skills/setup-pstack/SKILL.md",
       "pstack/skills/sharpen/SKILL.md",
       "pstack/skills/show-me-your-work/SKILL.md",
@@ -8752,24 +8756,33 @@
     "description": "poteto's agent style for concise, detailed responses, deliberate subagents, unslopped prose, simple code, and verified work. Use for poteto, /poteto-mode, or requests to work in this style.",
     "path": "pstack/skills/poteto-mode/SKILL.md",
     "relative_directory": "pstack/skills/poteto-mode",
-    "sha256": "c1816b328fa174361dfb719f31ecc264991c8f020b0ba971ea79ca223c79c047",
+    "sha256": "67fd2c54fd25ebfae1e46db62c4b2e54f806a7ea9dfb6c83922de37e9b9635ea",
     "linked_local_files": [
-      "pstack/skills/interrogate/SKILL.md",
       "pstack/skills/poteto-mode/playbooks/authoring-a-skill.md",
+      "pstack/skills/poteto-mode/playbooks/autonomous-run.md",
       "pstack/skills/poteto-mode/playbooks/autopilot-full.md",
       "pstack/skills/poteto-mode/playbooks/autopilot-stack.md",
       "pstack/skills/poteto-mode/playbooks/babysit.md",
+      "pstack/skills/poteto-mode/playbooks/bug-fix.md",
+      "pstack/skills/poteto-mode/playbooks/eval.md",
+      "pstack/skills/poteto-mode/playbooks/feature.md",
+      "pstack/skills/poteto-mode/playbooks/hillclimb.md",
+      "pstack/skills/poteto-mode/playbooks/investigation.md",
       "pstack/skills/poteto-mode/playbooks/multi-phase-plan.md",
       "pstack/skills/poteto-mode/playbooks/opening-a-pr.md",
-      "pstack/skills/poteto-mode/playbooks/orchestrate.md",
+      "pstack/skills/poteto-mode/playbooks/pause-safely.md",
+      "pstack/skills/poteto-mode/playbooks/perf-issue.md",
       "pstack/skills/poteto-mode/playbooks/prototype.md",
+      "pstack/skills/poteto-mode/playbooks/refactoring.md",
+      "pstack/skills/poteto-mode/playbooks/runtime-forensics.md",
+      "pstack/skills/poteto-mode/playbooks/session-pickup.md",
       "pstack/skills/poteto-mode/playbooks/shipping.md",
+      "pstack/skills/poteto-mode/playbooks/trace-forensics.md",
+      "pstack/skills/poteto-mode/playbooks/visual-parity.md",
       "pstack/skills/poteto-mode/playbooks/worktree-cleanup.md",
       "pstack/skills/poteto-mode/references/bugbot-triage.md",
       "pstack/skills/poteto-mode/scripts/bootstrap.ts",
       "pstack/skills/poteto-mode/scripts/bun.lock",
-      "pstack/skills/poteto-mode/scripts/check-plan.mjs",
-      "pstack/skills/poteto-mode/scripts/check-plan.test.ts",
       "pstack/skills/poteto-mode/scripts/package.json",
       "pstack/skills/poteto-mode/scripts/watch-pr/cli.ts",
       "pstack/skills/poteto-mode/scripts/watch-pr/github.ts",
@@ -8778,11 +8791,7 @@
       "pstack/skills/poteto-mode/scripts/watch-pr/tsconfig.json",
       "pstack/skills/poteto-mode/scripts/watch-pr/types.ts",
       "pstack/skills/poteto-mode/scripts/watch-pr/watch-pr",
-      "pstack/skills/poteto-mode/scripts/worktree-audit.sh",
-      "pstack/skills/show-me-your-work/SKILL.md",
-      "pstack/skills/show-me-your-work/references/decision-log-template.tsv",
-      "pstack/skills/show-me-your-work/scripts/log.sh",
-      "pstack/skills/swarm/SKILL.md"
+      "pstack/skills/poteto-mode/scripts/worktree-audit.sh"
     ]
   },
   {
@@ -8792,15 +8801,8 @@
     "description": "Apply when two or more fixes that share one premise have failed the same gate. Write the premise down and test it directly before you write another fix that assumes it.",
     "path": "pstack/skills/principle-attack-the-premise/SKILL.md",
     "relative_directory": "pstack/skills/principle-attack-the-premise",
-    "sha256": "6a932884daad4aa189e9b5d1665226bbc75621d4d2a398fd4003bebd382f4599",
-    "linked_local_files": [
-      "pstack/skills/principle-build-the-lever/SKILL.md",
-      "pstack/skills/principle-encode-lessons-in-structure/SKILL.md",
-      "pstack/skills/principle-fix-root-causes/SKILL.md",
-      "pstack/skills/principle-laziness-protocol/SKILL.md",
-      "pstack/skills/principle-prove-it-works/SKILL.md",
-      "pstack/skills/principle-redesign-from-first-principles/SKILL.md"
-    ]
+    "sha256": "831e916c540f4b6b720b7472aeea6e6ef93996655e36cc2517221f6f2081b480",
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -8809,7 +8811,7 @@
     "description": "Apply when wiring validation, error handling, or framework adapters. Concentrate guards at system boundaries (CLI, config, network, external APIs); trust internal types and keep business logic in pure functions.",
     "path": "pstack/skills/principle-boundary-discipline/SKILL.md",
     "relative_directory": "pstack/skills/principle-boundary-discipline",
-    "sha256": "62ac2862c2caa22dd14531f51c9c6bb445ceb198ca98a687e25b4d47c1f10a28",
+    "sha256": "c02c26cca3906bfd57829535f8fa7ee9e00df037b4dbb24e5f85ec9e12710b48",
     "linked_local_files": []
   },
   {
@@ -8819,12 +8821,8 @@
     "description": "Apply to any non-trivial work, not just bulk work: edits, migrations, analyses, checks. Build the tool that does it or proves it (codemod, script, generator, or a skill your subagents follow) instead of working by hand. The tool is the artifact a reviewer can rerun.",
     "path": "pstack/skills/principle-build-the-lever/SKILL.md",
     "relative_directory": "pstack/skills/principle-build-the-lever",
-    "sha256": "3434b0ad0c640c6f1d7960be7a8986c3bcdc14e26060360dec29903df60074ff",
-    "linked_local_files": [
-      "pstack/skills/principle-encode-lessons-in-structure/SKILL.md",
-      "pstack/skills/principle-laziness-protocol/SKILL.md",
-      "pstack/skills/principle-prove-it-works/SKILL.md"
-    ]
+    "sha256": "753d81cf9ca2a4e9d1f057429f0c63c9c622e6022dd877ec97ec15f442076aac",
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -8863,10 +8861,9 @@
     "description": "Apply before you measure, and before you trust, report, or act on a number you measured: a speedup, a regression, a throughput, a latency, or an eval result. Find what limits it, and rule out that it measured something other than the work you think.",
     "path": "pstack/skills/principle-explain-the-number/SKILL.md",
     "relative_directory": "pstack/skills/principle-explain-the-number",
-    "sha256": "3c84fbf9a7d9842abcfcd134010782b32092ac3d3fb4aaf9ed5732dca83aa58c",
+    "sha256": "e6a3f00991f4949cf18a0b5c77dd3126ca4402b8553f88c9c7905e577512676e",
     "linked_local_files": [
-      "pstack/skills/benchmark-checklist/SKILL.md",
-      "pstack/skills/principle-prove-it-works/SKILL.md"
+      "pstack/skills/benchmark-checklist/SKILL.md"
     ]
   },
   {
@@ -8876,7 +8873,7 @@
     "description": "Apply when debugging. Trace each symptom back to the first place the system went wrong and fix it there. A guard is a fix only when the state it handles is legitimate.",
     "path": "pstack/skills/principle-fix-root-causes/SKILL.md",
     "relative_directory": "pstack/skills/principle-fix-root-causes",
-    "sha256": "8df3c8c3fe57eb0055a5c8efab8ab144557fdf301da70b1cdc77a3a3ef3f3052",
+    "sha256": "79afd7e67d8951203231f6f1ccfc7b4a1f30d8d6cdb68e92755c80012414dbeb",
     "linked_local_files": []
   },
   {
@@ -8886,7 +8883,7 @@
     "description": "Apply before writing logic: choosing core types and data structures, sequencing scaffold-vs-feature work, asking what concurrent actors share. Get the data structures right so downstream code becomes obvious.",
     "path": "pstack/skills/principle-foundational-thinking/SKILL.md",
     "relative_directory": "pstack/skills/principle-foundational-thinking",
-    "sha256": "864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2",
+    "sha256": "5c63eecf4b83ea5a99eda7a95a96cac0929d2dce7393d7089c83917bc12cf820",
     "linked_local_files": []
   },
   {
@@ -8916,7 +8913,7 @@
     "description": "Apply when designing commands, lifecycle steps, or processing loops that run amid crashes, restarts, and retries. Converge to the same end state regardless of partial prior runs.",
     "path": "pstack/skills/principle-make-operations-idempotent/SKILL.md",
     "relative_directory": "pstack/skills/principle-make-operations-idempotent",
-    "sha256": "7aa9327cf1f1aa057e95d47a0a78bd88a8f9d556b608866fee939d455a53a019",
+    "sha256": "76ad0a99b6ff2a05a159accfeee48412d62f62774eb8d05bbff26a1f3aa3eab5",
     "linked_local_files": []
   },
   {
@@ -8936,10 +8933,8 @@
     "description": "Apply when reviewing or shaping code that's hard to trace. Count layers between question and answer, and hidden state in the reader's head; collapse one-caller wrappers and shrink mutable scope.",
     "path": "pstack/skills/principle-minimize-reader-load/SKILL.md",
     "relative_directory": "pstack/skills/principle-minimize-reader-load",
-    "sha256": "1ea2b7fef2391cae5844c4efdbd59031f775e8a52d06b7495d707229a200dcca",
-    "linked_local_files": [
-      "pstack/skills/principle-guard-the-context-window/SKILL.md"
-    ]
+    "sha256": "22d27deffb0a3726858d0d4b02d71acd4a3eb4d44e218bc89b66e49dc9823937",
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -8948,7 +8943,7 @@
     "description": "Apply when writing stateful logic, or when code branches a lot or repeats a shape assumption across files.",
     "path": "pstack/skills/principle-model-the-domain/SKILL.md",
     "relative_directory": "pstack/skills/principle-model-the-domain",
-    "sha256": "52c0d85e0c3827c41c18299b642657d7b47eaf77b7b31609e42e0df42b84c75f",
+    "sha256": "97c6214dc6a18b93177dda6429185a8640878b36ddee6ec9400c23a0eb9be2d8",
     "linked_local_files": []
   },
   {
@@ -8978,7 +8973,7 @@
     "description": "Apply after completing a task, before declaring done. Verify against the real artifact (run the feature, read the actual value, inspect the diff), not a proxy, self-report, or 'it compiles.'",
     "path": "pstack/skills/principle-prove-it-works/SKILL.md",
     "relative_directory": "pstack/skills/principle-prove-it-works",
-    "sha256": "ec79a15025bac8d33d62011c54f3b612733fd2a024e623b531b3637aa75070e2",
+    "sha256": "3d6c482e341974cfcb8d19ebf66fb1d4274d8673af35e36d3c231a6aa9e03f25",
     "linked_local_files": []
   },
   {
@@ -8998,7 +8993,7 @@
     "description": "Apply when concurrent actors might write to the same file, branch, key, or state object. Eliminate the sharing first; serialize structurally only when one shared writer is a real invariant.",
     "path": "pstack/skills/principle-separate-before-serializing-shared-state/SKILL.md",
     "relative_directory": "pstack/skills/principle-separate-before-serializing-shared-state",
-    "sha256": "05294b40448e927c5da1c7b6f5c6b9fed3744637e3833d2d948b9154a9dd00bb",
+    "sha256": "2e5625d686b657e0b607c329fd8043bf50261b808239308fe4c6776e2817e95a",
     "linked_local_files": []
   },
   {
@@ -9008,7 +9003,7 @@
     "description": "Apply to multi-step work (sweeps, migrations, runs of similar edits) and to how you stack commits and PRs. Break work into small units that each end in a verifiable state, check each before the next, and order delivery so the sequence proves itself to a reviewer.",
     "path": "pstack/skills/principle-sequence-verifiable-units/SKILL.md",
     "relative_directory": "pstack/skills/principle-sequence-verifiable-units",
-    "sha256": "2ccbbacc56ace5afdfb8670cef19d7bd009fb2a0033b9a741cbdf2b6baf72187",
+    "sha256": "ab0cc331cf317c07bb0ed6dd13ee9f618338b36e4e851521977bc5c4a8d429e1",
     "linked_local_files": []
   },
   {
@@ -9028,7 +9023,7 @@
     "description": "Apply when you write, change, or keep a test. Assert what the code's users can observe, so that the test fails when that behavior breaks and keeps passing when only the internals change.",
     "path": "pstack/skills/principle-test-behavior-not-implementation/SKILL.md",
     "relative_directory": "pstack/skills/principle-test-behavior-not-implementation",
-    "sha256": "f7223698623b6a26fea49c751e466b38e6691b1f32ce841d3983e7ffbe2b74a6",
+    "sha256": "42afc1a2c7176363b6410cfde06a9fd3e96f5022ba86bdb8de4838ad65c2442d",
     "linked_local_files": []
   },
   {
@@ -9038,7 +9033,7 @@
     "description": "Apply when designing types, reviewing a function signature, or writing code in any statically-typed language. Make illegal states unrepresentable, brand semantic primitives, parse external data at boundaries, exhaust variants, derive from authoritative schemas.",
     "path": "pstack/skills/principle-type-system-discipline/SKILL.md",
     "relative_directory": "pstack/skills/principle-type-system-discipline",
-    "sha256": "5cdaf79785e3c12b2592b9469ee8c272143eb86ab7a18d8382197cea5fd30106",
+    "sha256": "9cd1ce345bc9d666c73c64c89c89164217b659aa4c4dde5600cbbe6f6e775461",
     "linked_local_files": []
   },
   {
@@ -9048,23 +9043,18 @@
     "description": "Reconstruct your recent working context from your own chat history, live state, and the shared record (user reports, prior fixes, incidents), then hand back a tight current-state brief. Use for 'recall my work on X', 'catch me up', 'what have I been working on', 'where did I leave off', before starting or resuming work.",
     "path": "pstack/skills/recall/SKILL.md",
     "relative_directory": "pstack/skills/recall",
-    "sha256": "44673475f0523b83db7ea09388562b844ad7f2026f54e7d980f537e33109b1c8",
+    "sha256": "1f4eda450650a7bd3948f44489a94f6c692f6a14ab9ce56ab9ed6f60c50e2258",
     "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
     "repo_key": "cursor__plugins",
     "skill_name": "reflect",
-    "description": "Spawn three parallel review subagents over the active transcript, surface learnings, and route each to a concrete edit on an existing skill. Use when the user says reflect.",
+    "description": "Mine the active transcript for durable learnings and route each to a concrete edit on an existing skill. Use when the user says reflect.",
     "path": "pstack/skills/reflect/SKILL.md",
     "relative_directory": "pstack/skills/reflect",
-    "sha256": "3b78774e9659a516d8ed48616cab34bd3ec771904c63929aa74270da66b99cf0",
-    "linked_local_files": [
-      "pstack/skills/reflect/references/divergent-reviewer.md",
-      "pstack/skills/reflect/references/judgment-reviewer.md",
-      "pstack/skills/reflect/references/synthesizer.md",
-      "pstack/skills/reflect/references/tooling-reviewer.md"
-    ]
+    "sha256": "6f6952f91514dc86257830da93a446c732a1af906f6acd5e5783dc587a29031e",
+    "linked_local_files": []
   },
   {
     "source_repo": "cursor/plugins",
@@ -9073,7 +9063,7 @@
     "description": "Configure which models pstack uses per role and at what reasoning budget. Detects your available models and writes an always-applied rule that overrides the skill defaults. Use for /setup-pstack, \"configure pstack models\", \"pstack budget\", or changing pstack's model choices.",
     "path": "pstack/skills/setup-pstack/SKILL.md",
     "relative_directory": "pstack/skills/setup-pstack",
-    "sha256": "4c53ea532bbfc429833c8cf5480a0fffcd10c3e32bc26256feff3d7ee7c9da85",
+    "sha256": "54ff000a23b5c7e2277be11a0ee1d6a2049a64fb1f59027288cf87ffc8759415",
     "linked_local_files": []
   },
   {
@@ -9093,7 +9083,7 @@
     "description": "Keep a reviewable decision trail for long-running or unattended work: a TSV log with one row per decision (what, why, evidence, result). Local by default; commit it when a reviewer needs the trail to trust the result. Use for /show-me-your-work, autonomous or multi-phase runs, or work a human reviews after stepping away.",
     "path": "pstack/skills/show-me-your-work/SKILL.md",
     "relative_directory": "pstack/skills/show-me-your-work",
-    "sha256": "920a8217cbb62f92a2222fb81fc9eab17ecd554a0277e444a95a927195139bd1",
+    "sha256": "ec29326ac20515f2941198205bec615320a55b21659692e19650530dbf217bde",
     "linked_local_files": [
       "pstack/skills/show-me-your-work/references/decision-log-template.tsv",
       "pstack/skills/show-me-your-work/scripts/log.sh"
@@ -9145,7 +9135,7 @@
     "description": "Fan out N parallel workers, drain them, and return one report. Use for /swarm, 'swarm this', or parallel coverage, races, gauntlets, and exploration.",
     "path": "pstack/skills/swarm/SKILL.md",
     "relative_directory": "pstack/skills/swarm",
-    "sha256": "411f9d1a29a8a6f59b7bfcd4726330ddb62c4c1298ebf53d5773d82703701038",
+    "sha256": "8558089df5320e4ddf61126ca3d638404341584c8307dd6d20f8984e5ae3bbd1",
     "linked_local_files": []
   },
   {
@@ -9175,7 +9165,7 @@
     "description": "Layered technical-writing standard: Di\u00e1taxis structure, Google developer style sentences, STE instruction rules, Global English syntax. Use for /technical-writing or when writing or reviewing docs, RFCs, readmes, PR descriptions, or commit messages.",
     "path": "pstack/skills/technical-writing/SKILL.md",
     "relative_directory": "pstack/skills/technical-writing",
-    "sha256": "61fe9c424a798ebf36ad94941f87be049cb8827bdf86d21474a0dde37b513c43",
+    "sha256": "0a620885599cdde5a0a31fa39878144c10f61c894b56bf4a9ff779496e718b14",
     "linked_local_files": []
   },
   {
@@ -9197,7 +9187,7 @@
     "description": "Cut AI tells from any writing.",
     "path": "pstack/skills/unslop/SKILL.md",
     "relative_directory": "pstack/skills/unslop",
-    "sha256": "ccab208e315ce05e2fab8eeee2f7879f1289b5c6844840b2d307adf31c79144f",
+    "sha256": "2b823fd069e031c1420180be8e0d4f5e2fd25bf2c428049e5c835c59a489b5e0",
     "linked_local_files": []
   },
   {
@@ -9586,13 +9576,37 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "ecc-contribution-review",
+    "description": "Prepare an ECC skill contribution for review by organizing repository, install-surface, cross-harness, validation, security, and commit observations into a local proposal. Use when preparing a skill contribution for review.",
+    "path": ".agents/skills/ecc-contribution-review/SKILL.md",
+    "relative_directory": ".agents/skills/ecc-contribution-review",
+    "sha256": "b605804d0a63308851099d9ba88df53685397b39c52278b021131651315d84a3",
+    "linked_local_files": [
+      ".agents/skills/ecc-contribution-review/docs/DESIGN.md",
+      ".agents/skills/ecc-contribution-review/docs/WORKFLOW.md",
+      ".agents/skills/ecc-contribution-review/references/contribution-review-contract.md",
+      "skills/ecc-contribution-review/scripts/compile_contribution_review.py",
+      "skills/ecc-contribution-review/scripts/contribution_review_validation.py",
+      "skills/ecc-contribution-review/templates/contribution-review-observation.json"
+    ]
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "ecc-conventions",
     "description": "Development conventions and patterns for ECC. JavaScript project with conventional commits.",
     "path": ".agents/skills/ecc-conventions/SKILL.md",
     "relative_directory": ".agents/skills/ecc-conventions",
-    "sha256": "d52acc0f98017c9de571520f1f4877394309cac181a4048e48dbd924ff77d6b9",
+    "sha256": "2a0289661bc8a5c06edc57066bb4fabbb4533424c3e5cc6c258920ce10a2cfeb",
     "linked_local_files": [
-      ".agents/skills/ecc-conventions/agents/openai.yaml"
+      ".agents/skills/ecc-conventions/agents/openai.yaml",
+      "skills/ecc-contribution-review/SKILL.md",
+      "skills/ecc-contribution-review/docs/DESIGN.md",
+      "skills/ecc-contribution-review/docs/WORKFLOW.md",
+      "skills/ecc-contribution-review/references/contribution-review-contract.md",
+      "skills/ecc-contribution-review/scripts/compile_contribution_review.py",
+      "skills/ecc-contribution-review/scripts/contribution_review_validation.py",
+      "skills/ecc-contribution-review/templates/contribution-review-observation.json"
     ]
   },
   {
@@ -9761,10 +9775,10 @@
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
     "skill_name": "security-review",
-    "description": "Use this skill when adding authentication, handling user input, working with secrets, creating API endpoints, or implementing payment/sensitive features. Provides comprehensive security checklist and patterns.",
+    "description": "Security review checklist and patterns for adding authentication, handling user input, managing secrets, creating API endpoints, or implementing payment and sensitive features.",
     "path": ".agents/skills/security-review/SKILL.md",
     "relative_directory": ".agents/skills/security-review",
-    "sha256": "81d7a4cbf8509963539cbe2e3d3ecbde33077d9fa63bc7c8f6d09e7eb7531743",
+    "sha256": "74c3b032e7adb64ddac5bfd5bd90366447661d3000b1ebc89b54254398a7132c",
     "linked_local_files": []
   },
   {
@@ -9890,6 +9904,23 @@
     "relative_directory": ".cursor/skills/documentation-lookup",
     "sha256": "89cc655f72a5e3a947e88b7bae419c068f9ea34101b3fc9e7129184432b507cd",
     "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "ecc-contribution-review",
+    "description": "Prepare an ECC skill contribution for review by organizing repository, install-surface, cross-harness, validation, security, and commit observations into a local proposal. Use when preparing a skill contribution for review.",
+    "path": ".cursor/skills/ecc-contribution-review/SKILL.md",
+    "relative_directory": ".cursor/skills/ecc-contribution-review",
+    "sha256": "b605804d0a63308851099d9ba88df53685397b39c52278b021131651315d84a3",
+    "linked_local_files": [
+      ".cursor/skills/ecc-contribution-review/docs/DESIGN.md",
+      ".cursor/skills/ecc-contribution-review/docs/WORKFLOW.md",
+      ".cursor/skills/ecc-contribution-review/references/contribution-review-contract.md",
+      "skills/ecc-contribution-review/scripts/compile_contribution_review.py",
+      "skills/ecc-contribution-review/scripts/contribution_review_validation.py",
+      "skills/ecc-contribution-review/templates/contribution-review-observation.json"
+    ]
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -10060,8 +10091,11 @@
     "description": ">",
     "path": ".kiro/skills/database-migrations/SKILL.md",
     "relative_directory": ".kiro/skills/database-migrations",
-    "sha256": "1f02085fdd98f60ba93d3d2445a462c194e107435aba2b63bca9628bc406e43c",
-    "linked_local_files": []
+    "sha256": "a8f8758a88c2016b33f5668f62517dde9ce1acd110df008ffd6814a56a0bcdc3",
+    "linked_local_files": [
+      ".kiro/skills/database-migrations/examples/postgres-add-column.sql",
+      ".kiro/skills/database-migrations/examples/postgres-column-rename.sql"
+    ]
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -10342,7 +10376,7 @@
     "description": ">",
     "path": ".kiro/skills/security-review/SKILL.md",
     "relative_directory": ".kiro/skills/security-review",
-    "sha256": "785b1c2de178f3f3a926d062075487cd5a4159b4529bd85f2e893d4ea2fbe053",
+    "sha256": "563a99523d98c7e35bf362c90be141878397d980a8097a66905e83e08887e98d",
     "linked_local_files": []
   },
   {
@@ -10855,7 +10889,7 @@
     "description": "\u30bf\u30b9\u30af\u3054\u3068\u306e\u30d0\u30b8\u30a7\u30c3\u30c8\u3001\u652f\u51fa\u30b3\u30f3\u30c8\u30ed\u30fc\u30eb\u3001\u30ce\u30f3\u30ab\u30b9\u30c8\u30c7\u30a3\u30a2\u30eb\u30a6\u30a9\u30ec\u30c3\u30c8\u3092\u5099\u3048\u305f x402 \u6c7a\u6e08\u5b9f\u884c\u3092 AI \u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u306b\u8ffd\u52a0\u3057\u307e\u3059\u3002agentwallet-sdk \u3092\u901a\u3058\u3066 Base \u3092\u3001OKX Payments / OKX \u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u6c7a\u6e08\u30d7\u30ed\u30c8\u30b3\u30eb\u3092\u901a\u3058\u3066 X Layer \u3092\u3001\u30a2\u30c3\u30d7\u30b9\u30c8\u30ea\u30fc\u30e0\u306e x402 \u30d1\u30c3\u30b1\u30fc\u30b8\u3068\u30d5\u30a1\u30b7\u30ea\u30c6\u30fc\u30bf\u30fc\u30d9\u30fc\u30b9\u306e\u6c7a\u6e08\u3092\u901a\u3058\u3066 Solana \u3068\u30de\u30eb\u30c1\u30cd\u30c3\u30c8\u30ef\u30fc\u30af EVM \u3092\u30b5\u30dd\u30fc\u30c8\u3057\u307e\u3059\u3002",
     "path": "docs/ja-JP/skills/agent-payment-x402/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/agent-payment-x402",
-    "sha256": "8b1ca20888e3bf95663621297e86261b2337fbf8ccba416a4f0cbcc240a3d644",
+    "sha256": "194fba741fd357fe2e6bad730dbccdbd744f49d6bb9af8c825d38039a420614e",
     "linked_local_files": []
   },
   {
@@ -11134,16 +11168,6 @@
     "path": "docs/ja-JP/skills/ck/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/ck",
     "sha256": "430224f40a0d4daa5ed72cfedc13bb1877f369695372283ded7b36e1d924150c",
-    "linked_local_files": []
-  },
-  {
-    "source_repo": "affaan-m/ECC",
-    "repo_key": "affaan-m__ECC",
-    "skill_name": "claude-devfleet",
-    "description": "Claude DevFleet\u7d4c\u7531\u3067\u30de\u30eb\u30c1\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u30bf\u30b9\u30af\u3092\u30aa\u30fc\u30b1\u30b9\u30c8\u30ec\u30fc\u30b7\u30e7\u30f3 \u2014 \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u3092\u8a08\u753b\u3057\u3001\u5206\u96e2\u3055\u308c\u305f\u4f5c\u696d\u30c4\u30ea\u30fc\u5185\u3067\u5e73\u884c\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u3092\u6d3e\u9063\u3057\u3001\u9032\u6357\u3092\u76e3\u8996\u3057\u3001\u69cb\u9020\u5316\u30ec\u30dd\u30fc\u30c8\u3092\u8aad\u3080\u3002",
-    "path": "docs/ja-JP/skills/claude-devfleet/SKILL.md",
-    "relative_directory": "docs/ja-JP/skills/claude-devfleet",
-    "sha256": "fb9a9f2ef8d41a5277e913d8f05aaf68179dcfc9cdf28f32238cf9644b1eb521",
     "linked_local_files": []
   },
   {
@@ -11459,6 +11483,16 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "devfleet",
+    "description": "Claude DevFleet\u7d4c\u7531\u3067\u30de\u30eb\u30c1\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0\u30bf\u30b9\u30af\u3092\u30aa\u30fc\u30b1\u30b9\u30c8\u30ec\u30fc\u30b7\u30e7\u30f3 \u2014 \u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u3092\u8a08\u753b\u3057\u3001\u5206\u96e2\u3055\u308c\u305f\u4f5c\u696d\u30c4\u30ea\u30fc\u5185\u3067\u5e73\u884c\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u3092\u6d3e\u9063\u3057\u3001\u9032\u6357\u3092\u76e3\u8996\u3057\u3001\u69cb\u9020\u5316\u30ec\u30dd\u30fc\u30c8\u3092\u8aad\u3080\u3002",
+    "path": "docs/ja-JP/skills/devfleet/SKILL.md",
+    "relative_directory": "docs/ja-JP/skills/devfleet",
+    "sha256": "a218a5b69a6521e3b1662bff5c508cfc19a92b91654848598fe327adca6f16bd",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "django-celery",
     "description": "Django\u304a\u3088\u3073Celery\u3092\u4f7f\u7528\u3057\u305f\u975e\u540c\u671f\u30bf\u30b9\u30af\u51e6\u7406\u3002\u30bf\u30b9\u30af\u30ad\u30e5\u30fc\u30a4\u30f3\u30b0\u3001\u30ef\u30fc\u30ab\u30fc\u7ba1\u7406\u3001\u30a8\u30e9\u30fc\u51e6\u7406\u3001\u30b9\u30b1\u30b8\u30e5\u30fc\u30ea\u30f3\u30b0\u3002Redis/RabbitMQ \u30d6\u30ed\u30fc\u30ab\u30fc\u7d71\u5408\u3002",
     "path": "docs/ja-JP/skills/django-celery/SKILL.md",
@@ -11573,7 +11607,7 @@
     "description": "ECC \u30c4\u30fc\u30eb\u3001\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u3001\u30b9\u30ad\u30eb\u3001\u304a\u3088\u3073\u5b9f\u88c5\u306e\u30b3\u30b9\u30c8\u76e3\u67fb\u3092\u5b9f\u65bd\u3057\u307e\u3059\u3002\u30d7\u30ed\u30f3\u30d7\u30c8\u5165\u529b\u30c8\u30fc\u30af\u30f3\u3092\u5206\u6790\u3057\u3066\u3001\u8a08\u7b97\u52b9\u7387\u3092\u5b9a\u91cf\u5316\u3057\u307e\u3059\u3002",
     "path": "docs/ja-JP/skills/ecc-tools-cost-audit/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/ecc-tools-cost-audit",
-    "sha256": "0230b64b878669477a7ea4a348dcdc398b760b2be7fe96439caf623efabdfd87",
+    "sha256": "51403b2a1e279e683345c8ad0449314f04bfac029e205f7048fd880802f904d9",
     "linked_local_files": []
   },
   {
@@ -11765,7 +11799,7 @@
     "description": "API\u3001\u30a8\u30fc\u30b8\u30a7\u30f3\u30c8\u3001\u304a\u3088\u3073LLM\u30a8\u30f3\u30c9\u30dd\u30a4\u30f3\u30c8\u306e\u30a2\u30af\u30bb\u30b9\u5236\u5fa1\u3068\u8a8d\u53ef\u30d1\u30bf\u30fc\u30f3\u3002",
     "path": "docs/ja-JP/skills/gateguard/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/gateguard",
-    "sha256": "a888b06883e6365e25d086fb22bbbcb1700f8599f9c663990da7416c6ad69aa2",
+    "sha256": "03fcd4de24dee7de9c8d607d8280a0a9f3dcfd7a72894e43b2069a4c62e4bb58",
     "linked_local_files": []
   },
   {
@@ -12385,8 +12419,15 @@
     "description": "\u4e3a OpenClaw AI Agent \u953b\u9020\u5b8c\u6574\u7684\u9f99\u867e\u7075\u9b42\u65b9\u6848\u3002\u6839\u636e\u7528\u6237\u504f\u597d\u6216\u968f\u673a\u62bd\u5361\uff0c \u8f93\u51fa\u8eab\u4efd\u5b9a\u4f4d\u3001\u7075\u9b42\u63cf\u8ff0(SOUL.md)\u3001\u89d2\u8272\u5316\u5e95\u7ebf\u89c4\u5219\u3001\u540d\u5b57\u548c\u5934\u50cf\u751f\u56fe\u63d0\u793a\u8bcd\u3002 \u5982\u5f53\u524d\u73af\u5883\u63d0\u4f9b\u5df2\u5ba1\u6838\u7684\u751f\u56fe skill\uff0c\u53ef\u81ea\u52a8\u751f\u6210\u7edf\u4e00\u98ce\u683c\u5934\u50cf\u56fe\u7247\u3002 \u5f53\u7528\u6237\u9700\u8981\u521b\u5efa\u3001\u8bbe\u8ba1\u6216\u5b9a\u5236 OpenClaw \u9f99\u867e\u7075\u9b42\u65f6\u4f7f\u7528\u3002 \u4e0d\u9002\u7528\u4e8e\uff1a\u5fae\u8c03\u5df2\u6709 SOUL.md\u3001\u975e OpenClaw \u5e73\u53f0\u7684\u89d2\u8272\u8bbe\u8ba1\u3001\u7eaf\u5de5\u5177\u578b\u65e0\u6027\u683c Agent\u3002 \u89e6\u53d1\u8bcd\uff1a\u9f99\u867e\u7075\u9b42\u3001\u867e\u9b42\u3001OpenClaw \u7075\u9b42\u3001\u517b\u867e\u7075\u9b42\u3001\u9f99\u867e\u89d2\u8272\u3001\u9f99\u867e\u5b9a\u4f4d\u3001 \u9f99\u867e\u5267\u672c\u6740\u89d2\u8272\u3001\u9f99\u867e\u6e38\u620f\u89d2\u8272\u3001\u9f99\u867e NPC\u3001\u9f99\u867e\u6027\u683c\u3001\u9f99\u867e\u80cc\u666f\u6545\u4e8b\u3001 lobster soul\u3001lobster character\u3001\u62bd\u5361\u3001\u968f\u673a\u9f99\u867e\u3001\u9f99\u867e SOUL\u3001gacha\u3002",
     "path": "docs/ja-JP/skills/openclaw-persona-forge/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/openclaw-persona-forge",
-    "sha256": "1d740cb395a131c69a65aa22f7d03631d924eb96e3db93c343443425cdc186e7",
-    "linked_local_files": []
+    "sha256": "a5c70cd370c972892abb622a6498b6024809ad90a2179df6d22c575c1a57c54c",
+    "linked_local_files": [
+      "skills/openclaw-persona-forge/references/avatar-style.md",
+      "skills/openclaw-persona-forge/references/boundary-rules.md",
+      "skills/openclaw-persona-forge/references/error-handling.md",
+      "skills/openclaw-persona-forge/references/identity-tension.md",
+      "skills/openclaw-persona-forge/references/naming-system.md",
+      "skills/openclaw-persona-forge/references/output-template.md"
+    ]
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -12455,7 +12496,7 @@
     "description": "PostgreSQL database patterns for query optimization, schema design, indexing, and security. Based on Supabase best practices.",
     "path": "docs/ja-JP/skills/postgres-patterns/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/postgres-patterns",
-    "sha256": "26103ff6c1c005682d9de9a8174a56c86a26073758808449fb32eb64045d1f76",
+    "sha256": "96531a15b88c79c5929b1386bcdd3b158eedf094da41b6ea98f313c07463c010",
     "linked_local_files": []
   },
   {
@@ -13750,7 +13791,7 @@
     "description": "\u5c06 x402 \u652f\u4ed8\u6267\u884c\u6dfb\u52a0\u5230 AI \u4ee3\u7406\u4e2d\uff0c\u5177\u5907\u6bcf\u4efb\u52a1\u9884\u7b97\u3001\u652f\u51fa\u63a7\u5236\u548c\u975e\u6258\u7ba1\u94b1\u5305\u3002\u901a\u8fc7 agentwallet-sdk \u652f\u6301 Base\uff0c\u901a\u8fc7 OKX Payments / OKX \u4ee3\u7406\u652f\u4ed8\u534f\u8bae\u652f\u6301 X Layer\uff0c\u5e76\u901a\u8fc7\u4e0a\u6e38 x402 \u5305\u4e0e\u57fa\u4e8e\u7ed3\u7b97\u5668\u7684\u7ed3\u7b97\u652f\u6301 Solana \u53ca\u591a\u7f51\u7edc EVM\u3002",
     "path": "docs/zh-CN/skills/agent-payment-x402/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/agent-payment-x402",
-    "sha256": "945dca540c85057af56c4492e1b6fb7ebce7cb0ce934728224765ae35c47ebb4",
+    "sha256": "30064eb13e3e0cbe9c8133cb2bb607963fafb71fbfe4ab5e253c7b119e15ccd5",
     "linked_local_files": []
   },
   {
@@ -13922,7 +13963,7 @@
     "description": "Automate visual testing and UI interaction verification using browser automation after deployment.",
     "path": "docs/zh-CN/skills/browser-qa/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/browser-qa",
-    "sha256": "9a497bfaacb0f7fd5cb4b21a4b1f2767d8004b7eab2fbea02151388322e7beb2",
+    "sha256": "89c1a9561a01df0b09afe32da6e6c999d59115d9b9b348e3ffa50b3d5d351dff",
     "linked_local_files": []
   },
   {
@@ -13963,16 +14004,6 @@
     "path": "docs/zh-CN/skills/ck/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/ck",
     "sha256": "e8899b76601f827042f338fdaac279a96e254f2f2470b7d896c96c99b90dd252",
-    "linked_local_files": []
-  },
-  {
-    "source_repo": "affaan-m/ECC",
-    "repo_key": "affaan-m__ECC",
-    "skill_name": "claude-devfleet",
-    "description": "\u901a\u8fc7Claude DevFleet\u534f\u8c03\u591a\u667a\u80fd\u4f53\u7f16\u7801\u4efb\u52a1\u2014\u2014\u89c4\u5212\u9879\u76ee\u3001\u5728\u9694\u79bb\u7684\u5de5\u4f5c\u6811\u4e2d\u5e76\u884c\u8c03\u5ea6\u667a\u80fd\u4f53\u3001\u76d1\u63a7\u8fdb\u5ea6\u5e76\u8bfb\u53d6\u7ed3\u6784\u5316\u62a5\u544a\u3002",
-    "path": "docs/zh-CN/skills/claude-devfleet/SKILL.md",
-    "relative_directory": "docs/zh-CN/skills/claude-devfleet",
-    "sha256": "7181187e5c9547d4300272a13a4038822f7ffca9092cc7912b726888449d8b4b",
     "linked_local_files": []
   },
   {
@@ -14278,6 +14309,16 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "devfleet",
+    "description": "\u901a\u8fc7Claude DevFleet\u534f\u8c03\u591a\u667a\u80fd\u4f53\u7f16\u7801\u4efb\u52a1\u2014\u2014\u89c4\u5212\u9879\u76ee\u3001\u5728\u9694\u79bb\u7684\u5de5\u4f5c\u6811\u4e2d\u5e76\u884c\u8c03\u5ea6\u667a\u80fd\u4f53\u3001\u76d1\u63a7\u8fdb\u5ea6\u5e76\u8bfb\u53d6\u7ed3\u6784\u5316\u62a5\u544a\u3002",
+    "path": "docs/zh-CN/skills/devfleet/SKILL.md",
+    "relative_directory": "docs/zh-CN/skills/devfleet",
+    "sha256": "8977e2ea2f9701bcf92c51c8780ef6d37c149a6759029bb8d64409468a586e46",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "django-patterns",
     "description": "Django\u67b6\u6784\u6a21\u5f0f\uff0c\u4f7f\u7528DRF\u8bbe\u8ba1REST API\uff0cORM\u6700\u4f73\u5b9e\u8df5\uff0c\u7f13\u5b58\uff0c\u4fe1\u53f7\uff0c\u4e2d\u95f4\u4ef6\uff0c\u4ee5\u53ca\u751f\u4ea7\u7ea7Django\u5e94\u7528\u7a0b\u5e8f\u3002",
     "path": "docs/zh-CN/skills/django-patterns/SKILL.md",
@@ -14382,7 +14423,7 @@
     "description": "\u8bc1\u636e\u4f18\u5148\u7684ECC\u5de5\u5177\u71c3\u70e7\u548c\u8ba1\u8d39\u5ba1\u8ba1\u5de5\u4f5c\u6d41\u3002\u7528\u4e8e\u8c03\u67e5ECC\u5de5\u5177\u4ed3\u5e93\u4e2d\u7684\u5931\u63a7PR\u521b\u5efa\u3001\u914d\u989d\u7ed5\u8fc7\u3001\u9ad8\u7ea7\u6a21\u578b\u6cc4\u6f0f\u3001\u91cd\u590d\u4f5c\u4e1a\u6216GitHub App\u6210\u672c\u6fc0\u589e\u3002",
     "path": "docs/zh-CN/skills/ecc-tools-cost-audit/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/ecc-tools-cost-audit",
-    "sha256": "8893f2bbcab85103969bc7476228b040218cf63750d7f407e44e4b7132a35c5b",
+    "sha256": "10c72c0d134b3ab34ad1614dc39a2cdccec12483909344a36966c1fc759deaef",
     "linked_local_files": []
   },
   {
@@ -14524,7 +14565,7 @@
     "description": "\u5f3a\u5236\u4e8b\u5b9e\u7684\u95e8\u63a7\uff0c\u963b\u6b62\u7f16\u8f91/\u5199\u5165/Bash\uff08\u5305\u62ecMultiEdit\uff09\uff0c\u5e76\u8981\u6c42\u5728\u5141\u8bb8\u64cd\u4f5c\u4e4b\u524d\u8fdb\u884c\u5177\u4f53\u8c03\u67e5\uff08\u5bfc\u5165\u5668\u3001\u6570\u636e\u6a21\u5f0f\u3001\u7528\u6237\u6307\u4ee4\uff09\u3002\u4e0e\u65e0\u95e8\u63a7\u4ee3\u7406\u76f8\u6bd4\uff0c\u53ef\u6d4b\u91cf\u5730\u5c06\u8f93\u51fa\u8d28\u91cf\u63d0\u9ad82.25\u5206\u3002",
     "path": "docs/zh-CN/skills/gateguard/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/gateguard",
-    "sha256": "32c51c44c98d19e4ee6d6318f1a65aa68c8da77e8d469407cc7fb4a1a926d791",
+    "sha256": "42381e38bcbe022ebb4292cdea620bbaf1d4dac8dca24cee67c583f4e6df60d4",
     "linked_local_files": [
       "skills/gateguard/SKILL.md"
     ]
@@ -15697,7 +15738,7 @@
     "description": "PostgreSQL database patterns for query optimization, schema design, indexing, and security. Based on Supabase best practices.",
     "path": "docs/zh-TW/skills/postgres-patterns/SKILL.md",
     "relative_directory": "docs/zh-TW/skills/postgres-patterns",
-    "sha256": "73373422de566c0fe0d2aa79efd4d31b50d77faec61496e88eb60d7314791262",
+    "sha256": "c9e8c05cb85345cbb3973cfde2edcab18b1da4e3f8e4ff31655240abdc5cfad1",
     "linked_local_files": []
   },
   {
@@ -15817,8 +15858,11 @@
     "description": "Use after completing any non-trivial task. The agent self-rates its output on 5 axes \u2014 accuracy, completeness, clarity, actionability, conciseness \u2014 with concrete evidence per criterion. Produces a structured 1-5 scorecard with specific improvement suggestions.",
     "path": "pi/core/skills/agent-self-evaluation/SKILL.md",
     "relative_directory": "pi/core/skills/agent-self-evaluation",
-    "sha256": "96bb21eb37760f596789f84ec0a5dad4ef92fc2255e35cd7b88dc4234062b8c1",
+    "sha256": "ae77c0c905720f86a83edbe95659e893904b2f68f1a0972d429ba344eb89618f",
     "linked_local_files": [
+      "pi/core/skills/agent-self-evaluation/examples/high-score-example.md",
+      "pi/core/skills/agent-self-evaluation/examples/low-score-example.md",
+      "pi/core/skills/agent-self-evaluation/references/evaluation-criteria.md",
       "pi/core/skills/agent-self-evaluation/references/hook-integration.md",
       "pi/core/skills/agent-self-evaluation/scripts/evaluate.py",
       "pi/core/skills/agent-self-evaluation/templates/evaluation-report.md",
@@ -15955,11 +15999,14 @@
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
     "skill_name": "benchmark-optimization-loop",
-    "description": "Convert 'make it faster' requests into a bounded measured optimization loop \u2014 baseline first, generate one-hypothesis variants, benchmark each against a correctness gate, and promote the fastest safe variant with reproducible commands. Use when asked to speed something up, try many variants, run recursive optimization, benchmark latency/throughput/cost, or pick the best implementation by repeated measured tests.",
+    "description": ">-",
     "path": "pi/core/skills/benchmark-optimization-loop/SKILL.md",
     "relative_directory": "pi/core/skills/benchmark-optimization-loop",
-    "sha256": "f11208b6a86bc311cfbd9e20688a189238fda6c1e03b6f8000ef9e55487f6f95",
-    "linked_local_files": []
+    "sha256": "b179eaae200cffb54eaa5ce7f2a0f21eaca081e76373248ed1f0e666b7def0bd",
+    "linked_local_files": [
+      "pi/core/skills/benchmark-optimization-loop/references/sources.md",
+      "pi/core/skills/benchmark/SKILL.md"
+    ]
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -16184,8 +16231,11 @@
     "description": "Safe, reversible database migration patterns: forward-only production changes, expand-contract zero-downtime renames, concurrent indexes, batched backfills, and per-tool workflows for PostgreSQL, Prisma, Drizzle, Kysely, Django, and golang-migrate. Use when writing a schema or data migration, adding a column or index to a large table, planning a rollback, or preparing a zero-downtime deploy.",
     "path": "pi/core/skills/database-migrations/SKILL.md",
     "relative_directory": "pi/core/skills/database-migrations",
-    "sha256": "dad2f1964295eee14a96e06213ce3f60992bbcdc1f37a50c828bbc2e1abd79dd",
-    "linked_local_files": []
+    "sha256": "34c3735e759063f8a0c5c36a4974af7baf99c05b206c761a4e42e9584f5fb34f",
+    "linked_local_files": [
+      "pi/core/skills/database-migrations/examples/postgres-add-column.sql",
+      "pi/core/skills/database-migrations/examples/postgres-column-rename.sql"
+    ]
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -16224,8 +16274,10 @@
     "description": "Django + Celery async task patterns \u2014 configuration, task design, beat scheduling, retries, canvas workflows, monitoring, and testing. Use when adding background jobs, scheduled tasks, or async processing to a Django app.",
     "path": "pi/core/skills/django-celery/SKILL.md",
     "relative_directory": "pi/core/skills/django-celery",
-    "sha256": "1f9189ece910eb90a5d2cd520a9a6238ccb89a3e48629ac1ad9b55ec3eb21f88",
-    "linked_local_files": []
+    "sha256": "b00e8009253354d340953ecc0d429b8375b9122ad6cba444910b681f0a283461",
+    "linked_local_files": [
+      "pi/core/skills/django-celery/references/reliability.md"
+    ]
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -16405,6 +16457,26 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "godot-patterns",
+    "description": "Idiomatic Godot 4 GDScript patterns - static typing, scene and node design, signals, resources, autoloads, input, and lifecycle safety. Use when writing or reviewing GDScript, designing scenes, or deciding where game state should live.",
+    "path": "pi/core/skills/godot-patterns/SKILL.md",
+    "relative_directory": "pi/core/skills/godot-patterns",
+    "sha256": "e9a566f2802164f58d55abd26a8c97aa12a9b2731dadcb644d4f2ba4c1eaac01",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "godot-testing",
+    "description": "Testing Godot 4 GDScript projects - a zero-dependency headless check scene, gdUnit4 and GUT suites, scene-runner tests, signal assertions, and CI commands. Use when adding tests to a Godot project, setting up CI, or proving a change did not break the game.",
+    "path": "pi/core/skills/godot-testing/SKILL.md",
+    "relative_directory": "pi/core/skills/godot-testing",
+    "sha256": "fdb58a17378f873dcc860f12aae4f903bc7e6813a88944d6c256b0fb37af45fa",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "golang-patterns",
     "description": "Idiomatic Go patterns, best practices, and conventions for building robust, efficient, and maintainable Go applications. Use when writing or reviewing Go code and idiomatic structure or conventions are in question.",
     "path": "pi/core/skills/golang-patterns/SKILL.md",
@@ -16449,7 +16521,7 @@
     "description": "Turn ambiguous or high-impact product and engineering changes into scoped, verifiable acceptance criteria before or alongside implementation. Use when a user asks to clarify a feature, define acceptance criteria, de-risk a security/data/migration/integration change, prepare implementation requirements for another agent, or make a complex request testable. Do not trigger for trivial edits, straightforward fixes, active debugging, code review, or implementation requests whose acceptance conditions are already clear unless the user explicitly invokes this skill.",
     "path": "pi/core/skills/intent-driven-development/SKILL.md",
     "relative_directory": "pi/core/skills/intent-driven-development",
-    "sha256": "e34045f7b3bf6a6fbd364f85c7bc81d8208e18bb929ceff80bbc987f78aadea8",
+    "sha256": "245c9dd85fea8c2af4edb7d5302afb7a8244d3c456af6b53599dbc4ee9a0c1fc",
     "linked_local_files": []
   },
   {
@@ -16526,10 +16598,10 @@
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
     "skill_name": "kubernetes-patterns",
-    "description": "Kubernetes workload patterns, resource management, RBAC, probes, autoscaling, ConfigMap/Secret handling, and kubectl debugging for production-grade deployments. Use when writing or reviewing Kubernetes manifests, or debugging probes, RBAC, autoscaling, or resource limits.",
+    "description": "Kubernetes workload patterns, resource management, RBAC, probes, autoscaling, ConfigMap/Secret handling, and kubectl debugging for production-grade deployments. Use when writing or reviewing Kubernetes manifests, or debugging probes, RBAC, autoscaling, resource limits, or pods that keep getting evicted.",
     "path": "pi/core/skills/kubernetes-patterns/SKILL.md",
     "relative_directory": "pi/core/skills/kubernetes-patterns",
-    "sha256": "808b2ec032224e251f1bef9f6e9879e88e2e7abd0feb393632fb6042d8ac5ecc",
+    "sha256": "b8245dbbe3e9cf690c1f13e830feae700c5ff4fee207cfb190d1de14bc47cdd3",
     "linked_local_files": []
   },
   {
@@ -16918,6 +16990,19 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "rails-security",
+    "description": "Ruby on Rails security practices for Rails 7.1+ and 8.x apps. Covers production configuration, authentication, authorization, strong parameters, SQL injection, XSS and output escaping, CSRF, file uploads, API security, credentials, untrusted boundaries, and dependency scanning. Use when reviewing or writing Rails authentication, authorization, input handling, uploads, or deployment configuration.",
+    "path": "pi/core/skills/rails-security/SKILL.md",
+    "relative_directory": "pi/core/skills/rails-security",
+    "sha256": "44c8a160b0afc449a0c190411200c4b9cdb4c553c612e84a6a8913ce804782e9",
+    "linked_local_files": [
+      "rules/common/security.md",
+      "rules/ruby/security.md"
+    ]
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "react-native-patterns",
     "description": "React Native and Expo app patterns \u2014 Expo Router navigation, state separation (server/client/route/form), TanStack Query data fetching with Zod, performant lists, NativeWind/StyleSheet styling, native APIs, and secure storage. Use when building or editing React Native / Expo screens, components, navigation, or data layers.",
     "path": "pi/core/skills/react-native-patterns/SKILL.md",
@@ -17134,10 +17219,10 @@
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
     "skill_name": "security-review",
-    "description": "Use this skill when adding authentication, handling user input, working with secrets, creating API endpoints, or implementing payment/sensitive features. Provides comprehensive security checklist and patterns.",
+    "description": "Security review checklist and patterns for adding authentication, handling user input, managing secrets, creating API endpoints, or implementing payment and sensitive features.",
     "path": "pi/core/skills/security-review/SKILL.md",
     "relative_directory": "pi/core/skills/security-review",
-    "sha256": "b9eb6416eebc8dda046674f0a2dbb3be88aff526d182b60a0f55998d3d6d0d8d",
+    "sha256": "58fe0f172e73c3f870cb2e65b9dc171316643808e95e8c1a2b6ea59fc3291760",
     "linked_local_files": []
   },
   {
@@ -17227,7 +17312,7 @@
     "description": "Test-driven development workflow: write a failing test first, watch it fail, implement the smallest change to green, then refactor with 80%+ coverage across unit, integration, and E2E tests. Use when writing a new feature, fixing a bug, refactoring, or when told to write failing tests first.",
     "path": "pi/core/skills/tdd-workflow/SKILL.md",
     "relative_directory": "pi/core/skills/tdd-workflow",
-    "sha256": "b6a8dd3e5215641cd9c33a46eae1d2b87508a07bc451e2c2fe25591f33a6b519",
+    "sha256": "32cadd702f7430e87a626c1e9f4044b11b288ed41588c625f0c3e2a73fea15ce",
     "linked_local_files": []
   },
   {
@@ -17290,6 +17375,20 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "yoruba-localization-testing",
+    "description": "Test Yoruba (yo) and English bilingual interfaces for tone marks, underdots, Unicode normalization, translation fallback, and accessibility.",
+    "path": "pi/core/skills/yoruba-localization-testing/SKILL.md",
+    "relative_directory": "pi/core/skills/yoruba-localization-testing",
+    "sha256": "d8258362442794d46996194b3177ca80ef407ba74114a0b48604cfea9870b6e7",
+    "linked_local_files": [
+      "pi/core/skills/yoruba-localization-testing/examples/localization.mjs",
+      "skills/yoruba-localization-testing/examples/localization.mjs",
+      "skills/yoruba-localization-testing/examples/localization.test.mjs"
+    ]
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "accessibility",
     "description": "Design, implement, and audit accessible UI to WCAG 2.2 Level AA across Web, iOS, and Android \u2014 semantic ARIA roles and labels, accessibility traits and hints, focus management, contrast, target size, and screen-reader support. Use when building or auditing UI for accessibility compliance, keyboard navigation, or screen-reader support.",
     "path": "skills/accessibility/SKILL.md",
@@ -17344,7 +17443,7 @@
     "description": "Add x402 payment execution to AI agents with per-task budgets, spending controls, and non-custodial wallets. Supports Base through agentwallet-sdk, X Layer through OKX Payments / OKX Agent Payments Protocol, and Solana plus multi-network EVM through the upstream x402 packages with facilitator-based settlement. Use when an agent must pay for something itself and needs per-task budgets, spending controls, and a non-custodial wallet.",
     "path": "skills/agent-payment-x402/SKILL.md",
     "relative_directory": "skills/agent-payment-x402",
-    "sha256": "159bfad40362f1b711d80bc91e8e0c36977deb00c5db39fd828d671bb2d4c13f",
+    "sha256": "dcd0cb5fa77eea493324c2321026132384282f211f076e1b81a345bf1c471e69",
     "linked_local_files": []
   },
   {
@@ -17374,8 +17473,11 @@
     "description": "Use after completing any non-trivial task. The agent self-rates its output on 5 axes \u2014 accuracy, completeness, clarity, actionability, conciseness \u2014 with concrete evidence per criterion. Produces a structured 1-5 scorecard with specific improvement suggestions.",
     "path": "skills/agent-self-evaluation/SKILL.md",
     "relative_directory": "skills/agent-self-evaluation",
-    "sha256": "96bb21eb37760f596789f84ec0a5dad4ef92fc2255e35cd7b88dc4234062b8c1",
+    "sha256": "ae77c0c905720f86a83edbe95659e893904b2f68f1a0972d429ba344eb89618f",
     "linked_local_files": [
+      "skills/agent-self-evaluation/examples/high-score-example.md",
+      "skills/agent-self-evaluation/examples/low-score-example.md",
+      "skills/agent-self-evaluation/references/evaluation-criteria.md",
       "skills/agent-self-evaluation/references/hook-integration.md",
       "skills/agent-self-evaluation/scripts/evaluate.py",
       "skills/agent-self-evaluation/templates/evaluation-report.md"
@@ -17591,11 +17693,14 @@
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
     "skill_name": "benchmark-optimization-loop",
-    "description": "Convert 'make it faster' requests into a bounded measured optimization loop \u2014 baseline first, generate one-hypothesis variants, benchmark each against a correctness gate, and promote the fastest safe variant with reproducible commands. Use when asked to speed something up, try many variants, run recursive optimization, benchmark latency/throughput/cost, or pick the best implementation by repeated measured tests.",
+    "description": ">-",
     "path": "skills/benchmark-optimization-loop/SKILL.md",
     "relative_directory": "skills/benchmark-optimization-loop",
-    "sha256": "f11208b6a86bc311cfbd9e20688a189238fda6c1e03b6f8000ef9e55487f6f95",
-    "linked_local_files": []
+    "sha256": "b179eaae200cffb54eaa5ce7f2a0f21eaca081e76373248ed1f0e666b7def0bd",
+    "linked_local_files": [
+      "skills/benchmark-optimization-loop/references/sources.md",
+      "skills/benchmark/SKILL.md"
+    ]
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -17611,10 +17716,10 @@
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
     "skill_name": "blender-motion-state-inspection",
-    "description": "Use this skill when inspecting Blender characters, rigs, poses, animation retargeting, ground contact, facing direction, or model-vs-motion alignment where screenshots alone are not enough.",
+    "description": "Inspects Blender characters, rigs, poses, animation retargeting, ground contact, facing direction, or model-vs-motion alignment where screenshots alone are not enough.",
     "path": "skills/blender-motion-state-inspection/SKILL.md",
     "relative_directory": "skills/blender-motion-state-inspection",
-    "sha256": "97b8aee8822a8603e2fc930f66b4bd18507c11ca756accd1419a2a3526196f5c",
+    "sha256": "85f6ad9b0a54de1e4f6ff93ae0d681da25ffcdfe1fc67b9e3261fe1b6da11ee5",
     "linked_local_files": []
   },
   {
@@ -17666,7 +17771,7 @@
     "description": "Run automated post-deploy UI verification with a browser automation MCP (claude-in-chrome, Playwright, or Puppeteer): console-error and Core Web Vitals smoke checks, form and auth-flow interaction tests, screenshot visual regression across three breakpoints, and axe-core accessibility audits ending in a SHIP / DO-NOT-SHIP verdict. Use when testing a deployed feature on staging or preview, before shipping frontend changes, reviewing a frontend PR, or checking responsive layout and accessibility.",
     "path": "skills/browser-qa/SKILL.md",
     "relative_directory": "skills/browser-qa",
-    "sha256": "6eb78a2460adcde116e6b44fcdff7ae37aeec6208241a24417cb2db4b3b254cd",
+    "sha256": "6226f5fb711aca989a3c7fec9e0eeab15049741b54dc5bbe4165fc95a1e1d967",
     "linked_local_files": []
   },
   {
@@ -17683,10 +17788,10 @@
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
     "skill_name": "canary-watch",
-    "description": "Use this skill to monitor and verify a deployed URL after releases \u2014 checks HTTP endpoints, SSE streams, static assets, console errors, and performance regressions after deploys, merges, or dependency upgrades. Smoke / canary / post-deploy verification.",
+    "description": "Monitors and verifies deployed URLs after releases by checking HTTP endpoints, SSE streams, static assets, console errors, and performance regressions after deploys, merges, or dependency upgrades. Smoke, canary, and post-deploy verification.",
     "path": "skills/canary-watch/SKILL.md",
     "relative_directory": "skills/canary-watch",
-    "sha256": "d2cb536f8ccb201266e094542cb20af8a4d6474feb5b16116cfb4497c2b8149f",
+    "sha256": "e0c1dbbacd42e8e001a3d06cc79907329407d374ffec7f64655b2fc9e180d09d",
     "linked_local_files": []
   },
   {
@@ -17738,16 +17843,6 @@
       "skills/ck/commands/shared.mjs",
       "skills/ck/hooks/session-start.mjs"
     ]
-  },
-  {
-    "source_repo": "affaan-m/ECC",
-    "repo_key": "affaan-m__ECC",
-    "skill_name": "claude-devfleet",
-    "description": "Orchestrate multi-agent coding tasks via Claude DevFleet \u2014 plan projects, dispatch parallel agents in isolated worktrees, monitor progress, and read structured reports. Use when dispatching parallel coding agents across isolated worktrees and tracking their reports.",
-    "path": "skills/claude-devfleet/SKILL.md",
-    "relative_directory": "skills/claude-devfleet",
-    "sha256": "5fe6efbb5663699ba8e348b2a77fbf7c396ed1903bb95fa0c05c1174f81fabfc",
-    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -17852,6 +17947,16 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "config-health",
+    "description": "Runtime configuration integrity monitoring for Claude Code. Detects config drift, rule staleness, and hook wiring gaps at startup, with an optional per-tool mode. Complements delivery-gate with startup soft monitoring.",
+    "path": "skills/config-health/SKILL.md",
+    "relative_directory": "skills/config-health",
+    "sha256": "957ab3623e21ec827c00bff16ba02a25f6f1cd08d4942d93b4eaca062c2e0ff3",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "configure-ecc",
     "description": "Run the conversational ECC setup wizard inside the current harness: inventory the install, collect scope (user/project/local) and hook mode (off/minimal/standard/strict) in Claude Code, use Codex's native plugin lifecycle, or install the project surface under ./.kimi-code, then preview, apply, and verify. Use when installing, updating, reconfiguring, or repairing an ECC installation, changing hook profiles, or moving ECC between install scopes.",
     "path": "skills/configure-ecc/SKILL.md",
@@ -17930,7 +18035,7 @@
     "description": "[DEPRECATED - use continuous-learning-v2] Legacy v1 stop-hook skill extractor. v2 is a strict superset with instinct-based, project-scoped, hook-reliable learning. Do not invoke v1: when continuous learning, session learning, or pattern extraction is requested, route to continuous-learning-v2 instead.",
     "path": "skills/continuous-learning/SKILL.md",
     "relative_directory": "skills/continuous-learning",
-    "sha256": "d494867b456999cad53c51c89fa2cf8da101f76ea875286987f52e5d45f72221",
+    "sha256": "38dc4d34773cbfae6d51f1aab82b4bb6655483d5c2bef57bcb00950dff80371b",
     "linked_local_files": [
       "skills/continuous-learning/config.json"
     ]
@@ -17942,7 +18047,7 @@
     "description": "Instinct-based learning system that observes sessions via hooks, creates atomic instincts with confidence scoring, and evolves them into skills/commands/agents. v2.1 adds project-scoped instincts to prevent cross-project contamination. Use when capturing lessons from a session, managing instincts, or promoting them into skills, commands, or agents.",
     "path": "skills/continuous-learning-v2/SKILL.md",
     "relative_directory": "skills/continuous-learning-v2",
-    "sha256": "ddad12451a0d582c6ef1b197b7be193bef613cbc74eba4117fcb74fc7a4ecd00",
+    "sha256": "b4d5f321543ba70952a9044863e2163bd6d905bbe4226cced3b3698a473faa39",
     "linked_local_files": [
       "skills/continuous-learning-v2/config.json",
       "skills/continuous-learning-v2/scripts/lib/homunculus-dir.sh",
@@ -18109,7 +18214,7 @@
     "description": "Build a fully automated AI-powered data collection agent for any public source \u2014 job boards, prices, news, GitHub, sports, anything. Runs on a schedule, enriches data with a free LLM (Gemini Flash), stores results in Notion/Sheets/Supabase, and learns from user feedback. Runs 100% free on GitHub Actions. Use when the user wants to monitor, collect, or track any public data automatically.",
     "path": "skills/data-scraper-agent/SKILL.md",
     "relative_directory": "skills/data-scraper-agent",
-    "sha256": "662e884d58f4089bd8e090ef8d32042b85a5d9b4715906a89072002704451c0a",
+    "sha256": "53d450949f1db37e279dd02bb315fdf2cf61b7483575d6b6814dd0d99c04a7fd",
     "linked_local_files": []
   },
   {
@@ -18129,8 +18234,11 @@
     "description": "Safe, reversible database migration patterns: forward-only production changes, expand-contract zero-downtime renames, concurrent indexes, batched backfills, and per-tool workflows for PostgreSQL, Prisma, Drizzle, Kysely, Django, and golang-migrate. Use when writing a schema or data migration, adding a column or index to a large table, planning a rollback, or preparing a zero-downtime deploy.",
     "path": "skills/database-migrations/SKILL.md",
     "relative_directory": "skills/database-migrations",
-    "sha256": "dad2f1964295eee14a96e06213ce3f60992bbcdc1f37a50c828bbc2e1abd79dd",
-    "linked_local_files": []
+    "sha256": "34c3735e759063f8a0c5c36a4974af7baf99c05b206c761a4e42e9584f5fb34f",
+    "linked_local_files": [
+      "skills/database-migrations/examples/postgres-add-column.sql",
+      "skills/database-migrations/examples/postgres-column-rename.sql"
+    ]
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -18207,12 +18315,24 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "devfleet",
+    "description": "Orchestrate multi-agent coding tasks via Claude DevFleet \u2014 plan projects, dispatch parallel agents in isolated worktrees, monitor progress, and read structured reports. Use when dispatching parallel coding agents across isolated worktrees and tracking their reports.",
+    "path": "skills/devfleet/SKILL.md",
+    "relative_directory": "skills/devfleet",
+    "sha256": "9c51efcbeb9a9afe7bfe3007f111272f92f6ef734d6b73fc1e006de5f810dde1",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "django-celery",
     "description": "Django + Celery async task patterns \u2014 configuration, task design, beat scheduling, retries, canvas workflows, monitoring, and testing. Use when adding background jobs, scheduled tasks, or async processing to a Django app.",
     "path": "skills/django-celery/SKILL.md",
     "relative_directory": "skills/django-celery",
-    "sha256": "1f9189ece910eb90a5d2cd520a9a6238ccb89a3e48629ac1ad9b55ec3eb21f88",
-    "linked_local_files": []
+    "sha256": "b00e8009253354d340953ecc0d429b8375b9122ad6cba444910b681f0a283461",
+    "linked_local_files": [
+      "skills/django-celery/references/reliability.md"
+    ]
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -18328,6 +18448,23 @@
     "relative_directory": "skills/e2e-testing",
     "sha256": "b0e00e7e17cb259101139900816c5528aed18dd10bcf5f9cb42cfc35baf8a755",
     "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "ecc-contribution-review",
+    "description": "Prepare an ECC skill contribution for review by organizing repository, install-surface, cross-harness, validation, security, and commit observations into a local proposal. Use when preparing a skill contribution for review.",
+    "path": "skills/ecc-contribution-review/SKILL.md",
+    "relative_directory": "skills/ecc-contribution-review",
+    "sha256": "b605804d0a63308851099d9ba88df53685397b39c52278b021131651315d84a3",
+    "linked_local_files": [
+      "skills/ecc-contribution-review/docs/DESIGN.md",
+      "skills/ecc-contribution-review/docs/WORKFLOW.md",
+      "skills/ecc-contribution-review/references/contribution-review-contract.md",
+      "skills/ecc-contribution-review/scripts/compile_contribution_review.py",
+      "skills/ecc-contribution-review/scripts/contribution_review_validation.py",
+      "skills/ecc-contribution-review/templates/contribution-review-observation.json"
+    ]
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -18540,7 +18677,7 @@
     "description": "Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files. Use when the user wants to build a presentation, convert a PPT/PPTX to web, or create slides for a talk/pitch. Helps non-designers discover their aesthetic through visual exploration rather than abstract choices.",
     "path": "skills/frontend-slides/SKILL.md",
     "relative_directory": "skills/frontend-slides",
-    "sha256": "9d58ad7d4555a9d6ea1944a5084fd0428ee44276ac13ee8df02c1c4e63925291",
+    "sha256": "7e66ef7b130bd58c591dc561088f59dff1c698c1daae26d370959d22913fe92d",
     "linked_local_files": [
       "skills/frontend-slides/STYLE_PRESETS.md"
     ]
@@ -18572,7 +18709,7 @@
     "description": "PreToolUse fact-forcing gate that denies the first Edit/Write/Bash (including MultiEdit and NotebookEdit) attempt until the agent presents concrete facts (importers, data schemas, verbatim user instruction), then allows retry; A/B-tested at +2.25 quality points. Use when enabling or configuring the GateGuard hook, exempting paths via env vars, or handling first-touch denials.",
     "path": "skills/gateguard/SKILL.md",
     "relative_directory": "skills/gateguard",
-    "sha256": "54083368cd78dea6ea178a8cf666557f41bbc70edaa3be32b8639df9de1c1795",
+    "sha256": "1907a1c61a1b9848adc85bf54688555318656d2c979668dd4fcccd9d344f4415",
     "linked_local_files": []
   },
   {
@@ -18606,6 +18743,26 @@
     "linked_local_files": [
       "skills/github-ops/references/ecc-release-checklist.md"
     ]
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "godot-patterns",
+    "description": "Idiomatic Godot 4 GDScript patterns - static typing, scene and node design, signals, resources, autoloads, input, and lifecycle safety. Use when writing or reviewing GDScript, designing scenes, or deciding where game state should live.",
+    "path": "skills/godot-patterns/SKILL.md",
+    "relative_directory": "skills/godot-patterns",
+    "sha256": "e9a566f2802164f58d55abd26a8c97aa12a9b2731dadcb644d4f2ba4c1eaac01",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "godot-testing",
+    "description": "Testing Godot 4 GDScript projects - a zero-dependency headless check scene, gdUnit4 and GUT suites, scene-runner tests, signal assertions, and CI commands. Use when adding tests to a Godot project, setting up CI, or proving a change did not break the game.",
+    "path": "skills/godot-testing/SKILL.md",
+    "relative_directory": "skills/godot-testing",
+    "sha256": "fdb58a17378f873dcc860f12aae4f903bc7e6813a88944d6c256b0fb37af45fa",
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -18810,7 +18967,7 @@
     "description": "Turn ambiguous or high-impact product and engineering changes into scoped, verifiable acceptance criteria before or alongside implementation. Use when a user asks to clarify a feature, define acceptance criteria, de-risk a security/data/migration/integration change, prepare implementation requirements for another agent, or make a complex request testable. Do not trigger for trivial edits, straightforward fixes, active debugging, code review, or implementation requests whose acceptance conditions are already clear unless the user explicitly invokes this skill.",
     "path": "skills/intent-driven-development/SKILL.md",
     "relative_directory": "skills/intent-driven-development",
-    "sha256": "e34045f7b3bf6a6fbd364f85c7bc81d8208e18bb929ceff80bbc987f78aadea8",
+    "sha256": "245c9dd85fea8c2af4edb7d5302afb7a8244d3c456af6b53599dbc4ee9a0c1fc",
     "linked_local_files": []
   },
   {
@@ -18933,10 +19090,10 @@
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
     "skill_name": "jira-integration",
-    "description": "Use this skill when retrieving Jira tickets, analyzing requirements, updating ticket status, adding comments, or transitioning issues. Provides Jira API patterns via MCP or direct REST calls.",
+    "description": "Retrieves Jira tickets, analyzes requirements, updates ticket status, adds comments, or transitions issues via MCP or direct REST API patterns.",
     "path": "skills/jira-integration/SKILL.md",
     "relative_directory": "skills/jira-integration",
-    "sha256": "ce0a0c815e3112a1e80d4dbd1d2d0c804c2af0371628d325e04d7ffbddf4247e",
+    "sha256": "193c0f418a4231ac1e7168db3d893d6afbc285521632dfee84a51bc95e755efd",
     "linked_local_files": []
   },
   {
@@ -19013,10 +19170,10 @@
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
     "skill_name": "kubernetes-patterns",
-    "description": "Kubernetes workload patterns, resource management, RBAC, probes, autoscaling, ConfigMap/Secret handling, and kubectl debugging for production-grade deployments. Use when writing or reviewing Kubernetes manifests, or debugging probes, RBAC, autoscaling, or resource limits.",
+    "description": "Kubernetes workload patterns, resource management, RBAC, probes, autoscaling, ConfigMap/Secret handling, and kubectl debugging for production-grade deployments. Use when writing or reviewing Kubernetes manifests, or debugging probes, RBAC, autoscaling, resource limits, or pods that keep getting evicted.",
     "path": "skills/kubernetes-patterns/SKILL.md",
     "relative_directory": "skills/kubernetes-patterns",
-    "sha256": "808b2ec032224e251f1bef9f6e9879e88e2e7abd0feb393632fb6042d8ac5ecc",
+    "sha256": "b8245dbbe3e9cf690c1f13e830feae700c5ff4fee207cfb190d1de14bc47cdd3",
     "linked_local_files": []
   },
   {
@@ -19093,6 +19250,16 @@
       "skills/lead-intelligence/agents/outreach-drafter.md",
       "skills/lead-intelligence/agents/signal-scorer.md"
     ]
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "leanrea",
+    "description": "Reverse engineers shipped software with bounded local CLI inspection. Covers PE headers, Electron archives, custom binary formats, SQLite databases, and JavaScript bundles while separating observed evidence from inference.",
+    "path": "skills/leanrea/SKILL.md",
+    "relative_directory": "skills/leanrea",
+    "sha256": "2e44922a34d6f3567a1c8621c48058ba553b3fcad322e80ee7caeed63b54d850",
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -19183,7 +19350,7 @@
     "description": "Conduct market research, competitive analysis, investor due diligence, and industry intelligence with source attribution and decision-oriented summaries. Use when the user wants market sizing, competitor comparisons, fund research, technology scans, or research that informs business decisions.",
     "path": "skills/market-research/SKILL.md",
     "relative_directory": "skills/market-research",
-    "sha256": "8cfc36dc8a93476d092115f3fc70c631dcab14fcd6e04371160fc4fb29547800",
+    "sha256": "f27f30f5b2eccca123e6f2bd7fb193294b2f9da56f867eadf0c4b00babc6dd8c",
     "linked_local_files": []
   },
   {
@@ -19645,6 +19812,16 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "platform-factory",
+    "description": "Build deterministic OCI images, SBOM/provenance evidence and hardened container or microVM runs from a compiled executable with the Platform Factory (pf) CLI, and keep its freeze lock in sync with a companion Claude Code hook. Use when a project contains .platform-factory/, when the user runs or asks about pf/platform-factory (detect, plan, freeze, build, verify, run, launch), or wants reproducible OCI builds without a Docker daemon.",
+    "path": "skills/platform-factory/SKILL.md",
+    "relative_directory": "skills/platform-factory",
+    "sha256": "9962b8d0626a0e50bdefc046a0b68ebe01fdea31c50afa5dae290405a65eab3c",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "postgres-patterns",
     "description": "PostgreSQL database patterns for query optimization, schema design, indexing, and security. Based on Supabase best practices. Use when designing PostgreSQL schemas, indexes, or RLS policies, or when a query is too slow.",
     "path": "skills/postgres-patterns/SKILL.md",
@@ -19843,6 +20020,19 @@
     "linked_local_files": [
       "rules/common/patterns.md",
       "rules/ruby/patterns.md"
+    ]
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "rails-security",
+    "description": "Ruby on Rails security practices for Rails 7.1+ and 8.x apps. Covers production configuration, authentication, authorization, strong parameters, SQL injection, XSS and output escaping, CSRF, file uploads, API security, credentials, untrusted boundaries, and dependency scanning. Use when reviewing or writing Rails authentication, authorization, input handling, uploads, or deployment configuration.",
+    "path": "skills/rails-security/SKILL.md",
+    "relative_directory": "skills/rails-security",
+    "sha256": "44c8a160b0afc449a0c190411200c4b9cdb4c553c612e84a6a8913ce804782e9",
+    "linked_local_files": [
+      "rules/common/security.md",
+      "rules/ruby/security.md"
     ]
   },
   {
@@ -20160,6 +20350,16 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "roundhouse-x402",
+    "description": "Discover x402-paid services and ERC-8004 agent identity via Roundhouse (open catalog, paid SQL, MCP server, rh-x402 CLI), and optionally settle through Roundhouse's Base mainnet facilitator. Use when searching the x402 bazaar/index, vetting a payee or wallet, querying settlement or agent data, configuring Roundhouse MCP, or pointing a paywall at a hosted facilitator on Base.",
+    "path": "skills/roundhouse-x402/SKILL.md",
+    "relative_directory": "skills/roundhouse-x402",
+    "sha256": "24a7abf933e34e619a047dfe4194762815db37bfbf3e9b07d885be659af850ed",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "rules-distill",
     "description": "Scan skills to extract cross-cutting principles and distill them into rules \u2014 append, revise, or create new rule files. Use when the same principle keeps recurring across skills and belongs in a rule file instead.",
     "path": "skills/rules-distill/SKILL.md",
@@ -20210,6 +20410,16 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "scientific-db-openalex-database",
+    "description": "OpenAlex REST API workflows for cross-disciplinary literature search, DOI/PMID lookup, open-access links, citation counts, and reproducible search logs. Use when a task needs scholarly works from every field (not only biomedicine), or needs to resolve a DOI, PMID or OpenAlex ID to full metadata.",
+    "path": "skills/scientific-db-openalex-database/SKILL.md",
+    "relative_directory": "skills/scientific-db-openalex-database",
+    "sha256": "4a15e81704db628e135785e588aa7962045ad77487c00c5819be312245cd5efe",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "scientific-db-pubmed-database",
     "description": "Direct PubMed and NCBI E-utilities search workflows for biomedical literature, MeSH queries, PMID lookup, citation retrieval, and API-backed literature monitoring. Use when a task needs biomedical literature from PubMed rather than general web search.",
     "path": "skills/scientific-db-pubmed-database/SKILL.md",
@@ -20244,7 +20454,7 @@
     "description": "Systematic literature-review workflow for academic, biomedical, technical, and scientific topics, including search planning, source screening, synthesis, citation checks, and evidence logging. Use when the task is to find, screen, synthesize, and cite a body of academic or technical literature.",
     "path": "skills/scientific-thinking-literature-review/SKILL.md",
     "relative_directory": "skills/scientific-thinking-literature-review",
-    "sha256": "380918f545c7e9b297b23bee4a0432deba977acbdb217232bf1ab9d5aa3c562e",
+    "sha256": "66d6aae4c290dd41bc541f4ff8dc26dcc391da7e1f271133cda36914cc25cc32",
     "linked_local_files": []
   },
   {
@@ -20281,10 +20491,10 @@
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
     "skill_name": "security-review",
-    "description": "Use this skill when adding authentication, handling user input, working with secrets, creating API endpoints, or implementing payment/sensitive features. Provides comprehensive security checklist and patterns.",
+    "description": "Security review checklist and patterns for adding authentication, handling user input, managing secrets, creating API endpoints, or implementing payment and sensitive features.",
     "path": "skills/security-review/SKILL.md",
     "relative_directory": "skills/security-review",
-    "sha256": "b9eb6416eebc8dda046674f0a2dbb3be88aff526d182b60a0f55998d3d6d0d8d",
+    "sha256": "58fe0f172e73c3f870cb2e65b9dc171316643808e95e8c1a2b6ea59fc3291760",
     "linked_local_files": []
   },
   {
@@ -20310,11 +20520,21 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "short-video-distribution",
+    "description": "Ship a finished vertical video to TikTok, YouTube Shorts, and Instagram Reels. Checks the file against each platform's limits, writes native captions and titles, handles privacy and disclosure choices, gets explicit approval, then publishes through whichever path the user has (a connected publishing MCP server, the platform APIs, or a manual upload sheet) and returns the live links. Use after a video is rendered or edited and the user wants it posted as a Short, Reel, or TikTok.",
+    "path": "skills/short-video-distribution/SKILL.md",
+    "relative_directory": "skills/short-video-distribution",
+    "sha256": "269ab67ee4314be16660bfa2ddf643eb1992bee972ba5a7479419cf4bd16ffc1",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "skill-comply",
     "description": "Visualize whether skills, rules, and agent definitions are actually followed \u2014 auto-generates scenarios at 3 prompt strictness levels, runs agents, classifies behavioral sequences, and reports compliance rates with full tool call timelines. Use when checking whether agents actually follow the skills, rules, and definitions they were given, rather than assuming they do.",
     "path": "skills/skill-comply/SKILL.md",
     "relative_directory": "skills/skill-comply",
-    "sha256": "e26cbbc30a32ea8c76c56d09ba9a3a921e82ad6e2360f825ec63d3f8df6b1f5a",
+    "sha256": "362a3f09d3c47149d1297d00d5d56e23f17866d076224cf902cc344f3c1e673b",
     "linked_local_files": []
   },
   {
@@ -20599,7 +20819,7 @@
     "description": "Test-driven development workflow: write a failing test first, watch it fail, implement the smallest change to green, then refactor with 80%+ coverage across unit, integration, and E2E tests. Use when writing a new feature, fixing a bug, refactoring, or when told to write failing tests first.",
     "path": "skills/tdd-workflow/SKILL.md",
     "relative_directory": "skills/tdd-workflow",
-    "sha256": "b6a8dd3e5215641cd9c33a46eae1d2b87508a07bc451e2c2fe25591f33a6b519",
+    "sha256": "32cadd702f7430e87a626c1e9f4044b11b288ed41588c625f0c3e2a73fea15ce",
     "linked_local_files": []
   },
   {
@@ -20642,6 +20862,16 @@
     "path": "skills/terminal-ops/SKILL.md",
     "relative_directory": "skills/terminal-ops",
     "sha256": "f26e518e6922fe0796f5b6a55349a409f5b03745c4eeed9be80b4c66d890d852",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "terraform-patterns",
+    "description": "Terraform and OpenTofu infrastructure-as-code patterns for project layout, remote state, modules, variables, secrets, safe plan/apply workflows, and CI. Use when writing or reviewing .tf files, structuring modules or environments, configuring backends and state locking, or debugging plan drift, state, and provider errors.",
+    "path": "skills/terraform-patterns/SKILL.md",
+    "relative_directory": "skills/terraform-patterns",
+    "sha256": "9e0639e9b04f66b42dee3ff7255e1486727da8b915f1c350420bd425d62d16e2",
     "linked_local_files": []
   },
   {
@@ -20840,6 +21070,16 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "web-perimeter-owasp-2025-audit",
+    "description": "Passive, non-destructive web perimeter security auditing mapped to OWASP Top 10:2025 surface leads, CDN Unkeyed Header Web Cache Poisoning (X-Forwarded-Host), supply chain manifest exposure, git object dumping prevention (/.git/HEAD), cryptographic headers, and AI crawler boundary governance (llms.txt, robots.txt). Use when auditing production domains, configuring Cloudflare/Vercel/Nginx edge security, or preparing pre-launch perimeter checks.",
+    "path": "skills/web-perimeter-owasp-2025-audit/SKILL.md",
+    "relative_directory": "skills/web-perimeter-owasp-2025-audit",
+    "sha256": "ab3ff77ec3d557d24a38819ff83af926510146a7400dc17b66353f03dff6c1b7",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "windows-desktop-e2e",
     "description": "E2E testing for Windows native desktop apps (WPF, WinForms, Win32/MFC, Qt) using pywinauto and Windows UI Automation. Use when writing E2E tests for a Windows native desktop app with pywinauto or UI Automation.",
     "path": "skills/windows-desktop-e2e/SKILL.md",
@@ -20868,13 +21108,26 @@
     "linked_local_files": []
   },
   {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "yoruba-localization-testing",
+    "description": "Test Yoruba (yo) and English bilingual interfaces for tone marks, underdots, Unicode normalization, translation fallback, and accessibility.",
+    "path": "skills/yoruba-localization-testing/SKILL.md",
+    "relative_directory": "skills/yoruba-localization-testing",
+    "sha256": "d8258362442794d46996194b3177ca80ef407ba74114a0b48604cfea9870b6e7",
+    "linked_local_files": [
+      "skills/yoruba-localization-testing/examples/localization.mjs",
+      "skills/yoruba-localization-testing/examples/localization.test.mjs"
+    ]
+  },
+  {
     "source_repo": "mvanhorn/last30days-skill",
     "repo_key": "mvanhorn__last30days-skill",
     "skill_name": "last30days",
     "description": "Research what people actually say about any topic in the last 30 days. Pulls posts and engagement from Reddit, X, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the web. Includes a doctor health check to diagnose broken or missing sources.",
     "path": "skills/last30days/SKILL.md",
     "relative_directory": "skills/last30days",
-    "sha256": "14a2f0cea89f258bbb5104dad28f3b67200daecb3f663881810131aa085d2d46",
+    "sha256": "49244ed6ac7fa9e84edc52117c3c39f7fb029e60e6aec31a222793d8acf9ec91",
     "linked_local_files": [
       "skills/last30days/references/agent-mode.md",
       "skills/last30days/references/category-peers.md",
@@ -20887,6 +21140,7 @@
       "skills/last30days/references/library-queue.md",
       "skills/last30days/references/patent-signals.md",
       "skills/last30days/references/recommendations.md",
+      "skills/last30days/references/reddit-session.md",
       "skills/last30days/references/research-runbook.md",
       "skills/last30days/references/runtime.md",
       "skills/last30days/references/save-html-brief.md",
@@ -20950,6 +21204,7 @@
       "skills/last30days/scripts/lib/job_boards/google.py",
       "skills/last30days/scripts/lib/job_boards/ibm.py",
       "skills/last30days/scripts/lib/job_boards/jibe.py",
+      "skills/last30days/scripts/lib/job_boards/kula.py",
       "skills/last30days/scripts/lib/job_boards/oracle.py",
       "skills/last30days/scripts/lib/job_boards/phenom.py",
       "skills/last30days/scripts/lib/job_boards/robots.py",
@@ -20958,6 +21213,8 @@
       "skills/last30days/scripts/lib/job_boilerplate.py",
       "skills/last30days/scripts/lib/jobs.py",
       "skills/last30days/scripts/lib/jobs_digest.py",
+      "skills/last30days/scripts/lib/jobs_story.py",
+      "skills/last30days/scripts/lib/jobs_teams.py",
       "skills/last30days/scripts/lib/library.py",
       "skills/last30days/scripts/lib/library_index.py",
       "skills/last30days/scripts/lib/linkedin.py",
@@ -20981,11 +21238,17 @@
       "skills/last30days/scripts/lib/query.py",
       "skills/last30days/scripts/lib/reddit.py",
       "skills/last30days/scripts/lib/reddit_arctic.py",
+      "skills/last30days/scripts/lib/reddit_discover.py",
       "skills/last30days/scripts/lib/reddit_enrich.py",
+      "skills/last30days/scripts/lib/reddit_envelope.py",
+      "skills/last30days/scripts/lib/reddit_health.py",
+      "skills/last30days/scripts/lib/reddit_hydrate.py",
       "skills/last30days/scripts/lib/reddit_keyless.py",
       "skills/last30days/scripts/lib/reddit_listing.py",
       "skills/last30days/scripts/lib/reddit_public.py",
+      "skills/last30days/scripts/lib/reddit_refs.py",
       "skills/last30days/scripts/lib/reddit_search.py",
+      "skills/last30days/scripts/lib/reddit_session.py",
       "skills/last30days/scripts/lib/reddit_shreddit.py",
       "skills/last30days/scripts/lib/registers.py",
       "skills/last30days/scripts/lib/relevance.py",
@@ -21039,6 +21302,7 @@
       "skills/last30days/scripts/lib/xurl_x.py",
       "skills/last30days/scripts/lib/yahoo_finance.py",
       "skills/last30days/scripts/lib/youtube_yt.py",
+      "skills/last30days/scripts/reddit_canary.py",
       "skills/last30days/scripts/setup-keychain.sh",
       "skills/last30days/scripts/setup-pass.sh",
       "skills/last30days/scripts/store.py",
@@ -23289,7 +23553,7 @@
     "description": "|",
     "path": "skills/modern-web-guidance/SKILL.md",
     "relative_directory": "skills/modern-web-guidance",
-    "sha256": "37d68a514c25066840299356e5857b750bec3cc27c0cf57dbe88369b051b573e",
+    "sha256": "1292f0ce14794a5bc49af58e99d5f6d4edf10acd9472cade94ab0c5590892716",
     "linked_local_files": []
   },
   {
@@ -23318,6 +23582,546 @@
       "skills/security-audit/report-schema.json",
       "skills/security-audit/validate-coverage-ledger.cjs",
       "skills/security-audit/validate-findings.cjs"
+    ]
+  },
+  {
+    "source_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "repo_key": "nextlevelbuilder__ui-ux-pro-max-skill",
+    "skill_name": "banner-design",
+    "description": "Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction options with optional generated or supplied visuals. Actions: design, create, generate banner. Platforms: Facebook, Twitter/X, LinkedIn, YouTube, Instagram, Google Display, website hero, print. Styles: minimalist, gradient, bold typography, photo-based, illustrated, geometric, retro, glassmorphism, 3D, neon, duotone, editorial, collage.",
+    "path": ".claude/skills/banner-design/SKILL.md",
+    "relative_directory": ".claude/skills/banner-design",
+    "sha256": "ccb89ddc848f60bfe630cb19dfe3e062df94a029467a9b15259f2761019ac5c4",
+    "linked_local_files": [
+      ".claude/skills/banner-design/references/banner-sizes-and-styles.md"
+    ]
+  },
+  {
+    "source_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "repo_key": "nextlevelbuilder__ui-ux-pro-max-skill",
+    "skill_name": "brand",
+    "description": "Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing assets, brand compliance, style guides.",
+    "path": ".claude/skills/brand/SKILL.md",
+    "relative_directory": ".claude/skills/brand",
+    "sha256": "1c24139633e2ebf11da4f97eaeb1c0564f8658a40b3ad779387a5b8c6cb76dbc",
+    "linked_local_files": [
+      ".claude/skills/brand/references/approval-checklist.md",
+      ".claude/skills/brand/references/asset-organization.md",
+      ".claude/skills/brand/references/brand-guideline-template.md",
+      ".claude/skills/brand/references/color-palette-management.md",
+      ".claude/skills/brand/references/consistency-checklist.md",
+      ".claude/skills/brand/references/logo-usage-rules.md",
+      ".claude/skills/brand/references/messaging-framework.md",
+      ".claude/skills/brand/references/typography-specifications.md",
+      ".claude/skills/brand/references/update.md",
+      ".claude/skills/brand/references/visual-identity.md",
+      ".claude/skills/brand/references/voice-framework.md",
+      ".claude/skills/brand/scripts/extract-colors.cjs",
+      ".claude/skills/brand/scripts/inject-brand-context.cjs",
+      ".claude/skills/brand/scripts/sync-brand-to-tokens.cjs",
+      ".claude/skills/brand/scripts/tests/test_sync_brand_to_tokens.py",
+      ".claude/skills/brand/scripts/validate-asset.cjs",
+      ".claude/skills/brand/templates/brand-guidelines-starter.md",
+      ".claude/skills/design-system/scripts/generate-tokens.cjs"
+    ]
+  },
+  {
+    "source_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "repo_key": "nextlevelbuilder__ui-ux-pro-max-skill",
+    "skill_name": "design",
+    "description": "Comprehensive design skill: brand identity, design tokens, UI styling, logo generation (55 styles, Gemini, Atlas Cloud, MuAPI, or UberLLM AI), corporate identity program (50 deliverables, CIP mockups), HTML presentations (Chart.js), banner design (22 styles, social/ads/web/print), icon design (15 styles, SVG, Gemini 3.1 Pro), social photos (HTML\u2192screenshot, multi-platform). Actions: design logo, create CIP, generate mockups, build slides, design banner, generate icon, create social photos, social media images, brand identity, design system. Platforms: Facebook, Twitter, LinkedIn, YouTube, Instagram, Pinterest, TikTok, Threads, Google Ads.",
+    "path": ".claude/skills/design/SKILL.md",
+    "relative_directory": ".claude/skills/design",
+    "sha256": "ba43873f21e52763f9986458ae8bf28a855f728377a5cf71b263d9205e9d0080",
+    "linked_local_files": [
+      ".claude/skills/design/references/banner-sizes-and-styles.md",
+      ".claude/skills/design/references/cip-deliverable-guide.md",
+      ".claude/skills/design/references/cip-design.md",
+      ".claude/skills/design/references/cip-prompt-engineering.md",
+      ".claude/skills/design/references/cip-style-guide.md",
+      ".claude/skills/design/references/design-routing.md",
+      ".claude/skills/design/references/icon-design.md",
+      ".claude/skills/design/references/logo-color-psychology.md",
+      ".claude/skills/design/references/logo-design.md",
+      ".claude/skills/design/references/logo-prompt-engineering.md",
+      ".claude/skills/design/references/logo-style-guide.md",
+      ".claude/skills/design/references/slides-copywriting-formulas.md",
+      ".claude/skills/design/references/slides-create.md",
+      ".claude/skills/design/references/slides-html-template.md",
+      ".claude/skills/design/references/slides-layout-patterns.md",
+      ".claude/skills/design/references/slides-strategies.md",
+      ".claude/skills/design/references/slides.md",
+      ".claude/skills/design/references/social-photos-design.md",
+      ".claude/skills/design/scripts/cip/core.py",
+      ".claude/skills/design/scripts/cip/generate.py",
+      ".claude/skills/design/scripts/cip/render-html.py",
+      ".claude/skills/design/scripts/cip/search.py",
+      ".claude/skills/design/scripts/icon/generate.py",
+      ".claude/skills/design/scripts/logo/core.py",
+      ".claude/skills/design/scripts/logo/generate.py",
+      ".claude/skills/design/scripts/logo/search.py",
+      ".claude/skills/design/scripts/logo/tests/test_generate.py",
+      ".claude/skills/design/scripts/tests/test_cip_generate.py",
+      ".claude/skills/design/scripts/tests/test_cip_stdout_encoding.py",
+      ".claude/skills/design/scripts/tests/test_icon_generate.py"
+    ]
+  },
+  {
+    "source_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "repo_key": "nextlevelbuilder__ui-ux-pro-max-skill",
+    "skill_name": "design-system",
+    "description": "Token architecture, component specifications, and slide generation. Three-layer tokens (primitive\u2192semantic\u2192component), CSS variables, spacing/typography scales, component specs, strategic slide creation. Use for design tokens, systematic design, brand-compliant presentations.",
+    "path": ".claude/skills/design-system/SKILL.md",
+    "relative_directory": ".claude/skills/design-system",
+    "sha256": "8aa5ff93320559a6e5289d37b6b06b3307737dbfb4a6f3fc44135c705613c511",
+    "linked_local_files": [
+      ".claude/skills/design-system/data/slide-backgrounds.csv",
+      ".claude/skills/design-system/data/slide-charts.csv",
+      ".claude/skills/design-system/data/slide-color-logic.csv",
+      ".claude/skills/design-system/data/slide-copy.csv",
+      ".claude/skills/design-system/data/slide-layout-logic.csv",
+      ".claude/skills/design-system/data/slide-layouts.csv",
+      ".claude/skills/design-system/data/slide-strategies.csv",
+      ".claude/skills/design-system/data/slide-typography.csv",
+      ".claude/skills/design-system/references/component-specs.md",
+      ".claude/skills/design-system/references/component-tokens.md",
+      ".claude/skills/design-system/references/primitive-tokens.md",
+      ".claude/skills/design-system/references/semantic-tokens.md",
+      ".claude/skills/design-system/references/states-and-variants.md",
+      ".claude/skills/design-system/references/tailwind-integration.md",
+      ".claude/skills/design-system/references/token-architecture.md",
+      ".claude/skills/design-system/scripts/embed-tokens.cjs",
+      ".claude/skills/design-system/scripts/fetch-background.py",
+      ".claude/skills/design-system/scripts/generate-slide.py",
+      ".claude/skills/design-system/scripts/generate-tokens.cjs",
+      ".claude/skills/design-system/scripts/html-token-validator.py",
+      ".claude/skills/design-system/scripts/search-slides.py",
+      ".claude/skills/design-system/scripts/slide-token-validator.py",
+      ".claude/skills/design-system/scripts/slide_search_core.py",
+      ".claude/skills/design-system/scripts/tests/test_utf8_io.py",
+      ".claude/skills/design-system/scripts/tests/test_validate_tokens.py",
+      ".claude/skills/design-system/scripts/validate-tokens.cjs"
+    ]
+  },
+  {
+    "source_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "repo_key": "nextlevelbuilder__ui-ux-pro-max-skill",
+    "skill_name": "slides",
+    "description": "Create strategic HTML presentations with Chart.js, design tokens, responsive layouts, copywriting formulas, and contextual slide strategies.",
+    "path": ".claude/skills/slides/SKILL.md",
+    "relative_directory": ".claude/skills/slides",
+    "sha256": "86c07f19ec09f79441d3837e909cfcd51034b83bdcc88094c15e652be1e765cb",
+    "linked_local_files": [
+      ".claude/skills/slides/references/copywriting-formulas.md",
+      ".claude/skills/slides/references/create.md",
+      ".claude/skills/slides/references/html-template.md",
+      ".claude/skills/slides/references/layout-patterns.md",
+      ".claude/skills/slides/references/slide-strategies.md"
+    ]
+  },
+  {
+    "source_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "repo_key": "nextlevelbuilder__ui-ux-pro-max-skill",
+    "skill_name": "ui-styling",
+    "description": "Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canvas-based visual designs. Use when building user interfaces, implementing design systems, creating responsive layouts, adding accessible components (dialogs, dropdowns, forms, tables), customizing themes and colors, implementing dark mode, generating visual designs and posters, or establishing consistent styling patterns across applications.",
+    "path": ".claude/skills/ui-styling/SKILL.md",
+    "relative_directory": ".claude/skills/ui-styling",
+    "sha256": "625e302c60ee8f2e22d56cbe638c4a739e2657f566dae42689503ad517c30f1e",
+    "linked_local_files": [
+      ".claude/skills/ui-styling/references/canvas-design-system.md",
+      ".claude/skills/ui-styling/references/shadcn-accessibility.md",
+      ".claude/skills/ui-styling/references/shadcn-components.md",
+      ".claude/skills/ui-styling/references/shadcn-theming.md",
+      ".claude/skills/ui-styling/references/tailwind-customization.md",
+      ".claude/skills/ui-styling/references/tailwind-responsive.md",
+      ".claude/skills/ui-styling/references/tailwind-utilities.md",
+      ".claude/skills/ui-styling/scripts/.coverage",
+      ".claude/skills/ui-styling/scripts/requirements.txt",
+      ".claude/skills/ui-styling/scripts/shadcn_add.py",
+      ".claude/skills/ui-styling/scripts/tailwind_config_gen.py",
+      ".claude/skills/ui-styling/scripts/tests/coverage-ui.json",
+      ".claude/skills/ui-styling/scripts/tests/requirements.txt",
+      ".claude/skills/ui-styling/scripts/tests/test_shadcn_add.py",
+      ".claude/skills/ui-styling/scripts/tests/test_tailwind_config_gen.py"
+    ]
+  },
+  {
+    "source_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "repo_key": "nextlevelbuilder__ui-ux-pro-max-skill",
+    "skill_name": "ui-ux-pro-max",
+    "description": "UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages, components, design systems, accessibility, interaction, responsive layout, typography, color, charts, and stack-specific UI implementation. Searchable local data: 80 searchable styles (51 active), 194 product palettes and reasoning profiles, 74 font pairings, 130 UX guidelines, 105 icons, 17 GSAP presets, 25 chart types, and 22 stacks.",
+    "path": ".claude/skills/ui-ux-pro-max/SKILL.md",
+    "relative_directory": ".claude/skills/ui-ux-pro-max",
+    "sha256": "bee6aa0382bc15099715ad8f0b11fdb224932eb516a4ea9134a2d7d38f5fcde4",
+    "linked_local_files": [
+      ".claude/skills/ui-ux-pro-max/references/pro-rules.md",
+      ".claude/skills/ui-ux-pro-max/references/quick-reference.md",
+      ".claude/skills/ui-ux-pro-max/scripts/core.py",
+      ".claude/skills/ui-ux-pro-max/scripts/design_system.py",
+      ".claude/skills/ui-ux-pro-max/scripts/preview.py",
+      ".claude/skills/ui-ux-pro-max/scripts/reasoning_contract.py",
+      ".claude/skills/ui-ux-pro-max/scripts/search.py",
+      "cli/assets/skills/design-system/scripts/generate-tokens.cjs"
+    ]
+  },
+  {
+    "source_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "repo_key": "nextlevelbuilder__ui-ux-pro-max-skill",
+    "skill_name": "banner-design",
+    "description": "Design banners for social media, ads, website heroes, creative assets, and print. Multiple art direction options with optional generated or supplied visuals. Actions: design, create, generate banner. Platforms: Facebook, Twitter/X, LinkedIn, YouTube, Instagram, Google Display, website hero, print. Styles: minimalist, gradient, bold typography, photo-based, illustrated, geometric, retro, glassmorphism, 3D, neon, duotone, editorial, collage.",
+    "path": "cli/assets/skills/banner-design/SKILL.md",
+    "relative_directory": "cli/assets/skills/banner-design",
+    "sha256": "ccb89ddc848f60bfe630cb19dfe3e062df94a029467a9b15259f2761019ac5c4",
+    "linked_local_files": [
+      "cli/assets/skills/banner-design/references/banner-sizes-and-styles.md"
+    ]
+  },
+  {
+    "source_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "repo_key": "nextlevelbuilder__ui-ux-pro-max-skill",
+    "skill_name": "brand",
+    "description": "Brand voice, visual identity, messaging frameworks, asset management, brand consistency. Activate for branded content, tone of voice, marketing assets, brand compliance, style guides.",
+    "path": "cli/assets/skills/brand/SKILL.md",
+    "relative_directory": "cli/assets/skills/brand",
+    "sha256": "1c24139633e2ebf11da4f97eaeb1c0564f8658a40b3ad779387a5b8c6cb76dbc",
+    "linked_local_files": [
+      "cli/assets/skills/brand/references/approval-checklist.md",
+      "cli/assets/skills/brand/references/asset-organization.md",
+      "cli/assets/skills/brand/references/brand-guideline-template.md",
+      "cli/assets/skills/brand/references/color-palette-management.md",
+      "cli/assets/skills/brand/references/consistency-checklist.md",
+      "cli/assets/skills/brand/references/logo-usage-rules.md",
+      "cli/assets/skills/brand/references/messaging-framework.md",
+      "cli/assets/skills/brand/references/typography-specifications.md",
+      "cli/assets/skills/brand/references/update.md",
+      "cli/assets/skills/brand/references/visual-identity.md",
+      "cli/assets/skills/brand/references/voice-framework.md",
+      "cli/assets/skills/brand/scripts/extract-colors.cjs",
+      "cli/assets/skills/brand/scripts/inject-brand-context.cjs",
+      "cli/assets/skills/brand/scripts/sync-brand-to-tokens.cjs",
+      "cli/assets/skills/brand/scripts/tests/test_sync_brand_to_tokens.py",
+      "cli/assets/skills/brand/scripts/validate-asset.cjs",
+      "cli/assets/skills/brand/templates/brand-guidelines-starter.md",
+      "cli/assets/skills/design-system/scripts/generate-tokens.cjs"
+    ]
+  },
+  {
+    "source_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "repo_key": "nextlevelbuilder__ui-ux-pro-max-skill",
+    "skill_name": "design",
+    "description": "Comprehensive design skill: brand identity, design tokens, UI styling, logo generation (55 styles, Gemini, Atlas Cloud, MuAPI, or UberLLM AI), corporate identity program (50 deliverables, CIP mockups), HTML presentations (Chart.js), banner design (22 styles, social/ads/web/print), icon design (15 styles, SVG, Gemini 3.1 Pro), social photos (HTML\u2192screenshot, multi-platform). Actions: design logo, create CIP, generate mockups, build slides, design banner, generate icon, create social photos, social media images, brand identity, design system. Platforms: Facebook, Twitter, LinkedIn, YouTube, Instagram, Pinterest, TikTok, Threads, Google Ads.",
+    "path": "cli/assets/skills/design/SKILL.md",
+    "relative_directory": "cli/assets/skills/design",
+    "sha256": "ba43873f21e52763f9986458ae8bf28a855f728377a5cf71b263d9205e9d0080",
+    "linked_local_files": [
+      "cli/assets/skills/design/references/banner-sizes-and-styles.md",
+      "cli/assets/skills/design/references/cip-deliverable-guide.md",
+      "cli/assets/skills/design/references/cip-design.md",
+      "cli/assets/skills/design/references/cip-prompt-engineering.md",
+      "cli/assets/skills/design/references/cip-style-guide.md",
+      "cli/assets/skills/design/references/design-routing.md",
+      "cli/assets/skills/design/references/icon-design.md",
+      "cli/assets/skills/design/references/logo-color-psychology.md",
+      "cli/assets/skills/design/references/logo-design.md",
+      "cli/assets/skills/design/references/logo-prompt-engineering.md",
+      "cli/assets/skills/design/references/logo-style-guide.md",
+      "cli/assets/skills/design/references/slides-copywriting-formulas.md",
+      "cli/assets/skills/design/references/slides-create.md",
+      "cli/assets/skills/design/references/slides-html-template.md",
+      "cli/assets/skills/design/references/slides-layout-patterns.md",
+      "cli/assets/skills/design/references/slides-strategies.md",
+      "cli/assets/skills/design/references/slides.md",
+      "cli/assets/skills/design/references/social-photos-design.md",
+      "cli/assets/skills/design/scripts/cip/core.py",
+      "cli/assets/skills/design/scripts/cip/generate.py",
+      "cli/assets/skills/design/scripts/cip/render-html.py",
+      "cli/assets/skills/design/scripts/cip/search.py",
+      "cli/assets/skills/design/scripts/icon/generate.py",
+      "cli/assets/skills/design/scripts/logo/core.py",
+      "cli/assets/skills/design/scripts/logo/generate.py",
+      "cli/assets/skills/design/scripts/logo/search.py",
+      "cli/assets/skills/design/scripts/logo/tests/test_generate.py",
+      "cli/assets/skills/design/scripts/tests/test_cip_generate.py",
+      "cli/assets/skills/design/scripts/tests/test_cip_stdout_encoding.py",
+      "cli/assets/skills/design/scripts/tests/test_icon_generate.py"
+    ]
+  },
+  {
+    "source_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "repo_key": "nextlevelbuilder__ui-ux-pro-max-skill",
+    "skill_name": "design-system",
+    "description": "Token architecture, component specifications, and slide generation. Three-layer tokens (primitive\u2192semantic\u2192component), CSS variables, spacing/typography scales, component specs, strategic slide creation. Use for design tokens, systematic design, brand-compliant presentations.",
+    "path": "cli/assets/skills/design-system/SKILL.md",
+    "relative_directory": "cli/assets/skills/design-system",
+    "sha256": "8aa5ff93320559a6e5289d37b6b06b3307737dbfb4a6f3fc44135c705613c511",
+    "linked_local_files": [
+      "cli/assets/skills/design-system/data/slide-backgrounds.csv",
+      "cli/assets/skills/design-system/data/slide-charts.csv",
+      "cli/assets/skills/design-system/data/slide-color-logic.csv",
+      "cli/assets/skills/design-system/data/slide-copy.csv",
+      "cli/assets/skills/design-system/data/slide-layout-logic.csv",
+      "cli/assets/skills/design-system/data/slide-layouts.csv",
+      "cli/assets/skills/design-system/data/slide-strategies.csv",
+      "cli/assets/skills/design-system/data/slide-typography.csv",
+      "cli/assets/skills/design-system/references/component-specs.md",
+      "cli/assets/skills/design-system/references/component-tokens.md",
+      "cli/assets/skills/design-system/references/primitive-tokens.md",
+      "cli/assets/skills/design-system/references/semantic-tokens.md",
+      "cli/assets/skills/design-system/references/states-and-variants.md",
+      "cli/assets/skills/design-system/references/tailwind-integration.md",
+      "cli/assets/skills/design-system/references/token-architecture.md",
+      "cli/assets/skills/design-system/scripts/embed-tokens.cjs",
+      "cli/assets/skills/design-system/scripts/fetch-background.py",
+      "cli/assets/skills/design-system/scripts/generate-slide.py",
+      "cli/assets/skills/design-system/scripts/generate-tokens.cjs",
+      "cli/assets/skills/design-system/scripts/html-token-validator.py",
+      "cli/assets/skills/design-system/scripts/search-slides.py",
+      "cli/assets/skills/design-system/scripts/slide-token-validator.py",
+      "cli/assets/skills/design-system/scripts/slide_search_core.py",
+      "cli/assets/skills/design-system/scripts/tests/test_utf8_io.py",
+      "cli/assets/skills/design-system/scripts/tests/test_validate_tokens.py",
+      "cli/assets/skills/design-system/scripts/validate-tokens.cjs"
+    ]
+  },
+  {
+    "source_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "repo_key": "nextlevelbuilder__ui-ux-pro-max-skill",
+    "skill_name": "slides",
+    "description": "Create strategic HTML presentations with Chart.js, design tokens, responsive layouts, copywriting formulas, and contextual slide strategies.",
+    "path": "cli/assets/skills/slides/SKILL.md",
+    "relative_directory": "cli/assets/skills/slides",
+    "sha256": "86c07f19ec09f79441d3837e909cfcd51034b83bdcc88094c15e652be1e765cb",
+    "linked_local_files": [
+      "cli/assets/skills/slides/references/copywriting-formulas.md",
+      "cli/assets/skills/slides/references/create.md",
+      "cli/assets/skills/slides/references/html-template.md",
+      "cli/assets/skills/slides/references/layout-patterns.md",
+      "cli/assets/skills/slides/references/slide-strategies.md"
+    ]
+  },
+  {
+    "source_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "repo_key": "nextlevelbuilder__ui-ux-pro-max-skill",
+    "skill_name": "ui-styling",
+    "description": "Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canvas-based visual designs. Use when building user interfaces, implementing design systems, creating responsive layouts, adding accessible components (dialogs, dropdowns, forms, tables), customizing themes and colors, implementing dark mode, generating visual designs and posters, or establishing consistent styling patterns across applications.",
+    "path": "cli/assets/skills/ui-styling/SKILL.md",
+    "relative_directory": "cli/assets/skills/ui-styling",
+    "sha256": "625e302c60ee8f2e22d56cbe638c4a739e2657f566dae42689503ad517c30f1e",
+    "linked_local_files": [
+      "cli/assets/skills/ui-styling/references/canvas-design-system.md",
+      "cli/assets/skills/ui-styling/references/shadcn-accessibility.md",
+      "cli/assets/skills/ui-styling/references/shadcn-components.md",
+      "cli/assets/skills/ui-styling/references/shadcn-theming.md",
+      "cli/assets/skills/ui-styling/references/tailwind-customization.md",
+      "cli/assets/skills/ui-styling/references/tailwind-responsive.md",
+      "cli/assets/skills/ui-styling/references/tailwind-utilities.md",
+      "cli/assets/skills/ui-styling/scripts/requirements.txt",
+      "cli/assets/skills/ui-styling/scripts/shadcn_add.py",
+      "cli/assets/skills/ui-styling/scripts/tailwind_config_gen.py",
+      "cli/assets/skills/ui-styling/scripts/tests/coverage-ui.json",
+      "cli/assets/skills/ui-styling/scripts/tests/requirements.txt",
+      "cli/assets/skills/ui-styling/scripts/tests/test_shadcn_add.py",
+      "cli/assets/skills/ui-styling/scripts/tests/test_tailwind_config_gen.py"
+    ]
+  },
+  {
+    "source_repo": "Graphify-Labs/graphify",
+    "repo_key": "Graphify-Labs__graphify",
+    "skill_name": "graphify",
+    "description": "Use for any question about a codebase, its architecture, file relationships, or project content \u2014 especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools.",
+    "path": "graphify/skill-agents.md",
+    "relative_directory": "graphify",
+    "sha256": "8f72895893b6e46d8da42ff9e6f41c3e6990ded70c0d7c2449e14afb622bdaa4",
+    "linked_local_files": [
+      "graphify/skill.md"
+    ]
+  },
+  {
+    "source_repo": "Graphify-Labs/graphify",
+    "repo_key": "Graphify-Labs__graphify",
+    "skill_name": "graphify",
+    "description": "Use for any question about a codebase, its architecture, file relationships, or project content \u2014 especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools.",
+    "path": "graphify/skill-aider.md",
+    "relative_directory": "graphify",
+    "sha256": "fd72c42bb35cc890d4d10368154f5d2e97a0d78eae2dc23479d4f79ccf31cba4",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "Graphify-Labs/graphify",
+    "repo_key": "Graphify-Labs__graphify",
+    "skill_name": "graphify",
+    "description": "Use for any question about a codebase, its architecture, file relationships, or project content \u2014 especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools.",
+    "path": "graphify/skill-amp.md",
+    "relative_directory": "graphify",
+    "sha256": "8f72895893b6e46d8da42ff9e6f41c3e6990ded70c0d7c2449e14afb622bdaa4",
+    "linked_local_files": [
+      "graphify/skill.md"
+    ]
+  },
+  {
+    "source_repo": "Graphify-Labs/graphify",
+    "repo_key": "Graphify-Labs__graphify",
+    "skill_name": "graphify",
+    "description": "Use for any question about a codebase, its architecture, file relationships, or project content \u2014 especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools.",
+    "path": "graphify/skill-claw.md",
+    "relative_directory": "graphify",
+    "sha256": "bbddbc077b4374a2d6b5181e0d9d0e7cac576df46dff328d7934a1c2f077bc4d",
+    "linked_local_files": [
+      "graphify/skill.md"
+    ]
+  },
+  {
+    "source_repo": "Graphify-Labs/graphify",
+    "repo_key": "Graphify-Labs__graphify",
+    "skill_name": "graphify",
+    "description": "Use for any question about a codebase, its architecture, file relationships, or project content \u2014 especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools.",
+    "path": "graphify/skill-codex.md",
+    "relative_directory": "graphify",
+    "sha256": "7511352c4cf6da3647462516de41e99a4be53d9ea106fd2e6fadf0bafb9740b0",
+    "linked_local_files": [
+      "graphify/skill.md"
+    ]
+  },
+  {
+    "source_repo": "Graphify-Labs/graphify",
+    "repo_key": "Graphify-Labs__graphify",
+    "skill_name": "graphify",
+    "description": "Use for any question about a codebase, its architecture, file relationships, or project content \u2014 especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools.",
+    "path": "graphify/skill-copilot.md",
+    "relative_directory": "graphify",
+    "sha256": "bbddbc077b4374a2d6b5181e0d9d0e7cac576df46dff328d7934a1c2f077bc4d",
+    "linked_local_files": [
+      "graphify/skill.md"
+    ]
+  },
+  {
+    "source_repo": "Graphify-Labs/graphify",
+    "repo_key": "Graphify-Labs__graphify",
+    "skill_name": "graphify",
+    "description": "Use for any question about a codebase, its architecture, file relationships, or project content \u2014 especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools.",
+    "path": "graphify/skill-devin.md",
+    "relative_directory": "graphify",
+    "sha256": "c29391454a0360a854440f2f0ed05ed43a4ab39aabc7d6c67ee706d07dec143c",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "Graphify-Labs/graphify",
+    "repo_key": "Graphify-Labs__graphify",
+    "skill_name": "graphify",
+    "description": "Use for any question about a codebase, its architecture, file relationships, or project content \u2014 especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools.",
+    "path": "graphify/skill-droid.md",
+    "relative_directory": "graphify",
+    "sha256": "f5955fe171d8b45250b92d40b90705e822137464cf184e371cd945c0d74cc6e2",
+    "linked_local_files": [
+      "graphify/skill.md"
+    ]
+  },
+  {
+    "source_repo": "Graphify-Labs/graphify",
+    "repo_key": "Graphify-Labs__graphify",
+    "skill_name": "graphify",
+    "description": "Use for any question about a codebase, its architecture, file relationships, or project content \u2014 especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools.",
+    "path": "graphify/skill-kilo.md",
+    "relative_directory": "graphify",
+    "sha256": "42c746d897426b367b196a8d4e315fb19482e77f4a0324b58873f4a030a5f93b",
+    "linked_local_files": [
+      "graphify/skill.md"
+    ]
+  },
+  {
+    "source_repo": "Graphify-Labs/graphify",
+    "repo_key": "Graphify-Labs__graphify",
+    "skill_name": "graphify",
+    "description": "Use for any question about a codebase, its architecture, file relationships, or project content \u2014 especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools.",
+    "path": "graphify/skill-kiro.md",
+    "relative_directory": "graphify",
+    "sha256": "bbddbc077b4374a2d6b5181e0d9d0e7cac576df46dff328d7934a1c2f077bc4d",
+    "linked_local_files": [
+      "graphify/skill.md"
+    ]
+  },
+  {
+    "source_repo": "Graphify-Labs/graphify",
+    "repo_key": "Graphify-Labs__graphify",
+    "skill_name": "graphify",
+    "description": "Use for any question about a codebase, its architecture, file relationships, or project content \u2014 especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools.",
+    "path": "graphify/skill-opencode.md",
+    "relative_directory": "graphify",
+    "sha256": "484a7c26709ed97ffc5358505c9b025bd4237ee1d41ddc6d1f4f67fbccbd6a6d",
+    "linked_local_files": [
+      "graphify/skill.md"
+    ]
+  },
+  {
+    "source_repo": "Graphify-Labs/graphify",
+    "repo_key": "Graphify-Labs__graphify",
+    "skill_name": "graphify",
+    "description": "Use for any question about a codebase, its architecture, file relationships, or project content \u2014 especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools.",
+    "path": "graphify/skill-pi.md",
+    "relative_directory": "graphify",
+    "sha256": "48673df0826ffd97ed1bd69962200fd943221d6258aaa7978ee29150e88cec46",
+    "linked_local_files": [
+      "graphify/skill.md"
+    ]
+  },
+  {
+    "source_repo": "Graphify-Labs/graphify",
+    "repo_key": "Graphify-Labs__graphify",
+    "skill_name": "graphify",
+    "description": "Use for any question about a codebase, its architecture, file relationships, or project content \u2014 especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools.",
+    "path": "graphify/skill-trae.md",
+    "relative_directory": "graphify",
+    "sha256": "0d4d4c3ddcea09256d2268e4f17a7a2dc5b80289f0241216e9bbf13234ff778b",
+    "linked_local_files": [
+      "graphify/skill.md"
+    ]
+  },
+  {
+    "source_repo": "Graphify-Labs/graphify",
+    "repo_key": "Graphify-Labs__graphify",
+    "skill_name": "graphify",
+    "description": "Use for any question about a codebase, its architecture, file relationships, or project content \u2014 especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools.",
+    "path": "graphify/skill-vscode.md",
+    "relative_directory": "graphify",
+    "sha256": "9d1c4e8d0d1225d1ad51be4f435874262a70b94c63ec3868c539e12d2c60bc36",
+    "linked_local_files": [
+      "graphify/skill.md"
+    ]
+  },
+  {
+    "source_repo": "Graphify-Labs/graphify",
+    "repo_key": "Graphify-Labs__graphify",
+    "skill_name": "graphify",
+    "description": "Use for any question about a codebase, its architecture, file relationships, or project content \u2014 especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools.",
+    "path": "graphify/skill-windows.md",
+    "relative_directory": "graphify",
+    "sha256": "47451608eccfaa233149f22cbf1de3e882091ca41f515622bdaf29b4ae954465",
+    "linked_local_files": [
+      "graphify/skill.md"
+    ]
+  },
+  {
+    "source_repo": "Graphify-Labs/graphify",
+    "repo_key": "Graphify-Labs__graphify",
+    "skill_name": "graphify",
+    "description": "Use for any question about a codebase, its architecture, file relationships, or project content \u2014 especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools.",
+    "path": "graphify/skill.md",
+    "relative_directory": "graphify",
+    "sha256": "bbddbc077b4374a2d6b5181e0d9d0e7cac576df46dff328d7934a1c2f077bc4d",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "shadcn/improve",
+    "repo_key": "shadcn__improve",
+    "skill_name": "improve",
+    "description": "Survey any codebase as a senior advisor and produce prioritized, self-contained implementation plans for OTHER models/agents to execute. Strictly read-only on source code \u2014 never implements, fixes, or refactors anything itself. Use when asked to audit a codebase, find improvement opportunities (bugs, security, performance, test coverage, tech debt, migrations, DX), suggest features or where to take the project next (roadmap, product direction), or generate handoff plans for another agent to implement.",
+    "path": "skills/improve/SKILL.md",
+    "relative_directory": "skills/improve",
+    "sha256": "1599aa29e9b16424cb767779efac53fa56e3f38be92dff4ac587393a1ad5070a",
+    "linked_local_files": [
+      "skills/improve/references/audit-playbook.md",
+      "skills/improve/references/closing-the-loop.md",
+      "skills/improve/references/plan-template.md"
     ]
   },
   {
