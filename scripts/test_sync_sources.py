@@ -22,6 +22,29 @@ class SkillBaseReferenceTests(unittest.TestCase):
         self.write("skills/demo/SKILL.md", content)
         return set(sync_sources.collect_related_files(self.skill, self.root))
 
+    def test_case_mismatched_local_token_does_not_alias_companion(self):
+        self.write("skills/demo/docs/agents.md", "See `AGENTS.md` for project rules.")
+        self.assertEqual(
+            self.related("Read [agents](docs/agents.md)."),
+            {"skills/demo/docs/agents.md"},
+        )
+
+    def test_directory_glob_requires_exact_path_case(self):
+        self.write("skills/demo/references/helper.md")
+        self.write("skills/demo/SKILL.md")
+        self.assertEqual(
+            sync_sources.expand_local_directory_glob(
+                self.skill, self.root, "References/*"
+            ),
+            [],
+        )
+        self.assertEqual(
+            sync_sources.expand_local_directory_glob(
+                self.skill, self.root, "references/*"
+            ),
+            [self.root / "skills/demo/references/helper.md"],
+        )
+
     def test_literal_skill_base_reference(self):
         self.write("skills/demo/references/workflow.md")
         self.assertEqual(

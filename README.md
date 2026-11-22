@@ -28,27 +28,27 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
 ## Source Repositories and Gists
 
 - [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
-  - Archived commit: `39b723ceebf81474d0557c1fecd01eddab585563`
+  - Archived commit: `8c99fa36d90068c82d547f7c12a9d67a3e95f4ee`
   - Snapshot: [`archives/addyosmani__agent-skills/snapshot`](archives/addyosmani__agent-skills/snapshot)
-  - Skills discovered: 25
-  - Files retained in reduced snapshot: 40
+  - Skills discovered: 26
+  - Files retained in reduced snapshot: 48
 - [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)
   - Archived commit: `2c606141936f1eeef17fa3043a72095b4765b9c2`
   - Snapshot: [`archives/multica-ai__andrej-karpathy-skills/snapshot`](archives/multica-ai__andrej-karpathy-skills/snapshot)
   - Skills discovered: 1
   - Files retained in reduced snapshot: 1
 - [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)
-  - Archived commit: `016e65f311b55747499fb18ab4a19acb0e8e0a2c`
+  - Archived commit: `ae243ac2ad6ef2deeb46e35b636e6a2d137e50ec`
   - Snapshot: [`archives/Imbad0202__academic-research-skills/snapshot`](archives/Imbad0202__academic-research-skills/snapshot)
   - Skills discovered: 5
-  - Files retained in reduced snapshot: 1126
+  - Files retained in reduced snapshot: 1130
 - [mattpocock/skills](https://github.com/mattpocock/skills)
-  - Archived commit: `5863806dd4e15c63174bee4e7515a4256792ecfa`
+  - Archived commit: `abeeaf95660ba9e8b7c753eb38f441ca707a8823`
   - Snapshot: [`archives/mattpocock__skills/snapshot`](archives/mattpocock__skills/snapshot)
   - Skills discovered: 39
   - Files retained in reduced snapshot: 69
 - [juliusbrussee/caveman](https://github.com/juliusbrussee/caveman)
-  - Archived commit: `a192894723a8f47e7f504c7b5041967ff1f18e55`
+  - Archived commit: `70f4f34e834893ea9af9f4fc6022266bd56d18b1`
   - Snapshot: [`archives/juliusbrussee__caveman/snapshot`](archives/juliusbrussee__caveman/snapshot)
   - Skills discovered: 28
   - Files retained in reduced snapshot: 42
@@ -58,22 +58,22 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Skills discovered: 15
   - Files retained in reduced snapshot: 80
 - [cursor/plugins](https://github.com/cursor/plugins)
-  - Archived commit: `35a90942a7f02e1ebbc2443643179815f2147954`
+  - Archived commit: `7a583913eb1b8d1a0ee76753d1a2cf072e7b54f9`
   - Snapshot: [`archives/cursor__plugins/snapshot`](archives/cursor__plugins/snapshot)
   - Skills discovered: 173
-  - Files retained in reduced snapshot: 411
+  - Files retained in reduced snapshot: 415
 - [affaan-m/ECC](https://github.com/affaan-m/ECC)
-  - Archived commit: `3f14a103a8694e51c1df9a806217a6d0b5f7a6f7`
+  - Archived commit: `4adeee6732a12d1540f49a4d50a38ce8c97f9a53`
   - Snapshot: [`archives/affaan-m__ECC/snapshot`](archives/affaan-m__ECC/snapshot)
-  - Skills discovered: 1087
-  - Files retained in reduced snapshot: 1438
+  - Skills discovered: 1089
+  - Files retained in reduced snapshot: 1440
 - [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
-  - Archived commit: `a854f3bcb2c4344d7498426d653378510f8b253a`
+  - Archived commit: `64b1f006f800640022ce07f51de5ce56aad34b76`
   - Snapshot: [`archives/mvanhorn__last30days-skill/snapshot`](archives/mvanhorn__last30days-skill/snapshot)
   - Skills discovered: 1
-  - Files retained in reduced snapshot: 183
+  - Files retained in reduced snapshot: 196
 - [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
-  - Archived commit: `96608e078b2d5ea607c5c3b8b5a54d1c1fba6846`
+  - Archived commit: `ebd8654c2c627f721eb8f9c0d1bd4090a29f9e10`
   - Snapshot: [`archives/DietrichGebert__ponytail/snapshot`](archives/DietrichGebert__ponytail/snapshot)
   - Skills discovered: 12
   - Files retained in reduced snapshot: 12
@@ -130,15 +130,15 @@ This repository stores reduced snapshots that keep every discovered `SKILL.md` p
   - Files retained in reduced snapshot: 18
   - Upstream license: [`LICENSE`](archives/cloudflare__security-audit-skill/LICENSE)
 - [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
-  - Archived commit: `ed766d3bf62f32c8d27762ad49abdc3a4744c84f`
+  - Archived commit: `6ec2bb58334ca3014573c4cbd4834ee3a40afd9d`
   - Snapshot: [`archives/nextlevelbuilder__ui-ux-pro-max-skill/snapshot`](archives/nextlevelbuilder__ui-ux-pro-max-skill/snapshot)
   - Skills discovered: 13
-  - Files retained in reduced snapshot: 380
+  - Files retained in reduced snapshot: 381
   - Upstream license: [`LICENSE`](archives/nextlevelbuilder__ui-ux-pro-max-skill/LICENSE)
   - Registered companion directory: [`.claude/skills`](archives/nextlevelbuilder__ui-ux-pro-max-skill/snapshot/.claude/skills)
   - Registered companion directory: [`cli/assets/skills`](archives/nextlevelbuilder__ui-ux-pro-max-skill/snapshot/cli/assets/skills)
 - [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify)
-  - Archived commit: `340268a70a83588d6b3c6de1fffb05326350ef1d`
+  - Archived commit: `3671f31124fdb1de4ec4e485b1bcd7059726a5f3`
   - Snapshot: [`archives/Graphify-Labs__graphify/snapshot`](archives/Graphify-Labs__graphify/snapshot)
   - Skills discovered: 16
   - Files retained in reduced snapshot: 128
@@ -169,6 +169,7 @@ These skills are maintained in this repository rather than inside an upstream sn
 ## Skill Catalog
 
 ### addyosmani/agent-skills
+- `accessibility-engineering`: [`skills/accessibility-engineering/SKILL.md`](archives/addyosmani__agent-skills/snapshot/skills/accessibility-engineering/SKILL.md)
 - `api-and-interface-design`: [`skills/api-and-interface-design/SKILL.md`](archives/addyosmani__agent-skills/snapshot/skills/api-and-interface-design/SKILL.md)
 - `browser-testing-with-devtools`: [`skills/browser-testing-with-devtools/SKILL.md`](archives/addyosmani__agent-skills/snapshot/skills/browser-testing-with-devtools/SKILL.md)
 - `ci-cd-and-automation`: [`skills/ci-cd-and-automation/SKILL.md`](archives/addyosmani__agent-skills/snapshot/skills/ci-cd-and-automation/SKILL.md)
@@ -513,6 +514,7 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `strategic-compact`: [`.agents/skills/strategic-compact/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/strategic-compact/SKILL.md)
 - `tdd-workflow`: [`.agents/skills/tdd-workflow/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/tdd-workflow/SKILL.md)
 - `test-collaboration`: [`.agents/skills/test-collaboration/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/test-collaboration/SKILL.md)
+- `ui-canvas`: [`.agents/skills/ui-canvas/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/ui-canvas/SKILL.md)
 - `unified-memory`: [`.agents/skills/unified-memory/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/unified-memory/SKILL.md)
 - `verification-loop`: [`.agents/skills/verification-loop/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/verification-loop/SKILL.md)
 - `video-editing`: [`.agents/skills/video-editing/SKILL.md`](archives/affaan-m__ECC/snapshot/.agents/skills/video-editing/SKILL.md)
@@ -1540,6 +1542,7 @@ These skills are maintained in this repository rather than inside an upstream sn
 - `token-budget-advisor`: [`skills/token-budget-advisor/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/token-budget-advisor/SKILL.md)
 - `token-card`: [`skills/token-card/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/token-card/SKILL.md)
 - `typescript-patterns`: [`skills/typescript-patterns/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/typescript-patterns/SKILL.md)
+- `ui-canvas`: [`skills/ui-canvas/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ui-canvas/SKILL.md)
 - `ui-demo`: [`skills/ui-demo/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ui-demo/SKILL.md)
 - `ui-to-vue`: [`skills/ui-to-vue/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/ui-to-vue/SKILL.md)
 - `uncloud`: [`skills/uncloud/SKILL.md`](archives/affaan-m__ECC/snapshot/skills/uncloud/SKILL.md)
@@ -1667,7 +1670,7 @@ These skills are maintained in this repository rather than inside an upstream sn
 ## Duplicate Tracking
 
 - Exact duplicate groups: 189
-- Repeated skill names: 353
+- Repeated skill names: 354
 - Full report: [`catalog/duplicates.json`](catalog/duplicates.json)
 
 ## Add A Source

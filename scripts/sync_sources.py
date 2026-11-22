@@ -326,6 +326,20 @@ def normalize_reference(candidate: str) -> str:
     return candidate.strip().strip("'\"`").split("#", 1)[0].split("?", 1)[0].rstrip(".,:;")
 
 
+def has_exact_path_case(path: Path, repo_root: Path) -> bool:
+    """Match Git path spelling on case-insensitive and case-sensitive hosts."""
+    try:
+        relative = path.relative_to(repo_root)
+        current = repo_root
+        for part in relative.parts:
+            if part not in os.listdir(current):
+                return False
+            current = current / part
+        return True
+    except (ValueError, FileNotFoundError, NotADirectoryError):
+        return False
+
+
 def resolve_local_reference(base_path: Path, repo_root: Path, candidate: str) -> Path | None:
     candidate = normalize_reference(candidate)
     if not candidate or candidate.startswith(("http://", "https://", "#", "mailto:", "data:")):
@@ -337,7 +351,10 @@ def resolve_local_reference(base_path: Path, repo_root: Path, candidate: str) ->
         resolved.relative_to(repo_root)
     except ValueError:
         return None
-    if not resolved.exists() or not resolved.is_file() or ".git" in resolved.parts:
+    if (
+        not resolved.exists() or not resolved.is_file() or ".git" in resolved.parts
+        or not has_exact_path_case(resolved, repo_root)
+    ):
         return None
     return resolved
 
@@ -362,7 +379,10 @@ def expand_local_directory_glob(
         directory.relative_to(repo_root)
     except ValueError:
         return []
-    if directory == repo_root or not directory.is_dir() or ".git" in directory.parts:
+    if (
+        directory == repo_root or not directory.is_dir() or ".git" in directory.parts
+        or not has_exact_path_case(directory, repo_root)
+    ):
         return []
 
     expanded: list[Path] = []

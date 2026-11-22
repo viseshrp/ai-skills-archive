@@ -1303,3 +1303,56 @@ Source commit matrix:
 - Synced `nextlevelbuilder__ui-ux-pro-max-skill` at commit `ed766d3bf62f` with 13 skills and 380 files.
 - Synced `Graphify-Labs__graphify` at commit `340268a70a83` with 16 skills and 128 files.
 - Synced `shadcn__improve` at commit `cac56e1ebd3c` with 1 skills and 4 files.
+
+## 2026-11-22 20:02:06Z
+
+- Action: Weekly automation refresh
+- Sources synced: 22
+- Skills indexed: 1456
+- Exact duplicate groups: 189
+- Repeated skill names: 354
+- Synced `addyosmani__agent-skills` at commit `8c99fa36d900` with 26 skills and 48 files.
+- Synced `multica-ai__andrej-karpathy-skills` at commit `2c606141936f` with 1 skills and 1 files.
+- Synced `Imbad0202__academic-research-skills` at commit `ae243ac2ad6e` with 5 skills and 1130 files.
+- Synced `mattpocock__skills` at commit `abeeaf95660b` with 39 skills and 69 files.
+- Synced `juliusbrussee__caveman` at commit `70f4f34e8348` with 28 skills and 42 files.
+- Synced `obra__Superpowers` at commit `22f0b463e7a5` with 15 skills and 80 files.
+- Synced `cursor__plugins` at commit `7a583913eb1b` with 173 skills and 415 files.
+- Synced `affaan-m__ECC` at commit `4adeee6732a1` with 1089 skills and 1440 files.
+- Synced `mvanhorn__last30days-skill` at commit `64b1f006f800` with 1 skills and 196 files.
+- Synced `DietrichGebert__ponytail` at commit `ebd8654c2c62` with 12 skills and 12 files.
+- Synced `petergyang__no-ai-slop` at commit `000650b15698` with 1 skills and 2 files.
+- Synced `ayghri__i-have-adhd` at commit `1ecea1993b7f` with 2 skills and 2 files.
+- Synced `Leonxlnx__taste-skill` at commit `f6b76575f949` with 1 skills and 1631 files.
+- Synced `ChewingGlass__9a380da5d5a69a540b56d6449556ac5b` at commit `daad13e34461` with 1 skills and 1 files.
+- Synced `emilkowalski__skills` at commit `64eb3deb9a5f` with 20 skills and 29 files.
+- Synced `humanlayer__skills` at commit `4d69d20f6e9b` with 7 skills and 83 files.
+- Synced `janestreet__agent_skills` at commit `469868f4489c` with 1 skills and 1 files.
+- Synced `googlechrome__modern-web-guidance` at commit `64a6d708f5a4` with 2 skills and 235 files.
+- Synced `cloudflare__security-audit-skill` at commit `c1c8a8c14710` with 1 skills and 18 files.
+- Synced `nextlevelbuilder__ui-ux-pro-max-skill` at commit `6ec2bb58334c` with 13 skills and 381 files.
+- Synced `Graphify-Labs__graphify` at commit `3671f31124fd` with 16 skills and 128 files.
+- Synced `shadcn__improve` at commit `cac56e1ebd3c` with 1 skills and 4 files.
+
+## 2026-11-22 — weekly refresh validation
+
+- Refreshed all 22 registered sources in a disposable checkout based on verified `origin/main` `72e4d1a1d6431a5bd75736a3631975622ddd0ed3`. All source fetches succeeded; no archived code was executed.
+- Ten upstream commits advanced. Added Addy Osmani `accessibility-engineering` and the two ECC `ui-canvas` skill paths; removed no skills and updated 27 existing skill hashes. Indexed skills increased 1,453 -> 1,456.
+- Exact duplicate groups remain 189 with unchanged memberships and three changed content hashes. Repeated-name groups increase 353 -> 354 with `ui-canvas`; nine existing groups update member hashes.
+- All 53 pre-refresh tests passed. The initial coverage audit found a case-insensitive filesystem mismatch: an `AGENTS.md` token falsely matched source `agents.md` and produced a wrongly spelled archive path. Added two regression tests, which failed before the fix; the resolver now requires exact source path spelling for files and directory globs, and all 55 tests pass. Rebuilt all snapshots from the fetched sources.
+- A subsequent audit assertion treated `/tmp` and `/private/tmp` as different paths; normalizing the temporary checkout root fixed the audit. An initial optional memory lookup used an unset `CODEX_HOME`; the configured absolute automation path supplied the prior notes.
+- Validated 5,948 snapshot files against upstream Git blobs and executable modes, 5,625 text hashes, all 1,456 skill records, 9,408 linked references, 11 licenses, declared companion directories, containment, generated catalogs and README, 1,498 local README links, independently recomputed duplicates, and append-only logging. A static audit found 1,905 local Python import edges and no missing modules or syntax skips.
+- The complete HumanLayer `plugins/rpi/skills/rpi/` package matches all 53 upstream Git files. Caveman, Cursor statechart, Taste, ECC repository rules and academic reviewer dependencies passed their package checks.
+
+| Source | Previous commit | Current commit | Skills | Snapshot files |
+| --- | --- | --- | --- | --- |
+| `addyosmani__agent-skills` | `39b723ceebf8` | `8c99fa36d900` | 25 -> 26 | 40 -> 48 |
+| `Imbad0202__academic-research-skills` | `016e65f311b5` | `ae243ac2ad6e` | 5 -> 5 | 1126 -> 1130 |
+| `mattpocock__skills` | `5863806dd4e1` | `abeeaf95660b` | 39 -> 39 | 69 -> 69 |
+| `juliusbrussee__caveman` | `a192894723a8` | `70f4f34e8348` | 28 -> 28 | 42 -> 42 |
+| `cursor__plugins` | `35a90942a7f0` | `7a583913eb1b` | 173 -> 173 | 411 -> 415 |
+| `affaan-m__ECC` | `3f14a103a869` | `4adeee6732a1` | 1087 -> 1089 | 1438 -> 1440 |
+| `mvanhorn__last30days-skill` | `a854f3bcb2c4` | `64b1f006f800` | 1 -> 1 | 183 -> 196 |
+| `DietrichGebert__ponytail` | `96608e078b2d` | `ebd8654c2c62` | 12 -> 12 | 12 -> 12 |
+| `nextlevelbuilder__ui-ux-pro-max-skill` | `ed766d3bf62f` | `6ec2bb58334c` | 13 -> 13 | 380 -> 381 |
+| `Graphify-Labs__graphify` | `340268a70a83` | `3671f31124fd` | 16 -> 16 | 128 -> 128 |

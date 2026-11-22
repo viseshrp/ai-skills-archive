@@ -2,6 +2,30 @@
   {
     "source_repo": "addyosmani/agent-skills",
     "repo_key": "addyosmani__agent-skills",
+    "skill_name": "accessibility-engineering",
+    "description": "Audits existing interfaces for WCAG 2.2 AA conformance and remediates the violations found. Use when auditing a page or component for accessibility, running axe-core or pa11y, triaging a11y violations, or checking screen reader and contrast issues before shipping.",
+    "path": "skills/accessibility-engineering/SKILL.md",
+    "relative_directory": "skills/accessibility-engineering",
+    "sha256": "db13af2af8be2a3342adf4c4c930cf205241ae6a17dcc566a9cffbee01319557",
+    "linked_local_files": [
+      "agents/accessibility-auditor.md",
+      "agents/code-reviewer.md",
+      "agents/security-auditor.md",
+      "agents/test-engineer.md",
+      "agents/web-performance-auditor.md",
+      "docs/agents.md",
+      "references/accessibility-checklist.md",
+      "references/orchestration-patterns.md",
+      "references/performance-checklist.md",
+      "skills/accessibility-engineering/scripts/audit-a11y.sh",
+      "skills/frontend-ui-engineering/SKILL.md",
+      "skills/performance-optimization/SKILL.md",
+      "skills/performance-optimization/references/optimization-patterns.md"
+    ]
+  },
+  {
+    "source_repo": "addyosmani/agent-skills",
+    "repo_key": "addyosmani__agent-skills",
     "skill_name": "api-and-interface-design",
     "description": "Guides stable API and interface design. Use when designing APIs, module boundaries, or any public interface. Use when creating REST or GraphQL endpoints, defining type contracts between modules, or establishing boundaries between frontend and backend.",
     "path": "skills/api-and-interface-design/SKILL.md",
@@ -26,7 +50,7 @@
     "description": "Automates CI/CD pipeline setup. Use when setting up or modifying build and deployment pipelines. Use when you need to automate quality gates, configure test runners in CI, or establish deployment strategies.",
     "path": "skills/ci-cd-and-automation/SKILL.md",
     "relative_directory": "skills/ci-cd-and-automation",
-    "sha256": "5e0e55c059670a7838dc9d58dc20a3a645c0d43c974416490112af7de522df95",
+    "sha256": "1710bed2509331cd2d570ee6effba1a1479f65e6b761b3b765ce343356d9dcf5",
     "linked_local_files": []
   },
   {
@@ -36,7 +60,7 @@
     "description": "Conducts multi-axis code review. Use before merging any change. Use when reviewing code written by yourself, another agent, or a human. Use when you need to assess code quality across multiple dimensions before it enters the main branch. Use when asked to review a diff or a pull request, even when the diff is pasted inline and the review looks quick to do from reading it.",
     "path": "skills/code-review-and-quality/SKILL.md",
     "relative_directory": "skills/code-review-and-quality",
-    "sha256": "5dc8f98d9d23e74676091a945b2649bb52456e34f293238ee2511281104a94c0",
+    "sha256": "4699e7a1b4ad2f325a77cad28d9f78ea11fd9f7f0e1e813e0cbbbab4e7964607",
     "linked_local_files": [
       "references/performance-checklist.md",
       "references/security-checklist.md"
@@ -258,7 +282,7 @@
     "description": "Creates specs before coding. Use when starting a new project, feature, or significant change and no specification exists yet. Use when drafting a PRD or requirements document with objectives and scope, or when requirements are unclear, ambiguous, or only exist as a vague idea. Use when a single requirement spans several independently testable capabilities and needs decomposing into a capability map of modules before specifying. Use when evolving a shipped spec \u2014 scoping a V1, deferring ideas to a V2 backlog, or writing a follow-up spec for a change to an existing feature.",
     "path": "skills/spec-driven-development/SKILL.md",
     "relative_directory": "skills/spec-driven-development",
-    "sha256": "58dd9f5f2e53830c0c0dd9651998bd6ee4e2a1cc520c9dcf855dfb2fbb3f5059",
+    "sha256": "516eaa5fbe8b1dd2e3a675f0a4361443d3828c41aec04750ae4b3143bb4f82ed",
     "linked_local_files": [
       "references/definition-of-done.md",
       "references/testing-patterns.md",
@@ -286,7 +310,7 @@
     "description": "Discovers and invokes agent skills. Use when starting a session, or when you need to decide which skill or workflow applies to the piece of work at hand. This is the meta-skill that governs how all other skills are discovered and invoked.",
     "path": "skills/using-agent-skills/SKILL.md",
     "relative_directory": "skills/using-agent-skills",
-    "sha256": "30787ef2c77bf1a4729fffed0f6523ba6fcbe81bdc436b36371b78c21394d3c3",
+    "sha256": "4a0eba3e2886b427d8a48fd2ba01a95ef0704e5f69d69df1f19060d26e702aef",
     "linked_local_files": [
       "references/definition-of-done.md"
     ]
@@ -308,7 +332,7 @@
     "description": "12-agent academic paper writing pipeline. 11 modes (full/plan/outline/revision/revision-coach/abstract/lit-review/format-convert/citation-check/disclosure/rebuttal-audit). 6 paper types, 5 citation formats, bilingual abstracts, LaTeX/DOCX-via-Pandoc/PDF output. Style Calibration + Writing Quality Check + Anti-Patterns with IRON RULE markers. Triggers: write paper, academic paper, guide my paper, parse reviews, I got reviewer comments, revision roadmap, should we push back, conference rebuttal, grant panel response, audit my rebuttal, check my response draft, AI disclosure, check citations, citation check, check my references, verify references, look over the refs, \u5beb\u8ad6\u6587, \u5b78\u8853\u8ad6\u6587, \u5f15\u5c0e\u6211\u5beb\u8ad6\u6587, \u5be9\u67e5\u610f\u898b, \u6211\u6536\u5230\u5be9\u67e5\u610f\u898b, \u4fee\u8a02\u8def\u7dda\u5716, \u8a55\u4f30\u56de\u8986, \u6aa2\u67e5\u5f15\u7528, \u5f15\u7528\u6aa2\u67e5, \u6aa2\u67e5\u53c3\u8003\u6587\u737b, \u6838\u5c0d\u6587\u737b, \ub17c\ubb38 \uc791\uc131, \ucd08\ub85d \uc791\uc131, \ub17c\ubb38 \uc218\uc815, \ub17c\ubb38 \uacc4\ud68d\uc744 \ub3c4\uc640\uc918, \uc2ec\uc0ac \uc758\uacac\uc744 \ubc1b\uc558\uc5b4, \uc2ec\uc0ac \uc758\uacac \ubc18\uc601, \ub2f5\ubcc0\uc11c \uc810\uac80, AI \uc0ac\uc6a9 \uace0\uc9c0, \uc778\uc6a9 \ud655\uc778, \uc778\uc6a9 \ud615\uc2dd \uac80\uc0ac, enmendar mi art\u00edculo, redactar art\u00edculo, gu\u00eda mi art\u00edculo, analizar rese\u00f1as, auditar mi respuesta, verificar borrador de respuesta, verificar citas, divulgaci\u00f3n de IA.",
     "path": "academic-paper/SKILL.md",
     "relative_directory": "academic-paper",
-    "sha256": "3f2463eeaed1f94cb64046a40ecd464177a2a52755f439835baebd835cdd0511",
+    "sha256": "7cae675b3f7bc6bcc2207aad29bc5cb2c59f962e96026db956fd4f032d542192",
     "linked_local_files": [
       ".claude-plugin/marketplace.json",
       ".claude-plugin/plugin.json",
@@ -373,6 +397,7 @@
       "academic-paper/agents/formatter_agent.md",
       "academic-paper/agents/intake_agent.md",
       "academic-paper/agents/literature_strategist_agent.md",
+      "academic-paper/agents/peer_reviewer_agent.md",
       "academic-paper/agents/socratic_mentor_agent.md",
       "academic-paper/examples/chinese_paper_example.md",
       "academic-paper/examples/clinical_citation_verification_checklist.md",
@@ -722,6 +747,8 @@
       "plugin-evals-citation-check/README.md",
       "plugin-evals-citation-locale/README.md",
       "plugin-evals/README.md",
+      "plugin-evals/preregistration-907-command.md",
+      "plugin-evals/preregistration-907.md",
       "requirements-dev.txt",
       "scripts/_anchored_open.py",
       "scripts/_block_parser.py",
@@ -925,6 +952,7 @@
       "scripts/cross_model_handoff.py",
       "scripts/cross_model_smoke_test.sh",
       "scripts/cross_model_smoke_test_codex.sh",
+      "scripts/cross_model_verification/gemini_is_grounded.jq",
       "scripts/cross_model_verification/normalize_compat_verdict.py",
       "scripts/cross_model_verification/openai_effort_guard.sh",
       "scripts/cross_model_verification/openai_has_completed_web_search.jq",
@@ -1507,6 +1535,7 @@
       "academic-paper/agents/formatter_agent.md",
       "academic-paper/agents/intake_agent.md",
       "academic-paper/agents/literature_strategist_agent.md",
+      "academic-paper/agents/peer_reviewer_agent.md",
       "academic-paper/agents/socratic_mentor_agent.md",
       "academic-paper/examples/chinese_paper_example.md",
       "academic-paper/examples/clinical_citation_verification_checklist.md",
@@ -1856,6 +1885,8 @@
       "plugin-evals-citation-check/README.md",
       "plugin-evals-citation-locale/README.md",
       "plugin-evals/README.md",
+      "plugin-evals/preregistration-907-command.md",
+      "plugin-evals/preregistration-907.md",
       "requirements-dev.txt",
       "scripts/_anchored_open.py",
       "scripts/_block_parser.py",
@@ -2059,6 +2090,7 @@
       "scripts/cross_model_handoff.py",
       "scripts/cross_model_smoke_test.sh",
       "scripts/cross_model_smoke_test_codex.sh",
+      "scripts/cross_model_verification/gemini_is_grounded.jq",
       "scripts/cross_model_verification/normalize_compat_verdict.py",
       "scripts/cross_model_verification/openai_effort_guard.sh",
       "scripts/cross_model_verification/openai_has_completed_web_search.jq",
@@ -2575,7 +2607,7 @@
     "description": "Orchestrator for the full academic research pipeline: research -> write -> integrity check -> review -> revise -> re-review -> re-revise -> final integrity check -> finalize. Coordinates deep-research, academic-paper, and academic-paper-reviewer into a seamless 10-stage workflow with mandatory, coverage-bounded integrity checks, two-stage peer review, and auditable quality-assurance artifacts. Triggers on: academic pipeline, research to paper, full paper workflow, paper pipeline, end-to-end paper, research-to-publication, complete paper workflow, \uc5f0\uad6c\ubd80\ud130 \ub17c\ubb38\uae4c\uc9c0, \uc5f0\uad6c \uc8fc\uc81c \uc124\uc815\ubd80\ud130 \ub17c\ubb38 \uc644\uc131\uae4c\uc9c0, \ub17c\ubb38 \uc804\uccb4 \uc6cc\ud06c\ud50c\ub85c, flujo de trabajo acad\u00e9mico, investigaci\u00f3n a art\u00edculo, flujo completo de art\u00edculo, pipeline de investigaci\u00f3n completa, publicaci\u00f3n de investigaci\u00f3n, flujo de trabajo completo del art\u00edculo.",
     "path": "academic-pipeline/SKILL.md",
     "relative_directory": "academic-pipeline",
-    "sha256": "4b5003834032de3f647c7c66d25f894311e3ea6e5dbbd3a5525b3d1524495733",
+    "sha256": "cca9a5d29e1a0825e008bdf609c2230e9fcc8c87891681eeb77bfba32b247cf6",
     "linked_local_files": [
       ".claude-plugin/marketplace.json",
       ".claude-plugin/plugin.json",
@@ -2641,6 +2673,7 @@
       "academic-paper/agents/formatter_agent.md",
       "academic-paper/agents/intake_agent.md",
       "academic-paper/agents/literature_strategist_agent.md",
+      "academic-paper/agents/peer_reviewer_agent.md",
       "academic-paper/agents/socratic_mentor_agent.md",
       "academic-paper/examples/chinese_paper_example.md",
       "academic-paper/examples/clinical_citation_verification_checklist.md",
@@ -2990,6 +3023,8 @@
       "plugin-evals-citation-check/README.md",
       "plugin-evals-citation-locale/README.md",
       "plugin-evals/README.md",
+      "plugin-evals/preregistration-907-command.md",
+      "plugin-evals/preregistration-907.md",
       "requirements-dev.txt",
       "scripts/_anchored_open.py",
       "scripts/_block_parser.py",
@@ -3193,6 +3228,7 @@
       "scripts/cross_model_handoff.py",
       "scripts/cross_model_smoke_test.sh",
       "scripts/cross_model_smoke_test_codex.sh",
+      "scripts/cross_model_verification/gemini_is_grounded.jq",
       "scripts/cross_model_verification/normalize_compat_verdict.py",
       "scripts/cross_model_verification/openai_effort_guard.sh",
       "scripts/cross_model_verification/openai_has_completed_web_search.jq",
@@ -3775,6 +3811,7 @@
       "academic-paper/agents/formatter_agent.md",
       "academic-paper/agents/intake_agent.md",
       "academic-paper/agents/literature_strategist_agent.md",
+      "academic-paper/agents/peer_reviewer_agent.md",
       "academic-paper/agents/socratic_mentor_agent.md",
       "academic-paper/examples/chinese_paper_example.md",
       "academic-paper/examples/clinical_citation_verification_checklist.md",
@@ -4124,6 +4161,8 @@
       "plugin-evals-citation-check/README.md",
       "plugin-evals-citation-locale/README.md",
       "plugin-evals/README.md",
+      "plugin-evals/preregistration-907-command.md",
+      "plugin-evals/preregistration-907.md",
       "requirements-dev.txt",
       "scripts/_anchored_open.py",
       "scripts/_block_parser.py",
@@ -4327,6 +4366,7 @@
       "scripts/cross_model_handoff.py",
       "scripts/cross_model_smoke_test.sh",
       "scripts/cross_model_smoke_test_codex.sh",
+      "scripts/cross_model_verification/gemini_is_grounded.jq",
       "scripts/cross_model_verification/normalize_compat_verdict.py",
       "scripts/cross_model_verification/openai_effort_guard.sh",
       "scripts/cross_model_verification/openai_has_completed_web_search.jq",
@@ -4909,6 +4949,7 @@
       "academic-paper/agents/formatter_agent.md",
       "academic-paper/agents/intake_agent.md",
       "academic-paper/agents/literature_strategist_agent.md",
+      "academic-paper/agents/peer_reviewer_agent.md",
       "academic-paper/agents/socratic_mentor_agent.md",
       "academic-paper/examples/chinese_paper_example.md",
       "academic-paper/examples/clinical_citation_verification_checklist.md",
@@ -5258,6 +5299,8 @@
       "plugin-evals-citation-check/README.md",
       "plugin-evals-citation-locale/README.md",
       "plugin-evals/README.md",
+      "plugin-evals/preregistration-907-command.md",
+      "plugin-evals/preregistration-907.md",
       "requirements-dev.txt",
       "scripts/_anchored_open.py",
       "scripts/_block_parser.py",
@@ -5461,6 +5504,7 @@
       "scripts/cross_model_handoff.py",
       "scripts/cross_model_smoke_test.sh",
       "scripts/cross_model_smoke_test_codex.sh",
+      "scripts/cross_model_verification/gemini_is_grounded.jq",
       "scripts/cross_model_verification/normalize_compat_verdict.py",
       "scripts/cross_model_verification/openai_effort_guard.sh",
       "scripts/cross_model_verification/openai_has_completed_web_search.jq",
@@ -6247,7 +6291,7 @@
     "description": "Shared language for designing a software factory: the tasks it runs and the services it plugs into.",
     "path": "skills/in-progress/software-factory/SKILL.md",
     "relative_directory": "skills/in-progress/software-factory",
-    "sha256": "8a3d04e2ebcf2f863a514784ee0307ef8fb53ac0892deb29b75a406c0c84de7b",
+    "sha256": "567326e926d5bab0548aad11effaa6aef3d4dfa1ed385af22413628f49a48285",
     "linked_local_files": [
       "skills/in-progress/software-factory/EXAMPLE-TASKS.md",
       "skills/in-progress/software-factory/GIT-HOSTS.md",
@@ -7405,7 +7449,7 @@
     "description": "Spawn N parallel candidates at the same task, pick a base, graft the strongest parts of the losers into it. Use for /arena, 'arena this', 'throw it in the arena', or when one attempt at a non-trivial artifact would lock in the wrong shape.",
     "path": "harness/pstack/claude-code/skills/arena/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/arena",
-    "sha256": "064dc62bb5ffa4fcd050d20ff487dfaf5fd15f3700d2d1e2993057c3a907da8d",
+    "sha256": "85623708c7af425f5f8bdd3c537ebd4ef3e70cfec75ac06173afcfefcd1e0811",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md"
     ]
@@ -7488,6 +7532,8 @@
       "harness/pstack/claude-code/skills/statechart/scripts/frontends/verdict.ts",
       "harness/pstack/claude-code/skills/statechart/scripts/frontends/view.ts",
       "harness/pstack/claude-code/skills/statechart/scripts/ir.ts",
+      "harness/pstack/claude-code/skills/statechart/scripts/janitor.ts",
+      "harness/pstack/claude-code/skills/statechart/scripts/kill.ts",
       "harness/pstack/claude-code/skills/statechart/scripts/passes/annotate.ts",
       "harness/pstack/claude-code/skills/statechart/scripts/passes/label.ts",
       "harness/pstack/claude-code/skills/statechart/scripts/passes/lift.ts",
@@ -7763,6 +7809,8 @@
       "harness/pstack/claude-code/skills/statechart/scripts/frontends/verdict.ts",
       "harness/pstack/claude-code/skills/statechart/scripts/frontends/view.ts",
       "harness/pstack/claude-code/skills/statechart/scripts/ir.ts",
+      "harness/pstack/claude-code/skills/statechart/scripts/janitor.ts",
+      "harness/pstack/claude-code/skills/statechart/scripts/kill.ts",
       "harness/pstack/claude-code/skills/statechart/scripts/passes/annotate.ts",
       "harness/pstack/claude-code/skills/statechart/scripts/passes/label.ts",
       "harness/pstack/claude-code/skills/statechart/scripts/passes/lift.ts",
@@ -7793,7 +7841,7 @@
     "description": "poteto's agent style for concise, detailed responses, deliberate subagents, unslopped prose, simple code, and verified work. Use for poteto, /poteto-mode, or requests to work in this style.",
     "path": "harness/pstack/claude-code/skills/poteto-mode/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/poteto-mode",
-    "sha256": "9fa7b2ea5b6164064199439f7a03c291f1a1a6f4cd24dfeb2b4eaebf2bf56f48",
+    "sha256": "9bc98a59e5c963fd03e969c0e6efcf1a29039286d131930ff4d2c605df1aa042",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md",
       "harness/pstack/claude-code/skills/poteto-mode/playbooks/authoring-a-skill.md",
@@ -8107,7 +8155,7 @@
     "description": "Configure which models pstack uses per role and at what reasoning budget. Detects your available models and writes an always-applied rule that overrides the skill defaults. Use for /setup-pstack, \"configure pstack models\", \"pstack budget\", or changing pstack's model choices.",
     "path": "harness/pstack/claude-code/skills/setup-pstack/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/setup-pstack",
-    "sha256": "e34fdd6724899eeaee8d52f936235f6086cedd4f2e980691abaac9eb6c8e95fc",
+    "sha256": "a63db2974dde5232512756d4a237dc009c4759294ee419a72eb8516fcc8eb5a6",
     "linked_local_files": [
       "harness/pstack/claude-code/docs/harness/claude-code.md"
     ]
@@ -8143,7 +8191,7 @@
     "description": "Check a TLA+ model of a system that moves between states, such as a product flow, a protocol, or a service, and draw it as a Mermaid statechart. The report gives the shortest path to each state that breaks a rule. Use for /statechart, or to show a bug as a path through states.",
     "path": "harness/pstack/claude-code/skills/statechart/SKILL.md",
     "relative_directory": "harness/pstack/claude-code/skills/statechart",
-    "sha256": "010b7b4532406739b1c3a426d1a45f02bb618a42561fc96b3976e064a7f8384d",
+    "sha256": "ca7b3e43b1ddc4fb2425a33960f9390357323a869e1d921b6e2aff4f3004d55e",
     "linked_local_files": [
       "harness/pstack/claude-code/skills/statechart/references/render.md",
       "harness/pstack/claude-code/skills/statechart/scripts/backends/cfg.ts",
@@ -8160,6 +8208,8 @@
       "harness/pstack/claude-code/skills/statechart/scripts/frontends/verdict.ts",
       "harness/pstack/claude-code/skills/statechart/scripts/frontends/view.ts",
       "harness/pstack/claude-code/skills/statechart/scripts/ir.ts",
+      "harness/pstack/claude-code/skills/statechart/scripts/janitor.ts",
+      "harness/pstack/claude-code/skills/statechart/scripts/kill.ts",
       "harness/pstack/claude-code/skills/statechart/scripts/passes/annotate.ts",
       "harness/pstack/claude-code/skills/statechart/scripts/passes/label.ts",
       "harness/pstack/claude-code/skills/statechart/scripts/passes/lift.ts",
@@ -8381,7 +8431,7 @@
     "description": "Spawn N parallel candidates at the same task, pick a base, graft the strongest parts of the losers into it. Use for /arena, 'arena this', 'throw it in the arena', or when one attempt at a non-trivial artifact would lock in the wrong shape.",
     "path": "pstack/skills/arena/SKILL.md",
     "relative_directory": "pstack/skills/arena",
-    "sha256": "04f79ee8239251bc0c8a9e92f895ebe7bff42e785a5f6ef8ed2dc34dae18e85d",
+    "sha256": "24366948a9546dcb7dfc15a5cf7a4571edd917a8c1efef060b458a0fad608053",
     "linked_local_files": []
   },
   {
@@ -8459,6 +8509,8 @@
       "pstack/skills/statechart/scripts/frontends/verdict.ts",
       "pstack/skills/statechart/scripts/frontends/view.ts",
       "pstack/skills/statechart/scripts/ir.ts",
+      "pstack/skills/statechart/scripts/janitor.ts",
+      "pstack/skills/statechart/scripts/kill.ts",
       "pstack/skills/statechart/scripts/passes/annotate.ts",
       "pstack/skills/statechart/scripts/passes/label.ts",
       "pstack/skills/statechart/scripts/passes/lift.ts",
@@ -8726,6 +8778,8 @@
       "pstack/skills/statechart/scripts/frontends/verdict.ts",
       "pstack/skills/statechart/scripts/frontends/view.ts",
       "pstack/skills/statechart/scripts/ir.ts",
+      "pstack/skills/statechart/scripts/janitor.ts",
+      "pstack/skills/statechart/scripts/kill.ts",
       "pstack/skills/statechart/scripts/passes/annotate.ts",
       "pstack/skills/statechart/scripts/passes/label.ts",
       "pstack/skills/statechart/scripts/passes/lift.ts",
@@ -8756,7 +8810,7 @@
     "description": "poteto's agent style for concise, detailed responses, deliberate subagents, unslopped prose, simple code, and verified work. Use for poteto, /poteto-mode, or requests to work in this style.",
     "path": "pstack/skills/poteto-mode/SKILL.md",
     "relative_directory": "pstack/skills/poteto-mode",
-    "sha256": "67fd2c54fd25ebfae1e46db62c4b2e54f806a7ea9dfb6c83922de37e9b9635ea",
+    "sha256": "7aa026dc1fad7db0ea1ff39171e6b768ee99d03a7f46d0b9cd38973511251d81",
     "linked_local_files": [
       "pstack/skills/poteto-mode/playbooks/authoring-a-skill.md",
       "pstack/skills/poteto-mode/playbooks/autonomous-run.md",
@@ -9063,7 +9117,7 @@
     "description": "Configure which models pstack uses per role and at what reasoning budget. Detects your available models and writes an always-applied rule that overrides the skill defaults. Use for /setup-pstack, \"configure pstack models\", \"pstack budget\", or changing pstack's model choices.",
     "path": "pstack/skills/setup-pstack/SKILL.md",
     "relative_directory": "pstack/skills/setup-pstack",
-    "sha256": "54ff000a23b5c7e2277be11a0ee1d6a2049a64fb1f59027288cf87ffc8759415",
+    "sha256": "9347e6a17d41c92fd9d57e689c63d81defbd63df18dbcd5e9858ab03de5994ea",
     "linked_local_files": []
   },
   {
@@ -9096,7 +9150,7 @@
     "description": "Check a TLA+ model of a system that moves between states, such as a product flow, a protocol, or a service, and draw it as a Mermaid statechart. The report gives the shortest path to each state that breaks a rule. Use for /statechart, or to show a bug as a path through states.",
     "path": "pstack/skills/statechart/SKILL.md",
     "relative_directory": "pstack/skills/statechart",
-    "sha256": "010b7b4532406739b1c3a426d1a45f02bb618a42561fc96b3976e064a7f8384d",
+    "sha256": "ca7b3e43b1ddc4fb2425a33960f9390357323a869e1d921b6e2aff4f3004d55e",
     "linked_local_files": [
       "pstack/skills/statechart/references/render.md",
       "pstack/skills/statechart/scripts/backends/cfg.ts",
@@ -9113,6 +9167,8 @@
       "pstack/skills/statechart/scripts/frontends/verdict.ts",
       "pstack/skills/statechart/scripts/frontends/view.ts",
       "pstack/skills/statechart/scripts/ir.ts",
+      "pstack/skills/statechart/scripts/janitor.ts",
+      "pstack/skills/statechart/scripts/kill.ts",
       "pstack/skills/statechart/scripts/passes/annotate.ts",
       "pstack/skills/statechart/scripts/passes/label.ts",
       "pstack/skills/statechart/scripts/passes/lift.ts",
@@ -9327,7 +9383,7 @@
     "description": "Connect Grok Bot to Tailscale on a company tailnet (a team admin enables it at cursor.com; each member authenticates their own device and an admin limits it with custom:grokbot postures) or a personal tailnet (one-click Connect when the member owns or administers the tailnet). Several tailnets can be connected at once. Use when the user asks to set up, troubleshoot, change the default tailnet, or disconnect Grok Bot's Tailscale connection.",
     "path": "third_party/tailscale/skills/tailscale-setup/SKILL.md",
     "relative_directory": "third_party/tailscale/skills/tailscale-setup",
-    "sha256": "7a89f702d44ac7a8ad2785f0ee43d60e45ff0c3f9a73343deadfb75ce0222aa5",
+    "sha256": "bdb2f495c25318e787fdfc5fa43fefb492fb7017ae7c75f16844d4b52e493286",
     "linked_local_files": []
   },
   {
@@ -9778,7 +9834,7 @@
     "description": "Security review checklist and patterns for adding authentication, handling user input, managing secrets, creating API endpoints, or implementing payment and sensitive features.",
     "path": ".agents/skills/security-review/SKILL.md",
     "relative_directory": ".agents/skills/security-review",
-    "sha256": "74c3b032e7adb64ddac5bfd5bd90366447661d3000b1ebc89b54254398a7132c",
+    "sha256": "1bffd0cb53bca22fd9a5b6d9a350649f2d648a9c15a92184ecae7d4c2e0484dd",
     "linked_local_files": []
   },
   {
@@ -9810,7 +9866,7 @@
     "description": "Use this skill when writing new features, fixing bugs, or refactoring code. Enforces test-driven development with 80%+ coverage including unit, integration, and E2E tests.",
     "path": ".agents/skills/tdd-workflow/SKILL.md",
     "relative_directory": ".agents/skills/tdd-workflow",
-    "sha256": "e9507695657b05f26dd62127f1d6ff58e4015d624df65dd4d7e07f6470317393",
+    "sha256": "95935e86a3dd0d399d962d106d15e23023a89f2d621ae51cfa7fa41fdfd403e8",
     "linked_local_files": []
   },
   {
@@ -9824,6 +9880,16 @@
     "linked_local_files": [
       ".agents/skills/test-collaboration/templates/TESTS.example.md"
     ]
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
+    "skill_name": "ui-canvas",
+    "description": "Preview a UI component mockup in a local browser canvas where the human directly edits it (move, resize, edit text, delete, restyle), switches mobile/desktop/custom viewports, tests it, chats with you, and clicks Save and Finish. You then turn the exported edited markup into the production component. Use before committing or rebuilding a feature just to check a visual change.",
+    "path": ".agents/skills/ui-canvas/SKILL.md",
+    "relative_directory": ".agents/skills/ui-canvas",
+    "sha256": "52d90a9826dd130c68b989b9aa6ee57b63ded4306e843116e05611ceb045cbee",
+    "linked_local_files": []
   },
   {
     "source_repo": "affaan-m/ECC",
@@ -10839,7 +10905,7 @@
     "description": "WCAG 2.2 \u30ec\u30d9\u30eb AA \u6a19\u6e96\u3092\u7528\u3044\u3066\u30a4\u30f3\u30af\u30eb\u30fc\u30b7\u30d6\u306a\u30c7\u30b8\u30bf\u30eb\u30d7\u30ed\u30c0\u30af\u30c8\u3092\u8a2d\u8a08\u30fb\u5b9f\u88c5\u30fb\u76e3\u67fb\u3057\u307e\u3059\u3002Web \u7528\u306e\u30bb\u30de\u30f3\u30c6\u30a3\u30c3\u30af ARIA \u304a\u3088\u3073 Web\u30fb\u30cd\u30a4\u30c6\u30a3\u30d6\u30d7\u30e9\u30c3\u30c8\u30d5\u30a9\u30fc\u30e0\uff08iOS/Android\uff09\u306e\u30a2\u30af\u30bb\u30b7\u30d3\u30ea\u30c6\u30a3\u30c8\u30ec\u30a4\u30c8\u3092\u751f\u6210\u3059\u308b\u305f\u3081\u306b\u4f7f\u7528\u3057\u307e\u3059\u3002",
     "path": "docs/ja-JP/skills/accessibility/SKILL.md",
     "relative_directory": "docs/ja-JP/skills/accessibility",
-    "sha256": "d20fbd9b83577cfc08eff8b44dccecaf01699e7b12a31b3291a988ffc21e32e2",
+    "sha256": "3cf28f210e57432ce7f8fb072d0063255982d3eb31b3f0d4f8b46d6827abfd5a",
     "linked_local_files": []
   },
   {
@@ -13751,7 +13817,7 @@
     "description": "\u4f7f\u7528 WCAG 2.2 Level AA \u6807\u51c6\u8bbe\u8ba1\u3001\u5b9e\u65bd\u548c\u5ba1\u8ba1\u5305\u5bb9\u6027\u6570\u5b57\u4ea7\u54c1\u3002\u8fd0\u7528\u6b64\u6280\u80fd\u4e3a Web \u751f\u6210\u8bed\u4e49 ARIA\uff0c\u5e76\u4e3a Web \u548c\u539f\u751f\u5e73\u53f0\uff08iOS/Android\uff09\u751f\u6210\u65e0\u969c\u788d\u7279\u6027\u3002",
     "path": "docs/zh-CN/skills/accessibility/SKILL.md",
     "relative_directory": "docs/zh-CN/skills/accessibility",
-    "sha256": "2a766ef91e59eeeabad16c51e7956894d679b6d0eafd19076bb493ee7f03e349",
+    "sha256": "b5aca4d45c085c2e3a1d90824213abe2ac4a2f2583e00d3a395323b085132eca",
     "linked_local_files": []
   },
   {
@@ -15798,7 +15864,7 @@
     "description": "Design, implement, and audit accessible UI to WCAG 2.2 Level AA across Web, iOS, and Android \u2014 semantic ARIA roles and labels, accessibility traits and hints, focus management, contrast, target size, and screen-reader support. Use when building or auditing UI for accessibility compliance, keyboard navigation, or screen-reader support.",
     "path": "pi/core/skills/accessibility/SKILL.md",
     "relative_directory": "pi/core/skills/accessibility",
-    "sha256": "2762f21d09d199009ed4f95b28c911436b367c30963dc5ddb48b8e1ad7fc1585",
+    "sha256": "09910fdadf0d7e6ce8a40708f02909491b22a1964aa5f71f7fa3258921c6d300",
     "linked_local_files": []
   },
   {
@@ -15828,7 +15894,7 @@
     "description": "Design and optimize AI agent action spaces, tool definitions, and observation formatting for higher completion rates. Use when defining or revising an agent's tool set, action space, or observation format.",
     "path": "pi/core/skills/agent-harness-construction/SKILL.md",
     "relative_directory": "pi/core/skills/agent-harness-construction",
-    "sha256": "e7fb390a6663b46ea5d3c2876753a5ce32ba3bad1889686b21a42894caa1742d",
+    "sha256": "6d79c5a080cc6ed4cc11782da08a875e208da3b13eb43d9e7574bf4879ce5541",
     "linked_local_files": []
   },
   {
@@ -17393,7 +17459,7 @@
     "description": "Design, implement, and audit accessible UI to WCAG 2.2 Level AA across Web, iOS, and Android \u2014 semantic ARIA roles and labels, accessibility traits and hints, focus management, contrast, target size, and screen-reader support. Use when building or auditing UI for accessibility compliance, keyboard navigation, or screen-reader support.",
     "path": "skills/accessibility/SKILL.md",
     "relative_directory": "skills/accessibility",
-    "sha256": "2762f21d09d199009ed4f95b28c911436b367c30963dc5ddb48b8e1ad7fc1585",
+    "sha256": "09910fdadf0d7e6ce8a40708f02909491b22a1964aa5f71f7fa3258921c6d300",
     "linked_local_files": []
   },
   {
@@ -17423,7 +17489,7 @@
     "description": "Design and optimize AI agent action spaces, tool definitions, and observation formatting for higher completion rates. Use when defining or revising an agent's tool set, action space, or observation format.",
     "path": "skills/agent-harness-construction/SKILL.md",
     "relative_directory": "skills/agent-harness-construction",
-    "sha256": "e7fb390a6663b46ea5d3c2876753a5ce32ba3bad1889686b21a42894caa1742d",
+    "sha256": "6d79c5a080cc6ed4cc11782da08a875e208da3b13eb43d9e7574bf4879ce5541",
     "linked_local_files": []
   },
   {
@@ -18709,7 +18775,7 @@
     "description": "PreToolUse fact-forcing gate that denies the first Edit/Write/Bash (including MultiEdit and NotebookEdit) attempt until the agent presents concrete facts (importers, data schemas, verbatim user instruction), then allows retry; A/B-tested at +2.25 quality points. Use when enabling or configuring the GateGuard hook, exempting paths via env vars, or handling first-touch denials.",
     "path": "skills/gateguard/SKILL.md",
     "relative_directory": "skills/gateguard",
-    "sha256": "1907a1c61a1b9848adc85bf54688555318656d2c979668dd4fcccd9d344f4415",
+    "sha256": "de155882076fb4c04e83d76140d30b8efb3f25240d8b3363f03a5074c0748bd2",
     "linked_local_files": []
   },
   {
@@ -20943,6 +21009,16 @@
   {
     "source_repo": "affaan-m/ECC",
     "repo_key": "affaan-m__ECC",
+    "skill_name": "ui-canvas",
+    "description": "Preview a UI component mockup in a local browser canvas where the human directly edits it (move, resize, edit text, delete, restyle), switches mobile/desktop/custom viewports, tests it, chats with you, and clicks Save and Finish. You then turn the exported edited markup into the production component. Use before committing or rebuilding a feature just to check a visual change.",
+    "path": "skills/ui-canvas/SKILL.md",
+    "relative_directory": "skills/ui-canvas",
+    "sha256": "858c52297c206a40b4f94e8049df9e6057d67b5e57b6c8cc1f4d15c5ab5abc8b",
+    "linked_local_files": []
+  },
+  {
+    "source_repo": "affaan-m/ECC",
+    "repo_key": "affaan-m__ECC",
     "skill_name": "ui-demo",
     "description": "Record polished UI demo videos using Playwright. Use when the user asks to create a demo, walkthrough, screen recording, or tutorial video of a web application. Produces WebM videos with visible cursor, natural pacing, and professional feel.",
     "path": "skills/ui-demo/SKILL.md",
@@ -21127,7 +21203,7 @@
     "description": "Research what people actually say about any topic in the last 30 days. Pulls posts and engagement from Reddit, X, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the web. Includes a doctor health check to diagnose broken or missing sources.",
     "path": "skills/last30days/SKILL.md",
     "relative_directory": "skills/last30days",
-    "sha256": "49244ed6ac7fa9e84edc52117c3c39f7fb029e60e6aec31a222793d8acf9ec91",
+    "sha256": "3d7e9d085ad8a6719001b0e053ba31ef1bd6275c55cb3333a3dbd91955adce11",
     "linked_local_files": [
       "skills/last30days/references/agent-mode.md",
       "skills/last30days/references/category-peers.md",
@@ -21138,6 +21214,7 @@
       "skills/last30days/references/grok-bot-x.md",
       "skills/last30days/references/hiring-signals.md",
       "skills/last30days/references/library-queue.md",
+      "skills/last30days/references/opencode-browse-lane.md",
       "skills/last30days/references/patent-signals.md",
       "skills/last30days/references/recommendations.md",
       "skills/last30days/references/reddit-session.md",
@@ -21149,6 +21226,7 @@
       "skills/last30days/scripts/box_chrome_login.py",
       "skills/last30days/scripts/briefing.py",
       "skills/last30days/scripts/build-skill.sh",
+      "skills/last30days/scripts/capture_brief_hook.py",
       "skills/last30days/scripts/compare.sh",
       "skills/last30days/scripts/evaluate_search_quality.py",
       "skills/last30days/scripts/last30days.py",
@@ -21160,6 +21238,7 @@
       "skills/last30days/scripts/lib/bird_x.py",
       "skills/last30days/scripts/lib/bluesky.py",
       "skills/last30days/scripts/lib/bounded_get.py",
+      "skills/last30days/scripts/lib/brief_capture.py",
       "skills/last30days/scripts/lib/brightdata.py",
       "skills/last30days/scripts/lib/categories.py",
       "skills/last30days/scripts/lib/chrome_cdp.py",
@@ -21175,11 +21254,13 @@
       "skills/last30days/scripts/lib/corpus.py",
       "skills/last30days/scripts/lib/dates.py",
       "skills/last30days/scripts/lib/dedupe.py",
+      "skills/last30days/scripts/lib/deepline.py",
       "skills/last30days/scripts/lib/devto.py",
       "skills/last30days/scripts/lib/digg.py",
       "skills/last30days/scripts/lib/discovery_handoff.py",
       "skills/last30days/scripts/lib/doctor.py",
       "skills/last30days/scripts/lib/dripstack.py",
+      "skills/last30days/scripts/lib/employer_site.py",
       "skills/last30days/scripts/lib/entity_extract.py",
       "skills/last30days/scripts/lib/env.py",
       "skills/last30days/scripts/lib/fanout.py",
@@ -21194,6 +21275,7 @@
       "skills/last30days/scripts/lib/hackernews.py",
       "skills/last30days/scripts/lib/health.py",
       "skills/last30days/scripts/lib/hiring_signals.py",
+      "skills/last30days/scripts/lib/hook_installer.py",
       "skills/last30days/scripts/lib/hosted.py",
       "skills/last30days/scripts/lib/html_publish.py",
       "skills/last30days/scripts/lib/html_render.py",
@@ -21226,6 +21308,8 @@
       "skills/last30days/scripts/lib/patents.py",
       "skills/last30days/scripts/lib/permission_preflight.py",
       "skills/last30days/scripts/lib/perplexity.py",
+      "skills/last30days/scripts/lib/person.py",
+      "skills/last30days/scripts/lib/person_linkedin.py",
       "skills/last30days/scripts/lib/pinterest.py",
       "skills/last30days/scripts/lib/pipeline.py",
       "skills/last30days/scripts/lib/planner.py",
@@ -21234,6 +21318,8 @@
       "skills/last30days/scripts/lib/prescriptions.py",
       "skills/last30days/scripts/lib/private_files.py",
       "skills/last30days/scripts/lib/providers.py",
+      "skills/last30days/scripts/lib/proxy.py",
+      "skills/last30days/scripts/lib/public_host.py",
       "skills/last30days/scripts/lib/quality_nudge.py",
       "skills/last30days/scripts/lib/query.py",
       "skills/last30days/scripts/lib/reddit.py",
@@ -21259,6 +21345,8 @@
       "skills/last30days/scripts/lib/safari_cookies.py",
       "skills/last30days/scripts/lib/schema.py",
       "skills/last30days/scripts/lib/setup_wizard.py",
+      "skills/last30days/scripts/lib/shortform_envelope.py",
+      "skills/last30days/scripts/lib/shortform_oss.py",
       "skills/last30days/scripts/lib/signals.py",
       "skills/last30days/scripts/lib/skill_meta.py",
       "skills/last30days/scripts/lib/snippet.py",
@@ -21271,6 +21359,7 @@
       "skills/last30days/scripts/lib/tiktok.py",
       "skills/last30days/scripts/lib/topic_shape.py",
       "skills/last30days/scripts/lib/transcribe.py",
+      "skills/last30days/scripts/lib/transcript_harvest.py",
       "skills/last30days/scripts/lib/trustpilot.py",
       "skills/last30days/scripts/lib/truthsocial.py",
       "skills/last30days/scripts/lib/ui.py",
@@ -23749,10 +23838,10 @@
     "source_repo": "nextlevelbuilder/ui-ux-pro-max-skill",
     "repo_key": "nextlevelbuilder__ui-ux-pro-max-skill",
     "skill_name": "ui-ux-pro-max",
-    "description": "UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages, components, design systems, accessibility, interaction, responsive layout, typography, color, charts, and stack-specific UI implementation. Searchable local data: 80 searchable styles (51 active), 194 product palettes and reasoning profiles, 74 font pairings, 130 UX guidelines, 105 icons, 17 GSAP presets, 25 chart types, and 22 stacks.",
+    "description": "UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages, components, design systems, accessibility, interaction, responsive layout, typography, color, charts, and stack-specific UI implementation. Searchable local data: 80 searchable styles (51 active), 194 product palettes and reasoning profiles, 74 font pairings, 141 UX guidelines, 105 icons, 17 GSAP presets, 25 chart types, and 22 stacks.",
     "path": ".claude/skills/ui-ux-pro-max/SKILL.md",
     "relative_directory": ".claude/skills/ui-ux-pro-max",
-    "sha256": "bee6aa0382bc15099715ad8f0b11fdb224932eb516a4ea9134a2d7d38f5fcde4",
+    "sha256": "d99f9475eaff0522549bc71843b6b2a8563253329d99ad7c0236275a039c2659",
     "linked_local_files": [
       ".claude/skills/ui-ux-pro-max/references/pro-rules.md",
       ".claude/skills/ui-ux-pro-max/references/quick-reference.md",
@@ -23932,9 +24021,7 @@
     "path": "graphify/skill-agents.md",
     "relative_directory": "graphify",
     "sha256": "8f72895893b6e46d8da42ff9e6f41c3e6990ded70c0d7c2449e14afb622bdaa4",
-    "linked_local_files": [
-      "graphify/skill.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "Graphify-Labs/graphify",
@@ -23954,9 +24041,7 @@
     "path": "graphify/skill-amp.md",
     "relative_directory": "graphify",
     "sha256": "8f72895893b6e46d8da42ff9e6f41c3e6990ded70c0d7c2449e14afb622bdaa4",
-    "linked_local_files": [
-      "graphify/skill.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "Graphify-Labs/graphify",
@@ -23966,9 +24051,7 @@
     "path": "graphify/skill-claw.md",
     "relative_directory": "graphify",
     "sha256": "bbddbc077b4374a2d6b5181e0d9d0e7cac576df46dff328d7934a1c2f077bc4d",
-    "linked_local_files": [
-      "graphify/skill.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "Graphify-Labs/graphify",
@@ -23978,9 +24061,7 @@
     "path": "graphify/skill-codex.md",
     "relative_directory": "graphify",
     "sha256": "7511352c4cf6da3647462516de41e99a4be53d9ea106fd2e6fadf0bafb9740b0",
-    "linked_local_files": [
-      "graphify/skill.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "Graphify-Labs/graphify",
@@ -23990,9 +24071,7 @@
     "path": "graphify/skill-copilot.md",
     "relative_directory": "graphify",
     "sha256": "bbddbc077b4374a2d6b5181e0d9d0e7cac576df46dff328d7934a1c2f077bc4d",
-    "linked_local_files": [
-      "graphify/skill.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "Graphify-Labs/graphify",
@@ -24012,9 +24091,7 @@
     "path": "graphify/skill-droid.md",
     "relative_directory": "graphify",
     "sha256": "f5955fe171d8b45250b92d40b90705e822137464cf184e371cd945c0d74cc6e2",
-    "linked_local_files": [
-      "graphify/skill.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "Graphify-Labs/graphify",
@@ -24024,9 +24101,7 @@
     "path": "graphify/skill-kilo.md",
     "relative_directory": "graphify",
     "sha256": "42c746d897426b367b196a8d4e315fb19482e77f4a0324b58873f4a030a5f93b",
-    "linked_local_files": [
-      "graphify/skill.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "Graphify-Labs/graphify",
@@ -24036,9 +24111,7 @@
     "path": "graphify/skill-kiro.md",
     "relative_directory": "graphify",
     "sha256": "bbddbc077b4374a2d6b5181e0d9d0e7cac576df46dff328d7934a1c2f077bc4d",
-    "linked_local_files": [
-      "graphify/skill.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "Graphify-Labs/graphify",
@@ -24048,9 +24121,7 @@
     "path": "graphify/skill-opencode.md",
     "relative_directory": "graphify",
     "sha256": "484a7c26709ed97ffc5358505c9b025bd4237ee1d41ddc6d1f4f67fbccbd6a6d",
-    "linked_local_files": [
-      "graphify/skill.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "Graphify-Labs/graphify",
@@ -24060,9 +24131,7 @@
     "path": "graphify/skill-pi.md",
     "relative_directory": "graphify",
     "sha256": "48673df0826ffd97ed1bd69962200fd943221d6258aaa7978ee29150e88cec46",
-    "linked_local_files": [
-      "graphify/skill.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "Graphify-Labs/graphify",
@@ -24072,9 +24141,7 @@
     "path": "graphify/skill-trae.md",
     "relative_directory": "graphify",
     "sha256": "0d4d4c3ddcea09256d2268e4f17a7a2dc5b80289f0241216e9bbf13234ff778b",
-    "linked_local_files": [
-      "graphify/skill.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "Graphify-Labs/graphify",
@@ -24084,9 +24151,7 @@
     "path": "graphify/skill-vscode.md",
     "relative_directory": "graphify",
     "sha256": "9d1c4e8d0d1225d1ad51be4f435874262a70b94c63ec3868c539e12d2c60bc36",
-    "linked_local_files": [
-      "graphify/skill.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "Graphify-Labs/graphify",
@@ -24096,9 +24161,7 @@
     "path": "graphify/skill-windows.md",
     "relative_directory": "graphify",
     "sha256": "47451608eccfaa233149f22cbf1de3e882091ca41f515622bdaf29b4ae954465",
-    "linked_local_files": [
-      "graphify/skill.md"
-    ]
+    "linked_local_files": []
   },
   {
     "source_repo": "Graphify-Labs/graphify",
